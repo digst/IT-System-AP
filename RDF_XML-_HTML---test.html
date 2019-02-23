@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://data.gov.dk/rdf2html/index.htm?model=http%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&sheet=transform2RDFreport_da-en.xsl -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  
+		<title>RDF/XML-&gt;HTML </title>
+			<link rel="stylesheet" type="text/css" href="./RDF_XML-_HTML---test_files/transformation.css">
+			
+				<script src="./RDF_XML-_HTML---test_files/jquery-3.2.1.js.download" type="text/javascript" language="JavaScript"></script>
+				<script src="./RDF_XML-_HTML---test_files/trans.js.download" type="text/javascript" language="JavaScript"></script>
+				
+	</head>
+
+	<body>
+<div id="resultatdiv">
+
+
+<title>HTML-visning</title>
+<link rel="stylesheet" type="text/css" href="./RDF_XML-_HTML---test_files/htmltransform.css">
+
+
+<small><p><i>
+		NOTE: Bemærk at dette er en formateret HTML-visning af en RDF-ontologi. Denne visning er udarbejdet i formidlingsøjemed og er ikke udtømmende. Se den originale RDF/XML-fil for det fulde informationsindhold.<br>
+		NOTE: Please note that this is formattet HTML view of an RDF ontology. This view has been made available for dissemination purposes and is not exhaustive. Please refer to the original RDF/XML-file for the complete information.  </i></p></small><div class="status"><div><span>							 
+		Model 
+		- development (under udvikling)</span></div></div>
+<h1>IT-system AP&nbsp;<i>(IT System AP)</i>
+</h1>
+<hr>
+<h2>METADATA:</h2>
+<p>Dette dokument introducerer modellering af it-systemer og definerer en anvendelsesprofil baseret på internationale standarder. Anvendelsesprofilen udgør en fælles model for registrering af it-systemer i en dansk administrativ og fællesoffentlig kontekst.</p>
+<p>Her beskrives en anvendelsesprofil af for basisregistrering af oplysninger om it-systemer til anvendelse i en dansk administrativ og fællesoffentlig kontekst.
+I denne sammenhæng består en anvendelsesprofil af en nærmere specifikation af, hvordan de eksisterende vokabularelementer skal forstås og anvendes – her altså til modellering af data vedrørende it-systemer.
+Teknologisk udspringer de anvendte og foreslåede modeller af Semantic Web/Linked Data-verdenens modelleringsgrundlag, RDF. En basal forståelse af RDF-struktuerer er et godt udgangspunkt for arbejdet med anvendelsesprofilen. </p>
+<p>Anvendelsesprofilen er oprettet i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og sammensætter således eksisterende vokabularer til en bestemt anvendelse. </p>
+<div class="table"><dl>
+<dt>Namespace:</dt>
+<dd>https://data.gov.dk/model/profile/itsystemap#</dd>
+<dt>Modelnavn:</dt>
+<dd>IT-system AP&nbsp;<i>(IT System AP)</i>
+</dd>
+<dt>Modeludstiller:</dt>
+<dd>Digitaliseringsstyrelsen</dd>
+<dt>Modelansvarlig:</dt>
+<dd>Digitaliseringsstyrelsen</dd>
+<dt>Versionsnummer:</dt>
+<dd>0.5.0</dd>
+<dt>Seneste opdateringsdato:</dt>
+<dd>07-01-2019</dd>
+<dt>Modelstatus:</dt>
+<dd>development (under udvikling) &nbsp;</dd>
+<dt>Godkendelsesstatus:</dt>
+<dd>afventer godkendelse (awaiting approval)&nbsp;</dd>
+<dt>Forretningsområde:</dt>
+<dd>http://www.form-online.dk/opgavenoegle/06/#06.38.10.10</dd>
+<dt>Kilde:</dt>
+<dd>https://www.sa.dk/wp-content/uploads/2018/04/2007_IT_Vejledning-til-bekendtg%C3%B8relse_h%C3%B8ring-1.pdf; https://www.w3.org/TR/vocab-dcat/; https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf; https://ec.europa.eu/isa2/sites/isa/files/isa2_action_2017_01_standard_based_archival_data_management_final_report_v1.00.pdf; https://www.ica.org/sites/default/files/CBPS_2000_Guidelines_ISAD%28G%29_Second-edition_EN.pdf; https://www.iso.org/standard/54533.html; Notat om GDPR-modul i KITOS; </dd>
+<dt>Sprog:</dt>
+<dd>en; </dd>
+</dl></div>
+<h2>DIAGRAM:</h2>
+<img src="./RDF_XML-_HTML---test_files/itsystemap.png"><h2>KLASSER:</h2>
+<div class="resource">
+<h3>it-system&nbsp;<i>(IT system)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>it-system;</dd>
+<dt>Definition (da):</dt>
+<dd>system der bygger på informationsteknologi i form af hardware, software og data</dd>
+<dt>Definition (da):</dt>
+<dd>system that is based on information technology in the form of hardware, software and data</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#ITsystem</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>produktserie&nbsp;<i>(product series)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>produktserie;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/computer#ProductSeries</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>
+<i>(business process)</i>&nbsp;forretningsproces&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>forretningsproces;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/process#process</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>
+<i>(IT system report)</i>&nbsp;it-systemindberetning&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>it-systemindberetning;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#ITsystemreport</dd>
+<dt>Specialisering af:</dt>
+<dd>http://schema.org/Message</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>aktør&nbsp;<i>(agent)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>aktør;</dd>
+<dt>Kommentar (en):</dt>
+<dd>An agent (eg. person, group, software or physical artifact)</dd>
+<dt>URI:</dt>
+<dd>http://xmlns.com/foaf/0.1/Agent</dd>
+<dt>Ækvivalent klasse:</dt>
+<dd>http://purl.org/dc/terms/Agent</dd>
+<div class="usage">
+<dt class="usage"><div class="usage"><h4>Anvendelsesnote:</h4></div></dt>
+<dd></dd>
+</div>
+</dl>
+</div>
+<div class="resource">
+<h3>formel organisation&nbsp;<i>(Formal Organization)</i>	&nbsp;<i>(formal organization)</i>&nbsp;<i>(Formal Organization)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>formel organisation;</dd>
+<dt>Kommentar (en):</dt>
+<dd>An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a Corporation, Charity, Government or Church. Note that this is a super class of `gr:BusinessEntity` and it is recommended to use the GoodRelations vocabulary to denote Business classifications such as DUNS or NAICS.</dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/ns/org#FormalOrganization</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/ns/org</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/ns/org#Organization</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>offentlig organisation&nbsp;<i>(public organization)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>offentlig organisation;</dd>
+<dt>Definition (da):</dt>
+<dd>Staten, regionale eller lokale myndigheder, offentligretlige organer og sammenslutninger af en eller flere af sådanne myndigheder eller offentligretlige organer.</dd>
+<dt>Definition (en):</dt>
+<dd>The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships.</dd>
+<dt>Kommentar (da):</dt>
+<dd>enhver organisation, der er defineret som værende en del af den offentlige sektor under en juridisk ramme på ethvert niveau.</dd>
+<dt>Kommentar (da):</dt>
+<dd>Klassen repræsenterer offentlige organisationer bredt defineret. En organisation kan bestå af flere underorganisationer, og enhver organisation kan have én eller flere organisationsmæssige enheder. Hver af disse beskrives med de samme typer af egenskaber og relationer. </dd>
+<dt>URI:</dt>
+<dd>http://data.europa.eu/m8g/PublicOrganisation</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/ns/org#Organization</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>organisatorisk enhed&nbsp;<i>(OrganizationalUnit)</i>	&nbsp;<i>(organizational unit)</i>&nbsp;<i>(OrganizationalUnit)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>organisatorisk enhed;</dd>
+<dt>Definition (en):</dt>
+<dd>An Organization such as a University Support Unit which is part of some larger FormalOrganization and only has full recognition within the context of that FormalOrganization, it is not a Legal Entity in its own right. Units can be large and complex containing other Units and even FormalOrganizations. Alternative names: _OU_ _Unit_ _Department_</dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/ns/org#OrganizationalUnit</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/ns/org</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/ns/org#Organization</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>kontaktpunkt&nbsp;<i>(contact point)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>kontaktpunkt;</dd>
+<dt>Accepterede termer (da):</dt>
+<dd>postkasse; digitalt kontaktpunkt;</dd>
+<dt>Definition (da):</dt>
+<dd>organiseret sted hvor en aktør kan henvende sig</dd>
+<dt>Definition (en):</dt>
+<dd>A contact point—for example, a Customer Complaints department.</dd>
+<dt>URI:</dt>
+<dd>http://schema.org/ContactPoint</dd>
+<dt>Specialisering af:</dt>
+<dd>schema:StructuredValue</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>datadistributionsservice&nbsp;<i>(data distribution service)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>datadistributionsservice;</dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/ns/dcat#DataDistributionService</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/TR/vocab-dcat/</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/ns/dcat#DataService</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>dataservice&nbsp;<i>(data service)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>dataservice;</dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/ns/dcat#DataService</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/TR/vocab-dcat/</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>datasæt&nbsp;<i>(dataset)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>datasæt;</dd>
+<dt>Kommentar (en):</dt>
+<dd>A collection of data, published or curated by a single source, and available for access or download in one or more formats</dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/ns/dcat#Dataset</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/TR/vocab-dcat/</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/TR/vocab-dcat/</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>distribution&nbsp;<i>(distribution)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>distribution;</dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/ns/dcat#Distribution</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/TR/vocab-dcat/</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>websted&nbsp;<i>(web site)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>websted;</dd>
+<dt>URI:</dt>
+<dd>http://schema.org/WebSite</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>
+<i>(period of time)</i>&nbsp;<i>(period)</i>	&nbsp;</h3>
+<dl>
+<dt>URI:</dt>
+<dd>http://purl.org/dc/terms/Period</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>dokument&nbsp;<i>(document)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>dokument;</dd>
+<dt>Kommentar (en):</dt>
+<dd>A document.	</dd>
+<dt>URI:</dt>
+<dd>http://xmlns.com/foaf/0.1/Document</dd>
+<dt>Er defineret af:</dt>
+<dd>http://xmlns.com/foaf/0.1/</dd>
+<dt>Ækvivalent klasse:</dt>
+<dd>http://schema.org/CreativeWork</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>systemdokumentation&nbsp;<i>(system documentation)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>systemdokumentation;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#SystemDocumentation</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>kontrakt&nbsp;<i>(Contract)</i>	&nbsp;<i>(contract)</i>&nbsp;<i>(Contract)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>kontrakt;</dd>
+<dt>Definition (en):</dt>
+<dd>A voluntary, deliberate, and legally binding agreement between two or more competent parties.</dd>
+<dt>URI:</dt>
+<dd>http://data.europa.eu/eproc/ontology#Contract</dd>
+<dt>Specialisering af:</dt>
+<dd>http://data.europa.eu/eproc/ontology#Document</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>juridisk ressource&nbsp;<i>(legal resource)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>juridisk ressource;</dd>
+<dt>URI:</dt>
+<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>datakonvertering&nbsp;<i>(data conversion)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>datakonvertering;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#DataConversion</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>datasletning&nbsp;<i>(data erasure)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>datasletning;</dd>
+<dt>Kilde:</dt>
+<dd>http://data.europa.eu/eli/reg/2016/679/oj </dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#DataErasure</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>digital arkivering&nbsp;<i>(digital archiving)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>digital arkivering;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#DigitalArchiving</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>arkiveringsversion&nbsp;<i>(archive information package)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>arkiveringsversion;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#ArchiveInformationPackage</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>begreb&nbsp;<i>(concept)</i>	&nbsp;<i>(concept)</i>&nbsp;<i>(concept)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>begreb;</dd>
+<dt>Accepterede termer (da):</dt>
+<dd>klassifikationselement;</dd>
+<dt>Definition (en):</dt>
+<dd></dd>
+<dt>Kommentar (en):</dt>
+<dd></dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>offentlig organisationstype&nbsp;<i>(public organization type)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>offentlig organisationstype;</dd>
+<dt>Accepterede termer (da):</dt>
+<dd>type af forvaltningsopgave;</dd>
+<dt>Definition (da):</dt>
+<dd>klassifikation af offentlige organisationer i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/specialisedorganization#PublicOrganizationType</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>målgruppe&nbsp;<i>(target group)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>målgruppe;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#itsystemtargetgroup</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>kritikalitetstype&nbsp;<i>(criticality type)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>kritikalitetstype;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#criticalitytype</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>sagsområde &nbsp;<i>(case area)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>sagsområde ;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#CaseArea</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>arkiveringspligttype&nbsp;<i>(archival obligation type)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>arkiveringspligttype;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#ArchivalObligationType</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>arkivinstitutionstype&nbsp;<i>(archive organisation type)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>arkivinstitutionstype;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#ArchiveOrganisationType</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>arkiveringsversionsperiodetype&nbsp;<i>(archive type)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>arkiveringsversionsperiodetype;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#ArchiveType</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>datakonverteringsstatus&nbsp;<i>(data conversion status)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>datakonverteringsstatus;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#DataConversionStatus</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>type af forvaltningsopgave&nbsp;<i>(public administrative task type)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>type af forvaltningsopgave;</dd>
+<dt>Accepterede termer (da):</dt>
+<dd>type af offentlig forvaltningsopgave;</dd>
+<dt>Definition (da):</dt>
+<dd>klassifikation af opgaver der udføres af offentlige organisationer</dd>
+<dt>Definition (en):</dt>
+<dd>classification of task performed by public organizations</dd>
+<dt>Eksempel (da):</dt>
+<dd>KLE-opgave, FORM-forvaltningsopgave;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/specialisedorganization#publicadministrativetasktype</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>formopgave&nbsp;<i>(formbusiness task type)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>formopgave;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/specialisedorganization#FORMopgave</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>kleemne&nbsp;<i>(kletheme)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>kleemne;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/specialisedorganization#KLEemne</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>itkontraktype&nbsp;<i>(itcontract type)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>itkontraktype;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#ITcontractType</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<h2>EGENSKABER:</h2>
+<div class="resource">
+<h3>foretrukken term&nbsp;<i>(preferred label)</i>	&nbsp;<i>(preferred label)</i>&nbsp;<i>(preferred label)</i>	&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>foretrukken term;</dd>
+<dt>Definition (en):</dt>
+<dd></dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/2004/02/skos/core</dd>
+<dt>Specialisering af:</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#label</dd>
+<dt>Domæne:</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#Resource</dd>
+<dt>Rækkevidde:</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>alternativ betegnelse&nbsp;<i>(alt label)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>alternativ betegnelse;</dd>
+<dt>Accepterede termer (da):</dt>
+<dd>alternativt systemnavn;</dd>
+<div class="usage">
+<dt class="usage"><div class="usage"><h4>Anvendelsesnote:</h4></div></dt>
+<dd></dd>
+</div>
+</dl>
+</div>
+<div class="resource">
+<h3>ibrugtagningsdato&nbsp;<i>(in use from date)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>ibrugtagningsdato;</dd>
+<dt>Definition (da):</dt>
+<dd>dato hvor it-systemet blev taget i brug med fuld eller delvis funktio-nalitet</dd>
+<dt>Definition (en):</dt>
+<dd>date on which a system was put into operation</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>udfasningsdato&nbsp;<i>(in use until date)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>udfasningsdato;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#inuseuntildate</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>systembeskrivelse&nbsp;<i>(description)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>systembeskrivelse;</dd>
+<dt>Accepterede termer (da):</dt>
+<dd>systemformål;</dd>
+<dt>Definition (da):</dt>
+<dd>redegørelse for formålet med it-systemets anvendelse</dd>
+<dt>Kilde:</dt>
+<dd>https://www.retsinformation.dk/eli/lta/2010/1007</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#systempurpose</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>databærende&nbsp;<i>(contains data)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>databærende;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#containsdata</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>dokumentbærende&nbsp;<i>(contains digital docs)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>dokumentbærende;</dd>
+<dt>Accepterede termer (da):</dt>
+<dd>eksistens af sagsbegreb i it-systemet;digitale dokumenter indeholdt;sagsbærende;</dd>
+<dt>Definition (da):</dt>
+<dd>angivelse af, at it-systemet har et sagsbegreb, forstået som en registreret sammenhæng mellem sagligt sammenhørende dokumenter</dd>
+<dt>Kommentar (da):</dt>
+<dd>Boolsk værdi. Kan kun være true, hvis der er digitale dokumenter i it-systemet </dd>
+<dt>Kilde:</dt>
+<dd>https://www.retsinformation.dk/eli/lta/2010/1007</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/digitalarchiving#containsDigitalDocs</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>kommentar&nbsp;<i>(comment)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>kommentar;</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>id&nbsp;<i>(identifier)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>id;</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>har målgruppe&nbsp;<i>(has target group)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>har målgruppe;</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#hastargetgroup</dd>
+<dt>Domæne:</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#Class</dd>
+<dt>Rækkevidde:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>har anvendelsesformål&nbsp;<i>(has application purpose)</i>&nbsp;</h3>
+<dl>
+<dt>Foretrukken term (da):</dt>
+<dd>har anvendelsesformål;</dd>
+<dt>Accepterede termer (da):</dt>
+<dd>systemformål;</dd>
+<dt>Definition (da):</dt>
+<dd>Beskrivelse af formålet med at oprette og drive it-systemet</dd>
+<dt>Kilde:</dt>
+<dd>https://www.retsinformation.dk/eli/lta/2010/1007</dd>
+<dt>URI:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#hasapplicationpurpose</dd>
+<dt>Domæne:</dt>
+<dd>https://data.gov.dk/model/core/itsystem#ITsystem</dd>
+<dt>Rækkevidde:</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+</dl>
+</div>
+<div class="resource">
+<h3>
+<i>(subClassOf)</i>	&nbsp;		 
+			</h3>
+<dl>
+<dt>Kommentar (en):</dt>
+<dd>The subject is a subclass of a class.</dd>
+<dt>URI:</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#subClassOf</dd>
+<dt>Er defineret af:</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#</dd>
+<dt>Domæne:</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#Class</dd>
+<dt>Rækkevidde:</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#Class</dd>
+<div class="usage">
+<dt class="usage"><div class="usage"><h4>Anvendelsesnote:</h4></div></dt>
+<dd></dd>
+<dt>Foretrukken term (da):</dt>
+<dd>sub-klasse af;</dd>
+<dt>Definition (da):</dt>
+<dd>angivelse af at en given klasses individer alle er individer af en anden (overordnet) klasse</dd>
+<dt>Kommentar (da):</dt>
+<dd>Erklærer at klassen hvor tagget anvendes, er en delmængde af den klasse der er værdi for tagget. Defineres normalt direkte ved anvendelse af Generalisering i UML, men kan desuden defineres ved brug af en tag.</dd>
+<dt></dt>
+<dd></dd>
+<dt class="usage"><div class="usage">Anvendelsesnote:</div></dt>
+<dd class="usage"><div class="usage">Rdfs:Class som range udtrykkes i UML Plusprofilen som en attribut med datatypen xsd:anyURI (en HTTP-uri)</div></dd>
+</div>
+</dl>
+</div>
+
+
+</div>
+	
+		
+</body></html>
