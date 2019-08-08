@@ -95,7 +95,7 @@ Properties (Governance Perspective)::
 * `dcat-dk:hasConfidentialityType`  (Object Property) Range: ConfidentialityTypeISO27002
 * `archv:archivalRegisterType`  (Object Property) Range: RegisterType
 * `archv:archivalObligationType`  (Object Property) Range: ArchivalObligationType
-* `archv:plannedArchivalFrequency`  (Object Property) Range: ArchivalFrequencyType
+* `archv:plannedArchivalFrequency`  (Object Property) Range: ArchivalFrequency
 * `archv:nextDataErasureDeadline` (Datatype property) Range: xsd:date. Definition: 
 * `archv:prevArchiveInformationPackage`  (Object Property) Range: archv:ArchiveInformationPackage
 * `archv:plannedArchiveType`  (Object Property) Range: ArchiveType
