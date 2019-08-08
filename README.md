@@ -12,7 +12,7 @@ Please find below a description of the  main classes and their properties:
 Definition: system which consists of digital information technologies
 
 Properties (Basic Information Perspective):
-* <dct:identifier> (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context.
+* `dct:identifier` (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context.
 * <skos:prefLabel> (Datatype property) Range: rdf:langString. 
 * <skos:altLabel> (Datatype property) Range: rdf:langString. 
 * <dct:description> (Datatype property) Range: rdf:langString. Definition: An account of the resource
