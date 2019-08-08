@@ -8,7 +8,7 @@ Information about public-sector IT systems is exchanged in many different contex
 Please find below a description of the  main classes and their properties:
 
 
-## sys:ITSystem (Class)
+# sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
 
 Properties (Basic Information Perspective):
@@ -24,7 +24,7 @@ Properties (Basic Information Perspective):
 * <archv:containsDigitalDocs> (Datatype property) Range: xsd:boolean. Definition: 
 
 
-### Properties (Tasks Perspective):
+Properties (Tasks Perspective):
 * <sys:hasApplicationPurposeFORM>  (Object Property) Range: FORMtask
 * <sys:hasApplicationPurposeKLE>  (Object Property) Range: KLETheme
 * <cv:hasLegalResource>  (Object Property) Range: eli:LegalResource
@@ -33,28 +33,28 @@ Properties (Basic Information Perspective):
 * <sys:hasCriticality>  (Object Property) Range: CriticalityType
 * <sys:hasTargetGroup>  (Object Property) Range: TargetGroup
 
-### Properties (Governance Perspective):
+Properties (Governance Perspective):
 * <sys:hasITSystemOwner>  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
 * <sys:hasITSystemManager>  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
 
-### Properties (Legal Perspective):
+Properties (Legal Perspective):
 * <sys:relatedContract>  (Object Property) Range: fibo-fnd-agr-ctr:Contract
 * <dct:rightsHolder>  (Object Property) Range: org:Organization
 * <schema:creator>  (Object Property) Range: org:Organization
 * <sys:operatedBy>  (Object Property) Range: org:Organization
 * <sys:maintainedBy>  (Object Property) Range: org:Organization
 
-### Properties (Application Perspective):
+Properties (Application Perspective):
 * <comp:instanceOfProductInSeries>  (Object Property) Range: comp:ProductSeries
 * <sys:hasSystemDocumentation>  (Object Property) Range: sys:SystemDocumentation
 * <sys:hasComponent>  (Object Property) Range: sys:ITSystem
 * <sys:uses>  (Object Property) Range: schema:SoftwareApplication
 
-### Properties (Infrastructure Perspective):
+Properties (Infrastructure Perspective):
 * <sys:hasAquisitionType>  (Object Property) Range: ITSystemAquisitionType
 * <sys:actsAs>  (Object Property) Range: EnvironmentType
 
-### Properties (Information Perspective):
+Properties (Information Perspective):
 * <sys:uses>  (Object Property) Range: dcat:Dataset
 * <sys:provides>  (Object Property) Range: dcat:Dataset
 * <sys:producesDataset>  (Object Property) Range: dcat:Dataset
@@ -63,7 +63,7 @@ Properties (Basic Information Perspective):
 * <sys:uses>  (Object Property) Range: dcat:DataService
 * <sys:provides>  (Object Property) Range: sys:UserInterface
 
-### Properties
+Properties
 * <sys:provisionDependency>  (Object Property) Range: sys:ComponentUsage
 * <sys:hasFunctionalityCapability>  (Object Property) Range: Capability
 * <sys:hasVersion>  (Object Property) Range: ITSystemVersion
@@ -74,18 +74,18 @@ Properties (Basic Information Perspective):
 * <sys:selectedITsystemForReport>  (Object Property) Range: sys:ITSystem
  
 
-## dcat:Dataset (Class)
+# dcat:Dataset (Class)
 Definition: 
 A collection of data, published or curated by a single agent, and available for access or download in one or more formats
 
-### Properties (Information Perspective)::
+Properties (Information Perspective)::
 * <dct:identifier> (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context.
 * <dct:title> (Datatype property) Range: rdf:langString. Definition: A name given to the resource
 * <dct:description> (Datatype property) Range: rdf:langString. Definition: An account of the resource
 * <owl:versionInfo> (Datatype property) Range: rdfs:Literal. Definition: The annotation property that provides version information for an ontology or another OWL construct
 * <dct:temporal>  (Object Property) Range: dct:PeriodOfTime
 
-### Properties (Governance Perspective)::
+Properties (Governance Perspective)::
 * <dct:creator>  (Object Property) Range: org:Organization
 * <dcat-dk:dataResponsibleOrganisation>  (Object Property) Range: org:Organization
 * <dcat-dk:dataProcessor>  (Object Property) Range: org:Organization
@@ -102,7 +102,7 @@ A collection of data, published or curated by a single agent, and available for 
 * <archv:lastArchivePeriod>  (Object Property) Range: dct:PeriodOfTime
 * <prov:wasGeneratedBy>  (Object Property) Range: archv:DataConversion
 
-## Class: comp:ProductSeries 
+# comp:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
 Properties:
 * <schema:identifier> (Datatype property) Range: xsd:anyURI. 
