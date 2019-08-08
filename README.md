@@ -6,7 +6,7 @@ This page documents the RDF constructs as applied in a draft for a Danish public
 Information about public-sector IT systems is exchanged in many different contexts and for many different purposes, and this provides interest and motivation for standardizing the way IT systems are described in order to support higher reuse and quality of data about IT systems.
 
 
-## Class: sys:ITSystem 
+## sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
 
 ### Properties (Basic Information Perspective):
@@ -34,7 +34,6 @@ Definition: system which consists of digital information technologies
 ### Properties (Governance Perspective):
 * <sys:hasITSystemOwner>  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
 * <sys:hasITSystemManager>  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
-
 
 ### Properties (Legal Perspective):
 * <sys:relatedContract>  (Object Property) Range: fibo-fnd-agr-ctr:Contract
@@ -73,9 +72,33 @@ Definition: system which consists of digital information technologies
 * <sys:selectedITsystemForReport>  (Object Property) Range: sys:ITSystem
  
 
-## Class: dcat:Dataset 
+## dcat:Dataset (Class)
+Definition: 
+A collection of data, published or curated by a single agent, and available for access or download in one or more formats
 
+### Properties (Information Perspective)::
+* <dct:identifier> (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context.
+* <dct:title> (Datatype property) Range: rdf:langString. Definition: A name given to the resource
+* <dct:description> (Datatype property) Range: rdf:langString. Definition: An account of the resource
+* <owl:versionInfo> (Datatype property) Range: rdfs:Literal. Definition: The annotation property that provides version information for an ontology or another OWL construct
+* <dct:temporal>  (Object Property) Range: dct:PeriodOfTime
 
+### Properties (Governance Perspective)::
+* <dct:creator>  (Object Property) Range: org:Organization
+* <dcat-dk:dataResponsibleOrganisation>  (Object Property) Range: org:Organization
+* <dcat-dk:dataProcessor>  (Object Property) Range: org:Organization
+* <dcat-dk:personalDataCategory>  (Object Property) Range: PersonalDataCategory
+* <dcat-dk:confidentialityType>  (Object Property) Range: ConfidentialityType
+* <dcat-dk:hasConfidentialityType>  (Object Property) Range: ConfidentialityTypeNatoEu
+* <dcat-dk:hasConfidentialityType>  (Object Property) Range: ConfidentialityTypeISO27002
+* <archv:archivalRegisterType>  (Object Property) Range: RegisterType
+* <archv:archivalObligationType>  (Object Property) Range: ArchivalObligationType
+* <archv:plannedArchivalFrequency>  (Object Property) Range: ArchivalFrequencyType
+* <archv:nextDataErasureDeadline> (Datatype property) Range: xsd:date. Definition: 
+* <archv:prevArchiveInformationPackage>  (Object Property) Range: archv:ArchiveInformationPackage
+* <archv:plannedArchiveType>  (Object Property) Range: ArchiveType
+* <archv:lastArchivePeriod>  (Object Property) Range: dct:PeriodOfTime
+* <prov:wasGeneratedBy>  (Object Property) Range: archv:DataConversion
 
 ## Tasks Perspective
 
