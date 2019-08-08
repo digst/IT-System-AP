@@ -114,36 +114,36 @@ Properties:
 * `sys:usesPrimaryTechnologyStack`  (Object Property) Range: TechnologyStack
  
 
-# Classifications (Controlled vocabularies) used in the application profile:
+# Codelists (Classifications) used in the application profile:
 
-Classification: Operational Status
+Codelist: OperationalStatus
 * build
 * operational
 * retired
 * transition
 
-Classification: Public Administrative Task Type
+Codelist: PublicAdministrativeTaskType
 * See: FORM http://www.form-online.dk
 * See: KLE http://www.kle-online.dk/
 
-Classification: Public Organization Type
+Codelist: PublicOrganizationType
 * region
 * self-governing institution
 * municipality
 * govermental administrative unit
 
-Classification: Criticality Type
+Codelist: CriticalityType
 * critical for business
 * critial for society
 * not critical
 
-Classification: IT System Aquisition Type
+Codelist: ITSystemAquisitionType
 * Commercial off the shelf
 * in house developement
 * open source
 * ordered developement
 
-Classification: IT Environment Type
+Codelist: IT Environment Type
 * demonstration
 * development
 * production
@@ -152,58 +152,58 @@ Classification: IT Environment Type
 * training
 * disaster recovery
 
-Classification: ArchiveType
+Codelist: ArchiveType
 * archive type
 * closed cases and documents
 * Snapshot
 
-Classification: Archival Obligation Type
+Codelist: ArchivalObligationType
 * archival
 * disposal
 * unknown
 
-Classification: Personal Data Category
+Codelist: PersonalDataCategory
 * civil registration number data
 * data about criminal offences
 * general personal data
 * no personal data
 * sensitive data
 
-Classification: Confidentiality Type
+Codelist: ConfidentialityType
 * See ISO 27001 Data Classifikation
 * See Nato & EU Data Classification
 
-Classification: Register Type
+Codelist: RegisterType
 * contains documents
 * does not contain documents
 
-Classification: Data Conversion Status
+Codelist: DataConversionStatus
 * full import
 * partial import
 * unknown
 
-Classification: IT System Contract Type
+Codelist: ITSystemContractType
 * development contract
 * maintenance contract
 * operations contract
 
-Classification: IT System Documentation Type
+Codelist: ITSystemDocumentationType
 * architecture description
 * technical documentation
 * user guide
 * ...
 
-Classification: Archival Case Area
+Codelist: CaseArea
 See: https://www.retsinformation.dk/eli/lta/2015/266 
 See: https://www.retsinformation.dk/eli/lta/2018/183
 
-Classification: Archive Organisation Type
+Codelist: ArchiveOrganisationType
 * National archives
 * Municipal archive organisation
 
-Classification: Archival Frequency Type
+Codelist: ArchivalFrequency 
 
-Classification: Target Group
+Codelist: TargetGroup
 * citizens
 * businesses
 * other authorities
