@@ -13,8 +13,8 @@ Definition: system which consists of digital information technologies
 
 Properties (Basic Information Perspective):
 * <dct:identifier> (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context.
-* <skos:prefLabel> (Datatype property) Range: rdf:langString. Definition: 
-* <skos:altLabel> (Datatype property) Range: rdf:langString. Definition: 
+* <skos:prefLabel> (Datatype property) Range: rdf:langString. 
+* <skos:altLabel> (Datatype property) Range: rdf:langString. 
 * <dct:description> (Datatype property) Range: rdf:langString. Definition: An account of the resource
 * <sys:inUseFromDate> (Datatype property) Range: xsd:date. Definition: date on which a system was put into operation
 * <sys:inUseUntilDate> (Datatype property) Range: xsd:date. Definition: date on which the it-system was phased out and no longer in operation
@@ -22,7 +22,6 @@ Properties (Basic Information Perspective):
 * <rdfs:comment> (Datatype property) Range: rdf:langString. Definition: A description of the subject resource.
 * <sys:containsData> (Datatype property) Range: xsd:boolean. Definition: specification of whether an IT system contains data or documents digitally created by the public administration
 * <archv:containsDigitalDocs> (Datatype property) Range: xsd:boolean. Definition: 
-
 
 Properties (Tasks Perspective):
 * <sys:hasApplicationPurposeFORM>  (Object Property) Range: FORMtask
@@ -104,6 +103,7 @@ Properties (Governance Perspective)::
 
 # comp:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
+
 Properties:
 * <schema:identifier> (Datatype property) Range: xsd:anyURI. 
 * <skos:prefLabel> (Datatype property) Range: rdf:langString. 
