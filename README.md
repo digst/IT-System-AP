@@ -113,3 +113,103 @@ Properties:
 * `archv:personalDataCategory`  (Object Property) Range: PersonalDataCategory
 * `sys:usesPrimaryTechnologyStack`  (Object Property) Range: TechnologyStack
  
+
+# Classifications (Controlled vocabularies) used in the application profile:
+
+Classification: Operational Status
+* build
+* operational
+* retired
+* transition
+
+Classification: Public Administrative Task Type
+* See: FORM http://www.form-online.dk
+* See: KLE http://www.kle-online.dk/
+
+Classification: Public Organization Type
+* region
+* self-governing institution
+* municipality
+* govermental administrative unit
+
+Classification: Criticality Type
+* critical for business
+* critial for society
+* not critical
+
+Classification: IT System Aquisition Type
+* Commercial off the shelf
+* in house developement
+* open source
+* ordered developement
+
+Classification: IT Environment Type
+* demonstration
+* development
+* production
+* staging
+* testing
+* training
+* disaster recovery
+
+Classification: ArchiveType
+* archive type
+* closed cases and documents
+* Snapshot
+
+Classification: Archival Obligation Type
+* archival
+* disposal
+* unknown
+
+Classification: Personal Data Category
+* civil registration number data
+* data about criminal offences
+* general personal data
+* no personal data
+* sensitive data
+
+Classification: Confidentiality Type
+* See ISO 27001 Data Classifikation
+* See Nato & EU Data Classification
+
+Classification: Register Type
+* contains documents
+* does not contain documents
+
+Classification: Data Conversion Status
+* full import
+* partial import
+* unknown
+
+Classification: IT System Contract Type
+* development contract
+* maintenance contract
+* operations contract
+
+Classification: IT System Documentation Type
+* architecture description
+* technical documentation
+* user guide
+* ...
+
+Classification: Archival Case Area
+See: https://www.retsinformation.dk/eli/lta/2015/266 
+See: https://www.retsinformation.dk/eli/lta/2018/183
+
+Classification: Archive Organisation Type
+* National archives
+* Municipal archive organisation
+
+Classification: Archival Frequency Type
+
+Classification: Target Group
+* citizens
+* businesses
+* other authorities
+* external API user
+* internal authority employees 
+* specific internal employee roles  
+* internal API user
+
+
