@@ -5,6 +5,8 @@ This page documents the RDF constructs as applied in a draft for a Danish public
 
 Information about public-sector IT systems is exchanged in many different contexts and for many different purposes, and this provides interest and motivation for standardizing the way IT systems are described in order to support higher reuse and quality of data about IT systems.
 
+Please find below a description of the  main classes and their properties:
+
 
 ## sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
@@ -100,17 +102,13 @@ A collection of data, published or curated by a single agent, and available for 
 * <archv:lastArchivePeriod>  (Object Property) Range: dct:PeriodOfTime
 * <prov:wasGeneratedBy>  (Object Property) Range: archv:DataConversion
 
-## Tasks Perspective
-
-## Governance Perspective
-
-## Legal Perspective
-
-## Information Perspective
-
-## Security Perspective
-
-## Application Perspective
-
-## Infrastructure Perspective
-
+## Class: comp:ProductSeries 
+Definition: a series of related products that exhibit the same overall functionality to the user
+Properties:
+* <schema:identifier> (Datatype property) Range: xsd:anyURI. 
+* <skos:prefLabel> (Datatype property) Range: rdf:langString. 
+* <dct:description> (Datatype property) Range: rdf:langString.
+* <sys:hasCapabilityForPurpose>  (Object Property) Range: PublicAdministrativeTaskType
+* <archv:personalDataCategory>  (Object Property) Range: PersonalDataCategory
+* <sys:usesPrimaryTechnologyStack>  (Object Property) Range: TechnologyStack
+ 
