@@ -161,8 +161,8 @@ Codelist: ArchivalObligationType
 Codelist: PersonalDataCategory
 
 * general personal data
-*  - civil registration number data
-*  - data about criminal offences
+  - civil registration number data
+  - data about criminal offences
 * sensitive data
 * no personal data
 
