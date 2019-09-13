@@ -159,11 +159,12 @@ Codelist: ArchivalObligationType
 * unknown
 
 Codelist: PersonalDataCategory
-* civil registration number data
-* data about criminal offences
+
 * general personal data
-* no personal data
+*  - civil registration number data
+*  - data about criminal offences
 * sensitive data
+* no personal data
 
 Codelist: ConfidentialityType
 * See ISO 27001 Data Classifikation
