@@ -1,30 +1,20 @@
-<rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:dc11="http://purl.org/dc/elements/1.1/"
-  xmlns:voaf="http://purl.org/vocommons/voaf#"
-  xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:dc="http://purl.org/dc/terms/" 
-  xmlns:dct="http://purl.org/dc/terms/"    
-  xmlns:dcat="http://www.w3.org/ns/dcat#" 
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:prov="http://www.w3.org/ns/prov#"
-  xmlns:adms="http://www.w3.org/ns/adms#"
-  xmlns:cv="http://data.europa.eu/m8g/"
-  xmlns:eli="http://data.europa.eu/eli/ontology#"
-  xmlns:schema="http://schema.org/"
-  xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk#"  
-  xmlns:sys="https://data.gov.dk/model/core/itsystem#"
-  xmlns:archv="https://data.gov.dk/model/core/digitalarchival#"
-  xmlns:comp="https://data.gov.dk/model/core/computer#"  > 
-                    
-<rdf:Description rdf:about="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f ">
-    <rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#System"/>
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:sys="https://data.gov.dk/model/core/itsystem#"
+         xmlns:archv="https://data.gov.dk/model/core/digitalarchival#"
+         xmlns:comp="https://data.gov.dk/model/core/computer#"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dcatdk="http://data.gov.dk/model/profile/dcatdk#"
+         xmlns:schema="http://schema.org/">
+
+  <rdf:Description rdf:about="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f ">
+    <rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#ITSystem"/>
     <skos:prefLabel xml:lang="da">Acadre </skos:prefLabel>
     <skos:altLabel xml:lang="da">Acadre CM</skos:altLabel>
-    <dct:identifier rdf:resource="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f "/>
-    <dct:description xml:lang="da">Acadre anvendes i kommune X til sagsstyring og ledelsesrapporte-ring</dct:description>
+    <dc:identifier rdf:resource="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f "/>
+    <dc:description xml:lang="da">Acadre anvendes i kommune X til sagsstyring og ledelsesrapporte-ring</dc:description>
     <sys:inUseFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</sys:inUseFromDate>
     <sys:hasApplicationPurposeFORM rdf:resource="http://www.form-online.dk/opgavenoegle/65/#65.50.05"/>
     <sys:hasApplicationPurposeKLE rdf:resource="http://www.kle-online.dk/emneplan/85/#_85.02.10"/>
@@ -34,47 +24,33 @@
     <sys:hasAquisitionType rdf:resource="https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf"/>
     <comp:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM</comp:instanceOfProductInSeries>
 	
-	<sys:ImplementedITSystem>  
-		<rdf:Description rdf:about="https://data.gov.dk/itsystem/fs850748-044c-fs89-8985-7ed9fs101164f">
-		<rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#ImplementedITSystem"/>
-			  
-			<sys:actsAs rdf:resource="https://data.gov.dk/model/classification/itenvironmenttype#Production"/>
-			<archv:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:containsData>
-			<archv:containsDigitalDocuments rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:containsDigitalDocuments>
-			
-			  <sys:producesDataset>
-				<rdf:Description rdf:about="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f">
-				  <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-				  <dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x</dcat-dk:dataResponsibleOrganisation>
-				  <dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData"/>		
-				  <dct:identifier rdf:resource="https://data.gov.dk/dataset/6d850748-044c-4b89-8985-7ed91101164f"/>
-				  <dct:description xml:lang="da">Journalsager fra komnune x</dct:description>
-				  <dct:temporal>
-					  <rdf:Description rdf:about="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f #5nn0">
-						  <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>		  
-						  <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002</schema:startDate>
-						  <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012</schema:endDate>
-						</rdf:Description>
-				  </dct:temporal>		
-				  <archv:archivalObligationType rdf:resource="https://data.gov.dk/model/classification/ArchivalObligationType#Archival"/>
-				  <archv:plannedArchiveType rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod"/>
-				  <archv:plannedArchivalFrequency rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#5"/>
-				  <archv:archivalObligationType rdf:resource="https://data.gov.dk/model/classification/ArchivalObligationType#Archival"/>
+    <sys:ImplementedITSystem>
+      <sys:ImplementedITSystem rdf:about="https://data.gov.dk/itsystem/fs850748-044c-fs89-8985-7ed9fs101164f">
+        <sys:actsAs rdf:resource="https://data.gov.dk/model/classification/itenvironmenttype#Production"/>
+        <archv:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:containsData>
+        <archv:containsDigitalDocuments rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:containsDigitalDocuments>
+        <sys:producesDataset rdf:resource="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f"/>
+      </sys:ImplementedITSystem>
+    </sys:ImplementedITSystem>
 
-				  <archv:previousArchiving rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:previousArchiving>
-				  <archv:lastArchivePeriod>
-					  <rdf:Description rdf:about="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f">
-					  <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-					  <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002</schema:startDate>
-					  <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007</schema:endDate>
-					</rdf:Description>
-				  </archv:lastArchivePeriod>
-				</rdf:Description>
-			  </sys:producesDataset>
-		  
-		</rdf:Description>
-    </sys:ImplementedITSystem>  
-     
   </rdf:Description>
-  
-  </rdf:RDF>
+
+  <dcat:Dataset rdf:about="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+    <dc:title xml:lang="da">Journalsager</dc:title>
+    <dc:description xml:lang="da">Journalsager fra kommune x</dc:description>
+    <dcatdk:dataResponsibleOrganisation xml:lang="da">Kommune x</dcatdk:dataResponsibleOrganisation>
+    <dcatdk:personalDataCategory rdf:resource="https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData"/>
+    <dc:identifier rdf:resource="https://data.gov.dk/dataset/6d850748-044c-4b89-8985-7ed91101164f"/>
+    <dc:temporal rdf:resource="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f #5nn0"/>
+    <archv:archivalObligationType rdf:resource="https://data.gov.dk/model/classification/ArchivalObligationType#Archival"/>
+    <archv:plannedArchiveType rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod"/>
+    <archv:plannedArchivalFrequency rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#5"/>
+    <archv:previousArchiving rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:previousArchiving>
+    <archv:lastArchivePeriod rdf:resource="https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f"/>
+    <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002</schema:startDate>
+    <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007</schema:endDate>
+    <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012</schema:endDate>
+  </dcat:Dataset>
+
+</rdf:RDF>
