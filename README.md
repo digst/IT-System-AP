@@ -1,9 +1,11 @@
-IT-System-AP
+IT-System-AP (General Application Profile for IT System Description)
 ===== 
 
-This page documents the RDF constructs as applied in a draft for a Danish public-sector specification for describing IT systems. Information about public-sector IT systems is exchanged in many different contexts and for many different purposes, and this provides interest and motivation for standardizing the way IT systems are described in order to support higher reuse and quality of data about IT systems.
+This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing IT systems. Information about public-sector IT systems is exchanged in many different contexts and for many different purposes, and this provides interest and motivation for standardizing the way IT systems are described in order to support higher reuse and quality of data about IT systems.
 
+<!--
 Please find below an overview of the  main classes and their properties:Full documentation of the model elements can be found at [this address](https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&sheet=transform2RDFreport_da-en.xsl)
+-->
 
 # sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
@@ -17,8 +19,8 @@ Properties (Basic Information Perspective):
 * `sys:inUseUntilDate` (Datatype property) Range: xsd:date. Definition: date on which the it-system was phased out and no longer in operation
 * `sys:operationelStatus`  (Object Property) Range: OperationalStatus
 * `rdfs:comment` (Datatype property) Range: rdf:langString. Definition: A description of the subject resource.
-* `sys:containsData` (Datatype property) Range: xsd:boolean. Definition: specification of whether an IT system contains data or documents digitally created by the public administration
-* `archv:containsDigitalDocs` (Datatype property) Range: xsd:boolean. Definition: 
+* `sys:usedInOrganization`  (Object Property) Range: org:Organization
+
 
 Properties (Tasks Perspective):
 * `sys:hasApplicationPurposeFORM`  (Object Property) Range: FORMtask
@@ -39,36 +41,40 @@ Properties (Legal Perspective):
 * `schema:creator`  (Object Property) Range: org:Organization
 * `sys:operatedBy`  (Object Property) Range: org:Organization
 * `sys:maintainedBy`  (Object Property) Range: org:Organization
+* `sys:contractRegarding`  (Object Property) Range: sys:ITSystem* `sys:selectedITsystemForReport`  (Object Property) Range: sys:ITSystem
 
 Properties (Application Perspective):
 * `comp:instanceOfProductInSeries`  (Object Property) Range: comp:ProductSeries
 * `sys:hasSystemDocumentation`  (Object Property) Range: sys:SystemDocumentation
-* `sys:hasComponent`  (Object Property) Range: sys:ITSystem
-* `sys:uses`  (Object Property) Range: schema:SoftwareApplication
 
 Properties (Infrastructure Perspective):
 * `sys:hasAquisitionType`  (Object Property) Range: ITSystemAquisitionType
-* `sys:actsAs`  (Object Property) Range: EnvironmentType
 
 Properties (Information Perspective):
-* `sys:uses`  (Object Property) Range: dcat:Dataset
-* `sys:provides`  (Object Property) Range: dcat:Dataset
-* `sys:producesDataset`  (Object Property) Range: dcat:Dataset
-* `archv:prevArchiveInformationPackage`  (Object Property) Range: dcat:Dataset
-* `sys:provides`  (Object Property) Range: dcat:DataService
-* `sys:uses`  (Object Property) Range: dcat:DataService
-* `sys:provides`  (Object Property) Range: sys:UserInterface
+* `sys:containsData` (Datatype property) Range: xsd:boolean. Definition: specification of whether an IT system contains data or documents digitally created by the public administration
+* `archv:containsDigitalDocs` (Datatype property) Range: xsd:boolean.
 
-Properties
-* `sys:provisionDependency`  (Object Property) Range: sys:ComponentUsage
+<!--Properties
 * `sys:hasFunctionalityCapability`  (Object Property) Range: Capability
 * `sys:hasVersion`  (Object Property) Range: ITSystemVersion
+-->
+
+# sys:ImplementedITSystem (Class)
+Definition: it-system which has been implemented in a physical IT environment
+* `dct:identifier` (Datatype property) Range: xsd:anyURI.
+* `sys:actsAs`  (Object Property) Range: EnvironmentType
+* `sys:uses`  (Object Property) Range: dcat:Dataset
+* `sys:uses`  (Object Property) Range: dcat:DataService
+* `sys:uses`  (Object Property) Range: schema:SoftwareApplication
+* `sys:provides`  (Object Property) Range: dcat:Dataset
+* `sys:provides`  (Object Property) Range: dcat:DataService
+* `sys:provides`  (Object Property) Range: sys:UserInterface
+* `sys:producesDataset`  (Object Property) Range: dcat:Dataset
+* `archv:prevArchiveInformationPackage`  (Object Property) Range: dcat:Dataset
+* `sys:hasComponent`  (Object Property) Range: sys:ITSystem
+* `sys:provisionDependency`  (Object Property) Range: sys:ComponentUsage
 * `sys:usageDependency`  (Object Property) Range: sys:ComponentUsage
-* `sys:usedInOrganization`  (Object Property) Range: org:Organization
-* `sys:contractRegarding`  (Object Property) Range: sys:ITSystem
 * `sys:roleObject`  (Object Property) Range: sys:ITSystem
-* `sys:selectedITsystemForReport`  (Object Property) Range: sys:ITSystem
- 
 
 # dcat:Dataset (Class)
 Definition: 
@@ -106,7 +112,7 @@ Properties:
 * `skos:prefLabel` (Datatype property) Range: rdf:langString. 
 * `dct:description` (Datatype property) Range: rdf:langString.
 * `sys:hasCapabilityForPurpose`  (Object Property) Range: PublicAdministrativeTaskType
-* `archv:personalDataCategory`  (Object Property) Range: PersonalDataCategory
+* `dcatdk:personalDataCategory`  (Object Property) Range: PersonalDataCategory
 * `sys:usesPrimaryTechnologyStack`  (Object Property) Range: TechnologyStack
  
 
@@ -164,10 +170,10 @@ Codelist: PersonalDataCategory
   - civil registration number data
   - data about criminal offences
 * sensitive data
-* no personal data
+* non-personal data
 
 Codelist: ConfidentialityType
-* See ISO 27001 Data Classifikation
+* See ISO 27001 Data Classification
 * See Nato & EU Data Classification
 
 Codelist: RegisterType
@@ -183,12 +189,6 @@ Codelist: ITSystemContractType
 * development contract
 * maintenance contract
 * operations contract
-
-Codelist: ITSystemDocumentationType
-* architecture description
-* technical documentation
-* user guide
-* ...
 
 Codelist: CaseArea
 See: https://www.retsinformation.dk/eli/lta/2015/266 
