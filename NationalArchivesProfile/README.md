@@ -2,7 +2,7 @@ IT-System-AP (National Archives Profile DRAFT)
 ===== 
 National Archives Application Profile for IT System Description - under udvikling
 
-This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing IT systems for the National Achives. 
+This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing IT systems for the National Archives. 
 
 Find ITSYSTEM-AP-NATIONALARCHIVES Shapes Graph samt Example Data Graphs (i RDF-XML, TTL, og JSON-LD) i filerne ovenfor
 
