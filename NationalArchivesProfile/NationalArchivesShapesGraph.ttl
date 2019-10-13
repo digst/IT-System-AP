@@ -64,7 +64,7 @@
     ] ;
 
     sh:property [
-      sh:path dcatdk:dataResopnsibleOrganisation ;
+      sh:path dcatdk:dataResponsibleOrganisation ;
       sh:name "Dataansvarlig" ;
       sh:node :OrganizationShape ;
     ] ;
