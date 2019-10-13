@@ -14,3 +14,5 @@ Find ITSYSTEM-AP-NATIONALARCHIVES Shapes Graph samt Example Data Graphs (i RDF-X
 * RDF converter: http://www.easyrdf.org/converter
 
 
+## UML Diagram
+![alt text](https://github.com/digst/IT-System-AP/blob/master/ITSystemAP-SubjectAreas.png "Subject Areas")
