@@ -1,6 +1,6 @@
-IT-System-AP (National Archives Profile DRAFT) - under udvikling
+IT-System-AP (National Archives Profile DRAFT) 
 ===== 
-National Archives Application Profile for IT System Description:
+National Archives Application Profile for IT System Description - under udvikling
 
 This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing IT systems for the National Achives. 
 
