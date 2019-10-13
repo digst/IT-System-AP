@@ -4,6 +4,10 @@ General Application Profile for IT System Description:
 
 This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing IT systems. Information about public-sector IT systems is exchanged in many different contexts and for many different purposes, and this provides interest and motivation for standardizing the way IT systems are described in order to support higher reuse and quality of data about IT systems.
 
+Inline-style: 
+![alt text](https://github.com/.png "Subject Areas")
+
+
 <!--
 Please find below an overview of the  main classes and their properties:Full documentation of the model elements can be found at [this address](https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&sheet=transform2RDFreport_da-en.xsl)
 -->
