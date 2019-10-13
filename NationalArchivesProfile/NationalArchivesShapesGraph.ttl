@@ -1,53 +1,89 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://data.gov.dk/model/profile/itsystemap-archv#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix sys: <https://data.gov.dk/model/core/itsystem#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix archv: <https://data.gov.dk/model/core/digitalarchival#> .
-@prefix comp: <https://data.gov.dk/model/core/computer#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcatdk: <https://data.gov.dk/model/core/dcat-dk#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcatdk: <http://data.gov.dk/model/profile/dcatdk#> .
+@prefix sys: <https://data.gov.dk/model/core/itsystem#> .
+@prefix archv: <https://data.gov.dk/model/core/digitalarchival#> .
 
-<https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f >
-  a <https://data.gov.dk/model/core/itsystem#System> ;
-  skos:prefLabel "Acadre "@da ;
-  skos:altLabel "Acadre CM"@da ;
-  dc:identifier <https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f > ;
-  dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapporte-ring"@da ;
-  sys:inUseFromDate "2019-01-01"^^xsd:date ;
-  sys:hasApplicationPurposeFORM <http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
-  sys:hasApplicationPurposeKLE <http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
-  archv:applicableCaseArea <https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager> ;
-  sys:hasTargetGroup <https://data.gov.dk/model/classification/itsystemcriticalitytype#employees> ;
-  sys:hasCriticality <https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness> ;
-  sys:hasAquisitionType <https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf> ;
-  comp:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
-  sys:ImplementedITSystem <https://data.gov.dk/itsystem/fs850748-044c-fs89-8985-7ed9fs101164f> .
+## SHAPES GRAPH 
+## UNDER UDVIKLING (development)
 
-<https://data.gov.dk/itsystem/fs850748-044c-fs89-8985-7ed9fs101164f>
-  a sys:ImplementedITSystem ;
-  sys:actsAs <https://data.gov.dk/model/classification/itenvironmenttype#Production> ;
-  archv:containsData true ;
-  archv:containsDigitalDocuments true ;
-  sys:producesDataset <https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f> .
+:ITSystemShape 
+    a sh:NodeShape ;
+    sh:targetClass sys:ITSystem ;
 
-<https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f>
-  a dcat:Dataset ;
-  dc:title "Journalsager"@da ;
-  dc:description "Journalsager fra kommune x"@da ;
-  dcatdk:dataResponsibleOrganisation "Kommune x"@da ;
-  dcatdk:personalDataCategory <https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ;
-  dc:identifier <https://data.gov.dk/dataset/6d850748-044c-4b89-8985-7ed91101164f> ;
-  dc:temporal <https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f #5nn0> ;
-  archv:archivalObligationType <https://data.gov.dk/model/classification/ArchivalObligationType#Archival> ;
-  archv:plannedArchiveType <https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod> ;
-  archv:plannedArchivalFrequency <https://data.gov.dk/model/classification/ArchivalFrequencyType#5> ;
-  archv:previousArchiving true ;
-  archv:lastArchivePeriod <https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f> ;
-  schema:startDate "2002"^^xsd:date ;
-  schema:endDate "2007"^^xsd:date .
+    sh:property [
+        sh:path skos:prefLabel ;
+	sh:languageIn ( "da" ) ;
+        sh:minCount 1 ;
+    ] ;        
+    sh:property [
+        sh:path sys:hasImplementation ;
+        sh:node :ImplementedITSystemShape ;        
+    ] .
+    
+:ImplementedITSystemShape 
+    a sh:NodeShape ;
+    sh:targetClass sys:ImplementedITSystem  .    
 
-<https://data.gov.dk/itsystem/6d850748-044c-4b89-8985-7ed91101164f>
-  a dc:PeriodOfTime ;
-  schema:startDate "2002"^^xsd:date ;
-  schema:endDate "2012"^^xsd:date .
+
+:DatasetShape
+    a sh:NodeShape ;
+    sh:targetClass dcat:Dataset ;
+
+    sh:property [
+      sh:path dc:title;
+      sh:languageIn ( "da" ) ;
+      sh:name "Titel" ;
+      sh:description "Datasættets formelle navn" ;
+      sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+      sh:path dc:description;
+      sh:name "Beskrivelse" ;
+      sh:description "Beskrivelse af datasættets formål og indhold ";
+      sh:languageIn ( "da" ) ;
+      sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+      sh:path dcatdk:dataResponsibleOrganisation ;
+      sh:name "Dataansvarlig" ;
+      sh:languageIn ( "da" ) ;
+      sh:minCount 1 ;
+    ] ;
+
+
+    sh:property [
+      sh:path dcatdk:personalDataCategory ;
+      sh:name "Personoplysningskategori" ;   
+      sh:nodeKind sh:IRI ;             
+    ] ;
+
+    sh:property [
+      sh:path dc:subject ;
+      sh:name "Forvaltningsopgave" ; 
+    ] .
+
+:OrganizationShape 
+    a sh:NodeShape ;
+    sh:targetClass foaf:Organization ;
+
+    sh:property [
+        sh:path foaf:name ;
+	      sh:languageIn ( "da" ) ;
+    ] .
