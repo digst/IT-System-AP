@@ -15,4 +15,5 @@ Find ITSYSTEM-AP-NATIONALARCHIVES Shapes Graph samt Example Data Graphs (i RDF-X
 
 
 ## UML Diagram
-![alt text](NationalArchivesProfile/2a) IT System AP (National Archives Profile)v.0.8.6.png)
+![alt text](https://github.com/digst/IT-System-AP/blob/master/ITSystemAP-SubjectAreas.png "Subject Areas")
+
