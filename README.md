@@ -6,4 +6,4 @@ This page document two drafts for application profiles for use in the context of
 
 ## SYS-AP (Basic Application Profile)
 
-## archvSYS-AP (Acrhive Application Profile) 
+## archvSYS-AP (Archive Application Profile) 
