@@ -8,5 +8,6 @@
 HTML-indholdet er udstilles som GitHub Pages[2] på nedenstående link:
 https://digst.github.io/IT-System-AP/SYS-AP/docs/
 
-*[1] Konvertering kan også ske via Bikeshed's webformular: https://api.csswg.org/bikeshed/
-*[2] Udstilling via GitHub Pages kan aktiveres via reposisoriets Settings (scroll ned til GitHub Pages)
+[1] Konvertering kan også ske via Bikeshed's webformular: https://api.csswg.org/bikeshed/
+
+[2] Udstilling via GitHub Pages kan aktiveres via reposisoriets Settings (scroll ned til GitHub Pages)
