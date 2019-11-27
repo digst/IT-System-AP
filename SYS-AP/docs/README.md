@@ -11,3 +11,5 @@ https://digst.github.io/IT-System-AP/SYS-AP/docs/
 [1] Konvertering kan også ske via Bikeshed's webformular: https://api.csswg.org/bikeshed/
 
 [2] Udstilling via GitHub Pages kan aktiveres via reposisoriets Settings (scroll ned til GitHub Pages)
+
+Word (docx) filer kan også konverteres til Markdown via fx: https://euangoddard.github.io/clipboard2markdown/
