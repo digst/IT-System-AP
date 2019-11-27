@@ -4,6 +4,6 @@ Information about public-sector IT systems is exchanged in many different contex
 
 This page document two drafts for application profiles for use in the context of the Danish public-sector.  
 
-## SYS-AP (Basic Application Profile)
+## A Basic Application Profile (SYS-AP)
 
-## archvSYS-AP (Archive Application Profile) 
+## An Archive Application Profile (archvSYS-AP)
