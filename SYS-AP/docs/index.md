@@ -32,7 +32,7 @@
 <pre class="metadata">
 Title: arkitektur.digst.dk Standard for beskrivelse af it-systemer (basisprofil)
 Status: LD
-URL: http://github.com/digst/IT-System-AP/SYS-AP/Primer/index.md
+URL: http://github.com/digst/IT-System-AP/SYS-AP/docs/index.md
 Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
 
 Abstract: 
@@ -45,9 +45,9 @@ Inline Github Issues: full
 Logo: digst...
 </pre>
 
-<h1>Standard for beskrivelse af it-systemer (basisprofil)</h1>
+<h1>Standard for beskrivelse af it-systemer - Basisprofil</h1>
 
-Version 1.0.0
+Version 0.9.0
 
 November 2019
 
