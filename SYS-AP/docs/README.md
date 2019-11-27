@@ -5,5 +5,7 @@
 * index.md	- Mastertekst i Markdown-format
 * index.html 	- Mastertekst konverteret til html
 
-HTML-indholdet er udstilles som GitHub Pages på nedenstående link:
+HTML-indholdet er udstilles som GitHub Pages* på nedenstående link:
 https://digst.github.io/IT-System-AP/SYS-AP/docs/
+
+*Udstilling via GitHub Pages kan aktiveres via reposisoriets Settings (scroll ned til GitHub Pages)
