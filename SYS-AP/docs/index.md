@@ -40,7 +40,7 @@ Boilerplate: copyright no, conformance no, abstract no
 Shortname: sys-ap
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
-Repository: digst/trust
+Repository: digst/IT-System-AP/tree/master/SYS-AP
 Inline Github Issues: full
 Logo: digst...
 </pre>
