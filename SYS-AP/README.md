@@ -1,5 +1,5 @@
 
-# SYS-AP
+# SYS-AP (being updated)
 
 ## Basic Application Profile for IT System Description (DRAFT)
 
