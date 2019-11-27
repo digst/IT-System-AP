@@ -66,18 +66,18 @@ Kapitel 8 beskriver øvrige perspektiver ved anvendelsen af standarden, herunder
 
 Bilagene kan inddeles i tre kategorier. Bilag A viser de klassifikationer/kontrollerede udfaldsrum, der anvendes i standarden, Bilag B og C giver skabeloner og vejledning til udfyldelse af oplysninger om it-systemer, og Bilag D-G omhandler den bagvedliggende begrebs- og datamodel.
 
-|
+
 
 1\. Introduktion
 ================
 
- |
-|
+
+
 
 Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer. Standarden omfatter basisoplysninger om it-systemer, som fx it-systemnavn, it-systemejer, anvendelsesformål, ibrugtagningsdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om it-systemer på en effektiv måde. 
 
- |
-|  |
+
+
 
 1.1 Formål
 ----------
@@ -102,20 +102,20 @@ Denne profil anvender fx kernemodeller til beskrivelse af it-system ([SYS](http:
 
 Basisprofilen og arkivprofilen er blevet udarbejdet på baggrund af research- og udviklingsaktiviteter kombineret med feedback fra og sparring med en projektgruppe med medlemmer fra følgende interessentorganisationer: Rigsarkivet, KL, Danske Regioner, Organisationen Danske Arkiver, OS2Kitos og Digitaliseringsstyrelsen med repræsentanter fra Ministeriernes Kontor for it-styring og Center for Teknologi og Datastrategi. I forbindelse med researchaktiviteterne er flere eksisterede modeller og værktøjsunderstøttelse til registrering af it-systemer undersøgt nærmere, fx Model for porteføljestyring af statslige it-systemer, OS2Kitos og Rigsarkivets anmeldelses- og tilsynsskemaer. Læs mere om dette i Mapning til eksisterende modeller.
 
-|
 
-|
+
+
 
 2\. Standardens anvendelse og afgrænsning
 =========================================
 
- |
-|
+
+
 
 Basisprofilen danner grundlag for fællesoffentlig deling af oplysninger om it-systemer via emne- eller områdespecifikke anvendelsesprofiler. De specifikke profiler etableres med udgangspunkt i basisprofilen og efter behov.
 
- |
-|  |
+
+
 
 2.1 Afgrænsning
 ---------------
@@ -188,18 +188,18 @@ afhængigheder identificeres?*
 
 o *Hvilke it-systemer indeholder fortrolige eller personfølsomme data?*
 
-|
+
 
 3\. Udfordringer
 ================
 
- |
-|
+
+
 
 Etableringen af et fælles sprog kan danne grundlag for effektiv udveksling af data om it-systemer, men standardisering har også nogle iboende udfordringer og kræver et overblik over eksisterende begreber og indfaldsvinkler
 
- |
-|  |
+
+
 
 3.1 Forskellige indfaldsvinkler
 -------------------------------
@@ -218,13 +218,13 @@ Formål, detaljeringsgrad eller granularitet og relevante klassifikationer skal 
 4\. Centrale begreber
 =====================
 
- |
-|
+
+
 
 Begrebet 'it-system' udgør det centrale element i denne standard og defineres bredt for at kunne favne mange anvendelser. Ved at koble dette til relevante klassifikationer bliver det muligt med standarden at indsnævre mængden af de it-systemer, der skal beskrives.
 
- |
-|  |
+
+
 
 4.1 System, informationssystem, it-system og implementering
 -----------------------------------------------------------
@@ -234,12 +234,12 @@ Det bemærkes også, at *"Et system er i denne sammenhæng menneskeskabt og best
 
 Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation af information, har vi at gøre med informationssystemer, og når (computer)-teknologi anvendes til at behandle disse informationer eller data, har vi at gøre med it-systemer[[5]](file:///C:/Users/b025870/Desktop/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil_CLA.docx#_ftn5).
 
-|
+
 
 Begrebet ***it-system* **defineres derfor i denne standard som\
 *"system, der består af digitale informationsteknologier".*  
 
- |
+
 
 Definitionen er bevist holdt meget bredt favnende for at kunne dække de mange definitioner på it-system, som standardarbejdet har mødt i offentligt regi. Eksempelvis defineres it-system i 'Model for porteføljestyring af statslige it-systemer' med teksten:
 
@@ -283,18 +283,18 @@ Hvis vi eksempelvis har systemet 'SuperSystem X', der eksisterer som 'SuperSyste
 
 For at dække dette behov anvender basisprofilen klassen ***produktserie.***  
 
-|
+
 
 5\. Standardens emnemæssige relationer
 ======================================
 
- |
-|
+
+
 
 I det følgende gives en oversigt over standardens potentielle emnemæssige relationer og en beskrivelse af hvert underliggende emneområde
 
- |
-|  |
+
+
 
 It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De helt grundlæggende kerneinformationer ses i midten af figuren herunder, og de øvrige otte emneområder afspejler arkitekturprincipperne fra rammearkitekturen: styring, strategi, jura, sikkerhed, opgaver, information, applikation og infrastruktur, som beskrives i Hvidbog om fællesoffentlig digital arkitektur (FDA)[[7]](file:///C:/Users/b025870/Desktop/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil_CLA.docx#_ftn7) .
 
@@ -419,18 +419,18 @@ It-systemer kan være taget i anvendelse i forskellige miljøer iht. systemets u
 
 I en myndigheds interne it-systemoverblik er det i forbindelse med drift relevant at beskrive de relationer, som it-systemer og dets applikationskomponenter har til fx specifikke softwareprodukter, hardwareprodukter, servere, databaser mv, men her ligger fokus på de oplysninger, der typisk udveksles, hvorfor disse infrastrukturoplysninger ikke indgår. 
 
-|
+
 
 6\. Fælles datamodel og udvekslingsformat
 =========================================
 
- |
-|
+
+
 
 Denne standard præsenterer et fælles udvekslingsformat til deling af oplysninger om it-systemer.
 
- |
-|  |
+
+
 
 6.1 Fælles datamodel
 --------------------
@@ -470,18 +470,18 @@ I bilaget 'Skabelon til registrering i regneark' kan ses en visning af et sådan
 
 [https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx](https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx%20)
 
-|
+
 
 7\. Mapning til eksisterende modeller
 =====================================
 
- |
-|
+
+
 
 Som baggrund for udviklingen af denne standard er eksisterede modeller og værktøjsunderstøttelse til registrering af it-systemer blevet undersøgt.
 
- |
-|  |
+
+
 
 I dette kapitel refereres til en mapning til en række eksisterende modeller herunder bl.a. Kommunernes IT OverbliksSystem (OS2Kitos), Model for porteføljestyring af statslige it-systemer, Statens It Systemkort samt udvalgte oplysningstyper fra Rigsarkivets anmeldelses- og tilsynsskemaer.
 
@@ -545,12 +545,12 @@ Den overordnede mapning går her ikke på egenskaberne, men på klasserne. Det p
 
 I den Fællesoffentlige Digitale Arkitektur (FDA) indgår grundlæggende arkitekturperspektiver, som udgør de tematiske emneområder og kapitler i denne standard. Dog er der pt. ikke medtaget oplysningstyper under perspektivet 'Strategi'.
 
-|
+
 
 8\. Referencer
 ==============
 
- |
+
 
 Standarder
 
