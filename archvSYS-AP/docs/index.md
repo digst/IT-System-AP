@@ -487,15 +487,6 @@ Juridisk kilde: https://www.retsinformation.dk/eli/lta/2015/266 \
 Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/183 \
 Kilde: https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer \
 
-
-| Foretrukken term | Definition |
-| ------------- | ------------- |
-| **kommune** | *mindste offentlige forvaltningsenhed, der styres af en kommunalbestyrelse som bekendtgjort i kommunebestyrelsesloven*|
-| **region**  | *regional forvaltningsenhed, der styres af et regionsråd, og som er bekendtgjort i regionsloven*|
-| **statslig myndighed** | *statslig forvaltningsenhed, som administrerer lovgivning eller forvaltning af et bestemt område*|
-|**offentlig selvejende institution**|*selvejende institutioner, foreninger, fonde m.v., der 1) er oprettet ved lov eller i henhold til lov, og 2) er oprettet på privatretligt grundlag, og som udøver offentlig virksomhed af mere omfattende karakter og er undergivet intensiv offentlig regulering, intensivt offentligt tilsyn og intensiv offentlig kontrol*|
-
-
 <dl>
   <dt>kommune</dt><dd>mindste offentlige forvaltningsenhed, der styres af en kommunalbestyrelse som bekendtgjort i kommunebestyrelsesloven</dd>
   <dt>region</dt><dd>regional forvaltningsenhed, der styres af et regionsråd, og som er bekendtgjort i regionsloven</dd>
