@@ -35,9 +35,11 @@ Status: LD
 URL: http://github.com/digst/IT-System-AP/archvSYS-AP/docs/index.md
 Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
 
-Abstract: 
+Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: archvSYS-AP
+Revision 1.0.0
+Date: 2019-12-05
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/IT-System-AP/tree/master/archvSYS-AP
@@ -50,7 +52,7 @@ Logo: digst...
 
 Version 1.0.0
 
-November 2019
+December 2019
 
 
 
