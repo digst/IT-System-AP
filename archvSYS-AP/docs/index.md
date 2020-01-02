@@ -28,22 +28,6 @@
     margin: 18px 0px 18px 0px;
 }
 
-dl {border-bottom:1px solid #888}	
-dl:after {content:"";display:table;clear:both;}		
-dt {
-    float: left;
-    width: 11%;
-    text-align: left;
-    padding: .25em;
-    clear: left;
-}
-
-dd {
-    float: left;
-    width: 60%;
-    padding: .25em 0;
-}
-
 	
 	
 /* style til egne og andres definitioner rød/blå*/
@@ -58,8 +42,6 @@ Editor: Rigsarkivet
 Editor: KL
 Editor: anske Regioner
 Editor: Organisationen Danske Arkiver
-
-
 Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 Boilerplate: copyright no, conformance no, abstract yes
 Shortname: archvSYS-AP
@@ -81,7 +63,7 @@ December 2019
 
 
 
-Læsevejledning:
+**Læsevejledning:**
 
 Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 
@@ -432,7 +414,7 @@ Bilag A: Overblik over relevante klassifikationer
 
 ### Klassifikation FORM:
 - Distribution:[http://www.form-online.dk/](http://www.form-online.dk/soegning)
-Se de overordnede emner herunder:
+	Se de overordnede emner herunder:
 
 02	Internationale aftaler
 03	Udenrigstjeneste
@@ -471,7 +453,7 @@ Se de overordnede emner herunder:
 
 ### Klassifikation KLE:
 - Distribution:[http://www.kle-online.dk/](http://www.kle-online.dk/soegning)
-Se de overordnede emner herunder:
+	Se de overordnede emner herunder:
 
 00	Kommunens styrelse
 01	Fysisk planlægning og naturbeskyttelse
