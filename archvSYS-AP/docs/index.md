@@ -99,14 +99,14 @@ Denne arkivprofil er baseret på en basisprofil til beskrivelse af it-systemer, 
 
 Standarden skal anvendes i forbindelse med afgivelse af systemoplysninger til Rigsarkivet. Standarden skal således standardisere afgivelsen og opdateringen af systemoplysninger i relation til regionernes og kommunernes arkivmæssige forpligtelser. Derudover vil standarden også blive anvendt ved kommende tilsyn på det statslige område. Anvendelsesprofilen indeholder netop det sæt af oplysningstyper, der er påkrævet i forbindelse med afgivelse af it-systemoplysninger til Rigsarkivet, samt yderligere anvendelsesspecifikke præciseringer.
 
-2.1 Rigsarkivets interesse i it-systemer
+Rigsarkivets interesse i it-systemer
 ----------------------------------------
 
 Rigsarkivet vil anvende standarden i forbindelse med tilsyn med offentlige myndigheders it-systemer. Det betyder, at myndighederne ved at opmærke deres systemer med oplysningerne fra standarden vil få nemmere ved at besvare et tilsyn og kan få et overblik over, hvilke it-systemer hos dem som indeholder bevaringsværdige data. Det gør det lettere at sikre, at de arkivmæssige forpligtelser overholdes.
 
 En udfordring for brug af standarden og for afgivelse af oplysninger er de tilfælde, hvor et it-system ikke bruges, som det er tiltænkt. Det kan både medføre, at et system, som normalt vil skulle bevares, alligevel ikke indeholder bevaringspligtige data, men også betyde, at et system, som normalt ikke skal arkiveres, vil indeholde bevaringspligtige data. Med standarden kan det registreres, hvilke typer af oplysninger der indgår i systemerne, hvorved det er muligt at identificere bevaringspligtige data.
 
-2.2 Modenhed ift. beskrivelse af processer, services og datasæt
+Modenhed ift. beskrivelse af processer, services og datasæt
 ---------------------------------------------------------------
 
 Et it-system yder en bestemt it-servicefor at understøtte en forretningsproces, og i den forbindelse skabes der ofte datasæt i den offentlige forvaltning.
@@ -117,13 +117,13 @@ Rigsarkivet har brug for at kunne identificere arkiveringspligtige datasæt på 
 
 Der kan være perspektiver i, at myndigheder fremover vedligeholder et overblik over datasæt, forretningsprocesser og services med en kobling til understøttende it-systemer, og således at dialogen omkring arkivering kan begynde dér. Systemoverblikket skal kunne samarbejde med de mest udbredte overblikssystemer, som myndighederne allerede har[[1]](https://euangoddard.github.io/clipboard2markdown/#_ftn1), således at de ikke skal vedligeholde flere overblik.
 
-3\. Centrale begreber
+Centrale begreber
 =====================
 
 Begrebet 'it-system' udgør det centrale element i denne standard, men dette specialiseres og kobles til relevante klassifikationer for at indsnævre den mængde af it-systemer, der skal afgives oplysninger om ifm. arkivering
 
 
-3.1 System, informationssystem og it-system
+System, informationssystem og it-system
 -------------------------------------------
 
 Et ***system*** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i ISO/IEC 15288[[2]](https://euangoddard.github.io/clipboard2markdown/#_ftn2).
@@ -158,7 +158,7 @@ Hvornår er der tale om et nyt it-system?
 I forhold til ibrugtagningen af et it-system i en organisation kan det i visse tilfælde være svært at vurdere, hvornår der er tale om at organisationen overgår fra ét it-system til et andet, eksempelvis ved overgangen fra én version af et kommercielt produkt til en anden version. Her kan vurderingen eventuelt tage udgangspunkt i, om it-systemet *leverer en anden service* end den oprindelige, hvilket ofte er forbundet med etableringen af en ny kontrakt med rettighedshaveren af det kommercielle produkt. Ny kontrakt med rettighedshaveren kan altså ofte betyde nyt it-system, modsat løbende opdateringer og fejlrettelser til kørende it-systemer, men dette skal undersøges nøje for det konkrete it-system. I forhold til databærende systemer kan det også være relevant at se på, om fx hele den bagvedliggende databasestruktur er skiftet ud.
 
 
-4\. Standardens emneområder
+Standardens emneområder
 ===========================
 
 I det følgende gives en oversigt over standardens omfang og kapabilitet
@@ -172,12 +172,12 @@ Disse otte emner dækker bredt, og for at dække en specifik anvendelseskontekst
 Figur 4.1: Illustration af standardens emneområder\
 Markeringen af emnerne 'styring', 'opgaver' og 'information' og 'sikkerhed' i figuren ovenfor skal illustrere, at disse fire områder er definerende for arkivprofilens anvendelse til afgivelse af oplysninger om it-systemer til Rigsarkivet.
 
-4.1 Afgivelse af it-systemoplysninger
+Afgivelse af it-systemoplysninger
 -------------------------------------
 
 Når der skal afgives oplysninger om it-systemer, som en given myndighed ***anvender***, angives ***myndighedens navn*** samt den e-mailadresse, hvormed myndigheden primært kan kontaktes (***hovedmailadresse***). Derudover angives en ***myndighedstype***, dvs. en kategorisering af offentlige organisationer ift. styringsniveau (region, kommune, statslig myndighed, offentlig selvejende institution)[[6]](https://euangoddard.github.io/clipboard2markdown/#_ftn6). Indberetningen forsynes også med en datoangivelse for, hvornår oplysningerne blev indberettet (***afgivelsesdato***). Det er den dataansvarlige myndighed, der er forpligtet til at angive it-systemoplysninger til Rigsarkivet, jf. afsnittet Styring.
 
-4.2 Kerneinformation
+Kerneinformation
 --------------------
 
 Et it-system forsynes med en ***identifikator*** (et ID), der entydigt udpeger det konkrete it-system. Et it-system tilføjes en eller flere navne. Et af navnene vil være it-systemets primære eller ***foretrukne navn,*** men andre, fx kaldenavne, kan angives som ***alternative navne.***
@@ -194,7 +194,7 @@ For at kunne identificere, hvilken version af softwareproduktet der er taget i a
 
 It-systemer kan være taget i anvendelse i forskellige miljøer iht. systemets udviklingsforløb[[8]](https://euangoddard.github.io/clipboard2markdown/#_ftn8), fx udvikling, afprøvning, præproduktion, produktion, se klassifikationen ***it-miljøtype*** i Bilag A. I forhold til arkivering er kun instanser af it-systemer i produktion relevante.
 
-4.3 Opgaver
+Opgaver
 -----------
 
 Et it-system yder en given it-service, som understøtter forretningens opgaver.
@@ -215,7 +215,7 @@ Kommunale it-systemer kan tilknyttes én eller flere specifikke kommunale sagsom
 
 Når en organisation skifter et it-system ud med et andet it-system til varetagelse af samme funktion, kan det tidligere it-system eksplicit angives som et såkaldt **forgængersystem,** se også afsnit om arkivering og datakonvertering fra sådanne forgængersystemer.
 
-4.4 Styring
+Styring
 -----------
 
 Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter. Aktørerne kan være personer eller organisationer, men det anbefales, i det omfang det er muligt, ikke at registrere oplysninger om fysiske personer men derimod den relevante medarbejderrolle eller organisatoriske enhed.
@@ -228,7 +228,7 @@ For databærende it-systemer skal den ***dataansvarlige*** aktør også angives,
 
 Et it-system kan dokumenteres ved hjælp af forskellige dokumenter, der hver har sit formål og målgruppe, fx arkitekturdokumentation, installationsvejledning og slutbrugervejledning.
 
-4.5 Information
+Information
 ---------------
 
 De data, som et instantieret it-system ***skaber,*** kan betragtes som en specifik fysisk **repræsentation** af et ***datasæt*** [[13]](https://euangoddard.github.io/clipboard2markdown/#_ftn13), og beskrivelsen af datasæt og datasætrepræsentationerfølger i denne sammenhæng W3Cs Data Catalogue Vocabulary (DCAT)[[14]](https://euangoddard.github.io/clipboard2markdown/#_ftn14). Både det (logiske) datasæt og dets (fysiske) repræsentationer kan forsynes med en ***titel.***
@@ -251,7 +251,7 @@ Det kan også angives, om der tidligere er udarbejdet en arkiveringsversion af d
 
 En ***arkiveringsfrekvens* **kan også registreres, dvs. den frekvens, med hvilken en myndighed fremstiller arkiveringsversion af et givet datasæt i et it-system.
 
-4.6 Sikkerhed
+Sikkerhed
 -------------
 
 Emnet sikkerhed kan vedrøre mange forskellige aspekter, fx informationssikkerhed, persondatasikkerhed, forretnings- og samfundskritikalitet og fortrolighed.
@@ -266,13 +266,13 @@ Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift.
 
 
 
-5\. Fælles datamodel og udvekslingsformat
+Fælles datamodel og udvekslingsformat
 =========================================
 
 
 Denne standard præsenterer et udvekslingsformat i to repræsentationer til deling af oplysninger om it-systemer.
 
-5.1 Fælles datamodel
+Fælles datamodel
 --------------------
 
 Basisprofilens datamodel udgør den fælles specifikation, som anvendes og udvides i arkivprofilens datamodel.
@@ -285,7 +285,7 @@ Via nedenstående link findes der også en online oversigt over modellens elemen
 
 - Link til oversigt over modellens elementer: [https://data.gov.dk/model/profile/itsystemap.rdf](https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&sheet=transform2RDFreport_da-en.xsl)
 
-5.2 Skabelon til registrering i regneark
+Skabelon til registrering i regneark
 ----------------------------------------
 
 Der er blevet udarbejdet en skabelon til registrering af oplysninger om it-systemer i et regneark. Overskrifterne vil svare til egenskaberne, som de er præsenteret i denne standard, og hver element vil entydigt kunne mappes til den bagvedliggende datamodel. Dette betyder også, at det vil være muligt fx at konvertere data eksporteret i csv-format til et maskinfortolkeligt format.
@@ -296,7 +296,7 @@ I bilaget 'Skabelon til registrering i regneark' kan ses en visning af et sådan
 
 [ https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx ](https://data.gov.dk/document/itsystemspecification/v1/template/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx)
 
-5.3 Maskinfortolkeligt format
+Maskinfortolkeligt format
 -----------------------------
 
 Hvis data skal deles på tværs, bør det være *digitalt understøttet* i de systemer, der anvendes til registrering af systemoplysninger. Systemerne bør bygge på samme logik og standard, så systemerne er i stand til at udveksle data om it-systemer på tværs af organisatoriske skel. Det kan lade sig gøre, hvis data er maskinfortolkelige. Datamodellen er derfor udtrykt med UML med en bagvedliggende semantik med Resource Description Framework (RDF), der kan fortolkes af både mennesker og maskiner. Alle elementerne i datamodellen er derfor defineret inden for rammerne af RDF og har entydig identifikation, der kan anvendes direkte som metadatabeskrivelse af data. Data udtrykt med det maskinlæsbare udvekslingsformat kan også let valideres op imod den bagvedliggende datamodel og dermed sikre højere datakvalitet i de registrerede data.
@@ -307,7 +307,7 @@ Godkendelsen af denne arkivprofil omfatter ikke krav om anvendelse af det maskin
 
 |
 
-6\. Referencer
+Referencer
 ==============
 
 Standarder
@@ -386,7 +386,7 @@ Retskilder og tilhørende vejledninger:
 
 - GDPR (generel forordning om databeskyttelse):\<https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32016R0679&from=EN>
 
-7\. Bilag
+Bilag
 =========
 
 
