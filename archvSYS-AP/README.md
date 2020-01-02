@@ -1,5 +1,8 @@
 IT-System-AP (National Archives Profile DRAFT) 
 ===== 
+HTML-indholdet er udstillet som GitHub Pages[1] her: https://digst.github.io/IT-System-AP/archvSYS-AP/docs/
+
+
 National Archives Application Profile for IT System Description - under udvikling
 
 This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing IT systems for the National Archives. 
