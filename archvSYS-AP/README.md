@@ -1,5 +1,5 @@
-#archvSYS-AP 
-## (Standard for beskrivelse af it-systemer - arkivprofil) 
+# archvSYS-AP 
+## Standard for beskrivelse af it-systemer - arkivprofil
 
 Læs specifikationen archvSYS-AP her: https://digst.github.io/IT-System-AP/archvSYS-AP/docs/
 
