@@ -16,5 +16,5 @@ Find ITSYSTEM-AP-NATIONALARCHIVES Shapes Graph samt Example Data Graphs (i RDF-X
 
 
 ## UML Diagram
-![alt text](https://github.com/digst/IT-System-AP/blob/master/NationalArchivesProfile/IT-System-AP-National-Archives-Profile-v0.8.6.png "UML")
+![UML Diagram](https://github.com/digst/IT-System-AP/blob/master/archvSYS-AP/docs/img/Bilag-E-UML-diagram-Arkivprofil.png "UML")
 
