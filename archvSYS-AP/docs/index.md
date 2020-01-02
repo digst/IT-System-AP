@@ -62,6 +62,8 @@ Arkivprofilen anvender dele af og udvider en basisprofil 'Standard for beskrivel
 
 ![Figur: Forholdet mellem profilerne](img/Figur0-1-Forholdet_mellem-profilerne.png) 
 
+<img src="img/Figur0-1-Forholdet_mellem-profilerne.png" alt="Forholdet mellem profilerne" title="Forholdet mellem profilerne" width="100"/>
+
 Kapitel 1 introducerer standardens formål, baggrund og den metode, hvormed standarden er blevet udarbejdet. Kapitel 2 beskriver *anvendelse* af standarden til myndigheders afgivelse af oplysninger om it-systemer i forbindelse med arkivering.
 
 Kapitel 3 omhandler standardens helt centrale begreber, såsom 'it-system' og 'databærende it-system', og Kapitel 4 præsenterer indledningsvist en oversigt over standardens  underliggende emneområder, og hver sektion i dette kapitel dykker ned i et af emneområderne.  I Kapitel 3 og 4 vil udvalgte begreber være markeret med **fed skrifttype** -- disse modelleres i den underliggende datamodel som klasser eller egenskaber og går også igen i hhv. regnearksskabelon og UML-model, som findes i bilag.
