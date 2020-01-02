@@ -392,6 +392,110 @@ Bilag
 =========
 
 
+
+
+Bilag A: Overblik over relevante klassifikationer
+-------------------------------------------------
+
+**Klassifikation KLE:** Distribution:[http://www.kle-online.dk/](http://www.kle-online.dk/soegning)
+**Klassifikation FORM:** Distribution:[http://www.form-online.dk/](http://www.form-online.dk/soegning)
+
+Se de overordnede emner herunder:
+
+FORM:
+02	Internationale aftaler
+03	Udenrigstjeneste
+05	Samfundsstruktur
+06	Samfundsøkonomi, samfundsdigitalisering og statistik
+08	Borgerskab
+10	Uddannelse og undervisning
+12	Forskning
+14	Arbejdsmarked
+16	Kultur
+17	Fritid og idræt
+18	Kirke
+20	Sundhed
+24	Dagtilbud
+26	Social service og omsorg
+30	Skatter og afgifter
+34	Erhverv
+37	Miljø
+38	Natur og klima
+40	Politi
+42	Retspleje og domstole
+44	Straffuldbyrdelse
+46	Forsvar
+47	Redningsberedskab
+52	Fysisk planlægning og geodata
+54	Ejendomme og byggeri
+56	Energi- og vandforsyning
+58	Trafikinfrastruktur
+59	Trafik og transport
+60	Myndighedens personale og frivillige
+62	Myndighedens bygninger og arealer
+63	Myndighedens driftsmateriel, varer og tjenesteydelser
+65	Myndighedens kommunikation og dokumentation
+67	Myndighedens økonomi
+68	Myndighedens it
+
+
+KLE:
+00	Kommunens styrelse
+01	Fysisk planlægning og naturbeskyttelse
+02	Byggeri
+03	Boliger
+04	Parker, fritids-/idrætsanlæg og landskabspleje mv.
+05	Veje og trafik
+06	Spildevand og vandløb
+07	Affald og genanvendelse
+08	Havne og lufthavne
+09	Miljøbeskyttelse
+13	Forsyning
+14	Beredskab
+15	Arbejdsmarked og beskæftigelsesindsats
+17	Folkeskoleundervisning
+18	Folkeoplysning og ungdomsskoler
+19	Kulturhistoriske institutioner
+20	Kulturvirksomhed
+21	Biblioteker
+22	Regulering af private erhverv
+23	Borgerlige forhold
+24	Erhvervsforhold
+25	Beskatning
+27	Social service
+28	Dagtilbud
+29	Sundhed
+30	Andre myndigheders opgaver
+32	Kontante ydelser
+54	Uddannelse
+81	Kommunens personale
+82	Kommunens ejendomme og lokaler
+83	Kommunens driftsmidler og inventar
+84	Offentlige valg
+85	Kommunens administrative systemer
+86	Kommunens selvforsyning og fremstillingsvirksomhed
+87	Kommunens arbejdsmiljø
+88	Kommunens indkøb og udbud
+
+
+
+**Klassifikation Sagsområder:**
+Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og  'Bekendtgørelse om bevaring og kassation af arkiva-lier i regionerne'  
+Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10 
+Juridisk kilde: https://www.retsinformation.dk/eli/lta/2003/591 
+Juridisk kilde: https://www.retsinformation.dk/eli/lta/2015/266 
+Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/183
+Kilde: https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer/ 
+
+
+| Foretrukken term | Definition |
+| ------------- | ------------- |
+| **kommune** | *mindste offentlige forvaltningsenhed, der styres af en kommunalbestyrelse som bekendtgjort i kommunebestyrelsesloven*|
+| **region**  | *regional forvaltningsenhed, der styres af et regionsråd, og som er bekendtgjort i regionsloven*|
+| **statslig myndighed** | *statslig forvaltningsenhed, som administrerer lovgivning eller forvaltning af et bestemt område*|
+|**offentlig selvejende institution**|*selvejende institutioner, foreninger, fonde m.v., der 1) er oprettet ved lov eller i henhold til lov, og 2) er oprettet på privatretligt grundlag, og som udøver offentlig virksomhed af mere omfattende karakter og er undergivet intensiv offentlig regulering, intensivt offentligt tilsyn og intensiv offentlig kontrol*|
+
+
 Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 
 
