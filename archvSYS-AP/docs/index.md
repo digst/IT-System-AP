@@ -34,6 +34,11 @@ Title: Standard for beskrivelse af it-systemer - Arkivprofil
 Status: LD
 URL: http://github.com/digst/IT-System-AP/archvSYS-AP/docs/index.md
 Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
+Editor: Rigsarkivet
+Editor: KL
+Editor: anske Regioner
+Editor: Organisationen Danske Arkiver
+
 
 Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 Boilerplate: copyright no, conformance no, abstract no
@@ -66,9 +71,9 @@ Arkivprofilen anvender dele af og udvider en basisprofil 'Standard for beskrivel
 
 Kapitel 1 introducerer standardens formål, baggrund og den metode, hvormed standarden er blevet udarbejdet. Kapitel 2 beskriver *anvendelse* af standarden til myndigheders afgivelse af oplysninger om it-systemer i forbindelse med arkivering.
 
-Kapitel 3 omhandler standardens helt centrale begreber, såsom 'it-system' og 'databærende it-system', og Kapitel 4 præsenterer indledningsvist en oversigt over standardens  underliggende emneområder, og hver sektion i dette kapitel dykker ned i et af emneområderne.  I Kapitel 3 og 4 vil udvalgte begreber være markeret med **fed skrifttype** -- disse modelleres i den underliggende datamodel som klasser eller egenskaber og går også igen i hhv. regnearksskabelon og UML-model, som findes i bilag.
+Kapitel 3 omhandler standardens helt centrale begreber, såsom "it-system" og "databærende it-system", og Kapitel 4 præsenterer indledningsvist en oversigt over standardens  underliggende emneområder, og hver sektion i dette kapitel dykker ned i et af emneområderne.  I Kapitel 3 og 4 vil udvalgte begreber være markeret med **fed skrifttype** -- disse modelleres i den underliggende datamodel som klasser eller egenskaber og går også igen i hhv. regnearksskabelon og UML-model, som findes i bilag.
 
-Kapitel 5 beskriver kort selve datamodellen. For en dybere gennemgang henvises til det selvstændige dokument 'Anvendelsesprofil for beskrivelse af it-systemer -- Arkivprofil', som er selve datastandarden bag dette dokument målrettet dataarkitekter. Dette kapitel fortæller også, hvordan beskrivelser af it-systemer udarbejdet i henhold til standarden kan udveksles -- dels via regneark - dels via et maskinfortolkeligt format.  
+Kapitel 5 beskriver kort selve datamodellen og henviser til yderligere information. Dette kapitel fortæller også, hvordan beskrivelser af it-systemer udarbejdet i henhold til standarden kan udveksles -- dels via regneark - dels via et maskinfortolkeligt format.  
 
 Bilagene kan inddeles i tre kategorier. Bilag A viser de klassifikationer/kontrollerede udfaldsrum, der anvendes i standarden, Bilag B-E giver eksempler på skabeloner/vejledning til udfyldelse af oplysninger om it-systemer, og Bilag F-I omhandler den bagvedliggende begrebs- og datamodel.
 
@@ -584,68 +589,68 @@ Bilag C: Eksempel på maskinlæsbart format
 (Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD) 
 
 EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)
-~~~
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix sys: <https://data.gov.dk/model/core/itsystem#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix archv: <https://data.gov.dk/model/core/digitalarchival#> .
-@prefix infra: <https://data.gov.dk/model/core/infrastructure#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcat-dk: <https://data.gov.dk/model/core/dcat-dk#> .
+`
+	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+	@prefix dc: <http://purl.org/dc/terms/> .
+	@prefix sys: <https://data.gov.dk/model/core/itsystem#> .
+	@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+	@prefix archv: <https://data.gov.dk/model/core/digitalarchival#> .
+	@prefix infra: <https://data.gov.dk/model/core/infrastructure#> .
+	@prefix dcat: <http://www.w3.org/ns/dcat#> .
+	@prefix dcat-dk: <https://data.gov.dk/model/core/dcat-dk#> .
 
-<https://EXAMPLEURI1>
-  a <https://data.gov.dk/model/core/itsystem#ITSystem> ;
-  skos:prefLabel "Acadre "@da ;
-  skos:altLabel "Acadre CM"@da ;
-  dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ;
-  sys:inUseFromDate "2019-01-01"^^xsd:date ;
-  sys:hasApplicationPurposeFORM <http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
-  sys:hasApplicationPurposeKLE <http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
-  archv:applicableCaseArea <https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager> ;
-  sys:hasTargetGroup <https://data.gov.dk/model/classification/itsystemcriticalitytype#employees> ;
-  sys:hasCriticality <https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness> ;
-  sys:hasAquisitionType <https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf> ;
-  infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
-  archv:containsData True ;
-  archv:containsDigitalDocuments True ;
-  dc:hasPart <https://EXAMPLEURI2> .
+	<https://EXAMPLEURI1>
+	  a <https://data.gov.dk/model/core/itsystem#ITSystem> ;
+	  skos:prefLabel "Acadre "@da ;
+	  skos:altLabel "Acadre CM"@da ;
+	  dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ;
+	  sys:inUseFromDate "2019-01-01"^^xsd:date ;
+	  sys:hasApplicationPurposeFORM <http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
+	  sys:hasApplicationPurposeKLE <http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
+	  archv:applicableCaseArea <https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager> ;
+	  sys:hasTargetGroup <https://data.gov.dk/model/classification/itsystemcriticalitytype#employees> ;
+	  sys:hasCriticality <https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness> ;
+	  sys:hasAquisitionType <https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf> ;
+	  infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
+	  archv:containsData True ;
+	  archv:containsDigitalDocuments True ;
+	  dc:hasPart <https://EXAMPLEURI2> .
 
-<https://EXAMPLEURI2>
-  a dcat:Dataset ;
-  dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
-  dcat-dk:personalDataCategory <https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ;
-  dc:description "Journalsager fra komnune x"@da ;
-  archv:archivalObligationType <https://data.gov.dk/model/classification/ArchivalObligationType#Archival> ;
-  archv:plannedArchiveType <https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod> ;
-  archv:plannedArchivalFrequency <https://data.gov.dk/model/classification/ArchivalFrequencyType#5> ;
-  archv:previousArchiving True .
+	<https://EXAMPLEURI2>
+	  a dcat:Dataset ;
+	  dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
+	  dcat-dk:personalDataCategory <https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ;
+	  dc:description "Journalsager fra komnune x"@da ;
+	  archv:archivalObligationType <https://data.gov.dk/model/classification/ArchivalObligationType#Archival> ;
+	  archv:plannedArchiveType <https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod> ;
+	  archv:plannedArchivalFrequency <https://data.gov.dk/model/classification/ArchivalFrequencyType#5> ;
+	  archv:previousArchiving True .
 
-<https://EXAMPLEURI3>
-  a sys:InstantiatedITSystem ;
-  sys:actsAs <https://data.gov.dk/model/classification/itenvironmenttype#Production> ;
-  sys:instantiationOf <https://EXAMPLEURI1> ;
-  sys:producesDataset <https://EXAMPLEURI4> ;
-  archv:latestArchiveInformationPackage [
-    a archv:ArchiveInformationPackage ;
-    dc:hasPart <https://EXAMPLEURI5>
-  ] .
+	<https://EXAMPLEURI3>
+	  a sys:InstantiatedITSystem ;
+	  sys:actsAs <https://data.gov.dk/model/classification/itenvironmenttype#Production> ;
+	  sys:instantiationOf <https://EXAMPLEURI1> ;
+	  sys:producesDataset <https://EXAMPLEURI4> ;
+	  archv:latestArchiveInformationPackage [
+	    a archv:ArchiveInformationPackage ;
+	    dc:hasPart <https://EXAMPLEURI5>
+	  ] .
 
-<https://EXAMPLEURI4>
-  a dcat:Distribution ;
-  dc:issued "2019-02-01"^^xsd:date ;
-  dc:modified ""^^xsd:date .
+	<https://EXAMPLEURI4>
+	  a dcat:Distribution ;
+	  dc:issued "2019-02-01"^^xsd:date ;
+	  dc:modified ""^^xsd:date .
 
-<https://EXAMPLEURI5>
-  a dcat:Distribution ;
-  dc:issued "2002"^^xsd:date ;
-  dc:modified "2007"^^xsd:date .
-~~~
+	<https://EXAMPLEURI5>
+	  a dcat:Distribution ;
+	  dc:issued "2002"^^xsd:date ;
+	  dc:modified "2007"^^xsd:date .
+`
 
 
 EKSEMPELOUTPUT I RDF/XML
 -------------------------------------------------
-~~~
+`
 	<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -726,7 +731,7 @@ EKSEMPELOUTPUT I RDF/XML
 		</archv:latestArchiveInformationPackage>
 	</rdf:Description>
 	</rdf:RDF>
-~~~
+`
 
 Bilag D: Om datamodellen
 -------------------------------------------------
