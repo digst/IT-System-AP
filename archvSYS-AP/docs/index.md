@@ -489,6 +489,16 @@ Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgøre
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/183 
 - Kilde: https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer 
 
+
+**Klassifikation: Offentlige organisationstyper**
+Klassifikation, der består af typer af offentlige organisationer set i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05 
+- Juridisk kilde: https://www.retsinformation.dk/eli/lta/2019/47 
+- Juridisk kilde: https://www.retsinformation.dk/eli/lta/2017/319  
+- Juridisk kilde: https://www.retsinformation.dk/eli/lta/2006/653 
+- Juridisk kilde: https://www.retsinformation.dk/eli/lta/2014/433 
+- Distribution: https://data.gov.dk/concept/profile/PublicOrganisationTypes.rdf
+
 <dl>
   <dt>kommune</dt><dd>mindste offentlige forvaltningsenhed, der styres af en kommunalbestyrelse som bekendtgjort i kommunebestyrelsesloven</dd>
   <dt>region</dt><dd>regional forvaltningsenhed, der styres af et regionsråd, og som er bekendtgjort i regionsloven</dd>
@@ -496,6 +506,255 @@ Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgøre
   <dt>offentlig selvejende institution</dt><dd>selvejende institutioner, foreninger, fonde m.v., der 1) er oprettet ved lov eller i henhold til lov, og 2) er oprettet på privatretligt grundlag, og som udøver offentlig virksomhed af mere omfattende karakter og er undergivet intensiv offentlig regulering, intensivt offentligt tilsyn og intensiv offentlig kontrol</dd>	
 </dl>
 
+**Klassifikation: It-miljøtyper**
+Klassifikation, der består af typer af it-miljø, som et it-system kan instantieres i
+Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15 
+- Kilde: https://en.wikipedia.org/wiki/Deployment_environment 
+- Kilde: Statens-it Systemkort
+- Kilde: http://priocept.com/2018/01/30/software-environment-naming/
+- Kilde: https://docs.microsoft.com/en-us/biztalk/technical-guides/planning-the-development-testing-staging-and-production-environments
+- Distribution: https://data.gov.dk/concept/profile/ITEnvironmentTypes.rdf
+
+**Klassifikation: Personoplysningskategorier**
+Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05.12.60 
+- Juridisk kilde: http://data.europa.eu/eli/reg/2016/679/oj 
+- Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/502 
+- Kilde: https://www.datatilsynet.dk/media/6567/fortegnelse.pdf 
+- Kommentar: De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Bemærk, at oplysninger om strafbare forhold og per-sonnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger.
+- Distribution: https://data.gov.dk/concept/profile/PersonalDataCategories.rdf  
+
+**Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)**
+Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20 
+- Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338 
+- Distribution https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU.rdf
+
+
+**Klassifikation: Arkiveringspligttyper**
+Klassifikation, der består af typer af arkiveringspligt set i forhold til, om data skal bevares eller kasseres iht. gældende arkiveringsbestemmelser
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05 
+- Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201    
+
+
+**Klassifikation: Arkiveringsversionsperiodetyper**
+Klassifikation, der består af typer af arkiveringsperioder set i forhold til deres afgrænsning.
+Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en afgrænset periode eller ved af-sluttet arkivperiode 
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05
+- Juridisk kilde: https://www.retsinformation.dk/eli/lta/2010/1007     
+
+**Klassifikation: Arkivinstitutionstyper**
+Klassifikation, der består af typer af offentlige institutioner, der har til opgave at bevare arkivalier
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10 
+- Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201 
+- Kilde: https://ec.europa.eu/isa2/sites/isa/files/isa2_action_2017_01_standard_based_archival_data_manage-ment_final_report_v1.00.pdf 
+
+**Klassifikation: Konverteringsstatusser**
+Klassifikation, der består af statusser ift. konvertering set ud fra omfanget af et (manuelt eller automatisk) datakonverterings- og import forløb 
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05
+- Kilde: https://www.sa.dk/da/offentlig-forvaltning/ 
+
+
+Bilag B: Skabelon til registrering i regneark (arkivprofil)
+-------------------------------------------------
+
+Vejledning til udfyldelse af skabelon i regneark: 
+
+Regnearksskabelonen kan downloades her: 
+
+https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx
+
+Regnearket er et forsimplet forslag til, hvordan oplysningerne kan afgives i struktureret form til Rigsarkivet med anvendelse af det fælles sprog, som standarden etablerer.
+I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmiljø relevante og derud-over kun databærende it-systemer, hvor data er digitalt skabt af den offentlige forvaltning og dom-stolene. Bemærk, at denne forsimplede repræsentation alene giver mulighed for at beskrivelse et it-systems samlede dataindhold (og ikke samtlige datasætrepræsentationer)
+- it-system:  system, der består af digitale informationsteknologier
+- instantieret it-system:  fysisk instans af et it-system i et bestemt it-miljø
+- databærende it-system: instantieret it-system, der indeholder digitalt skabte data eller dokumenter
+
+
+
+Bilag C: Eksempel på maskinlæsbart format 
+-------------------------------------------------
+
+(Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD) 
+
+EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix sys: <https://data.gov.dk/model/core/itsystem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix archv: <https://data.gov.dk/model/core/digitalarchival#> .
+@prefix infra: <https://data.gov.dk/model/core/infrastructure#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcat-dk: <https://data.gov.dk/model/core/dcat-dk#> .
+
+<https://EXAMPLEURI1>
+  a <https://data.gov.dk/model/core/itsystem#ITSystem> ;
+  skos:prefLabel "Acadre "@da ;
+  skos:altLabel "Acadre CM"@da ;
+  dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ;
+  sys:inUseFromDate "2019-01-01"^^xsd:date ;
+  sys:hasApplicationPurposeFORM <http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
+  sys:hasApplicationPurposeKLE <http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
+  archv:applicableCaseArea <https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager> ;
+  sys:hasTargetGroup <https://data.gov.dk/model/classification/itsystemcriticalitytype#employees> ;
+  sys:hasCriticality <https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness> ;
+  sys:hasAquisitionType <https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf> ;
+  infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
+  archv:containsData True ;
+  archv:containsDigitalDocuments True ;
+  dc:hasPart <https://EXAMPLEURI2> .
+
+<https://EXAMPLEURI2>
+  a dcat:Dataset ;
+  dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
+  dcat-dk:personalDataCategory <https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ;
+  dc:description "Journalsager fra komnune x"@da ;
+  archv:archivalObligationType <https://data.gov.dk/model/classification/ArchivalObligationType#Archival> ;
+  archv:plannedArchiveType <https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod> ;
+  archv:plannedArchivalFrequency <https://data.gov.dk/model/classification/ArchivalFrequencyType#5> ;
+  archv:previousArchiving True .
+
+<https://EXAMPLEURI3>
+  a sys:InstantiatedITSystem ;
+  sys:actsAs <https://data.gov.dk/model/classification/itenvironmenttype#Production> ;
+  sys:instantiationOf <https://EXAMPLEURI1> ;
+  sys:producesDataset <https://EXAMPLEURI4> ;
+  archv:latestArchiveInformationPackage [
+    a archv:ArchiveInformationPackage ;
+    dc:hasPart <https://EXAMPLEURI5>
+  ] .
+
+<https://EXAMPLEURI4>
+  a dcat:Distribution ;
+  dc:issued "2019-02-01"^^xsd:date ;
+  dc:modified ""^^xsd:date .
+
+<https://EXAMPLEURI5>
+  a dcat:Distribution ;
+  dc:issued "2002"^^xsd:date ;
+  dc:modified "2007"^^xsd:date .
+
+
+
+EKSEMPELOUTPUT I RDF/XML
+-------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dc11="http://purl.org/dc/elements/1.1/"
+  xmlns:voaf="http://purl.org/vocommons/voaf#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dc="http://purl.org/dc/terms/" 
+  xmlns:dct="http://purl.org/dc/terms/"    
+  xmlns:dcat="http://www.w3.org/ns/dcat#" 
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:adms="http://www.w3.org/ns/adms#"
+  xmlns:cv="http://data.europa.eu/m8g/"
+  xmlns:eli="http://data.europa.eu/eli/ontology#"
+  xmlns:schema="http://schema.org/"
+  xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk#"  
+  xmlns:sys="https://data.gov.dk/model/core/itsystem#"
+  xmlns:archv="https://data.gov.dk/model/core/digitalarchival#"
+  xmlns:infra="https://data.gov.dk/model/core/infrastructure#"  > 
+
+<!-- IT-SYSTEM -->                    
+<rdf:Description rdf:about="https://EXAMPLEURI1">
+<rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#ITSystem"/>
+<skos:prefLabel xml:lang="da">Acadre </skos:prefLabel>
+<skos:altLabel xml:lang="da">Acadre CM</skos:altLabel>
+<dct:description xml:lang="da">Acadre anvendes i kommune X til sagsstyring og ledelsesrapporte-ring</dct:description>
+<sys:inUseFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</sys:inUseFromDate>
+<sys:hasApplicationPurposeFORM rdf:resource="http://www.form-online.dk/opgavenoegle/65/#65.50.05"/>
+<sys:hasApplicationPurposeKLE rdf:resource="http://www.kle-online.dk/emneplan/85/#_85.02.10"/>
+<archv:applicableCaseArea rdf:resource="https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager"/>
+<sys:hasTargetGroup rdf:resource="https://data.gov.dk/model/classification/itsystemcriticalitytype#employees"/>
+<sys:hasCriticality rdf:resource="https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness"/>
+<sys:hasAquisitionType rdf:resource="https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf"/>
+<infra:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM</infra:instanceOfProductInSeries>
+<archv:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True</archv:containsData>
+<archv:containsDigitalDocuments rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True</archv:containsDigitalDocuments>
+<dct:hasPart rdf:resource="https://EXAMPLEURI2"/>
+ </rdf:Description>
+ 
+<!-- IT-SYSTEMETS DATAINDHOLD (ET LOGISK DATASÆT)-->  
+<rdf:Description rdf:about="https://EXAMPLEURI2">
+<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+<dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x</dcat-dk:dataResponsibleOrganisation>
+<dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData"/>	
+<dct:description xml:lang="da">Journalsager fra komnune x</dct:description>	
+<archv:archivalObligationType rdf:resource="https://data.gov.dk/model/classification/ArchivalObligationType#Archival"/>
+<archv:plannedArchiveType rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod"/>
+<archv:plannedArchivalFrequency rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#5"/>
+<archv:previousArchiving rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True</archv:previousArchiving>
+</rdf:Description>
+
+<!-- IT-SYSTEMETS FYSISKE INSTANTIERING I ET IT-MILJØ --> 
+<rdf:Description rdf:about="https://EXAMPLEURI3">
+    <rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#InstantiatedITSystem"/>
+    <sys:actsAs rdf:resource="https://data.gov.dk/model/classification/itenvironmenttype#Production"/>
+    <sys:instantiationOf rdf:resource="https://EXAMPLEURI1"/>
+
+<!-- DET INSTANTIEREDE IT-SYSTEMS KONKRETE DATA-->	
+	<sys:producesDataset>
+        <rdf:Description rdf:about="https://EXAMPLEURI4">
+          <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-01</dct:issued>
+            <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+          </rdf:Description>
+		</sys:producesDataset>		
+<!-- DET INSTANTIEREDE IT-SYSTEMS SENESTE KONKRETE ARKIVERINGSVERSION-->		
+        <archv:latestArchiveInformationPackage>
+	<archv:ArchiveInformationPackage>
+	<dct:hasPart>
+          <rdf:Description rdf:about="https://EXAMPLEURI5">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002</dct:issued>
+            <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007</dct:modified>
+          </rdf:Description>
+	</dct:hasPart>
+	</archv:ArchiveInformationPackage>
+        </archv:latestArchiveInformationPackage>
+</rdf:Description>
+</rdf:RDF>
+
+
+Bilag D: Om datamodellen
+-------------------------------------------------
+Selve UML-modellerne er udstillet her : 
+https://data.gov.dk/document/itsystemspecification/v1/uml/
+
+
+Bilag E: UML-diagram: Arkivprofil
+-------------------------------------------------
+- Namespace: https://data.gov.dk/model/profile/itsystemap-archv# 
+- Modelnavn (label): Indmeldelse af it-systemoplysninger til Rigsarkivet
+- Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)
+- Versionnummer (versionInfo): 1.0.0
+- Seneste opdateringsdato (dateModified): 11-11-2019
+- Modelstatus (modelStatus): Development
+- Godkendelsesstatus (approvalStatus): Afventer godkendelse
+- Modelomfang (modelScope): Anvendelsesmodel
+- Forretningsområde (theme):  65.50.05.10 Sagsarkivering  
+- Kommentar (comment): Anvendelsesprofil for det sæt af oplysningstyper, der er påkrævet eller anbefalet ifm. afgivelse af it-systemoplysninger til Rigsarkivet 
+
+
+Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
+-------------------------------------------------
+- Namespace: https://data.gov.dk/concept/profile/itsystemap-archv/ 
+- Modelnavn (label): Begrebsliste til arkivprofilen
+- Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)
+- Versionnummer (versionInfo): 1.0.0
+- Seneste opdateringsdato (dateModified): 11-11-2019
+- Modelstatus (modelStatus): development
+- Godkendelsesstatus (approvalStatus): afventer godkendelse
+- Forretningsområde (theme):  65.50.05.10 Sagsarkivering  
+- Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/digitalarchival/ 
+- Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/
+- Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. afgivelse af oplysninger om it-systemer til Rigsarkivet. Bemærk, at denne anvendelsesorienterede begrebsliste udvælger og sammensætter begreber fra forskellige emneområder, se fx begrebsmodellen for it-system og begrebsmodellen for digital arkivering, som er udstillet online. 
 
 
 
