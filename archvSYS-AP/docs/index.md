@@ -40,7 +40,7 @@ URL: http://github.com/digst/IT-System-AP/archvSYS-AP/docs/index.md
 Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
 Editor: Rigsarkivet
 Editor: KL
-Editor: anske Regioner
+Editor: Danske Regioner
 Editor: Organisationen Danske Arkiver
 Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 Boilerplate: copyright no, conformance no, abstract yes
