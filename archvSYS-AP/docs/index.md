@@ -27,8 +27,27 @@
     padding: 6px;
     margin: 18px 0px 18px 0px;
 }
+	
+dl:after {content:"";display:table;clear:both;}		
+dt {
+    float: left;
+    width: 11%;
+    text-align: left;
+    padding: .25em;
+    clear: left;
+}
+
+dd {
+    float: left;
+    width: 60%;
+    padding: .25em 0;
+}
+
+	
+	
 /* style til egne og andres definitioner rød/blå*/
 </style>
+
 <pre class="metadata">
 Title: Standard for beskrivelse af it-systemer - Arkivprofil
 Status: LD
