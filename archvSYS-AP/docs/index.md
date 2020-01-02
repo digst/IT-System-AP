@@ -169,7 +169,7 @@ It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De grun
 
 Disse otte emner dækker bredt, og for at dække en specifik anvendelseskontekst vil det typisk være nødvendigt at udvide basisprofilen med oplysninger fra forskellige emneområder. I tillæg til de otte emneområder eksisterer et metalag med informa-tioner om myndighedens udveksling af disse oplysninger til et bestemt formål.
 
-<p align="center"><img src="img/Figur4-1.png" alt="Figur 4.1 Standardens emneområder" title="Figur 4.1 Standardens emneområder" width="600"/></p>
+<p align="center"><img src="img/Figur4-1-Illustration-af-standardens-emneomraader.png" alt="Figur 4.1 Standardens emneområder" title="Figur 4.1 Standardens emneområder" width="600"/></p>
 
 Figur 4.1: Illustration af standardens emneområder\
 Markeringen af emnerne 'styring', 'opgaver' og 'information' og 'sikkerhed' i figuren ovenfor skal illustrere, at disse fire områder er definerende for arkivprofilens anvendelse til afgivelse af oplysninger om it-systemer til Rigsarkivet.
