@@ -202,7 +202,8 @@ Begrebet 'it-system' udgør det centrale element i denne standard, men dette spe
 3.1 System, informationssystem og it-system
 -------------------------------------------
 
-Et ***system*** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i[ISO/IEC 15288][[2]](https://euangoddard.github.io/clipboard2markdown/#_ftn2).\
+Et ***system*** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i ISO/IEC 15288[[2]](https://euangoddard.github.io/clipboard2markdown/#_ftn2).
+
 Det bemærkes også, at *"Et system er i denne sammenhæng menneskeskabt og består ikke blot af hardware, software og data, men også af mennesker, processer, procedurer, faciliteter og materialer og naturlige genstande".*
 
 Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation af information, har vi at gøre med informationssystemer, og når (computer)-teknologi anvendes til at behandle disse informationer eller data, har vi at gøre med it-systemer[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftn3).
@@ -211,10 +212,7 @@ Begrebet ***it-system* **defineres derfor i denne standard som *"system der best
 
 I forhold til arkivering præciseres klassen ***instantieret it-system*** som værende et ***databærende it-system*** ved at sætte egenskaben 'databærende' til 'sand'.  
 
-![Dobbeltparentes: Begrebet databærende it-system defineres i denne standard som
-"instantieret it-system, der indeholder digitalt skabte data eller dokumenter".
-
-](file:///C:/Users/B025870/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png)
+Begrebet databærende it-system defineres i denne standard som "instantieret it-system, der indeholder digitalt skabte data eller dokumenter".
 
 I forbindelse med aflevering til Rigsarkivet eller kommunale stadsarkiver er der alene tale om data digitalt skabt af den offentlige forvaltning og domstolene.
 
@@ -229,7 +227,7 @@ I forbindelse med aflevering til Rigsarkivet eller kommunale stadsarkiver er der
 
 *Klassifikationer*
 
-Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel.[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftn4)
+Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftn4)
 
 #### Hvornår er der tale om et nyt it-system?
 
@@ -498,14 +496,11 @@ arkitektur.digst.dk
 
 [[2]](https://euangoddard.github.io/clipboard2markdown/#_ftnref2)  ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)  
 
-[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftnref3) Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.\
-Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en)
+[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftnref3) Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.\ Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
 
-Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
+[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftnref4) Klassifikationer beskrives iht. anvendelsesprofil for klassifikation:https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer
 
-[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftnref4) Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
-
-[[5]](https://euangoddard.github.io/clipboard2markdown/#_ftnref5) <https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur>
+[[5]](https://euangoddard.github.io/clipboard2markdown/#_ftnref5) https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur
 
 [[6]](https://euangoddard.github.io/clipboard2markdown/#_ftnref6) Myndigheder skal beskrives som organisationer iht. anvendelsesprofil for organisationer: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer> 
 
@@ -517,8 +512,7 @@ Information technology --- Framework and taxonomy of International Standardized 
 
 [[10]](https://euangoddard.github.io/clipboard2markdown/#_ftnref10) https://www.retsinformation.dk/eli/lta/2015/266
 
-[[11]](https://euangoddard.github.io/clipboard2markdown/#_ftnref11) <http://data.europa.eu/eli/reg/2016/679/oj>:\
- <https://www.retsinformation.dk/eli/lta/2018/502>
+[[11]](https://euangoddard.github.io/clipboard2markdown/#_ftnref11) <http://data.europa.eu/eli/reg/2016/679/oj> https://www.retsinformation.dk/eli/lta/2018/502>
 
 [[12]](https://euangoddard.github.io/clipboard2markdown/#_ftnref12) <https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf>
 
