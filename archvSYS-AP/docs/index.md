@@ -480,12 +480,12 @@ KLE:
 
 
 **Klassifikation Sagsområder:**
-Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og  'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne'\ 
-Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10\ 
-Juridisk kilde: https://www.retsinformation.dk/eli/lta/2003/591\
-Juridisk kilde: https://www.retsinformation.dk/eli/lta/2015/266\
-Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/183\
-Kilde: https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer\
+Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og  'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne' \ 
+Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10 \ 
+Juridisk kilde: https://www.retsinformation.dk/eli/lta/2003/591 \
+Juridisk kilde: https://www.retsinformation.dk/eli/lta/2015/266 \
+Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/183 \
+Kilde: https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer \
 
 
 | Foretrukken term | Definition |
