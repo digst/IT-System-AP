@@ -27,7 +27,8 @@
     padding: 6px;
     margin: 18px 0px 18px 0px;
 }
-	
+
+dl {border-bottom:1px solid #888}	
 dl:after {content:"";display:table;clear:both;}		
 dt {
     float: left;
