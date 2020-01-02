@@ -47,67 +47,12 @@ Logo: digst...
 
 <h1>Standard for beskrivelse af it-systemer - Arkivprofil</h1>
 
-|
-
-Standard for\
-beskrivelse af\
-it-systemer -\
-Arkivprofil
-
- |
-|
 
 Version 1.0.0
 
 November 2019
 
- |
 
-Indhold
-
-1\. Introduktion 4
-
-1.1 Formål 4
-
-1.2 Baggrund 4
-
-1.3 Metode 4
-
-2\. Standardens anvendelse 6
-
-2.1 Rigsarkivets interesse i it-systemer 6
-
-2.2 Modenhed ift. beskrivelse af processer, services og datasæt 6
-
-3\. Centrale begreber 7
-
-3.1 System, informationssystem og it-system 8
-
-4\. Standardens emneområder 10
-
-4.1 Afgivelse af it-systemoplysninger 11
-
-4.2 Kerneinformation 11
-
-4.3 Opgaver 12
-
-4.4 Styring 13
-
-4.5 Information 14
-
-4.6 Sikkerhed 15
-
-5\. Fælles datamodel og udvekslingsformat 17
-
-5.1 Fælles datamodel 17
-
-5.2 Skabelon til registrering i regneark 17
-
-5.3 Maskinfortolkeligt format 18
-
-6\. Referencer 19
-
-7\. Bilag 21
 
 Læsevejledning:
 
@@ -123,50 +68,34 @@ Kapitel 5 beskriver kort selve datamodellen. For en dybere gennemgang henvises t
 
 Bilagene kan inddeles i tre kategorier. Bilag A viser de klassifikationer/kontrollerede udfaldsrum, der anvendes i standarden, Bilag B-E giver eksempler på skabeloner/vejledning til udfyldelse af oplysninger om it-systemer, og Bilag F-I omhandler den bagvedliggende begrebs- og datamodel.
 
-|
 
-1\. Introduktion
+Introduktion
 ================
-
- |
-|
 
 Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet. Standarden omfatter basisoplysninger om it-systemer, som fx it-systemnavn, it-systemejer, ibrugtagningsdato mv., men udvides med arkiveringsspecifikke oplysninger. Standarden tilbyder også et forslag til en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som vil kunne gøre det muligt at dele it-systemoplysninger på en effektiv måde. 
 
- |
-|  |
 
-1.1 Formål
+Formål
 ----------
 
-Standarden skal gøre det nemmere for myndigheder at afgive relevante oplysninger om deres it-systemer til Rigsarkivet, så de kan overholde deres arkivmæssige forpligt­elser.
+Standarden skal gøre det nemmere for myndigheder at afgive relevante oplysninger om deres it-systemer til Rigsarkivet, så de kan overholde deres arkivmæssige forpligtelser.
 
-1.2 Baggrund
+Baggrund
 ------------
 
 Standarden er etableret på anbefaling fra Kulturministeriets Arkivudvalg og efter aftale med KL, Danske Regioner og Digitaliseringsstyrelsen. Standarden skal understøtte Rigsarkivets tilsyn med offentlige myndigheders digitale arkivdannelse, så det sikres, at it-systemer, der indeholder bevaringsværdige data, bliver identificeret og bevaret.
 
-1.3 Metode
+Metode
 ----------
 
 Standarden er blevet udarbejdet på baggrund af research- og udviklingsaktiviteter kombineret med feedback fra og sparring med en projektgruppe med medlemmer fra følgende interessentorganisationer: Rigsarkivet, KL, Danske Regioner, Organisationen Danske Arkiver, OS2Kitos og Digitaliseringsstyrelsen med repræsentanter fra Ministeriernes Kontor for it-styring og Center for Teknologi og Datastrategi. I forbindelse med researchaktiviteterne er flere eksisterede modeller og værktøjsunderstøttelse til registrering af it-systemer undersøgt nærmere, fx Model for porteføljestyring af statslige it-systemer, OS2Kitos og Rigsarkivets anmeldelses- og tilsynsskemaer. Læs mere om dette i Kapitel 6 Mapning til eksisterende modeller.
 
 Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en anvendelsesprofil, der sammensætter flere eksisterende modeller til denne specifikke arkiveringsanvendelse. Denne profil anvender fx kernemodeller til beskrivelse af it-system (SYS), datasæt (DCAT), organisation (ORG), juridiske ressourcer (ELI), kontakter (FIBO), klassifikationer (SKOS) m.fl. Se Dataspecifikationsdokumentet for yderligere oplysninger om disse modeller.
 
-|
-
-|
-
-2\. Standardens anvendelse
+Standardens anvendelse
 ==========================
 
- |
-|
-
 Denne arkivprofil er baseret på en basisprofil til beskrivelse af it-systemer, som rummer de helt grundlæggende oplysninger om it-systemer. Denne arkivprofil udvider basisprofilen med arkiveringsoplysninger og fastlægger, hvilke oplysninger der er krævede eller anbefalede i denne sammenhæng..
-
- |
-|  |
 
 Standarden skal anvendes i forbindelse med afgivelse af systemoplysninger til Rigsarkivet. Standarden skal således standardisere afgivelsen og opdateringen af systemoplysninger i relation til regionernes og kommunernes arkivmæssige forpligtelser. Derudover vil standarden også blive anvendt ved kommende tilsyn på det statslige område. Anvendelsesprofilen indeholder netop det sæt af oplysningstyper, der er påkrævet i forbindelse med afgivelse af it-systemoplysninger til Rigsarkivet, samt yderligere anvendelsesspecifikke præciseringer.
 
@@ -191,13 +120,8 @@ Der kan være perspektiver i, at myndigheder fremover vedligeholder et overblik 
 3\. Centrale begreber
 =====================
 
- |
-|
-
 Begrebet 'it-system' udgør det centrale element i denne standard, men dette specialiseres og kobles til relevante klassifikationer for at indsnævre den mængde af it-systemer, der skal afgives oplysninger om ifm. arkivering
 
- |
-|  |
 
 3.1 System, informationssystem og it-system
 -------------------------------------------
@@ -216,8 +140,8 @@ Begrebet databærende it-system defineres i denne standard som "instantieret it-
 
 I forbindelse med aflevering til Rigsarkivet eller kommunale stadsarkiver er der alene tale om data digitalt skabt af den offentlige forvaltning og domstolene.
 
-*\
-*Ifølge Rigsarkivets vejledninger i bevaring og kassation af arkivalier kan et databærende it-system fx være:
+
+Ifølge Rigsarkivets vejledninger i bevaring og kassation af arkivalier kan et databærende it-system fx være:
 
 - et fagsystem, et register eller en database
 
@@ -225,26 +149,19 @@ I forbindelse med aflevering til Rigsarkivet eller kommunale stadsarkiver er der
 
 - et elektronisk sags- og dokumenthåndteringssystem (ESDH-system), hvor både oplysninger om sager og dokumenter samt selve dokumenterne findes i digital form.
 
-*Klassifikationer*
+Klassifikationer
 
 Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftn4)
 
-#### Hvornår er der tale om et nyt it-system?
+Hvornår er der tale om et nyt it-system?
 
 I forhold til ibrugtagningen af et it-system i en organisation kan det i visse tilfælde være svært at vurdere, hvornår der er tale om at organisationen overgår fra ét it-system til et andet, eksempelvis ved overgangen fra én version af et kommercielt produkt til en anden version. Her kan vurderingen eventuelt tage udgangspunkt i, om it-systemet *leverer en anden service* end den oprindelige, hvilket ofte er forbundet med etableringen af en ny kontrakt med rettighedshaveren af det kommercielle produkt. Ny kontrakt med rettighedshaveren kan altså ofte betyde nyt it-system, modsat løbende opdateringer og fejlrettelser til kørende it-systemer, men dette skal undersøges nøje for det konkrete it-system. I forhold til databærende systemer kan det også være relevant at se på, om fx hele den bagvedliggende databasestruktur er skiftet ud.
 
-|
 
 4\. Standardens emneområder
 ===========================
 
- |
-|
-
 I det følgende gives en oversigt over standardens omfang og kapabilitet
-
- |
-|  |
 
 It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De grundlæggende kerneinformationer ses i midten af figuren herunder, og de øvrige otte emneområder afspejler arkitekturprincipperne fra rammearkitekturen: strategi, styring, jura, sikkerhed, opgaver, information, applikation og infrastruktur, som beskrives i Hvidbog om fællesoffentlig digital arkitektur (FDA)[[5]](https://euangoddard.github.io/clipboard2markdown/#_ftn5) .
 
@@ -347,18 +264,13 @@ Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift.
 
 *Eksempelvis kan data i beredskabssystemer eventuelt være opmærket med fortrolighedsgrad, og fortrolighed kan være et relevant aspekt ved indmelding af it-systemoplysninger såsom kritikalitetstype og systemernes tekniske tilstand. *
 
-|
+
 
 5\. Fælles datamodel og udvekslingsformat
 =========================================
 
- |
-|
 
 Denne standard præsenterer et udvekslingsformat i to repræsentationer til deling af oplysninger om it-systemer.
-
- |
-|  |
 
 5.1 Fælles datamodel
 --------------------
@@ -397,8 +309,6 @@ Godkendelsen af denne arkivprofil omfatter ikke krav om anvendelse af det maskin
 
 6\. Referencer
 ==============
-
- |
 
 Standarder
 
@@ -479,16 +389,12 @@ Retskilder og tilhørende vejledninger:
 7\. Bilag
 =========
 
-|
 
 Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 
- |
-|
 
 arkitektur.digst.dk
 
- |
 
 * * * * *
 
@@ -496,11 +402,13 @@ arkitektur.digst.dk
 
 [[2]](https://euangoddard.github.io/clipboard2markdown/#_ftnref2)  ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)  
 
-[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftnref3) Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.\ Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
+[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftnref3) Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en)
 
-[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftnref4) Klassifikationer beskrives iht. anvendelsesprofil for klassifikation:https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer
+Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
 
-[[5]](https://euangoddard.github.io/clipboard2markdown/#_ftnref5) https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur
+[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftnref4) Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
+
+[[5]](https://euangoddard.github.io/clipboard2markdown/#_ftnref5) <https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur>
 
 [[6]](https://euangoddard.github.io/clipboard2markdown/#_ftnref6) Myndigheder skal beskrives som organisationer iht. anvendelsesprofil for organisationer: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer> 
 
@@ -512,7 +420,8 @@ arkitektur.digst.dk
 
 [[10]](https://euangoddard.github.io/clipboard2markdown/#_ftnref10) https://www.retsinformation.dk/eli/lta/2015/266
 
-[[11]](https://euangoddard.github.io/clipboard2markdown/#_ftnref11) <http://data.europa.eu/eli/reg/2016/679/oj> https://www.retsinformation.dk/eli/lta/2018/502>
+[[11]](https://euangoddard.github.io/clipboard2markdown/#_ftnref11) <http://data.europa.eu/eli/reg/2016/679/oj>:\
+ <https://www.retsinformation.dk/eli/lta/2018/502>
 
 [[12]](https://euangoddard.github.io/clipboard2markdown/#_ftnref12) <https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf>
 
