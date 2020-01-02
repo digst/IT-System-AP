@@ -399,7 +399,7 @@ Bilag
 Bilag A: Overblik over relevante klassifikationer
 -------------------------------------------------
 
-<p align="center"><img src="img/Bilag-A-Overblik-over-relevante-klassifikationer.png.png" alt="Overblik over relevante klassifikationer" title="Overblik over relevante klassifikationer" width="600"/></p>
+<p align="center"><img src="img/Bilag-A-Overblik-over-relevante-klassifikationer.png" alt="Overblik over relevante klassifikationer" title="Overblik over relevante klassifikationer" width="800"/></p>
 
 
 **Klassifikation KLE:** Distribution:[http://www.kle-online.dk/](http://www.kle-online.dk/soegning)
@@ -744,7 +744,7 @@ Bilag E: UML-diagram: Arkivprofil
 - Forretningsområde (theme):  65.50.05.10 Sagsarkivering  
 - Kommentar (comment): Anvendelsesprofil for det sæt af oplysningstyper, der er påkrævet eller anbefalet ifm. afgivelse af it-systemoplysninger til Rigsarkivet 
 
-<p align="center"><img src="img/Bilag-E-UML-diagram-Arkivprofil.png" alt="UML-diagram" title="UML-diagram" width="600"/></p>
+<p align="center"><img src="img/Bilag-E-UML-diagram-Arkivprofil.png" alt="UML-diagram" title="UML-diagram" width="800"/></p>
 
 
 Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
@@ -760,8 +760,6 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
 - Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/digitalarchival/ 
 - Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/
 - Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. afgivelse af oplysninger om it-systemer til Rigsarkivet. Bemærk, at denne anvendelsesorienterede begrebsliste udvælger og sammensætter begreber fra forskellige emneområder, se fx begrebsmodellen for it-system og begrebsmodellen for digital arkivering, som er udstillet online. 
-
-<p align="center"><img src="img/Figur4-1-Illustration-af-standardens-emneomraader.png" alt="Figur 4.1 Standardens emneområder" title="Figur 4.1 Standardens emneområder" width="600"/></p>
 
 
 
