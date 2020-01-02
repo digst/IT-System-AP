@@ -1,4 +1,4 @@
-HTML-indholdet er udstillet som GitHub Pages[1] på nedenstående link: https://digst.github.io/IT-System-AP/SYS-AP/docs/
+HTML-indholdet er udstillet som GitHub Pages[1] her: https://digst.github.io/IT-System-AP/SYS-AP/docs/
 
 Her ligger følgende filer:
 - README.md - Denne fil
