@@ -251,7 +251,7 @@ Det angives, om der manuelt eller automatisk er ***konverteret data og dokumente
 
 Det kan også angives, om der tidligere er udarbejdet en arkiveringsversion af data i systemet.For arkiveringsversionen angives den periode, som den dækker. Dvs. det årstal, arkiveringsversionen først dækker, til det år, som arkiveringsversionen sidst dækker.
 
-En ***arkiveringsfrekvens* **kan også registreres, dvs. den frekvens, med hvilken en myndighed fremstiller arkiveringsversion af et givet datasæt i et it-system.
+En ***arkiveringsfrekvens*** kan også registreres, dvs. den frekvens, med hvilken en myndighed fremstiller arkiveringsversion af et givet datasæt i et it-system.
 
 Sikkerhed
 -------------
