@@ -41,7 +41,7 @@ Editor: Organisationen Danske Arkiver
 
 
 Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
-Boilerplate: copyright no, conformance no, abstract no
+Boilerplate: copyright no, conformance no, abstract yes
 Shortname: archvSYS-AP
 Revision: 1.0.0
 Date: 2019-12-05
