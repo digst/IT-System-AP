@@ -410,12 +410,10 @@ Bilag A: Overblik over relevante klassifikationer
 <p align="center"><img src="img/Bilag-A-Overblik-over-relevante-klassifikationer.png" alt="Overblik over relevante klassifikationer" title="Overblik over relevante klassifikationer" width="800"/></p>
 
 
-**Klassifikation KLE:** Distribution:[http://www.kle-online.dk/](http://www.kle-online.dk/soegning)
-**Klassifikation FORM:** Distribution:[http://www.form-online.dk/](http://www.form-online.dk/soegning)
-
+### Klassifikation FORM:
+- Distribution:[http://www.form-online.dk/](http://www.form-online.dk/soegning)
 Se de overordnede emner herunder:
 
-FORM:
 02	Internationale aftaler
 03	Udenrigstjeneste
 05	Samfundsstruktur
@@ -451,8 +449,10 @@ FORM:
 67	Myndighedens økonomi
 68	Myndighedens it
 
+### Klassifikation KLE:
+- Distribution:[http://www.kle-online.dk/](http://www.kle-online.dk/soegning)
+Se de overordnede emner herunder:
 
-KLE:
 00	Kommunens styrelse
 01	Fysisk planlægning og naturbeskyttelse
 02	Byggeri
@@ -492,7 +492,7 @@ KLE:
 
 
 
-**Klassifikation Sagsområder:**
+###  Klassifikation Sagsområder:
 Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og 'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne' 
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2003/591 
@@ -501,7 +501,7 @@ Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgøre
 - Kilde: https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer 
 
 
-**Klassifikation: Offentlige organisationstyper**
+###  Klassifikation: Offentlige organisationstyper
 Klassifikation, der består af typer af offentlige organisationer set i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2019/47 
@@ -517,7 +517,7 @@ Klassifikation, der består af typer af offentlige organisationer set i forhold 
   <dt>offentlig selvejende institution</dt><dd>selvejende institutioner, foreninger, fonde m.v., der 1) er oprettet ved lov eller i henhold til lov, og 2) er oprettet på privatretligt grundlag, og som udøver offentlig virksomhed af mere omfattende karakter og er undergivet intensiv offentlig regulering, intensivt offentligt tilsyn og intensiv offentlig kontrol</dd>	
 </dl>
 
-**Klassifikation: It-miljøtyper**
+### Klassifikation: It-miljøtyper
 Klassifikation, der består af typer af it-miljø, som et it-system kan instantieres i
 Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15 
 - Kilde: https://en.wikipedia.org/wiki/Deployment_environment 
@@ -526,7 +526,7 @@ Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
 - Kilde: https://docs.microsoft.com/en-us/biztalk/technical-guides/planning-the-development-testing-staging-and-production-environments
 - Distribution: https://data.gov.dk/concept/profile/ITEnvironmentTypes.rdf
 
-**Klassifikation: Personoplysningskategorier**
+### Klassifikation: Personoplysningskategorier
 Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05.12.60 
 - Juridisk kilde: http://data.europa.eu/eli/reg/2016/679/oj 
@@ -535,32 +535,32 @@ Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed
 - Kommentar: De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Bemærk, at oplysninger om strafbare forhold og per-sonnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger.
 - Distribution: https://data.gov.dk/concept/profile/PersonalDataCategories.rdf  
 
-**Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)**
+### Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)
 Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20 
 - Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338 
 - Distribution https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU.rdf
 
 
-**Klassifikation: Arkiveringspligttyper**
+### Klassifikation: Arkiveringspligttyper
 Klassifikation, der består af typer af arkiveringspligt set i forhold til, om data skal bevares eller kasseres iht. gældende arkiveringsbestemmelser
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201    
 
 
-**Klassifikation: Arkiveringsversionsperiodetyper**
+### Klassifikation: Arkiveringsversionsperiodetyper
 Klassifikation, der består af typer af arkiveringsperioder set i forhold til deres afgrænsning.
 Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en afgrænset periode eller ved af-sluttet arkivperiode 
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2010/1007     
 
-**Klassifikation: Arkivinstitutionstyper**
+### Klassifikation: Arkivinstitutionstyper
 Klassifikation, der består af typer af offentlige institutioner, der har til opgave at bevare arkivalier
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201 
 - Kilde: https://ec.europa.eu/isa2/sites/isa/files/isa2_action_2017_01_standard_based_archival_data_manage-ment_final_report_v1.00.pdf 
 
-**Klassifikation: Konverteringsstatusser**
+### Klassifikation: Konverteringsstatusser
 Klassifikation, der består af statusser ift. konvertering set ud fra omfanget af et (manuelt eller automatisk) datakonverterings- og import forløb 
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05
 - Kilde: https://www.sa.dk/da/offentlig-forvaltning/ 
@@ -588,7 +588,7 @@ Bilag C: Eksempel på maskinlæsbart format
 
 (Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD) 
 
-EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)
+### EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)
 `
 	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 	@prefix dc: <http://purl.org/dc/terms/> .
@@ -648,7 +648,7 @@ EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)
 `
 
 
-EKSEMPELOUTPUT I RDF/XML
+### EKSEMPELOUTPUT I RDF/XML
 -------------------------------------------------
 `
 	<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
