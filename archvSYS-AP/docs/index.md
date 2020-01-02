@@ -60,8 +60,6 @@ Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-
 
 Arkivprofilen anvender dele af og udvider en basisprofil 'Standard for beskrivelse af it-systemer' - Basisprofil (SYS-AP) med arkiveringsrelevante oplysninger, og specificer netop hvilke oplysninger der enten *skal* eller *kan* være til stede i forbindelse med afgivelse til Rigsarkivet.
 
-![Figur: Forholdet mellem profilerne](img/Figur0-1-Forholdet_mellem-profilerne.png) 
-
 <p align="center"><img src="img/Figur0-1-Forholdet_mellem-profilerne.png" alt="Forholdet mellem profilerne" title="Forholdet mellem profilerne" width="350"/></p>
 
 Kapitel 1 introducerer standardens formål, baggrund og den metode, hvormed standarden er blevet udarbejdet. Kapitel 2 beskriver *anvendelse* af standarden til myndigheders afgivelse af oplysninger om it-systemer i forbindelse med arkivering.
@@ -171,7 +169,7 @@ It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De grun
 
 Disse otte emner dækker bredt, og for at dække en specifik anvendelseskontekst vil det typisk være nødvendigt at udvide basisprofilen med oplysninger fra forskellige emneområder. I tillæg til de otte emneområder eksisterer et metalag med informa-tioner om myndighedens udveksling af disse oplysninger til et bestemt formål.
 
- ![](file:///C:/Users/B025870/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png)
+<p align="center"><img src="img/Figur4-1.png" alt="Figur 4.1 Standardens emneområder" title="Figur 4.1 Standardens emneområder" width="600"/></p>
 
 Figur 4.1: Illustration af standardens emneområder\
 Markeringen af emnerne 'styring', 'opgaver' og 'information' og 'sikkerhed' i figuren ovenfor skal illustrere, at disse fire områder er definerende for arkivprofilens anvendelse til afgivelse af oplysninger om it-systemer til Rigsarkivet.
