@@ -117,7 +117,7 @@ I forbindelse med Rigsarkivets tilsyn med offentlige myndigheder er det konstate
 
 Rigsarkivet har brug for at kunne identificere arkiveringspligtige datasæt på en pragmatisk måde, hvorfor det i de fleste tilfælde er mest hensigtsmæssig at begynde dialogen med de pågældende myndigheder på baggrund af et systemoverblik. Dette systemoverblik vil standarden danne basis for.  
 
-Der kan være perspektiver i, at myndigheder fremover vedligeholder et overblik over datasæt, forretningsprocesser og services med en kobling til understøttende it-systemer, og således at dialogen omkring arkivering kan begynde dér. Systemoverblikket skal kunne samarbejde med de mest udbredte overblikssystemer, som myndighederne allerede har[[1]](https://euangoddard.github.io/clipboard2markdown/#_ftn1), således at de ikke skal vedligeholde flere overblik. [^1] 
+Der kan være perspektiver i, at myndigheder fremover vedligeholder et overblik over datasæt, forretningsprocesser og services med en kobling til understøttende it-systemer, og således at dialogen omkring arkivering kan begynde dér. Systemoverblikket skal kunne samarbejde med de mest udbredte overblikssystemer, som myndighederne allerede har[[1]](https://euangoddard.github.io/clipboard2markdown/#_ftn1), således at de ikke skal vedligeholde flere overblik. [1](#1) 
 
 Centrale begreber
 =====================
@@ -399,7 +399,7 @@ arkitektur.digst.dk
 
 
 * * * * *
-[^1] Som eksempel kan nævnes KITOS, som mange kommuner anvender som systemoverblik.
+[#1] Som eksempel kan nævnes KITOS, som mange kommuner anvender som systemoverblik.
 
 [[1]](https://euangoddard.github.io/clipboard2markdown/#_ftnref1) Som eksempel kan nævnes KITOS, som mange kommuner anvender som systemoverblik.
 
