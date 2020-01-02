@@ -62,7 +62,7 @@ Arkivprofilen anvender dele af og udvider en basisprofil 'Standard for beskrivel
 
 ![Figur: Forholdet mellem profilerne](img/Figur0-1-Forholdet_mellem-profilerne.png) 
 
-<img src="img/Figur0-1-Forholdet_mellem-profilerne.png" alt="Forholdet mellem profilerne" title="Forholdet mellem profilerne" width="100"/>
+<img src="img/Figur0-1-Forholdet_mellem-profilerne.png" alt="Forholdet mellem profilerne" title="Forholdet mellem profilerne" width="300"/>
 
 Kapitel 1 introducerer standardens formål, baggrund og den metode, hvormed standarden er blevet udarbejdet. Kapitel 2 beskriver *anvendelse* af standarden til myndigheders afgivelse af oplysninger om it-systemer i forbindelse med arkivering.
 
