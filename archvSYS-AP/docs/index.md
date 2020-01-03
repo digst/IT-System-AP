@@ -357,7 +357,6 @@ Referencer
 - Kommunernes Emnesystematik (KLE)
 - Service- og Teknologireferencemodel (STORM): http://arkitekturguiden.digitaliser.dk/storm
 - KOMBIT Rollegalleri: https://www.kombit.dk/sites/default/files/user_upload/documents/Videnscenter/Eksempel%20fra%20KOMBIT_Rollegalleri%20implementering.pdf
-
 - Referencearkitektur for deling af data og dokumenter: https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf
 
 **Retskilder og tilhørende vejledninger:**
@@ -374,9 +373,9 @@ Referencer
 - Databeskyttelsesloven (Lov om supplerende bestemmelser til forordning om beskyttelse af fysiske personer i forbindelse med behandling af personoplysninger og om fri udveksling af sådanne oplysninger) https://www.retsinformation.dk/eli/lta/2018/502
 - GDPR (generel forordning om databeskyttelse): https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32016R0679&from=EN
 
+
 Bilag
 =========
-
 
 Bilag A: Overblik over relevante klassifikationer
 -------------------------------------------------
@@ -767,42 +766,41 @@ arkitektur.digst.dk
 
 
 
-[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftnref3) 
-Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
+[[3]]() Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
 
-[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftnref4) Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
+[[4]]() Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
 
-[[5]](https://euangoddard.github.io/clipboard2markdown/#_ftnref5) <https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur>
+[[5]]() <https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur>
 
-[[6]](https://euangoddard.github.io/clipboard2markdown/#_ftnref6) Myndigheder skal beskrives som organisationer iht. anvendelsesprofil for organisationer: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer> 
+[[6]]() Myndigheder skal beskrives som organisationer iht. anvendelsesprofil for organisationer: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer> 
 
-[[7]](https://euangoddard.github.io/clipboard2markdown/#_ftnref7) https://skikataloget.ski.dk/ski-kataloget/
+[[SKI Kataloget]]() https://skikataloget.ski.dk/ski-kataloget/
 
-[[8]](https://euangoddard.github.io/clipboard2markdown/#_ftnref8) https://dltj.org/article/software-development-practice/
+[[Software Development Practice]]() https://dltj.org/article/software-development-practice/
 
-[[9]](https://euangoddard.github.io/clipboard2markdown/#_ftnref9) https://www.retsinformation.dk/eli/lta/2018/183
+[[9]]() https://www.retsinformation.dk/eli/lta/2018/183
 
-[[10]](https://euangoddard.github.io/clipboard2markdown/#_ftnref10) https://www.retsinformation.dk/eli/lta/2015/266
+[[10]]() https://www.retsinformation.dk/eli/lta/2015/266
 
-[[11]](https://euangoddard.github.io/clipboard2markdown/#_ftnref11) <http://data.europa.eu/eli/reg/2016/679/oj>:\
+[[11]]() <http://data.europa.eu/eli/reg/2016/679/oj>:\
  <https://www.retsinformation.dk/eli/lta/2018/502>
 
-[[12]](https://euangoddard.github.io/clipboard2markdown/#_ftnref12) <https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf>
+[[12]]() <https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf>
 
-[[13]](https://euangoddard.github.io/clipboard2markdown/#_ftnref13) 'Referencearkitektur for deling af data og dokumenter' definerer datasæt som "en samling af oplysninger bestående af enkelte dele der forvaltes under et " <https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf>. Denne definition er i tråd med W3Cs definition " samling af data, udstillet eller forvaltet af en enkelt aktør".
+[[13]]() 'Referencearkitektur for deling af data og dokumenter' definerer datasæt som "en samling af oplysninger bestående af enkelte dele der forvaltes under et " <https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf>. Denne definition er i tråd med W3Cs definition " samling af data, udstillet eller forvaltet af en enkelt aktør".
 
-[[14]](https://euangoddard.github.io/clipboard2markdown/#_ftnref14) https://www.w3.org/TR/vocab-dcat/\
+[[14]]() https://www.w3.org/TR/vocab-dcat/\
  (Bemærk at DCAT anvender et snævrere datasætbegreb end det der defineres i ISO 19115‑1:2014)
 
-[[15]](https://euangoddard.github.io/clipboard2markdown/#_ftnref15) Læs mere på Rigsakivets hjemmeside: <https://www.sa.dk/da/offentlig-forvaltning/>
+[[15]]() Læs mere på Rigsakivets hjemmeside: <https://www.sa.dk/da/offentlig-forvaltning/>
 
-[[16]](https://euangoddard.github.io/clipboard2markdown/#_ftnref16) <https://www.retsinformation.dk/eli/lta/2016/1201>
+[[16]]() <https://www.retsinformation.dk/eli/lta/2016/1201>
 
-[[17]](https://euangoddard.github.io/clipboard2markdown/#_ftnref17) http://data.europa.eu/eli/reg/2016/679/oj\
+[[17]]() http://data.europa.eu/eli/reg/2016/679/oj\
  https://www.retsinformation.dk/eli/lta/2018/502
 
-[[18]](https://euangoddard.github.io/clipboard2markdown/#_ftnref18) https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
+[[18]]() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
 
-[[19]](https://euangoddard.github.io/clipboard2markdown/#_ftnref19) ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: https://www.iso.org/standard/54533.html
+[[19]]() ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: https://www.iso.org/standard/54533.html
 
-[[20]](https://euangoddard.github.io/clipboard2markdown/#_ftnref20) Sikkerhedscirkulæret https://www.retsinformation.dk/eli/retsinfo/2014/10338
+[[20]]() Sikkerhedscirkulæret https://www.retsinformation.dk/eli/retsinfo/2014/10338
