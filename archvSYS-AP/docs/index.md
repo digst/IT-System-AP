@@ -150,8 +150,7 @@ Det bemærkes også, at *"Et system er i denne sammenhæng menneskeskabt og best
 
 Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation af information, har vi at gøre med informationssystemer, og når (computer)-teknologi anvendes til at behandle disse informationer eller data, har vi at gøre med it-systemer
 
-<p class="note">*Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet. Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology — Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
-*</p>
+<p class="note">Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet. Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology — Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it.</p>
 
 Begrebet **it-system** defineres derfor i denne standard som *"system der består af digitale informationsteknologier"*. Et it-system kan instantieres i forskellige it-miljøer. Et **instantieret it-system** kan derfor defineres som "*fysisk instans af et it-system i et bestemt it-miljø".* Det vil fx kun være relevant at arkivere data fra et it-system instantieret i et produktionsmiljø og ikke et testmiljø, men i forbindelse med afgivelse af it-systemoplysninger til Rigsarkivet bør dette fremgå klart.
 
@@ -171,7 +170,7 @@ Ifølge Rigsarkivets vejledninger i bevaring og kassation af arkivalier kan et d
 
 Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel
 
-<p class="note">*Klassifikationer beskrives iht. Anvendelsesprofil for klassifikation:* https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer/</p>
+<p class="note">*Klassifikationer beskrives iht. [Anvendelsesprofil for klassifikation](https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer)</p>
 
 **Hvornår er der tale om et nyt it-system?**
 
@@ -183,7 +182,7 @@ Standardens emneområder
 
 I det følgende gives en oversigt over standardens omfang og kapabilitet
 
-It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De grundlæggende kerneinformationer ses i midten af figuren herunder, og de øvrige otte emneområder afspejler arkitekturprincipperne fra rammearkitekturen: strategi, styring, jura, sikkerhed, opgaver, information, applikation og infrastruktur, som beskrives i Hvidbog om fællesoffentlig digital arkitektur (FDA) https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur. 
+It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De grundlæggende kerneinformationer ses i midten af figuren herunder, og de øvrige otte emneområder afspejler arkitekturprincipperne fra rammearkitekturen: strategi, styring, jura, sikkerhed, opgaver, information, applikation og infrastruktur, som beskrives i Hvidbog om fællesoffentlig digital arkitektur [FDA] (https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur). 
 
 Disse otte emner dækker bredt, og for at dække en specifik anvendelseskontekst vil det typisk være nødvendigt at udvide basisprofilen med oplysninger fra forskellige emneområder. I tillæg til de otte emneområder eksisterer et metalag med informa-tioner om myndighedens udveksling af disse oplysninger til et bestemt formål.
 
@@ -196,7 +195,7 @@ Afgivelse af it-systemoplysninger
 
 Når der skal afgives oplysninger om it-systemer, som en given myndighed **anvender**, angives **myndighedens navn** samt den e-mailadresse, hvormed myndigheden primært kan kontaktes (**hovedmailadresse**). Derudover angives en **myndighedstype**, dvs. en kategorisering af offentlige organisationer ift. styringsniveau (region, kommune, statslig myndighed, offentlig selvejende institution). Indberetningen forsynes også med en datoangivelse for, hvornår oplysningerne blev indberettet (**afgivelsesdato**). Det er den dataansvarlige myndighed, der er forpligtet til at angive it-systemoplysninger til Rigsarkivet, jf. afsnittet Styring.
 
-<p class="note">Myndigheder beskrives som organisationer iht. anvendelsesprofil for organisationer: https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer  </pre>
+<p class="note">Myndigheder beskrives som organisationer iht. [Anvendelsesprofil for organisationer](https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer)</pre>
 
 Kerneinformation
 --------------------
@@ -205,7 +204,7 @@ Et it-system forsynes med en **identifikator** (et ID), der entydigt udpeger det
 
 Hvor et it-system kan beskrives som en implementering og ibrugtagning af et softwareprodukt tilhørende en bestemt produktserie, som fx Acadre eller F2, vil it-systemnavnet typisk være lig **navnet på produktserien**, som producenten har markedsført eller som anført i hovedkontrakten med leverandøren, men it-systemet kan også have andre lokale navne.
 
-En produktserie kan have en overordnet **beskrivelse af produktseriens** egenskaber, som det fx ses i SKI-kataloget (https://skikataloget.ski.dk/ski-kataloget/), men i forbindelse med ibrugtagning er det også muligt at angive en ***it-systembeskrivelse*** som i fritekst redegør for formålet med it-systemets anvendelse eller it-systemets nøglefunktion i en organisation. Derudover bør et it-systems **anvendelsesformål** også beskrives ved opmærkning ift. offentlige opgaver med klassifikationerne FORM/KLE, som det beskrives under emnet 'forretningsunderstøttelse'. Supplerende bemærkninger eller oplysninger kan også tilføjes som en **kommentar** i fritekst
+En produktserie kan have en overordnet **beskrivelse af produktseriens** egenskaber, som det fx ses i [SKI-kataloget]( https://skikataloget.ski.dk/ski-kataloget/), men i forbindelse med ibrugtagning er det også muligt at angive en ***it-systembeskrivelse*** som i fritekst redegør for formålet med it-systemets anvendelse eller it-systemets nøglefunktion i en organisation. Derudover bør et it-systems **anvendelsesformål** også beskrives ved opmærkning ift. offentlige opgaver med klassifikationerne FORM/KLE, som det beskrives under emnet 'forretningsunderstøttelse'. Supplerende bemærkninger eller oplysninger kan også tilføjes som en **kommentar** i fritekst
 
 Som en del af kerneinformationerne hører **ibrugtagningsdato** og **udfasningsdato,** som tilsammen beskriver perioden fra den dato, hvor it-systemet blev taget i brug med delvis eller fuld funktionalitet, indtil den dato, hvor it-systemet endeligt bliver afviklet. Datoangivelserne kan eventuelt suppleres med en **operationel status,** som angiver, hvilken tilstand systemet befinder sig i, i forhold til ibrugtagning. Se udfaldsrummet i Bilag A.
 
@@ -222,9 +221,9 @@ Et it-system yder en given it-service, som understøtter forretningens opgaver.
 
 Et it-system kan beskrives med et eller flere anvendelsesformål, der antages at være at understøtte en **forvaltningsopgave**. Til dette formål anvendes en klassifikation over offentlige opgaver eller såkaldte forvaltningsopgavetyper. Statslige myndigheder og regioner kan eksempelvis anvende Den Fællesoffentlige Referencemodel (FORM) -en overordnet emnesystematik, der dækker opgaveporteføljen i hele den offentlige sektor -- dvs. staten, kommunerne og regionerne. Kommuner kan anvende KL Emnesystematik (KLE) -- en emnesystematik/journalplan, der dækker det kommunale område. KLE er som regel mere detaljeret end FORM på det kommunale område. Det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder -- som minimum på det øverste niveau (hhv. serviceområde i FORM og emnegruppe i KLE):
 
-**Klassifikation KLE:** <http://www.kle-online.dk/soegning>
+**Klassifikation KLE:** [http://www.kle-online.dk/](http://www.kle-online.dk/soegning)
 
-**Klassifikation FORM:** <http://www.form-online.dk/soegning>
+**Klassifikation FORM:** [http://www.form-online.dk](http://www.form-online.dk/soegning)
 
 <p class="example">Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven "65.50.05.05 Sagshåndtering" (FORM v.2.14) el. KLE-emnet "00.15.12. Kvalitetsstyringssystem, sagsbehandling" (KLE v. Aug. 2019)</p>
 
@@ -232,7 +231,7 @@ Bemærk, at produkter i SKI-kataloget allerede er opmærket med FORM.
 
 FORM og KLE indeholder henvisninger til de love og lovbekendtgørelser, som de offentlige opgaver udspringer fra, så ved at opmærke et it-system med FORM eksisterer der også indirekte en relation til retsgrundlaget for it-systemets anvendelse. Der er også muligt via FORM at se, hvilke myndigheder de forskellige opgaver tilhører. KLE indeholder, ud over love og lovbekendtgørelser, også bekendtgørelser. FORM mapper til paragraffer i finansloven og KLE, og KLE mapper til Social- og Indenrigsministeriets kontoplan.
 
-Kommunale it-systemer kan tilknyttes én eller flere specifikke kommunale sagsområder i henhold til Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne (https://www.retsinformation.dk/eli/lta/2018/183). Ligeledes kan regionale it-systemer tilknyttes én eller flere specifikke regionale sagsområder iht. Bekendtgørelse om bevaring og kassation af arkivalier i regionerne (https://www.retsinformation.dk/eli/lta/2015/266). I klassifikationen Sagsområde i Bilag A er klassifikationerne samlet med angivelse af, hvilken myndighedstype der anvender hvilke sagsområder. Det bemærkes, at klassifikationen sagsområder har et vist overlap med hhv. FORM og KLE, men anvendelsen af netop dette udfaldsrum er fastlagt ved bekendtgørelse.
+Kommunale it-systemer kan tilknyttes én eller flere specifikke kommunale sagsområder i henhold til [Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne](https://www.retsinformation.dk/eli/lta/2018/183). Ligeledes kan regionale it-systemer tilknyttes én eller flere specifikke regionale sagsområder iht. [Bekendtgørelse om bevaring og kassation af arkivalier i regionerne](https://www.retsinformation.dk/eli/lta/2015/266). I klassifikationen Sagsområde i Bilag A er klassifikationerne samlet med angivelse af, hvilken myndighedstype der anvender hvilke sagsområder. Det bemærkes, at klassifikationen sagsområder har et vist overlap med hhv. FORM og KLE, men anvendelsen af netop dette udfaldsrum er fastlagt ved bekendtgørelse.
 
 Når en organisation skifter et it-system ud med et andet it-system til varetagelse af samme funktion, kan det tidligere it-system eksplicit angives som et såkaldt **forgængersystem,** se også afsnit om arkivering og datakonvertering fra sådanne forgængersystemer.
 
@@ -245,7 +244,7 @@ På overordnet niveau angives **it-systemejeren** -- en person eller organisatio
 
 <p class="example">Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
 
-For databærende it-systemer skal den **dataansvarlige** aktør også angives, dvs. den organisation, som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til "*en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger*", jf. GDPR (http://data.europa.eu/eli/reg/2016/679/oj og https://www.retsinformation.dk/eli/lta/2018/502 ). Én myndighed kan være dataansvarlig for et system, mens det faktisk er **databehandler**, som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det. Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler i betydningen, at de kan være forskellige organisationer. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. Datatilsynets vejledning om databehandlere og dataansvarlige (https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf). Det kan også være relevant at angive den konkrete **dataskaber**, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.
+For databærende it-systemer skal den **dataansvarlige** aktør også angives, dvs. den organisation, som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til "*en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger*", jf. [GDPR](http://data.europa.eu/eli/reg/2016/679/oj) *[på dansk](https://www.retsinformation.dk/eli/lta/2018/502).* Én myndighed kan være dataansvarlig for et system, mens det faktisk er **databehandler**, som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det. Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler i betydningen, at de kan være forskellige organisationer. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. [Datatilsynets vejledning om databehandlere og dataansvarlige]((https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf). Det kan også være relevant at angive den konkrete **dataskaber**, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.
 
 Et it-system kan dokumenteres ved hjælp af forskellige dokumenter, der hver har sit formål og målgruppe, fx arkitekturdokumentation, installationsvejledning og slutbrugervejledning.
 
@@ -254,7 +253,7 @@ Information
 
 De data, som et instantieret it-system **skaber,** kan betragtes som en specifik fysisk **repræsentation** af et **datasæt**, og beskrivelsen af datasæt og datasætrepræsentationerfølger i denne sammenhæng W3Cs Data Catalogue Vocabulary (DCAT) (https://www.w3.org/TR/vocab-dcat/). Både det (logiske) datasæt og dets (fysiske) repræsentationer kan forsynes med en **titel.**
 
-<p class="note">Referencearkitektur for deling af data og dokumenter’ definerer datasæt som ”en samling af oplysninger bestående af enkelte dele der forvaltes under et https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf. Denne definition er i tråd med W3Cs definition ”samling af data, udstillet eller forvaltet af en enkelt aktør”. Bemærk også at DCAT anvender et snævrere datasætbegreb end det der defineres i ISO 19115‑1:2014)</p>
+<p class="note">[Referencearkitektur for deling af data og dokumenter](https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf) definerer datasæt som ”en samling af oplysninger bestående af enkelte dele der forvaltes under ét . Denne definition er i tråd med W3Cs definition ”samling af data, udstillet eller forvaltet af en enkelt aktør”. Bemærk også at DCAT anvender et snævrere datasætbegreb end det der defineres i ISO 19115‑1:2014)</p>
 
 ### Arkivering
 
@@ -262,13 +261,13 @@ I forhold til arkivering er det vigtigt at vide, hvornår myndigheden er begyndt
 
 For at gøre det lettere for myndigheder at afgive oplysninger om deres it-systemer til Rigsarkivet og dermed overholde deres arkivmæssige forpligtelser kan it-systemer og de datasætrepræsentationer, de skaber, forsynes med flere forskellige arkiveringsoplysninger ved hjælp af nærværende standard.
 
-<p class="note">Læs mere om myndighedernes arkiveringsforpligtelse på Rigsakivets hjemmeside: https://www.sa.dk/da/offentlig-forvaltning/</p>
+<p class="note">Læs mere om myndighedernes arkiveringsforpligtelse på Rigsakivets hjemmeside: [Rigsarkivet|Offentlig Forvaltning ](https://www.sa.dk/da/offentlig-forvaltning/)</p>
 
-I forhold til arkivering af data bestemt til bevaring er det offentlige **databærende it-systemer,** der er i fokus, dvs. it-systemer, der indeholder data og dokumenter digitalt skabt af den offentlige forvaltning og domstolene, jf. Arkivloven (https://www.retsinformation.dk/eli/lta/2016/1201). Udover at det skal angives, om it-systemet er databærende, altså indeholder datasæt, kan det også præciseres, at nogle af disse data udgøres af dokumenter, ved at angive at it-systemet også er ***dokumentbærende***.
+I forhold til arkivering af data bestemt til bevaring er det offentlige **databærende it-systemer,** der er i fokus, dvs. it-systemer, der indeholder data og dokumenter digitalt skabt af den offentlige forvaltning og domstolene, jf. [Arkivloven] (https://www.retsinformation.dk/eli/lta/2016/1201). Udover at det skal angives, om it-systemet er databærende, altså indeholder datasæt, kan det også præciseres, at nogle af disse data udgøres af dokumenter, ved at angive at it-systemet også er ***dokumentbærende***.
 
-Hvorvidt den pågældende myndighed har pligt til at arkivere eller kassere data i it-systemet, kan angives med klassifikationen ***arkiveringspligttype***, se Bilag A. Digitalt skabte data og dokumenter, som ikke skal bevares i henhold til gældende lovgivning, kasseres, når opbevaringspligten efter andre bestemmelser er opfyldt, og når de efter myndighedernes egen vurdering i øvrigt ikke længere har retlig eller administrativ betydning.
+Hvorvidt den pågældende myndighed har pligt til at arkivere eller kassere data i it-systemet, kan angives med klassifikationen **arkiveringspligttype**, se Bilag A. Digitalt skabte data og dokumenter, som ikke skal bevares i henhold til gældende lovgivning, kasseres, når opbevaringspligten efter andre bestemmelser er opfyldt, og når de efter myndighedernes egen vurdering i øvrigt ikke længere har retlig eller administrativ betydning.
 
-I forhold til aflevering af arkiveringsversioner skal det kunne angives, om data i it-systemet planlægges afleveret som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode. Her anvendes klassifikationen **Arkiveringsversionsperiodetype**, se Bilag A,som defineres i Bekendtgørelse om arkiveringsversioner. Arkiveringsversioner af data fra et it-system afleveres enten til Rigsarkivet eller et kommunalt eller regionalt stadsarkiv, som defineres i klassifikationen ***Arkiveringsinstitutionstype***.
+I forhold til aflevering af arkiveringsversioner skal det kunne angives, om data i it-systemet planlægges afleveret som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode. Her anvendes klassifikationen **arkiveringsversionsperiodetype**, se Bilag A,som defineres i Bekendtgørelse om arkiveringsversioner. Arkiveringsversioner af data fra et it-system afleveres enten til Rigsarkivet eller et kommunalt eller regionalt stadsarkiv, som defineres i klassifikationen **arkiveringsinstitutionstype**.
 
 Det angives, om der manuelt eller automatisk er **konverteret data og dokumenter** fra forgængersystemet ind i det nuværende system, og om **alle data** eller **udvalgte data er konverteret ind.** Et forgængersystem er i denne forbindelse et andet it-system, der tidligere har varetaget samme funktion.
 
@@ -281,10 +280,10 @@ Sikkerhed
 
 Emnet sikkerhed kan vedrøre mange forskellige aspekter, fx informationssikkerhed, persondatasikkerhed, forretnings- og samfundskritikalitet og fortrolighed.
 
-I henhold til GDPR (http://data.europa.eu/eli/reg/2016/679/oj; https://www.retsinformation.dk/eli/lta/2018/502) og Datatilsynets 'Vejledning om fortegnelse' (https://www.datatilsynet.dk/media/6567/fortegnelse.pdf) er det for databærende it-systemer relevant at være opmærksom på **datasletningsfristen**, dvs. førstkommende dato for, hvornår bestemte data i systemet skal være slettet forinden.
+I henhold til [GDPR](https://www.retsinformation.dk/eli/lta/2018/502) og Datatilsynets [Vejledning om fortegnelse](https://www.datatilsynet.dk/media/6567/fortegnelse.pdf) er det for databærende it-systemer relevant at være opmærksom på **datasletningsfristen**, dvs. førstkommende dato for, hvornår bestemte data i systemet skal være slettet forinden.
 It-systemet kan opmærkes med en **personoplysningskategori**, som er beskrevet i Datadatatilsynets vejledning, og på denne måde oplyses det, hvorvidt systemet indeholder følsomme personoplysninger eller almindelige personoplysninger, herunder personnummeroplysninger og oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger, se Bilag A. De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Oplysninger om strafbare forhold og personnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger. Som en hjælp til præcisering kunne en klassifikation med personoplysnings*underkategorier* eventuelt opstilles.
 
-Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift. fortrolighed, fx **Fortrolighedsgrad iht. ISO27002** (ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information securi-ty controls: https://www.iso.org/standard/54533.html) eller **Fortrolighedsgrad iht. sikkerhedscirkulæret (EU/NATO)** (https://www.retsinformation.dk/eli/retsinfo/2014/10338). Se Bilag A. I forhold til klassifikation iht. sikkerhedscirkulæret kan tilføjes 'uklassificeret', så det kan angives, at der er taget stilling til fortrolighedsgraden.
+Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift. fortrolighed, fx **Fortrolighedsgrad iht. ISO27002** [ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls](https://www.iso.org/standard/54533.html) eller **Fortrolighedsgrad iht. sikkerhedscirkulæret (EU/NATO)**  [Sikkerhedscirkulæret](https://www.retsinformation.dk/eli/retsinfo/2014/10338). Se Bilag A. I forhold til klassifikation iht. sikkerhedscirkulæret kan tilføjes 'uklassificeret', så det kan angives, at der er taget stilling til fortrolighedsgraden.
 
 <p class="example">Eksempelvis kan data i beredskabssystemer eventuelt være opmærket med fortrolighedsgrad, og fortrolighed kan være et relevant aspekt ved indmelding af it-systemoplysninger såsom kritikalitetstype og systemernes tekniske tilstand. </p>
 
@@ -301,7 +300,7 @@ Basisprofilens datamodel udgør den fælles specifikation, som anvendes og udvid
 
 Der gives en overordnet beskrivelse af datamodellens indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses UML-diagrammerne for både basisprofilen og arkivprofilen. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values.
 
-- Link til webudgivelse af UML-modellerne: https://data.gov.dk/document/itsystemspecification/v1/uml/
+- Link til webudgivelse af UML-modellerne: [https://data.gov.dk/document/itsystemspecification/v1/uml/](https://data.gov.dk/document/itsystemspecification/v1/uml/)
 
 Via nedenstående link findes der også en online oversigt over modellens elementer.
 
@@ -353,7 +352,7 @@ Referencer
 - Statens-IT systemkort
 - Datamodellen for BMC
 - Retningslinjer for dokumentation og formidling af arkitektur i digitaliseringsprojekter. (baseret på ISO)
-- Fællesoffentlig Referencemodel (FORM): https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form;https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form>
+- Fællesoffentlig Referencemodel (FORM): https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form;https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form
 - Kommunernes Emnesystematik (KLE)
 - Service- og Teknologireferencemodel (STORM): http://arkitekturguiden.digitaliser.dk/storm
 - KOMBIT Rollegalleri: https://www.kombit.dk/sites/default/files/user_upload/documents/Videnscenter/Eksempel%20fra%20KOMBIT_Rollegalleri%20implementering.pdf
