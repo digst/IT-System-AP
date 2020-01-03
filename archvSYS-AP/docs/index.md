@@ -126,7 +126,10 @@ I forbindelse med Rigsarkivets tilsyn med offentlige myndigheder er det konstate
 
 Rigsarkivet har brug for at kunne identificere arkiveringspligtige datasæt på en pragmatisk måde, hvorfor det i de fleste tilfælde er mest hensigtsmæssig at begynde dialogen med de pågældende myndigheder på baggrund af et systemoverblik. Dette systemoverblik vil standarden danne basis for.  
 
-Der kan være perspektiver i, at myndigheder fremover vedligeholder et overblik over datasæt, forretningsprocesser og services med en kobling til understøttende it-systemer, og således at dialogen omkring arkivering kan begynde dér. Systemoverblikket skal kunne samarbejde med de mest udbredte overblikssystemer, som myndighederne allerede har[[1]], således at de ikke skal vedligeholde flere overblik.
+Der kan være perspektiver i, at myndigheder fremover vedligeholder et overblik over datasæt, forretningsprocesser og services med en kobling til understøttende it-systemer, og således at dialogen omkring arkivering kan begynde dér. Systemoverblikket skal kunne samarbejde med de mest udbredte overblikssystemer, som myndighederne allerede har, således at de ikke skal vedligeholde flere overblik.
+
+<p class="example">*Som eksempel kan nævnes OS2KITOS, som mange kommuner anvender som systemoverblik.*</p>
+
 
 Centrale begreber
 =====================
@@ -137,32 +140,35 @@ Begrebet 'it-system' udgør det centrale element i denne standard, men dette spe
 System, informationssystem og it-system
 -------------------------------------------
 
-Et **system** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i ISO 15288 [[2]].
+Et **system** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i ISO/IEC 15288 (Systems and software engineering -- System life cycle processes).  
 
 Det bemærkes også, at *"Et system er i denne sammenhæng menneskeskabt og består ikke blot af hardware, software og data, men også af mennesker, processer, procedurer, faciliteter og materialer og naturlige genstande".*
 
-Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation af information, har vi at gøre med informationssystemer, og når (computer)-teknologi anvendes til at behandle disse informationer eller data, har vi at gøre med it-systemer[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftn3).
+Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation af information, har vi at gøre med informationssystemer, og når (computer)-teknologi anvendes til at behandle disse informationer eller data, har vi at gøre med it-systemer
 
-Begrebet ***it-system* **defineres derfor i denne standard som *"system der består af digitale informationsteknologier"***  Et it-system kan instantieres i forskellige it-miljøer. Et **instantieret it-system** kan derfor defineres som "*fysisk instans af et it-system i et bestemt it-miljø".* Det vil fx kun være relevant at arkivere data fra et it-system instantieret i et produktionsmiljø og ikke et testmiljø, men i forbindelse med afgivelse af it-systemoplysninger til Rigsarkivet bør dette fremgå klart.
+<p class="note">*Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet. Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology — Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
+*</p>
 
-I forhold til arkivering præciseres klassen ***instantieret it-system*** som værende et ***databærende it-system*** ved at sætte egenskaben 'databærende' til 'sand'.  
+Begrebet **it-system** defineres derfor i denne standard som *"system der består af digitale informationsteknologier"*. Et it-system kan instantieres i forskellige it-miljøer. Et **instantieret it-system** kan derfor defineres som "*fysisk instans af et it-system i et bestemt it-miljø".* Det vil fx kun være relevant at arkivere data fra et it-system instantieret i et produktionsmiljø og ikke et testmiljø, men i forbindelse med afgivelse af it-systemoplysninger til Rigsarkivet bør dette fremgå klart.
+
+I forhold til arkivering præciseres klassen **instantieret it-system** som værende et **databærende it-system** ved at sætte egenskaben 'databærende' til 'sand'.  
 
 Begrebet databærende it-system defineres i denne standard som "instantieret it-system, der indeholder digitalt skabte data eller dokumenter".
 
 I forbindelse med aflevering til Rigsarkivet eller kommunale stadsarkiver er der alene tale om data digitalt skabt af den offentlige forvaltning og domstolene.
 
-
 Ifølge Rigsarkivets vejledninger i bevaring og kassation af arkivalier kan et databærende it-system fx være:
 
 - et fagsystem, et register eller en database
-
 - en elektronisk journal, som indeholder oplysninger om sager og dokumenter, men hvor selve dokumenterne findes på papir
-
 - et elektronisk sags- og dokumenthåndteringssystem (ESDH-system), hvor både oplysninger om sager og dokumenter samt selve dokumenterne findes i digital form.
 
 **Klassifikationer**
 
-Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel[[4]](https://euangoddard.github.io/clipboard2markdown/#_ftn4)
+Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel
+
+<p class="note">*Klassifikationer beskrives iht. anvendelsesprofil for klassifikation:* [https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer]
+</p>
 
 **Hvornår er der tale om et nyt it-system?**
 
@@ -793,12 +799,9 @@ arkitektur.digst.dk
 
 * * * * *
 
-[[1]](https://euangoddard.github.io/clipboard2markdown/#_ftnref1) Som eksempel kan nævnes KITOS, som mange kommuner anvender som systemoverblik.
 
-[[2]](https://www.iso.org/standard/63711.html) ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)  
 
-[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftnref3) Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en)
-
+[[3]](https://euangoddard.github.io/clipboard2markdown/#_ftnref3) 
 Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
 
 [[4]](https://euangoddard.github.io/clipboard2markdown/#_ftnref4) Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
