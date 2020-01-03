@@ -43,7 +43,7 @@ Editor: KL
 Editor: Danske Regioner
 Editor: Organisationen Danske Arkiver
 Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
-Boilerplate: copyright no, conformance no, abstract yes
+Boilerplate: copyright no, conformance no, abstract no
 Shortname: archvSYS-AP
 Revision: 1.0.0
 Date: 2019-12-05
@@ -551,6 +551,68 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
 - it-system:  system, der består af digitale informationsteknologier
 - instantieret it-system:  fysisk instans af et it-system i et bestemt it-miljø
 - databærende it-system: instantieret it-system, der indeholder digitalt skabte data eller dokumenter
+
+
+### Udfyldelse: Myndighedsoplysninger 
+<dl class="def">
+<dt>myndighedens navn</dt><dd>formel betegnelse for myndigheden (skal udfyldes) </dd>
+<dt>myndighedens  hovedmailadresse</dt><dd>e-mailadresse, hvormed myndigheden primært kontaktes (skal udfyldes) </dd>
+<dt>myndighedstype (regional, kommunal, statslig)</dt><dd>klassifikation af myndigheden ift. styringsniveau  (skal udfyldes) </dd>
+<dt>afgivelsesdato</dt><dd>dato for, hvornår oplysningerne blev afgivet (skal udfyldes) </dd>
+</dl>
+
+### Udfyldelse: Bbasisinformation
+<dl class="def">
+<dt>it-systemidentifikator</dt><dd>angiv det ID, som entydigt identificerer it-systemet (kan udfyldes) </dd>
+<dt>it-systemnavn (fx navn som anført i hovedkontrakten)</dt><dd>angiv it-systemets foretrukne betegnelse  (skal udfyldes) </dd>
+<dt>alternativt it-systemnavn</dt><dd>angiv eventuelt øvrige betegnelser eller kaldenavne for it-systemet (kan udfyldes) </dd>
+<dt>it-systembeskrivelse</dt><dd>beskriv, til hvilket formål it-systemet er taget i brug i organisationen (skal udfyldes) </dd>
+<dt>ibrugtagningsdato </dt><dd>angiv dato, hvor it-systemet blev taget i brug med fuld eller delvis funktio-nalitet  (skal udfyldes) </dd>
+<dt>udfasningsdato</dt><dd>angiv dato, hvor it-systemet blev endeligt blev afviklet (kan udfyldes) </dd>
+<dt>version</dt><dd>angiv eventuelt, hvilken version der er taget i anvendelse (kan udfyldes) </dd>
+<dt>kommentar</dt><dd>angiv, eventuelt supplerende bemærkninger eller oplysninger (kan udfyldes) </dd>
+<dt>indeholder data</dt><dd>angiv om it-systemet indeholder digitalt skabte data (skal udfyldes) </dd>
+<dt>indeholder dokumenter</dt><dd>angiv, om it-systemet indeholder digitalt skabte dokumenter (skal udfyldes) </dd>
+<dt>dokumentationsreference</dt><dd>angiv reference(r) til dokumentation af it-systemet (kan udfyldes) </dd>
+<dt>rettighedshaver</dt><dd>organisation, der ejer eller har dispositionsretten over de intellektuelle rettigheder over it-systemets primære softwareprodukt (kan udfyldes) </dd></dl>
+
+### Udfyldelse: Opgaver
+<dl class="def"> 
+<dt>FORM-opgave(r)</dt><dd>(for regioner og statslige administrative enheder) angiv FORM-opgave(r), som it-systemet understøtter (fx 65.50.05.10 Sagsarkivering) el. overord-net serviceområde (kan udfyldes) </dd>
+<dt>KLE-emne(r) </dt><dd>(for kommuner) angiv  KLE-emne(r) som it-systemet understøtter (fx 85.08.00 arkivering i almindelighed) el. overordnet emnegruppe (kan udfyldes) </dd>
+<dt>lovgrundlag</dt><dd>angiv reference(r) til juridisk ressource, som danner grundlag for syste-mets anvendelse (kan udfyldes) </dd>
+<dt>sagsområde(r) </dt><dd>angiv, hvilket sagsområde iht. bekendtgørelser for bevaring og kassation af digitale arkivalier it-systemet tilhører (kan udfyldes) </dd>
+<dt>forgængersystem</dt><dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes) </dd>
+</dt><dd></dl>
+
+### Udfyldelse: Styring
+<dl class="def"></dt><dd> 
+<dt>it-systemejer</dt><dd>angiv person eller organisation med det overordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes) </dd></dl>
+
+### Udfyldelse: Information
+<dl class="def"> 
+<dt>datasætID</dt><dd>angiv datasættes unikke ID (kan udfyldes) </dd>
+<dt>dataansvarlig</dt><dd>angiv den organisation, som har dispositionsretten og træffer afgørelse om hvordan data skal behandles (skal udfyldes) </dd>
+<dt>dataskaber </dt><dd>angiv den organisation, der har det primære ansvar for tilvejebringelsen af datasættet (skal udfyldes) </dd>
+<dt>titel</dt><dd>angiv datasættets navn (det eller de ord, der navngiver datasættet) (kan udfyldes) </dd>
+<dt>beskrivelse</dt><dd>beskriv datasættets formål og indhold (fx datasættet indeholder journal-sager fra kommune x) (kan udfyldes) </dd>
+<dt>versionsnummer</dt><dd>angiv eventuelt datasættets versionsnummer (kan udfyldes) </dd>
+<dt>personoplysningskategori</dt><dd>angiv, om it-systemet indeholder almindelige personoplysninger, følsom-me personoplysninger eller oplysninger om strafbare forhold (flere skal kunne vælges - udestår pt) (kan udfyldes) </dd>
+<dt>fortrolighedsgrad  iht. sikkerhedscirkulæret</dt><dd>angiv, i hvilket omfang information kan videregives iht. sikkerhedscirkulæ-ret (EU/NATO) () </dd>
+<dt>fortrolighedsgrad  iht. ISO 27001</dt><dd>angiv, i hvilket omfang information kan videregives iht. informationssik-kerhedsstandarden ISO 27002 (kan udfyldes) </dd>
+<dt>arkiveringspligttype</dt><dd>angiv, hvorvidt data skal bevares eller kasseres iht. gældende arkiverings-bestemmelser (for data bestemt til bevaring skal der afleveres arkive-ringsversioner til et offentligt arkiv) (kan udfyldes) </dd>
+<dt>arkiveringsfrekvens</dt><dd>angiv, hvor ofte der fremstilles arkiveringsversioner af datasættet (kan udfyldes) </dd>
+<dt>arkiveringsperiodetype</dt><dd>angiv, hvorvidt data afleveres som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode  (kan udfyldes) </dd>
+<dt>data konverteret fra  it-system</dt><dd> () </dd>
+<dt>datakonverteringsstatus</dt><dd>angiv, om alle eller udvalgte data er konverteret ind fra forgængersystem (kan udfyldes) </dd>
+<dt>første datatilføjelse</dt><dd>angiv dato for første datatilføjelse (skal udfyldes) </dd>
+<dt>sidste datatilføjelse</dt><dd>angiv dato for sidste datatilføjelse (skal udfyldes) </dd>
+<dt>næste datasletningsfrist</dt><dd>angiv  førstkommende dato for, hvornår bestemte data i it-systemet for-ventes at skulle være slettet forinden iht. GDPR (kan udfyldes) </dd>
+<dt>tidligere arkivering</dt><dd>angivelse af, om data fra it-systemet tidligere er blevet arkiveret (kan udfyldes) </dd>
+<dt>seneste arkivversion: startårstal</dt><dd>angiv det årstal, seneste arkiveringsversion først dækker (kan udfyldes) </dd>
+<dt>seneste arkivversion: slutårstal</dt><dd>angiv det årstal, seneste arkiveringsversion sidst dækker (kan udfyldes) </dd>
+</dl>
+
 
 
 
