@@ -167,7 +167,7 @@ Ifølge Rigsarkivets vejledninger i bevaring og kassation af arkivalier kan et d
 
 Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel
 
-<p class="note">*Klassifikationer beskrives iht. anvendelsesprofil for klassifikation:* [https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer]
+<p class="note">*Klassifikationer beskrives iht. Anvendelsesprofil for klassifikation:* [https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer/](https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer/)
 </p>
 
 **Hvornår er der tale om et nyt it-system?**
@@ -207,7 +207,7 @@ Som en del af kerneinformationerne hører ***ibrugtagningsdato*** og ***udfasnin
 
 For at kunne identificere, hvilken version af softwareproduktet der er taget i anvendelse, eksempelvis i forhold til en bestemt kontrakt med en leverandør, kan det være relevant at angive et ***versionsnummer***. Hvis et versionsnummer er specificeret i kontrakten, bør dette anvendes.
 
-<p class="example">*Eksempelvis kan der ved anvendelse af cBrains F2 angives version 5.3 (og ikke 5.3.0.41112)*</p>
+<p class="example">Eksempelvis kan der ved anvendelse af cBrains F2 angives version 5.3 (og ikke 5.3.0.41112)</p>
 
 It-systemer kan være taget i anvendelse i forskellige miljøer iht. systemets udviklingsforløb[[8]](https://euangoddard.github.io/clipboard2markdown/#_ftn8), fx udvikling, afprøvning, præproduktion, produktion, se klassifikationen ***it-miljøtype*** i Bilag A. I forhold til arkivering er kun instanser af it-systemer i produktion relevante.
 
@@ -222,8 +222,7 @@ Et it-system kan beskrives med et eller flere anvendelsesformål, der antages at
 
 **Klassifikation FORM:** <http://www.form-online.dk/soegning>
 
-<p class="example">
-*Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven "65.50.05.05 Sagshåndtering" (FORM v.2.14) el. KLE-emnet "00.15.12. Kvalitetsstyringssystem, sagsbehandling" (KLE v. Aug. 2019)*</p>
+<p class="example">Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven "65.50.05.05 Sagshåndtering" (FORM v.2.14) el. KLE-emnet "00.15.12. Kvalitetsstyringssystem, sagsbehandling" (KLE v. Aug. 2019)</p>
 
 Bemærk, at produkter i SKI-kataloget allerede er opmærket med FORM.
 
