@@ -529,7 +529,17 @@ Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgøre
 
 
 ### Klassifikation: It-miljøtyper
-Klassifikation, der består af typer af it-miljø, som et it-system kan instantieres i
+*Klassifikation, der består af typer af it-miljø, som et it-system kan instantieres i*
+<dl class="def">
+<dt>demonstration</dt><dd>miljø, der anvendes til at præsentere udviklingsmuligheder som et proof-of-concept</dd>
+<dt>udvikling</dt><dd>miljø, hvor den initiale softwareudvikling finder sted</dd>
+<dt>test</dt><dd>miljø, der anvendes til afprøvning og kvalitetssikring af ny eller opdateret kode</dd>
+<dt>præproduktion</dt><dd>miljø, der anvendes til sidste test inden ibrugtagning, idet miljøet præcist afspejler det endelige produktionsmiljø</dd>
+<dt>produktion</dt><dd>miljø, hvor it-systemet går live og kan anvendes af slutbrugerne</dd>
+<dt>disaster recovery</dt><dd>miljø, som er et spejl af produktionsmiljøet, og som anvendes ifm. systemgendannelse </dd>
+<dt>træning</dt><dd>miljø, der alene anvendes til oplæring af brugere af it-system</dd>
+</dl>
+
 Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15 
 - Kilde: https://en.wikipedia.org/wiki/Deployment_environment 
 - Kilde: Statens-it Systemkort
@@ -538,7 +548,23 @@ Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
 - Distribution: https://data.gov.dk/concept/profile/ITEnvironmentTypes.rdf
 
 ### Klassifikation: Personoplysningskategorier
-Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne
+*Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne*
+
+<dl class="def"><dt>1. almindelige personoplysninger</dt><dd>personoplysninger, der ikke er klassificeret som særlige kategorier af oplysninger (følsomme personoplysninger).</dd>
+<dt>1.1 personnummeroplysninger</dt><dd>almindelig personoplysning, om personnummer, som har selvstændigt behandlingshjemmel i databeskyttelseslovens § 11</dd>
+<dt>1.2 oplysninger om strafbare forhold</dt><dd>almindelig personoplysning, der vedrører straffedomme og lovovertrædelser eller tilknyttede sikkerhedsforanstaltninger (oplysninger om strafbare forhold er ikke følsomme oplysninger i databeskyttelsesforordningens forstand.)</dd>
+<dt>2. følsomme personoplysninger</dt><dd>"personoplysninger om:
+personoplysninger om:
+o Race og etnisk oprindelse
+o Politisk overbevisning
+o Religiøs eller filosofisk overbevisning
+o Fagforeningsmæssige tilhørsforhold
+o Genetiske data
+o Biometriske data med henblik på entydig identifikation
+o Helbredsoplysninger
+o Seksuelle forhold eller seksuel orientering</dd>
+<dt>3. ingen personoplysninger</dt><dd>Personoplysningskategori, der angiver, at der ikke er informationer om identificerbare fysiske personer tilstede</dd>
+</dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05.12.60 
 - Juridisk kilde: http://data.europa.eu/eli/reg/2016/679/oj 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/502 
@@ -547,32 +573,58 @@ Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed
 - Distribution: https://data.gov.dk/concept/profile/PersonalDataCategories.rdf  
 
 ### Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)
-Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)
+*Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)*
+<dl class="def">
+<dt>yderst hemmeligt</dt><dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU overordentlig alvorlig skade.</dd>
+<dt>hemmeligt</dt><dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU alvorlig skade.</dd>
+<dt>fortroligt</dt><dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU skade.</dd>
+<dt>til tjenestebrug</dt><dd>Denne klassifikationsgrad anvendes om informationer, der ikke må offentliggøres eller komme til uvedkommendes kendskab.</dd>
+<dt>må offentliggøres</dt><dd>Denne klassifikationsgrad anvendes om informationer, som ikke er fortrolige, og som umiddelbart må offentliggøres</dd>
+<dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20 
 - Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338 
 - Distribution https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU.rdf
 
 
 ### Klassifikation: Arkiveringspligttyper
-Klassifikation, der består af typer af arkiveringspligt set i forhold til, om data skal bevares eller kasseres iht. gældende arkiveringsbestemmelser
+*Klassifikation, der består af typer af arkiveringspligt set i forhold til, om data skal bevares eller kasseres iht. gældende arkiveringsbestemmelser*
+<dl class="def">
+<dt>bevaring</dt><dd>arkiveringspligt til at sikre bevaringen af arkivalier, der har historisk værdi eller tjener til dokumentation af forhold af væsentlig administrativ eller retlig betydning for borgere og myndigheder iht. gældende arkiveringsbestemmelser</dd>
+<dt>kassation</dt><dd>arkiveringspligt til at kassere ikkebevaringsværdige offentlige arkivalier iht. gældende arkiveringsbestemmelser</dd>
+<dt>ved ikke</dt><dd>angivelse af, at arkiveringspligten er ukendt</dd>
+<dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201    
 
 
 ### Klassifikation: Arkiveringsversionsperiodetyper
-Klassifikation, der består af typer af arkiveringsperioder set i forhold til deres afgrænsning.
-Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en afgrænset periode eller ved af-sluttet arkivperiode 
+*Klassifikation, der består af typer af arkiveringsperioder set i forhold til deres afgrænsning.
+Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en afgrænset periode eller ved af-sluttet arkivperiode*
+<dl class="def">
+<dt>afgrænset periode </dt><dd>Arkiveringsversion, der indeholder data fra en afgrænset periode, hvor der ikke længere rettes i eller tilføjes data</dd>
+<dt>øjebliksbillede </dt><dd>Arkiveringsversion, der indeholder samtlige bevaringsværdige data og eventuelle dokumenter på et bestemt tidspunkt</dd>
+<dt>afsluttede sager og dokumenter</dt><dd>Arkiveringsversion, der indeholder afsluttede sager og dokumenter</dd>
+<dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2010/1007     
 
 ### Klassifikation: Arkivinstitutionstyper
-Klassifikation, der består af typer af offentlige institutioner, der har til opgave at bevare arkivalier
+*Klassifikation, der består af typer af offentlige institutioner, der har til opgave at bevare arkivalier*
+<dl class="def">
+<dt>stadsarkiv</dt><dd>arkivinstitution oprettet af kommune eller region </dd>
+<dt>rigsarkiv</dt><dd>statslig arkivinstitution, som bistår myndigheder omfattet af arkivloven i arkivmæssig henseende</dd>
+<dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201 
 - Kilde: https://ec.europa.eu/isa2/sites/isa/files/isa2_action_2017_01_standard_based_archival_data_manage-ment_final_report_v1.00.pdf 
 
 ### Klassifikation: Konverteringsstatusser
-Klassifikation, der består af statusser ift. konvertering set ud fra omfanget af et (manuelt eller automatisk) datakonverterings- og import forløb 
+*Klassifikation, der består af statusser ift. konvertering set ud fra omfanget af et (manuelt eller automatisk) datakonverterings- og import forløb*
+<dl class="def">
+<dt>alle konverteret ind</dt><dd>alle data konverteret og importeret</dd>
+<dt>udvalgte data konverteret ind</dt><dd>udvalgte data konverteret og importeret</dd>
+<dt>ukendt omfang af import</dt><dd>data er konverteret og importeret, men omfanget er ukendt</dd>
+<dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05
 - Kilde: https://www.sa.dk/da/offentlig-forvaltning/ 
 
@@ -843,12 +895,14 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
 - Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. afgivelse af oplysninger om it-systemer til Rigsarkivet. Bemærk, at denne anvendelsesorienterede begrebsliste udvælger og sammensætter begreber fra forskellige emneområder, se fx begrebsmodellen for it-system og begrebsmodellen for digital arkivering, som er udstillet online. 
 
 
+---
 
 Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 
 
 arkitektur.digst.dk
 
+---
 
 <pre class=biblio>
 
