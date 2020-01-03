@@ -137,7 +137,7 @@ Begrebet 'it-system' udgør det centrale element i denne standard, men dette spe
 System, informationssystem og it-system
 -------------------------------------------
 
-Et **system** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i[[ISO15288]].
+Et **system** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i ISO 15288 [[2]].
 
 Det bemærkes også, at *"Et system er i denne sammenhæng menneskeskabt og består ikke blot af hardware, software og data, men også af mennesker, processer, procedurer, faciliteter og materialer og naturlige genstande".*
 
@@ -792,13 +792,10 @@ arkitektur.digst.dk
 </pre>
 
 * * * * *
-[[ISO15288]](ISO/IEC 15288 (Systems and software engineering -- System life cycle processes) https://www.iso.org/standard/63711.html
-
-[1] Som eksempel kan nævnes KITOS, som mange kommuner anvender som systemoverblik.
 
 [[1]](https://euangoddard.github.io/clipboard2markdown/#_ftnref1) Som eksempel kan nævnes KITOS, som mange kommuner anvender som systemoverblik.
 
-[[2]](https://euangoddard.github.io/clipboard2markdown/#_ftnref2)  ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)  
+[[2]](https://www.iso.org/standard/63711.html) ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)  
 
 [[3]](https://euangoddard.github.io/clipboard2markdown/#_ftnref3) Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en)
 
