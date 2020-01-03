@@ -160,19 +160,16 @@ Begrebet databærende it-system defineres i denne standard som "instantieret it-
 
 I forbindelse med aflevering til Rigsarkivet eller kommunale stadsarkiver er der alene tale om data digitalt skabt af den offentlige forvaltning og domstolene.
 
-<p class="example">
 Ifølge Rigsarkivets vejledninger i bevaring og kassation af arkivalier kan et databærende it-system fx være:
-
 - et fagsystem, et register eller en database
 - en elektronisk journal, som indeholder oplysninger om sager og dokumenter, men hvor selve dokumenterne findes på papir
 - et elektronisk sags- og dokumenthåndteringssystem (ESDH-system), hvor både oplysninger om sager og dokumenter samt selve dokumenterne findes i digital form.
-<p/>
 
 **Klassifikationer**
 
 Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel
 
-<p class="note">*Klassifikationer beskrives iht. [Anvendelsesprofil for klassifikation](https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer)</p>
+<p class="note">Klassifikationer beskrives iht. [Anvendelsesprofil for klassifikation](https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer)</p>
 
 **Hvornår er der tale om et nyt it-system?**
 
@@ -477,7 +474,7 @@ Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgøre
 
 ###  Klassifikation: Offentlige organisationstyper
 *Klassifikation, der består af typer af offentlige organisationer set i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst*
-<dl>
+<dl class="def">
   <dt>kommune</dt><dd>mindste offentlige forvaltningsenhed, der styres af en kommunalbestyrelse som bekendtgjort i kommunebestyrelsesloven</dd>
   <dt>region</dt><dd>regional forvaltningsenhed, der styres af et regionsråd, og som er bekendtgjort i regionsloven</dd>
   <dt>statslig myndighed</dt><dd>statslig forvaltningsenhed, som administrerer lovgivning eller forvaltning af et bestemt område</dd>
