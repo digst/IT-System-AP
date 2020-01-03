@@ -144,13 +144,13 @@ Begrebet 'it-system' udgør det centrale element i denne standard, men dette spe
 System, informationssystem og it-system
 -------------------------------------------
 
-Et **system** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i ISO/IEC 15288 (Systems and software engineering -- System life cycle processes).  
+Et **system** defineres generelt som "et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål" ligesom i ISO/IEC 15288 (Systems and software engineering -- System life cycle processes).  
 
-Det bemærkes også, at *"Et system er i denne sammenhæng menneskeskabt og består ikke blot af hardware, software og data, men også af mennesker, processer, procedurer, faciliteter og materialer og naturlige genstande".*
+Det bemærkes også, at "Et system er i denne sammenhæng menneskeskabt og består ikke blot af hardware, software og data, men også af mennesker, processer, procedurer, faciliteter og materialer og naturlige genstande".
 
 Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation af information, har vi at gøre med informationssystemer, og når (computer)-teknologi anvendes til at behandle disse informationer eller data, har vi at gøre med it-systemer
 
-<p class="note">Begrebet *it-system* er altså en specialisering af *system* fra ISO 15288, idet der fokuseres på IT-aspektet. Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology — Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it.</p>
+<p class="note">Begrebet "it-system" er altså en specialisering af "system" fra ISO 15288, idet der fokuseres på IT-aspektet. Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology — Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it.</p>
 
 Begrebet **it-system** defineres derfor i denne standard som "system der består af digitale informationsteknologier". Et it-system kan instantieres i forskellige it-miljøer. Et **instantieret it-system** kan derfor defineres som "fysisk instans af et it-system i et bestemt it-miljø". Det vil fx kun være relevant at arkivere data fra et it-system instantieret i et produktionsmiljø og ikke et testmiljø, men i forbindelse med afgivelse af it-systemoplysninger til Rigsarkivet bør dette fremgå klart.
 
