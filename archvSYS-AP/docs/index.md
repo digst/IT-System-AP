@@ -160,11 +160,13 @@ Begrebet databærende it-system defineres i denne standard som "instantieret it-
 
 I forbindelse med aflevering til Rigsarkivet eller kommunale stadsarkiver er der alene tale om data digitalt skabt af den offentlige forvaltning og domstolene.
 
+<p class="example">
 Ifølge Rigsarkivets vejledninger i bevaring og kassation af arkivalier kan et databærende it-system fx være:
 
 - et fagsystem, et register eller en database
 - en elektronisk journal, som indeholder oplysninger om sager og dokumenter, men hvor selve dokumenterne findes på papir
 - et elektronisk sags- og dokumenthåndteringssystem (ESDH-system), hvor både oplysninger om sager og dokumenter samt selve dokumenterne findes i digital form.
+<p/>
 
 **Klassifikationer**
 
