@@ -1,5 +1,5 @@
 
-<!doctype html><html lang="en">
+<!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>Standard for beskrivelse af it-systemer - Arkivprofil</title>
@@ -1416,10 +1416,6 @@ pre .property::before, pre .property::after {
    <div data-fill-with="warning"></div>
    <hr title="Separator for header">
   </div>
-  <div class="p-summary" data-fill-with="abstract">
-   <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
-   <p>Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.</p>
-  </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
@@ -1482,7 +1478,15 @@ pre .property::before, pre .property::after {
         <li><a href="#klassifikation-arkivinstitutionstyper"><span class="secno">7.1.10</span> <span class="content">Klassifikation: Arkivinstitutionstyper</span></a>
         <li><a href="#klassifikation-konverteringsstatusser"><span class="secno">7.1.11</span> <span class="content">Klassifikation: Konverteringsstatusser</span></a>
        </ol>
-      <li><a href="#bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"><span class="secno">7.2</span> <span class="content">Bilag B: Skabelon til registrering i regneark (arkivprofil)</span></a>
+      <li>
+       <a href="#bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"><span class="secno">7.2</span> <span class="content">Bilag B: Skabelon til registrering i regneark (arkivprofil)</span></a>
+       <ol class="toc">
+        <li><a href="#udfyldelse-myndighedsoplysninger"><span class="secno">7.2.1</span> <span class="content">Udfyldelse: Myndighedsoplysninger</span></a>
+        <li><a href="#udfyldelse-bbasisinformation"><span class="secno">7.2.2</span> <span class="content">Udfyldelse: Bbasisinformation</span></a>
+        <li><a href="#udfyldelse-opgaver"><span class="secno">7.2.3</span> <span class="content">Udfyldelse: Opgaver</span></a>
+        <li><a href="#udfyldelse-styring"><span class="secno">7.2.4</span> <span class="content">Udfyldelse: Styring</span></a>
+        <li><a href="#udfyldelse-information"><span class="secno">7.2.5</span> <span class="content">Udfyldelse: Information</span></a>
+       </ol>
       <li>
        <a href="#bilag-c-eksempel-p-maskinlsbart-format"><span class="secno">7.3</span> <span class="content">Bilag C: Eksempel på maskinlæsbart format</span></a>
        <ol class="toc">
@@ -1793,6 +1797,66 @@ It-systemet kan opmærkes med en <strong>personoplysningskategori</strong>, som 
     Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og 'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne' 
    <ul>
     <li data-md>
+     <p><strong>Administrative systemer</strong></p>
+    <li data-md>
+     <p>ESDH-systemer med journalsager <em>(kommune og region)</em></p>
+    <li data-md>
+     <p>Elektroniske journaler <em>(kommune og region)</em></p>
+    <li data-md>
+     <p>Elektroniske sagshenvisnings- og advissystemer <em>(kommune)</em></p>
+    <li data-md>
+     <p><strong>Systemer på økonomiområdet</strong></p>
+    <li data-md>
+     <p>Økonomisystemer (kommune og region)</p>
+    <li data-md>
+     <p><strong>Systemer på social- og sundhedsområdet</strong></p>
+    <li data-md>
+     <p>ESDH-systemer med personsager <em>(kommune)</em></p>
+    <li data-md>
+     <p>Daginstitutions- og børnepasningssystemer <em>(kommune)</em></p>
+    <li data-md>
+     <p>Omsorgssystemer <em>(kommune)</em></p>
+    <li data-md>
+     <p>Systemer vedr. institutioner for handicappede herunder døgninstitutioner, klientsystemer <em>(kommune og region)</em></p>
+    <li data-md>
+     <p>Systemer vedr. social- og psykiatribehandling herunder døgninstitutioner, klientsystemer <em>(kommune og region)</em></p>
+    <li data-md>
+     <p>Systemer vedr. forebyggelse og genoptræning <em>(kommune)</em></p>
+    <li data-md>
+     <p>Sundhedsplejesystemer* (kommune)*</p>
+    <li data-md>
+     <p>Systemer vedr. misbrugsbehandling <em>(kommune)</em></p>
+    <li data-md>
+     <p><strong>Systemer på miljø- og teknikområdet </strong>*<strong>(kommune)</strong>*</p>
+    <li data-md>
+     <p>ESDH-systemer med byggesager <em>(kommune)</em></p>
+    <li data-md>
+     <p>ESDH-systemer med sager vedr. miljøgodkendelser og miljøtilsyn (<em>kommune</em>)</p>
+    <li data-md>
+     <p><strong>Systemer på undervisningsområdet</strong></p>
+    <li data-md>
+     <p>Elevadministrationssystemer (<em>kommune og region)</em></p>
+    <li data-md>
+     <p>Systemer vedr. specialundervisning (<em>kommune</em>)</p>
+    <li data-md>
+     <p>PPR-systemer (<em>kommune</em>)</p>
+    <li data-md>
+     <p><strong>Byggeprojektstyringssystemer</strong></p>
+    <li data-md>
+     <p>Byggeprojektstyringssystemer (<em>kommune og</em> <em>region</em>)</p>
+    <li data-md>
+     <p><strong>Systemer på social- og psykiatriområdet</strong></p>
+    <li data-md>
+     <p>Elektroniske patientjournaler, der ikke indberetter til den fælles E-journal SUP <em>(region)</em>.</p>
+    <li data-md>
+     <p>Forskningsdata (<em>region</em>)</p>
+    <li data-md>
+     <p>Kliniske kvalitetsdatabaser <em>(region)</em></p>
+    <li data-md>
+     <p><strong>Systemer på natur- og miljøområdet</strong></p>
+    <li data-md>
+     <p>Jordforureningssystemer, der ikke indberetter til et overordnet statsligt it-system (<em>region</em>)</p>
+    <li data-md>
      <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10</p>
     <li data-md>
      <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2003/591</p>
@@ -1830,8 +1894,24 @@ It-systemet kan opmærkes med en <strong>personoplysningskategori</strong>, som 
      <p>Distribution: https://data.gov.dk/concept/profile/PublicOrganisationTypes.rdf</p>
    </ul>
    <h4 class="heading settled" data-level="7.1.5" id="klassifikation-it-miljtyper"><span class="secno">7.1.5. </span><span class="content">Klassifikation: It-miljøtyper</span><a class="self-link" href="#klassifikation-it-miljtyper"></a></h4>
-    Klassifikation, der består af typer af it-miljø, som et it-system kan instantieres i
-Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15 
+    <em>Klassifikation, der består af typer af it-miljø, som et it-system kan instantieres i</em> 
+   <dl class="def">
+    <dt>demonstration
+    <dd>miljø, der anvendes til at præsentere udviklingsmuligheder som et proof-of-concept
+    <dt>udvikling
+    <dd>miljø, hvor den initiale softwareudvikling finder sted
+    <dt>test
+    <dd>miljø, der anvendes til afprøvning og kvalitetssikring af ny eller opdateret kode
+    <dt>præproduktion
+    <dd>miljø, der anvendes til sidste test inden ibrugtagning, idet miljøet præcist afspejler det endelige produktionsmiljø
+    <dt>produktion
+    <dd>miljø, hvor it-systemet går live og kan anvendes af slutbrugerne
+    <dt>disaster recovery
+    <dd>miljø, som er et spejl af produktionsmiljøet, og som anvendes ifm. systemgendannelse 
+    <dt>træning
+    <dd>miljø, der alene anvendes til oplæring af brugere af it-system
+   </dl>
+   <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15</p>
    <ul>
     <li data-md>
      <p>Kilde: https://en.wikipedia.org/wiki/Deployment_environment</p>
@@ -1845,7 +1925,28 @@ Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
      <p>Distribution: https://data.gov.dk/concept/profile/ITEnvironmentTypes.rdf</p>
    </ul>
    <h4 class="heading settled" data-level="7.1.6" id="klassifikation-personoplysningskategorier"><span class="secno">7.1.6. </span><span class="content">Klassifikation: Personoplysningskategorier</span><a class="self-link" href="#klassifikation-personoplysningskategorier"></a></h4>
-    Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne 
+    <em>Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</em> 
+   <dl class="def">
+    <dt>1. almindelige personoplysninger
+    <dd>personoplysninger, der ikke er klassificeret som særlige kategorier af oplysninger (følsomme personoplysninger).
+    <dt>1.1 personnummeroplysninger
+    <dd>almindelig personoplysning, om personnummer, som har selvstændigt behandlingshjemmel i databeskyttelseslovens § 11
+    <dt>1.2 oplysninger om strafbare forhold
+    <dd>almindelig personoplysning, der vedrører straffedomme og lovovertrædelser eller tilknyttede sikkerhedsforanstaltninger (oplysninger om strafbare forhold er ikke følsomme oplysninger i databeskyttelsesforordningens forstand.)
+    <dt>2. følsomme personoplysninger
+    <dd>"personoplysninger om:
+personoplysninger om:
+o Race og etnisk oprindelse
+o Politisk overbevisning
+o Religiøs eller filosofisk overbevisning
+o Fagforeningsmæssige tilhørsforhold
+o Genetiske data
+o Biometriske data med henblik på entydig identifikation
+o Helbredsoplysninger
+o Seksuelle forhold eller seksuel orientering
+    <dt>3. ingen personoplysninger
+    <dd>Personoplysningskategori, der angiver, at der ikke er informationer om identificerbare fysiske personer tilstede
+   </dl>
    <ul>
     <li data-md>
      <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05.12.60</p>
@@ -1861,7 +1962,19 @@ Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
      <p>Distribution: https://data.gov.dk/concept/profile/PersonalDataCategories.rdf</p>
    </ul>
    <h4 class="heading settled" data-level="7.1.7" id="klassifikation-fortrolighedsgrader-iht-sikkerhedscirkulret-eu-nato"><span class="secno">7.1.7. </span><span class="content">Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)</span><a class="self-link" href="#klassifikation-fortrolighedsgrader-iht-sikkerhedscirkulret-eu-nato"></a></h4>
-    Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO) 
+    <em>Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)</em> 
+   <dl class="def">
+    <dt>yderst hemmeligt
+    <dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU overordentlig alvorlig skade.
+    <dt>hemmeligt
+    <dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU alvorlig skade.
+    <dt>fortroligt
+    <dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU skade.
+    <dt>til tjenestebrug
+    <dd>Denne klassifikationsgrad anvendes om informationer, der ikke må offentliggøres eller komme til uvedkommendes kendskab.
+    <dt>må offentliggøres
+    <dd>Denne klassifikationsgrad anvendes om informationer, som ikke er fortrolige, og som umiddelbart må offentliggøres
+   </dl>
    <ul>
     <li data-md>
      <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20</p>
@@ -1871,7 +1984,15 @@ Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
      <p>Distribution https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU.rdf</p>
    </ul>
    <h4 class="heading settled" data-level="7.1.8" id="klassifikation-arkiveringspligttyper"><span class="secno">7.1.8. </span><span class="content">Klassifikation: Arkiveringspligttyper</span><a class="self-link" href="#klassifikation-arkiveringspligttyper"></a></h4>
-    Klassifikation, der består af typer af arkiveringspligt set i forhold til, om data skal bevares eller kasseres iht. gældende arkiveringsbestemmelser 
+    <em>Klassifikation, der består af typer af arkiveringspligt set i forhold til, om data skal bevares eller kasseres iht. gældende arkiveringsbestemmelser</em> 
+   <dl class="def">
+    <dt>bevaring
+    <dd>arkiveringspligt til at sikre bevaringen af arkivalier, der har historisk værdi eller tjener til dokumentation af forhold af væsentlig administrativ eller retlig betydning for borgere og myndigheder iht. gældende arkiveringsbestemmelser
+    <dt>kassation
+    <dd>arkiveringspligt til at kassere ikkebevaringsværdige offentlige arkivalier iht. gældende arkiveringsbestemmelser
+    <dt>ved ikke
+    <dd>angivelse af, at arkiveringspligten er ukendt
+   </dl>
    <ul>
     <li data-md>
      <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05</p>
@@ -1879,8 +2000,16 @@ Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
      <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201</p>
    </ul>
    <h4 class="heading settled" data-level="7.1.9" id="klassifikation-arkiveringsversionsperiodetyper"><span class="secno">7.1.9. </span><span class="content">Klassifikation: Arkiveringsversionsperiodetyper</span><a class="self-link" href="#klassifikation-arkiveringsversionsperiodetyper"></a></h4>
-    Klassifikation, der består af typer af arkiveringsperioder set i forhold til deres afgrænsning.
-Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en afgrænset periode eller ved af-sluttet arkivperiode 
+    <em>Klassifikation, der består af typer af arkiveringsperioder set i forhold til deres afgrænsning.
+Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en afgrænset periode eller ved af-sluttet arkivperiode</em> 
+   <dl class="def">
+    <dt>afgrænset periode 
+    <dd>Arkiveringsversion, der indeholder data fra en afgrænset periode, hvor der ikke længere rettes i eller tilføjes data
+    <dt>øjebliksbillede 
+    <dd>Arkiveringsversion, der indeholder samtlige bevaringsværdige data og eventuelle dokumenter på et bestemt tidspunkt
+    <dt>afsluttede sager og dokumenter
+    <dd>Arkiveringsversion, der indeholder afsluttede sager og dokumenter
+   </dl>
    <ul>
     <li data-md>
      <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05</p>
@@ -1888,7 +2017,13 @@ Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en af
      <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2010/1007</p>
    </ul>
    <h4 class="heading settled" data-level="7.1.10" id="klassifikation-arkivinstitutionstyper"><span class="secno">7.1.10. </span><span class="content">Klassifikation: Arkivinstitutionstyper</span><a class="self-link" href="#klassifikation-arkivinstitutionstyper"></a></h4>
-    Klassifikation, der består af typer af offentlige institutioner, der har til opgave at bevare arkivalier 
+    <em>Klassifikation, der består af typer af offentlige institutioner, der har til opgave at bevare arkivalier</em> 
+   <dl class="def">
+    <dt>stadsarkiv
+    <dd>arkivinstitution oprettet af kommune eller region 
+    <dt>rigsarkiv
+    <dd>statslig arkivinstitution, som bistår myndigheder omfattet af arkivloven i arkivmæssig henseende
+   </dl>
    <ul>
     <li data-md>
      <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10</p>
@@ -1898,7 +2033,15 @@ Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en af
      <p>Kilde: https://ec.europa.eu/isa2/sites/isa/files/isa2_action_2017_01_standard_based_archival_data_manage-ment_final_report_v1.00.pdf</p>
    </ul>
    <h4 class="heading settled" data-level="7.1.11" id="klassifikation-konverteringsstatusser"><span class="secno">7.1.11. </span><span class="content">Klassifikation: Konverteringsstatusser</span><a class="self-link" href="#klassifikation-konverteringsstatusser"></a></h4>
-    Klassifikation, der består af statusser ift. konvertering set ud fra omfanget af et (manuelt eller automatisk) datakonverterings- og import forløb 
+    <em>Klassifikation, der består af statusser ift. konvertering set ud fra omfanget af et (manuelt eller automatisk) datakonverterings- og import forløb</em> 
+   <dl class="def">
+    <dt>alle konverteret ind
+    <dd>alle data konverteret og importeret
+    <dt>udvalgte data konverteret ind
+    <dd>udvalgte data konverteret og importeret
+    <dt>ukendt omfang af import
+    <dd>data er konverteret og importeret, men omfanget er ukendt
+   </dl>
    <ul>
     <li data-md>
      <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05</p>
@@ -1919,6 +2062,107 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <li data-md>
      <p>databærende it-system: instantieret it-system, der indeholder digitalt skabte data eller dokumenter</p>
    </ul>
+   <h4 class="heading settled" data-level="7.2.1" id="udfyldelse-myndighedsoplysninger"><span class="secno">7.2.1. </span><span class="content">Udfyldelse: Myndighedsoplysninger</span><a class="self-link" href="#udfyldelse-myndighedsoplysninger"></a></h4>
+   <dl class="def">
+    <dt>myndighedens navn
+    <dd>formel betegnelse for myndigheden (skal udfyldes) 
+    <dt>myndighedens  hovedmailadresse
+    <dd>e-mailadresse, hvormed myndigheden primært kontaktes (skal udfyldes) 
+    <dt>myndighedstype (regional, kommunal, statslig)
+    <dd>klassifikation af myndigheden ift. styringsniveau  (skal udfyldes) 
+    <dt>afgivelsesdato
+    <dd>dato for, hvornår oplysningerne blev afgivet (skal udfyldes) 
+   </dl>
+   <h4 class="heading settled" data-level="7.2.2" id="udfyldelse-bbasisinformation"><span class="secno">7.2.2. </span><span class="content">Udfyldelse: Bbasisinformation</span><a class="self-link" href="#udfyldelse-bbasisinformation"></a></h4>
+   <dl class="def">
+    <dt>it-systemidentifikator
+    <dd>angiv det ID, som entydigt identificerer it-systemet (kan udfyldes) 
+    <dt>it-systemnavn (fx navn som anført i hovedkontrakten)
+    <dd>angiv it-systemets foretrukne betegnelse  (skal udfyldes) 
+    <dt>alternativt it-systemnavn
+    <dd>angiv eventuelt øvrige betegnelser eller kaldenavne for it-systemet (kan udfyldes) 
+    <dt>it-systembeskrivelse
+    <dd>beskriv, til hvilket formål it-systemet er taget i brug i organisationen (skal udfyldes) 
+    <dt>ibrugtagningsdato 
+    <dd>angiv dato, hvor it-systemet blev taget i brug med fuld eller delvis funktio-nalitet  (skal udfyldes) 
+    <dt>udfasningsdato
+    <dd>angiv dato, hvor it-systemet blev endeligt blev afviklet (kan udfyldes) 
+    <dt>version
+    <dd>angiv eventuelt, hvilken version der er taget i anvendelse (kan udfyldes) 
+    <dt>kommentar
+    <dd>angiv, eventuelt supplerende bemærkninger eller oplysninger (kan udfyldes) 
+    <dt>indeholder data
+    <dd>angiv om it-systemet indeholder digitalt skabte data (skal udfyldes) 
+    <dt>indeholder dokumenter
+    <dd>angiv, om it-systemet indeholder digitalt skabte dokumenter (skal udfyldes) 
+    <dt>dokumentationsreference
+    <dd>angiv reference(r) til dokumentation af it-systemet (kan udfyldes) 
+    <dt>rettighedshaver
+    <dd>organisation, der ejer eller har dispositionsretten over de intellektuelle rettigheder over it-systemets primære softwareprodukt (kan udfyldes) 
+   </dl>
+   <h4 class="heading settled" data-level="7.2.3" id="udfyldelse-opgaver"><span class="secno">7.2.3. </span><span class="content">Udfyldelse: Opgaver</span><a class="self-link" href="#udfyldelse-opgaver"></a></h4>
+   <dl class="def">
+    <dt>FORM-opgave(r)
+    <dd>(for regioner og statslige administrative enheder) angiv FORM-opgave(r), som it-systemet understøtter (fx 65.50.05.10 Sagsarkivering) el. overord-net serviceområde (kan udfyldes) 
+    <dt>KLE-emne(r) 
+    <dd>(for kommuner) angiv  KLE-emne(r) som it-systemet understøtter (fx 85.08.00 arkivering i almindelighed) el. overordnet emnegruppe (kan udfyldes) 
+    <dt>lovgrundlag
+    <dd>angiv reference(r) til juridisk ressource, som danner grundlag for syste-mets anvendelse (kan udfyldes) 
+    <dt>sagsområde(r) 
+    <dd>angiv, hvilket sagsområde iht. bekendtgørelser for bevaring og kassation af digitale arkivalier it-systemet tilhører (kan udfyldes) 
+    <dt>forgængersystem
+    <dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes) 
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="7.2.4" id="udfyldelse-styring"><span class="secno">7.2.4. </span><span class="content">Udfyldelse: Styring</span><a class="self-link" href="#udfyldelse-styring"></a></h4>
+   <dl class="def">
+    <dd>
+    <dt>it-systemejer
+    <dd>angiv person eller organisation med det overordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes) 
+   </dl>
+   <h4 class="heading settled" data-level="7.2.5" id="udfyldelse-information"><span class="secno">7.2.5. </span><span class="content">Udfyldelse: Information</span><a class="self-link" href="#udfyldelse-information"></a></h4>
+   <dl class="def">
+    <dt>datasætID
+    <dd>angiv datasættes unikke ID (kan udfyldes) 
+    <dt>dataansvarlig
+    <dd>angiv den organisation, som har dispositionsretten og træffer afgørelse om hvordan data skal behandles (skal udfyldes) 
+    <dt>dataskaber 
+    <dd>angiv den organisation, der har det primære ansvar for tilvejebringelsen af datasættet (skal udfyldes) 
+    <dt>titel
+    <dd>angiv datasættets navn (det eller de ord, der navngiver datasættet) (kan udfyldes) 
+    <dt>beskrivelse
+    <dd>beskriv datasættets formål og indhold (fx datasættet indeholder journal-sager fra kommune x) (kan udfyldes) 
+    <dt>versionsnummer
+    <dd>angiv eventuelt datasættets versionsnummer (kan udfyldes) 
+    <dt>personoplysningskategori
+    <dd>angiv, om it-systemet indeholder almindelige personoplysninger, følsom-me personoplysninger eller oplysninger om strafbare forhold (flere skal kunne vælges - udestår pt) (kan udfyldes) 
+    <dt>fortrolighedsgrad  iht. sikkerhedscirkulæret
+    <dd>angiv, i hvilket omfang information kan videregives iht. sikkerhedscirkulæ-ret (EU/NATO) () 
+    <dt>fortrolighedsgrad  iht. ISO 27001
+    <dd>angiv, i hvilket omfang information kan videregives iht. informationssik-kerhedsstandarden ISO 27002 (kan udfyldes) 
+    <dt>arkiveringspligttype
+    <dd>angiv, hvorvidt data skal bevares eller kasseres iht. gældende arkiverings-bestemmelser (for data bestemt til bevaring skal der afleveres arkive-ringsversioner til et offentligt arkiv) (kan udfyldes) 
+    <dt>arkiveringsfrekvens
+    <dd>angiv, hvor ofte der fremstilles arkiveringsversioner af datasættet (kan udfyldes) 
+    <dt>arkiveringsperiodetype
+    <dd>angiv, hvorvidt data afleveres som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode  (kan udfyldes) 
+    <dt>data konverteret fra  it-system
+    <dd> () 
+    <dt>datakonverteringsstatus
+    <dd>angiv, om alle eller udvalgte data er konverteret ind fra forgængersystem (kan udfyldes) 
+    <dt>første datatilføjelse
+    <dd>angiv dato for første datatilføjelse (skal udfyldes) 
+    <dt>sidste datatilføjelse
+    <dd>angiv dato for sidste datatilføjelse (skal udfyldes) 
+    <dt>næste datasletningsfrist
+    <dd>angiv  førstkommende dato for, hvornår bestemte data i it-systemet for-ventes at skulle være slettet forinden iht. GDPR (kan udfyldes) 
+    <dt>tidligere arkivering
+    <dd>angivelse af, om data fra it-systemet tidligere er blevet arkiveret (kan udfyldes) 
+    <dt>seneste arkivversion: startårstal
+    <dd>angiv det årstal, seneste arkiveringsversion først dækker (kan udfyldes) 
+    <dt>seneste arkivversion: slutårstal
+    <dd>angiv det årstal, seneste arkiveringsversion sidst dækker (kan udfyldes) 
+   </dl>
    <h3 class="heading settled" data-level="7.3" id="bilag-c-eksempel-p-maskinlsbart-format"><span class="secno">7.3. </span><span class="content">Bilag C: Eksempel på maskinlæsbart format</span><a class="self-link" href="#bilag-c-eksempel-p-maskinlsbart-format"></a></h3>
    <p>(Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD)</p>
    <h4 class="heading settled" data-level="7.3.1" id="eksempeloutput-i-turtle-acadre-anvendt-i-kommune-x"><span class="secno">7.3.1. </span><span class="content">EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)</span><a class="self-link" href="#eksempeloutput-i-turtle-acadre-anvendt-i-kommune-x"></a></h4>
@@ -1978,8 +2222,10 @@ https://data.gov.dk/document/itsystemspecification/v1/uml/
     <li data-md>
      <p>Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. afgivelse af oplysninger om it-systemer til Rigsarkivet. Bemærk, at denne anvendelsesorienterede begrebsliste udvælger og sammensætter begreber fra forskellige emneområder, se fx begrebsmodellen for it-system og begrebsmodellen for digital arkivering, som er udstillet online.</p>
    </ul>
+   <hr>
    <p>Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.</p>
    <p>arkitektur.digst.dk</p>
+   <hr>
    <hr>
    <p><span>[3]</span>() Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .</p>
    <p>
