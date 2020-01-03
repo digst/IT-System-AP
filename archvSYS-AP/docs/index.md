@@ -465,6 +465,46 @@ Bilag A: Overblik over relevante klassifikationer
 
 ###  Klassifikation Sagsområder:
 Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og 'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne' 
+
+- **Administrative systemer**
+  - ESDH-systemer med journalsager *(kommune og region)*
+  - Elektroniske journaler *(kommune og region)*
+  - Elektroniske sagshenvisnings- og advissystemer *(kommune)*
+
+- **Systemer på økonomiområdet**
+  - Økonomisystemer (kommune og region)
+
+- **Systemer på social- og sundhedsområdet**
+  - ESDH-systemer med personsager *(kommune)*
+  - Daginstitutions- og børnepasningssystemer *(kommune)*
+  - Omsorgssystemer *(kommune)*
+  - Systemer vedr. institutioner for handicappede herunder døgninstitutioner, klientsystemer *(kommune og region)*
+  - Systemer vedr. social- og psykiatribehandling herunder døgninstitutioner, klientsystemer *(kommune og region)*
+  - Systemer vedr. forebyggelse og genoptræning *(kommune)*
+  - Sundhedsplejesystemer* (kommune)*
+  - Systemer vedr. misbrugsbehandling *(kommune)*
+
+- **Systemer på miljø- og teknikområdet *****(kommune)***
+  - ESDH-systemer med byggesager *(kommune)*
+  - ESDH-systemer med sager vedr. miljøgodkendelser og miljøtilsyn (*kommune*)
+
+- **Systemer på undervisningsområdet**
+  - Elevadministrationssystemer (*kommune og region)*
+  - Systemer vedr. specialundervisning (*kommune*)
+  - PPR-systemer (*kommune*)
+
+- **Byggeprojektstyringssystemer**
+  - Byggeprojektstyringssystemer (*kommune og* *region*)
+
+- **Systemer på social- og psykiatriområdet**
+  - Elektroniske patientjournaler, der ikke indberetter til den fælles E-journal SUP *(region)*.
+  - Forskningsdata (*region*)
+  - Kliniske kvalitetsdatabaser  *(region)*
+
+- **Systemer på natur- og miljøområdet**
+  - Jordforureningssystemer, der ikke indberetter til et overordnet statsligt it-system (*region*)
+
+
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2003/591 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2015/266 
