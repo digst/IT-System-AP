@@ -580,7 +580,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 <dt>fortroligt</dt><dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU skade.</dd>
 <dt>til tjenestebrug</dt><dd>Denne klassifikationsgrad anvendes om informationer, der ikke må offentliggøres eller komme til uvedkommendes kendskab.</dd>
 <dt>må offentliggøres</dt><dd>Denne klassifikationsgrad anvendes om informationer, som ikke er fortrolige, og som umiddelbart må offentliggøres</dd>
-<dl>
+</dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20 
 - Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338 
 - Distribution https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU.rdf
@@ -592,7 +592,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 <dt>bevaring</dt><dd>arkiveringspligt til at sikre bevaringen af arkivalier, der har historisk værdi eller tjener til dokumentation af forhold af væsentlig administrativ eller retlig betydning for borgere og myndigheder iht. gældende arkiveringsbestemmelser</dd>
 <dt>kassation</dt><dd>arkiveringspligt til at kassere ikkebevaringsværdige offentlige arkivalier iht. gældende arkiveringsbestemmelser</dd>
 <dt>ved ikke</dt><dd>angivelse af, at arkiveringspligten er ukendt</dd>
-<dl>
+</dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201    
 
@@ -604,7 +604,7 @@ Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en af
 <dt>afgrænset periode </dt><dd>Arkiveringsversion, der indeholder data fra en afgrænset periode, hvor der ikke længere rettes i eller tilføjes data</dd>
 <dt>øjebliksbillede </dt><dd>Arkiveringsversion, der indeholder samtlige bevaringsværdige data og eventuelle dokumenter på et bestemt tidspunkt</dd>
 <dt>afsluttede sager og dokumenter</dt><dd>Arkiveringsversion, der indeholder afsluttede sager og dokumenter</dd>
-<dl>
+</dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2010/1007     
 
@@ -613,7 +613,7 @@ Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en af
 <dl class="def">
 <dt>stadsarkiv</dt><dd>arkivinstitution oprettet af kommune eller region </dd>
 <dt>rigsarkiv</dt><dd>statslig arkivinstitution, som bistår myndigheder omfattet af arkivloven i arkivmæssig henseende</dd>
-<dl>
+</dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201 
 - Kilde: https://ec.europa.eu/isa2/sites/isa/files/isa2_action_2017_01_standard_based_archival_data_manage-ment_final_report_v1.00.pdf 
@@ -624,7 +624,7 @@ Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en af
 <dt>alle konverteret ind</dt><dd>alle data konverteret og importeret</dd>
 <dt>udvalgte data konverteret ind</dt><dd>udvalgte data konverteret og importeret</dd>
 <dt>ukendt omfang af import</dt><dd>data er konverteret og importeret, men omfanget er ukendt</dd>
-<dl>
+</dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05
 - Kilde: https://www.sa.dk/da/offentlig-forvaltning/ 
 
