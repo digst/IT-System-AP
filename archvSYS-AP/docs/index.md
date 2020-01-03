@@ -137,7 +137,7 @@ Begrebet 'it-system' udgør det centrale element i denne standard, men dette spe
 System, informationssystem og it-system
 -------------------------------------------
 
-Et ***system*** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i [[ISO/IEC 15288]].
+Et **system** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i [[FOO]].
 
 Det bemærkes også, at *"Et system er i denne sammenhæng menneskeskabt og består ikke blot af hardware, software og data, men også af mennesker, processer, procedurer, faciliteter og materialer og naturlige genstande".*
 
@@ -782,10 +782,10 @@ arkitektur.digst.dk
 <pre class=biblio>
 
 {
-	"ISO/IEC 15288": {
+	"[[FOO]]": {
 		"href": "https://www.iso.org/standard/63711.html",
 		"title": "ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)",
-		"publisher": "ISO",
+		"publisher": "ISO"
 		]
 	}
 }
