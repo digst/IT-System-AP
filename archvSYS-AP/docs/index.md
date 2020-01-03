@@ -103,12 +103,14 @@ Standarden er blevet udarbejdet på baggrund af research- og udviklingsaktivitet
 
 Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en anvendelsesprofil, der sammensætter flere eksisterende modeller til denne specifikke arkiveringsanvendelse. Denne profil anvender fx kernemodeller til beskrivelse af it-system (SYS), datasæt (DCAT), organisation (ORG), juridiske ressourcer (ELI), kontakter (FIBO), klassifikationer (SKOS) m.fl. Se Dataspecifikationsdokumentet for yderligere oplysninger om disse modeller.
 
+
 Standardens anvendelse
 ==========================
 
-Denne arkivprofil er baseret på en basisprofil til beskrivelse af it-systemer, som rummer de helt grundlæggende oplysninger om it-systemer. Denne arkivprofil udvider basisprofilen med arkiveringsoplysninger og fastlægger, hvilke oplysninger der er krævede eller anbefalede i denne sammenhæng..
+Denne arkivprofil er baseret på en basisprofil til beskrivelse af it-systemer, som rummer de helt grundlæggende oplysninger om it-systemer. Denne arkivprofil udvider basisprofilen med arkiveringsoplysninger og fastlægger, hvilke oplysninger der er krævede eller anbefalede i denne sammenhæng.
 
 Standarden skal anvendes i forbindelse med afgivelse af systemoplysninger til Rigsarkivet. Standarden skal således standardisere afgivelsen og opdateringen af systemoplysninger i relation til regionernes og kommunernes arkivmæssige forpligtelser. Derudover vil standarden også blive anvendt ved kommende tilsyn på det statslige område. Anvendelsesprofilen indeholder netop det sæt af oplysningstyper, der er påkrævet i forbindelse med afgivelse af it-systemoplysninger til Rigsarkivet, samt yderligere anvendelsesspecifikke præciseringer.
+
 
 Rigsarkivets interesse i it-systemer
 ----------------------------------------
@@ -116,6 +118,8 @@ Rigsarkivets interesse i it-systemer
 Rigsarkivet vil anvende standarden i forbindelse med tilsyn med offentlige myndigheders it-systemer. Det betyder, at myndighederne ved at opmærke deres systemer med oplysningerne fra standarden vil få nemmere ved at besvare et tilsyn og kan få et overblik over, hvilke it-systemer hos dem som indeholder bevaringsværdige data. Det gør det lettere at sikre, at de arkivmæssige forpligtelser overholdes.
 
 En udfordring for brug af standarden og for afgivelse af oplysninger er de tilfælde, hvor et it-system ikke bruges, som det er tiltænkt. Det kan både medføre, at et system, som normalt vil skulle bevares, alligevel ikke indeholder bevaringspligtige data, men også betyde, at et system, som normalt ikke skal arkiveres, vil indeholde bevaringspligtige data. Med standarden kan det registreres, hvilke typer af oplysninger der indgår i systemerne, hvorved det er muligt at identificere bevaringspligtige data.
+
+
 
 Modenhed ift. beskrivelse af processer, services og datasæt
 ---------------------------------------------------------------
@@ -167,8 +171,7 @@ Ifølge Rigsarkivets vejledninger i bevaring og kassation af arkivalier kan et d
 
 Denne standard anvender en række klassifikationer, som giver mulighed for at udpege en bestemt delmængde af databærende it-systemer. Klassifikationerne vil blive introduceret i det følgende kapitel
 
-<p class="note">*Klassifikationer beskrives iht. Anvendelsesprofil for klassifikation:* https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer/
-</p>
+<p class="note">*Klassifikationer beskrives iht. Anvendelsesprofil for klassifikation:* https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer/</p>
 
 **Hvornår er der tale om et nyt it-system?**
 
@@ -184,15 +187,14 @@ It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De grun
 
 Disse otte emner dækker bredt, og for at dække en specifik anvendelseskontekst vil det typisk være nødvendigt at udvide basisprofilen med oplysninger fra forskellige emneområder. I tillæg til de otte emneområder eksisterer et metalag med informa-tioner om myndighedens udveksling af disse oplysninger til et bestemt formål.
 
-<p align="center"><img src="img/Figur4-1-Illustration-af-standardens-emneomraader.png" alt="Figur 4.1 Standardens emneområder" title="Figur 4.1 Standardens emneområder" width="600"/></p>
+<p align="center"><img src="img/Figur4-1-Illustration-af-standardens-emneomraader.png" alt="Figur 4.1 Standardens emneområder" title="Figur 4.1 Standardens emneområder" width="600"/></p>Figur 4.1: Illustration af standardens emneområder\
 
-Figur 4.1: Illustration af standardens emneområder\
 Markeringen af emnerne 'styring', 'opgaver' og 'information' og 'sikkerhed' i figuren ovenfor skal illustrere, at disse fire områder er definerende for arkivprofilens anvendelse til afgivelse af oplysninger om it-systemer til Rigsarkivet.
 
 Afgivelse af it-systemoplysninger
 -------------------------------------
 
-Når der skal afgives oplysninger om it-systemer, som en given myndighed **anvender**, angives **myndighedens navn** samt den e-mailadresse, hvormed myndigheden primært kan kontaktes (**hovedmailadresse**). Derudover angives en **myndighedstype**, dvs. en kategorisering af offentlige organisationer ift. styringsniveau (region, kommune, statslig myndighed, offentlig selvejende institution)[[6]](https://euangoddard.github.io/clipboard2markdown/#_ftn6). Indberetningen forsynes også med en datoangivelse for, hvornår oplysningerne blev indberettet (**afgivelsesdato**). Det er den dataansvarlige myndighed, der er forpligtet til at angive it-systemoplysninger til Rigsarkivet, jf. afsnittet Styring.
+Når der skal afgives oplysninger om it-systemer, som en given myndighed **anvender**, angives **myndighedens navn** samt den e-mailadresse, hvormed myndigheden primært kan kontaktes (**hovedmailadresse**). Derudover angives en **myndighedstype**, dvs. en kategorisering af offentlige organisationer ift. styringsniveau (region, kommune, statslig myndighed, offentlig selvejende institution). Indberetningen forsynes også med en datoangivelse for, hvornår oplysningerne blev indberettet (**afgivelsesdato**). Det er den dataansvarlige myndighed, der er forpligtet til at angive it-systemoplysninger til Rigsarkivet, jf. afsnittet Styring.
 
 <p class="note">Myndigheder beskrives som organisationer iht. anvendelsesprofil for organisationer: https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer  </pre>
 
@@ -241,8 +243,7 @@ Et it-system kan have mange forskellige relationer til aktører, som hver især 
 
 På overordnet niveau angives **it-systemejeren** -- en person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse. Ofte vil it-systemejeren være lig kontraktejeren og kan identificeres præcist i myndighedens kontraktstyring.
 
-<p class="example">
-*Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.*</p>
+<p class="example">Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
 
 For databærende it-systemer skal den **dataansvarlige** aktør også angives, dvs. den organisation, som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til "*en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger*", jf. GDPR (http://data.europa.eu/eli/reg/2016/679/oj og https://www.retsinformation.dk/eli/lta/2018/502 ). Én myndighed kan være dataansvarlig for et system, mens det faktisk er **databehandler**, som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det. Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler i betydningen, at de kan være forskellige organisationer. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. Datatilsynets vejledning om databehandlere og dataansvarlige (https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf). Det kan også være relevant at angive den konkrete **dataskaber**, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.
 
@@ -263,17 +264,17 @@ For at gøre det lettere for myndigheder at afgive oplysninger om deres it-syste
 
 <p class="note">Læs mere om myndighedernes arkiveringsforpligtelse på Rigsakivets hjemmeside: https://www.sa.dk/da/offentlig-forvaltning/</p>
 
-I forhold til arkivering af data bestemt til bevaring er det offentlige **databærende it-systemer,** der er i fokus, dvs. it-systemer, der indeholder data og dokumenter digitalt skabt af den offentlige forvaltning og domstolene, jf. [[arkivloven]](https://www.retsinformation.dk/eli/lta/2016/1201). Udover at det skal angives, om it-systemet er databærende, altså indeholder datasæt, kan det også præciseres, at nogle af disse data udgøres af dokumenter, ved at angive at it-systemet også er ***dokumentbærende***.
+I forhold til arkivering af data bestemt til bevaring er det offentlige **databærende it-systemer,** der er i fokus, dvs. it-systemer, der indeholder data og dokumenter digitalt skabt af den offentlige forvaltning og domstolene, jf. Arkivloven (https://www.retsinformation.dk/eli/lta/2016/1201). Udover at det skal angives, om it-systemet er databærende, altså indeholder datasæt, kan det også præciseres, at nogle af disse data udgøres af dokumenter, ved at angive at it-systemet også er ***dokumentbærende***.
 
 Hvorvidt den pågældende myndighed har pligt til at arkivere eller kassere data i it-systemet, kan angives med klassifikationen ***arkiveringspligttype***, se Bilag A. Digitalt skabte data og dokumenter, som ikke skal bevares i henhold til gældende lovgivning, kasseres, når opbevaringspligten efter andre bestemmelser er opfyldt, og når de efter myndighedernes egen vurdering i øvrigt ikke længere har retlig eller administrativ betydning.
 
-I forhold til aflevering af arkiveringsversioner skal det kunne angives, om data i it-systemet planlægges afleveret som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode. Her anvendes klassifikationen ***Arkiveringsversionsperiodetype***, se Bilag A,som defineres i Bekendtgørelse om arkiveringsversioner. Arkiveringsversioner af data fra et it-system afleveres enten til Rigsarkivet eller et kommunalt eller regionalt stadsarkiv, som defineres i klassifikationen ***Arkiveringsinstitutionstype***.
+I forhold til aflevering af arkiveringsversioner skal det kunne angives, om data i it-systemet planlægges afleveret som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode. Her anvendes klassifikationen **Arkiveringsversionsperiodetype**, se Bilag A,som defineres i Bekendtgørelse om arkiveringsversioner. Arkiveringsversioner af data fra et it-system afleveres enten til Rigsarkivet eller et kommunalt eller regionalt stadsarkiv, som defineres i klassifikationen ***Arkiveringsinstitutionstype***.
 
-Det angives, om der manuelt eller automatisk er ***konverteret data og dokumenter*** fra forgængersystemet ind i det nuværende system, og om ***alle data* **eller** *udvalgte data er konverteret ind.*** Etforgængersystem er i denne forbindelse et andet it-system, der tidligere har varetaget samme funktion.
+Det angives, om der manuelt eller automatisk er **konverteret data og dokumenter** fra forgængersystemet ind i det nuværende system, og om **alle data** eller **udvalgte data er konverteret ind.** Et forgængersystem er i denne forbindelse et andet it-system, der tidligere har varetaget samme funktion.
 
 Det kan også angives, om der tidligere er udarbejdet en arkiveringsversion af data i systemet.For arkiveringsversionen angives den periode, som den dækker. Dvs. det årstal, arkiveringsversionen først dækker, til det år, som arkiveringsversionen sidst dækker.
 
-En ***arkiveringsfrekvens*** kan også registreres, dvs. den frekvens, med hvilken en myndighed fremstiller arkiveringsversion af et givet datasæt i et it-system.
+En **arkiveringsfrekvens** kan også registreres, dvs. den frekvens, med hvilken en myndighed fremstiller arkiveringsversion af et givet datasæt i et it-system.
 
 Sikkerhed
 -------------
