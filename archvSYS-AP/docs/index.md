@@ -653,7 +653,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
 <dt>afgivelsesdato</dt><dd>dato for, hvornår oplysningerne blev afgivet (skal udfyldes) </dd>
 </dl>
 
-### Udfyldelse: Bbasisinformation
+### Udfyldelse: Basisinformation
 <dl class="def">
 <dt>it-systemidentifikator</dt><dd>angiv det ID, som entydigt identificerer it-systemet (kan udfyldes) </dd>
 <dt>it-systemnavn (fx navn som anført i hovedkontrakten)</dt><dd>angiv it-systemets foretrukne betegnelse  (skal udfyldes) </dd>
@@ -692,7 +692,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
 <dt>personoplysningskategori</dt><dd>angiv, om it-systemet indeholder almindelige personoplysninger, følsom-me personoplysninger eller oplysninger om strafbare forhold (flere skal kunne vælges - udestår pt) (kan udfyldes) </dd>
 <dt>fortrolighedsgrad  iht. sikkerhedscirkulæret</dt><dd>angiv, i hvilket omfang information kan videregives iht. sikkerhedscirkulæ-ret (EU/NATO) () </dd>
 <dt>fortrolighedsgrad  iht. ISO 27001</dt><dd>angiv, i hvilket omfang information kan videregives iht. informationssik-kerhedsstandarden ISO 27002 (kan udfyldes) </dd>
-<dt>arkiveringspligttype</dt><dd>angiv, hvorvidt data skal bevares eller kasseres iht. gældende arkiverings-bestemmelser (for data bestemt til bevaring skal der afleveres arkive-ringsversioner til et offentligt arkiv) (kan udfyldes) </dd>
+<dt>arkiveringspligttype</dt><dd>angiv, hvorvidt data skal bevares eller kasseres iht. gældende arkiverings-bestemmelser (for data bestemt til bevaring skal der afleveres arkiveringsversioner til et offentligt arkiv) (kan udfyldes) </dd>
 <dt>arkiveringsfrekvens</dt><dd>angiv, hvor ofte der fremstilles arkiveringsversioner af datasættet (kan udfyldes) </dd>
 <dt>arkiveringsperiodetype</dt><dd>angiv, hvorvidt data afleveres som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode  (kan udfyldes) </dd>
 <dt>data konverteret fra  it-system</dt><dd> () </dd>
