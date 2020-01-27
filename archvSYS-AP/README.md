@@ -75,18 +75,18 @@ Definition: A collection of data, published or curated by a single agent, and av
 | `dct:creator` | org:Organization | | Governance  |
 | `dcat-dk:dataResponsibleOrganisation` | org:Organization | | Governance  |
 | `dcat-dk:dataProcessor` | org:Organization | | Governance  |
-| `dcat-dk:personalDataCategory` | PersonalDataCategory | | Governance  |
-| `dcat-dk:confidentialityType` | ConfidentialityType | | Governance  |
-| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeNatoEu | | Governance  |
-| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeISO27002 | | Governance  |
-| `archv:archivalRegisterType` | RegisterType | | Governance  |
-| `archv:archivalObligationType` | ArchivalObligationType | | Governance  |
-| `archv:plannedArchivalFrequency` | ArchivalFrequency | | Governance  |
-| `archv:nextDataErasureDeadline` | xsd:date | | Governance  |
-| `archv:prevArchiveInformationPackage` | archv:ArchiveInformationPackage| | Governance  |
-| `archv:plannedArchiveType` | ArchiveType| | Governance  |
-| `archv:lastArchivePeriod` | dct:PeriodOfTime| | Governance  |
-| `prov:wasGeneratedBy` | archv:DataConversion | |Governance |
+| `dcat-dk:personalDataCategory` | PersonalDataCategory | | Security  |
+| `dcat-dk:confidentialityType` | ConfidentialityType | | Security  |
+| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeNatoEu | | Security  |
+| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeISO27002 | | Security  |
+| `archv:archivalRegisterType` | RegisterType | | Information  |
+| `archv:archivalObligationType` | ArchivalObligationType | | Information  |
+| `archv:plannedArchivalFrequency` | ArchivalFrequency | | Information  |
+| `archv:nextDataErasureDeadline` | xsd:date | | Information  |
+| `archv:prevArchiveInformationPackage` | archv:ArchiveInformationPackage| | Information  |
+| `archv:plannedArchiveType` | ArchiveType| | Information  |
+| `archv:lastArchivePeriod` | dct:PeriodOfTime| | Information  |
+| `prov:wasGeneratedBy` | archv:DataConversion | | Information |
 
 
 # Codelists (Classifications) used in the application profile:
