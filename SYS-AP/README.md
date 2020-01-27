@@ -1,5 +1,11 @@
+# SYS-AP  (being updated)
+## Standard for beskrivelse af it-systemer - basisprofil
 
-# SYS-AP (being updated)
+Læs specifikationen SYS-AP her: https://digst.github.io/IT-System-AP/SYS-AP/docs/
+
+
+
+# SYS-AP 
 
 ## Basic Application Profile for IT System Description (DRAFT)
 
@@ -18,7 +24,7 @@ Properties (Basic Information Perspective):
 * `dct:description` (Datatype property) Range: rdf:langString. Definition: An account of the resource
 * `sys:inUseFromDate` (Datatype property) Range: xsd:date. Definition: date on which a system was put into operation
 * `sys:inUseUntilDate` (Datatype property) Range: xsd:date. Definition: date on which the it-system was phased out and no longer in operation
-* `sys:operationelStatus`  (Object Property) Range: OperationalStatus
+* `sys:operationalStatus`  (Object Property) Range: OperationalStatus
 * `rdfs:comment` (Datatype property) Range: rdf:langString. Definition: A description of the subject resource.
 * `sys:usedInOrganization`  (Object Property) Range: org:Organization
 
@@ -60,8 +66,9 @@ Properties (Information Perspective):
 * `sys:hasVersion`  (Object Property) Range: ITSystemVersion
 -->
 
-# sys:ImplementedITSystem (Class)
+# sys:InstantiatedITSystem (Class)
 Definition: it-system which has been implemented in a physical IT environment
+* `sys:instantiationOf`  (Object Property) Range: sys:ITSystem
 * `dct:identifier` (Datatype property) Range: xsd:anyURI.
 * `sys:actsAs`  (Object Property) Range: EnvironmentType
 * `sys:uses`  (Object Property) Range: dcat:Dataset
@@ -71,11 +78,7 @@ Definition: it-system which has been implemented in a physical IT environment
 * `sys:provides`  (Object Property) Range: dcat:DataService
 * `sys:provides`  (Object Property) Range: sys:UserInterface
 * `sys:producesDataset`  (Object Property) Range: dcat:Dataset
-* `archv:prevArchiveInformationPackage`  (Object Property) Range: dcat:Dataset
-* `sys:hasComponent`  (Object Property) Range: sys:ITSystem
-* `sys:provisionDependency`  (Object Property) Range: sys:ComponentUsage
-* `sys:usageDependency`  (Object Property) Range: sys:ComponentUsage
-* `sys:roleObject`  (Object Property) Range: sys:ITSystem
+
 
 # dcat:Dataset (Class)
 Definition: 
@@ -96,14 +99,7 @@ Properties (Governance Perspective)::
 * `dcat-dk:confidentialityType`  (Object Property) Range: ConfidentialityType
 * `dcat-dk:hasConfidentialityType`  (Object Property) Range: ConfidentialityTypeNatoEu
 * `dcat-dk:hasConfidentialityType`  (Object Property) Range: ConfidentialityTypeISO27002
-* `archv:archivalRegisterType`  (Object Property) Range: RegisterType
 * `archv:archivalObligationType`  (Object Property) Range: ArchivalObligationType
-* `archv:plannedArchivalFrequency`  (Object Property) Range: ArchivalFrequency
-* `archv:nextDataErasureDeadline` (Datatype property) Range: xsd:date. Definition: 
-* `archv:prevArchiveInformationPackage`  (Object Property) Range: archv:ArchiveInformationPackage
-* `archv:plannedArchiveType`  (Object Property) Range: ArchiveType
-* `archv:lastArchivePeriod`  (Object Property) Range: dct:PeriodOfTime
-* `prov:wasGeneratedBy`  (Object Property) Range: archv:DataConversion
 
 # comp:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
@@ -114,8 +110,7 @@ Properties:
 * `dct:description` (Datatype property) Range: rdf:langString.
 * `sys:hasCapabilityForPurpose`  (Object Property) Range: PublicAdministrativeTaskType
 * `dcatdk:personalDataCategory`  (Object Property) Range: PersonalDataCategory
-* `sys:usesPrimaryTechnologyStack`  (Object Property) Range: TechnologyStack
- 
+
 
 # Codelists (Classifications) used in the application profile:
 
@@ -155,11 +150,6 @@ Codelist: IT Environment Type
 * training
 * disaster recovery
 
-Codelist: ArchiveType
-* archive type
-* closed cases and documents
-* Snapshot
-
 Codelist: ArchivalObligationType
 * archival
 * disposal
@@ -180,25 +170,10 @@ Codelist: RegisterType
 * contains documents
 * does not contain documents
 
-Codelist: DataConversionStatus
-* full import
-* partial import
-* unknown
-
 Codelist: ITSystemContractType
 * development contract
 * maintenance contract
 * operations contract
-
-Codelist: CaseArea
-See: https://www.retsinformation.dk/eli/lta/2015/266 
-See: https://www.retsinformation.dk/eli/lta/2018/183
-
-Codelist: ArchiveOrganisationType
-* National archives
-* Municipal archive organisation
-
-Codelist: ArchivalFrequency 
 
 Codelist: TargetGroup
 * external
