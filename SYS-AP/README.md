@@ -36,8 +36,8 @@ Definition: system which consists of digital information technologies
 | `sys:predecessorSystem` | sys:ITSystem |  | Tasks |
 | `sys:hasCriticality` | CriticalityType |  | Tasks |
 | `sys:hasTargetGroup` | TargetGroup |  | Tasks |
-| `sys:hasITSystemOwner`|  org:Organization/org:OrganizationalUnit/foaf:Person |  | Governance |
-| `sys:hasITSystemManager`|  org:Organization/org:OrganizationalUnit/foaf:Person |  | Governance |
+| `sys:hasITSystemOwner`|  org:Organization, org:OrganizationalUnit, foaf:Person |  | Governance |
+| `sys:hasITSystemManager`|  org:Organization,  org:OrganizationalUnit, foaf:Person |  | Governance |
 | `sys:relatedContract`|  fibo-fnd-agr-ctr:Contract  |  | Legal |
 | `dct:rightsHolder`| org:Organization |  | Legal |
 | `schema:creator`|  org:Organization |  | Legal |
