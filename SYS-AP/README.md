@@ -75,36 +75,32 @@ Definition: it-system which has been implemented in a physical IT environment
 Definition: 
 A collection of data, published or curated by a single agent, and available for access or download in one or more formats
 
-
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-
-Properties (Information Perspective)::
-* `dct:identifier` (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context.
-* `dct:title` (Datatype property) Range: rdf:langString. Definition: A name given to the resource
-* `dct:description` (Datatype property) Range: rdf:langString. Definition: An account of the resource
-* `owl:versionInfo` (Datatype property) Range: rdfs:Literal. Definition: The annotation property that provides version information for an ontology or another OWL construct
-* `dct:temporal`  (Object Property) Range: dct:PeriodOfTime
-
-Properties (Governance Perspective)::
-* `dct:creator`  (Object Property) Range: org:Organization
-* `dcat-dk:dataResponsibleOrganisation`  (Object Property) Range: org:Organization
-* `dcat-dk:dataProcessor`  (Object Property) Range: org:Organization
-* `dcat-dk:personalDataCategory`  (Object Property) Range: PersonalDataCategory
-* `dcat-dk:confidentialityType`  (Object Property) Range: ConfidentialityType
-* `dcat-dk:hasConfidentialityType`  (Object Property) Range: ConfidentialityTypeNatoEu
-* `dcat-dk:hasConfidentialityType`  (Object Property) Range: ConfidentialityTypeISO27002
-* `archv:archivalObligationType`  (Object Property) Range: ArchivalObligationType
+| `dct:identifier` | xsd:anyURI | An unambiguous reference to the resource within a given context | Information |
+| `dct:title` | rdf:langString | A name given to the resource | Information |
+| `dct:description` | rdf:langString| An account of the resource | Information |
+| `owl:versionInfo` | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information |
+| `dct:temporal` | ct:PeriodOfTime | | Information |
+| `dct:creator` | org:Organization| | Governance |
+| `dcat-dk:dataResponsibleOrganisation` | org:Organization| | Governance |
+| `dcat-dk:dataProcessor` | org:Organization| | Governance |
+| `dcat-dk:personalDataCategory` | PersonalDataCategory| | Security |
+| `dcat-dk:confidentialityType` | ConfidentialityType| | Security |
+| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeNatoEu| | Security |
+| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeISO27002| | Security |
+| `archv:archivalObligationType` | ArchivalObligationType | | Information |
 
 # comp:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
 
-Properties:
-* `schema:identifier` (Datatype property) Range: xsd:anyURI. 
-* `skos:prefLabel` (Datatype property) Range: rdf:langString. 
-* `dct:description` (Datatype property) Range: rdf:langString.
-* `sys:hasCapabilityForPurpose`  (Object Property) Range: PublicAdministrativeTaskType
-* `dcatdk:personalDataCategory`  (Object Property) Range: PersonalDataCategory
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
+| `schema:identifier` | xsd:anyURI | | |
+| `skos:prefLabel` | rdf:langString| | |
+| `dct:description` | rdf:langString| | |
+| `sys:hasCapabilityForPurpose` | PublicAdministrativeTaskType| | |
+| `dcatdk:personalDataCategory` | PersonalDataCategory| | |
 
 
 # Codelists (Classifications) used in the application profile:
