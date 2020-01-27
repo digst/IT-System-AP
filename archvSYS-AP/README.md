@@ -2,13 +2,11 @@
 ## Standard for beskrivelse af it-systemer - arkivprofil
 
 Læs specifikationen archvSYS-AP her: https://digst.github.io/IT-System-AP/archvSYS-AP/docs/
-
 - denne side er under udvikling
 
-National Archives Application Profile for IT System Description 
+## National Archives Application Profile for IT System Description 
 
 This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing IT systems for the National Archives. 
-
 
 ## UML Diagram
 ![UML Diagram](https://github.com/digst/IT-System-AP/blob/master/archvSYS-AP/docs/img/Bilag-E-UML-diagram-Arkivprofil.png "UML")
