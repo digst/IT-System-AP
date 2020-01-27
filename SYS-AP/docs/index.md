@@ -90,7 +90,7 @@ Der indsamles oplysninger om offentlige it-systemer mange steder og på mange fo
 Baggrund
 ------------
 
-Standarden er etableret og efter aftale med KL, Danske Regioner og Digitaliseringsstyrelsen som følge af relateret standardiseringsarbejde[[1]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftn1) udført efter anbefaling af Kulturministeriets Arkivudvalg. Standarden skal understøtte at it-systemer kan beskrives på en ensartet måde, og at beskrivelsen kan dække de mest udbredte behov for udveksling af information om it-systemer i det offentlige. Første konkrete ibrugtagning af standarden vil være i forbindelse afgivelse af oplysninger om it-systemer til Rigsarkivet.
+Standarden er etableret og efter aftale med KL, Danske Regioner og Digitaliseringsstyrelsen som følge af relateret standardiseringsarbejde[[1]]() udført efter anbefaling af Kulturministeriets Arkivudvalg. Standarden skal understøtte at it-systemer kan beskrives på en ensartet måde, og at beskrivelsen kan dække de mest udbredte behov for udveksling af information om it-systemer i det offentlige. Første konkrete ibrugtagning af standarden vil være i forbindelse afgivelse af oplysninger om it-systemer til Rigsarkivet.
 
 Metode
 ----------
@@ -98,6 +98,8 @@ Metode
 Denne standard udgøres af en basisprofil (SYS-AP), som indeholder de basisoplysninger om it-systemer, der indgår i langt de fleste it-systembeskrivelser.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
 
 Den første anvendelsesprofil, som udvider basisprofilen, vil være målrettet arkivering (archvSYS-AP). Se også 'Standard for beskrivelse af it-systemer -- Arkivprofil'.
+
+<p align="center"><img src="img/Figur0-1-Forholdet_mellem-profilerne.png" alt="Forholdet mellem profilerne" title="Forholdet mellem profilerne" width="350"/></p>
 
 Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.
 
@@ -154,14 +156,18 @@ Med udgangspunkt i den eksisterende basisprofil vurderes anvendeligheden af de e
 
 Når vurderingen er foretaget, har man en reduceret profil som illustreret på nedenstående diagram. Alle elementer markeret med grønt vil indgå i den nye arkivprofil, mens alle elementer markeret med rød ikke inddrages i profilen.
 
+<p align="center"><img src="img/Figur_application_profile1.png" alt="Application profile illustration 1" width="350"/></p>
+
 Derefter tilføjes de elementer der er nødvendige for arkivprofilen og der sættes eventuelle yderligere begrænsninger på multipliciteter. I nedenstående diagram er tilføjelser og multiplicitetsændringer markeret med orange.
+
+<p align="center"><img src="img/Figur_application_profile2.png" alt="Application profile illustration 2" width="350"/></p>
 
 Standardisering af deling af it-systemoplysninger
 -----------------------------------------------------
 
 Basisprofilen danner grundlag for entydige og præcise udvekslinger af it-systemoplysninger til en lang række formål. Oplysninger om offentlige it-systemer indsamles mange steder, men på forskellig vis. Med et fælles sprog, som profilen præsenterer, lægges fundamentet for en ensartet og konsistent udveksling af data om it-systemer. Brug af profilen vil ikke betyde, at eksisterende modeller eller interne registreringer skal laves om, men gør at de kan mappes til et fælles sprog, så data kan deles på en effektiv og entydig måde via et maskinlæsbart format uden behov for manuel behandling, eksempelvis for at opfylde informationsbehovet i forbindelse med afgivelse af systemoplysninger til hjemmelshavende myndigheder.
 
-*Eksempelvis kan anvendelse af basisprofilen danne udgangspunkt for maskinlæsbar afgivelse af systemoplysninger til myndigheders interne it-systemoverblik og det statslige it-systemporteføljeoverblik jf. Strategi for it-styring i staten*[[2]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftn2)*, da kerneinformationerne vil være omfattet af standarden allerede. Dette kunne gøres i form af en udvidelse i form af en mere specifik anvendelsesprofil til håndtering af de vurderingsspørgsmål, fx "I hvilken grad er der omskiftelighed i forretningsgrundlaget for it-systemet?". Der kan også arbejdes videre med disse systemoplysninger i forbindelse med udarbejdelse af fortegnelse over databehandlingsaktiviteter, jf. Datatilsynets Vejledning om fortegnelse[**[3]**](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftn3)*.
+Eksempelvis kan anvendelse af basisprofilen danne udgangspunkt for maskinlæsbar afgivelse af systemoplysninger til myndigheders interne it-systemoverblik og det statslige it-systemporteføljeoverblik jf. Strategi for it-styring i staten [[2]](), da kerneinformationerne vil være omfattet af standarden allerede. Dette kunne gøres i form af en udvidelse i form af en mere specifik anvendelsesprofil til håndtering af de vurderingsspørgsmål, fx "I hvilken grad er der omskiftelighed i forretningsgrundlaget for it-systemet?". Der kan også arbejdes videre med disse systemoplysninger i forbindelse med udarbejdelse af fortegnelse over databehandlingsaktiviteter, jf. Datatilsynets Vejledning om fortegnelse[[3]]().
 
 It-systemoversigt og Datamanagement
 ---------------------------------------
@@ -246,7 +252,7 @@ I forhold til ibrugtagningen af et it-system i en organisation kan det i visse t
 
 Som det blev beskrevet i foregående kapitel, kan man have behov for at beskrive it-systemer ud fra forskellige indfaldsvinkler, og denne indfaldsvinkel er også afgørende for hvad et it-systemoverblik skal indeholde. Tager man eksempelvis udgangspunkt i den overordnede it-service, som tilbydes slutbrugeren, kan det være tilstrækkeligt at se på it-systemet som et samlet hele, hvorimod det i forhold til drift, vedligehold og kritikalitet typisk er nødvendigt at beskrive it-systemets underliggende applikationskomponenter og afhængigheder, som tilsammen udgør it-systemet. 
 
-4.2 Implementering og anvendelse; instantieret it-system
+Implementering og anvendelse; instantieret it-system
 --------------------------------------------------------
 
 Begrebet **it-system** udtrykker it-systemer i en organisation for -- som førnævnt -- at opnå et eller flere erklærede formål. Et konkret, implementeret eller 'instantieret' it-system kaldes et **instantieret it-system**. Et instantieret it-system kan i basisprofilen beskrives som havende relationer til en eller flere fysiske datasæt og/eller en eller flere services.
@@ -270,6 +276,7 @@ I det følgende gives en oversigt over standardens potentielle emnemæssige rela
 
 It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De helt grundlæggende kerneinformationer ses i midten af figuren herunder, og de øvrige otte emneområder afspejler grundperspektiverne fra rammearkitekturen: styring, strategi, jura, sikkerhed, opgaver, information, applikation og infrastruktur, som beskrives i Hvidbog om fællesoffentlig digital arkitektur (FDA)[[7]].
 
+<p align="center"><img src="img/Figur_illustration_af_standardens_emnemaessige_sammenhaenge.png" alt="Illustration af standardens emnemæssige" width="350"/></p>
 Figur 5.1: Illustration af standardens emnemæssige
 
 Disse otte emner dækker bredt, og for at dække en specifik anvendelseskontekst vil det typisk være nødvendigt at udvide basisprofilen med oplysninger fra forskellige emneområder. I tillæg til de otte emneområder eksisterer et metalag med informationer om myndighedens udveksling af disse oplysninger til et bestemt formål, men dette præciseres nærmere i de konkrete anvendelsesprofiler.
@@ -351,14 +358,14 @@ For et it-system kan der angives referencer til kontrakternes **identifikation**
 
 Én kontrakt med en given leverandør kan også indeholde aftale om flere ydelser på én gang, fx en kombineret drifts- og vedligeholdelsesaftale. Softwarelicenskontrakter betragtes som værende af en særlig karakter. Anskaffelse af standardsoftware kræver typisk også, at de indkøbte licenser administreres, og at licensvilkår overholdes. Derfor kan det internt i en organisation kan være relevant at registrere mere detaljerede oplysninger om licenser. Derudover kan der efter behov tilføjes yderligere oplysninger vedrørende kontrakten såsom **kontraktparter** og **kontraktperioder,** som kan være særligt relevante ift. systemet forvaltning og vurdering af kontrakters udløbsdatoer etc. Disse masterdata vil dog typisk være at finde i et kontraktstyringssystem.
 
-5.6 Information
+Information
 ---------------
 
 De data, som et instantieret it-system **skaber,** kan betragtes som en specifik fysisk **repræsentation** af et **datasæt** -- en samling af oplysninger bestående af enkelte dele der forvaltes under et[[15]], og beskrivelsen af datasæt og datasætrepræsentationer følger i denne sammenhæng W3Cs Data Catalogue Vocabulary (DCAT)[[16]]. Et datasæt og dets repræsentationer kan forsynes med en **titel,** og **første og sidste datatilføjelsesdato** kan angives for datasætrepræsentationen.  
 
 Datasætrepræsentationer, som it-systemet **udstiller*** og **anvender,** bør registreres ved reference til Datasætkataloget[[17]]. Det fællesoffentlige datasætkatalog er et katalog, der har til hensigt at samle metadata om myndigheders datasæt, hvilket blandt andet understøtter Lov om videreanvendelse af den offentlige sektors informationer (PSI-direktivet).[[18]]
 
-5.7 Sikkerhed
+Sikkerhed
 -------------
 
 Emnet sikkerhed kan vedrøre mange forskellige aspekter, fx informationssikkerhed, persondatasikkerhed, forretnings- og samfundskritikalitet og fortrolighed.
@@ -512,7 +519,7 @@ Den overordnede mapning går her ikke på egenskaberne, men på klasserne. Det p
 
 I den Fællesoffentlige Digitale Arkitektur (FDA) indgår grundlæggende arkitekturperspektiver, som udgør de tematiske emneområder og kapitler i denne standard. Dog er der pt. ikke medtaget oplysningstyper under perspektivet 'Strategi'.
 
-
+<p align="center"><img src="img/Figur_arkitektuprincipper.png" alt="Figur FDA arkitektuprincipper" width="350"/></p>
 
 Referencer
 ==============
@@ -856,6 +863,9 @@ Bilag B: Skabelon til registrering i regneark (udklip)
 ------------------------------------------------------
 
 ### Oversigt over **mulige** **oplysninger** i basisprofilen
+<p align="center"><img src="img/Figur_bilagB_regneark_del1.png" alt="Figur til bilagB regneark del1.png"  width="350"/></p>
+<p align="center"><img src="img/Figur_bilagB_regneark_del2.png" alt="Figur til bilagB regneark del2.png"  width="350"/></p>
+
 
 ### Udfyldelse: Basisinformation
 <dl class="def">
