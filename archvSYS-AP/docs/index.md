@@ -42,6 +42,7 @@ Editor: Rigsarkivet
 Editor: KL
 Editor: Danske Regioner
 Editor: Organisationen Danske Arkiver
+Editor: OS2KITOS
 Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: archvSYS-AP
