@@ -11,7 +11,7 @@ Go to GitHub-branch SYS-AP: https://github.com/digst/IT-System-AP/tree/master/SY
 
 Read specification publication (in Danish): https://digst.github.io/IT-System-AP/SYS-AP/docs/
 
-## An Archive Application Profile (go to branch archvSYS-AP)
+## An Archive Application Profile 
 This application profile reuses core elements from the basic aplication profile above, but extends this with classes and properties relevant for in relation to submitting information about IT system Details to the National Archives.
 
 Go to GitHub-branch archvSYS-AP: https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP
