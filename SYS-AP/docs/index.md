@@ -36,7 +36,7 @@
 <pre class="metadata">
 Title: Standard for beskrivelse af it-systemer - Basisprofil
 Status: LD
-URL: http://github.com/digst/IT-System-AP/SYS-AP/docs/index.md
+URL: https://github.com/digst/IT-System-AP/tree/master/SYS-AP
 Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
 Editor: Rigsarkivet
 Editor: KL
