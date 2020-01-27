@@ -1,13 +1,69 @@
-Standard for beskrivelse af\
-it-systemer -\
-Basisprofil
+<style>
+@media print {
+  html { margin: 0cm 2cm 2cm 0cm; font-size: 80%; }
+  /* DIGST fonts */
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+  h2,h3,h4, h4 dfn { font-family: "Garamond", serif; color: black; margin-bottom: 0; font-style: normal; font-weight: normal;}
+  h2:not(#subtitle) { page-break-before: always; font-size: 250%; border-bottom: solid 0.5px black; padding-top: 20px; margin-bottom: 6px;}
+  h3 { font-size: 145%;}
+  h4 { font-size: 125%;}
+  #toc {page-break-before: always;}
+  /* DIGST-like frontpage */
+  .head { width: 50%; margin-left: 24px; padding: 0px; background-color: #031D5C;}
+  .head div { background-color: white; padding: 24px; }
+  .head hr { display: none;}
+  .head h1 { background-color: #031D5C; color: white; margin: 0px; padding: 50px 0px 50px 24px; font-weight: normal; }
+  #subtitle { padding-left: 24px; background-color: #031D5C; color: #031D5C; }
+  .head time { display: block; font-family: "Helvetica Neue", Helvetica, Arial; margin: 0px; background-color: #031D5C; font-size: 80%; color: white;}
+  .toc li { line-height: 70%; font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: 600; font-size: 90%; }
+  .self-link { display: none; }
+  blockquote { font-size: 80%; font-style: italic; margin-left: 5%; width: 70%; border-left-width: 2px;}
+	h2#abstract {display: none;}
+	.p-summary {width: 50%; margin-left: 24px; padding: 0px;}
+}
+.new {
+    border: solid 3px green;
+    padding: 6px;
+    margin: 18px 0px 18px 0px;
+}
+
+	
+	
+/* style til egne og andres definitioner rød/blå*/
+</style>
+
+<pre class="metadata">
+Title: Standard for beskrivelse af it-systemer - Basisprofil
+Status: LD
+URL: http://github.com/digst/IT-System-AP/SYS-AP/docs/index.md
+Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
+Editor: Rigsarkivet
+Editor: KL
+Editor: Danske Regioner
+Editor: Organisationen Danske Arkiver
+Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Basisprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer.
+Boilerplate: copyright no, conformance no, abstract no
+Shortname: SYS-AP
+Revision: 1.0.0
+Date: 2019-12-05
+Max ToC Depth: 3
+Markup Shorthands: markdown yes
+Repository: digst/IT-System-AP/tree/master/SYS-AP
+Inline Github Issues: full
+Logo: digst...
+</pre>
+
+
+<h1>Standard for beskrivelse af it-systemer - Basisprofil</h1>
+
 
 Version 1.0.0
 
-November 2019
+Januar 2019
                                             
 
-Læsevejledning:
+**Læsevejledning:**
 
 Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer.
 
@@ -787,223 +843,33 @@ Bilag B: Skabelon til registrering i regneark (udklip)
 
 ### Oversigt over **mulige** **oplysninger** i basisprofilen
 
-|
+### Udfyldelse: Basisinformation
+<dl class="def">
+<dt>it-systemidentifikator</dt><dd>angiv det ID, som entydigt identificerer it-systemet (kan udfyldes) </dd>
+<dt>it-systemnavn (fx navn som anført i hovedkontrakten)</dt><dd>angiv it-systemets foretrukne betegnelse  (skal udfyldes) </dd>
+<dt>alternativt it-systemnavn</dt><dd>angiv eventuelt øvrige betegnelser eller kaldenavne for it-systemet (kan udfyldes) </dd>
+<dt>it-systembeskrivelse</dt><dd>beskriv, til hvilket formål it-systemet er taget i brug i organisationen (skal udfyldes) </dd>
+<dt>operationel status</dt><dd>angiv, hvilken tilstand it-systemet har i forhold til ibrugtagning (kan udfyldes)</dd>  
+<dt>ibrugtagningsdato </dt><dd>angiv dato, hvor it-systemet blev taget i brug med fuld eller delvis funktio-nalitet  (kan udfyldes) </dd>
+<dt>udfasningsdato</dt><dd>angiv dato, hvor it-systemet blev endeligt blev afviklet (kan udfyldes) </dd>
+<dt>version</dt><dd>angiv eventuelt, hvilken version der er taget i anvendelse (kan udfyldes) </dd>
+<dt>kommentar</dt><dd>angiv, eventuelt supplerende bemærkninger eller oplysninger (kan udfyldes) </dd>
+<dt>indeholder data</dt><dd>angiv om it-systemet indeholder digitalt skabte data (kan udfyldes) </dd>
+<dt>dokumentationsreference</dt><dd>angiv reference(r) til dokumentation af it-systemet (kan udfyldes) </dd>
+<dt>rettighedshaver</dt><dd>organisation, der ejer eller har dispositionsretten over de intellektuelle rettigheder over it-systemets primære softwareprodukt (kan udfyldes) </dd></dl>
+<dl>
+
+
+### Udfyldelse: Opgaver
+<dl class="def"> 
+<dt>FORM-opgave(r)</dt><dd>(for regioner og statslige administrative enheder) angiv FORM-opgave(r), som it-systemet understøtter (fx 65.50.05.10 Sagsarkivering) el. overord-net serviceområde (kan udfyldes) </dd>
+<dt>KLE-emne(r) </dt><dd>(for kommuner) angiv  KLE-emne(r) som it-systemet understøtter (fx 85.08.00 arkivering i almindelighed) el. overordnet emnegruppe (kan udfyldes) </dd>
+<dt>lovgrundlag</dt><dd>angiv reference(r) til juridisk ressource, som danner grundlag for systemets anvendelse (kan udfyldes) </dd>
+<dt>målgruppe</dt><dd>angivelse af, hvilken gruppe af brugere it-systemet henvender sig til (kan udfyldes)</dd>  
+<dt>forgængersystem</dt><dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes)</dd>
+</dl>
 
-Basisinformation
 
- |
-
-Forklaring
-
- |
-
-Udfyldelseskrav
-
- |
-|
-
-**it-systemidentifikator**
-
- |
-
-angiv det ID, som entydigt identificerer it-systemet
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**it-systemnavn **
-
- |
-
-angiv it-systemets foretrukne betegnelse\
-(fx navn som anført i hovedkontrakten)
-
- |
-
-<<Skal udfyldes>>
-
- |
-|
-
-**alternativt it-systemnavn**
-
- |
-
-angiv eventuelt øvrige betegnelser eller kaldenavne for it-systemet
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**it-systembeskrivelse**
-
- |
-
-Beskriv, til hvilket formål it-systemet er taget i brug i organisationen
-
- |
-
-<<Skal udfyldes>>
-
- |
-|
-
-**operationel status**
-
- |
-
-angiv, hvilken tilstand it-systemet har i forhold til ibrugtagning
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**ibrugtagningsdato**
-
- |
-
-angiv dato, hvor it-systemet blev taget i brug med fuld eller delvis funktionalitet
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**udfasningsdato**
-
- |
-
-angiv dato, hvor it-systemet blev endeligt blev afviklet
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**version**
-
- |
-
-angiv eventuelt hvilken version der er taget i anvendelse
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**kommentar**
-
- |
-
-angiv eventuelt supplerende bemærkninger eller oplysninger
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**indeholder data**
-
- |
-
-Angiv, om it-systemet indeholder digitalt skabte data
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**dokumentationsreference**
-
- |
-
-angiv reference(r) til dokumentation af it-systemet
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-Opgaver
-
- |  |  |
-|
-
-**FORM-opgave(r)**
-
- |
-
-angiv FORM-opgave(r), som it-systemet understøtter
-
- |
-
-<<Kan udfyldes>>\
-(for regioner og statslige administrative enheder)
-
- |
-|
-
-**KLE-emne(r)**
-
- |
-
-angiv  KLE-emne(r), som it-systemet understøtter
-
- |
-
-<<Kan udfyldes>>\
-(for kommuner)
-
- |
-|
-
-**lovgrundlag**
-
- |
-
-angiv reference(r) til juridisk ressource, som danner grundlag for systemets anvendelse
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
-
-**målgruppe(r)**
-
- |
-
-angivelse af, hvilken gruppe af brugere it-systemet henvender sig til
-
- |
-
-<<Kan udfyldes>>
-
- |
-|
 
 **kritikalitetstype**
 
@@ -1352,13 +1218,13 @@ angiv, i hvilket omfang information kan videregives iht. informationssikkerhedss
  |
 
 Bilag C: Eksempel maskinlæsbart format (RDF/XML)
-
 ----------------------------------------------------
 
-(Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD)\
-EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)\
+(Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD)
+### EKSEMPELOUTPUT TURTLE (Acadre anvendt i kommune X)
 NB: Ikke alle egenskaber medtaget i eksemplet
 
+```
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -1526,6 +1392,7 @@ EKSEMPELOUTPUT I RDF/XML
 </rdf:Description>
 
 </rdf:RDF>
+```
 
 Bilag D: Om datamodellen
 ------------------------
@@ -1603,59 +1470,53 @@ o *Målgruppe (Target Group)*
 
 o *IT-systemkontrakttype (IT System Contract Type)*
 
+
 Bilag E: UML-diagram: SYS-AP
 ----------------------------
 
-**Namespace**: https://data.gov.dk/model/profile/itsystemap#,
+- Namespace: https://data.gov.dk/model/profile/itsystemap#,
+- Modelnavn (label): Anvendelsesprofil for it-systemer (SYS-AP)
+- Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
+- Versionnummer (versionInfo): 1.0.1
+- Seneste opdateringsdato (dateModified): 11-11-2019
+- Modelstatus (modelStatus): development
+- Godkendelsesstatus (approvalStatus): afventer godkendelse\
+- Modelomfang (modelScope): anvendelsesmodel
+- Forretningsområde (theme): [06.38.10.10 Arkitektur for den digitale infrastruktur](http://www.form-online.dk/opgavenoegle/06/#06.38.10.10)\
+- Afledt af (wasDerivedFrom): [https://data.gov.dk/model/concept/itsystem#](https://data.gov.dk/model/concept/itsystem)
+- Kommentar (comment):  Denne generelle anvendelsesprofil vil kunne anvendes til etablere et overordnet overblik og standardisere indsamlingen af oplysninger.
 
-**Modelnavn **(label): Anvendelsesprofil for it-systemer (SYS-AP)
-
-**Modelansvarlig **(responsibleEntity): Digitaliseringsstyrelsen
-
-**Versionnummer **(versionInfo): 1.0.1
-
-**Seneste opdateringsdato** (dateModified): 11-11-2019
-
-**Modelstatus **(modelStatus): development
-
-**Godkendelsesstatus **(approvalStatus): afventer godkendelse\
-**Modelomfang** (modelScope): anvendelsesmodel
-
-**Forretningsområde **(theme): [06.38.10.10 Arkitektur for den digitale infrastruktur](http://www.form-online.dk/opgavenoegle/06/#06.38.10.10)\
-**Afledt af** (wasDerivedFrom): [https://data.gov.dk/model/concept/itsystem#](https://data.gov.dk/model/concept/itsystem)
-
-**Kommentar **(comment):  Denne generelle anvendelsesprofil vil kunne anvendes til etablere et overordnet overblik og standardisere indsamlingen af oplysninger.
 
 Bilag F: UML-diagram: SYS
 -------------------------
 
-**Namespace**: https://data.gov.dk/model/core/itsystem#,
+- Namespace: https://data.gov.dk/model/core/itsystem#,
+- Modelnavn (label): Vokabular til it-system (SYS)
+- Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
+- Versionnummer (versionInfo): 1.0.0
+- Seneste opdateringsdato (dateModified): 11-11-2019
+- Modelstatus (modelStatus): development
+- Godkendelsesstatus (approvalStatus) : afventer godkendelse
+- Modelomfang (modelScope): kernemodel
+- Forretningsområde (theme): [06.38.10.10 Arkitektur for den digitale infrastruktur](http://www.form-online.dk/opgavenoegle/06/#06.38.10.10)\
+- Afledt af (wasDerivedFrom): [https://data.gov.dk/model/concept/itsystem#](https://data.gov.dk/model/concept/itsystem)
+- Kommentar (comment):  
 
-**Modelnavn **(label): Vokabular til it-system (SYS)
-
-**Modelansvarlig **(responsibleEntity): Digitaliseringsstyrelsen
-
-**Versionnummer **(versionInfo): 1.0.0
-
-**Seneste opdateringsdato** (dateModified): 11-11-2019
-
-**Modelstatus **(modelStatus): development
-
-**Godkendelsesstatus **(approvalStatus) : afventer godkendelse
-
-**Modelomfang** (modelScope): kernemodel
-
-**Forretningsområde **(theme): [06.38.10.10 Arkitektur for den digitale infrastruktur](http://www.form-online.dk/opgavenoegle/06/#06.38.10.10)\
-**Afledt af** (wasDerivedFrom): [https://data.gov.dk/model/concept/itsystem#](https://data.gov.dk/model/concept/itsystem)
-
-**Kommentar **(comment):  
-
-**
-
-**
 
 Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 ------------------------------------------------
+
+- Namespace: https://data.gov.dk/concept/profile/itsystemap/ 
+- Modelnavn (label): Begrebsliste til basisprofilen
+- Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)
+- Versionnummer (versionInfo): 1.0.0
+- Seneste opdateringsdato (dateModified): 11-11-2019
+- Modelstatus (modelStatus): development
+- Godkendelsesstatus (approvalStatus): afventer godkendelse
+- Forretningsområde (theme):  65.50.05.10 Sagsarkivering  
+- Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/
+- Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. registrering af basisoplysninger om it-systemer. 
+
 
 |
 
@@ -2445,67 +2306,69 @@ IT system aquisition type
 
 |
 
+
+
+
+---
+
 Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer. Der indsamles oplysninger om offentlige it-systemer mange steder, så der er god værdi i at standardisere den måde hvorpå it-systemer beskrives og dermed understøtte højere genbrug og kvalitet i de indsamlede oplysninger.
 
- |
-|
 
 arkitektur.digst.dk
 
- |
+---
 
 * * * * *
 
-[[1]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref1)   Et arbejder hvis mål nu eksisterer i form af 'Standard for beskrivelse af it-systemer -- Arkivprofil'
+[[1]]() Et arbejde hvis mål nu eksisterer i form af 'Standard for beskrivelse af it-systemer -- Arkivprofil'
 
-[[2]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref2) https://digst.dk/strategier/strategi-for-it-styring-i-staten/
+[[2]]() https://digst.dk/strategier/strategi-for-it-styring-i-staten/
 
-[[3]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref3) https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
+[[3]]() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
 
-[[4]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref4) ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)  
+[[4]]() ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)  
 
-[[5]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref5) Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.\
+[[5]]() Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.\
 Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en)
-
 Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
 
-[[6]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref6) Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
+[[6]]() Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
 
-[[7]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref7) <https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur>
+[[7]]() <https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur>
 
-[[8]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref8) https://skikataloget.ski.dk/ski-kataloget/
+[[8]]() https://skikataloget.ski.dk/ski-kataloget/
 
-[[9]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref9) Common Procurement Vocabulary er et fælles referencesystem for udbudte opgaver i EU https://udbudsportalen.dk/cpv-koder/
+[[9]]() Common Procurement Vocabulary er et fælles referencesystem for udbudte opgaver i EU https://udbudsportalen.dk/cpv-koder/
 
-[[10]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref10) United Nations Standard Product and Services Code) er et internationalt klassifikationssystem for varer og tjenesteydelser. http://unspsc.gs1.dk/find-din-kode/
+[[10]]() United Nations Standard Product and Services Code) er et internationalt klassifikationssystem for varer og tjenesteydelser. http://unspsc.gs1.dk/find-din-kode/
 
-[[11]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref11) STORM er en taksonomi over it-servicestyper. På samme måde som FORM kategoriserer og beskriver det offentliges opgaver, er STORM udviklet til at give en overordnet klassifikation og beskrivelse af de it-systemer, der bruges i den offentlige forvaltning. STORM vedligeholdes ikke pt. http://arkitekturguiden.digitaliser.dk/storm og det er projektgruppens vurdering at den ikke umiddelbart kan tages i anvendelse i denne standard. Flere interessenter har dog i forbindelse med standardens udarbejdelse udtrykt et behov for en sådan klassifikation ifm. øvrige anvendelser. Dette bør analyseres nærmere.
+[[11]]() STORM er en taksonomi over it-servicestyper. På samme måde som FORM kategoriserer og beskriver det offentliges opgaver, er STORM udviklet til at give en overordnet klassifikation og beskrivelse af de it-systemer, der bruges i den offentlige forvaltning. STORM vedligeholdes ikke pt. http://arkitekturguiden.digitaliser.dk/storm og det er projektgruppens vurdering at den ikke umiddelbart kan tages i anvendelse i denne standard. Flere interessenter har dog i forbindelse med standardens udarbejdelse udtrykt et behov for en sådan klassifikation ifm. øvrige anvendelser. Dette bør analyseres nærmere.
 
-[[12]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref12) <http://data.europa.eu/eli/reg/2016/679/oj>:\
+[[12]]() <http://data.europa.eu/eli/reg/2016/679/oj>:\
   <https://www.retsinformation.dk/eli/lta/2018/502>
 
-[[13]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref13) <https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf>
+[[13]]() <https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf>
 
-[[14]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref14) https://www.omg.org/hot-topics/finance.htm   & https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts
+[[14]]() https://www.omg.org/hot-topics/finance.htm   & https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts
 
-[[15]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref15) https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf
+[[15]]() https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf
 
-[[16]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref16) https://www.w3.org/TR/vocab-dcat/\
+[[16]]() https://www.w3.org/TR/vocab-dcat/\
     (Bemærk at DCAT anvender et snævrere datasætbegreb end det der defineres i ISO 19115‑1:2014)
 
-[[17]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref17) https://arkitektur.digst.dk/det-faellesoffentlige-datasaetkatalog
+[[17]]() https://arkitektur.digst.dk/det-faellesoffentlige-datasaetkatalog
 
-[[18]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref18) https://www.retsinformation.dk/eli/lta/2005/596.
+[[18]]() https://www.retsinformation.dk/eli/lta/2005/596.
 
-[[19]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref19) http://data.europa.eu/eli/reg/2016/679/oj\
+[[19]]() http://data.europa.eu/eli/reg/2016/679/oj\
   https://www.retsinformation.dk/eli/lta/2018/502
 
-[[20]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref20) https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
+[[20]]() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
 
-[[21]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref21) ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: https://www.iso.org/standard/54533.html
+[[21]]() ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: https://www.iso.org/standard/54533.html
 
-[[22]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref22) Sikkerhedscirkulæret https://www.retsinformation.dk/eli/retsinfo/2014/10338
+[[22]]() Sikkerhedscirkulæret https://www.retsinformation.dk/eli/retsinfo/2014/10338
 
-[[23]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref23) https://dltj.org/article/software-development-practice/
+[[23]]() https://dltj.org/article/software-development-practice/
 
-[[24]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftnref24) Ved godkendelse af standarden, vil UML-modellerne blive udstillet som XMI og RDF/XML med de endelige httpURIer.
+[[24]]() Ved godkendelse af standarden, vil UML-modellerne blive udstillet som XMI og RDF/XML med de endelige httpURIer.
