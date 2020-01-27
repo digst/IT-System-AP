@@ -9,11 +9,11 @@ This application profile constitutes a Danish public-sector specification for de
 
 Go to GitHub-branch SYS-AP: https://github.com/digst/IT-System-AP/tree/master/SYS-AP
 
-Link to specification publication: https://digst.github.io/IT-System-AP/SYS-AP/docs/
+Read specification publication: https://digst.github.io/IT-System-AP/SYS-AP/docs/
 
 ## An Archive Application Profile (go to branch archvSYS-AP)
 This application profile reuses core elements from the basic aplication profile above, but extends this with classes and properties relevant for in relation to submitting information about IT system Details to the National Archives.
 
 Go to GitHub-branch archvSYS-AP: https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP
 
-Link to specification publication: https://digst.github.io/IT-System-AP/archvSYS-AP/docs/
+Read specification publication: https://digst.github.io/IT-System-AP/archvSYS-AP/docs/
