@@ -335,7 +335,7 @@ Styring
 
 Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter. Aktørerne kan være personer eller organisationer, men det anbefales, i det omfang det er muligt, ikke at registrere oplysninger om fysiske personer, men derimod den relevante medarbejderrolle eller organisatoriske enhed.
 
-<p class="warning">
+<p class="advisement">
 Organisationer beskrives iht. anvendelsesprofil for organisation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer>
 </p>
 
