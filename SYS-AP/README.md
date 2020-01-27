@@ -21,7 +21,7 @@ Properties (Basic Information Perspective):
 
 | Property (da) | Property (en) | Range | Usage note | 
 | ---- | ---- | ---- | ---- |
-| identifikator | `dct:identifier` | xsd:anyURI  | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | 
+|  | `dct:identifier` | xsd:anyURI  | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | 
 |  | `skos:prefLabel | rdf:langString |  |
 |  | `skos:altLabel` | rdf:langString |  |
 |  | `dct:description` | rdf:langString | An account of the resource |
@@ -32,28 +32,16 @@ Properties (Basic Information Perspective):
 |  | `sys:usedInOrganization` | org:Organization |  |
 |  |  |  |  |
 
-
-<!--
-Properties (Basic Information Perspective):
-* `dct:identifier` (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context.
-* `skos:prefLabel` (Datatype property) Range: rdf:langString. 
-* `skos:altLabel` (Datatype property) Range: rdf:langString. 
-* `dct:description` (Datatype property) Range: rdf:langString. Definition: An account of the resource
-* `sys:inUseFromDate` (Datatype property) Range: xsd:date. Definition: date on which a system was put into operation
-* `sys:inUseUntilDate` (Datatype property) Range: xsd:date. Definition: date on which the it-system was phased out and no longer in operation
-* `sys:operationalStatus`  (Object Property) Range: OperationalStatus
-* `rdfs:comment` (Datatype property) Range: rdf:langString. Definition: A description of the subject resource.
-* `sys:usedInOrganization`  (Object Property) Range: org:Organization
--->
-
 Properties (Tasks Perspective):
-* `sys:hasApplicationPurposeFORM`  (Object Property) Range: FORMtask
-* `sys:hasApplicationPurposeKLE`  (Object Property) Range: KLETheme
-* `cv:hasLegalResource`  (Object Property) Range: eli:LegalResource
-* `archv:caseArea`  (Object Property) Range: CaseArea
-* `sys:predecessorSystem`  (Object Property) Range: sys:ITSystem
-* `sys:hasCriticality`  (Object Property) Range: CriticalityType
-* `sys:hasTargetGroup`  (Object Property) Range: TargetGroup
+| Property (da) | Property (en) | Range | Usage note | 
+| ---- | ---- | ---- | ---- |
+|  | `sys:hasApplicationPurposeFORM` | FORMtask |  |
+|  | `sys:hasApplicationPurposeKLE` | KLETheme |  |
+|  | `cv:hasLegalResource` | eli:LegalResource |  |
+|  | `archv:caseArea` | CaseArea |  |
+|  | `sys:predecessorSystem` | sys:ITSystem |  |
+|  | `sys:hasCriticality` | CriticalityType |  |
+|  | `sys:hasTargetGroup` | TargetGroup |  |
 
 Properties (Governance Perspective):
 * `sys:hasITSystemOwner`  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
