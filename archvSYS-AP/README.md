@@ -28,67 +28,65 @@ This page also documents the RDF constructs as applied in a DRAFT for a Danish p
 # sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
 
-Properties (Basic Information Perspective):
-* `dct:identifier` (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context.
-* `skos:prefLabel` (Datatype property) Range: rdf:langString. 
-* `skos:altLabel` (Datatype property) Range: rdf:langString. 
-* `dct:description` (Datatype property) Range: rdf:langString. Definition: An account of the resource
-* `sys:inUseFromDate` (Datatype property) Range: xsd:date. Definition: date on which a system was put into operation
-* `sys:inUseUntilDate` (Datatype property) Range: xsd:date. Definition: date on which the it-system was phased out and no longer in operation
-* `sys:operationalStatus`  (Object Property) Range: OperationalStatus
-* `rdfs:comment` (Datatype property) Range: rdf:langString. Definition: A description of the subject resource.
-* `sys:usedInOrganization`  (Object Property) Range: org:Organization
-
-
-Properties (Tasks Perspective):
-* `sys:hasApplicationPurposeFORM`  (Object Property) Range: FORMtask
-* `sys:hasApplicationPurposeKLE`  (Object Property) Range: KLETheme
-* `cv:hasLegalResource`  (Object Property) Range: eli:LegalResource
-* `archv:caseArea`  (Object Property) Range: CaseArea
-* `sys:predecessorSystem`  (Object Property) Range: sys:ITSystem
-* `sys:hasCriticality`  (Object Property) Range: CriticalityType
-* `sys:hasITSystemOwner`  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
-* `sys:hasSystemDocumentation`  (Object Property) Range: sys:SystemDocumentation
-* `sys:containsData` (Datatype property) Range: xsd:boolean. Definition: specification of whether an IT system contains data or documents digitally created by the public administration
-* `archv:containsDigitalDocs` (Datatype property) Range: xsd:boolean.
-
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
+| `dct:identifier`| xsd:anyURI | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | Basic Information |
+| `skos:prefLabel`| rdf:langString| | Basic Information |
+| `skos:altLabel`| rdf:langString| | Basic Information |
+| `dct:description`| rdf:langString| An account of the resource | Basic Information |
+| `sys:inUseFromDate`| xsd:date| date on which a system was put into operation | Basic Information |
+| `sys:inUseUntilDate`| xsd:date| date on which the it-system was phased out and no longer in operation | Basic Information |
+| `sys:operationalStatus`|OperationalStatus| | Basic Information |
+| `rdfs:comment`| rdf:langString| A description of the subject resource | | Basic Information |
+| `sys:usedInOrganization`| org:Organization | Basic Information |
+| `sys:hasApplicationPurposeFORM` | FORMtask | | Tasks |
+| `sys:hasApplicationPurposeKLE` | KLETheme | | Tasks |
+| `cv:hasLegalResource` | eli:LegalResource | | Tasks |
+| `archv:caseArea` | CaseArea | | Tasks |
+| `sys:predecessorSystem` | sys:ITSystem | | Tasks |
+| `sys:hasCriticality` | CriticalityType | | Tasks |
+| `sys:hasITSystemOwner` | org:Organization, org:OrganizationalUnit, foaf:Person | | Tasks |
+| `sys:hasSystemDocumentation` | sys:SystemDocumentation | | Tasks |
+| `sys:containsData` | xsd:boolean | specification of whether an IT system contains data or documents digitally created by the public administration | Tasks |
+| `archv:containsDigitalDocs` | xsd:boolean | | Tasks |
 
 # sys:InstantiatedITSystem (Class)
 Definition: it-system which has been implemented in a physical IT environment
-* `sys:instantiationOf`  (Object Property) Range: sys:ITSystem
-* `dct:identifier` (Datatype property) Range: xsd:anyURI.
-* `sys:actsAs`  (Object Property) Range: EnvironmentType
-* `sys:producesDataset`  (Object Property) Range: dcat:Dataset
-* `archv:prevArchiveInformationPackage`  (Object Property) Range: dcat:Dataset
+
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
+| `sys:instantiationOf` | sys:ITSystem | | |
+| `dct:identifier` | xsd:anyURI | | |
+| `sys:actsAs` | EnvironmentType | | |
+| `sys:producesDataset` | dcat:Dataset | | |
+| `archv:prevArchiveInformationPackage` | dcat:Dataset | | |
 
 
 # dcat:Dataset (Class)
-Definition: 
-A collection of data, published or curated by a single agent, and available for access or download in one or more formats
+Definition: A collection of data, published or curated by a single agent, and available for access or download in one or more formats
 
-Properties (Information Perspective)::
-* `dct:identifier` (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context.
-* `dct:title` (Datatype property) Range: rdf:langString. Definition: A name given to the resource
-* `dct:description` (Datatype property) Range: rdf:langString. Definition: An account of the resource
-* `owl:versionInfo` (Datatype property) Range: rdfs:Literal. Definition: The annotation property that provides version information for an ontology or another OWL construct
-* `dct:temporal`  (Object Property) Range: dct:PeriodOfTime
-
-Properties (Governance Perspective)::
-* `dct:creator`  (Object Property) Range: org:Organization
-* `dcat-dk:dataResponsibleOrganisation`  (Object Property) Range: org:Organization
-* `dcat-dk:dataProcessor`  (Object Property) Range: org:Organization
-* `dcat-dk:personalDataCategory`  (Object Property) Range: PersonalDataCategory
-* `dcat-dk:confidentialityType`  (Object Property) Range: ConfidentialityType
-* `dcat-dk:hasConfidentialityType`  (Object Property) Range: ConfidentialityTypeNatoEu
-* `dcat-dk:hasConfidentialityType`  (Object Property) Range: ConfidentialityTypeISO27002
-* `archv:archivalRegisterType`  (Object Property) Range: RegisterType
-* `archv:archivalObligationType`  (Object Property) Range: ArchivalObligationType
-* `archv:plannedArchivalFrequency`  (Object Property) Range: ArchivalFrequency
-* `archv:nextDataErasureDeadline` (Datatype property) Range: xsd:date. Definition: 
-* `archv:prevArchiveInformationPackage`  (Object Property) Range: archv:ArchiveInformationPackage
-* `archv:plannedArchiveType`  (Object Property) Range: ArchiveType
-* `archv:lastArchivePeriod`  (Object Property) Range: dct:PeriodOfTime
-* `prov:wasGeneratedBy`  (Object Property) Range: archv:DataConversion
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
+| `dct:identifier` | xsd:anyURI | An unambiguous reference to the resource within a given context | Information|
+| `dct:title` | rdf:langString | A name given to the resource | Information|
+| `dct:description` | rdf:langString | An account of the resource | Information|
+| `owl:versionInfo` | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information|
+| `dct:temporal` | dct:PeriodOfTime | | Information|
+| `dct:creator` | org:Organization | | Governance  |
+| `dcat-dk:dataResponsibleOrganisation` | org:Organization | | Governance  |
+| `dcat-dk:dataProcessor` | org:Organization | | Governance  |
+| `dcat-dk:personalDataCategory` | PersonalDataCategory | | Governance  |
+| `dcat-dk:confidentialityType` | ConfidentialityType | | Governance  |
+| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeNatoEu | | Governance  |
+| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeISO27002 | | Governance  |
+| `archv:archivalRegisterType` | RegisterType | | Governance  |
+| `archv:archivalObligationType` | ArchivalObligationType | | Governance  |
+| `archv:plannedArchivalFrequency` | ArchivalFrequency | | Governance  |
+| `archv:nextDataErasureDeadline` | xsd:date | | Governance  |
+| `archv:prevArchiveInformationPackage` | archv:ArchiveInformationPackage| | Governance  |
+| `archv:plannedArchiveType` | ArchiveType| | Governance  |
+| `archv:lastArchivePeriod` | dct:PeriodOfTime| | Governance  |
+| `prov:wasGeneratedBy` | archv:DataConversion | |Governance |
 
 
 # Codelists (Classifications) used in the application profile:
