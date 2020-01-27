@@ -406,16 +406,13 @@ Basisprofilens bagvedliggende datamodel udgør den fælles specifikation, hvorti
 
 Der gives en overordnet beskrivelse af dennes indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses to UML-diagrammer for hhv. basisprofilen og den første konkrete anvendelse i en arkivprofil. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values.
 
-- Link til webudgivelse af UML-modellerne:\
-<http://data.gov.dk/document/itsystemspecification/v1/uml/>
+- Link til webudgivelse af UML-modellerne: <http://data.gov.dk/document/itsystemspecification/v1/uml/>
 
 Dataspecifikationen, der beskriver datamodellen i detaljer målrettet dataarkitekter, kan downloades via nedenstående link, og der findes også en oversigt over modellens elementer online.
 
-- Link til online oversigt over modellens elementer:\
-[https://data.gov.dk/model/profile/itsystemap#](https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&sheet=transform2RDFreport_da-en.xsl)    
+- Link til online oversigt over modellens elementer: [https://data.gov.dk/model/profile/itsystemap(https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&sheet=transform2RDFreport_da-en.xsl)    
 
-- Link til download af anvendelsesprofildokumentet [kommer]:\
-<http://data.gov.dk/document/itsystemspecification/v1/dataspecification/>
+- Link til download af anvendelsesprofildokumentet [kommer]: <http://data.gov.dk/document/itsystemspecification/v1/dataspecification/>
 
 
 Maskinfortolkeligt format
@@ -458,25 +455,30 @@ Oplysningstyperne i denne standard er mappet eller gennemgået ift. til følgend
 Mapningsskema i form af et regneark, der kan downloades her:\
 <https://data.gov.dk/document/itsystemspecification/v1/mappings/Mapning_it-system_oplysninger.xlsx>
 
-- **Rigsarkivets anmeldelses- og tilsynsskemaer**\
-*Skemaer vedr. statslige myndigheders, kommuner og regioners bevaring, kassation og aflevering af arkivalier*\
-<https://www.sa.dk/da/offentlig-forvaltning/>\
+- **Rigsarkivets anmeldelses- og tilsynsskemaer**
+
+Skemaer vedr. statslige myndigheders, kommuner og regioners bevaring, kassation og aflevering af arkivalier
+<https://www.sa.dk/da/offentlig-forvaltning/>
 (her mappes til egenskaber udvalgt af Rigsarkivet)
 
-- **Datatilsynets vejledning om fortegnelse** jf. GDPR.\
-*Datatilsynet har offentliggjort en skabelon for en databehandleraftale, der lever op til persondataforordningens minimumskrav. --* Datatilsynet 2018\
+- **Datatilsynets vejledning om fortegnelse** jf. GDPR.
+
+Datatilsynet har offentliggjort en skabelon for en databehandleraftale, der lever op til persondataforordningens minimumskrav. --* Datatilsynet 2018\
 <https://www.datatilsynet.dk/media/6567/fortegnelse.pdf>
 
-- **Kommunernes IT OverbliksSystem (OS2Kitos)**\
-OS2Kitos er en cloud-baseret løsning, der anvendes af 78 kommuner. OS2Kitos skaber overblik over den samlede kommunale it-portefølje. *OS2Kitos består af 5 moduler: IT understøttelse af organisation, IT Projekter, IT Systemer, IT Kontrakter og IT Rapporter.* -- OS2Kitos Sekretariatet 2018\
+- **Kommunernes IT OverbliksSystem (OS2Kitos)**
+
+OS2Kitos er en cloud-baseret løsning, der anvendes af 78 kommuner. OS2Kitos skaber overblik over den samlede kommunale it-portefølje. OS2Kitos består af 5 moduler: IT understøttelse af organisation, IT Projekter, IT Systemer, IT Kontrakter og IT Rapporter.* -- OS2Kitos Sekretariatet 2018\
 [https://www.kitos.dk,](https://www.kitos.dk7/) <https://github.com/os2kitos/kitos>
 
-- **Model for porteføljestyring af statslige it-systemer**\
-*Regeringen har i efteråret 2017 ved "Et solidt it-fundament -- Strategi for it-styring i staten" indført en ny model for porteføljestyring af statslige it-systemer.*\
-- Ministeriernes kontor for it-styring 2017\
+- **Model for porteføljestyring af statslige it-systemer**
+
+Regeringen har i efteråret 2017 ved "Et solidt it-fundament -- Strategi for it-styring i staten" indført en ny model for porteføljestyring af statslige it-systemer.
+Ministeriernes kontor for it-styring 2017
 <https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/>  (her mappes til udvalgte egenskaber fra Datagrundlag v2.0)
 
-- **Specifikation af Model for Organisation Version 2.0**\
+- **Specifikation af Model for Organisation Version 2.0**
+
 Formålet med Organisationsmodellen er at tilbyde et fælles sprog for beskrivelse af formelle organer og de elementer, som indgår heri.
 
 <https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf> - OIO 2017 (revideret 2018):\
@@ -486,20 +488,23 @@ Formålet med Organisationsmodellen er at tilbyde et fælles sprog for beskrivel
 
 Et overblik over de it-systemer, der udvikles/forvaltes under kontrakt med KOMBIT, samt systemer, der berører disse. KOMBITs systemoverblik er logisk set en delmængde af OS2Kitos, men supplerer yderligere med en lang række informationer om blandt andet snitflader, fysiske instanser og dataadgang. (Datamodel ikke offentligt tilgængelig, modtaget på mail)
 
-- **Systemindberetningsformular (Systemkort ServiceNow)-- IT systemer\
-***Ved etablering og installation af nye løsninger hos Statens It sender myndigheden oplysninger om it-systemet til Statens IT via en systemindberetningsformular (ServiceNow Systemkort).* -- Statens-IT 2018: (materiale ikke tilgængelig online men modtaget på mail)
+- **Systemindberetningsformular (Systemkort ServiceNow)-- IT systemer
+
+Ved etablering og installation af nye løsninger hos Statens It sender myndigheden oplysninger om it-systemet til Statens IT via en systemindberetningsformular (ServiceNow Systemkort).* -- Statens-IT 2018: (materiale ikke tilgængelig online men modtaget på mail)
 
 - **SKI-kataloget**
 
-*Staten og Kommunernes Indkøbsservice (SKI) laver indkøbsaftaler, der samler indkøb på tværs af det offentlige og afløfter udbudspligten, og via SKI-kataloget udstilles oplysninger om hardware- og softwareprodukter --* SKI 2018
+Staten og Kommunernes Indkøbsservice (SKI) laver indkøbsaftaler, der samler indkøb på tværs af det offentlige og afløfter udbudspligten, og via SKI-kataloget udstilles oplysninger om hardware- og softwareprodukter --* SKI 2018
 
 <https://skikataloget.ski.dk/ski-kataloget/>
 
-- **Configuration Management DataBase (CMDB)** /**IT Service Management (ITSM)**\
+- **Configuration Management DataBase (CMDB)** /**IT Service Management (ITSM)**
+
 Datamodeller fx ServiceNow og BMC er overordnet blevet undersøgt for genbrugelige elementer.
 
-- **Arkitekturdokumentation**, TOGAF-ArchiMate\
-*ArchiMate er en international notationsstandard på enterprisearkitekturniveau, som er optaget som en åben standard under The Open Group. Der indgår forskellige såkaldte lag, hvor applikationslaget (Application Layer) anvendes til at modellere en organisations informationssystemarkitekturer, som det defineres i TOGAF-rammeværket ArchiMate.*
+- **Arkitekturdokumentation**, TOGAF-ArchiMate
+
+ArchiMate er en international notationsstandard på enterprisearkitekturniveau, som er optaget som en åben standard under The Open Group. Der indgår forskellige såkaldte lag, hvor applikationslaget (Application Layer) anvendes til at modellere en organisations informationssystemarkitekturer, som det defineres i TOGAF-rammeværket ArchiMate.
 
 Den overordnede mapning går her ikke på egenskaberne, men på klasserne. Det primære element i applikationslaget (Application Layer) er applikationskomponenten. Dette element anvendes til både at modellere hele it-systemer og de komponenter, der indgår i deri. Standardens 'datasæt' kan mappes til ArchiMates 'dataobjekt', og 'snitflade' kan mappes til 'application interface'.
 
@@ -553,7 +558,8 @@ Datamodeller / klassifikationer / retningslinjer
 
 - Retningslinjer for dokumentation og formidling af arkitektur i digitaliseringsprojekter. (baseret på ISO)
 
-- Fællesoffentlig Referencemodel ([FORM](https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form)),\
+- Fællesoffentlig Referencemodel ([FORM](https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form)),
+
 <https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form>
 
 - Kommunernes Emnesystematik (KLE)
@@ -571,17 +577,21 @@ Lovgrundlag og tilhørende vejledninger:
 - Bekendtgørelse nr. 183 af 26. januar 2018 om bevaring og kassation af digitalt skabte data og dokumenter <https://www.retsinformation.dk/eli/lta/2018/183>
 
 - Bekendtgørelse nr. 266 af 23. marts 2015 om bevaring og kassation af arkivalier i regionerne\
+
 <https://www.retsinformation.dk/eli/lta/2015/266>
 
 - Vejledning til bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne\
+
 <https://www.sa.dk/wp-content/uploads/2018/04/2007_IT_Vejledning-til-bekendtg%C3%B8relse_h%C3%B8ring-1.pdf>
 
 - Vejledning om bevaring og kassation af arkivalier hos regionerne\
+
 <https://www.sa.dk/wp-content/uploads/2015/06/Vejledning-til-regionsbekendtg%C3%B8relsen_juni-2015.pdf>
 
 - Bekendtgørelse nr. 1007 af 20. august 2010 om arkiveringsversioner  <https://www.retsinformation.dk/eli/lta/2010/1007>
 
 - Vejledning om kvalitetssikring i it-systemer -- Rigsarkivets minimumskrav og anbefalinger\
+
 <https://www.sa.dk/wp-content/uploads/2016/02/Vejledning-om-kvalitetssikring.pdf>
 
 - Arkivhåndbog for statslige myndigheder
@@ -590,12 +600,16 @@ Lovgrundlag og tilhørende vejledninger:
 
 - Datatilsynets 'Vejledning om fortegnelse' <https://www.datatilsynet.dk/media/6567/fortegnelse.pdf>
 
-- Sikkerhedscirkulæret (Cirkulære om sikkerhedsbeskyttelse af informationer af fælles interesse for landene i NATO eller EU, andre klassificerede informationer samt informationer af sikkerhedsmæssig beskyttelsesinteresse i øvrigt) <https://www.retsinformation.dk/eli/retsinfo/2014/10338>
+- Sikkerhedscirkulæret (Cirkulære om sikkerhedsbeskyttelse af informationer af fælles interesse for landene i NATO eller EU, andre klassificerede informationer samt informationer af sikkerhedsmæssig beskyttelsesinteresse i øvrigt) 
+
+<https://www.retsinformation.dk/eli/retsinfo/2014/10338>
 
 - Databeskyttelsesloven (Lov om supplerende bestemmelser til forordning om beskyttelse af fysiske personer i forbindelse med behandling af personoplysninger og om fri udveksling af sådanne oplysninger ) <https://www.retsinformation.dk/eli/lta/2018/502>
 
 - GDPR (generel forordning om databeskyttelse):\
+
 <https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32016R0679&from=EN>
+
 
 Bilag
 =========
