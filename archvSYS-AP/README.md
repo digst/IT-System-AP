@@ -37,8 +37,8 @@ Definition: system which consists of digital information technologies
 | `sys:inUseFromDate`| xsd:date| date on which a system was put into operation | Basic Information |
 | `sys:inUseUntilDate`| xsd:date| date on which the it-system was phased out and no longer in operation | Basic Information |
 | `sys:operationalStatus`|OperationalStatus| | Basic Information |
-| `rdfs:comment`| rdf:langString| A description of the subject resource | | Basic Information |
-| `sys:usedInOrganization`| org:Organization | Basic Information |
+| `rdfs:comment`| rdf:langString| A description of the subject resource | Basic Information |
+| `sys:usedInOrganization`| org:Organization | | Basic Information |
 | `sys:hasApplicationPurposeFORM` | FORMtask | | Tasks |
 | `sys:hasApplicationPurposeKLE` | KLETheme | | Tasks |
 | `cv:hasLegalResource` | eli:LegalResource | | Tasks |
