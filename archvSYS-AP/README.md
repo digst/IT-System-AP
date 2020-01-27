@@ -18,36 +18,36 @@ Definition: system which consists of digital information technologies
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| *dct:identifier*| xsd:anyURI | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | Basic Information |
-| `skos:prefLabel`| rdf:langString| | Basic Information |
-| `skos:altLabel`| rdf:langString| | Basic Information |
-| `dct:description`| rdf:langString| An account of the resource | Basic Information |
-| `sys:inUseFromDate`| xsd:date| date on which a system was put into operation | Basic Information |
-| `sys:inUseUntilDate`| xsd:date| date on which the it-system was phased out and no longer in operation | Basic Information |
-| `sys:operationalStatus`|OperationalStatus| | Basic Information |
-| `rdfs:comment`| rdf:langString| A description of the subject resource | Basic Information |
-| `sys:usedInOrganization`| org:Organization | | Basic Information |
-| `sys:hasApplicationPurposeFORM` | FORMtask | | Tasks |
-| `sys:hasApplicationPurposeKLE` | KLETheme | | Tasks |
-| `cv:hasLegalResource` | eli:LegalResource | | Tasks |
-| `archv:caseArea` | CaseArea | | Tasks |
-| `sys:predecessorSystem` | sys:ITSystem | | Tasks |
-| `sys:hasCriticality` | CriticalityType | | Tasks |
-| `sys:hasITSystemOwner` | org:Organization, org:OrganizationalUnit, foaf:Person | | Tasks |
-| `sys:hasSystemDocumentation` | sys:SystemDocumentation | | Tasks |
-| `sys:containsData` | xsd:boolean | specification of whether an IT system contains data or documents digitally created by the public administration | Tasks |
-| `archv:containsDigitalDocs` | xsd:boolean | | Tasks |
+| **dct:identifier**| xsd:anyURI | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | Basic Information |
+| **skos:prefLabel**| rdf:langString| | Basic Information |
+| **skos:altLabel**| rdf:langString| | Basic Information |
+| **dct:description**| rdf:langString| An account of the resource | Basic Information |
+| **sys:inUseFromDate**| xsd:date| date on which a system was put into operation | Basic Information |
+| **sys:inUseUntilDate**| xsd:date| date on which the it-system was phased out and no longer in operation | Basic Information |
+| **sys:operationalStatus**|OperationalStatus| | Basic Information |
+| **rdfs:comment**| rdf:langString| A description of the subject resource | Basic Information |
+| **sys:usedInOrganization**| org:Organization | | Basic Information |
+| **sys:hasApplicationPurposeFORM** | FORMtask | | Tasks |
+| **sys:hasApplicationPurposeKLE** | KLETheme | | Tasks |
+| **cv:hasLegalResource** | eli:LegalResource | | Tasks |
+| **archv:caseArea** | CaseArea | | Tasks |
+| **sys:predecessorSystem** | sys:ITSystem | | Tasks |
+| **sys:hasCriticality** | CriticalityType | | Tasks |
+| **sys:hasITSystemOwner** | org:Organization, org:OrganizationalUnit, foaf:Person | | Tasks |
+| **sys:hasSystemDocumentation** | sys:SystemDocumentation | | Tasks |
+| **sys:containsData** | xsd:boolean | specification of whether an IT system contains data or documents digitally created by the public administration | Tasks |
+| **archv:containsDigitalDocs** | xsd:boolean | | Tasks |
 
 # sys:InstantiatedITSystem (Class)
 Definition: it-system which has been implemented in a physical IT environment
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| `sys:instantiationOf` | sys:ITSystem | | |
-| `dct:identifier` | xsd:anyURI | | |
-| `sys:actsAs` | EnvironmentType | | |
-| `sys:producesDataset` | dcat:Dataset | | |
-| `archv:prevArchiveInformationPackage` | dcat:Dataset | | |
+| **sys:instantiationOf** | sys:ITSystem | | |
+| **dct:identifier** | xsd:anyURI | | |
+| **sys:actsAs** | EnvironmentType | | |
+| **sys:producesDataset** | dcat:Dataset | | |
+| **archv:prevArchiveInformationPackage** | dcat:Dataset | | |
 
 
 # dcat:Dataset (Class)
@@ -55,26 +55,26 @@ Definition: A collection of data, published or curated by a single agent, and av
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| `dct:identifier` | xsd:anyURI | An unambiguous reference to the resource within a given context | Information|
-| `dct:title` | rdf:langString | A name given to the resource | Information|
-| `dct:description` | rdf:langString | An account of the resource | Information|
-| `owl:versionInfo` | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information|
-| `dct:temporal` | dct:PeriodOfTime | | Information|
-| `dct:creator` | org:Organization | | Governance  |
-| `dcat-dk:dataResponsibleOrganisation` | org:Organization | | Governance  |
-| `dcat-dk:dataProcessor` | org:Organization | | Governance  |
-| `dcat-dk:personalDataCategory` | PersonalDataCategory | | Security  |
-| `dcat-dk:confidentialityType` | ConfidentialityType | | Security  |
-| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeNatoEu | | Security  |
-| `dcat-dk:hasConfidentialityType` | ConfidentialityTypeISO27002 | | Security  |
-| `archv:archivalRegisterType` | RegisterType | | Information  |
-| `archv:archivalObligationType` | ArchivalObligationType | | Information  |
-| `archv:plannedArchivalFrequency` | ArchivalFrequency | | Information  |
-| `archv:nextDataErasureDeadline` | xsd:date | | Information  |
-| `archv:prevArchiveInformationPackage` | archv:ArchiveInformationPackage| | Information  |
-| `archv:plannedArchiveType` | ArchiveType| | Information  |
-| `archv:lastArchivePeriod` | dct:PeriodOfTime| | Information  |
-| `prov:wasGeneratedBy` | archv:DataConversion | | Information |
+| **dct:identifier** | xsd:anyURI | An unambiguous reference to the resource within a given context | Information|
+| **dct:title** | rdf:langString | A name given to the resource | Information|
+| **dct:description** | rdf:langString | An account of the resource | Information|
+| **owl:versionInfo** | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information|
+| **dct:temporal** | dct:PeriodOfTime | | Information|
+| **dct:creator** | org:Organization | | Governance  |
+| **dcat-dk:dataResponsibleOrganisation** | org:Organization | | Governance  |
+| **dcat-dk:dataProcessor** | org:Organization | | Governance  |
+| **dcat-dk:personalDataCategory** | PersonalDataCategory | | Security  |
+| **dcat-dk:confidentialityType** | ConfidentialityType | | Security  |
+| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeNatoEu | | Security  |
+| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeISO27002 | | Security  |
+| **archv:archivalRegisterType** | RegisterType | | Information  |
+| **archv:archivalObligationType** | ArchivalObligationType | | Information  |
+| **archv:plannedArchivalFrequency** | ArchivalFrequency | | Information  |
+| **archv:nextDataErasureDeadline** | xsd:date | | Information  |
+| **archv:prevArchiveInformationPackage** | archv:ArchiveInformationPackage| | Information  |
+| **archv:plannedArchiveType** | ArchiveType| | Information  |
+| **archv:lastArchivePeriod** | dct:PeriodOfTime| | Information  |
+| **prov:wasGeneratedBy** | archv:DataConversion | | Information |
 
 
 # Codelists (Classifications) used in the application profile:
