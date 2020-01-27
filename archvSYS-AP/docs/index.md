@@ -36,7 +36,7 @@
 <pre class="metadata">
 Title: Standard for beskrivelse af it-systemer - Arkivprofil
 Status: LD
-URL: http://github.com/digst/IT-System-AP/archvSYS-AP/docs/index.md
+URL: https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP
 Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
 Editor: Rigsarkivet
 Editor: KL
