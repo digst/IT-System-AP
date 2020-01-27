@@ -18,8 +18,9 @@ Please find below an overview of the  main classes and their properties:Full doc
 Definition: system which consists of digital information technologies
 
 Properties (Basic Information Perspective):
-| Property (da)| Property (en) | Range | Usage note | 
-| ------------- | ------------- | ------------- | ------------- |
+
+| Property (da) | Property (en) | Range | Usage note | 
+| ---- | ---- | ---- | ---- |
 | identifikator | `dct:identifier` | xsd:anyURI  | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | 
 |  | `skos:prefLabel | rdf:langString |  |
 |  | `skos:altLabel` | rdf:langString |  |
