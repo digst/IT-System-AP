@@ -17,56 +17,37 @@ Please find below an overview of the  main classes and their properties:Full doc
 # sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
 
-Properties (Basic Information Perspective):
 
-| Property (da) | Property (en) | Range | Usage note | 
+| Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-|  | `dct:identifier` | xsd:anyURI  | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | 
-|  | `skos:prefLabel | rdf:langString |  |
-|  | `skos:altLabel` | rdf:langString |  |
-|  | `dct:description` | rdf:langString | An account of the resource |
-|  | `sys:inUseFromDate` | xsd:date | date on which a system was put into operation |
-|  | `sys:inUseUntilDate` | xsd:date | date on which the it-system was phased out and no longer in operation |
-|  | `sys:operationalStatus` | OperationalStatus |  |
-|  | `rdfs:comment` | rdf:langString  | A description of the subject resource. |
-|  | `sys:usedInOrganization` | org:Organization |  |
-
-
-Properties (Tasks Perspective):
-
-| Property (da) | Property (en) | Range | Usage note | 
-| ---- | ---- | ---- | ---- |
-|  | `sys:hasApplicationPurposeFORM` | FORMtask |  |
-|  | `sys:hasApplicationPurposeKLE` | KLETheme |  |
-|  | `cv:hasLegalResource` | eli:LegalResource |  |
-|  | `archv:caseArea` | CaseArea |  |
-|  | `sys:predecessorSystem` | sys:ITSystem |  |
-|  | `sys:hasCriticality` | CriticalityType |  |
-|  | `sys:hasTargetGroup` | TargetGroup |  |
-|  |  |  |  |
-
-Properties (Governance Perspective):
-* `sys:hasITSystemOwner`  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
-* `sys:hasITSystemManager`  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
-
-Properties (Legal Perspective):
-* `sys:relatedContract`  (Object Property) Range: fibo-fnd-agr-ctr:Contract
-* `dct:rightsHolder`  (Object Property) Range: org:Organization
-* `schema:creator`  (Object Property) Range: org:Organization
-* `sys:operatedBy`  (Object Property) Range: org:Organization
-* `sys:maintainedBy`  (Object Property) Range: org:Organization
-* `sys:contractRegarding`  (Object Property) Range: sys:ITSystem* `sys:selectedITsystemForReport`  (Object Property) Range: sys:ITSystem
-
-Properties (Application Perspective):
-* `comp:instanceOfProductInSeries`  (Object Property) Range: comp:ProductSeries
-* `sys:hasSystemDocumentation`  (Object Property) Range: sys:SystemDocumentation
-
-Properties (Infrastructure Perspective):
-* `sys:hasAquisitionType`  (Object Property) Range: ITSystemAquisitionType
-
-Properties (Information Perspective):
-* `sys:containsData` (Datatype property) Range: xsd:boolean. Definition: specification of whether an IT system contains data or documents digitally created by the public administration
-* `archv:containsDigitalDocs` (Datatype property) Range: xsd:boolean.
+| `dct:identifier` | xsd:anyURI  | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | Basic Information |
+| `skos:prefLabel | rdf:langString |  | Basic Information |
+| `skos:altLabel` | rdf:langString |  | Basic Information |
+| `dct:description` | rdf:langString | An account of the resource | Basic Information |
+| `sys:inUseFromDate` | xsd:date | date on which a system was put into operation | Basic Information |
+| `sys:inUseUntilDate` | xsd:date | date on which the it-system was phased out and no longer in operation | Basic Information |
+| `sys:operationalStatus` | OperationalStatus |  | Basic Information |
+| `rdfs:comment` | rdf:langString  | A description of the subject resource. | Basic Information |
+| `sys:usedInOrganization` | org:Organization |  | Basic Information |
+| `sys:hasApplicationPurposeFORM` | FORMtask |  |Tasks  |
+| `sys:hasApplicationPurposeKLE` | KLETheme |  | Tasks |
+| `cv:hasLegalResource` | eli:LegalResource |  | Tasks |
+| `archv:caseArea` | CaseArea |  | Tasks |
+| `sys:predecessorSystem` | sys:ITSystem |  | Tasks |
+| `sys:hasCriticality` | CriticalityType |  | Tasks |
+| `sys:hasTargetGroup` | TargetGroup |  | Tasks |
+| `sys:hasITSystemOwner`|  org:Organization/org:OrganizationalUnit/foaf:Person |  | Governance |
+| `sys:hasITSystemManager`|  org:Organization/org:OrganizationalUnit/foaf:Person |  | Governance |
+| `sys:relatedContract`|  fibo-fnd-agr-ctr:Contract  |  | Legal |
+| `dct:rightsHolder`| org:Organization |  | Legal |
+| `schema:creator`|  org:Organization |  | Legal |
+| `sys:operatedBy` |  org:Organization |  | Legal |
+| `sys:maintainedBy` |  org:Organization |  | Legal |
+| `comp:instanceOfProductInSeries` | comp:ProductSeries |  | Application |
+| `sys:hasSystemDocumentation` | sys:SystemDocumentation |  | Application | 
+| `sys:hasAquisitionType`| ITSystemAquisitionType|  | Infrastructure | 
+| `sys:containsData` |  xsd:boolean. | specification of whether an IT system contains data or documents digitally created by the public administration | Information | 
+| `archv:containsDigitalDocs`| xsd:boolean | | Information | 
 
 <!--Properties
 * `sys:hasFunctionalityCapability`  (Object Property) Range: Capability
@@ -75,21 +56,28 @@ Properties (Information Perspective):
 
 # sys:InstantiatedITSystem (Class)
 Definition: it-system which has been implemented in a physical IT environment
-* `sys:instantiationOf`  (Object Property) Range: sys:ITSystem
-* `dct:identifier` (Datatype property) Range: xsd:anyURI.
-* `sys:actsAs`  (Object Property) Range: EnvironmentType
-* `sys:uses`  (Object Property) Range: dcat:Dataset
-* `sys:uses`  (Object Property) Range: dcat:DataService
-* `sys:uses`  (Object Property) Range: schema:SoftwareApplication
-* `sys:provides`  (Object Property) Range: dcat:Dataset
-* `sys:provides`  (Object Property) Range: dcat:DataService
-* `sys:provides`  (Object Property) Range: sys:UserInterface
-* `sys:producesDataset`  (Object Property) Range: dcat:Dataset
+
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
+| `sys:instantiationOf` | sys:ITSystem | | |
+| `dct:identifier` | xsd:anyURI. | | |
+| `sys:actsAs` | EnvironmentType | | |
+| `sys:uses` | dcat:Dataset | | |
+| `sys:uses` | dcat:DataService | | |
+| `sys:uses` | schema:SoftwareApplication | | |
+| `sys:provides` | dcat:Dataset | | |
+| `sys:provides` | dcat:DataService | | |
+| `sys:provides` | sys:UserInterface | | |
+| `sys:producesDataset` | dcat:Dataset | | |
 
 
 # dcat:Dataset (Class)
 Definition: 
 A collection of data, published or curated by a single agent, and available for access or download in one or more formats
+
+
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 
 Properties (Information Perspective)::
 * `dct:identifier` (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context.
