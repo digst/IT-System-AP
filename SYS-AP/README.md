@@ -18,6 +18,22 @@ Please find below an overview of the  main classes and their properties:Full doc
 Definition: system which consists of digital information technologies
 
 Properties (Basic Information Perspective):
+| Property (da)| Property (en) | Range | Usage note | 
+| ------------- | ------------- |------------- |------------- |
+| identifikator | `dct:identifier` | xsd:anyURI  | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | 
+|  | `skos:prefLabel | rdf:langString |  |
+|  | `skos:altLabel` | rdf:langString |  |
+|  | `dct:description` | rdf:langString | An account of the resource |
+|  | `sys:inUseFromDate` | xsd:date | date on which a system was put into operation |
+|  | `sys:inUseUntilDate` | xsd:date | date on which the it-system was phased out and no longer in operation |
+|  | `sys:operationalStatus` | OperationalStatus |  |
+|  | `rdfs:comment` | rdf:langString  | A description of the subject resource. |
+|  | `sys:usedInOrganization` | org:Organization |  |
+|  |  |  |  |
+
+
+<!--
+Properties (Basic Information Perspective):
 * `dct:identifier` (Datatype property) Range: xsd:anyURI. Definition: An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context.
 * `skos:prefLabel` (Datatype property) Range: rdf:langString. 
 * `skos:altLabel` (Datatype property) Range: rdf:langString. 
@@ -27,7 +43,7 @@ Properties (Basic Information Perspective):
 * `sys:operationalStatus`  (Object Property) Range: OperationalStatus
 * `rdfs:comment` (Datatype property) Range: rdf:langString. Definition: A description of the subject resource.
 * `sys:usedInOrganization`  (Object Property) Range: org:Organization
-
+-->
 
 Properties (Tasks Perspective):
 * `sys:hasApplicationPurposeFORM`  (Object Property) Range: FORMtask
