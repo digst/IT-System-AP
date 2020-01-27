@@ -2,7 +2,7 @@
 ## Standard for beskrivelse af it-systemer - arkivprofil
 
 Læs specifikationen archvSYS-AP her: https://digst.github.io/IT-System-AP/archvSYS-AP/docs/
-- denne side er under udvikling
+(denne side er under udvikling)
 
 ## National Archives Application Profile for IT System Description 
 
