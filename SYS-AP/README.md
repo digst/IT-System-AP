@@ -30,9 +30,10 @@ Properties (Basic Information Perspective):
 |  | `sys:operationalStatus` | OperationalStatus |  |
 |  | `rdfs:comment` | rdf:langString  | A description of the subject resource. |
 |  | `sys:usedInOrganization` | org:Organization |  |
-|  |  |  |  |
+
 
 Properties (Tasks Perspective):
+
 | Property (da) | Property (en) | Range | Usage note | 
 | ---- | ---- | ---- | ---- |
 |  | `sys:hasApplicationPurposeFORM` | FORMtask |  |
@@ -42,6 +43,7 @@ Properties (Tasks Perspective):
 |  | `sys:predecessorSystem` | sys:ITSystem |  |
 |  | `sys:hasCriticality` | CriticalityType |  |
 |  | `sys:hasTargetGroup` | TargetGroup |  |
+|  |  |  |  |
 
 Properties (Governance Perspective):
 * `sys:hasITSystemOwner`  (Object Property) Range: org:Organization/org:OrganizationalUnit/foaf:Person
