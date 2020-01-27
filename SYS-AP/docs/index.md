@@ -251,6 +251,10 @@ Denne standard forventes at få bred anvendelse hos offentlige myndigheder til f
 
 Klassifikationerne vil blive introduceret og defineret under de relevante emneområder i det følgende kapitel.[[6]]
 
+<p class="note">
+Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
+</p>
+
 Fælles for de nyetablerede klassifikationer er, at de alle er modelleret som selvstændige modeller iht. den internationale W3C-specifikation SKOS ([Simple Knowledge Organization System](https://www.w3.org/TR/skos-primer/)). Der er også udarbejdet en [dansk profil](https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer) på baggrund af denne som også er mappet til OIO Klassifikation.
 
 Det forventes, at de relevante myndigheder forretningsgodkender og overtager ansvaret for indholdet af de respektive klassifikationer.
@@ -330,6 +334,10 @@ Styring
 -----------
 
 Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter. Aktørerne kan være personer eller organisationer, men det anbefales, i det omfang det er muligt, ikke at registrere oplysninger om fysiske personer, men derimod den relevante medarbejderrolle eller organisatoriske enhed.
+
+<p class="warning">
+Organisationer beskrives iht. anvendelsesprofil for organisation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer>
+</p>
 
 På overordnet niveau angives **it-systemejeren** -- en person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse. Ofte vil it-systemejeren være lig kontraktejeren og kan identificeres præcist i myndighedens kontraktstyring.
 
