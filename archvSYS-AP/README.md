@@ -36,8 +36,8 @@ Definition: system which consists of digital information technologies
 | **sys:hasApplicationPurposeFORM** | FORMtask | | Tasks |
 | **sys:hasApplicationPurposeKLE** | KLETheme | | Tasks |
 | **cv:hasLegalResource** | eli:LegalResource | | Tasks |
-| **archv:caseArea** | CaseArea | | Tasks |
-| **sys:predecessorSystem** | sys:ITSystem | | Tasks |
+| **archv:caseArea** | CaseArea | the case area which a specific IT system supports | Tasks |
+| **sys:predecessorSystem** | sys:ITSystem | IT system which previously supported the function before the current IT system replaced it | Tasks |
 | **sys:hasCriticality** | CriticalityType | | Tasks |
 | **sys:hasITSystemOwner** | org:Organization, org:OrganizationalUnit, foaf:Person | | Tasks |
 | **sys:hasSystemDocumentation** | sys:SystemDocumentation | | Tasks |
