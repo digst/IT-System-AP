@@ -4,6 +4,8 @@ Information about public-sector IT systems is exchanged in many different contex
 
 This page document two drafts for application profiles for use in the context of the Danish public-sector.  
 
+<p align="center"><img src="img/Figur0-1-Forholdet_mellem-profilerne.png" alt="Forholdet mellem profilerne" title="Forholdet mellem profilerne" width="350"/></p>
+
 ## A Basic Application Profile 
 This application profile constitutes a Danish public-sector specification for describing the cores properties of public-sector IT systems.
 
