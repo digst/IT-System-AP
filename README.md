@@ -4,8 +4,6 @@ Information about public-sector IT systems is exchanged in many different contex
 
 This page document two drafts for application profiles for use in the context of the Danish public-sector.  
 
-![Two Application Profiles](https://github.com/digst/IT-System-AP/blob/master/archvSYS-AP/docs/img/Figur0-1-Forholdet_mellem-profilerne.png "Two Application Profiles")
-
 ## A Basic Application Profile 
 This application profile constitutes a Danish public-sector specification for describing the cores properties of public-sector IT systems.
 
@@ -19,3 +17,5 @@ This application profile reuses core elements from the basic aplication profile 
 Go to GitHub-branch archvSYS-AP: https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP
 
 Read specification publication (in Danish): https://digst.github.io/IT-System-AP/archvSYS-AP/docs/
+
+![Two Application Profiles](https://github.com/digst/IT-System-AP/blob/master/archvSYS-AP/docs/img/Figur0-1-Forholdet_mellem-profilerne.png "Two Application Profiles")
