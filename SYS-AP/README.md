@@ -3,7 +3,7 @@
 Læs specifikationen SYS-AP her: https://digst.github.io/IT-System-AP/SYS-AP/docs/
 
 ## Basic Application Profile for IT System Description (DRAFT)
-This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing basic information about IT systems. Please find below an overview of the  main classes and their properties: 
+This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing basic information about IT systems. Please find below an overview of the  main classes and their properties categorised according to the following perspectives: 
 
 ![Perspectives](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Figur_illustration_af_standardens_emnemaessige_sammenhaenge(en).PNG "Perspectives")
 
