@@ -10,34 +10,32 @@ Definition: system which consists of digital information technologies
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **dct:identifier** | xsd:anyURI  | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | Basic Information |
-| **skos:prefLabel** | rdf:langString |  | Basic Information |
-| **skos:altLabel** | rdf:langString |  | Basic Information |
-| **dct:description** | rdf:langString | An account of the resource | Basic Information |
+| **dct:identifier** | xsd:anyURI  | an unambiguous reference to the it-system within a given context. | Basic Information |
+| **skos:prefLabel** | rdf:langString | preferred name for the IT system | Basic Information |
+| **skos:altLabel** | rdf:langString | alternative name which is accepted but not preferred for the IT system | Basic Information |
+| **dct:description** | rdf:langString | an account of the purpose of using the IT system| Basic Information |
 | **sys:inUseFromDate** | xsd:date | date on which a system was put into operation | Basic Information |
 | **sys:inUseUntilDate** | xsd:date | date on which the it-system was phased out and no longer in operation | Basic Information |
-| **sys:operationalStatus** | OperationalStatus |  | Basic Information |
-| **rdfs:comment** | rdf:langString  | A description of the subject resource. | Basic Information |
-| **sys:usedInOrganization** | org:Organization |  | Basic Information |
-| **sys:hasApplicationPurposeFORM** | FORMtask |  |Tasks  |
-| **sys:hasApplicationPurposeKLE** | KLETheme |  | Tasks |
-| **cv:hasLegalResource** | eli:LegalResource |  | Tasks |
-| **archv:caseArea** | CaseArea |  | Tasks |
-| **sys:predecessorSystem** | sys:ITSystem |  | Tasks |
-| **sys:hasCriticality** | CriticalityType |  | Tasks |
-| **sys:hasTargetGroup** | TargetGroup |  | Tasks |
-| **sys:hasITSystemOwner**|  org:Organization, org:OrganizationalUnit, foaf:Person |  | Governance |
-| **sys:hasITSystemManager**|  org:Organization,  org:OrganizationalUnit, foaf:Person |  | Governance |
+| **sys:operationalStatus** | OperationalStatus | the status of the it-system with regards to implementation and operation | Basic Information |
+| **rdfs:comment** | rdf:langString  | supplementary comments or notes regarding the it-system | Basic Information |
+| **sys:usedInOrganization** | org:Organization | organization that uses the IT system | Basic Information |
+| **sys:hasApplicationPurposeFORM** | FORMtask | the FORM task which the IT system supports | Tasks  |
+| **sys:hasApplicationPurposeKLE** | KLETheme | the KLE theme which the IT system supports | Tasks |
+| **cv:hasLegalResource** | eli:LegalResource | legal framework for the application of the IT system | Tasks |
+| **sys:hasCriticality** | CriticalityType | specification of how critical the application of the IT system is | Tasks |
+| **sys:hasTargetGroup** | TargetGroup | specification of which group of users which an IT system is directed at | Tasks |
+| **sys:hasITSystemOwner**|  org:Organization, org:OrganizationalUnit, foaf:Person | person or organisation who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
+| **sys:hasITSystemManager**|  org:Organization,  org:OrganizationalUnit, foaf:Person | organisational unit or employee who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
 | **sys:relatedContract**|  fibo-fnd-agr-ctr:Contract  |  | Legal |
-| **dct:rightsHolder**| org:Organization |  | Legal |
-| **schema:creator**|  org:Organization |  | Legal |
-| **sys:operatedBy** |  org:Organization |  | Legal |
-| **sys:maintainedBy** |  org:Organization |  | Legal |
-| **comp:instanceOfProductInSeries** | comp:ProductSeries |  | Application |
-| **sys:hasSystemDocumentation** | sys:SystemDocumentation |  | Application | 
-| **sys:hasAquisitionType**| ITSystemAquisitionType|  | Infrastructure | 
-| **sys:containsData** |  xsd:boolean. | specification of whether an IT system contains data or documents digitally created by the public administration | Information | 
-| **archv:containsDigitalDocs**| xsd:boolean | | Information | 
+| **dct:rightsHolder**| org:Organization | organisation owning or managing the intellectual rights of the primary software product of the it-system | Legal |
+| **schema:creator**|  org:Organization | individual or organization that performs the foundational development activities (including requirements analysis, design, testing through acceptance) during the system or software life cycle process  | Legal |
+| **sys:operatedBy** |  org:Organization | organizational unit or individual that is responsible for the operation of the IT system| Legal |
+| **sys:maintainedBy** |  org:Organization | individual or organization that is responsible for the maintenance of an it-system  | Legal |
+| **comp:instanceOfProductInSeries** | comp:ProductSeries | instance of product in series | Application |
+| **sys:hasSystemDocumentation** | sys:SystemDocumentation | reference to document that describe the requirements, capabilities, limitations, design, operation, or maintenance of an IT system | Application | 
+| **sys:hasAquisitionType**| ITSystemAquisitionType| specification of how the IT system was acquired | Infrastructure | 
+| **sys:containsData** |  xsd:boolean. | specification of whether an IT system contains digitally created data | Information | 
+| **archv:containsDigitalDocs**| xsd:boolean | specification of whether an IT system contains digital documents  | Information | 
 
 <!--Properties
 * **sys:hasFunctionalityCapability**  (Object Property) Range: Capability
@@ -66,12 +64,12 @@ Definition: A collection of data, published or curated by a single agent, and av
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **dct:identifier** | xsd:anyURI | An unambiguous reference to the resource within a given context | Information |
-| **dct:title** | rdf:langString | A name given to the resource | Information |
-| **dct:description** | rdf:langString| An account of the resource | Information |
+| **dct:identifier** | xsd:anyURI | An unambiguous reference to the dataset within a given context | Information |
+| **dct:title** | rdf:langString | A name given to the dataset | Information |
+| **dct:description** | rdf:langString| An account of the dataset | Information |
 | **owl:versionInfo** | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information |
 | **dct:temporal** | ct:PeriodOfTime | | Information |
-| **dct:creator** | org:Organization| | Governance |
+| **dct:creator** | org:Organization| organisation who has the primary responsibility for the creation of the dataset | Governance |
 | **dcat-dk:dataResponsibleOrganisation** | org:Organization| | Governance |
 | **dcat-dk:dataProcessor** | org:Organization| | Governance |
 | **dcat-dk:personalDataCategory** | PersonalDataCategory| | Security |
