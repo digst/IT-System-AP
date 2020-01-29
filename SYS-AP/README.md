@@ -21,11 +21,11 @@ Definition: system which consists of digital information technologies
 | **sys:operationalStatus** | OperationalStatus | the status of the it-system with regards to implementation and operation | Basic Information |
 | **rdfs:comment** | rdf:langString  | supplementary comments or notes regarding the it-system | Basic Information |
 | **sys:usedInOrganization** | org:Organization | organization that uses the IT system | Basic Information |
-| **sys:hasApplicationPurposeFORM** | FORMtask | the FORM task which the IT system supports | Tasks  |
-| **sys:hasApplicationPurposeKLE** | KLETheme | the KLE theme which the IT system supports | Tasks |
+| **sys:hasApplicationPurposeFORM** | FORMtask (subclass of skos:Concept)| the FORM task which the IT system supports | Tasks  |
+| **sys:hasApplicationPurposeKLE** | KLETheme (subclass of skos:Concept)| the KLE theme which the IT system supports | Tasks |
 | **cv:hasLegalResource** | eli:LegalResource | legal framework for the application of the IT system | Tasks |
-| **sys:hasCriticality** | CriticalityType | specification of how critical the application of the IT system is | Tasks |
-| **sys:hasTargetGroup** | TargetGroup | specification of which group of users which an IT system is directed at | Tasks |
+| **sys:hasCriticality** | CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
+| **sys:hasTargetGroup** | TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
 | **sys:hasITSystemOwner**|  org:Organization, org:OrganizationalUnit, foaf:Person | person or organisation who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
 | **sys:hasITSystemManager**|  org:Organization,  org:OrganizationalUnit, foaf:Person | organisational unit or employee who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
 | **sys:relatedContract**|  fibo-fnd-agr-ctr:Contract  |  | Legal |
@@ -35,7 +35,7 @@ Definition: system which consists of digital information technologies
 | **sys:maintainedBy** |  org:Organization | individual or organization that is responsible for the maintenance of an it-system  | Legal |
 | **comp:instanceOfProductInSeries** | comp:ProductSeries | instance of product in series | Application |
 | **sys:hasSystemDocumentation** | sys:SystemDocumentation | reference to document that describe the requirements, capabilities, limitations, design, operation, or maintenance of an IT system | Application | 
-| **sys:hasAquisitionType**| ITSystemAquisitionType| specification of how the IT system was acquired | Infrastructure | 
+| **sys:hasAquisitionType**| ITSystemAquisitionType (subclass of skos:Concept)| specification of how the IT system was acquired | Infrastructure | 
 | **sys:containsData** |  xsd:boolean. | specification of whether an IT system contains digitally created data | Information | 
 | **archv:containsDigitalDocs**| xsd:boolean | specification of whether an IT system contains digital documents  | Information | 
 
@@ -75,10 +75,10 @@ Definition: A collection of data, published or curated by a single agent, and av
 | **dcat-dk:dataResponsibleOrganisation** | org:Organization| | Governance |
 | **dcat-dk:dataProcessor** | org:Organization| | Governance |
 | **dcat-dk:personalDataCategory** | PersonalDataCategory| | Security |
-| **dcat-dk:confidentialityType** | ConfidentialityType| | Security |
-| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeNatoEu| | Security |
-| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeISO27002| | Security |
-| **archv:archivalObligationType** | ArchivalObligationType | | Information |
+| **dcat-dk:confidentialityType** | ConfidentialityType (subclass of skos:Concept)| | Security |
+| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeNatoEu (subclass of skos:Concept)| | Security |
+| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeISO27002 (subclass of skos:Concept)| | Security |
+| **archv:archivalObligationType** | ArchivalObligationType (subclass of skos:Concept) | | Information |
 
 # comp:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
@@ -88,8 +88,8 @@ Definition: a series of related products that exhibit the same overall functiona
 | **schema:identifier** | xsd:anyURI | | |
 | **skos:prefLabel** | rdf:langString| | |
 | **dct:description** | rdf:langString| | |
-| **sys:hasCapabilityForPurpose** | PublicAdministrativeTaskType| | |
-| **dcatdk:personalDataCategory** | PersonalDataCategory| | |
+| **sys:hasCapabilityForPurpose** | PublicAdministrativeTaskType (subclass of skos:Concept)| | |
+| **dcatdk:personalDataCategory** | PersonalDataCategory (subclass of skos:Concept)| | |
 
 
 # Codelists (Classifications) used in the application profile:
