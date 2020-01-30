@@ -179,9 +179,9 @@ Codelist: TargetGroup
 | cv	|	http://data.europa.eu/m8g/				|	Core Vocabulary (ISA)	
 | schema		|https://schema.org/ 						|Schema.org
 | fibo-fnd-agr-ctr	|https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts  	|Financial Industry Business Ontology (OMG)
-| sys	|	https://data.gov.dk/model/core/itsystem#			|Vocabulary for IT System 
-| archv		|https://data.gov.dk/model/core/digitalarchival#		|Vocabulary for Digital Archival  
-| infra	|	https://data.gov.dk/model/core/infrastructure#		|Vocabulary for IT System Infrastructure 
-| proc|		https://data.gov.dk/model/core/process#			|Vocabulary for Cross Domain Processes 
+| sys	|	https://data.gov.dk/model/core/itsystem/			|Vocabulary for IT System 
+| archv		|https://data.gov.dk/model/core/digitalarchival/		|Vocabulary for Digital Archival  
+| infra	|	https://data.gov.dk/model/core/infrastructure/		|Vocabulary for IT System Infrastructure 
+| proc|		https://data.gov.dk/model/core/process/			|Vocabulary for Cross Domain Processes 
 | ovx|	https://data.gov.dk/model/core/organization-extension/	|Organization Vocabulary Extention 
 
