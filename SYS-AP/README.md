@@ -48,16 +48,16 @@ Definition: it-system which has been implemented in a physical IT environment
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **sys:instantiationOf** | sys:ITSystem | | |
-| **dct:identifier** | xsd:anyURI. | | |
-| **sys:actsAs** | EnvironmentType | | |
-| **sys:uses** | dcat:Dataset | | |
-| **sys:uses** | dcat:DataService | | |
-| **sys:uses** | schema:SoftwareApplication | | |
-| **sys:provides** | dcat:Dataset | | |
-| **sys:provides** | dcat:DataService | | |
-| **sys:provides** | sys:UserInterface | | |
-| **sys:producesDataset** | dcat:Dataset | | |
+| **sys:instantiationOf** | sys:ITSystem | specification of the IT system which is instantiated and deployed in an IT environment | |
+| **dct:identifier** | xsd:anyURI. | an unambiguous reference to the instantiated it-system within a given context.| |
+| **sys:actsAs** | EnvironmentType | specification of the environment type which the IT system is deployed in| |
+| **sys:uses** | dcat:Dataset | specifies a dataset which the IT system uses | |
+| **sys:uses** | dcat:DataService | specifies a dataservice which the IT system uses | |
+| **sys:uses** | schema:SoftwareApplication |specifies a software application which the IT system uses | |
+| **sys:provides** | dcat:Dataset | dataset which the IT system provides | |
+| **sys:provides** | dcat:DataService | dataservice which the IT system provides| |
+| **sys:provides** | sys:UserInterface | software application which the IT system provides | |
+| **sys:producesDataset** | dcat:Dataset |dataset which the IT system produces | |
 
 
 # dcat:Dataset (Class)
@@ -84,11 +84,11 @@ Definition: a series of related products that exhibit the same overall functiona
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **schema:identifier** | xsd:anyURI | | |
-| **skos:prefLabel** | rdf:langString| | |
-| **dct:description** | rdf:langString| | |
-| **sys:hasCapabilityForPurpose** | PublicAdministrativeTaskType (subclass of skos:Concept)| | |
-| **dcatdk:personalDataCategory** | PersonalDataCategory (subclass of skos:Concept)| | |
+| **schema:identifier** | xsd:anyURI |An unambiguous reference to the dataset within a given context | |
+| **skos:prefLabel** | rdf:langString|preferred name for the product series | |
+| **dct:description** | rdf:langString|An account of the product series | |
+| **sys:hasCapabilityForPurpose** | PublicAdministrativeTaskType (subclass of skos:Concept)|specifiction of the task that products in the relevant product series have the capability to support  | |
+| **dcatdk:personalDataCategory** | PersonalDataCategory (subclass of skos:Concept)| specification of a relation to specific personal data category | |
 
 
 # Codelists (Classifications) used in the application profile:
@@ -158,4 +158,30 @@ Codelist: TargetGroup
 * external
 * internal 
 
+
+| Prefix | Namespace | Vocabulary | 
+| ---- | ---- | ---- |						
+| rdf		|http://www.w3.org/1999/02/22-rdf-syntax-ns#	|The RDF Concepts Vocabulary  (W3C)
+| rdfs	|	http://www.w3.org/2000/01/rdf-schema#	|RDF Schema 1.1  (W3C)
+| owl	|	http://www.w3.org/2002/07/owl#		|Web Ontology Language  (W3C)
+| xml		|http://www.w3.org/XML/1998/namespace	|XML Namespace  (W3C)
+| xsd		|http://www.w3.org/2001/XMLSchema# 	|XML Schema  (W3C)
+| skos	|	http://www.w3.org/2004/02/skos/core#	|Simple Knowledge Organization System (W3C)
+| org		|http://www.w3.org/ns/org# 			|The Organization Ontology (W3C)
+| foaf	|	http://xmlns.com/foaf/0.1/			|Friend of a Friend
+| dcat		|https://www.w3.org/ns/dcat# 			|Dataset Catalogue Vocabulary  (W3C)
+| dcat-dk		|https://data.gov.dk/model/core/dcat-dk# 	|DCAT DK
+| prov	|	http://www.w3.org/ns/prov#		|	The PROV Ontology (W3C)
+| vann	|	http://purl.org/vocab/vann/			|A Vocabulary for Annotating Vocabulary Description
+| dct		|http://purl.org/dc/terms/			|Dublin Core Terms
+| eli	|	http://data.europa.eu/eli/ontology#			|	European Legislation Identifier   
+| cpov	|	http://purl.org/vocab/cpsv# 					|Core Public Service Vocabulary (ISA) 
+| cv	|	http://data.europa.eu/m8g/				|	Core Vocabulary (ISA)	
+| schema		|https://schema.org/ 						|Schema.org
+| fibo-fnd-agr-ctr	|https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts  	|Financial Industry Business Ontology (OMG)
+| sys	|	https://data.gov.dk/model/core/itsystem#			|Vocabulary for IT System 
+| archv		|https://data.gov.dk/model/core/digitalarchival#		|Vocabulary for Digital Archival  
+| infra	|	https://data.gov.dk/model/core/infrastructure#		|Vocabulary for IT System Infrastructure 
+| proc|		https://data.gov.dk/model/core/process#			|Vocabulary for Cross Domain Processes 
+| ovx|	https://data.gov.dk/model/core/organization-extension/	|Organization Vocabulary Extention 
 
