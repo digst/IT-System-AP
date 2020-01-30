@@ -25,8 +25,8 @@ Definition: system which consists of digital information technologies
 | **cv:hasLegalResource** | eli:LegalResource | legal framework for the application of the IT system | Tasks |
 | **sys:hasCriticality** | CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
 | **sys:hasTargetGroup** | TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
-| **sys:hasITSystemOwner**|  org:Organization, org:OrganizationalUnit, foaf:Person | person or organisation who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
-| **sys:hasITSystemManager**|  org:Organization,  org:OrganizationalUnit, foaf:Person | organisational unit or employee who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
+| **sys:hasITSystemOwner**|  org:Organization, org:OrganizationalUnit, foaf:Person | organisation or person who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
+| **sys:hasITSystemManager**|  org:Organization,  org:OrganizationalUnit, foaf:Person | organisational unit or person who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
 | **sys:relatedContract**|  fibo-fnd-agr-ctr:Contract  |  | Legal |
 | **dct:rightsHolder**| org:Organization | organisation owning or managing the intellectual rights of the primary software product of the it-system | Legal |
 | **schema:creator**|  org:Organization | individual or organization that performs the foundational development activities (including requirements analysis, design, testing through acceptance) during the system or software life cycle process  | Legal |
