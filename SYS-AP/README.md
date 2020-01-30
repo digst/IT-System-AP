@@ -71,13 +71,13 @@ Definition: A collection of data, published or curated by a single agent, and av
 | **owl:versionInfo** | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information |
 | **dct:temporal** | ct:PeriodOfTime | | Information |
 | **dct:creator** | org:Organization| organisation who has the primary responsibility for the creation of the dataset | Governance |
-| **dcat-dk:dataResponsibleOrganisation** | org:Organization| | Governance |
-| **dcat-dk:dataProcessor** | org:Organization| | Governance |
-| **dcat-dk:personalDataCategory** | PersonalDataCategory| | Security |
+| **dcat-dk:dataResponsibleOrganisation** | org:Organization| agent who has the administrative responsibility of the dataset | Governance |
+| **dcat-dk:dataProcessor** | org:Organization| natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data| Governance |
+| **dcat-dk:personalDataCategory** | PersonalDataCategory|specification of a relation to specific personal data category | Security |
 | **dcat-dk:confidentialityType** | ConfidentialityType (subclass of skos:Concept)| | Security |
-| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeNatoEu (subclass of skos:Concept)| | Security |
-| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeISO27002 (subclass of skos:Concept)| | Security |
-| **archv:archivalObligationType** | ArchivalObligationType (subclass of skos:Concept) | | Information |
+| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeNatoEu (subclass of skos:Concept)| the extent by which information contained in a dataset can be disclosed | Security |
+| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeISO27002 (subclass of skos:Concept)|the extent by which information contained in a dataset can be disclosed | Security |
+| **archv:archivalObligationType** | ArchivalObligationType (subclass of skos:Concept) |specification of whether the data is to archived, diposed or if the obligation is unknown | Information |
 
 # comp:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
@@ -96,8 +96,9 @@ Definition: a series of related products that exhibit the same overall functiona
 Codelist: OperationalStatus
 * build
 * operational
-* retired
 * transition
+* retired
+
 
 Codelist: PublicAdministrativeTaskType
 * See: FORM http://www.form-online.dk
