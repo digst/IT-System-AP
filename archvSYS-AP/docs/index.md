@@ -696,7 +696,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
 <dt>arkiveringspligttype</dt><dd>angiv, hvorvidt data skal bevares eller kasseres iht. gældende arkiverings-bestemmelser (for data bestemt til bevaring skal der afleveres arkiveringsversioner til et offentligt arkiv) (kan udfyldes) </dd>
 <dt>arkiveringsfrekvens</dt><dd>angiv, hvor ofte der fremstilles arkiveringsversioner af datasættet (kan udfyldes) </dd>
 <dt>arkiveringsperiodetype</dt><dd>angiv, hvorvidt data afleveres som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode  (kan udfyldes) </dd>
-<dt>data konverteret fra  it-system</dt><dd> () </dd>
+<dt>data konverteret fra  it-system</dt><dd> hvis der manuelt eller maskinelt er blevet konverteret data ind fra et andet it-system, så angiv navnet på dette it-system (kan udfyldes) </dd>
 <dt>datakonverteringsstatus</dt><dd>angiv, om alle eller udvalgte data er konverteret ind fra forgængersystem (kan udfyldes) </dd>
 <dt>første datatilføjelse</dt><dd>angiv dato for første datatilføjelse (skal udfyldes) </dd>
 <dt>sidste datatilføjelse</dt><dd>angiv dato for sidste datatilføjelse (skal udfyldes) </dd>
@@ -842,7 +842,8 @@ Bilag C: Eksempel på maskinlæsbart format
 		    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-01</dct:issued>
 		    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		  </rdf:Description>
-			</sys:producesDataset>		
+		</sys:producesDataset>	
+		
 	<!-- DET INSTANTIEREDE IT-SYSTEMS SENESTE KONKRETE ARKIVERINGSVERSION-->		
 		<archv:latestArchiveInformationPackage>
 		<archv:ArchiveInformationPackage>
