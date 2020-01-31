@@ -660,7 +660,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
 <dt>it-systemnavn (fx navn som anført i hovedkontrakten)</dt><dd>angiv it-systemets foretrukne betegnelse  (skal udfyldes) </dd>
 <dt>alternativt it-systemnavn</dt><dd>angiv eventuelt øvrige betegnelser eller kaldenavne for it-systemet (kan udfyldes) </dd>
 <dt>it-systembeskrivelse</dt><dd>beskriv, til hvilket formål it-systemet er taget i brug i organisationen (skal udfyldes) </dd>
-<dt>ibrugtagningsdato </dt><dd>angiv dato, hvor it-systemet blev taget i brug med fuld eller delvis funktio-nalitet  (skal udfyldes) </dd>
+<dt>ibrugtagningsdato </dt><dd>angiv dato, hvor it-systemet blev taget i brug med fuld eller delvis funktionalitet  (skal udfyldes) </dd>
 <dt>udfasningsdato</dt><dd>angiv dato, hvor it-systemet blev endeligt blev afviklet (kan udfyldes) </dd>
 <dt>version</dt><dd>angiv eventuelt, hvilken version der er taget i anvendelse (kan udfyldes) </dd>
 <dt>kommentar</dt><dd>angiv, eventuelt supplerende bemærkninger eller oplysninger (kan udfyldes) </dd>
@@ -674,20 +674,20 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
 <dt>FORM-opgave(r)</dt><dd>(for regioner og statslige administrative enheder) angiv FORM-opgave(r), som it-systemet understøtter (fx 65.50.05.10 Sagsarkivering) el. overord-net serviceområde (kan udfyldes) </dd>
 <dt>KLE-emne(r) </dt><dd>(for kommuner) angiv  KLE-emne(r) som it-systemet understøtter (fx 85.08.00 arkivering i almindelighed) el. overordnet emnegruppe (kan udfyldes) </dd>
 <dt>lovgrundlag</dt><dd>angiv reference(r) til juridisk ressource, som danner grundlag for syste-mets anvendelse (kan udfyldes) </dd>
-<dt>sagsområde(r) </dt><dd>angiv, hvilket sagsområde iht. bekendtgørelser for bevaring og kassation af digitale arkivalier it-systemet tilhører (kan udfyldes) </dd>
+<dt>sagsområde(r) </dt><dd>angiv, hvilket sagsområde iht. bekendtgørelser for bevaring og kassation af digitale arkivalier it-systemet tilhører (kan udfyldes for regioner og kommuner) </dd>
 <dt>forgængersystem</dt><dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes) </dd>
 </dt><dd></dl>
 
 ### Udfyldelse: Styring
 <dl class="def"></dt><dd> 
-<dt>it-systemejer</dt><dd>angiv person eller organisation med det overordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes) </dd></dl>
+<dt>it-systemejer</dt><dd>angiv organisatorisk enhed eller person med det overordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes) </dd></dl>
 
 ### Udfyldelse: Information
 <dl class="def"> 
 <dt>datasætID</dt><dd>angiv datasættes unikke ID (kan udfyldes) </dd>
 <dt>dataansvarlig</dt><dd>angiv den organisation, som har dispositionsretten og træffer afgørelse om hvordan data skal behandles (skal udfyldes) </dd>
 <dt>dataskaber </dt><dd>angiv den organisation, der har det primære ansvar for tilvejebringelsen af datasættet (skal udfyldes) </dd>
-<dt>titel</dt><dd>angiv datasættets navn (det eller de ord, der navngiver datasættet) (kan udfyldes) </dd>
+<dt>titel</dt><dd>angiv datasættets navn (det eller de ord, der navngiver data i it-systemet) (kan udfyldes) </dd>
 <dt>beskrivelse</dt><dd>beskriv datasættets formål og indhold (fx datasættet indeholder journal-sager fra kommune x) (kan udfyldes) </dd>
 <dt>versionsnummer</dt><dd>angiv eventuelt datasættets versionsnummer (kan udfyldes) </dd>
 <dt>personoplysningskategori</dt><dd>angiv, om it-systemet indeholder almindelige personoplysninger, følsom-me personoplysninger eller oplysninger om strafbare forhold (flere skal kunne vælges - udestår pt) (kan udfyldes) </dd>
