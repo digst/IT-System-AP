@@ -300,7 +300,7 @@ Basisprofilens datamodel udgør den fælles specifikation, som anvendes og udvid
 
 Der gives en overordnet beskrivelse af datamodellens indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses UML-diagrammerne for både basisprofilen og arkivprofilen. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values.
 
-- Link til webudgivelse af UML-modellerne: [https://data.gov.dk/document/itsystem-apv1/uml/](https://data.gov.dk/document/itsystem-ap/v1/uml/)
+- Link til webudgivelse af UML-modellerne: [https://data.gov.dk/document/itsystem-ap/v1/uml/](https://data.gov.dk/document/itsystem-ap/v1/uml/)
 
 Via nedenstående link findes der også en online oversigt over modellens elementer.
 
@@ -774,7 +774,6 @@ Bilag C: Eksempel på maskinlæsbart format
 ```
 
 ### EKSEMPELOUTPUT I RDF/XML
--------------------------------------------------
 ```
 	<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
