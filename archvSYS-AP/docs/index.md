@@ -35,7 +35,7 @@
 
 <pre class="metadata">
 Title: Standard for beskrivelse af it-systemer - Arkivprofil
-Status: LD
+Status: LS
 URL: https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP
 Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
 Editor: Rigsarkivet
@@ -300,11 +300,11 @@ Basisprofilens datamodel udgør den fælles specifikation, som anvendes og udvid
 
 Der gives en overordnet beskrivelse af datamodellens indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses UML-diagrammerne for både basisprofilen og arkivprofilen. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values.
 
-- Link til webudgivelse af UML-modellerne: [https://data.gov.dk/document/itsystemspecification/v1/uml/](https://data.gov.dk/document/itsystemspecification/v1/uml/)
+- Link til webudgivelse af UML-modellerne: [https://data.gov.dk/document/itsystem-apv1/uml/](https://data.gov.dk/document/itsystem-ap/v1/uml/)
 
 Via nedenstående link findes der også en online oversigt over modellens elementer.
 
-- Link til oversigt over modellens elementer: [https://data.gov.dk/model/profile/itsystemap.rdf](https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&sheet=transform2RDFreport_da-en.xsl)
+- Link til oversigt over modellens elementer: https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP
 
 Skabelon til registrering i regneark
 ----------------------------------------
@@ -315,7 +315,7 @@ Regnearket har den fordel, at det er let at anvende, men regneark har også den 
 
 I bilaget 'Skabelon til registrering i regneark' kan ses en visning af et sådant regneark, men det kan også downloades fra:
 
-[https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx ](https://data.gov.dk/document/itsystemspecification/v1/template/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx)
+[https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx](https://data.gov.dk/document/itsystem-ap/v1/template/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx)
 
 Maskinfortolkeligt format
 -----------------------------
@@ -467,15 +467,15 @@ Bilag A: Overblik over relevante klassifikationer
 ###  Klassifikation Sagsområder:
 Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og 'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne' 
 
-- **Administrative systemer**
+ **Administrative systemer**
   - ESDH-systemer med journalsager *(kommune og region)*
   - Elektroniske journaler *(kommune og region)*
   - Elektroniske sagshenvisnings- og advissystemer *(kommune)*
 
-- **Systemer på økonomiområdet**
+ **Systemer på økonomiområdet**
   - Økonomisystemer (kommune og region)
 
-- **Systemer på social- og sundhedsområdet**
+ **Systemer på social- og sundhedsområdet**
   - ESDH-systemer med personsager *(kommune)*
   - Daginstitutions- og børnepasningssystemer *(kommune)*
   - Omsorgssystemer *(kommune)*
@@ -485,24 +485,24 @@ Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgøre
   - Sundhedsplejesystemer* (kommune)*
   - Systemer vedr. misbrugsbehandling *(kommune)*
 
-- **Systemer på miljø- og teknikområdet *****(kommune)***
+ **Systemer på miljø- og teknikområdet *****(kommune)***
   - ESDH-systemer med byggesager *(kommune)*
   - ESDH-systemer med sager vedr. miljøgodkendelser og miljøtilsyn (*kommune*)
 
-- **Systemer på undervisningsområdet**
+ **Systemer på undervisningsområdet**
   - Elevadministrationssystemer (*kommune og region)*
   - Systemer vedr. specialundervisning (*kommune*)
   - PPR-systemer (*kommune*)
 
-- **Byggeprojektstyringssystemer**
+ **Byggeprojektstyringssystemer**
   - Byggeprojektstyringssystemer (*kommune og* *region*)
 
-- **Systemer på social- og psykiatriområdet**
+ **Systemer på social- og psykiatriområdet**
   - Elektroniske patientjournaler, der ikke indberetter til den fælles E-journal SUP *(region)*.
   - Forskningsdata (*region*)
   - Kliniske kvalitetsdatabaser  *(region)*
 
-- **Systemer på natur- og miljøområdet**
+ **Systemer på natur- og miljøområdet**
   - Jordforureningssystemer, der ikke indberetter til et overordnet statsligt it-system (*region*)
 
 
@@ -637,7 +637,7 @@ Vejledning til udfyldelse af skabelon i regneark:
 
 Regnearksskabelonen kan downloades her: 
 
-https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx
+https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx
 
 Regnearket er et forsimplet forslag til, hvordan oplysningerne kan afgives i struktureret form til Rigsarkivet med anvendelse af det fælles sprog, som standarden etablerer.
 I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmiljø relevante og derud-over kun databærende it-systemer, hvor data er digitalt skabt af den offentlige forvaltning og dom-stolene. Bemærk, at denne forsimplede repræsentation alene giver mulighed for at beskrivelse et it-systems samlede dataindhold (og ikke samtlige datasætrepræsentationer)
@@ -715,7 +715,7 @@ Bilag C: Eksempel på maskinlæsbart format
 (Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD) 
 
 ### EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)
-`
+```
 	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 	@prefix dc: <http://purl.org/dc/terms/> .
 	@prefix sys: <https://data.gov.dk/model/core/itsystem#> .
@@ -771,12 +771,11 @@ Bilag C: Eksempel på maskinlæsbart format
 	  a dcat:Distribution ;
 	  dc:issued "2002"^^xsd:date ;
 	  dc:modified "2007"^^xsd:date .
-`
-
+```
 
 ### EKSEMPELOUTPUT I RDF/XML
 -------------------------------------------------
-`
+```
 	<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -858,17 +857,17 @@ Bilag C: Eksempel på maskinlæsbart format
 		</archv:latestArchiveInformationPackage>
 	</rdf:Description>
 	</rdf:RDF>
-`
+```
 
 Bilag D: Om datamodellen
 -------------------------------------------------
 Selve UML-modellerne er udstillet her : 
-https://data.gov.dk/document/itsystemspecification/v1/uml/
+https://data.gov.dk/document/itsystem-ap/v1/uml/
 
 
 Bilag E: UML-diagram: Arkivprofil
 -------------------------------------------------
-- Namespace: https://data.gov.dk/model/profile/itsystemap-archv# 
+- Namespace: https://data.gov.dk/model/profile/itsystemap-archv/ 
 - Modelnavn (label): Indmeldelse af it-systemoplysninger til Rigsarkivet
 - Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)
 - Versionnummer (versionInfo): 1.0.0
@@ -892,12 +891,13 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
 - Modelstatus (modelStatus): development
 - Godkendelsesstatus (approvalStatus): afventer godkendelse
 - Forretningsområde (theme):  65.50.05.10 Sagsarkivering  
-- Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/digitalarchival/ 
-- Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/
+- Afledt af (wasDerivedFrom): https://data.gov.dk/concept/core/digitalarchival/ 
+- Afledt af (wasDerivedFrom): https://data.gov.dk/concept/core/itsystem/
 - Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. afgivelse af oplysninger om it-systemer til Rigsarkivet. Bemærk, at denne anvendelsesorienterede begrebsliste udvælger og sammensætter begreber fra forskellige emneområder, se fx begrebsmodellen for it-system og begrebsmodellen for digital arkivering, som er udstillet online. 
 
 
 ---
+
 
 Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 
