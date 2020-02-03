@@ -90,6 +90,7 @@ Definition: A specific representation of a dataset. A dataset might be available
 
 # dcat:ArchiveInformationPackage (Class)
 Definition: Package containing data to be archived as well as a description of the structure of the data and its contents, use and originating IT system. 
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:hasPart** |  xsd:dateTime  | The specific representation of a dataset which is contained in an archive information package | Information|
