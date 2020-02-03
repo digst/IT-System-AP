@@ -35,7 +35,7 @@
 
 <pre class="metadata">
 Title: Standard for beskrivelse af it-systemer - Basisprofil
-Status: LD
+Status: LS
 URL: https://github.com/digst/IT-System-AP/tree/master/SYS-AP
 Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
 Editor: Rigsarkivet
@@ -47,7 +47,7 @@ Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Basisprofil 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: SYS-AP
 Revision: 1.0.0
-Date: 2019-12-05
+Date: 2019-02-03
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/IT-System-AP/tree/master/SYS-AP
@@ -61,7 +61,7 @@ Logo: digst...
 
 Version 1.0.0
 
-Januar 2019
+Februar 2019
                                             
 
 **Læsevejledning:**
@@ -905,17 +905,16 @@ Bilag B: Skabelon til registrering i regneark (udklip)
 <dt>KLE-emne(r) </dt><dd>(for kommuner) angiv  KLE-emne(r) som it-systemet understøtter (fx 85.08.00 arkivering i almindelighed) el. overordnet emnegruppe (kan udfyldes) </dd>
 <dt>lovgrundlag</dt><dd>angiv reference(r) til juridisk ressource, som danner grundlag for systemets anvendelse (kan udfyldes) </dd>
 <dt>målgruppe</dt><dd>angivelse af, hvilken gruppe af brugere it-systemet henvender sig til (kan udfyldes)</dd>  
+<dt>forretningsfunktion</dt><dd>angiv den forretningsfunktion som it-systemet understøtter(kan udfyldes)</dd>	
 <dt>forgængersystem</dt><dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes)</dd>
 <dt>kritikalitetstype</dt><dd>angiv, om it-systemets anvendelse er samfundskritisk, forretningskritisk eller ikke kritisk (kan udfyldes)</dd>	
 </dl>
 
 ### Udfyldelse: Styring
 <dl class="def"> 
-<dt>it-systemejer</dt><dd>angiv person eller organisation med det oveordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes>)</dd>
-<dt>it-systemforvalter</dt><dd>angiv organisatorisk enhed eller medarbejder, som administrerer og træffer afgørelser vedrørende tekniske anliggender på vegne af systemejeren (kan udfyldes)</dd>
-
+<dt>it-systemejer</dt><dd>angiv organisation med det oveordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes>)</dd>
+<dt>it-systemforvalter</dt><dd>angiv organisatorisk enhed eller person, som administrerer og træffer afgørelser vedrørende tekniske anliggender på vegne af systemejeren (kan udfyldes)</dd>
 </dl>
-
 
 ### Udfyldelse: Jura
 <dl class="def"> 
@@ -930,10 +929,8 @@ Bilag B: Skabelon til registrering i regneark (udklip)
 
 ### Udfyldelse: Infrastruktur
 <dl class="def"> 
-<dt>miljøtype</dt><dd>angiv miljøtypen, it-systemet er ibrugtaget i (kan udfyldes)</dd>
-	
+<dt>miljøtype</dt><dd>angiv miljøtypen, it-systemet er ibrugtaget i (kan udfyldes)</dd>	
 </dl>
-
 
 ### Udfyldelse: Applikation
 * (Applikationslaget af et instantieret it-system i et fysisk it-miljø)*
@@ -971,9 +968,9 @@ NB: Ikke alle egenskaber medtaget i eksemplet
 ```
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix sys: <https://data.gov.dk/model/core/itsystem/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix infra: <https://data.gov.dk/model/core/infrastructure#> .
+@prefix infra: <https://data.gov.dk/model/core/infrastructure/> .
+@prefix sys: <https://data.gov.dk/model/core/itsystem/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcat-dk: <https://data.gov.dk/model/core/dcat-dk#> .
 
@@ -1066,12 +1063,13 @@ NB: Ikke alle egenskaber medtaget i eksemplet
 Bilag D: Om datamodellen
 ------------------------
 
-UML-modellerne er udstillet på nedenstående link[[24]](file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftn24):\
-<http://data.gov.dk/document/itsystemspecification/v1/uml/>
+UML-modellerne er udstillet på nedenstående link:
+
+http://data.gov.dk/document/itsystem-ap/v1/uml/
 
 I det følgende gives en overordnet beskrivelse af modellens indhold:
 
-Et it-system indgår ofte i en organisations it-systemportefølje for at understøtte en proces digitalt. For offentlige myndigheder vil it-systemet typisk have en relation til den forvaltningsopgave, som myndigheden udfører, samt det relaterede lovgrundlag. It-systemet kan anvendes internt i myndigheden eller være målrettet eksterne brugere. Det kan også angives, hvorvidt et it-systems anvendelse er forretningskritisk, samfundskritisk eller ikke kritisk.
+Et it-system indgår ofte i en organisations it-systemportefølje for at understøtte en proces digitalt. For offentlige myndigheder vil it-systemet typisk have en relation til den forvaltningsopgave, som myndigheden udfører via forretningsfunktioner, samt det relaterede lovgrundlag. It-systemet kan anvendes internt i myndigheden eller være målrettet eksterne brugere. Det kan også angives, hvorvidt et it-systems anvendelse er forretningskritisk, samfundskritisk eller ikke kritisk.
 
 Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter, fx it-systemejer og it-systemforvalter.
 
@@ -1085,66 +1083,41 @@ De data som logisk set er en del af it-systemet, kan betragtes som et datasæt. 
 
 Oversigt over UML-modellens anvendelsesprofil, kernemodeller og klassifikationsmodeller
 
-- Anvendelsesprofilen:
+Anvendelsesprofilen:
+-  [*IT System AP (Basic Profile)*](https://data.gov.dk/document/itsystem-ap/v1/uml/)
+-  [*IT System AP (Archive Profile)*](https://data.gov.dk/document/itsystem-ap/v1/uml/)*
 
-o [*IT System AP (Basic Profile)*](https://data.gov.dk/document/itsystemspecification/v1/uml/)
+Anvendte kernemodeller
+-  [*Vokabular for it-system (SYS)*](https://data.gov.dk/model/core/itsystem/
+-  [*Vokabular for digital arkivering (ARCHV)*](https://data.gov.dk/model/core/digitalarchival/
+-  [*Data Catalog Vocabulary (DCAT)*](https://www.w3.org/TR/vocab-dcat-2/)
+-  [*Simple Knowledge Organization System (SKOS)*](https://www.w3.org/TR/skos-primer/)
+-  [*European Legislation Identifier (ELI)*](http://data.europa.eu/eli/ontology)
+-  [*Financial Industry Business Ontology (FIBO)*](https://spec.edmcouncil.org/fibo/)
+-  [*Core Vocabulary (CV)*](http://data.europa.eu/m8g/)
+-  [*Dublin Core Terms (DCT**)*](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
+-  [*Organization Ontology (ORG**)*](https://www.w3.org/TR/vocab-org/)
+-  [*Core Public Service Vocabulary (*](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary)*CPOV)*
+-  [*Friend of A Friend (FOAF)*](http://xmlns.com/foaf/spec/)
+-  [*SCHEMA.org (SCHEMA)*](https://schema.org/)*
 
-o [*IT System AP (Archive Profile)*](https://data.gov.dk/document/itsystemspecification/v1/uml/)*
 
-*
-
-- Anvendte kernemodeller
-
-o [*Vokabular for it-system (SYS)*](https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fcore%2Fitsystem.rdf&sheet=transform2RDFreport_da-en.xsl)
-
-o [*Vokabular for digital arkivering (ARCHV)*](https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fcore%2Fdigitalarchival.rdf&sheet=transform2RDFreport_da-en.xsl)
-
-o [*Data Catalog Vocabulary (DCAT)*](https://www.w3.org/TR/vocab-dcat-2/)
-
-o [*Simple Knowledge Organization System (SKOS)*](https://www.w3.org/TR/skos-primer/)
-
-o [*European Legislation Identifier (ELI)*](http://data.europa.eu/eli/ontology)
-
-o [*Financial Industry Business Ontology (FIBO)*](https://spec.edmcouncil.org/fibo/)
-
-o [*Core Vocabulary (CV)*](http://data.europa.eu/m8g/)
-
-o [*Dublin Core Terms (DCT**)*](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
-
-o [*Organization Ontology (ORG**)*](https://www.w3.org/TR/vocab-org/)
-
-o [*Core Public Service Vocabulary (*](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary)*CPOV)*
-
-o [*Friend of A Friend (FOAF)*](http://xmlns.com/foaf/spec/)
-
-o [*SCHEMA.org (SCHEMA)*](https://schema.org/)*
-
-*
-
-- Anvendte klassifikationsmodeller
-
-o *Forvaltningsopgavetype (Public Administrative Task Type) -- 
+Anvendte klassifikationsmodeller
+-  *Forvaltningsopgavetype (Public Administrative Task Type) -- 
 ([*FORM*](http://www.form-online.dk/soegning) & [*KLE*](http://www.kle-online.dk/soegning)*)
-
-o *Operationel status (Operational Status)*
-
-o *IT-miljøtype (IT Environment Type)*
-
-o *Fortrolighedsgrad (Data Confidentiality Type)*
-
-o *Personoplysningskategori (Personal Data Category)*
-
-o *IT-systemkritikalitetstype (IT System Criticality Type)*
-
-o *Målgruppe (Target Group)*
-
-o *IT-systemkontrakttype (IT System Contract Type)*
+-  *Operationel status (Operational Status)*
+-  *IT-miljøtype (IT Environment Type)*
+-  *Fortrolighedsgrad (Data Confidentiality Type)*
+-  *Personoplysningskategori (Personal Data Category)*
+-  *IT-systemkritikalitetstype (IT System Criticality Type)*
+-  *Målgruppe (Target Group)*
+-  *IT-systemkontrakttype (IT System Contract Type)*
 
 
 Bilag E: UML-diagram: SYS-AP
 ----------------------------
 
-- Namespace: https://data.gov.dk/model/profile/itsystemap#,
+- Namespace: https://data.gov.dk/model/profile/itsystemap/,
 - Modelnavn (label): Anvendelsesprofil for it-systemer (SYS-AP)
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 1.0.1
