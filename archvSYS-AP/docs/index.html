@@ -1168,6 +1168,18 @@ Possible extra rowspan handling
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.overlarge {
+		/* Magic to create good table positioning:
+		   "content column" is 50ems wide at max; less on smaller screens.
+		   Extra space (after ToC + content) is empty on the right.
+
+		   1. When table < content column, centers table in column.
+		   2. When content < table < available, left-aligns.
+		   3. When table > available, fills available + scroll bar.
+		*/ 
+		display: grid;
+		grid-template-columns: minmax(0, 50em);
+	}
 	.overlarge > table {
 		/* limit preferred width of table */
 		max-width: 50em;
@@ -1177,7 +1189,6 @@ Possible extra rowspan handling
 
 	@media (min-width: 55em) {
 		.overlarge {
-			margin-left: calc(13px + 26.5rem - 50vw);
 			margin-right: calc(13px + 26.5rem - 50vw);
 			max-width: none;
 		}
@@ -1185,14 +1196,12 @@ Possible extra rowspan handling
 	@media screen and (min-width: 78em) {
 		body:not(.toc-inline) .overlarge {
 			/* 30.5em body padding 50em content area */
-			margin-left: calc(40em - 50vw) !important;
 			margin-right: calc(40em - 50vw) !important;
 		}
 	}
 	@media screen and (min-width: 90em) {
 		body:not(.toc-inline) .overlarge {
 			/* 4em html margin 30.5em body padding 50em content area */
-			margin-left: 0 !important;
 			margin-right: calc(84.5em - 100vw) !important;
 		}
 	}
@@ -1213,8 +1222,8 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 087ea90e1ebd0321c20373d89950d1c6b73d5df1" name="generator">
-  <link href="http://github.com/digst/IT-System-AP/archvSYS-AP/docs/index.md" rel="canonical">
+  <meta content="Bikeshed version 8bc2fccb49a45a0af18c5e75ce18049d75f824b6" name="generator">
+  <link href="https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP" rel="canonical">
 <style>
 @media print {
   html { margin: 0cm 2cm 2cm 0cm; font-size: 80%; }
@@ -1400,18 +1409,18 @@ pre .property::before, pre .property::after {
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>Standard for beskrivelse af it-systemer - Arkivprofil</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-12-05">5 December 2019</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Standard, <time class="dt-updated" datetime="2019-12-05">5 December 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
-     <dd><a class="u-url" href="http://github.com/digst/IT-System-AP/archvSYS-AP/docs/index.md">http://github.com/digst/IT-System-AP/archvSYS-AP/docs/index.md</a>
+     <dd><a class="u-url" href="https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP">https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP</a>
      <dt class="editor">Editors:
      <dd class="editor p-author h-card vcard"><span class="p-name fn">Digitaliseringsstyrelsen http://arkitektur.digst.dk</span>
      <dd class="editor p-author h-card vcard"><span class="p-name fn">Rigsarkivet</span>
      <dd class="editor p-author h-card vcard"><span class="p-name fn">KL</span>
      <dd class="editor p-author h-card vcard"><span class="p-name fn">Danske Regioner</span>
      <dd class="editor p-author h-card vcard"><span class="p-name fn">Organisationen Danske Arkiver</span>
-     <dd class="editor p-author h-card vcard"><span class="p-name fn">OS2KITOS</span>	     
+     <dd class="editor p-author h-card vcard"><span class="p-name fn">OS2KITOS</span>
     </dl>
    </div>
    <div data-fill-with="warning"></div>
@@ -1483,7 +1492,7 @@ pre .property::before, pre .property::after {
        <a href="#bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"><span class="secno">7.2</span> <span class="content">Bilag B: Skabelon til registrering i regneark (arkivprofil)</span></a>
        <ol class="toc">
         <li><a href="#udfyldelse-myndighedsoplysninger"><span class="secno">7.2.1</span> <span class="content">Udfyldelse: Myndighedsoplysninger</span></a>
-        <li><a href="#udfyldelse-bbasisinformation"><span class="secno">7.2.2</span> <span class="content">Udfyldelse: Bbasisinformation</span></a>
+        <li><a href="#udfyldelse-basisinformation"><span class="secno">7.2.2</span> <span class="content">Udfyldelse: Basisinformation</span></a>
         <li><a href="#udfyldelse-opgaver"><span class="secno">7.2.3</span> <span class="content">Udfyldelse: Opgaver</span></a>
         <li><a href="#udfyldelse-styring"><span class="secno">7.2.4</span> <span class="content">Udfyldelse: Styring</span></a>
         <li><a href="#udfyldelse-information"><span class="secno">7.2.5</span> <span class="content">Udfyldelse: Information</span></a>
@@ -1617,18 +1626,18 @@ It-systemet kan opmærkes med en <strong>personoplysningskategori</strong>, som 
    <p>Der gives en overordnet beskrivelse af datamodellens indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses UML-diagrammerne for både basisprofilen og arkivprofilen. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values.</p>
    <ul>
     <li data-md>
-     <p>Link til webudgivelse af UML-modellerne: <a href="https://data.gov.dk/document/itsystemspecification/v1/uml/">https://data.gov.dk/document/itsystemspecification/v1/uml/</a></p>
+     <p>Link til webudgivelse af UML-modellerne: <a href="https://data.gov.dk/document/itsystem-ap/v1/uml/">https://data.gov.dk/document/itsystem-apv1/uml/</a></p>
    </ul>
    <p>Via nedenstående link findes der også en online oversigt over modellens elementer.</p>
    <ul>
     <li data-md>
-     <p>Link til oversigt over modellens elementer: <a href="https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&amp;sheet=transform2RDFreport_da-en.xsl">https://data.gov.dk/model/profile/itsystemap.rdf</a></p>
+     <p>Link til oversigt over modellens elementer: https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP</p>
    </ul>
    <h3 class="heading settled" data-level="5.2" id="skabelon-til-registrering-i-regneark"><span class="secno">5.2. </span><span class="content">Skabelon til registrering i regneark</span><a class="self-link" href="#skabelon-til-registrering-i-regneark"></a></h3>
    <p>Der er blevet udarbejdet en skabelon til registrering af oplysninger om it-systemer i et regneark. Overskrifterne vil svare til egenskaberne, som de er præsenteret i denne standard, og hver element vil entydigt kunne mappes til den bagvedliggende datamodel. Dette betyder også, at det vil være muligt fx at konvertere data eksporteret i csv-format til et maskinfortolkeligt format.</p>
    <p>Regnearket har den fordel, at det er let at anvende, men regneark har også den store ulempe, at det ofte kræver manuel oprettelse og videre import. Det kan også være svært at repræsentere den kompleksitet, der faktisk kan være tilstede i den bagvedliggende datamodel. Eksempelvis kan et givet it-system godt skabe flere forskellige datasæt, som hver især kan dække forskellige perioder og have forskellige dataansvarlige tilknyttet. I den aktuelle skabelon er det kun muligt at registrere ét datasæt per it-system. Et it-system kan også udstille flere forskellige datasæt, og disses id’er må registreres i samme felt, selvom dette ikke er ideelt.</p>
    <p>I bilaget 'Skabelon til registrering i regneark' kan ses en visning af et sådant regneark, men det kan også downloades fra:</p>
-   <p><a href="https://data.gov.dk/document/itsystemspecification/v1/template/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx">https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx </a></p>
+   <p><a href="https://data.gov.dk/document/itsystem-ap/v1/template/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx">https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx</a></p>
    <h3 class="heading settled" data-level="5.3" id="maskinfortolkeligt-format"><span class="secno">5.3. </span><span class="content">Maskinfortolkeligt format</span><a class="self-link" href="#maskinfortolkeligt-format"></a></h3>
    <p>Hvis data skal deles på tværs, bør det være <em>digitalt understøttet</em> i de systemer, der anvendes til registrering af systemoplysninger. Systemerne bør bygge på samme logik og standard, så systemerne er i stand til at udveksle data om it-systemer på tværs af organisatoriske skel. Det kan lade sig gøre, hvis data er maskinfortolkelige. Datamodellen er derfor udtrykt med UML med en bagvedliggende semantik med Resource Description Framework (RDF), der kan fortolkes af både mennesker og maskiner. Alle elementerne i datamodellen er derfor defineret inden for rammerne af RDF og har entydig identifikation, der kan anvendes direkte som metadatabeskrivelse af data. Data udtrykt med det maskinlæsbare udvekslingsformat kan også let valideres op imod den bagvedliggende datamodel og dermed sikre højere datakvalitet i de registrerede data.</p>
    <p>Eksempeldata i maskinlæsbart format (RDF/XML) kan ses i bilag E. Bemærk, at der også umiddelbart kan konverteres til andre serialiseringer såsom JSON-LD, Turtle, m.fl.</p>
@@ -1796,21 +1805,22 @@ It-systemet kan opmærkes med en <strong>personoplysningskategori</strong>, som 
 88	Kommunens indkøb og udbud</p>
    <h4 class="heading settled" data-level="7.1.3" id="klassifikation-sagsomrder"><span class="secno">7.1.3. </span><span class="content">Klassifikation Sagsområder:</span><a class="self-link" href="#klassifikation-sagsomrder"></a></h4>
     Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og 'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne' 
+   <p><strong>Administrative systemer</strong></p>
    <ul>
-    <li data-md>
-     <p><strong>Administrative systemer</strong></p>
     <li data-md>
      <p>ESDH-systemer med journalsager <em>(kommune og region)</em></p>
     <li data-md>
      <p>Elektroniske journaler <em>(kommune og region)</em></p>
     <li data-md>
      <p>Elektroniske sagshenvisnings- og advissystemer <em>(kommune)</em></p>
-    <li data-md>
-     <p><strong>Systemer på økonomiområdet</strong></p>
+   </ul>
+   <p><strong>Systemer på økonomiområdet</strong></p>
+   <ul>
     <li data-md>
      <p>Økonomisystemer (kommune og region)</p>
-    <li data-md>
-     <p><strong>Systemer på social- og sundhedsområdet</strong></p>
+   </ul>
+   <p><strong>Systemer på social- og sundhedsområdet</strong></p>
+   <ul>
     <li data-md>
      <p>ESDH-systemer med personsager <em>(kommune)</em></p>
     <li data-md>
@@ -1827,34 +1837,39 @@ It-systemet kan opmærkes med en <strong>personoplysningskategori</strong>, som 
      <p>Sundhedsplejesystemer* (kommune)*</p>
     <li data-md>
      <p>Systemer vedr. misbrugsbehandling <em>(kommune)</em></p>
-    <li data-md>
-     <p><strong>Systemer på miljø- og teknikområdet </strong>*<strong>(kommune)</strong>*</p>
+   </ul>
+   <p><strong>Systemer på miljø- og teknikområdet </strong>*<strong>(kommune)</strong>*</p>
+   <ul>
     <li data-md>
      <p>ESDH-systemer med byggesager <em>(kommune)</em></p>
     <li data-md>
      <p>ESDH-systemer med sager vedr. miljøgodkendelser og miljøtilsyn (<em>kommune</em>)</p>
-    <li data-md>
-     <p><strong>Systemer på undervisningsområdet</strong></p>
+   </ul>
+   <p><strong>Systemer på undervisningsområdet</strong></p>
+   <ul>
     <li data-md>
      <p>Elevadministrationssystemer (<em>kommune og region)</em></p>
     <li data-md>
      <p>Systemer vedr. specialundervisning (<em>kommune</em>)</p>
     <li data-md>
      <p>PPR-systemer (<em>kommune</em>)</p>
-    <li data-md>
-     <p><strong>Byggeprojektstyringssystemer</strong></p>
+   </ul>
+   <p><strong>Byggeprojektstyringssystemer</strong></p>
+   <ul>
     <li data-md>
      <p>Byggeprojektstyringssystemer (<em>kommune og</em> <em>region</em>)</p>
-    <li data-md>
-     <p><strong>Systemer på social- og psykiatriområdet</strong></p>
+   </ul>
+   <p><strong>Systemer på social- og psykiatriområdet</strong></p>
+   <ul>
     <li data-md>
      <p>Elektroniske patientjournaler, der ikke indberetter til den fælles E-journal SUP <em>(region)</em>.</p>
     <li data-md>
      <p>Forskningsdata (<em>region</em>)</p>
     <li data-md>
-     <p>Kliniske kvalitetsdatabaser <em>(region)</em></p>
-    <li data-md>
-     <p><strong>Systemer på natur- og miljøområdet</strong></p>
+     <p>Kliniske kvalitetsdatabaser  <em>(region)</em></p>
+   </ul>
+   <p><strong>Systemer på natur- og miljøområdet</strong></p>
+   <ul>
     <li data-md>
      <p>Jordforureningssystemer, der ikke indberetter til et overordnet statsligt it-system (<em>region</em>)</p>
     <li data-md>
@@ -2052,7 +2067,7 @@ Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en af
    <h3 class="heading settled" data-level="7.2" id="bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"><span class="secno">7.2. </span><span class="content">Bilag B: Skabelon til registrering i regneark (arkivprofil)</span><a class="self-link" href="#bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"></a></h3>
    <p>Vejledning til udfyldelse af skabelon i regneark:</p>
    <p>Regnearksskabelonen kan downloades her:</p>
-   <p>https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx</p>
+   <p>https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx</p>
    <p>Regnearket er et forsimplet forslag til, hvordan oplysningerne kan afgives i struktureret form til Rigsarkivet med anvendelse af det fælles sprog, som standarden etablerer.
 I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmiljø relevante og derud-over kun databærende it-systemer, hvor data er digitalt skabt af den offentlige forvaltning og dom-stolene. Bemærk, at denne forsimplede repræsentation alene giver mulighed for at beskrivelse et it-systems samlede dataindhold (og ikke samtlige datasætrepræsentationer)</p>
    <ul>
@@ -2074,7 +2089,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dt>afgivelsesdato
     <dd>dato for, hvornår oplysningerne blev afgivet (skal udfyldes) 
    </dl>
-   <h4 class="heading settled" data-level="7.2.2" id="udfyldelse-bbasisinformation"><span class="secno">7.2.2. </span><span class="content">Udfyldelse: Bbasisinformation</span><a class="self-link" href="#udfyldelse-bbasisinformation"></a></h4>
+   <h4 class="heading settled" data-level="7.2.2" id="udfyldelse-basisinformation"><span class="secno">7.2.2. </span><span class="content">Udfyldelse: Basisinformation</span><a class="self-link" href="#udfyldelse-basisinformation"></a></h4>
    <dl class="def">
     <dt>it-systemidentifikator
     <dd>angiv det ID, som entydigt identificerer it-systemet (kan udfyldes) 
@@ -2085,7 +2100,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dt>it-systembeskrivelse
     <dd>beskriv, til hvilket formål it-systemet er taget i brug i organisationen (skal udfyldes) 
     <dt>ibrugtagningsdato 
-    <dd>angiv dato, hvor it-systemet blev taget i brug med fuld eller delvis funktio-nalitet  (skal udfyldes) 
+    <dd>angiv dato, hvor it-systemet blev taget i brug med fuld eller delvis funktionalitet  (skal udfyldes) 
     <dt>udfasningsdato
     <dd>angiv dato, hvor it-systemet blev endeligt blev afviklet (kan udfyldes) 
     <dt>version
@@ -2110,7 +2125,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dt>lovgrundlag
     <dd>angiv reference(r) til juridisk ressource, som danner grundlag for syste-mets anvendelse (kan udfyldes) 
     <dt>sagsområde(r) 
-    <dd>angiv, hvilket sagsområde iht. bekendtgørelser for bevaring og kassation af digitale arkivalier it-systemet tilhører (kan udfyldes) 
+    <dd>angiv, hvilket sagsområde iht. bekendtgørelser for bevaring og kassation af digitale arkivalier it-systemet tilhører (kan udfyldes for regioner og kommuner) 
     <dt>forgængersystem
     <dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes) 
     <dd>
@@ -2119,7 +2134,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
    <dl class="def">
     <dd>
     <dt>it-systemejer
-    <dd>angiv person eller organisation med det overordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes) 
+    <dd>angiv organisatorisk enhed eller person med det overordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes) 
    </dl>
    <h4 class="heading settled" data-level="7.2.5" id="udfyldelse-information"><span class="secno">7.2.5. </span><span class="content">Udfyldelse: Information</span><a class="self-link" href="#udfyldelse-information"></a></h4>
    <dl class="def">
@@ -2130,7 +2145,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dt>dataskaber 
     <dd>angiv den organisation, der har det primære ansvar for tilvejebringelsen af datasættet (skal udfyldes) 
     <dt>titel
-    <dd>angiv datasættets navn (det eller de ord, der navngiver datasættet) (kan udfyldes) 
+    <dd>angiv datasættets navn (det eller de ord, der navngiver data i it-systemet) (kan udfyldes) 
     <dt>beskrivelse
     <dd>beskriv datasættets formål og indhold (fx datasættet indeholder journal-sager fra kommune x) (kan udfyldes) 
     <dt>versionsnummer
@@ -2142,13 +2157,13 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dt>fortrolighedsgrad  iht. ISO 27001
     <dd>angiv, i hvilket omfang information kan videregives iht. informationssik-kerhedsstandarden ISO 27002 (kan udfyldes) 
     <dt>arkiveringspligttype
-    <dd>angiv, hvorvidt data skal bevares eller kasseres iht. gældende arkiverings-bestemmelser (for data bestemt til bevaring skal der afleveres arkive-ringsversioner til et offentligt arkiv) (kan udfyldes) 
+    <dd>angiv, hvorvidt data skal bevares eller kasseres iht. gældende arkiverings-bestemmelser (for data bestemt til bevaring skal der afleveres arkiveringsversioner til et offentligt arkiv) (kan udfyldes) 
     <dt>arkiveringsfrekvens
     <dd>angiv, hvor ofte der fremstilles arkiveringsversioner af datasættet (kan udfyldes) 
     <dt>arkiveringsperiodetype
     <dd>angiv, hvorvidt data afleveres som et øjebliksbillede, en afgrænset periode eller ved afsluttet arkivperiode  (kan udfyldes) 
     <dt>data konverteret fra  it-system
-    <dd> () 
+    <dd> hvis der manuelt eller maskinelt er blevet konverteret data ind fra et andet it-system, så angiv navnet på dette it-system (kan udfyldes) 
     <dt>datakonverteringsstatus
     <dd>angiv, om alle eller udvalgte data er konverteret ind fra forgængersystem (kan udfyldes) 
     <dt>første datatilføjelse
@@ -2167,17 +2182,148 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
    <h3 class="heading settled" data-level="7.3" id="bilag-c-eksempel-p-maskinlsbart-format"><span class="secno">7.3. </span><span class="content">Bilag C: Eksempel på maskinlæsbart format</span><a class="self-link" href="#bilag-c-eksempel-p-maskinlsbart-format"></a></h3>
    <p>(Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD)</p>
    <h4 class="heading settled" data-level="7.3.1" id="eksempeloutput-i-turtle-acadre-anvendt-i-kommune-x"><span class="secno">7.3.1. </span><span class="content">EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)</span><a class="self-link" href="#eksempeloutput-i-turtle-acadre-anvendt-i-kommune-x"></a></h4>
-    <code>@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#> . @prefix dc: &lt;http://purl.org/dc/terms/> . @prefix sys: &lt;https://data.gov.dk/model/core/itsystem#> . @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#> . @prefix archv: &lt;https://data.gov.dk/model/core/digitalarchival#> . @prefix infra: &lt;https://data.gov.dk/model/core/infrastructure#> . @prefix dcat: &lt;http://www.w3.org/ns/dcat#> . @prefix dcat-dk: &lt;https://data.gov.dk/model/core/dcat-dk#> . &lt;https://EXAMPLEURI1> a &lt;https://data.gov.dk/model/core/itsystem#ITSystem> ; skos:prefLabel "Acadre "@da ; skos:altLabel "Acadre CM"@da ; dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ; sys:inUseFromDate "2019-01-01"^^xsd:date ; sys:hasApplicationPurposeFORM &lt;http://www.form-online.dk/opgavenoegle/65/#65.50.05> ; sys:hasApplicationPurposeKLE &lt;http://www.kle-online.dk/emneplan/85/#_85.02.10> ; archv:applicableCaseArea &lt;https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager> ; sys:hasTargetGroup &lt;https://data.gov.dk/model/classification/itsystemcriticalitytype#employees> ; sys:hasCriticality &lt;https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness> ; sys:hasAquisitionType &lt;https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf> ; infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ; archv:containsData True ; archv:containsDigitalDocuments True ; dc:hasPart &lt;https://EXAMPLEURI2> . &lt;https://EXAMPLEURI2> a dcat:Dataset ; dcat-dk:dataResponsibleOrganisation "Kommune x"@da ; dcat-dk:personalDataCategory &lt;https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ; dc:description "Journalsager fra komnune x"@da ; archv:archivalObligationType &lt;https://data.gov.dk/model/classification/ArchivalObligationType#Archival> ; archv:plannedArchiveType &lt;https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod> ; archv:plannedArchivalFrequency &lt;https://data.gov.dk/model/classification/ArchivalFrequencyType#5> ; archv:previousArchiving True . &lt;https://EXAMPLEURI3> a sys:InstantiatedITSystem ; sys:actsAs &lt;https://data.gov.dk/model/classification/itenvironmenttype#Production> ; sys:instantiationOf &lt;https://EXAMPLEURI1> ; sys:producesDataset &lt;https://EXAMPLEURI4> ; archv:latestArchiveInformationPackage [ a archv:ArchiveInformationPackage ; dc:hasPart &lt;https://EXAMPLEURI5> ] . &lt;https://EXAMPLEURI4> a dcat:Distribution ; dc:issued "2019-02-01"^^xsd:date ; dc:modified ""^^xsd:date . &lt;https://EXAMPLEURI5> a dcat:Distribution ; dc:issued "2002"^^xsd:date ; dc:modified "2007"^^xsd:date .</code> 
+<pre>	@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#> .
+	@prefix dc: &lt;http://purl.org/dc/terms/> .
+	@prefix sys: &lt;https://data.gov.dk/model/core/itsystem#> .
+	@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#> .
+	@prefix archv: &lt;https://data.gov.dk/model/core/digitalarchival/> .
+	@prefix infra: &lt;https://data.gov.dk/model/core/infrastructure/> .
+	@prefix dcat: &lt;http://www.w3.org/ns/dcat#> .
+	@prefix dcat-dk: &lt;https://data.gov.dk/model/core/dcat-dk#> .
+
+	&lt;https://EXAMPLEURI1>
+	  a &lt;https://data.gov.dk/model/core/itsystem#ITSystem> ;
+	  skos:prefLabel "Acadre "@da ;
+	  skos:altLabel "Acadre CM"@da ;
+	  dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ;
+	  sys:inUseFromDate "2019-01-01"^^xsd:date ;
+	  sys:hasApplicationPurposeFORM &lt;http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
+	  sys:hasApplicationPurposeKLE &lt;http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
+	  archv:applicableCaseArea &lt;https://data.gov.dk/concept/core/ArchivalCaseArea#ESDH-systemMedJournalsager> ;
+	  schema:audience &lt;https://data.gov.dk/concept/core/itsystemcriticalitytype#employees> ;
+	  sys:hasCriticality &lt;https://data.gov.dk/concept/core/itsystemcriticalitytype#CriticalForBusiness> ;
+	  sys:hasAquisitionType &lt;https://data.gov.dk/concept/core/itsystemaquisitiontype#Commercial-off-the-shelf> ;
+	  infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
+	  archv:containsData True ;
+	  archv:containsDigitalDocuments True ;
+	  dc:hasPart &lt;https://EXAMPLEURI2> .
+
+	&lt;https://EXAMPLEURI2>
+	  a dcat:Dataset ;
+	  dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
+	  dcat-dk:personalDataCategory &lt;https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ;
+	  dc:description "Journalsager fra komnune x"@da ;
+	  archv:archivalObligationType &lt;https://data.gov.dk/concept/core/ArchivalObligationType#Archival> ;
+	  archv:plannedArchiveType &lt;https://data.gov.dk/concept/core/ArchivalFrequencyType#SpecificPeriod> ;
+	  archv:plannedArchivalFrequency &lt;https://data.gov.dk/concept/core/ArchivalFrequencyType#5> ;
+	  archv:previousArchiving True .
+
+	&lt;https://EXAMPLEURI3>
+	  a sys:InstantiatedITSystem ;
+	  sys:actsAs &lt;https://data.gov.dk/concept/coreitenvironmenttype#Production> ;
+	  sys:instantiationOf &lt;https://EXAMPLEURI1> ;
+	  sys:producesDataset &lt;https://EXAMPLEURI4> ;
+	  archv:latestArchiveInformationPackage [
+	    a archv:ArchiveInformationPackage ;
+	    dc:hasPart &lt;https://EXAMPLEURI5>
+	  ] .
+
+	&lt;https://EXAMPLEURI4>
+	  a dcat:Distribution ;
+	  dc:issued "2019-02-01"^^xsd:date ;
+	  dc:modified ""^^xsd:date .
+
+	&lt;https://EXAMPLEURI5>
+	  a dcat:Distribution ;
+	  dc:issued "2002"^^xsd:date ;
+	  dc:modified "2007"^^xsd:date .
+</pre>
    <h4 class="heading settled" data-level="7.3.2" id="eksempeloutput-i-rdf-xml"><span class="secno">7.3.2. </span><span class="content">EKSEMPELOUTPUT I RDF/XML</span><a class="self-link" href="#eksempeloutput-i-rdf-xml"></a></h4>
    <hr>
-    <code>&lt;?xml version="1.0" encoding="utf-8"?>&lt;rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc11="http://purl.org/dc/elements/1.1/" xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/terms/" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:cv="http://data.europa.eu/m8g/" xmlns:eli="http://data.europa.eu/eli/ontology#" xmlns:schema="http://schema.org/" xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk#" xmlns:sys="https://data.gov.dk/model/core/itsystem#" xmlns:archv="https://data.gov.dk/model/core/digitalarchival#" xmlns:infra="https://data.gov.dk/model/core/infrastructure#" > &lt;rdf:Description rdf:about="https://EXAMPLEURI1"> &lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#ITSystem"/> &lt;skos:prefLabel xml:lang="da">Acadre &lt;/skos:prefLabel> &lt;skos:altLabel xml:lang="da">Acadre CM&lt;/skos:altLabel> &lt;dct:description xml:lang="da">Acadre anvendes i kommune X til sagsstyring og ledelsesrapporte-ring&lt;/dct:description> &lt;sys:inUseFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01&lt;/sys:inUseFromDate> &lt;sys:hasApplicationPurposeFORM rdf:resource="http://www.form-online.dk/opgavenoegle/65/#65.50.05"/> &lt;sys:hasApplicationPurposeKLE rdf:resource="http://www.kle-online.dk/emneplan/85/#_85.02.10"/> &lt;archv:applicableCaseArea rdf:resource="https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager"/> &lt;sys:hasTargetGroup rdf:resource="https://data.gov.dk/model/classification/itsystemcriticalitytype#employees"/> &lt;sys:hasCriticality rdf:resource="https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness"/> &lt;sys:hasAquisitionType rdf:resource="https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf"/> &lt;infra:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM&lt;/infra:instanceOfProductInSeries> &lt;archv:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True&lt;/archv:containsData> &lt;archv:containsDigitalDocuments rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True&lt;/archv:containsDigitalDocuments> &lt;dct:hasPart rdf:resource="https://EXAMPLEURI2"/> &lt;/rdf:Description> &lt;rdf:Description rdf:about="https://EXAMPLEURI2"> &lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/> &lt;dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x&lt;/dcat-dk:dataResponsibleOrganisation> &lt;dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData"/> &lt;dct:description xml:lang="da">Journalsager fra komnune x&lt;/dct:description> &lt;archv:archivalObligationType rdf:resource="https://data.gov.dk/model/classification/ArchivalObligationType#Archival"/> &lt;archv:plannedArchiveType rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod"/> &lt;archv:plannedArchivalFrequency rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#5"/> &lt;archv:previousArchiving rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True&lt;/archv:previousArchiving> &lt;/rdf:Description> &lt;rdf:Description rdf:about="https://EXAMPLEURI3"> &lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#InstantiatedITSystem"/> &lt;sys:actsAs rdf:resource="https://data.gov.dk/model/classification/itenvironmenttype#Production"/> &lt;sys:instantiationOf rdf:resource="https://EXAMPLEURI1"/> &lt;sys:producesDataset> &lt;rdf:Description rdf:about="https://EXAMPLEURI4"> &lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> &lt;dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-01&lt;/dct:issued> &lt;dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">&lt;/dct:modified> &lt;/rdf:Description> &lt;/sys:producesDataset> &lt;archv:latestArchiveInformationPackage> &lt;archv:ArchiveInformationPackage> &lt;dct:hasPart> &lt;rdf:Description rdf:about="https://EXAMPLEURI5"> &lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> &lt;dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002&lt;/dct:issued> &lt;dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007&lt;/dct:modified> &lt;/rdf:Description> &lt;/dct:hasPart> &lt;/archv:ArchiveInformationPackage> &lt;/archv:latestArchiveInformationPackage> &lt;/rdf:Description> &lt;/rdf:RDF></code> 
+<pre>	&lt;?xml version="1.0" encoding="utf-8"?>&lt;rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	  xmlns:owl="http://www.w3.org/2002/07/owl#"
+	  xmlns:dc11="http://purl.org/dc/elements/1.1/"
+	  xmlns:voaf="http://purl.org/vocommons/voaf#"
+	  xmlns:dcterms="http://purl.org/dc/terms/"
+	  xmlns:dc="http://purl.org/dc/terms/" 
+	  xmlns:dct="http://purl.org/dc/terms/"    
+	  xmlns:dcat="http://www.w3.org/ns/dcat#" 
+	  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	  xmlns:prov="http://www.w3.org/ns/prov#"
+	  xmlns:adms="http://www.w3.org/ns/adms#"
+	  xmlns:cv="http://data.europa.eu/m8g/"
+	  xmlns:eli="http://data.europa.eu/eli/ontology#"
+	  xmlns:schema="http://schema.org/"
+	  xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk#"  
+	  xmlns:sys="https://data.gov.dk/model/core/itsystem/"
+	  xmlns:archv="https://data.gov.dk/model/core/digitalarchival/"
+	  xmlns:infra="https://data.gov.dk/model/core/infrastructure/"  > 
+
+	&lt;rdf:Description rdf:about="https://EXAMPLEURI1">
+	&lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#ITSystem"/>
+	&lt;skos:prefLabel xml:lang="da">Acadre &lt;/skos:prefLabel>
+	&lt;skos:altLabel xml:lang="da">Acadre CM&lt;/skos:altLabel>
+	&lt;dct:description xml:lang="da">Acadre anvendes i kommune X til sagsstyring og ledelsesrapporte-ring&lt;/dct:description>
+	&lt;sys:inUseFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01&lt;/sys:inUseFromDate>
+	&lt;sys:hasApplicationPurposeFORM rdf:resource="http://www.form-online.dk/opgavenoegle/65/#65.50.05"/>
+	&lt;sys:hasApplicationPurposeKLE rdf:resource="http://www.kle-online.dk/emneplan/85/#_85.02.10"/>
+	&lt;archv:applicableCaseArea rdf:resource="https://data.gov.dk/concept/coreArchivalCaseArea#ESDH-systemMedJournalsager"/>
+	&lt;schema:audience rdf:resource="https://data.gov.dk/concept/coreitsystemcriticalitytype#employees"/>
+	&lt;sys:hasCriticality rdf:resource="https://data.gov.dk/concept/coreitsystemcriticalitytype#CriticalForBusiness"/>
+	&lt;sys:hasAquisitionType rdf:resource="https://data.gov.dk/concept/coreitsystemaquisitiontype#Commercial-off-the-shelf"/>
+	&lt;infra:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM&lt;/infra:instanceOfProductInSeries>
+	&lt;archv:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True&lt;/archv:containsData>
+	&lt;archv:containsDigitalDocuments rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True&lt;/archv:containsDigitalDocuments>
+	&lt;dct:hasPart rdf:resource="https://EXAMPLEURI2"/>
+	 &lt;/rdf:Description>
+
+	&lt;rdf:Description rdf:about="https://EXAMPLEURI2">
+	&lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	&lt;dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x&lt;/dcat-dk:dataResponsibleOrganisation>
+	&lt;dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData"/>	
+	&lt;dct:description xml:lang="da">Journalsager fra komnune x&lt;/dct:description>	
+	&lt;archv:archivalObligationType rdf:resource="https://data.gov.dk/concept/coreArchivalObligationType#Archival"/>
+	&lt;archv:plannedArchiveType rdf:resource="https://data.gov.dk/concept/coreArchivalFrequencyType#SpecificPeriod"/>
+	&lt;archv:plannedArchivalFrequency rdf:resource="https://data.gov.dk/concept/coreArchivalFrequencyType#5"/>
+	&lt;archv:previousArchiving rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True&lt;/archv:previousArchiving>
+	&lt;/rdf:Description>
+
+	&lt;rdf:Description rdf:about="https://EXAMPLEURI3">
+	    &lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#InstantiatedITSystem"/>
+	    &lt;sys:actsAs rdf:resource="https://data.gov.dk/concept/coreitenvironmenttype#Production"/>
+	    &lt;sys:instantiationOf rdf:resource="https://EXAMPLEURI1"/>
+
+		&lt;sys:producesDataset>
+		&lt;rdf:Description rdf:about="https://EXAMPLEURI4">
+		  &lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		    &lt;dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-01&lt;/dct:issued>
+		    &lt;dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">&lt;/dct:modified>
+		  &lt;/rdf:Description>
+		&lt;/sys:producesDataset>	
+		
+		&lt;archv:latestArchiveInformationPackage>
+		&lt;archv:ArchiveInformationPackage>
+		&lt;dct:hasPart>
+		  &lt;rdf:Description rdf:about="https://EXAMPLEURI5">
+		  &lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		    &lt;dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002&lt;/dct:issued>
+		    &lt;dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007&lt;/dct:modified>
+		  &lt;/rdf:Description>
+		&lt;/dct:hasPart>
+		&lt;/archv:ArchiveInformationPackage>
+		&lt;/archv:latestArchiveInformationPackage>
+	&lt;/rdf:Description>
+	&lt;/rdf:RDF>
+</pre>
    <h3 class="heading settled" data-level="7.4" id="bilag-d-om-datamodellen"><span class="secno">7.4. </span><span class="content">Bilag D: Om datamodellen</span><a class="self-link" href="#bilag-d-om-datamodellen"></a></h3>
     Selve UML-modellerne er udstillet her : 
-https://data.gov.dk/document/itsystemspecification/v1/uml/ 
+https://data.gov.dk/document/itsystem-ap/v1/uml/ 
    <h3 class="heading settled" data-level="7.5" id="bilag-e-uml-diagram-arkivprofil"><span class="secno">7.5. </span><span class="content">Bilag E: UML-diagram: Arkivprofil</span><a class="self-link" href="#bilag-e-uml-diagram-arkivprofil"></a></h3>
    <ul>
     <li data-md>
-     <p>Namespace: https://data.gov.dk/model/profile/itsystemap-archv#</p>
+     <p>Namespace: https://data.gov.dk/model/profile/itsystemap-archv/</p>
     <li data-md>
      <p>Modelnavn (label): Indmeldelse af it-systemoplysninger til Rigsarkivet</p>
     <li data-md>
@@ -2217,16 +2363,17 @@ https://data.gov.dk/document/itsystemspecification/v1/uml/
     <li data-md>
      <p>Forretningsområde (theme):  65.50.05.10 Sagsarkivering</p>
     <li data-md>
-     <p>Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/digitalarchival/</p>
+     <p>Afledt af (wasDerivedFrom): https://data.gov.dk/concept/core/digitalarchival/</p>
     <li data-md>
-     <p>Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/</p>
+     <p>Afledt af (wasDerivedFrom): https://data.gov.dk/concept/core/itsystem/</p>
     <li data-md>
      <p>Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. afgivelse af oplysninger om it-systemer til Rigsarkivet. Bemærk, at denne anvendelsesorienterede begrebsliste udvælger og sammensætter begreber fra forskellige emneområder, se fx begrebsmodellen for it-system og begrebsmodellen for digital arkivering, som er udstillet online.</p>
    </ul>
    <hr>
    <p>Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.</p>
    <p>arkitektur.digst.dk</p>
-  
+   <hr>
+   <hr>
 
   </main>
 <script>
