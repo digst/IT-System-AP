@@ -720,8 +720,8 @@ Bilag C: Eksempel på maskinlæsbart format
 	@prefix dc: <http://purl.org/dc/terms/> .
 	@prefix sys: <https://data.gov.dk/model/core/itsystem#> .
 	@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-	@prefix archv: <https://data.gov.dk/model/core/digitalarchival#> .
-	@prefix infra: <https://data.gov.dk/model/core/infrastructure#> .
+	@prefix archv: <https://data.gov.dk/model/core/digitalarchival/> .
+	@prefix infra: <https://data.gov.dk/model/core/infrastructure/> .
 	@prefix dcat: <http://www.w3.org/ns/dcat#> .
 	@prefix dcat-dk: <https://data.gov.dk/model/core/dcat-dk#> .
 
@@ -733,10 +733,10 @@ Bilag C: Eksempel på maskinlæsbart format
 	  sys:inUseFromDate "2019-01-01"^^xsd:date ;
 	  sys:hasApplicationPurposeFORM <http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
 	  sys:hasApplicationPurposeKLE <http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
-	  archv:applicableCaseArea <https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager> ;
-	  sys:hasTargetGroup <https://data.gov.dk/model/classification/itsystemcriticalitytype#employees> ;
-	  sys:hasCriticality <https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness> ;
-	  sys:hasAquisitionType <https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf> ;
+	  archv:applicableCaseArea <https://data.gov.dk/concept/core/ArchivalCaseArea#ESDH-systemMedJournalsager> ;
+	  schema:audience <https://data.gov.dk/concept/core/itsystemcriticalitytype#employees> ;
+	  sys:hasCriticality <https://data.gov.dk/concept/core/itsystemcriticalitytype#CriticalForBusiness> ;
+	  sys:hasAquisitionType <https://data.gov.dk/concept/core/itsystemaquisitiontype#Commercial-off-the-shelf> ;
 	  infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
 	  archv:containsData True ;
 	  archv:containsDigitalDocuments True ;
@@ -747,14 +747,14 @@ Bilag C: Eksempel på maskinlæsbart format
 	  dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
 	  dcat-dk:personalDataCategory <https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ;
 	  dc:description "Journalsager fra komnune x"@da ;
-	  archv:archivalObligationType <https://data.gov.dk/model/classification/ArchivalObligationType#Archival> ;
-	  archv:plannedArchiveType <https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod> ;
-	  archv:plannedArchivalFrequency <https://data.gov.dk/model/classification/ArchivalFrequencyType#5> ;
+	  archv:archivalObligationType <https://data.gov.dk/concept/core/ArchivalObligationType#Archival> ;
+	  archv:plannedArchiveType <https://data.gov.dk/concept/core/ArchivalFrequencyType#SpecificPeriod> ;
+	  archv:plannedArchivalFrequency <https://data.gov.dk/concept/core/ArchivalFrequencyType#5> ;
 	  archv:previousArchiving True .
 
 	<https://EXAMPLEURI3>
 	  a sys:InstantiatedITSystem ;
-	  sys:actsAs <https://data.gov.dk/model/classification/itenvironmenttype#Production> ;
+	  sys:actsAs <https://data.gov.dk/concept/coreitenvironmenttype#Production> ;
 	  sys:instantiationOf <https://EXAMPLEURI1> ;
 	  sys:producesDataset <https://EXAMPLEURI4> ;
 	  archv:latestArchiveInformationPackage [
@@ -794,9 +794,9 @@ Bilag C: Eksempel på maskinlæsbart format
 	  xmlns:eli="http://data.europa.eu/eli/ontology#"
 	  xmlns:schema="http://schema.org/"
 	  xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk#"  
-	  xmlns:sys="https://data.gov.dk/model/core/itsystem#"
-	  xmlns:archv="https://data.gov.dk/model/core/digitalarchival#"
-	  xmlns:infra="https://data.gov.dk/model/core/infrastructure#"  > 
+	  xmlns:sys="https://data.gov.dk/model/core/itsystem/"
+	  xmlns:archv="https://data.gov.dk/model/core/digitalarchival/"
+	  xmlns:infra="https://data.gov.dk/model/core/infrastructure/"  > 
 
 	<!-- IT-SYSTEM -->                    
 	<rdf:Description rdf:about="https://EXAMPLEURI1">
@@ -807,10 +807,10 @@ Bilag C: Eksempel på maskinlæsbart format
 	<sys:inUseFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</sys:inUseFromDate>
 	<sys:hasApplicationPurposeFORM rdf:resource="http://www.form-online.dk/opgavenoegle/65/#65.50.05"/>
 	<sys:hasApplicationPurposeKLE rdf:resource="http://www.kle-online.dk/emneplan/85/#_85.02.10"/>
-	<archv:applicableCaseArea rdf:resource="https://data.gov.dk/model/classification/ArchivalCaseArea#ESDH-systemMedJournalsager"/>
-	<sys:hasTargetGroup rdf:resource="https://data.gov.dk/model/classification/itsystemcriticalitytype#employees"/>
-	<sys:hasCriticality rdf:resource="https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness"/>
-	<sys:hasAquisitionType rdf:resource="https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf"/>
+	<archv:applicableCaseArea rdf:resource="https://data.gov.dk/concept/coreArchivalCaseArea#ESDH-systemMedJournalsager"/>
+	<schema:audience rdf:resource="https://data.gov.dk/concept/coreitsystemcriticalitytype#employees"/>
+	<sys:hasCriticality rdf:resource="https://data.gov.dk/concept/coreitsystemcriticalitytype#CriticalForBusiness"/>
+	<sys:hasAquisitionType rdf:resource="https://data.gov.dk/concept/coreitsystemaquisitiontype#Commercial-off-the-shelf"/>
 	<infra:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM</infra:instanceOfProductInSeries>
 	<archv:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True</archv:containsData>
 	<archv:containsDigitalDocuments rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True</archv:containsDigitalDocuments>
@@ -823,16 +823,16 @@ Bilag C: Eksempel på maskinlæsbart format
 	<dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x</dcat-dk:dataResponsibleOrganisation>
 	<dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData"/>	
 	<dct:description xml:lang="da">Journalsager fra komnune x</dct:description>	
-	<archv:archivalObligationType rdf:resource="https://data.gov.dk/model/classification/ArchivalObligationType#Archival"/>
-	<archv:plannedArchiveType rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#SpecificPeriod"/>
-	<archv:plannedArchivalFrequency rdf:resource="https://data.gov.dk/model/classification/ArchivalFrequencyType#5"/>
+	<archv:archivalObligationType rdf:resource="https://data.gov.dk/concept/coreArchivalObligationType#Archival"/>
+	<archv:plannedArchiveType rdf:resource="https://data.gov.dk/concept/coreArchivalFrequencyType#SpecificPeriod"/>
+	<archv:plannedArchivalFrequency rdf:resource="https://data.gov.dk/concept/coreArchivalFrequencyType#5"/>
 	<archv:previousArchiving rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True</archv:previousArchiving>
 	</rdf:Description>
 
 	<!-- IT-SYSTEMETS FYSISKE INSTANTIERING I ET IT-MILJØ --> 
 	<rdf:Description rdf:about="https://EXAMPLEURI3">
 	    <rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#InstantiatedITSystem"/>
-	    <sys:actsAs rdf:resource="https://data.gov.dk/model/classification/itenvironmenttype#Production"/>
+	    <sys:actsAs rdf:resource="https://data.gov.dk/concept/coreitenvironmenttype#Production"/>
 	    <sys:instantiationOf rdf:resource="https://EXAMPLEURI1"/>
 
 	<!-- DET INSTANTIEREDE IT-SYSTEMS KONKRETE DATA-->	
