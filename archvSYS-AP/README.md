@@ -25,24 +25,24 @@ Definition: system which consists of digital information technologies
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:identifier**| xsd:anyURI | An unambiguous reference to the resource within a given context., An unambiguous reference to the resource within a given context. | Basic Information |
-| **skos:prefLabel**| rdf:langString| | Basic Information |
-| **skos:altLabel**| rdf:langString| | Basic Information |
+| **skos:prefLabel**| rdf:langString|preferred name for the IT system | Basic Information |
+| **skos:altLabel**| rdf:langString|alternative name which is accepted but not preferred for the IT system | Basic Information |
 | **dct:description**| rdf:langString| An account of the resource | Basic Information |
 | **sys:inUseFromDate**| xsd:date| date on which a system was put into operation | Basic Information |
 | **sys:inUseUntilDate**| xsd:date| date on which the it-system was phased out and no longer in operation | Basic Information |
-| **sys:operationalStatus**|OperationalStatus| | Basic Information |
+| **sys:operationalStatus**|OperationalStatus| the status of the it-system with regards to implementation and operation| Basic Information |
 | **rdfs:comment**| rdf:langString| A description of the subject resource | Basic Information |
-| **sys:usedInOrganization**| org:Organization | | Basic Information |
-| **sys:hasApplicationPurposeFORM** | FORMtask | | Tasks |
-| **sys:hasApplicationPurposeKLE** | KLETheme | | Tasks |
-| **cv:hasLegalResource** | eli:LegalResource | | Tasks |
+| **sys:usedInOrganization**| org:Organization | organization that uses the IT system  | Basic Information |
+| **sys:hasApplicationPurposeFORM** | FORMtask |the FORM task which the IT system supports | Tasks |
+| **sys:hasApplicationPurposeKLE** | KLETheme | the KLE theme which the IT system supports| Tasks |
+| **cv:hasLegalResource** | eli:LegalResource |legal framework for the application of the IT system  | Tasks |
 | **archv:caseArea** | CaseArea | the case area which a specific IT system supports | Tasks |
 | **sys:predecessorSystem** | sys:ITSystem | IT system which previously supported the function before the current IT system replaced it | Tasks |
-| **sys:hasCriticality** | CriticalityType | | Tasks |
-| **sys:hasITSystemOwner** | org:Organization, org:OrganizationalUnit, foaf:Person | | Tasks |
-| **sys:hasSystemDocumentation** | sys:SystemDocumentation | | Tasks |
+| **sys:hasCriticality** | CriticalityType | specification of how critical the application of the IT system is| Tasks |
+| **sys:hasITSystemOwner** | org:Organization, org:OrganizationalUnit, foaf:Person | organisation or person who has the executive responsibility of the operation, maintenance and application of a specific it-system | Tasks |
+| **sys:hasSystemDocumentation** | sys:SystemDocumentation | reference to document that describe the requirements, capabilities, limitations, design, operation, or maintenance of an IT system | Tasks |
 | **sys:containsData** | xsd:boolean | specification of whether an IT system contains data or documents digitally created by the public administration | Tasks |
-| **archv:containsDigitalDocs** | xsd:boolean | | Tasks |
+| **archv:containsDigitalDocs** | xsd:boolean | specification of whether an IT system contains digital documents | Tasks |
 
 # sys:InstantiatedITSystem (Class)
 Definition: it-system which has been implemented in a physical IT environment
