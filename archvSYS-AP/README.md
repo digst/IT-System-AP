@@ -8,8 +8,8 @@ Læs specifikationen archvSYS-AP her: https://digst.github.io/IT-System-AP/archv
 
 This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing IT systems for the National Archives. 
 
-## Example Data Graphs
-Find ITSYSTEM-AP-NATIONALARCHIVES Shapes Graph samt Example Data Graphs (i RDF-XML, TTL, og JSON-LD) i filerne ovenfor
+## Example Data Graphs (Coming soon)
+ITSYSTEM-AP-NATIONALARCHIVES Shapes Graph and Example Data Graphs 
 
 ## Simple spreadsheet template
 https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx
