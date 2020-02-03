@@ -1445,7 +1445,7 @@ pre .property::before, pre .property::after {
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>Standard for beskrivelse af it-systemer - Basisprofil</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-12-05">5 December 2019</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Standard, <time class="dt-updated" datetime="2019-02-03">3 February 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1595,7 +1595,7 @@ pre .property::before, pre .property::after {
   </nav>
   <main>
    <p>Version 1.0.0</p>
-   <p>Januar 2019</p>
+   <p>Februar 2019</p>
    <p><strong>Læsevejledning:</strong></p>
    <p>Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer.</p>
    <p>Kapitel 1 introducerer standardens formål, baggrund og den metode, hvormed standarden er blevet udarbejdet. Kapitel 2 og 3 beskriver standardens anvendelse ud fra forskellige indfaldsvinkler og skitserer udfordringerne ved at etablere et fælles sprog på området.</p>
@@ -1729,27 +1729,18 @@ Information technology --- Framework and taxonomy of International Standardized 
    <p class="example" id="example-73d40b51"><a class="self-link" href="#example-73d40b51"></a>Eksempelvis kan der ved anvendelse af cBrains F2 angives version 5.3 (og ikke 5.3.0.41112)</p>
    <h3 class="heading settled" data-level="5.2" id="opgaver"><span class="secno">5.2. </span><span class="content">Opgaver</span><a class="self-link" href="#opgaver"></a></h3>
    <p>Et it-system yder en given it-service, som understøtter forretningens opgaver. Et it-system kan beskrives med et eller flere anvendelsesformål, der antages at være at understøtte en <strong>forvaltningsopgave</strong>. Til dette formål anvendes en klassifikation over offentlige opgaver eller såkaldte forvaltningsopgavetyper såsom Den Fællesoffentlige Referencemodel (FORM) eller KL Emnesystematik (KLE).  KLE er en emnesystematik/journalplan, der dækker det kommunale område. FORM er en overordnet emnesystematik, der dækker opgaveporteføljen i hele den offentlige sektor -- dvs. staten, kommunerne og regionerne. KLE er som regel mere detaljeret end FORM på det kommunale område. Det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder -- som minimum på det øverste niveau (hhv. serviceområde i FORM og emnegruppe i KLE):</p>
-   <p>
-    <strong>Klassifikation KLE:</strong> 
-    <httpU0003A soegning www.kle-online.dk></httpU0003A>
-   </p>
-   <p>
-    <strong>Klassifikation FORM:</strong> 
-    <httpU0003A soegning www.form-online.dk></httpU0003A>
-   </p>
+   <p><strong>Klassifikation KLE:</strong> http://www.kle-online.dk/soegning</p>
+   <p><strong>Klassifikation FORM:</strong> http://www.form-online.dk/soegning</p>
    <p class="example" id="example-ae94b187"><a class="self-link" href="#example-ae94b187"></a>Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven "65.50.05.05 Sagshåndtering" (FORM v.2.14) el. KLE-emnet "00.15.12. Kvalitetsstyringssystem, sagsbehandling" (KLE v. Aug. 2019)</p>
    <p class="note" role="note"> Bemærk, at produkter i SKI-kataloget allerede er opmærket med FORM samt internationale referencekoder såsom Common Procurement Vocabulary Codes (CPV)<span>[9]</span> og United Nations Standard Product and Services Code (UNSPSC)<span>[10]</span>, som er klassifikationer for hhv. udbudte opgaver og varer og tjenesteydelser. Bemærk, at en sådan opmærkning angiver, at produktet har <strong>kapabilitet til at understøtte</strong> en given opgave. SKI anvender tillige STORM (Service- og Teknologireferencemodel)<span>[11]</span> på trods af, at den ikke længere opdateres. </p>
    <p>FORM og KLE indeholder henvisninger til de love og lovbekendtgørelser, som de offentlige opgaver udspringer fra, så ved at opmærke et it-system med FORM eksisterer der også indirekte en relation til retsgrundlaget for it-systemets anvendelse. Der er også muligt via FORM at se, hvilke myndigheder de forskellige opgaver tilhører. KLE indeholder, ud over love og lovbekendtgørelser, også bekendtgørelser. FORM mapper til paragraffer i finansloven og KLE, og KLE mapper til Social- og Indenrigsministeriets kontoplan.</p>
-   <p>Når en organisation skifter et it-system ud med et andet it-system til varetagelse af samme funktion, kan det tidligere it-system eksplicit angives som et såkaldt <strong>forgængersystem.</strong></p>
+   <p>Et it-system kan opmærkes i forhold til de <strong>forretningsfunktioner</strong> som it-systemet understøtter. En forretningsfunktion er en funktion, der kan udføres eller varetages af organisationsenhederne i organisationen. Når en organisation skifter et it-system ud med et andet it-system til varetagelse af samme funktion, kan det tidligere it-system angives som et såkaldt <strong>forgængersystem.</strong></p>
    <p>Bemærk, at en organisations portefølje af it-systemer kan være sammensat af dels organisationens internt-rettede it-systemer (fx et sagsbehandlingssystem til organisationens egne medarbejdere) og dets eksternt-rettede it-systemer (fx et borgerrettet selvbetjeningssystem). Med henblik på at kunne skelne mellem it-systemer med en snæver målgruppe og it-systemer med en bred målgruppe kan it-systemer klassificeres ift. en <strong>målgruppeklassifikation</strong>, se Bilag A. Her angives, om it-systemet har en intern eller ekstern målgruppe set ift. organisationen.</p>
    <h3 class="heading settled" data-level="5.3" id="styring"><span class="secno">5.3. </span><span class="content">Styring</span><a class="self-link" href="#styring"></a></h3>
-   <p>Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter. Aktørerne kan være personer eller organisationer, men det anbefales, i det omfang det er muligt, ikke at registrere oplysninger om fysiske personer, men derimod den relevante medarbejderrolle eller organisatoriske enhed.</p>
-   <p class="advisement">
-     Organisationer beskrives iht. anvendelsesprofil for organisation: 
-    <httpsU0003A anvendelsesprofil-organisationer arkitektur.digst.dk datastandarder rammearkitektur></httpsU0003A>
-   </p>
+   <p>Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter. Aktører kan være organisationer, organisatoriske personer eller fysiske personer men det anbefales, i det omfang det er muligt, ikke at registrere oplysninger om personer, men derimod den relevante medarbejderrolle eller organisatoriske enhed.</p>
+   <p class="note" role="note"> Med et <strong>organisatorisk person-ID</strong> kan en persons tilhørsforhold og medlemskab i organisatoriske enheder udtrykkes. Et organisatorisk person-ID er en persons identitet i organisationsenheder og er eksempelvis udtrykt igennem personens initialer, som er unikke inden for organisationsenheden. En person kan have tilhørsforhold til flere organisationer og kan dermed kan flere organisatorisk person-ID’er tilknyttet. </p>
    <p>På overordnet niveau angives <strong>it-systemejeren</strong> -- en person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse. Ofte vil it-systemejeren være lig kontraktejeren og kan identificeres præcist i myndighedens kontraktstyring.</p>
-   <p>I en given organisations praktiske og tekniske forvaltning af et it-system er det også vigtigt at registrere <strong>it-systemforvalteren</strong>, dvs. den organisatoriske enhed eller medarbejder, som administrerer og træffer afgørelser vedrørende tekniske anliggender <strong>på vegne af</strong> systemejeren. I forbindelse med større it-systemer kan forvalterrollen være opdelt i en intern forretningsmæssig forvalterrolle og en teknisk forvalterrolle hos en leverandør.</p>
+   <p>I en given organisations praktiske og tekniske forvaltning af et it-system er det også vigtigt at registrere <strong>it-systemforvalteren</strong>, dvs. den organisatoriske enhed eller person, som administrerer og træffer afgørelser vedrørende tekniske anliggender <strong>på vegne af</strong> systemejeren. I forbindelse med større it-systemer kan forvalterrollen være opdelt i en intern forretningsmæssig forvalterrolle og en teknisk forvalterrolle hos en leverandør.</p>
    <p class="example" id="example-4c832f83"><a class="self-link" href="#example-4c832f83"></a>Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
    <p>For databærende it-systemer skal den <strong>dataansvarlige</strong> aktør også angives, dvs. den organisation som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til "<em>en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger</em>", jf. GDPR<span>[12]</span>. Én myndighed kan være dataansvarlig for et system, mens det faktisk er <strong>databehandler,</strong> som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det.  Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. Datatilsynets vejledning om databehandlere og dataansvarlige<span>[13]</span>. Det kan også være relevant at angive den konkrete <strong>dataskaber</strong>, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.</p>
    <p>Et it-system kan dokumenteres ved hjælp af forskellige dokumenter, der hver har sit formål og målgruppe, fx via <strong>dokumentationsreference</strong> såsom arkitekturdokumentation, installationsvejledning og slutbrugervejledning.</p>
@@ -1758,7 +1749,7 @@ Information technology --- Framework and taxonomy of International Standardized 
    <p>Et it-system kan således indgå i en overordnet kortlægning med henblik på udarbejdelse af <strong>tilknyttede handlingsplaner</strong>. Denne oplysninger indgår ikke i basisprofilen, men ville være relevant at definere og medtage i en portefølgestyringsprofil.</p>
    <h3 class="heading settled" data-level="5.5" id="jura"><span class="secno">5.5. </span><span class="content">Jura</span><a class="self-link" href="#jura"></a></h3>
    <p>I forbindelse med ibrugtagning og anvendelse af et it-system kommer der typisk en lang række leverandørkontrakter i spil, men i denne standard fokuseres på leverandører, der leverer en ydelse ift. udvikling, vedligehold, drift og support af it-systemet. Disse oplysninger vil typisk være indsamlet og registreret i forbindelse med kontraktstyring.</p>
-   <p>Derudover vil det i denne standard også være muligt helt overordnet at angive it-systemets primære *<strong>udviklingspart</strong><em>, </em><strong>vedligeholdelsespart</strong>* og *<strong>driftspart</strong>*.</p>
+   <p>Derudover vil det i denne standard også være muligt helt overordnet at angive it-systemets primære <strong>udviklingspart</strong>, <strong>vedligeholdelsespart</strong> og <strong>driftspart</strong>.</p>
    <p>Bemærk dog, at denne direkte angivelse af it-systemets primære leverandører skal betragtes som en forenkling, som typisk ville kunne udledes via kontraktens parter.</p>
    <p>Bemærk også, at selvom interne -- både mundtlige og skriftlige -- aftaler vedrørende et mindre egenudviklet it-systems videreudvikling, vedligehold og drift ikke altid er beskrevet i formelle og juridisk bindende kontrakter, kan disse stadig betragtes som værende kontrakter, og beskrives som sådan.</p>
    <p>Allerede inden en givet produktserie tages i anvendelse, har produktserien typisk allerede en række relationer, som fx er registreret i OS2Kitos. De intellektuelle rettigheder til produkter i en produktserien besiddes af en *<strong>rettighedshaver</strong>*, og myndighedens brugsret i forhold til it-systemets og dets komponenter kan variere i forhold til it-systemets type og aftalte kontraktforhold.</p>
@@ -1788,23 +1779,12 @@ Information technology --- Framework and taxonomy of International Standardized 
    <p>Denne standard præsenterer et fælles udvekslingsformat til deling af oplysninger om it-systemer.</p>
    <h3 class="heading settled" data-level="6.1" id="flles-datamodel"><span class="secno">6.1. </span><span class="content">Fælles datamodel</span><a class="self-link" href="#flles-datamodel"></a></h3>
    <p>Basisprofilens bagvedliggende datamodel udgør den fælles specifikation, hvortil eksisterende it-systembeskrivelser kan mappes. Det er også ud fra denne datamodel, at et maskinfortolkeligt format er blevet udviklet.</p>
-   <p>Der gives en overordnet beskrivelse af dennes indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses to UML-diagrammer for hhv. basisprofilen og den første konkrete anvendelse i en arkivprofil. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values.</p>
+   <p>Der gives en overordnet beskrivelse af dennes indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses to UML-diagrammer for hhv. basisprofilen og den første konkrete anvendelse i en arkivprofil. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values. Der findes også en oversigt over modellens elementer online.</p>
    <ul>
     <li data-md>
-     <p>
-      Link til webudgivelse af UML-modellerne: 
-      <httpU0003A data.gov.dk document itsystemspecification uml v1></httpU0003A>
-     </p>
-   </ul>
-   <p>Dataspecifikationen, der beskriver datamodellen i detaljer målrettet dataarkitekter, kan downloades via nedenstående link, og der findes også en oversigt over modellens elementer online.</p>
-   <ul>
+     <p>Link til webudgivelse af UML-modellerne: http://data.gov.dk/document/itsystem-ap/v1/uml/</p>
     <li data-md>
-     <p>Link til online oversigt over modellens elementer: [https://data.gov.dk/model/profile/itsystemap(https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fprofile%2Fitsystemap.rdf&amp;sheet=transform2RDFreport_da-en.xsl)</p>
-    <li data-md>
-     <p>
-      Link til download af anvendelsesprofildokumentet [kommer]: 
-      <httpU0003A data.gov.dk dataspecification document itsystemspecification v1></httpU0003A>
-     </p>
+     <p>Link til online oversigt over modellens elementer: https://github.com/digst/IT-System-AP/tree/master/SYS-AP</p>
    </ul>
    <h3 class="heading settled" data-level="6.2" id="maskinfortolkeligt-format"><span class="secno">6.2. </span><span class="content">Maskinfortolkeligt format</span><a class="self-link" href="#maskinfortolkeligt-format"></a></h3>
    <p>Hvis data skal deles på tværs, bør det være <em>digitalt understøttet</em> i de systemer, der anvendes til registrering af systemoplysninger. Systemerne bør bygge på samme logik og standard, så systemerne er i stand til at udveksle data om it-systemer på tværs af organisatoriske skel. Det kan lade sig gøre, hvis data er maskinfortolkelige. Datamodellen er derfor udtrykt med UML med en bagvedliggende semantik med Resource Description Framework (RDF), der kan fortolkes af både mennesker og maskiner. Alle elementerne i datamodellen er derfor defineret inden for rammerne af RDF og har entydig identifikation, der kan anvendes direkte som metadatabeskrivelse af data. Data udtrykt med det maskinlæsbare udvekslingsformat kan også let valideres op imod den bagvedliggende datamodel og dermed sikre højere datakvalitet i de registrerede data.</p>
@@ -1814,7 +1794,7 @@ Information technology --- Framework and taxonomy of International Standardized 
    <p>Der er også blevet udarbejdet en minimal regnearksskabelon til registrering af oplysninger om it-systemer. Overskrifterne vil svare til egenskaberne, som de er præsenteret i denne standard, og hver element vil entydigt kunne mappes til den bagvedliggende datamodel. Dette betyder også, at det vil være muligt fx at konvertere data eksporteret i csv-format til et maskinfortolkeligt format.</p>
    <p>Regnearket har den fordel, at det er let at anvende, men regneark har også den store ulempe, at det ofte kræver manuel oprettelse og videre import. Det kan også være svært at repræsentere den kompleksitet, der faktisk kan være tilstede i den bagvedliggende datamodel. Eksempelvis kan et givet it-system godt skabe flere forskellige datasæt, som hver især kan dække forskellige perioder og have forskellige dataansvarlige tilknyttet. I den aktuelle skabelon er det kun muligt at registrere ét datasæt per it-system. Et it-system kan også udstille flere forskellige datasæt, og disses id’er må registreres i samme felt, selvom dette ikke er ideelt.</p>
    <p>I bilaget 'Skabelon til registrering i regneark' kan ses en visning af et sådant regneark, men det kan også downloades fra:</p>
-   <p><a href="https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx%20">https://data.gov.dk/document/itsystemspecification/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx</a></p>
+   <p><a href="https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx%20">https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx</a></p>
    <h2 class="heading settled" data-level="7" id="mapning-til-eksisterende-modeller"><span class="secno">7. </span><span class="content">Mapning til eksisterende modeller</span><a class="self-link" href="#mapning-til-eksisterende-modeller"></a></h2>
    <p>Som baggrund for udviklingen af denne standard er eksisterede modeller og værktøjsunderstøttelse til registrering af it-systemer blevet undersøgt.</p>
    <p>I dette kapitel refereres til en mapning til en række eksisterende modeller herunder bl.a. Kommunernes IT OverbliksSystem (OS2Kitos), Model for porteføljestyring af statslige it-systemer, Statens It Systemkort samt udvalgte oplysningstyper fra Rigsarkivets anmeldelses- og tilsynsskemaer.</p>
@@ -1823,7 +1803,7 @@ Information technology --- Framework and taxonomy of International Standardized 
    <p>Der er ikke hensigten, at denne standard som udgangspunkt skal kunne rumme alle disse specifikke oplysninger, men centrale oplysningstyper er blevet udvalgt med baggrund i standardens forventede anvendelse som beskrevet i Kapitel 2. Flere af de eksisterende modeller indeholder mange af de samme begreber eller oplysningstyper, selvom de ikke nødvendigvis er blevet kaldt det samme. Termerne varierer, og med denne standard gives et bud på foretrukne samt accepterede termer.</p>
    <p>Oplysningstyperne i denne standard er mappet eller gennemgået ift. til følgende modeller.</p>
    <p>Mapningsskema i form af et regneark, der kan downloades her:\</p>
-   <httpsU0003A data.gov.dk document itsystemspecification mapning_it-system_oplysninger.xlsx mappings v1>
+   <httpsU0003A data.gov.dk document itsystem-ap mapning_it-system_oplysninger.xlsx mappings v1>
     <ul>
      <li data-md>
       <p><strong>Rigsarkivets anmeldelses- og tilsynsskemaer</strong></p>
@@ -2435,957 +2415,392 @@ Kilde:
                                  <dd>angiv reference(r) til juridisk ressource, som danner grundlag for systemets anvendelse (kan udfyldes) 
                                  <dt>målgruppe
                                  <dd>angivelse af, hvilken gruppe af brugere it-systemet henvender sig til (kan udfyldes)
+                                 <dt>forretningsfunktion
+                                 <dd>angiv den forretningsfunktion som it-systemet understøtter(kan udfyldes)
                                  <dt>forgængersystem
                                  <dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes)
+                                 <dt>kritikalitetstype
+                                 <dd>angiv, om it-systemets anvendelse er samfundskritisk, forretningskritisk eller ikke kritisk (kan udfyldes)
                                 </dl>
-                                <p><strong>kritikalitetstype</strong></p>
-                                <p>|</p>
-                                <p>angiv, om it-systemets anvendelse er samfundskritisk, forretningskritisk eller ikke kritisk</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p>Styring</p>
-                                <p>|  |  |
-|</p>
-                                <p><strong>it-systemejer</strong></p>
-                                <p>|</p>
-                                <p>angiv person eller organisation med det oveordnede ansvar for et givent it-systems drift, vedligehold og anvendelse</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>it-systemforvalter</strong></p>
-                                <p>|</p>
-                                <p>angiv organisatorisk enhed eller medarbejder, som administrerer og træffer afgørelser vedrørende tekniske anliggender på vegne af systemejeren</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p>Jura</p>
-                                <p>|  |  |
-|</p>
-                                <p><strong>kontraktreference(r)</strong></p>
-                                <p>|</p>
-                                <p>angiv reference(r) til kontrakt relateret til it-systemets udvikling, vedligehold, drift eller support.</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>rettighedshaver</strong></p>
-                                <p>|</p>
-                                <p>Organisation, der ejer eller har dispositionsretten over de intellektuelle rettigheder over it-systemets primære softwareprodukt</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>udviklingsleverandør</strong></p>
-                                <p>|</p>
-                                <p>angiv den primære organisation, der har leveret udviklingsydelser ift. et it-system - herunder udvikling af software, inklusiv større tilpasninger af standardsystemer</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>vedligeholdelsesleverandør</strong></p>
-                                <p>|</p>
-                                <p>angiv den primære organisation, der leverer vedligeholdelsesydelser ift. et it-system</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>driftsleverandør</strong></p>
-                                <p>|</p>
-                                <p>angiv den primære organisation, der leverer driftsydelser ift. et it-system</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p>Infrastruktur</p>
-                                <p>|  |  |
-|</p>
-                                <p><strong>miljøtype</strong></p>
-                                <p>|</p>
-                                <p>angiv miljøtypen, it-systemet er ibrugtaget i</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p>Applikation</p>
-                                <p>|</p>
-                                <p><em> (Applikationslaget af et instantieret it-system i et fysisk it-miljø)</em></p>
-                                <p>|  |
-|</p>
-                                <p><strong>produktserie</strong></p>
-                                <p>|</p>
-                                <p>angiv navnet på den produktserie, der udgør it-systemets primære softwareprodukt</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>udstiller</strong></p>
-                                <p>|</p>
-                                <p>angiv det unikke ID for det eller de datasætrepræsentationer, som it-systemet udstiller (reference til Datasætkataloget)</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>anvender</strong></p>
-                                <p>|</p>
-                                <p>angiv det unikke ID for det eller de datasætrepræsentationer, som it-systemet anvender (reference til Datasætkataloget)</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p>Information</p>
-                                <p>|</p>
-                                <p><em> (Informationslaget af et instantieret it-system i et fysisk it-miljø)</em></p>
-                                <p>|  |
-|</p>
-                                <p><strong>datasætID</strong></p>
-                                <p>|</p>
-                                <p>angiv datasættes unikke ID</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>dataansvarlig</strong></p>
-                                <p>|</p>
-                                <p>angiv den organisation, som har dispositionsretten og træffer afgørelse om, hvordan data skal behandles</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>databehandler</strong></p>
-                                <p>|</p>
-                                <p>angiv organisation(er), som behandler personoplysninger på vegne af den dataansvarlige</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>dataskaber</strong></p>
-                                <p>|</p>
-                                <p>angiv den organisation, der har det primære ansvar for tilvejebringelsen af datasættet</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>titel</strong></p>
-                                <p>|</p>
-                                <p>angiv datasættets navn (det eller de ord, der navngiver datasættet)</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>beskrivelse</strong></p>
-                                <p>|</p>
-                                <p>beskriv datasættets formål og indhold (fx datasættet indeholder journalsager fra kommune x)</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>versionsnummer</strong></p>
-                                <p>|</p>
-                                <p>angiv eventuelt datasættets versionsnummer</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>første datatilføjelse</strong></p>
-                                <p>|</p>
-                                <p>angiv dato for første datatilføjelse</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>sidste datatilføjelse</strong></p>
-                                <p>|</p>
-                                <p>angiv dato for sidste datatilføjelse</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>personoplysningskategori</strong></p>
-                                <p>|</p>
-                                <p>angiv, om it-systemet indeholder almindelige personoplysninger, følsomme personoplysninger eller oplysninger om strafbare forhold (flere skal kunne vælges - udestår pt)</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>fortrolighedsgrad iht.\
-        sikkerhedscirkulæret</strong></p>
-                                <p>|</p>
-                                <p>angiv, i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|
-|</p>
-                                <p><strong>fortrolighedsgrad iht.\
-         ISO 27001</strong></p>
-                                <p>|</p>
-                                <p>angiv, i hvilket omfang information kan videregives iht. informationssikkerhedsstandarden ISO 27002</p>
-                                <p>|</p>
-                                <p><span class="production">&lt;&lt;Kan udfyldes>></span></p>
-                                <p>|</p>
+                                <h4 class="heading settled" data-level="9.1.4" id="udfyldelse-styring"><span class="secno">9.1.4. </span><span class="content">Udfyldelse: Styring</span><a class="self-link" href="#udfyldelse-styring"></a></h4>
+                                <dl class="def">
+                                 <dt>it-systemejer
+                                 <dd>angiv organisation med det oveordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes>)
+                                 <dt>it-systemforvalter
+                                 <dd>angiv organisatorisk enhed eller person, som administrerer og træffer afgørelser vedrørende tekniske anliggender på vegne af systemejeren (kan udfyldes)
+                                </dl>
+                                <h4 class="heading settled" data-level="9.1.5" id="udfyldelse-jura"><span class="secno">9.1.5. </span><span class="content">Udfyldelse: Jura</span><a class="self-link" href="#udfyldelse-jura"></a></h4>
+                                <dl class="def">
+                                 <dt>kontraktreference(r)
+                                 <dd>angiv reference(r) til kontrakt relateret til it-systemets udvikling, vedligehold, drift eller support (kan udfyldes).
+                                 <dt>rettighedshaver
+                                 <dd>Organisation, der ejer eller har dispositionsretten over de intellektuelle rettigheder over it-systemets primære softwareprodukt
+ (kan udfyldes)
+                                 <dt>udviklingsleverandør
+                                 <dd>angiv den primære organisation, der har leveret udviklingsydelser ift. et it-system - herunder udvikling af software, inklusiv større tilpasninger af standardsystemer (kan udfyldes)
+                                 <dt>vedligeholdelsesleverandør
+                                 <dd>angiv den primære organisation, der leverer vedligeholdelsesydelser ift. et it-system (kan udfyldes)
+                                 <dt>driftsleverandør
+                                 <dd>angiv den primære organisation, der leverer driftsydelser ift. et it-system (kan udfylds)
+                                </dl>
+                                <h4 class="heading settled" data-level="9.1.6" id="udfyldelse-infrastruktur"><span class="secno">9.1.6. </span><span class="content">Udfyldelse: Infrastruktur</span><a class="self-link" href="#udfyldelse-infrastruktur"></a></h4>
+                                <dl class="def">
+                                 <dt>miljøtype
+                                 <dd>angiv miljøtypen, it-systemet er ibrugtaget i (kan udfyldes)
+                                </dl>
+                                <h4 class="heading settled" data-level="9.1.7" id="udfyldelse-applikation"><span class="secno">9.1.7. </span><span class="content">Udfyldelse: Applikation</span><a class="self-link" href="#udfyldelse-applikation"></a></h4>
+                                 <em> (Applikationslaget af et instantieret it-system i et fysisk it-miljø)</em> 
+                                <dl class="def">
+                                 <dt>produktserie
+                                 <dd>angiv navnet på den produktserie, der udgør it-systemets primære softwareprodukt (kan udfyldes)
+                                 <dt>udstiller
+                                 <dd>angiv det unikke ID for det eller de datasætrepræsentationer, som it-systemet udstiller (reference til Datasætkataloget) (kan udfyldes)
+                                 <dt>anvender
+                                 <dd>angiv det unikke ID for det eller de datasætrepræsentationer, som it-systemet anvender (reference til Datasætkataloget) (kan udfyldes)
+                                </dl>
+                                <h4 class="heading settled" data-level="9.1.8" id="udfyldelse-information"><span class="secno">9.1.8. </span><span class="content">Udfyldelse: Information</span><a class="self-link" href="#udfyldelse-information"></a></h4>
+                                 <em> (Informationslaget af et instantieret it-system i et fysisk it-miljø)</em> 
+                                <dl class="def">
+                                 <dt>datasætID
+                                 <dd>angiv datasættes unikke ID (kan udfyldes)
+                                 <dt>dataansvarlig
+                                 <dd>angiv den organisation, som har dispositionsretten og træffer afgørelse om, hvordan data skal behandles (kan udfyldes)
+                                 <dt>databehandler 
+                                 <dd>angiv organisation(er), som behandler personoplysninger på vegne af den dataansvarlige (kan udfyldes)
+                                 <dt>dataskaber 
+                                 <dd>angiv den organisation, der har det primære ansvar for tilvejebringelsen af datasættet (kan udfyldes)
+                                 <dt>titel
+                                 <dd>angiv datasættets navn (det eller de ord, der navngiver datasættet) (kan udfyldes)
+                                 <dt>beskrivelse
+                                 <dd>beskriv datasættets formål og indhold (fx datasættet indeholder journalsager fra kommune x) (kan udfyldes)
+                                 <dt>versionsnummer
+                                 <dd>angiv eventuelt datasættets versionsnummer  (kan udfyldes)
+                                 <dt>første datatilføjelse
+                                 <dd>angiv dato for første datatilføjelse (kan udfyldes)
+                                 <dt>sidste datatilføjelse
+                                 <dd>angiv dato for sidste datatilføjelse (kan udfyldes)
+                                 <dt>personoplysningskategori
+                                 <dd> (kan udfyldes)
+                                 <dt>
+                                 <dd>angiv, om it-systemet indeholder almindelige personoplysninger, følsomme personoplysninger eller oplysninger om strafbare forhold (flere skal kunne vælges - udestår pt) (kan udfyldes)
+                                 <dt>fortrolighedsgrad iht. sikkerhedscirkulæret
+                                 <dd>angiv, i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO) (kan udfyldes)
+                                 <dt>fortrolighedsgrad iht. ISO 27002
+                                 <dd>angiv, i hvilket omfang information kan videregives iht. informationssikkerhedsstandarden ISO 27002 (kan udfyldes)
+                                </dl>
                                 <h3 class="heading settled" data-level="9.2" id="bilag-c-eksempel-maskinlsbart-format-rdf-xml"><span class="secno">9.2. </span><span class="content">Bilag C: Eksempel maskinlæsbart format (RDF/XML)</span><a class="self-link" href="#bilag-c-eksempel-maskinlsbart-format-rdf-xml"></a></h3>
                                 <p>(Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD)</p>
                                 <h4 class="heading settled" data-level="9.2.1" id="eksempeloutput-turtle-acadre-anvendt-i-kommune-x"><span class="secno">9.2.1. </span><span class="content">EKSEMPELOUTPUT TURTLE (Acadre anvendt i kommune X)</span><a class="self-link" href="#eksempeloutput-turtle-acadre-anvendt-i-kommune-x"></a></h4>
                                  NB: Ikke alle egenskaber medtaget i eksemplet 
 <pre>@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#> .
-
 @prefix dc: &lt;http://purl.org/dc/terms/> .
-
-@prefix sys: &lt;https://data.gov.dk/model/core/itsystem#> .
-
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#> .
-
-@prefix infra: &lt;https://data.gov.dk/model/core/infrastructure#> .
-
+@prefix infra: &lt;https://data.gov.dk/model/core/infrastructure/> .
+@prefix sys: &lt;https://data.gov.dk/model/core/itsystem/> .
 @prefix dcat: &lt;http://www.w3.org/ns/dcat#> .
-
 @prefix dcat-dk: &lt;https://data.gov.dk/model/core/dcat-dk#> .
 
 &lt;https://EXAMPLEURI1>
-
-  a &lt;https://data.gov.dk/model/core/itsystem#ITSystem> ;
-
- skos:prefLabel "Acadre "@da ;
-
+  a &lt;https://data.gov.dk/model/core/itsystem/ITSystem> ;
+  skos:prefLabel "Acadre "@da ;
   skos:altLabel "Acadre CM"@da ;
-
   dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ;
-
- sys:inUseFromDate "2019-01-01"^^xsd:date ;
-
+  sys:inUseFromDate "2019-01-01"^^xsd:date ;
   sys:hasApplicationPurposeFORM &lt;http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
-
   sys:hasApplicationPurposeKLE &lt;http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
-
-  sys:hasTargetGroup &lt;https://data.gov.dk/model/classification/itsystemcriticalitytype#employees> ;
-
-  sys:hasCriticality &lt;https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness> ;
-
-  sys:hasAquisitionType &lt;https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf> ;
-
+  schema:audience &lt;https://data.gov.dk/concept/core//itsystemcriticalitytype/employees> ;
+  sys:hasCriticality &lt;https://data.gov.dk/concept/core/itsystemcriticalitytype/CriticalForBusiness> ;
+  sys:hasAquisitionType &lt;https://data.gov.dk/concept/core//itsystemaquisitiontype/Commercial-off-the-shelf> ;
   infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
-
   sys:containsData True ;
-
   dc:hasPart &lt;https://EXAMPLEURI2> .
 
 &lt;https://EXAMPLEURI3>
-
   a sys:InstantiatedITSystem ;
-
-  sys:actsAs &lt;https://data.gov.dk/model/classification/itenvironmenttype#Production> ;
-
+  sys:actsAs &lt;https://data.gov.dk/concept/core/itenvironmenttype/Production> ;
   sys:instantiationOf &lt;https://EXAMPLEURI1> ;
-
   sys:producesDataset &lt;https://EXAMPLEURI4> .
 
 &lt;https://EXAMPLEURI2>
-
   a dcat:Dataset ;
-
   dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
+  dcat-dk:personalDataCategory &lt;https://data.gov.dk/concept/core/PersonalDataCategory/GeneralPersonalData> ;
+  dc:description "Journalsager fra komnune x"@da ;
 
-  dcat-dk:personalDataCategory &lt;https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ;
-
- dc:description "Journalsager fra komnune x"@da ;
-
-EKSEMPELOUTPUT I RDF/XML
-
-&lt;?xml version="1.0" encoding="utf-8"?>&lt;rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-
+</pre>
+                                <h3 class="heading settled" data-level="9.3" id="eksempeloutput-i-rdf-xml"><span class="secno">9.3. </span><span class="content">EKSEMPELOUTPUT I RDF/XML</span><a class="self-link" href="#eksempeloutput-i-rdf-xml"></a></h3>
+<pre>&lt;?xml version="1.0" encoding="utf-8"?>&lt;rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-
   xmlns:dc11="http://purl.org/dc/elements/1.1/"
-
   xmlns:voaf="http://purl.org/vocommons/voaf#"
-
   xmlns:dcterms="http://purl.org/dc/terms/"
-
   xmlns:dc="http://purl.org/dc/terms/"
-
   xmlns:dct="http://purl.org/dc/terms/"   
-
   xmlns:dcat="http://www.w3.org/ns/dcat#"
-
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-
   xmlns:prov="http://www.w3.org/ns/prov#"
-
   xmlns:adms="http://www.w3.org/ns/adms#"
-
   xmlns:cv="http://data.europa.eu/m8g/"
-
   xmlns:eli="http://data.europa.eu/eli/ontology#"
-
   xmlns:schema="http://schema.org/"
-
   xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk#" 
-
-  xmlns:sys="https://data.gov.dk/model/core/itsystem#"
-
-  xmlns:infra="https://data.gov.dk/model/core/infrastructure#"  >
-
+  xmlns:sys="https://data.gov.dk/model/core/itsystem/"
+  xmlns:infra="https://data.gov.dk/model/core/infrastructure/"  >
 
 &lt;rdf:Description rdf:about="https://EXAMPLEURI1">
-
-&lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#ITSystem"/>
-
-&lt;https://EXAMPLEURI2>
-
-  a dcat:Dataset ;
-
-  dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
-
-  dcat-dk:personalDataCategory &lt;https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData> ;
-
- dc:description "Journalsager fra komnune x"@da ;
-
+&lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem/ITSystem"/>
 &lt;skos:prefLabel xml:lang="da">Acadre &lt;/skos:prefLabel>
-
 &lt;skos:altLabel xml:lang="da">Acadre CM&lt;/skos:altLabel>
-
 &lt;dct:description xml:lang="da">Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering&lt;/dct:description>
-
 &lt;sys:inUseFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01&lt;/sys:inUseFromDate>
-
 &lt;sys:hasApplicationPurposeFORM rdf:resource="http://www.form-online.dk/opgavenoegle/65/#65.50.05"/>
-
 &lt;sys:hasApplicationPurposeKLE rdf:resource="http://www.kle-online.dk/emneplan/85/#_85.02.10"/>
-
-&lt;sys:hasCriticality rdf:resource="https://data.gov.dk/model/classification/itsystemcriticalitytype#CriticalForBusiness"/>
-
-&lt;sys:hasAquisitionType rdf:resource="https://data.gov.dk/model/classification/itsystemaquisitiontype#Commercial-off-the-shelf"/>
-
+&lt;schema:audience rdf:resource="https://data.gov.dk/concept/core//itsystemcriticalitytype/employees"/>
+&lt;sys:hasCriticality rdf:resource="https://data.gov.dk/concept/core/itsystemcriticalitytype/CriticalForBusiness"/>
+&lt;sys:hasAquisitionType rdf:resource="https://data.gov.dk/concept/core/itsystemaquisitiontype/Commercial-off-the-shelf"/>
 &lt;infra:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM&lt;/infra:instanceOfProductInSeries>
-
 &lt;sys:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">True&lt;/sys:containsData>
-
 &lt;/rdf:Description>
-
 
 &lt;rdf:Description rdf:about="https://EXAMPLEURI2">
-
-&lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-
-&lt;dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x&lt;/dcat-dk:dataResponsibleOrganisation>
-
-&lt;dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/model/classification/PersonalDataCategory#GeneralPersonalData"/>              
-
-&lt;dct:description xml:lang="da">Journalsager fra komnune x&lt;/dct:description>            
-
+  &lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+  &lt;dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x&lt;/dcat-dk:dataResponsibleOrganisation>
+  &lt;dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/concept/core/PersonalDataCategory/GeneralPersonalData"/>              
+  &lt;dct:description xml:lang="da">Journalsager fra komnune x&lt;/dct:description>            
 &lt;/rdf:Description>
 
-
 &lt;rdf:Description rdf:about="https://EXAMPLEURI3">
-
-    &lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#InstantiatedITSystem"/>
-
-    &lt;sys:actsAs rdf:resource="https://data.gov.dk/model/classification/itenvironmenttype#Production"/>
-
+    &lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem/InstantiatedITSystem"/>
+    &lt;sys:actsAs rdf:resource="https://data.gov.dk/concept/core/itenvironmenttype#Production"/>
     &lt;sys:instantiationOf rdf:resource="https://EXAMPLEURI1"/>
-
 &lt;/rdf:Description>
 
 &lt;/rdf:RDF>
+
 </pre>
-                                <h3 class="heading settled" data-level="9.3" id="bilag-d-om-datamodellen"><span class="secno">9.3. </span><span class="content">Bilag D: Om datamodellen</span><a class="self-link" href="#bilag-d-om-datamodellen"></a></h3>
-                                <p>UML-modellerne er udstillet på nedenstående link<span>[24]</span>(file:///G:/CTD-NY/Semantik/FODS%20Initiativ%208.1/Standard%20for%20beskrivelse%20af%20it-systemer/-%20UDVIKLING/Standardudkast/Standard%20for%20beskrivelse%20af%20it-systemer%20-%20Basisprofil%2020191206.docx#_ftn24):\</p>
-                                <httpU0003A data.gov.dk document itsystemspecification uml v1>
-                                 <p>I det følgende gives en overordnet beskrivelse af modellens indhold:</p>
-                                 <p>Et it-system indgår ofte i en organisations it-systemportefølje for at understøtte en proces digitalt. For offentlige myndigheder vil it-systemet typisk have en relation til den forvaltningsopgave, som myndigheden udfører, samt det relaterede lovgrundlag. It-systemet kan anvendes internt i myndigheden eller være målrettet eksterne brugere. Det kan også angives, hvorvidt et it-systems anvendelse er forretningskritisk, samfundskritisk eller ikke kritisk.</p>
-                                 <p>Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter, fx it-systemejer og it-systemforvalter.</p>
-                                 <p>Afhængig af hvordan it-systemet er anskaffet og taget i brug vil it-systemet have relationer til en række forskellige leverandører gennem kontraktforhold mellem ordregiver og leverandør om fx udvikling, vedligehold og drift. Er it-systemet anskaffet som et standardsystem i form af et softwareprodukt, kan rettighedshaver af produktet angives. Det er også muligt at angive den produktserie som produktet tilhører.</p>
-                                 <p>Det kan også være relevant at referere til dokumenter, der beskriver kravene, funktionaliteten, arkitekturen, anvendelsen, driften eller vedligeholdelsen af et it-system.</p>
-                                 <p>Et givet it-system kan instantieres i forskellige it-miljøer, fx et testmiljø eller et produktionsmiljø.</p>
-                                 <p>De data som logisk set er en del af it-systemet, kan betragtes som et datasæt. Disse datasæt bør beskrives på en ensartet måde med oplysninger om fx beskrivelse, dataansvarlig, personoplysningskategori, fortrolighedsgrad m.fl. Og konkrete fysiske repræsentationer af datasættet kan også forsynes med ensartede oplysninger ifm. udstilling som download eller via dataservices.</p>
-                                 <p>Oversigt over UML-modellens anvendelsesprofil, kernemodeller og klassifikationsmodeller</p>
-                                 <ul>
-                                  <li data-md>
-                                   <p>Anvendelsesprofilen:</p>
-                                 </ul>
-                                 <p>o <a href="https://data.gov.dk/document/itsystemspecification/v1/uml/">*IT System AP (Basic Profile)*</a></p>
-                                 <p>o <a href="https://data.gov.dk/document/itsystemspecification/v1/uml/">*IT System AP (Archive Profile)*</a>*</p>
-                                 <ul>
-                                  <li data-md>
-                                  <li data-md>
-                                   <p>Anvendte kernemodeller</p>
-                                 </ul>
-                                 <p>o <a href="https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fcore%2Fitsystem.rdf&amp;sheet=transform2RDFreport_da-en.xsl">*Vokabular for it-system (SYS)*</a></p>
-                                 <p>o <a href="https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fmodel%2Fcore%2Fdigitalarchival.rdf&amp;sheet=transform2RDFreport_da-en.xsl">*Vokabular for digital arkivering (ARCHV)*</a></p>
-                                 <p>o <a href="https://www.w3.org/TR/vocab-dcat-2/">*Data Catalog Vocabulary (DCAT)*</a></p>
-                                 <p>o <a href="https://www.w3.org/TR/skos-primer/">*Simple Knowledge Organization System (SKOS)*</a></p>
-                                 <p>o <a href="http://data.europa.eu/eli/ontology">*European Legislation Identifier (ELI)*</a></p>
-                                 <p>o <a href="https://spec.edmcouncil.org/fibo/">*Financial Industry Business Ontology (FIBO)*</a></p>
-                                 <p>o <a href="http://data.europa.eu/m8g/">*Core Vocabulary (CV)*</a></p>
-                                 <p>o <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">*Dublin Core Terms (DCT**)*</a></p>
-                                 <p>o <a href="https://www.w3.org/TR/vocab-org/">*Organization Ontology (ORG**)*</a></p>
-                                 <p>o <a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary">*Core Public Service Vocabulary (*</a><em>CPOV)</em></p>
-                                 <p>o <a href="http://xmlns.com/foaf/spec/">*Friend of A Friend (FOAF)*</a></p>
-                                 <p>o <a href="https://schema.org/">*SCHEMA.org (SCHEMA)*</a>*</p>
-                                 <ul>
-                                  <li data-md>
-                                  <li data-md>
-                                   <p>Anvendte klassifikationsmodeller</p>
-                                 </ul>
-                                 <p>o <em>Forvaltningsopgavetype (Public Administrative Task Type) -- (</em><a href="http://www.form-online.dk/soegning">*FORM*</a> <em>&amp;</em> <a href="http://www.kle-online.dk/soegning">*KLE*</a><em>)</em></p>
-                                 <p>o <a href="https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fconcept%2Fprofile%2FOperationalStatuses.rdf&amp;sheet=transform2RDFreport_da-en.xsl">*Operationel status (Operational Status)*</a></p>
-                                 <p>o <a href="https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fconcept%2Fprofile%2FITEnvironmentTypes.rdf&amp;sheet=transform2RDFreport_da-en.xsl">*IT-miljøtype*</a>* (IT Environment Type)*</p>
-                                 <p>o <a href="https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fconcept%2Fprofile%2FConfidentialityTypesNatoEU.rdf&amp;sheet=transform2RDFreport_da-en.xsl">*Fortrolighedsgrad (Data Confidentiality Type)*</a></p>
-                                 <p>o <a href="https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fconcept%2Fprofile%2FPersonalDataCategories.rdf&amp;sheet=transform2RDFreport_da-en.xsl">*Personoplysningskategori (Personal Data Category)*</a></p>
-                                 <p>o <a href="https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fconcept%2Fprofile%2FITSystemCriticalityTypes.rdf&amp;sheet=transform2RDFreport_da-en.xsl">*IT-systemkritikalitetstype (IT System Criticality Type)*</a></p>
-                                 <p>o <em>Målgruppe (Target Group)</em></p>
-                                 <p>o <em>IT-systemkontrakttype (IT System Contract Type)</em></p>
-                                 <h3 class="heading settled" data-level="9.4" id="bilag-e-uml-diagram-sys-ap"><span class="secno">9.4. </span><span class="content">Bilag E: UML-diagram: SYS-AP</span><a class="self-link" href="#bilag-e-uml-diagram-sys-ap"></a></h3>
-                                 <ul>
-                                  <li data-md>
-                                   <p>Namespace: https://data.gov.dk/model/profile/itsystemap#,</p>
-                                  <li data-md>
-                                   <p>Modelnavn (label): Anvendelsesprofil for it-systemer (SYS-AP)</p>
-                                  <li data-md>
-                                   <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
-                                  <li data-md>
-                                   <p>Versionnummer (versionInfo): 1.0.1</p>
-                                  <li data-md>
-                                   <p>Seneste opdateringsdato (dateModified): 11-11-2019</p>
-                                  <li data-md>
-                                   <p>Modelstatus (modelStatus): development</p>
-                                  <li data-md>
-                                   <p>Godkendelsesstatus (approvalStatus): afventer godkendelse\</p>
-                                  <li data-md>
-                                   <p>Modelomfang (modelScope): anvendelsesmodel</p>
-                                  <li data-md>
-                                   <p>Forretningsområde (theme): <a href="http://www.form-online.dk/opgavenoegle/06/#06.38.10.10">06.38.10.10 Arkitektur for den digitale infrastruktur</a>\</p>
-                                  <li data-md>
-                                   <p>Afledt af (wasDerivedFrom): <a href="https://data.gov.dk/model/concept/itsystem">https://data.gov.dk/model/concept/itsystem#</a></p>
-                                  <li data-md>
-                                   <p>Kommentar (comment):  Denne generelle anvendelsesprofil vil kunne anvendes til etablere et overordnet overblik og standardisere indsamlingen af oplysninger.</p>
-                                 </ul>
-                                 <p align="center"><img alt="UML-diagram" src="img/Figur_UML-SYS-AP.png.png" title="UML-diagram SYS-AP" width="800"></p>
-                                 <h3 class="heading settled" data-level="9.5" id="bilag-f-uml-diagram-sys"><span class="secno">9.5. </span><span class="content">Bilag F: UML-diagram: SYS</span><a class="self-link" href="#bilag-f-uml-diagram-sys"></a></h3>
-                                 <ul>
-                                  <li data-md>
-                                   <p>Namespace: https://data.gov.dk/model/core/itsystem#,</p>
-                                  <li data-md>
-                                   <p>Modelnavn (label): Vokabular til it-system (SYS)</p>
-                                  <li data-md>
-                                   <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
-                                  <li data-md>
-                                   <p>Versionnummer (versionInfo): 1.0.0</p>
-                                  <li data-md>
-                                   <p>Seneste opdateringsdato (dateModified): 11-11-2019</p>
-                                  <li data-md>
-                                   <p>Modelstatus (modelStatus): development</p>
-                                  <li data-md>
-                                   <p>Godkendelsesstatus (approvalStatus) : afventer godkendelse</p>
-                                  <li data-md>
-                                   <p>Modelomfang (modelScope): kernemodel</p>
-                                  <li data-md>
-                                   <p>Forretningsområde (theme): <a href="http://www.form-online.dk/opgavenoegle/06/#06.38.10.10">06.38.10.10 Arkitektur for den digitale infrastruktur</a>\</p>
-                                  <li data-md>
-                                   <p>Afledt af (wasDerivedFrom): <a href="https://data.gov.dk/model/concept/itsystem">https://data.gov.dk/model/concept/itsystem#</a></p>
-                                  <li data-md>
-                                   <p>Kommentar (comment):</p>
-                                 </ul>
-                                 <p align="center"><img alt="UML-diagram" src="img/Figur_UML-SYS.png" title="UML-diagram SYS" width="800"></p>
-                                 <h3 class="heading settled" data-level="9.6" id="bilag-g-begrebsliste-til-basisprofilen-sys-ap"><span class="secno">9.6. </span><span class="content">Bilag G: Begrebsliste til Basisprofilen (SYS-AP)</span><a class="self-link" href="#bilag-g-begrebsliste-til-basisprofilen-sys-ap"></a></h3>
-                                 <ul>
-                                  <li data-md>
-                                   <p>Namespace: https://data.gov.dk/concept/profile/itsystemap/</p>
-                                  <li data-md>
-                                   <p>Modelnavn (label): Begrebsliste til basisprofilen</p>
-                                  <li data-md>
-                                   <p>Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)</p>
-                                  <li data-md>
-                                   <p>Versionnummer (versionInfo): 1.0.0</p>
-                                  <li data-md>
-                                   <p>Seneste opdateringsdato (dateModified): 11-11-2019</p>
-                                  <li data-md>
-                                   <p>Modelstatus (modelStatus): development</p>
-                                  <li data-md>
-                                   <p>Godkendelsesstatus (approvalStatus): afventer godkendelse</p>
-                                  <li data-md>
-                                   <p>Forretningsområde (theme):  65.50.05.10 Sagsarkivering</p>
-                                  <li data-md>
-                                   <p>Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/</p>
-                                  <li data-md>
-                                   <p>Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. registrering af basisoplysninger om it-systemer.</p>
-                                 </ul>
-                                 <p>|</p>
-                                 <p><strong>Foretrukken dansk term</strong></p>
-                                 <p>|</p>
-                                 <p><strong>Definition</strong></p>
-                                 <p>|</p>
-                                 <p><strong>Juridisk kilde</strong></p>
-                                 <p>|</p>
-                                 <p><strong>Kilde</strong></p>
-                                 <p>|</p>
-                                 <p><strong>Tilhører emneområde</strong></p>
-                                 <p>|</p>
-                                 <p><strong>Foretrukken engelsk term</strong></p>
-                                 <p>|
+                                <h3 class="heading settled" data-level="9.4" id="bilag-d-om-datamodellen"><span class="secno">9.4. </span><span class="content">Bilag D: Om datamodellen</span><a class="self-link" href="#bilag-d-om-datamodellen"></a></h3>
+                                <p>UML-modellerne er udstillet på nedenstående link:</p>
+                                <p>http://data.gov.dk/document/itsystem-ap/v1/uml/</p>
+                                <p>I det følgende gives en overordnet beskrivelse af modellens indhold:</p>
+                                <p>Et it-system indgår ofte i en organisations it-systemportefølje for at understøtte en proces digitalt. For offentlige myndigheder vil it-systemet typisk have en relation til den forvaltningsopgave, som myndigheden udfører via forretningsfunktioner, samt det relaterede lovgrundlag. It-systemet kan anvendes internt i myndigheden eller være målrettet eksterne brugere. Det kan også angives, hvorvidt et it-systems anvendelse er forretningskritisk, samfundskritisk eller ikke kritisk.</p>
+                                <p>Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter, fx it-systemejer og it-systemforvalter.</p>
+                                <p>Afhængig af hvordan it-systemet er anskaffet og taget i brug vil it-systemet have relationer til en række forskellige leverandører gennem kontraktforhold mellem ordregiver og leverandør om fx udvikling, vedligehold og drift. Er it-systemet anskaffet som et standardsystem i form af et softwareprodukt, kan rettighedshaver af produktet angives. Det er også muligt at angive den produktserie som produktet tilhører.</p>
+                                <p>Det kan også være relevant at referere til dokumenter, der beskriver kravene, funktionaliteten, arkitekturen, anvendelsen, driften eller vedligeholdelsen af et it-system.</p>
+                                <p>Et givet it-system kan instantieres i forskellige it-miljøer, fx et testmiljø eller et produktionsmiljø.</p>
+                                <p>De data som logisk set er en del af it-systemet, kan betragtes som et datasæt. Disse datasæt bør beskrives på en ensartet måde med oplysninger om fx beskrivelse, dataansvarlig, personoplysningskategori, fortrolighedsgrad m.fl. Og konkrete fysiske repræsentationer af datasættet kan også forsynes med ensartede oplysninger ifm. udstilling som download eller via dataservices.</p>
+                                <p>Oversigt over UML-modellens anvendelsesprofil, kernemodeller og klassifikationsmodeller</p>
+                                <p>Anvendelsesprofilen:</p>
+                                <ul>
+                                 <li data-md>
+                                  <p><a href="https://data.gov.dk/document/itsystem-ap/v1/uml/">*IT System AP (Basic Profile)*</a></p>
+                                 <li data-md>
+                                  <p><a href="https://data.gov.dk/document/itsystem-ap/v1/uml/">*IT System AP (Archive Profile)*</a>*</p>
+                                </ul>
+                                <p>Anvendte kernemodeller</p>
+                                <ul>
+                                 <li data-md>
+                                  <p>[<em>Vokabular for it-system (SYS)</em>](https://data.gov.dk/model/core/itsystem/</p>
+                                 <li data-md>
+                                  <p>[<em>Vokabular for digital arkivering (ARCHV)</em>](https://data.gov.dk/model/core/digitalarchival/</p>
+                                 <li data-md>
+                                  <p><a href="https://www.w3.org/TR/vocab-dcat-2/">*Data Catalog Vocabulary (DCAT)*</a></p>
+                                 <li data-md>
+                                  <p><a href="https://www.w3.org/TR/skos-primer/">*Simple Knowledge Organization System (SKOS)*</a></p>
+                                 <li data-md>
+                                  <p><a href="http://data.europa.eu/eli/ontology">*European Legislation Identifier (ELI)*</a></p>
+                                 <li data-md>
+                                  <p><a href="https://spec.edmcouncil.org/fibo/">*Financial Industry Business Ontology (FIBO)*</a></p>
+                                 <li data-md>
+                                  <p><a href="http://data.europa.eu/m8g/">*Core Vocabulary (CV)*</a></p>
+                                 <li data-md>
+                                  <p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">*Dublin Core Terms (DCT**)*</a></p>
+                                 <li data-md>
+                                  <p><a href="https://www.w3.org/TR/vocab-org/">*Organization Ontology (ORG**)*</a></p>
+                                 <li data-md>
+                                  <p><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary">*Core Public Service Vocabulary (*</a><em>CPOV)</em></p>
+                                 <li data-md>
+                                  <p><a href="http://xmlns.com/foaf/spec/">*Friend of A Friend (FOAF)*</a></p>
+                                 <li data-md>
+                                  <p><a href="https://schema.org/">*SCHEMA.org (SCHEMA)*</a>*</p>
+                                </ul>
+                                <p>Anvendte klassifikationsmodeller</p>
+                                <ul>
+                                 <li data-md>
+                                  <p>*Forvaltningsopgavetype (Public Administrative Task Type) —<wbr>(<a href="http://www.form-online.dk/soegning">*FORM*</a> &amp; <a href="http://www.kle-online.dk/soegning">*KLE*</a>*)</p>
+                                 <li data-md>
+                                  <p><em>Operationel status (Operational Status)</em></p>
+                                 <li data-md>
+                                  <p><em>IT-miljøtype (IT Environment Type)</em></p>
+                                 <li data-md>
+                                  <p><em>Fortrolighedsgrad (Data Confidentiality Type)</em></p>
+                                 <li data-md>
+                                  <p><em>Personoplysningskategori (Personal Data Category)</em></p>
+                                 <li data-md>
+                                  <p><em>IT-systemkritikalitetstype (IT System Criticality Type)</em></p>
+                                 <li data-md>
+                                  <p><em>Målgruppe (Target Group)</em></p>
+                                 <li data-md>
+                                  <p><em>IT-systemkontrakttype (IT System Contract Type)</em></p>
+                                </ul>
+                                <h3 class="heading settled" data-level="9.5" id="bilag-e-uml-diagram-sys-ap"><span class="secno">9.5. </span><span class="content">Bilag E: UML-diagram: SYS-AP</span><a class="self-link" href="#bilag-e-uml-diagram-sys-ap"></a></h3>
+                                <ul>
+                                 <li data-md>
+                                  <p>Namespace: https://data.gov.dk/model/profile/itsystemap/,</p>
+                                 <li data-md>
+                                  <p>Modelnavn (label): Anvendelsesprofil for it-systemer (SYS-AP)</p>
+                                 <li data-md>
+                                  <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
+                                 <li data-md>
+                                  <p>Versionnummer (versionInfo): 1.0.1</p>
+                                 <li data-md>
+                                  <p>Seneste opdateringsdato (dateModified): 11-11-2019</p>
+                                 <li data-md>
+                                  <p>Modelstatus (modelStatus): development</p>
+                                 <li data-md>
+                                  <p>Godkendelsesstatus (approvalStatus): afventer godkendelse\</p>
+                                 <li data-md>
+                                  <p>Modelomfang (modelScope): anvendelsesmodel</p>
+                                 <li data-md>
+                                  <p>Forretningsområde (theme): <a href="http://www.form-online.dk/opgavenoegle/06/#06.38.10.10">06.38.10.10 Arkitektur for den digitale infrastruktur</a>\</p>
+                                 <li data-md>
+                                  <p>Afledt af (wasDerivedFrom): <a href="https://data.gov.dk/model/concept/itsystem">https://data.gov.dk/model/concept/itsystem/</a></p>
+                                 <li data-md>
+                                  <p>Kommentar (comment):  Denne generelle anvendelsesprofil vil kunne anvendes til etablere et overordnet overblik og standardisere indsamlingen af oplysninger.</p>
+                                </ul>
+                                <p align="center"><img alt="UML-diagram" src="img/Figur_UML-SYS-AP.png.png" title="UML-diagram SYS-AP" width="800"></p>
+                                <h3 class="heading settled" data-level="9.6" id="bilag-f-uml-diagram-sys"><span class="secno">9.6. </span><span class="content">Bilag F: UML-diagram: SYS</span><a class="self-link" href="#bilag-f-uml-diagram-sys"></a></h3>
+                                <ul>
+                                 <li data-md>
+                                  <p>Namespace: https://data.gov.dk/model/core/itsystem/,</p>
+                                 <li data-md>
+                                  <p>Modelnavn (label): Vokabular til it-system (SYS)</p>
+                                 <li data-md>
+                                  <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
+                                 <li data-md>
+                                  <p>Versionnummer (versionInfo): 1.0.0</p>
+                                 <li data-md>
+                                  <p>Seneste opdateringsdato (dateModified): 03-02-2020</p>
+                                 <li data-md>
+                                  <p>Modelstatus (modelStatus): stable</p>
+                                 <li data-md>
+                                  <p>Godkendelsesstatus (approvalStatus) : godkendt</p>
+                                 <li data-md>
+                                  <p>Modelomfang (modelScope): kernemodel</p>
+                                 <li data-md>
+                                  <p>Forretningsområde (theme): <a href="http://www.form-online.dk/opgavenoegle/06/#06.38.10.10">06.38.10.10 Arkitektur for den digitale infrastruktur</a>\</p>
+                                 <li data-md>
+                                  <p>Afledt af (wasDerivedFrom): <a href="https://data.gov.dk/model/concept/itsystem">https://data.gov.dk/model/concept/itsystem/</a></p>
+                                 <li data-md>
+                                  <p>Kommentar (comment):</p>
+                                </ul>
+                                <p align="center"><img alt="UML-diagram" src="img/Figur_UML-SYS.png" title="UML-diagram SYS" width="800"></p>
+                                <h3 class="heading settled" data-level="9.7" id="bilag-g-begrebsliste-til-basisprofilen-sys-ap"><span class="secno">9.7. </span><span class="content">Bilag G: Begrebsliste til Basisprofilen (SYS-AP)</span><a class="self-link" href="#bilag-g-begrebsliste-til-basisprofilen-sys-ap"></a></h3>
+                                <ul>
+                                 <li data-md>
+                                  <p>Namespace: https://data.gov.dk/concept/profile/itsystemap/</p>
+                                 <li data-md>
+                                  <p>Modelnavn (label): Begrebsliste til basisprofilen</p>
+                                 <li data-md>
+                                  <p>Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)</p>
+                                 <li data-md>
+                                  <p>Versionnummer (versionInfo): 1.0.0</p>
+                                 <li data-md>
+                                  <p>Seneste opdateringsdato (dateModified): 03-02-2020</p>
+                                 <li data-md>
+                                  <p>Modelstatus (modelStatus): stable</p>
+                                 <li data-md>
+                                  <p>Godkendelsesstatus (approvalStatus) : godkendt</p>
+                                 <li data-md>
+                                  <p>Forretningsområde (theme):  65.50.05.10 Sagsarkivering</p>
+                                 <li data-md>
+                                  <p>Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/</p>
+                                 <li data-md>
+                                  <p>Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. registrering af basisoplysninger om it-systemer.</p>
+                                </ul>
+                                <p><var>Foretrukken dansk term</var> Definition | Juridisk kilde | Kilde | Tilhører emneområde | Foretrukken engelsk term |
 | --- | --- | --- | --- | --- | --- |
-|</p>
-                                 <p><strong>brugergrænseflade</strong></p>
-                                 <p>|</p>
-                                 <p><em>snitflade, hvorigennem mennesker kan få adgang til et it-system, som den viser sig i udformningen af skærmbilleder og skærmdialog</em></p>
-                                 <p>|  |  |</p>
-                                 <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                 <p>|</p>
-                                 <p>user interface</p>
-                                 <p>|
-|</p>
-                                 <p><strong>dataansvarlig</strong></p>
-                                 <p>|</p>
-                                 <p><em>organisation, som har det administrative ansvar for data</em></p>
-                                 <p>|  |  |  |</p>
-                                 <p>data responsible organisation</p>
-                                 <p>|
-|</p>
-                                 <p><strong>databehandler</strong></p>
-                                 <p>|</p>
-                                 <p><em>en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der behandler personoplysninger på den dataansvarliges vegne</em></p>
-                                 <p>|</p>
-                                 <p>http://data.europa.eu/eli/reg/2016/679/oj</p>
-                                 <p>|  |</p>
-                                 <p>https://data.gov.dk/model/concept/dataprotection#</p>
-                                 <p>|</p>
-                                 <p>data processor</p>
-                                 <p>|
-|</p>
-                                 <p><strong>dataservice</strong></p>
-                                 <p>|</p>
-                                 <p><em>snitflade, hvorigennem it-systemer kan få adgang til et eller flere datasæt eller databehandlingsfunktioner</em></p>
-                                 <p>|  |</p>
-                                 <p>https://www.w3.org/TR/vocab-dcat/</p>
-                                 <p>|</p>
-                                 <p>https://data.gov.dk/model/concept/dataset#</p>
-                                 <p>|</p>
-                                 <p>data service</p>
-                                 <p>|
-|</p>
-                                 <p><strong>dataskaber</strong></p>
-                                 <p>|</p>
-                                 <p><em>organisation, der har det primære ansvar for tilvejebringelsen af datasættet</em></p>
-                                 <p>|  |</p>
-                                 <httpsU0003A dcat-application-profile-data-portals-europe joinup.ec.europa.eu solution>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/dataset#</p>
-                                  <p>|</p>
-                                  <p>data creator</p>
-                                  <p>|
-|</p>
-                                  <p><strong>datasletning</strong></p>
-                                  <p>|</p>
-                                  <p><em>sletning af alle link til eller kopier eller gengivelser af de pågældende personoplysninger</em></p>
-                                  <p>|</p>
-                                  <p>http://data.europa.eu/eli/reg/2016/679/oj</p>
-                                  <p>|  |</p>
-                                  <p>https://data.gov.dk/model/concept/digitalarchival#</p>
-                                  <p>|</p>
-                                  <p>data erasure</p>
-                                  <p>|
-|</p>
-                                  <p><strong>datasletningsfrist</strong></p>
-                                  <p>|</p>
-                                  <p><em>dato for, hvornår data i systemet forventes at skulle være slettet forinden</em></p>
-                                  <p>|</p>
-                                  <p>https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf</p>
-                                  <p>|</p>
-                                  <p>https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/digitalarchival#</p>
-                                  <p>|</p>
-                                  <p>data erasure deadline</p>
-                                  <p>|
-|</p>
-                                  <p><strong>datasæt</strong></p>
-                                  <p>|</p>
-                                  <p><em>samling af data sammenstillet af en enkelt aktør</em></p>
-                                  <p>|  |</p>
-                                  <p>https://www.w3.org/TR/vocab-dcat/,</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/dataset#</p>
-                                  <p>|</p>
-                                  <p>dataset</p>
-                                  <p>|
-|</p>
-                                  <p><strong>datasætrepræsentation</strong></p>
-                                  <p>|</p>
-                                  <p><em>specifik fysisk repræsentation af et datasæt</em></p>
-                                  <p>|  |</p>
-                                  <p>https://www.w3.org/TR/vocab-dcat/,</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/datasetdistribution#</p>
-                                  <p>|</p>
-                                  <p>distribution</p>
-                                  <p>|
-|</p>
-                                  <p><strong>den registrerede</strong></p>
-                                  <p>|</p>
-                                  <p><em>person, om hvem oplysninger behandles</em></p>
-                                  <p>|</p>
-                                  <p>http://data.europa.eu/eli/reg/2016/679/oj</p>
-                                  <p>|</p>
-                                  <p>Referencearkitektur for deling af data og dokumenter</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/dataprotection#</p>
-                                  <p>|</p>
-                                  <p>data subject</p>
-                                  <p>|
-|</p>
-                                  <p><strong>forgængersystem</strong></p>
-                                  <p>|</p>
-                                  <p><em>system, der tidligere har varetaget samme funktion</em></p>
-                                  <p>|</p>
-                                  <p>https://www.retsinformation.dk/eli/lta/2010/1007</p>
-                                  <p>|  |</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>predessor system</p>
-                                  <p>|
-|</p>
-                                  <p><strong>fortrolighedsgrad</strong></p>
-                                  <p>|</p>
-                                  <p><em>grad af fortrolighed, forstået som i hvilket omfang information kan videregives</em></p>
-                                  <p>|  |  |</p>
-                                  <p>https://data.gov.dk/model/concept/informationsecurity#</p>
-                                  <p>|</p>
-                                  <p>confidentiality type</p>
-                                  <p>|
-|</p>
-                                  <p><strong>fortrolighedsgrad iht. ISO 27002</strong></p>
-                                  <p>|</p>
-                                  <p><em>fortrolighedsgrad, forstået som i hvilket omfang information kan videregives iht. informationssikkerhedsstandarden ISO/IEC 27002</em></p>
-                                  <p>|  |</p>
-                                  <p>https://www.iso.org/standard/54533.html</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/informationsecurity#</p>
-                                  <p>|</p>
-                                  <p>ISO 27002 Data Classification</p>
-                                  <p>|
-|</p>
-                                  <p><strong>fortrolighedsgrad iht. Sikkerhedscirkulæret</strong></p>
-                                  <p>|</p>
-                                  <p><em>fortrolighedsgrad, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (Nato &amp; EU Dataklassifikation)</em></p>
-                                  <p>|</p>
-                                  <p>https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
-                                  <p>|  |</p>
-                                  <p>https://data.gov.dk/model/concept/informationsecurity#</p>
-                                  <p>|</p>
-                                  <p>Nato &amp; EU Data Classification</p>
-                                  <p>|
-|</p>
-                                  <p><strong>informationssystem</strong></p>
-                                  <p>|</p>
-                                  <p><em>system til indsamling, organisering, lagring og kommunikation af viden</em></p>
-                                  <p>|  |  |</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>information system</p>
-                                  <p>|
-|</p>
-                                  <p><strong>instantieret it-system</strong></p>
-                                  <p>|</p>
-                                  <p><em>fysisk instans af et it-system i et bestemt it-miljø</em></p>
-                                  <p>|  |  |</p>
-                                  <p>https://data.gov.dk/model/concept/itsysteInstancem#</p>
-                                  <p>|</p>
-                                  <p>IT system instance</p>
-                                  <p>|
-|</p>
-                                  <p><strong>it-leverandør</strong></p>
-                                  <p>|</p>
-                                  <p><em>aktør, som leverer it-tjenester</em></p>
-                                  <p>|  |  |</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>IT supplier</p>
-                                  <p>|
-|</p>
-                                  <p><strong>it-miljøtype</strong></p>
-                                  <p>|</p>
-                                  <p><em>type af miljø, som et it-system kan ibrugtages i</em></p>
-                                  <p>|  |</p>
-                                  <p>https://en.wikipedia.org/wiki/Deployment_environment\
-Statens-IT Systemkort</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>environment type</p>
-                                  <p>|
-|</p>
-                                  <p><strong>it-system</strong></p>
-                                  <p>|</p>
-                                  <p><em>system, der består af digitale informationsteknologier</em></p>
-                                  <p>|  |</p>
-                                  <p>https://www.iso.org/standard/63711.html</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>IT system</p>
-                                  <p>|
-|</p>
-                                  <p><strong>it-systemmålgruppe</strong></p>
-                                  <p>|</p>
-                                  <p><em>gruppe af brugere, som et givent it-system henvender sig til</em></p>
-                                  <p>|  |  |</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>IT system target group</p>
-                                  <p>|
-|</p>
-                                  <p><strong>it-systemejer</strong></p>
-                                  <p>|</p>
-                                  <p><em>person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse</em></p>
-                                  <p>|  |</p>
-                                  <p>https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>IT system owner</p>
-                                  <p>|
-|</p>
-                                  <p><strong>it-systemforvalter</strong></p>
-                                  <p>|</p>
-                                  <p><em>organisatorisk enhed eller medarbejder, som administrerer og træffer afgørelser vedrørende tekniske anliggender på vegne af systemejeren</em></p>
-                                  <p>|  |  |</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>IT system manager</p>
-                                  <p>|
-|</p>
-                                  <p><strong>kontrakt</strong></p>
-                                  <p>|</p>
-                                  <p><em>frivillig juridisk gældende aftale mellem to eller flere parter</em></p>
-                                  <p>|  |</p>
-                                  <p>https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/contract#</p>
-                                  <p>|</p>
-                                  <p>contract</p>
-                                  <p>|
-|</p>
-                                  <p><strong>kritikalitetstype</strong></p>
-                                  <p>|</p>
-                                  <p><em>type af</em> <em>kritikalitet ud fra hvorvidt et it-systems driftsforstyrelser udgør en særlig høj risiko</em></p>
-                                  <p>|  |</p>
-                                  <p>https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                  <p>|</p>
-                                  <p>criticality type</p>
-                                  <p>|
-|</p>
-                                  <p><strong>leverandør</strong></p>
-                                  <p>|</p>
-                                  <p><em>kontraktpart, der har rollen som leverandør</em></p>
-                                  <p>|  |</p>
-                                  <p>https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/</p>
-                                  <p>|</p>
-                                  <p>https://data.gov.dk/model/concept/contract#</p>
-                                  <p>|</p>
-                                  <p>counter party</p>
-                                  <p>|
-|</p>
-                                  <p><strong>offentlig forvaltningsopgavetype</strong></p>
-                                  <p>|</p>
-                                  <p><em>type af opgave, der udføres af offentlige organisationer</em></p>
-                                  <p>|  |</p>
-                                  <httpsU0003A anvendelsesprofil-organisationer arkitektur.digst.dk datastandarder rammearkitektur>
-                                   <p>|</p>
-                                   <p>https://data.gov.dk/model/concept/organisation#</p>
-                                   <p>|</p>
-                                   <p>public administrative task type</p>
-                                   <p>|
-|</p>
-                                   <p><strong>ordregiver</strong></p>
-                                   <p>|</p>
-                                   <p><em>kontraktpart, der har rollen som ordregiver</em></p>
-                                   <p>|  |</p>
-                                   <p>https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/</p>
-                                   <p>|</p>
-                                   <p>https://data.gov.dk/model/concept/contract#</p>
-                                   <p>|</p>
-                                   <p>principal party</p>
-                                   <p>|
-|</p>
-                                   <p><strong>organisation</strong></p>
-                                   <p>|</p>
-                                   <p><em>samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur</em></p>
-                                   <p>|  |</p>
-                                   <p>http://www.w3.org/ns/org#;\</p>
-                                   <httpsU0003A anvendelsesprofil-organisationer arkitektur.digst.dk datastandarder rammearkitektur>
-                                    <p>|</p>
-                                    <p>https://data.gov.dk/model/concept/organisation#</p>
-                                    <p>|</p>
-                                    <p>organization</p>
-                                    <p>|
-|</p>
-                                    <p><strong>persondataansvarlig</strong></p>
-                                    <p>|</p>
-                                    <p><em>en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger</em></p>
-                                    <p>|</p>
-                                    <p>http://data.europa.eu/eli/reg/2016/679/oj</p>
-                                    <p>|</p>
-                                    <p>https://w3id.org/GDPRtEXT#Processor</p>
-                                    <p>|</p>
-                                    <p>https://data.gov.dk/model/concept/dataprotection#</p>
-                                    <p>|</p>
-                                    <p>controller</p>
-                                    <p>|
-|</p>
-                                    <p><strong>personoplysningskategori</strong></p>
-                                    <p>|</p>
-                                    <p><em>kategori af personoplysninger set i forhold til følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</em></p>
-                                    <p>|</p>
-                                    <p>http://data.europa.eu/eli/reg/2016/679/oj</p>
-                                    <p>|</p>
-                                    <p>https://www.datatilsynet.dk/media/6567/fortegnelse.pdf</p>
-                                    <p>|</p>
-                                    <p>https://data.gov.dk/model/concept/dataprotection#</p>
-                                    <p>|</p>
-                                    <p>personal data category</p>
-                                    <p>|
-|</p>
-                                    <p><strong>personoplysningsunderkategori</strong></p>
-                                    <p>|</p>
-                                    <p><em>præcisering af, hvilken underkategori af persondata systemet indeholder</em></p>
-                                    <p>|  |</p>
-                                    <p>notat om GDPR-modul i KITOS</p>
-                                    <p>|</p>
-                                    <p>https://data.gov.dk/model/concept/dataprotection#</p>
-                                    <p>|</p>
-                                    <p>personal data subcategory</p>
-                                    <p>|
-|</p>
-                                    <p><strong>produktserie</strong></p>
-                                    <p>|</p>
-                                    <p><em>produkter eller varer markedsført som en serie</em></p>
-                                    <p>|  |  |</p>
-                                    <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                    <p>|</p>
-                                    <p>product series</p>
-                                    <p>|
-|</p>
-                                    <p><strong>retskilde</strong></p>
-                                    <p>|</p>
-                                    <p><em>intellektuelt værk, der fastsætter juridiske regler og retsbestemmelser</em></p>
-                                    <p>|  |</p>
-                                    <httpsU0003A U0002D dataset eli en eu-vocabularies model publications.europa.eu resource web>
-                                     <p>|</p>
-                                     <p>https://data.gov.dk/model/concept/legalresource#</p>
-                                     <p>|</p>
-                                     <p>legal resource</p>
-                                     <p>|
-|</p>
-                                     <p><strong>sagsområde</strong></p>
-                                     <p>|</p>
-                                     <p><em>kategori af sager iht. bekendtgørelser for bevaring og kassation af digitale arkivalier på det regionale eller kommunale område</em></p>
-                                     <p>|</p>
-                                     <p>https://www.retsinformation.dk/eli/lta/2003/591;</p>
-                                     <p>https://www.retsinformation.dk/eli/lta/2015/266; https://www.retsinformation.dk/eli/lta/2018/183;</p>
-                                     <p>|</p>
-                                     <p>https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer/</p>
-                                     <p>|</p>
-                                     <p>https://data.gov.dk/model/concept/digitalarchival#</p>
-                                     <p>|</p>
-                                     <p>case area</p>
-                                     <p>|
-|</p>
-                                     <p><strong>system</strong></p>
-                                     <p>|</p>
-                                     <p><em>kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærede formål</em></p>
-                                     <p>|  |</p>
-                                     <p>ISO/IEC 15288: https://www.iso.org/standard/63711.html</p>
-                                     <p>|</p>
-                                     <p>https://data.gov.dk/model/concept/system#</p>
-                                     <p>|</p>
-                                     <p>system</p>
-                                     <p>|
-|</p>
-                                     <p><strong>systemdokumentation</strong></p>
-                                     <p>|</p>
-                                     <p><em>skriftligt materiale, der redegør for et bestemt aspekt af it-systemet, herunder forretningskrav, funktionalitet, arkitektur, drift, vedligeholdelse og anvendelse</em></p>
-                                     <p>|  |  |</p>
-                                     <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                     <p>|</p>
-                                     <p>system documentation</p>
-                                     <p>|
-|</p>
-                                     <p><strong>anskaffelsestype</strong></p>
-                                     <p>|</p>
-                                     <p><em>type af anskaffelse af et it-system</em></p>
-                                     <p>|  |</p>
-                                     <p>https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html</p>
-                                     <p>|</p>
-                                     <p>https://data.gov.dk/model/concept/itsystem#</p>
-                                     <p>|</p>
-                                     <p>IT system aquisition type</p>
-                                     <p>|</p>
-                                     <p>
-                                      (se metadata og begrebsdiagrammer online: 
-                                      <httpsU0003A data.gov.dk document itsystemspecification uml v1>)</httpsU0003A>
-                                     </p>
-                                     <p>|</p>
-                                     <hr>
-                                     <p>Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer. Der indsamles oplysninger om offentlige it-systemer mange steder, så der er god værdi i at standardisere den måde hvorpå it-systemer beskrives og dermed understøtte højere genbrug og kvalitet i de indsamlede oplysninger.</p>
-                                     <p>arkitektur.digst.dk</p>
-                                     <hr>
-                                     <hr>
-                                     <p><span>[1]</span>() Et arbejde hvis mål nu eksisterer i form af 'Standard for beskrivelse af it-systemer -- Arkivprofil'</p>
-                                     <p><span>[2]</span>() https://digst.dk/strategier/strategi-for-it-styring-i-staten/</p>
-                                     <p><span>[3]</span>() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf</p>
-                                     <p><span>[4]</span>() ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)</p>
-                                     <p><span>[5]</span>() Begrebet <a class="property" data-link-type="propdesc">it-system</a> er altså en specialisering af <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-system" id="ref-for-descdef-counter-style-system①">system</a> fra ISO 15288, idet der fokuseres på IT-aspektet.\
+| brugergrænseflade | snitflade, hvorigennem mennesker kan få adgang til et it-system, som den viser sig i udformningen af skærmbilleder og skærmdialog |  |  | https://data.gov.dk/concept/core/itsystem/ <var>user interface</var> <var>dataansvarlig</var>organisation, som har det administrative ansvar for data*|  |  | <var>data responsible organisation</var> <var>databehandler</var>en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der behandler personoplysninger på den dataansvarliges vegne|http://data.europa.eu/eli/reg/2016/679/oj ||https://data.gov.dk/model/concept/dataprotection#|data processor | <var>dataservice</var>snitflade, hvorigennem it-systemer kan få adgang til et eller flere datasæt eller databehandlingsfunktioner|  |https://www.w3.org/TR/vocab-dcat/|https://data.gov.dk/model/concept/dataset# <var>data service</var> <var>dataskaber</var>organisation, der har det primære ansvar for tilvejebringelsen af datasættet<em>|  |https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe|https://data.gov.dk/model/concept/dataset# |data creator |
+|datasletning |sletning af alle link til eller kopier eller gengivelser af de pågældende personoplysninger</em> |http://data.europa.eu/eli/reg/2016/679/oj |  |https://data.gov.dk//concept/core/digitalarchival/ |data erasure | <var>datasletningsfrist</var>dato for, hvornår data i systemet forventes at skulle være slettet forinden |https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf |https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf |https://data.gov.dk//concept/core/digitalarchival/|data erasure deadline |
+|datasæt|samling af data sammenstillet af en enkelt aktør|  |https://www.w3.org/TR/vocab-dcat/ |https://data.gov.dk/model/concept/dataset# |dataset |
+|datasætrepræsentation |specifik fysisk repræsentation af et datasæt|  |https://www.w3.org/TR/vocab-dcat/, |https://data.gov.dk/model/concept/datasetdistribution# |distribution | <var>den registrerede</var>person, om hvem oplysninger behandles|http://data.europa.eu/eli/reg/2016/679/oj <var>Referencearkitektur for deling af data og dokumenter</var>https://data.gov.dk/model/concept/dataprotection# <var>data subject</var> |forgængersystem|system, der tidligere har varetaget samme funktion |https://www.retsinformation.dk/eli/lta/2010/1007|  |https://data.gov.dk/concept/core/itsystem/|predessor system |
+|fortrolighedsgrad |grad af fortrolighed, forstået som i hvilket omfang information kan videregives* |  |  |https://data.gov.dk/model/concept/informationsecurity# |confidentiality type |
+|fortrolighedsgrad iht. ISO 27002** |fortrolighedsgrad, forstået som i hvilket omfang information kan videregives iht. informationssikkerhedsstandarden ISO/IEC 27002|  |https://www.iso.org/standard/54533.html |https://data.gov.dk/model/concept/informationsecurity# |ISO 27002 Data Classification |
+|fortrolighedsgrad iht. Sikkerhedscirkulæret** |fortrolighedsgrad, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (Nato &amp; EU Dataklassifikation)|https://www.retsinformation.dk/eli/retsinfo/2014/10338|  |https://data.gov.dk/model/concept/informationsecurity# |Nato &amp; EU Data Classification |
+|informationssystem |system til indsamling, organisering, lagring og kommunikation af viden* |  |  |https://data.gov.dk/concept/core/itsystem/<var>information system</var> |instantieret it-system |fysisk instans af et it-system i et bestemt it-miljø*|  |  |https://data.gov.dk/model/concept/itsysteInstancem# |IT system instance |
+|it-leverandør|aktør, som leverer it-tjenester |  |  |https://data.gov.dk/concept/core/itsystem/ <var>IT supplier</var> |it-miljøtype** |type af miljø, som et it-system kan ibrugtages i* |  |https://en.wikipedia.org/wiki/Deployment_environment\Statens-IT Systemkort |https://data.gov.dk/concept/core/itsystem/|environment type |
+|it-system |system, der består af digitale informationsteknologier* |  |https://www.iso.org/standard/63711.html |https://data.gov.dk/concept/core/itsystem/|IT system |
+|it-systemmålgruppe |gruppe af brugere, som et givent it-system henvender sig til|  |  |https://data.gov.dk/concept/core/itsystem/ |
+IT system target group |
+|it-systemejer |person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse* |  |
+https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/ |https://data.gov.dk/concept/core/itsystem/ |IT system owne |
+|it-systemforvalter |organisatorisk enhed eller person, som administrerer og træffer afgørelser vedrørende tekniske anliggender på vegne af systemejeren |  |  |https://data.gov.dk/concept/core/itsystem/ |IT system manager | <var>kontrakt</var>frivillig juridisk gældende aftale mellem to eller flere parter |  |https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/|https://data.gov.dk/model/concept/contract# |contract |
+|kritikalitetstype |type af kritikalitet ud fra hvorvidt et it-systems driftsforstyrelser udgør en særlig høj risiko|  |https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/ |https://data.gov.dk/concept/core/itsystem/ |criticality type |
+|leverandør |kontraktpart, der har rollen som leverandør|  |https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/ |https://data.gov.dk/model/concept/contract# |counter party |
+|offentlig forvaltningsopgavetype |type af opgave, der udføres af offentlige organisationer|  |https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer |https://data.gov.dk/model/concept/organisation#|public administrative task type |
+|ordregiver |kontraktpart, der har rollen som ordregiver|  |https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/ |https://data.gov.dk/model/concept/contract# |principal party |
+|organisation |samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur |  |http://www.w3.org/ns/org#;\
+https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer |https://data.gov.dk/model/concept/organisation#|organization |
+|persondataansvarlig | en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger |http://data.europa.eu/eli/reg/2016/679/oj |https://w3id.org/GDPRtEXT#Processor |https://data.gov.dk/model/concept/dataprotection# |
+controller |
+|personoplysningskategori |kategori af personoplysninger set i forhold til følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne |http://data.europa.eu/eli/reg/2016/679/oj|https://www.datatilsynet.dk/media/6567/fortegnelse.pdf |https://data.gov.dk/model/concept/dataprotection# |personal data category |
+|personoplysningsunderkategori |præcisering af, hvilken underkategori af persondata systemet indeholder |  |notat om GDPR-modul i KITOS |https://data.gov.dk/model/concept/dataprotection# |personal data subcategory |
+|produktserie |produkter eller varer markedsført som en serie* |  |  |
+https://data.gov.dk/concept/core/itsystem/ |product series | <var>retskilde</var>intellektuelt værk, der fastsætter juridiske regler og retsbestemmelser |  |https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli |https://data.gov.dk/model/concept/legalresource#|legal resource |
+|system |kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærede formål*|  |ISO/IEC 15288: https://www.iso.org/standard/63711.html |https://data.gov.dk/model/concept/system# |system |
+|systemdokumentation |skriftligt materiale, der redegør for et bestemt aspekt af it-systemet, herunder forretningskrav, funktionalitet, arkitektur, drift, vedligeholdelse og anvendelse |  |  |https://data.gov.dk/concept/core/itsystem/|system documentation | <var>anskaffelsestype</var>type af anskaffelse af et it-system* |  |https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html |https://data.gov.dk/concept/core/itsystem/ |IT system aquisition type |</p>
+                                <p>
+                                 (se metadata og begrebsdiagrammer online: 
+                                 <httpsU0003A data.gov.dk document itsystem-ap uml v1>)</httpsU0003A>
+                                </p>
+                                <hr>
+                                <p>Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer. Der indsamles oplysninger om offentlige it-systemer mange steder, så der er god værdi i at standardisere den måde hvorpå it-systemer beskrives og dermed understøtte højere genbrug og kvalitet i de indsamlede oplysninger.</p>
+                                <p>arkitektur.digst.dk</p>
+                                <hr>
+                                <hr>
+                                <p><span>[1]</span>() Et arbejde hvis mål nu eksisterer i form af 'Standard for beskrivelse af it-systemer -- Arkivprofil'</p>
+                                <p><span>[2]</span>() https://digst.dk/strategier/strategi-for-it-styring-i-staten/</p>
+                                <p><span>[3]</span>() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf</p>
+                                <p><span>[4]</span>() ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)</p>
+                                <p><span>[5]</span>() Begrebet <a class="property" data-link-type="propdesc">it-system</a> er altså en specialisering af <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-system" id="ref-for-descdef-counter-style-system①">system</a> fra ISO 15288, idet der fokuseres på IT-aspektet.\
 Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en)
 Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .</p>
-                                     <p>
-                                      <span>[6]</span>() Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: 
-                                      <httpsU0003A anvendelsesprofil-klassifikationer arkitektur.digst.dk datastandarder rammearkitektur></httpsU0003A>
-                                     </p>
-                                     <p>
-                                      <span>[7]</span>() 
-                                      <httpsU0003A arkitektur.digst.dk hvidbog-om-faellesoffentlig-digital-arkitektur mandat-og-styring></httpsU0003A>
-                                     </p>
-                                     <p><span>[8]</span>() https://skikataloget.ski.dk/ski-kataloget/</p>
-                                     <p><span>[9]</span>() Common Procurement Vocabulary er et fælles referencesystem for udbudte opgaver i EU https://udbudsportalen.dk/cpv-koder/</p>
-                                     <p><span>[10]</span>() United Nations Standard Product and Services Code) er et internationalt klassifikationssystem for varer og tjenesteydelser. http://unspsc.gs1.dk/find-din-kode/</p>
-                                     <p><span>[11]</span>() STORM er en taksonomi over it-servicestyper. På samme måde som FORM kategoriserer og beskriver det offentliges opgaver, er STORM udviklet til at give en overordnet klassifikation og beskrivelse af de it-systemer, der bruges i den offentlige forvaltning. STORM vedligeholdes ikke pt. http://arkitekturguiden.digitaliser.dk/storm og det er projektgruppens vurdering at den ikke umiddelbart kan tages i anvendelse i denne standard. Flere interessenter har dog i forbindelse med standardens udarbejdelse udtrykt et behov for en sådan klassifikation ifm. øvrige anvendelser. Dette bør analyseres nærmere.</p>
-                                     <p>
-                                      <span>[12]</span>() 
-                                      <httpU0003A U00032016 U0003679 data.europa.eu eli oj reg>:\</httpU0003A>
-                                     </p>
-                                     <httpsU0003A U00032018 U0003502 eli lta www.retsinformation.dk>
-                                      <p>
-                                       <span>[13]</span>() 
-                                       <httpsU0003A U00036560 dataansvarlige-og-databehandlere.pdf media www.datatilsynet.dk></httpsU0003A>
-                                      </p>
-                                      <p><span>[14]</span>() https://www.omg.org/hot-topics/finance.htm   &amp; https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts</p>
-                                      <p><span>[15]</span>() https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf</p>
-                                      <p><span>[16]</span>() https://www.w3.org/TR/vocab-dcat/\
+                                <p>
+                                 <span>[6]</span>() Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: 
+                                 <httpsU0003A anvendelsesprofil-klassifikationer arkitektur.digst.dk datastandarder rammearkitektur></httpsU0003A>
+                                </p>
+                                <p>
+                                 <span>[7]</span>() 
+                                 <httpsU0003A arkitektur.digst.dk hvidbog-om-faellesoffentlig-digital-arkitektur mandat-og-styring></httpsU0003A>
+                                </p>
+                                <p><span>[8]</span>() https://skikataloget.ski.dk/ski-kataloget/</p>
+                                <p><span>[9]</span>() Common Procurement Vocabulary er et fælles referencesystem for udbudte opgaver i EU https://udbudsportalen.dk/cpv-koder/</p>
+                                <p><span>[10]</span>() United Nations Standard Product and Services Code) er et internationalt klassifikationssystem for varer og tjenesteydelser. http://unspsc.gs1.dk/find-din-kode/</p>
+                                <p><span>[11]</span>() STORM er en taksonomi over it-servicestyper. På samme måde som FORM kategoriserer og beskriver det offentliges opgaver, er STORM udviklet til at give en overordnet klassifikation og beskrivelse af de it-systemer, der bruges i den offentlige forvaltning. STORM vedligeholdes ikke pt. http://arkitekturguiden.digitaliser.dk/storm og det er projektgruppens vurdering at den ikke umiddelbart kan tages i anvendelse i denne standard. Flere interessenter har dog i forbindelse med standardens udarbejdelse udtrykt et behov for en sådan klassifikation ifm. øvrige anvendelser. Dette bør analyseres nærmere.</p>
+                                <p>
+                                 <span>[12]</span>() 
+                                 <httpU0003A U00032016 U0003679 data.europa.eu eli oj reg>:\</httpU0003A>
+                                </p>
+                                <httpsU0003A U00032018 U0003502 eli lta www.retsinformation.dk>
+                                 <p>
+                                  <span>[13]</span>() 
+                                  <httpsU0003A U00036560 dataansvarlige-og-databehandlere.pdf media www.datatilsynet.dk></httpsU0003A>
+                                 </p>
+                                 <p><span>[14]</span>() https://www.omg.org/hot-topics/finance.htm   &amp; https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts</p>
+                                 <p><span>[15]</span>() https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf</p>
+                                 <p><span>[16]</span>() https://www.w3.org/TR/vocab-dcat/\
     (Bemærk at DCAT anvender et snævrere datasætbegreb end det der defineres i ISO 19115‑1:2014)</p>
-                                      <p><span>[17]</span>() https://arkitektur.digst.dk/det-faellesoffentlige-datasaetkatalog</p>
-                                      <p><span>[18]</span>() https://www.retsinformation.dk/eli/lta/2005/596.</p>
-                                      <p><span>[19]</span>() http://data.europa.eu/eli/reg/2016/679/oj\
+                                 <p><span>[17]</span>() https://arkitektur.digst.dk/det-faellesoffentlige-datasaetkatalog</p>
+                                 <p><span>[18]</span>() https://www.retsinformation.dk/eli/lta/2005/596.</p>
+                                 <p><span>[19]</span>() http://data.europa.eu/eli/reg/2016/679/oj\
   https://www.retsinformation.dk/eli/lta/2018/502</p>
-                                      <p><span>[20]</span>() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf</p>
-                                      <p><span>[21]</span>() ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: https://www.iso.org/standard/54533.html</p>
-                                      <p><span>[22]</span>() Sikkerhedscirkulæret https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
-                                      <p><span>[23]</span>() https://dltj.org/article/software-development-practice/</p>
-                                      <p><span>[24]</span>() Ved godkendelse af standarden, vil UML-modellerne blive udstillet som XMI og RDF/XML med de endelige httpURIer.</p>
-                                     </httpsU0003A>
-                                    </httpsU0003A>
-                                   </httpsU0003A>
-                                  </httpsU0003A>
-                                 </httpsU0003A>
-                                </httpU0003A>
+                                 <p><span>[20]</span>() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf</p>
+                                 <p><span>[21]</span>() ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: https://www.iso.org/standard/54533.html</p>
+                                 <p><span>[22]</span>() Sikkerhedscirkulæret https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
+                                 <p><span>[23]</span>() https://dltj.org/article/software-development-practice/</p>
+                                 <p><span>[24]</span>() Ved godkendelse af standarden, vil UML-modellerne blive udstillet som XMI og RDF/XML med de endelige httpURIer.</p>
+                                </httpsU0003A>
                                </dl>
                               </httpsU0003A>
                              </httpsU0003A>
@@ -3550,7 +2965,7 @@ Information technology --- Framework and taxonomy of International Standardized 
    <a href="https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-system">https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-system</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-descdef-counter-style-system">4.1. System, informationssystem, it-system og implementering</a>
-    <li><a href="#ref-for-descdef-counter-style-system①">9.6. Bilag G: Begrebsliste til Basisprofilen (SYS-AP)</a>
+    <li><a href="#ref-for-descdef-counter-style-system①">9.7. Bilag G: Begrebsliste til Basisprofilen (SYS-AP)</a>
    </ul>
   </aside>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
