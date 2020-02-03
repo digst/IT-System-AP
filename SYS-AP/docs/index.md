@@ -314,9 +314,9 @@ Opgaver
 
 Et it-system yder en given it-service, som understøtter forretningens opgaver. Et it-system kan beskrives med et eller flere anvendelsesformål, der antages at være at understøtte en **forvaltningsopgave**. Til dette formål anvendes en klassifikation over offentlige opgaver eller såkaldte forvaltningsopgavetyper såsom Den Fællesoffentlige Referencemodel (FORM) eller KL Emnesystematik (KLE).  KLE er en emnesystematik/journalplan, der dækker det kommunale område. FORM er en overordnet emnesystematik, der dækker opgaveporteføljen i hele den offentlige sektor -- dvs. staten, kommunerne og regionerne. KLE er som regel mere detaljeret end FORM på det kommunale område. Det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder -- som minimum på det øverste niveau (hhv. serviceområde i FORM og emnegruppe i KLE):
 
-**Klassifikation KLE:** <http://www.kle-online.dk/soegning>
+**Klassifikation KLE:** http://www.kle-online.dk/soegning
 
-**Klassifikation FORM:** <http://www.form-online.dk/soegning>
+**Klassifikation FORM:** http://www.form-online.dk/soegning
 
 <p class="example">Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven "65.50.05.05 Sagshåndtering" (FORM v.2.14) el. KLE-emnet "00.15.12. Kvalitetsstyringssystem, sagsbehandling" (KLE v. Aug. 2019)</p>
 
@@ -326,22 +326,22 @@ Bemærk, at produkter i SKI-kataloget allerede er opmærket med FORM samt intern
 
 FORM og KLE indeholder henvisninger til de love og lovbekendtgørelser, som de offentlige opgaver udspringer fra, så ved at opmærke et it-system med FORM eksisterer der også indirekte en relation til retsgrundlaget for it-systemets anvendelse. Der er også muligt via FORM at se, hvilke myndigheder de forskellige opgaver tilhører. KLE indeholder, ud over love og lovbekendtgørelser, også bekendtgørelser. FORM mapper til paragraffer i finansloven og KLE, og KLE mapper til Social- og Indenrigsministeriets kontoplan.
 
-Når en organisation skifter et it-system ud med et andet it-system til varetagelse af samme funktion, kan det tidligere it-system eksplicit angives som et såkaldt **forgængersystem.**
+Et it-system kan opmærkes i forhold til de **forretningsfunktioner** som it-systemet understøtter. En forretningsfunktion er en funktion, der kan udføres eller varetages af organisationsenhederne i organisationen. Når en organisation skifter et it-system ud med et andet it-system til varetagelse af samme funktion, kan det tidligere it-system angives som et såkaldt **forgængersystem.**
 
 Bemærk, at en organisations portefølje af it-systemer kan være sammensat af dels organisationens internt-rettede it-systemer (fx et sagsbehandlingssystem til organisationens egne medarbejdere) og dets eksternt-rettede it-systemer (fx et borgerrettet selvbetjeningssystem). Med henblik på at kunne skelne mellem it-systemer med en snæver målgruppe og it-systemer med en bred målgruppe kan it-systemer klassificeres ift. en **målgruppeklassifikation**, se Bilag A. Her angives, om it-systemet har en intern eller ekstern målgruppe set ift. organisationen.
 
 Styring
 -----------
 
-Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter. Aktørerne kan være personer eller organisationer, men det anbefales, i det omfang det er muligt, ikke at registrere oplysninger om fysiske personer, men derimod den relevante medarbejderrolle eller organisatoriske enhed.
+Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter. Aktører kan være organisationer, organisatoriske personer eller fysiske personer men det anbefales, i det omfang det er muligt, ikke at registrere oplysninger om personer, men derimod den relevante medarbejderrolle eller organisatoriske enhed.
 
-<p class="advisement">
-Organisationer beskrives iht. anvendelsesprofil for organisation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer>
+<p class="note">
+Med et **organisatorisk person-ID** kan en persons tilhørsforhold og medlemskab i organisatoriske enheder udtrykkes. Et organisatorisk person-ID er en persons identitet i organisationsenheder og er eksempelvis udtrykt igennem personens initialer, som er unikke inden for organisationsenheden. En person kan have tilhørsforhold til flere organisationer og kan dermed kan flere organisatorisk person-ID'er tilknyttet.
 </p>
 
 På overordnet niveau angives **it-systemejeren** -- en person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse. Ofte vil it-systemejeren være lig kontraktejeren og kan identificeres præcist i myndighedens kontraktstyring.
 
-I en given organisations praktiske og tekniske forvaltning af et it-system er det også vigtigt at registrere **it-systemforvalteren**, dvs. den organisatoriske enhed eller medarbejder, som administrerer og træffer afgørelser vedrørende tekniske anliggender **på vegne af** systemejeren. I forbindelse med større it-systemer kan forvalterrollen være opdelt i en intern forretningsmæssig forvalterrolle og en teknisk forvalterrolle hos en leverandør.
+I en given organisations praktiske og tekniske forvaltning af et it-system er det også vigtigt at registrere **it-systemforvalteren**, dvs. den organisatoriske enhed eller person, som administrerer og træffer afgørelser vedrørende tekniske anliggender **på vegne af** systemejeren. I forbindelse med større it-systemer kan forvalterrollen være opdelt i en intern forretningsmæssig forvalterrolle og en teknisk forvalterrolle hos en leverandør.
 
 <p class="example">Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
 
@@ -361,7 +361,7 @@ Jura
 
 I forbindelse med ibrugtagning og anvendelse af et it-system kommer der typisk en lang række leverandørkontrakter i spil, men i denne standard fokuseres på leverandører, der leverer en ydelse ift. udvikling, vedligehold, drift og support af it-systemet. Disse oplysninger vil typisk være indsamlet og registreret i forbindelse med kontraktstyring.
 
-Derudover vil det i denne standard også være muligt helt overordnet at angive it-systemets primære ***udviklingspart***, ***vedligeholdelsespart*** og ***driftspart***. 
+Derudover vil det i denne standard også være muligt helt overordnet at angive it-systemets primære **udviklingspart**, **vedligeholdelsespart** og **driftspart**. 
 
 Bemærk dog, at denne direkte angivelse af it-systemets primære leverandører skal betragtes som en forenkling, som typisk ville kunne udledes via kontraktens parter.
 
