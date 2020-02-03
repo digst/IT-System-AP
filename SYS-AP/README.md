@@ -24,7 +24,7 @@ Definition: system which consists of digital information technologies
 | **sys:hasApplicationPurposeKLE** | KLETheme (subclass of skos:Concept)| the KLE theme which the IT system supports | Tasks |
 | **cv:hasLegalResource** | eli:LegalResource | legal framework for the application of the IT system | Tasks |
 | **sys:hasCriticality** | CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
-| **sys:hasTargetGroup** | TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
+| **schema:audience** | target:TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
 | **sys:hasITSystemOwner**|  org:Organization, org:OrganizationalUnit, foaf:Person | organisation or person who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
 | **sys:hasITSystemManager**|  org:Organization,  org:OrganizationalUnit, foaf:Person | organisational unit or person who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
 | **sys:relatedContract**|  fibo-fnd-agr-ctr:Contract  |  | Legal |
@@ -180,9 +180,11 @@ Codelist: TargetGroup
 | cv	|	http://data.europa.eu/m8g/				|	Core Vocabulary (ISA)	
 | schema		|https://schema.org/ 						|Schema.org
 | fibo-fnd-agr-ctr	|https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts  	|Financial Industry Business Ontology (OMG)
+| target|	https://data.gov.dk/concept/core/targetgroup/	| Vocabuulary for Target group
 | sys	|	https://data.gov.dk/model/core/itsystem/			|Vocabulary for IT System 
 | archv		|https://data.gov.dk/model/core/digitalarchival/		|Vocabulary for Digital Archival  
 | infra	|	https://data.gov.dk/model/core/infrastructure/		|Vocabulary for IT System Infrastructure 
 | proc|		https://data.gov.dk/model/core/process/			|Vocabulary for Cross Domain Processes 
 | ovx|	https://data.gov.dk/model/core/organization-extension/	|Organization Vocabulary Extention 
+
 
