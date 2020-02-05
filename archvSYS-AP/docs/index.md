@@ -377,7 +377,7 @@ Der gives en overordnet beskrivelse af datamodellens indhold og sammensætning i
 
 Via nedenstående link findes der også en online oversigt over modellens elementer.
 
-- Link til oversigt over modellens elementer: https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP
+- Link til oversigt over modellens elementer: [https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP](https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP)
 
 Skabelon til registrering i regneark
 ----------------------------------------
@@ -942,8 +942,8 @@ Bilag C: Eksempel på maskinlæsbart format
 
 Bilag D: Om datamodellen
 -------------------------------------------------
-Selve UML-modellerne er udstillet her : 
-https://data.gov.dk/document/itsystem-ap/v1/uml/
+Selve UML-modellerne er udstillet her: 
+[https://data.gov.dk/document/itsystem-ap/v1/uml/](https://data.gov.dk/document/itsystem-ap/v1/uml/)
 
 
 Bilag E: UML-diagram: Arkivprofil
@@ -974,7 +974,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
 - Forretningsområde (theme):  65.50.05.10 Sagsarkivering  
 - Afledt af (wasDerivedFrom): https://data.gov.dk/concept/core/digitalarchival/ 
 - Afledt af (wasDerivedFrom): https://data.gov.dk/concept/core/itsystem/
-- Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. afgivelse af oplysninger om it-systemer til Rigsarkivet. Bemærk, at denne anvendelsesorienterede begrebsliste udvælger og sammensætter begreber fra forskellige emneområder, se fx begrebsmodellen for it-system og begrebsmodellen for digital arkivering, som er udstillet online. 
+- Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. afgivelse af oplysninger om it-systemer til Rigsarkivet. Bemærk, at denne anvendelsesorienterede begrebsliste udvælger og sammensætter begreber fra forskellige emneområder, se fx begrebsmodellen for it-system og begrebsmodellen for digital arkivering, som er [udstillet online](https://data.gov.dk/document/itsystem-ap/v1/uml/). 
 
 
 <table class="term-table">
@@ -1039,7 +1039,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
         </tr>
         <tr>
             <td>
-                arkiverings-pligttype
+                arkiveringspligttype
             </td>
             <td>
                 type af arkiveringspligt set ud fra, hvorvidt et it-system er arkiveringspligtigt eller ikke skal
@@ -1060,7 +1060,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
         </tr>
         <tr>
             <td>
-                arkiverings-testinstitution
+                arkiveringstestinstitution
             </td>
             <td>
                 organisation, som tester arkiveringsversionen
@@ -1097,7 +1097,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
         </tr>
         <tr>
             <td>
-                arkiverings-versionsperiode
+                arkiveringsversionsperiode
             </td>
             <td>
                 periode med angivelse af startdato og slutdato, i hvilken de afleverede data er skabt
@@ -1115,7 +1115,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
         </tr>
         <tr>
             <td>
-                arkiverings-versionsgodkendelses-status
+                arkiveringsversionsgodkendelses-status
             </td>
             <td>
                 status, som indikerer, at arkiveringsversionen er blevet godkendt af den modtagende arkivinstitution
@@ -1685,6 +1685,8 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
         </tr>
     </tbody>
 </table>
+
+
 
 ---
 
