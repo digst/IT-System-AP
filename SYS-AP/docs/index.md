@@ -1166,51 +1166,779 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 - Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/
 - Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. registrering af basisoplysninger om it-systemer. 
 
-
-
-|Foretrukken dansk term| Definition | Juridisk kilde | Kilde | Tilhører emneområde | Foretrukken engelsk term |
-| --- | --- | --- | --- | --- | --- |
-| brugergrænseflade | snitflade, hvorigennem mennesker kan få adgang til et it-system, som den viser sig i udformningen af skærmbilleder og skærmdialog |  |  | https://data.gov.dk/concept/core/itsystem/ |user interface|
-|dataansvarlig|organisation, som har det administrative ansvar for data*|  |  |  |data responsible organisation|
-|databehandler|en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der behandler personoplysninger på den dataansvarliges vegne|http://data.europa.eu/eli/reg/2016/679/oj ||https://data.gov.dk/model/concept/dataprotection#|data processor |
-|dataservice|snitflade, hvorigennem it-systemer kan få adgang til et eller flere datasæt eller databehandlingsfunktioner|  |https://www.w3.org/TR/vocab-dcat/|https://data.gov.dk/model/concept/dataset# |data service|
-|dataskaber|organisation, der har det primære ansvar for tilvejebringelsen af datasættet*|  |https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe|https://data.gov.dk/model/concept/dataset# |data creator |
-|datasletning |sletning af alle link til eller kopier eller gengivelser af de pågældende personoplysninger* |http://data.europa.eu/eli/reg/2016/679/oj |  |https://data.gov.dk//concept/core/digitalarchival/ |data erasure |
-|datasletningsfrist|dato for, hvornår data i systemet forventes at skulle være slettet forinden |https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf |https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf |https://data.gov.dk//concept/core/digitalarchival/|data erasure deadline |
-|datasæt|samling af data sammenstillet af en enkelt aktør|  |https://www.w3.org/TR/vocab-dcat/ |https://data.gov.dk/model/concept/dataset# |dataset |
-|datasætrepræsentation |specifik fysisk repræsentation af et datasæt|  |https://www.w3.org/TR/vocab-dcat/, |https://data.gov.dk/model/concept/datasetdistribution# |distribution |
-|den registrerede|person, om hvem oplysninger behandles|http://data.europa.eu/eli/reg/2016/679/oj |Referencearkitektur for deling af data og dokumenter|https://data.gov.dk/model/concept/dataprotection# |data subject|
-|forgængersystem|system, der tidligere har varetaget samme funktion |https://www.retsinformation.dk/eli/lta/2010/1007|  |https://data.gov.dk/concept/core/itsystem/|predessor system |
-|fortrolighedsgrad |grad af fortrolighed, forstået som i hvilket omfang information kan videregives* |  |  |https://data.gov.dk/model/concept/informationsecurity# |confidentiality type |
-|fortrolighedsgrad iht. ISO 27002** |fortrolighedsgrad, forstået som i hvilket omfang information kan videregives iht. informationssikkerhedsstandarden ISO/IEC 27002|  |https://www.iso.org/standard/54533.html |https://data.gov.dk/model/concept/informationsecurity# |ISO 27002 Data Classification |
-|fortrolighedsgrad iht. Sikkerhedscirkulæret** |fortrolighedsgrad, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (Nato & EU Dataklassifikation)|https://www.retsinformation.dk/eli/retsinfo/2014/10338|  |https://data.gov.dk/model/concept/informationsecurity# |Nato & EU Data Classification |
-|informationssystem |system til indsamling, organisering, lagring og kommunikation af viden* |  |  |https://data.gov.dk/concept/core/itsystem/|information system|
-|instantieret it-system |fysisk instans af et it-system i et bestemt it-miljø*|  |  |https://data.gov.dk/model/concept/itsysteInstancem# |IT system instance |
-|it-leverandør|aktør, som leverer it-tjenester |  |  |https://data.gov.dk/concept/core/itsystem/ |IT supplier|
-|it-miljøtype** |type af miljø, som et it-system kan ibrugtages i* |  |https://en.wikipedia.org/wiki/Deployment_environment\Statens-IT Systemkort |https://data.gov.dk/concept/core/itsystem/|environment type |
-|it-system |system, der består af digitale informationsteknologier* |  |https://www.iso.org/standard/63711.html |https://data.gov.dk/concept/core/itsystem/|IT system |
-|it-systemmålgruppe |gruppe af brugere, som et givent it-system henvender sig til|  |  |https://data.gov.dk/concept/core/itsystem/ |
-IT system target group |
-|it-systemejer |person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse* |  |
-https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/ |https://data.gov.dk/concept/core/itsystem/ |IT system owne |
-|it-systemforvalter |organisatorisk enhed eller person, som administrerer og træffer afgørelser vedrørende tekniske anliggender på vegne af systemejeren |  |  |https://data.gov.dk/concept/core/itsystem/ |IT system manager |
-|kontrakt|frivillig juridisk gældende aftale mellem to eller flere parter |  |https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/|https://data.gov.dk/model/concept/contract# |contract |
-|kritikalitetstype |type af kritikalitet ud fra hvorvidt et it-systems driftsforstyrelser udgør en særlig høj risiko|  |https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/ |https://data.gov.dk/concept/core/itsystem/ |criticality type |
-|leverandør |kontraktpart, der har rollen som leverandør|  |https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/ |https://data.gov.dk/model/concept/contract# |counter party |
-|offentlig forvaltningsopgavetype |type af opgave, der udføres af offentlige organisationer|  |https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer |https://data.gov.dk/model/concept/organisation#|public administrative task type |
-|ordregiver |kontraktpart, der har rollen som ordregiver|  |https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/ |https://data.gov.dk/model/concept/contract# |principal party |
-|organisation |samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur |  |http://www.w3.org/ns/org#;\
-https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer |https://data.gov.dk/model/concept/organisation#|organization |
-|persondataansvarlig | en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger |http://data.europa.eu/eli/reg/2016/679/oj |https://w3id.org/GDPRtEXT#Processor |https://data.gov.dk/model/concept/dataprotection# |
-controller |
-|personoplysningskategori |kategori af personoplysninger set i forhold til følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne |http://data.europa.eu/eli/reg/2016/679/oj|https://www.datatilsynet.dk/media/6567/fortegnelse.pdf |https://data.gov.dk/model/concept/dataprotection# |personal data category |
-|personoplysningsunderkategori |præcisering af, hvilken underkategori af persondata systemet indeholder |  |notat om GDPR-modul i KITOS |https://data.gov.dk/model/concept/dataprotection# |personal data subcategory |
-|produktserie |produkter eller varer markedsført som en serie* |  |  |
-https://data.gov.dk/concept/core/itsystem/ |product series |
-|retskilde|intellektuelt værk, der fastsætter juridiske regler og retsbestemmelser |  |https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli |https://data.gov.dk/model/concept/legalresource#|legal resource |
-|system |kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærede formål*|  |ISO/IEC 15288: https://www.iso.org/standard/63711.html |https://data.gov.dk/model/concept/system# |system |
-|systemdokumentation |skriftligt materiale, der redegør for et bestemt aspekt af it-systemet, herunder forretningskrav, funktionalitet, arkitektur, drift, vedligeholdelse og anvendelse |  |  |https://data.gov.dk/concept/core/itsystem/|system documentation |
-|anskaffelsestype|type af anskaffelse af et it-system* |  |https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html |https://data.gov.dk/concept/core/itsystem/ |IT system aquisition type |
+<table width="0">
+<thead>
+<tr>
+<td width="158">
+<p><strong>Foretrukken dansk term</strong></p>
+</td>
+<td width="162">
+<p><strong>Definition</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="193">
+<p><strong>Juridisk kilde</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="357">
+<p><strong>Kilde</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="192">
+<p><strong>Tilh&oslash;rer emneomr&aring;de</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="70">
+<p><strong>Foretrukken engelsk term </strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="158">
+<p><strong>brugergr&aelig;nseflade</strong></p>
+</td>
+<td width="162">
+<p><em>snitflade, hvorigennem mennesker kan f&aring; adgang til et it-system, som den viser sig i udformningen af sk&aelig;rmbilleder og sk&aelig;rmdialog</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>user interface</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>dataansvarlig </strong></p>
+</td>
+<td width="162">
+<p><em>organisation, som har det administrative ansvar for data</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>&nbsp;</p>
+</td>
+<td width="70">
+<p>data responsible organisation</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>databehandler</strong></p>
+</td>
+<td width="162">
+<p><em>en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der behandler personoplysninger p&aring; den dataansvarliges vegne</em></p>
+</td>
+<td width="193">
+<p>http://data.europa.eu/eli/reg/2016/679/oj</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/dataprotection#</p>
+</td>
+<td width="70">
+<p>data processor</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>dataservice</strong></p>
+</td>
+<td width="162">
+<p><em>snitflade, hvorigennem it-systemer kan f&aring; adgang til et eller flere datas&aelig;t eller databehandlingsfunktioner</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://www.w3.org/TR/vocab-dcat/</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/dataset#</p>
+</td>
+<td width="70">
+<p>data service</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>dataskaber</strong></p>
+</td>
+<td width="162">
+<p><em>organisation, der har det prim&aelig;re ansvar for tilvejebringelsen af datas&aelig;ttet</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p><a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe</a></p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/dataset#</p>
+</td>
+<td width="70">
+<p>data creator</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>datasletning</strong></p>
+</td>
+<td width="162">
+<p><em>sletning af alle link til eller kopier eller gengivelser af de p&aring;g&aelig;ldende personoplysninger</em></p>
+</td>
+<td width="193">
+<p>http://data.europa.eu/eli/reg/2016/679/oj</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/digitalarchival#</p>
+</td>
+<td width="70">
+<p>data erasure</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>datasletningsfrist</strong></p>
+</td>
+<td width="162">
+<p><em>dato for, hvorn&aring;r data i systemet forventes at skulle v&aelig;re slettet forinden</em></p>
+<p>&nbsp;</p>
+</td>
+<td width="193">
+<p>https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf</p>
+</td>
+<td width="357">
+<p>https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/digitalarchival#</p>
+</td>
+<td width="70">
+<p>data erasure deadline</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>datas&aelig;t</strong></p>
+</td>
+<td width="162">
+<p><em>samling af data sammenstillet af en enkelt akt&oslash;r</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://www.w3.org/TR/vocab-dcat/,</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/dataset#</p>
+</td>
+<td width="70">
+<p>dataset</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>datas&aelig;trepr&aelig;sentation</strong></p>
+</td>
+<td width="162">
+<p><em>specifik fysisk repr&aelig;sentation af et datas&aelig;t</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://www.w3.org/TR/vocab-dcat/,</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/datasetdistribution#</p>
+</td>
+<td width="70">
+<p>distribution</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>den registrerede</strong></p>
+</td>
+<td width="162">
+<p><em>person, om hvem oplysninger behandles</em></p>
+</td>
+<td width="193">
+<p>http://data.europa.eu/eli/reg/2016/679/oj</p>
+</td>
+<td width="357">
+<p>Referencearkitektur for deling af data og dokumenter</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/dataprotection#</p>
+</td>
+<td width="70">
+<p>data subject</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>forg&aelig;ngersystem</strong></p>
+</td>
+<td width="162">
+<p><em>system, der tidligere har varetaget samme funktion</em></p>
+</td>
+<td width="193">
+<p>https://www.retsinformation.dk/eli/lta/2010/1007</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>predessor system</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>fortrolighedsgrad</strong></p>
+</td>
+<td width="162">
+<p><em>grad af fortrolighed, forst&aring;et som i hvilket omfang information kan videregives</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/informationsecurity#</p>
+</td>
+<td width="70">
+<p>confidentiality type</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>fortrolighedsgrad iht. ISO 27002 </strong></p>
+</td>
+<td width="162">
+<p><em>fortrolighedsgrad, forst&aring;et som i hvilket omfang information kan videregives iht. informationssikkerhedsstandarden ISO/IEC 27002</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://www.iso.org/standard/54533.html</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/informationsecurity#</p>
+</td>
+<td width="70">
+<p>ISO 27002 Data Classification</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>fortrolighedsgrad iht. Sikkerhedscirkul&aelig;ret</strong></p>
+</td>
+<td width="162">
+<p><em>fortrolighedsgrad, forst&aring;et som i hvilket omfang information kan videregives iht. sikkerhedscirkul&aelig;ret (Nato &amp; EU Dataklassifikation)</em></p>
+</td>
+<td width="193">
+<p>https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/informationsecurity#</p>
+</td>
+<td width="70">
+<p>Nato &amp; EU Data Classification</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>informationssystem</strong></p>
+</td>
+<td width="162">
+<p><em>system til indsamling, organisering, lagring og kommunikation af viden</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>information system</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>instantieret it-system</strong></p>
+</td>
+<td width="162">
+<p><em>fysisk instans af et it-system i et bestemt it-milj&oslash;</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsysteInstancem#</p>
+</td>
+<td width="70">
+<p>IT system instance</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>it-leverand&oslash;r</strong></p>
+</td>
+<td width="162">
+<p><em>akt&oslash;r, som leverer it-tjenester</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>IT supplier</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>it-milj&oslash;type</strong></p>
+</td>
+<td width="162">
+<p><em>type af milj&oslash;, som et it-system kan ibrugtages i</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://en.wikipedia.org/wiki/Deployment_environment<br /> Statens-IT Systemkort</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>environment type</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>it-system</strong></p>
+</td>
+<td width="162">
+<p><em>system, der best&aring;r af digitale informationsteknologier</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://www.iso.org/standard/63711.html</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>IT system</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>it-systemm&aring;lgruppe</strong></p>
+</td>
+<td width="162">
+<p><em>gruppe af brugere, som et givent it-system henvender sig til</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>IT system target group</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>it-systemejer</strong></p>
+</td>
+<td width="162">
+<p><em>person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>IT system owner</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>it-systemforvalter</strong></p>
+</td>
+<td width="162">
+<p><em>organisatorisk enhed eller medarbejder, som administrerer og tr&aelig;ffer afg&oslash;relser vedr&oslash;rende tekniske anliggender p&aring; vegne af systemejeren</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>IT system manager</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>kontrakt</strong></p>
+</td>
+<td width="162">
+<p><em>frivillig juridisk g&aelig;ldende aftale mellem to eller flere parter</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/contract#</p>
+</td>
+<td width="70">
+<p>contract</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>kritikalitetstype</strong></p>
+</td>
+<td width="162">
+<p><em>type af</em> <em>kritikalitet ud fra hvorvidt et it-systems driftsforstyrelser udg&oslash;r en s&aelig;rlig h&oslash;j risiko</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>criticality type</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>leverand&oslash;r</strong></p>
+</td>
+<td width="162">
+<p><em>kontraktpart, der har rollen som leverand&oslash;r</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/contract#</p>
+</td>
+<td width="70">
+<p>counter party</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>offentlig forvaltningsopgavetype</strong></p>
+</td>
+<td width="162">
+<p><em>type af opgave, der udf&oslash;res af offentlige organisationer</em></p>
+<p>&nbsp;</p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p><a href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a></p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/organisation#</p>
+</td>
+<td width="70">
+<p>public administrative task type</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>ordregiver</strong></p>
+</td>
+<td width="162">
+<p><em>kontraktpart, der har rollen som ordregiver</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/contract#</p>
+</td>
+<td width="70">
+<p>principal party</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>organisation</strong></p>
+</td>
+<td width="162">
+<p><em>samling mennesker, der er organiseret i et f&aelig;llesskab eller anden social, kommerciel eller politisk struktur</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>http://www.w3.org/ns/org#;<br /> <a href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a></p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/organisation#</p>
+</td>
+<td width="70">
+<p>organization</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>persondataansvarlig</strong></p>
+</td>
+<td width="162">
+<p><em>en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afg&oslash;r, til hvilke form&aring;l og med hvilke hj&aelig;lpemidler der m&aring; foretages behandling af personoplysninger</em></p>
+</td>
+<td width="193">
+<p>http://data.europa.eu/eli/reg/2016/679/oj</p>
+</td>
+<td width="357">
+<p>https://w3id.org/GDPRtEXT#Processor</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/dataprotection#</p>
+</td>
+<td width="70">
+<p>controller</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>personoplysningskategori</strong></p>
+</td>
+<td width="162">
+<p><em>kategori af personoplysninger set i forhold til f&oslash;lsomhed, idet der g&aelig;lder forskellige betingelser og procedurer for behandling af oplysningerne</em></p>
+</td>
+<td width="193">
+<p>http://data.europa.eu/eli/reg/2016/679/oj</p>
+</td>
+<td width="357">
+<p>https://www.datatilsynet.dk/media/6567/fortegnelse.pdf</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/dataprotection#</p>
+</td>
+<td width="70">
+<p>personal data category</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>personoplysningsunderkategori</strong></p>
+</td>
+<td width="162">
+<p><em>pr&aelig;cisering af, hvilken underkategori af persondata systemet indeholder</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>notat om GDPR-modul i KITOS</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/dataprotection#</p>
+</td>
+<td width="70">
+<p>personal data subcategory</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>produktserie</strong></p>
+</td>
+<td width="162">
+<p><em>produkter eller varer markedsf&oslash;rt som en serie</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>product series</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>retskilde</strong></p>
+</td>
+<td width="162">
+<p><em>intellektuelt v&aelig;rk, der fasts&aelig;tter juridiske regler og retsbestemmelser</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p><a href="https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli">https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli</a></p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/legalresource#</p>
+</td>
+<td width="70">
+<p>legal resource</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>sagsomr&aring;de</strong></p>
+</td>
+<td width="162">
+<p><em>kategori af sager iht. bekendtg&oslash;relser for bevaring og kassation af digitale arkivalier p&aring; det regionale eller kommunale omr&aring;de</em></p>
+</td>
+<td width="193">
+<p>https://www.retsinformation.dk/eli/lta/2003/591;</p>
+<p>https://www.retsinformation.dk/eli/lta/2015/266; https://www.retsinformation.dk/eli/lta/2018/183;&nbsp;</p>
+</td>
+<td width="357">
+<p>https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer/</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/digitalarchival#</p>
+</td>
+<td width="70">
+<p>case area</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>system</strong></p>
+</td>
+<td width="162">
+<p><em>kombination af interagerende elementer, der er organiseret for at opn&aring; et eller flere erkl&aelig;rede form&aring;l</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>ISO/IEC 15288: https://www.iso.org/standard/63711.html</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/system#</p>
+</td>
+<td width="70">
+<p>system</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>systemdokumentation</strong></p>
+</td>
+<td width="162">
+<p><em>skriftligt materiale, der redeg&oslash;r for et bestemt aspekt af it-systemet, herunder forretningskrav, funktionalitet, arkitektur, drift, vedligeholdelse og anvendelse</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>&nbsp;</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>system documentation</p>
+</td>
+</tr>
+<tr>
+<td width="158">
+<p><strong>anskaffelsestype</strong></p>
+</td>
+<td width="162">
+<p><em>type af anskaffelse af et it-system</em></p>
+</td>
+<td width="193">
+<p>&nbsp;</p>
+</td>
+<td width="357">
+<p>https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html</p>
+</td>
+<td width="192">
+<p>https://data.gov.dk/model/concept/itsystem#</p>
+</td>
+<td width="70">
+<p>IT system aquisition type</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 (se metadata og begrebsdiagrammer online:  <https://data.gov.dk/document/itsystem-ap/v1/uml/>)
 
