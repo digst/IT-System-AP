@@ -17,7 +17,7 @@
   .head time { display: block; font-family: "Helvetica Neue", Helvetica, Arial; margin: 0px; background-color: #031D5C; font-size: 80%; color: white;}
   .toc li { line-height: 70%; font-family: "Helvetica Neue", Helvetica, Arial;
     font-weight: 600; font-size: 90%; }
-  .self-link { display: none; }
+  h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.settled > a.self-link, h4.heading.settled > a.self-link, h5.heading.settled > a.self-link, h6.heading.settled > a.self-link { display: none; }
   blockquote { font-size: 80%; font-style: italic; margin-left: 5%; width: 70%; border-left-width: 2px;}
 	h2#abstract {display: none;}
 	.p-summary {width: 50%; margin-left: 24px; padding: 0px;}
@@ -27,6 +27,8 @@
     padding: 6px;
     margin: 18px 0px 18px 0px;
 }
+
+h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.settled > a.self-link, h4.heading.settled > a.self-link, h5.heading.settled > a.self-link, h6.heading.settled > a.self-link { display: none; }
 
 	
 	
