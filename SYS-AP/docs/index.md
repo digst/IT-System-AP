@@ -144,7 +144,7 @@ Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige
 
 Kapitel 1 introducerer standardens formål, baggrund og den metode, hvormed standarden er blevet udarbejdet. Kapitel 2 og 3 beskriver standardens anvendelse ud fra forskellige indfaldsvinkler og skitserer udfordringerne ved at etablere et fælles sprog på området.
 
-Kapitel 4 definerer standardens helt centrale begreb, 'it-system', og Kapitel 5 præsenterer indledningsvist en oversigt over standardens  underliggende emneområder, og hver sektion i dette kapitel dykker ned i et af emneområderne. I Kapitel 4 og 5 vil udvalgte begreber være markeret med **fed skrifttype** -- disse modelleres i den underliggende datamodel som klasser eller egenskaber og kan også ses i fx regnearksskabelon (Bilag B), maskinlæsbart format (Bilag C) og UML-modeller (Bilag E og F).
+Kapitel 4 definerer standardens helt centrale begreb, *it-system*, og Kapitel 5 præsenterer indledningsvist en oversigt over standardens  underliggende emneområder, og hver sektion i dette kapitel dykker ned i et af emneområderne. I Kapitel 4 og 5 vil udvalgte begreber være markeret med **fed skrifttype** -- disse modelleres i den underliggende datamodel som klasser eller egenskaber og kan også ses i fx regnearksskabelon (Bilag B), maskinlæsbart format (Bilag C) og UML-modeller (Bilag E og F).
 
 Kapitel 6 beskriver kort selve datamodellen. For en dybere gennemgang henvises til det selvstændige dokument 'Anvendelsesprofil for beskrivelse af it-systemer', som er selve datastandarden bag dette dokument målrettet dataarkitekter. Dette kapitel fortæller også, hvordan beskrivelser af it-systemer udarbejdet i henhold til standarden kan udveksles -- dels via regneark -- dels via et maskinfortolkeligt format.  Kapitel 7 indeholder en liste over eksisterende modellering på området og introducerer en overordnet mapning fra de eksisterende modeller til denne standard.
 
@@ -165,14 +165,14 @@ Der indsamles oplysninger om offentlige it-systemer mange steder og på mange fo
 Baggrund
 ------------
 
-Standarden er etableret og efter aftale med KL, Danske Regioner og Digitaliseringsstyrelsen som følge af relateret standardiseringsarbejde[[1]]() udført efter anbefaling af Kulturministeriets Arkivudvalg. Standarden skal understøtte at it-systemer kan beskrives på en ensartet måde, og at beskrivelsen kan dække de mest udbredte behov for udveksling af information om it-systemer i det offentlige. Første konkrete ibrugtagning af standarden vil være i forbindelse afgivelse af oplysninger om it-systemer til Rigsarkivet.
+Standarden er etableret og efter aftale med KL, Danske Regioner og Digitaliseringsstyrelsen som følge af relateret standardiseringsarbejde udført efter anbefaling af Kulturministeriets Arkivudvalg. Standarden skal understøtte at it-systemer kan beskrives på en ensartet måde, og at beskrivelsen kan dække de mest udbredte behov for udveksling af information om it-systemer i det offentlige. Første konkrete ibrugtagning af standarden vil være i forbindelse afgivelse af oplysninger om it-systemer til Rigsarkivet. 
 
 Metode
 ----------
 
 Denne standard udgøres af en basisprofil (SYS-AP), som indeholder de basisoplysninger om it-systemer, der indgår i langt de fleste it-systembeskrivelser.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
 
-Den første anvendelsesprofil, som udvider basisprofilen, vil være målrettet arkivering (archvSYS-AP). Se også 'Standard for beskrivelse af it-systemer -- Arkivprofil'.
+Den første anvendelsesprofil, som udvider basisprofilen, vil være målrettet arkivering (archvSYS-AP). Se også [Standard for beskrivelse af it-systemer - Arkivprofil](https://digst.github.io/IT-System-AP/archvSYS-AP/docs/)
 
 <p align="center"><img src="img/Figur0-1-Forholdet_mellem-profilerne.png" alt="Forholdet mellem profilerne" title="Forholdet mellem profilerne" width="350"/></p>
 
@@ -196,12 +196,12 @@ It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. Basispr
 
 Uddybende beskrivelse af emner som eksempelvis kontraktstyring, infrastruktur og sikkerhed vil kræve andre modeller, udtrykt i andre mere specifikke anvendelsesprofiler. Basisprofilens model er skabt med fokus på at kunne lette integrationen mellem øvrige it-systembeskrivende modeller og profiler.
 
-<p class="example">Eksempelvis bidrager standarden med overordnede oplysninger om it-systemers tekniske indretning (jf afsnittet om teknisk indretning i Kapitel 4), men giver ikke i sig selv mulighed for at udtrykke detaljerede oplysninger om fx hardwareinstanser eller lignende.</p>
+<p class="note">Eksempelvis bidrager standarden med overordnede oplysninger om it-systemers tekniske indretning (jf afsnittet om teknisk indretning i Kapitel 4), men giver ikke i sig selv mulighed for at udtrykke detaljerede oplysninger om fx hardwareinstanser eller lignende.</p>
 
 Anvendelse
 --------------
 
-Når der fremover defineres anvendelsesprofiler, hvor 'it-system' er det centrale emne, skal basisprofilen bruges som afsæt for den nye profil. I den nye profil skal basisprofilens elementer indgå i så stort et omfang som muligt for at give det bedst mulige grundlag for efterfølgende at skabe sammenhæng mellem datasæt etableret på baggrund af ellers forskelligartede it-system-profiler.
+Når der fremover defineres anvendelsesprofiler, hvor *it-system* er det centrale emne, skal basisprofilen bruges som afsæt for den nye profil. I den nye profil skal basisprofilens elementer indgå i så stort et omfang som muligt for at give det bedst mulige grundlag for efterfølgende at skabe sammenhæng mellem datasæt etableret på baggrund af ellers forskelligartede it-system-profiler.
 
 Basisprofilens elementer består af klasser, egenskaber (attributter), der beskriver den enkelte klasse, samt egenskaber (associationer), der beskriver relationer mellem klasser. Disse elementer enten kan eller skal genanvendes af de mere specifikke anvendelsesprofiler, der dannes på baggrund af basisprofilen. Angivelsen af, om og hvordan det enkelte element indgår i en ny anvendelsesprofil, angives forskelligt for klasser og for egenskaber.
 
@@ -209,17 +209,17 @@ Basisprofilens elementer består af klasser, egenskaber (attributter), der beskr
 
 For hver enkelt klasse, der er del af basisprofilen, angives det om klassen enten skal, bør eller kan indgå i en ny profil.
 
-Klasser, der altid skal indgå i applikationsprofiler baseret på basisprofilen, markeres med en stereotypeangivelse kaldet <mandatory> (obligatorisk).
+Klasser, der altid skal indgå i applikationsprofiler baseret på basisprofilen, markeres med en stereotypeangivelse kaldet *mandatory* (obligatorisk).
 
-Klasser, der anbefales at indgå for at sikre det bredest mulige grundlag for sammenhæng mellem de enkelte profiler, er markeret med stereotypen <recommended> (anbefalet). Disse klasser bør i videst muligt omfang medtages, hvis der er datagrundlag for det i de datasæt de nye profiler rettes mod.
+Klasser, der anbefales at indgå for at sikre det bredest mulige grundlag for sammenhæng mellem de enkelte profiler, er markeret med stereotypen *recommended* (anbefalet). Disse klasser bør i videst muligt omfang medtages, hvis der er datagrundlag for det i de datasæt de nye profiler rettes mod.
 
-Klasser, der kan indgå, men ikke nødvendigvis skal indgå, markeres som <optional> (valgfri).
+Klasser, der kan indgå, men ikke nødvendigvis skal indgå, markeres som *optional* (valgfri).
 
 ### Anvendelse af egenskaber
 
-Basisprofilens egenskaber anvender ikke angivelserne <mandatory>, <recommended> og <optional>. For alle egenskaber, attributter og associationer angives i stedet egenskabens multiplicitet. Det vil sige; det angives, hvor mange der mindst skal være, og hvor mange der højest må være af en attribut eller en association.
+Basisprofilens egenskaber anvender ikke angivelserne *mandatory*, *recommended* og *optional*. For alle egenskaber, attributter og associationer angives i stedet egenskabens multiplicitet. Det vil sige; det angives, hvor mange der mindst skal være, og hvor mange der højest må være af en attribut eller en association.
 
-I basisprofilen er de fleste multipliciteter holdt relativt åben ved at angive mindsteværdien som '0' (nul) og maksimumværdien som '*' (ubegrænset). Nye profiler baseret på basisprofilen kan altid indsnævre en multiplicitets udfaldsrum yderligere, men må ikke udvide den!
+I basisprofilen er de fleste multipliciteter holdt relativt åben ved at angive mindsteværdien som *0* (nul) og maksimumværdien som * (ubegrænset). Nye profiler baseret på basisprofilen kan altid indsnævre en multiplicitets udfaldsrum yderligere, men må ikke udvide den!
 
 Der er indført visse grundlæggende krav til beskrivelse af it-systemer i basisprofilen i form af multipliciteter. Der *skal* udfyldes **it-systemnavn** og **it-systembeskrivelse**,. Disse krav er baseret på en vurdering af laveste fællesnævner for fremtidige profileringer. Øvrige oplysninger *kan* udfyldes. Se disse udfyldelseskrav i Bilag B eller se multipliciteterne i UML-diagrammerne,
 
@@ -242,8 +242,8 @@ Standardisering af deling af it-systemoplysninger
 
 Basisprofilen danner grundlag for entydige og præcise udvekslinger af it-systemoplysninger til en lang række formål. Oplysninger om offentlige it-systemer indsamles mange steder, men på forskellig vis. Med et fælles sprog, som profilen præsenterer, lægges fundamentet for en ensartet og konsistent udveksling af data om it-systemer. Brug af profilen vil ikke betyde, at eksisterende modeller eller interne registreringer skal laves om, men gør at de kan mappes til et fælles sprog, så data kan deles på en effektiv og entydig måde via et maskinlæsbart format uden behov for manuel behandling, eksempelvis for at opfylde informationsbehovet i forbindelse med afgivelse af systemoplysninger til hjemmelshavende myndigheder.
 
-<p class="example">
-Eksempelvis kan anvendelse af basisprofilen danne udgangspunkt for maskinlæsbar afgivelse af systemoplysninger til myndigheders interne it-systemoverblik og det statslige it-systemporteføljeoverblik jf. Strategi for it-styring i staten [[2]](), da kerneinformationerne vil være omfattet af standarden allerede. Dette kunne gøres i form af en udvidelse i form af en mere specifik anvendelsesprofil til håndtering af de vurderingsspørgsmål, fx "I hvilken grad er der omskiftelighed i forretningsgrundlaget for it-systemet?". Der kan også arbejdes videre med disse systemoplysninger i forbindelse med udarbejdelse af fortegnelse over databehandlingsaktiviteter, jf. Datatilsynets Vejledning om fortegnelse[[3]]().</p>
+<p class="note">
+Eksempelvis kan anvendelse af basisprofilen danne udgangspunkt for maskinlæsbar afgivelse af systemoplysninger til myndigheders interne it-systemoverblik og det statslige it-systemporteføljeoverblik jf. [Strategi for it-styring i staten](https://digst.dk/strategier/strategi-for-it-styring-i-staten/), da kerneinformationerne vil være omfattet af standarden allerede. Dette kunne gøres i form af en udvidelse i form af en mere specifik anvendelsesprofil til håndtering af de vurderingsspørgsmål, fx "I hvilken grad er der omskiftelighed i forretningsgrundlaget for it-systemet?". Der kan også arbejdes videre med disse systemoplysninger i forbindelse med udarbejdelse af fortegnelse over databehandlingsaktiviteter, jf. [Datatilsynets Vejledning om fortegnelse](https://www.datatilsynet.dk/media/6567/fortegnelse.pdf).</p>
 
 It-systemoversigt og Datamanagement
 ---------------------------------------
@@ -290,21 +290,19 @@ Formål, detaljeringsgrad eller granularitet og relevante klassifikationer skal 
 Centrale begreber
 =====================
 
-Begrebet 'it-system' udgør det centrale element i denne standard og defineres bredt for at kunne favne mange anvendelser. Ved at koble dette til relevante klassifikationer bliver det muligt med standarden at indsnævre mængden af de it-systemer, der skal beskrives.
+Begrebet *it-system* udgør det centrale element i denne standard og defineres bredt for at kunne favne mange anvendelser. Ved at koble dette til relevante klassifikationer bliver det muligt med standarden at indsnævre mængden af de it-systemer, der skal beskrives.
 
 
 System, informationssystem, it-system og implementering
 -----------------------------------------------------------
 
-Et **system** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i[ISO/IEC 15288][[4]].
+Et **system** defineres generelt som "*et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål"* ligesom i[ISO/IEC 15288](https://www.iso.org/standard/63711.html).
 Det bemærkes også, at *"Et system er i denne sammenhæng menneskeskabt og består ikke blot af hardware, software og data, men også af mennesker, processer, procedurer, faciliteter og materialer og naturlige genstande".*
 
 Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation af information, har vi at gøre med informationssystemer, og når (computer)-teknologi anvendes til at behandle disse informationer eller data, har vi at gøre med it-systemer[[5]].
 
-<p class="example">
-Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.\
-Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en)
-Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
+<p class="note">
+Begrebet *it-system* er altså en specialisering af *system* fra [ISO 15288](https://www.iso.org/standard/63711.html), idet der fokuseres på IT-aspektet. Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it.
 </p>	
 
 Begrebet **it-system** defineres derfor i denne standard som *"system, der består af digitale informationsteknologier".*  
@@ -319,17 +317,17 @@ Det er også vigtigt at bemærke, at et givet it-system kan instantieres i forsk
 
 ### Forskellige formål med beskrivelsen
 
-Denne standard forventes at få bred anvendelse hos offentlige myndigheder til flere forskellige formål, hvorfor definitionen af begrebet 'it-system' har en så anvendelsesneutral og generel karakter som muligt inden for standardens rammer. Det betyder også, at definitionen som udgangspunkt favner mange flere instanser af it-systemer, end hvad et bestemt indmeldingsformål måtte have brug for. Derfor anvendes en række klassifikationer, som giver mulighed for at netop at udpege den delmængde af it-systemer, det er relevant at undersøge eller beskrive til et givet formål.
+Denne standard forventes at få bred anvendelse hos offentlige myndigheder til flere forskellige formål, hvorfor definitionen af begrebet *it-system* har en så anvendelsesneutral og generel karakter som muligt inden for standardens rammer. Det betyder også, at definitionen som udgangspunkt favner mange flere instanser af it-systemer, end hvad et bestemt indmeldingsformål måtte have brug for. Derfor anvendes en række klassifikationer, som giver mulighed for at netop at udpege den delmængde af it-systemer, det er relevant at undersøge eller beskrive til et givet formål.
 
 ### Klassifikationer
 
 Klassifikationerne vil blive introduceret og defineret under de relevante emneområder i det følgende kapitel.[[6]]
 
-<p class="note">
-Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
-</p>
-
 Fælles for de nyetablerede klassifikationer er, at de alle er modelleret som selvstændige modeller iht. den internationale W3C-specifikation SKOS ([Simple Knowledge Organization System](https://www.w3.org/TR/skos-primer/)). Der er også udarbejdet en [dansk profil](https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer) på baggrund af denne som også er mappet til OIO Klassifikation.
+
+<p class="note">
+Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: [https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer](https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer)
+</p>
 
 Det forventes, at de relevante myndigheder forretningsgodkender og overtager ansvaret for indholdet af de respektive klassifikationer.
 
@@ -342,7 +340,7 @@ Som det blev beskrevet i foregående kapitel, kan man have behov for at beskrive
 Implementering og anvendelse; instantieret it-system
 --------------------------------------------------------
 
-Begrebet **it-system** udtrykker it-systemer i en organisation for -- som førnævnt -- at opnå et eller flere erklærede formål. Et konkret, implementeret eller 'instantieret' it-system kaldes et **instantieret it-system**. Et instantieret it-system kan i basisprofilen beskrives som havende relationer til en eller flere fysiske datasæt og/eller en eller flere services.
+Begrebet **it-system** udtrykker it-systemer i en organisation for -- som førnævnt -- at opnå et eller flere erklærede formål. Et konkret, implementeret eller *instantieret* it-system kaldes et **instantieret it-system**. Et instantieret it-system kan i basisprofilen beskrives som havende relationer til en eller flere fysiske datasæt og/eller en eller flere services.
 
 I basisprofilen ligger fokus på de oplysninger, der typisk udveksles, hvorfor yderligere infrastrukturoplysninger om hardware og software ikke indgår her. Basisprofilen er opbygget, så den kan danne udgangspunkt for en infrastrukturprofil med disse oplysninger.
 
@@ -361,7 +359,7 @@ Standardens emnemæssige relationer
 
 I det følgende gives en oversigt over standardens potentielle emnemæssige relationer og en beskrivelse af hvert underliggende emneområde
 
-It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De helt grundlæggende kerneinformationer ses i midten af figuren herunder, og de øvrige otte emneområder afspejler grundperspektiverne fra rammearkitekturen: styring, strategi, jura, sikkerhed, opgaver, information, applikation og infrastruktur, som beskrives i Hvidbog om fællesoffentlig digital arkitektur (FDA)[[7]].
+It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De helt grundlæggende kerneinformationer ses i midten af figuren herunder, og de øvrige otte emneområder afspejler grundperspektiverne fra rammearkitekturen: styring, strategi, jura, sikkerhed, opgaver, information, applikation og infrastruktur, som beskrives i [Hvidbog om fællesoffentlig digital arkitektur](https://arkitektur.digst.dk./mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur) (FDA).
 
 <p align="center"><img src="img/Figur_illustration_af_standardens_emnemaessige_sammenhaenge.png" alt="Illustration af standardens emnemæssige" width="800"/></p>
 Figur 5.1: Illustration af standardens emnemæssige
@@ -381,21 +379,21 @@ Som en del af kerneinformationerne hører **ibrugtagningsdato** og **udfasningsd
 
 For at kunne identificere, hvilken version af softwareproduktet der er taget i anvendelse, eksempelvis i forhold til en bestemt kontrakt med en leverandør, kan det være relevant at angive et **versionsnummer**. Hvis et versionsnummer er specificeret i kontrakten, bør dette anvendes.
 
-<p class="example">Eksempelvis kan der ved anvendelse af cBrains F2 angives version 5.3 (og ikke 5.3.0.41112)</p>
+<p class="note">Eksempelvis kan der ved anvendelse af cBrains F2 angives version 5.3 (og ikke 5.3.0.41112)</p>
 
 Opgaver
 -----------
 
 Et it-system yder en given it-service, som understøtter forretningens opgaver. Et it-system kan beskrives med et eller flere anvendelsesformål, der antages at være at understøtte en **forvaltningsopgave**. Til dette formål anvendes en klassifikation over offentlige opgaver eller såkaldte forvaltningsopgavetyper såsom Den Fællesoffentlige Referencemodel (FORM) eller KL Emnesystematik (KLE).  KLE er en emnesystematik/journalplan, der dækker det kommunale område. FORM er en overordnet emnesystematik, der dækker opgaveporteføljen i hele den offentlige sektor -- dvs. staten, kommunerne og regionerne. KLE er som regel mere detaljeret end FORM på det kommunale område. Det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder -- som minimum på det øverste niveau (hhv. serviceområde i FORM og emnegruppe i KLE):
 
-**Klassifikation KLE:** http://www.kle-online.dk/soegning
+**Klassifikation KLE:** [http://www.kle-online.dk/soegning](http://www.kle-online.dk/soegning)
 
-**Klassifikation FORM:** http://www.form-online.dk/soegning
+**Klassifikation FORM:** [http://www.form-online.dk/soegning](http://www.form-online.dk/soegning)
 
-<p class="example">Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven "65.50.05.05 Sagshåndtering" (FORM v.2.14) el. KLE-emnet "00.15.12. Kvalitetsstyringssystem, sagsbehandling" (KLE v. Aug. 2019)</p>
+<p class="note">Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven "65.50.05.05 Sagshåndtering" (FORM v.2.14) el. KLE-emnet "00.15.12. Kvalitetsstyringssystem, sagsbehandling" (KLE v. Aug. 2019)</p>
 
 <p class="note">
-Bemærk, at produkter i SKI-kataloget allerede er opmærket med FORM samt internationale referencekoder såsom Common Procurement Vocabulary Codes (CPV)[[9]] og United Nations Standard Product and Services Code (UNSPSC)[[10]], som er klassifikationer for hhv. udbudte opgaver og varer og tjenesteydelser. Bemærk, at en sådan opmærkning angiver, at produktet har **kapabilitet til at understøtte** en given opgave. SKI anvender tillige STORM (Service- og Teknologireferencemodel)[[11]] på trods af, at den ikke længere opdateres.
+Bemærk, at produkter i [SKI-kataloget(https://skikataloget.ski.dk/ski-kataloget/) allerede er opmærket med FORM samt internationale referencekoder såsom Common Procurement Vocabulary Codes ([CPV](https://udbudsportalen.dk/cpv-koder/))  og United Nations Standard Product and Services Code ([UNSPSC](http://unspsc.gs1.dk/find-din-kode/)), som er klassifikationer for hhv. udbudte opgaver og varer og tjenesteydelser. Bemærk, at en sådan opmærkning angiver, at produktet har **kapabilitet til at understøtte** en given opgave. SKI anvender tillige [STORM](http://arkitekturguiden.digitaliser.dk/storm) på trods af, at den ikke længere opdateres. STORM er en taksonomi over it-servicestyper. På samme måde som FORM kategoriserer og beskriver det offentliges opgaver, blev STORM udviklet til at give en overordnet klassifikation og beskrivelse af de it-systemer, der bruges i den offentlige forvaltning. STORM vedligeholdes ikke pt. og det er projektgruppens vurdering at den ikke umiddelbart kan tages i anvendelse i denne standard. Flere interessenter har dog i forbindelse med standardens udarbejdelse udtrykt et behov for en sådan klassifikation ifm. øvrige anvendelser. Dette bør analyseres nærmere.
 </p">
 
 FORM og KLE indeholder henvisninger til de love og lovbekendtgørelser, som de offentlige opgaver udspringer fra, så ved at opmærke et it-system med FORM eksisterer der også indirekte en relation til retsgrundlaget for it-systemets anvendelse. Der er også muligt via FORM at se, hvilke myndigheder de forskellige opgaver tilhører. KLE indeholder, ud over love og lovbekendtgørelser, også bekendtgørelser. FORM mapper til paragraffer i finansloven og KLE, og KLE mapper til Social- og Indenrigsministeriets kontoplan.
@@ -417,9 +415,9 @@ På overordnet niveau angives **it-systemejeren** -- en person eller organisatio
 
 I en given organisations praktiske og tekniske forvaltning af et it-system er det også vigtigt at registrere **it-systemforvalteren**, dvs. den organisatoriske enhed eller person, som administrerer og træffer afgørelser vedrørende tekniske anliggender **på vegne af** systemejeren. I forbindelse med større it-systemer kan forvalterrollen være opdelt i en intern forretningsmæssig forvalterrolle og en teknisk forvalterrolle hos en leverandør.
 
-<p class="example">Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
+<p class="note">Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
 
-For databærende it-systemer skal den **dataansvarlige** aktør også angives, dvs. den organisation som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til "*en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger*", jf. GDPR[[12]]. Én myndighed kan være dataansvarlig for et system, mens det faktisk er **databehandler,** som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det.  Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. Datatilsynets vejledning om databehandlere og dataansvarlige[[13]]. Det kan også være relevant at angive den konkrete **dataskaber**, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.
+For databærende it-systemer skal den **dataansvarlige** aktør også angives, dvs. den organisation som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til "*en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger*", jf. [GDPR](http://data.europa.eu/eli/reg/2016/679/oj). Én myndighed kan være dataansvarlig for et system, mens det faktisk er **databehandler,** som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det.  Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. [Datatilsynets vejledning om databehandlere og dataansvarlige](https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf). Det kan også være relevant at angive den konkrete **dataskaber**, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.
 
 Et it-system kan dokumenteres ved hjælp af forskellige dokumenter, der hver har sit formål og målgruppe, fx via **dokumentationsreference** såsom arkitekturdokumentation, installationsvejledning og slutbrugervejledning.
 
@@ -441,11 +439,11 @@ Bemærk dog, at denne direkte angivelse af it-systemets primære leverandører s
 
 Bemærk også, at selvom interne -- både mundtlige og skriftlige -- aftaler vedrørende et mindre egenudviklet it-systems videreudvikling, vedligehold og drift ikke altid er beskrevet i formelle og juridisk bindende kontrakter, kan disse stadig betragtes som værende kontrakter, og beskrives som sådan. 
 
-Allerede inden en givet produktserie tages i anvendelse, har produktserien typisk allerede en række relationer, som fx er registreret i OS2Kitos. De intellektuelle rettigheder til produkter i en produktserien besiddes af en ***rettighedshaver***, og myndighedens brugsret i forhold til it-systemets og dets komponenter kan variere i forhold til it-systemets type og aftalte kontraktforhold.
+Allerede inden en givet produktserie tages i anvendelse, har produktserien typisk allerede en række relationer, som fx er registreret i OS2Kitos. De intellektuelle rettigheder til produkter i en produktserien besiddes af en **rettighedshaver**, og myndighedens brugsret i forhold til it-systemets og dets komponenter kan variere i forhold til it-systemets type og aftalte kontraktforhold.
 
 Et it-system kan være relateret til en lang række kontrakter, hvoraf der i denne standard fokuseres på de kontrakter, der vedrører it-systemets udvikling, vedligehold, drift og support. Som beskrevet ovenfor er det muligt blot at angive en overordnet relation fra et it-system til hhv. udviklingspart, vedligeholdelsespart el. driftspart, men en mere præcis beskrivelse af leverandørforhold kan opnås ved at beskrive sammenhængen til de formelle it-kontrakter.
 
-Til beskrivelse af kontrakter anvendes et vokabular for finansielle forretninger, Financial Industry Business Ontology (FIBO)[[14]], som er et fælles produkt fra OMG og Enterprise Data Management (EDM) Council.
+Til beskrivelse af kontrakter anvendes et vokabular for finansielle forretninger, herunder [kontrakter](https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts), Financial Industry Business Ontology [FIBO](https://www.omg.org/hot-topics/finance.htm), som er et fælles produkt fra OMG og Enterprise Data Management (EDM) Council.
 
 For et it-system kan der angives referencer til kontrakternes **identifikation** i et kontraktstyringssystem, eventuelt suppleret med en kontrakttypeopmærkning ved hjælp af en **it-kontrakttypeklassifikation**, se Bilag A.
 
@@ -454,24 +452,24 @@ For et it-system kan der angives referencer til kontrakternes **identifikation**
 Information
 ---------------
 
-De data, som et instantieret it-system **skaber,** kan betragtes som en specifik fysisk **repræsentation** af et **datasæt** -- en samling af oplysninger bestående af enkelte dele der forvaltes under et[[15]], og beskrivelsen af datasæt og datasætrepræsentationer følger i denne sammenhæng W3Cs Data Catalogue Vocabulary (DCAT)[[16]]. Et datasæt og dets repræsentationer kan forsynes med en **titel,** og **første og sidste datatilføjelsesdato** kan angives for datasætrepræsentationen.  
+De data, som et instantieret it-system **skaber,** kan betragtes som en specifik fysisk **repræsentation** af et **datasæt** -- en samling af oplysninger bestående af enkelte dele der forvaltes under ét [(Referencearkitektur for deling af data og dokumenter](https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf)), og beskrivelsen af datasæt og datasætrepræsentationer følger i denne sammenhæng W3Cs Data Catalogue Vocabulary ([DCAT](https://www.w3.org/TR/vocab-dcat/)). Et datasæt og dets repræsentationer kan forsynes med en **titel,** og **første og sidste datatilføjelsesdato** kan angives for datasætrepræsentationen.  
 
-Datasætrepræsentationer, som it-systemet **udstiller*** og **anvender,** bør registreres ved reference til Datasætkataloget[[17]]. Det fællesoffentlige datasætkatalog er et katalog, der har til hensigt at samle metadata om myndigheders datasæt, hvilket blandt andet understøtter Lov om videreanvendelse af den offentlige sektors informationer (PSI-direktivet).[[18]]
+Datasætrepræsentationer, som it-systemet **udstiller*** og **anvender,** bør registreres ved reference til [Datasætkataloget](https://arkitektur.digst.dk/det-faellesoffentlige-datasaetkatalog). Det fællesoffentlige datasætkatalog er et katalog, der har til hensigt at samle metadata om myndigheders datasæt, hvilket blandt andet understøtter Lov om videreanvendelse af den offentlige sektors informationer ([PSI-direktivet](https://www.retsinformation.dk/eli/lta/2005/596)).
 
 Sikkerhed
 -------------
 
 Emnet sikkerhed kan vedrøre mange forskellige aspekter, fx informationssikkerhed, persondatasikkerhed, forretnings- og samfundskritikalitet og fortrolighed.
 
-I henhold til GDPR[[19]]og Datatilsynets 'Vejledning om fortegnelse'[[20]] er det for databærende it-systemer relevant at være opmærksom på **datasletningsfristen**, dvs. førstkommende dato for, hvornår bestemte data i systemet skal være slettet forinden.
+I henhold til [GDPR](http://data.europa.eu/eli/reg/2016/679/oj) og Datatilsynets [Vejledning om fortegnelse](https://www.retsinformation.dk/eli/lta/2018/502) er det for databærende it-systemer relevant at være opmærksom på **datasletningsfristen**, dvs. førstkommende dato for, hvornår bestemte data i systemet skal være slettet forinden.
 
 It-systemet kan opmærkes med en **personoplysningskategori,** som er beskrevet i Datadatatilsynets vejledning, og på denne måde oplyses det, hvorvidt systemet indeholder følsomme personoplysninger eller almindelige personoplysninger, herunder personnummeroplysninger og oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger, se Bilag A. De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Oplysninger om strafbare forhold og personnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger. Som en hjælp til præcisering kunne en klassifikation med personoplysnings*underkategorier* eventuelt opstilles.
 
 It-systemer skal kunne opmærkes ift. deres grad af kritikalitet ved hjælp af klassifikation for **kritikalitetstyper**. Se bilag A. Myndigheden kan vælge at tage udgangspunkt i følgende definitioner af hhv. et samfundskritisk og et forretningskritisk it-system. Et **samfundskritisk it-system** er et it-system, som enten er vigtigt for den nationale sikkerhed eller for vigtig infrastruktur, hvor misbrug af data vil have store konsekvenser, eller hvor driftsforstyrrelser kan have stor betydning for økonomien i staten eller for mange borgere eller virksomheder. **Et forretningskritisk it-system** er et it-system, hvor driftsforstyrrelser kan medføre, at størstedelen af myndighedens medarbejdere ikke kan udføre deres arbejde, eller at myndigheden vanskeligt kan overholde sine forvaltningsmæssige forpligtelser.
 
-Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift. fortrolighed, fx **Fortrolighedsgrad iht. ISO27002**[21]]eller **Fortrolighedsgrad iht.sikkerhedscirkulæret (EU/NATO)**[[22]] Se Bilag A. I forhold til klassifikation iht. sikkerhedscirkulæret kan tilføjes 'uklassificeret', så det kan angives, at der er taget stilling til fortrolighedsgraden.
+Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift. fortrolighed, fx **Fortrolighedsgrad** iht. [ISO27002](https://www.iso.org/standard/54533.html) eller **Fortrolighedsgrad** iht. [sikkerhedscirkulæret (EU/NATO)](https://www.retsinformation.dk/eli/retsinfo/2014/10338). Se Bilag A. I forhold til klassifikation iht. sikkerhedscirkulæret kan tilføjes *uklassificeret*, så det kan angives, at der er taget stilling til fortrolighedsgraden.
 
-<p class="example">Eksempelvis kan data i beredskabssystemer eventuelt være opmærket med fortrolighedsgrad, og fortrolighed kan være et relevant aspekt ved indmelding af it-systemoplysninger såsom kritikalitetstype og systemernes tekniske tilstand.</p>
+<p class="note">Eksempelvis kan data i beredskabssystemer eventuelt være opmærket med fortrolighedsgrad, og fortrolighed kan være et relevant aspekt ved indmelding af it-systemoplysninger såsom kritikalitetstype og systemernes tekniske tilstand.</p>
 
 Applikation
 ---------------
@@ -487,7 +485,7 @@ Infrastruktur
 
 Denne standard bidrager med *overordnede* oplysninger om it-systemers tekniske indretning og infrastruktur. Efterfølgende kan udvikles en udvidet beskrivelse af den generelle anvendelsesprofil for it-system, samt en anvendelsesprofil for it-infrastruktur. Anvendelsesprofilen for it-infrastruktur forventes primært at fokusere på software, hardware og dataservices på et generaliserende niveau, med mulighed for yderligere specialiseringer og udvidelser.
 
-It-systemer kan være taget i anvendelse i forskellige miljøer iht. systemets udviklingsforløb[[23]], fx udvikling, afprøvning, præproduktion, produktion, se klassifikationen **it-miljøtype** i Bilag A. I forhold til arkivering er kun instanser af it-systemer i produktion relevante.
+It-systemer kan være taget i anvendelse i forskellige miljøer iht. systemets [udviklingsforløb](https://dltj.org/article/software-development-practice/), fx udvikling, afprøvning, præproduktion, produktion, se klassifikationen **it-miljøtype** i Bilag A. I forhold til arkivering er kun instanser af it-systemer i produktion relevante.
 
 I en myndigheds interne it-systemoverblik er det i forbindelse med drift relevant at beskrive de relationer, som it-systemer og dets applikationskomponenter har til fx specifikke softwareprodukter, hardwareprodukter, servere, databaser mv, men her ligger fokus på de oplysninger, der typisk udveksles, hvorfor disse infrastrukturoplysninger ikke indgår. 
 
@@ -506,9 +504,9 @@ Basisprofilens bagvedliggende datamodel udgør den fælles specifikation, hvorti
 
 Der gives en overordnet beskrivelse af dennes indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses to UML-diagrammer for hhv. basisprofilen og den første konkrete anvendelse i en arkivprofil. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values. Der findes også en oversigt over modellens elementer online.
 
-- Link til webudgivelse af UML-modellerne: http://data.gov.dk/document/itsystem-ap/v1/uml/
+- Link til webudgivelse af UML-modellerne: [http://data.gov.dk/document/itsystem-ap/v1/uml/](http://data.gov.dk/document/itsystem-ap/v1/uml/)
 
-- Link til online oversigt over modellens elementer: https://github.com/digst/IT-System-AP/tree/master/SYS-AP
+- Link til online oversigt over modellens elementer: [https://github.com/digst/IT-System-AP/tree/master/SYS-AP](https://github.com/digst/IT-System-AP/tree/master/SYS-AP)
 
 
 Maskinfortolkeligt format
@@ -548,8 +546,7 @@ Der er ikke hensigten, at denne standard som udgangspunkt skal kunne rumme alle 
 
 Oplysningstyperne i denne standard er mappet eller gennemgået ift. til følgende modeller.
 
-Mapningsskema i form af et regneark, der kan downloades her:\
-<https://data.gov.dk/document/itsystem-ap/v1/mappings/Mapning_it-system_oplysninger.xlsx>
+Mapningsskema i form af et regneark, der kan downloades her:https://data.gov.dk/document/itsystem-ap/v1/mappings/Mapning_it-system_oplysninger.xlsx
 
 - **Rigsarkivets anmeldelses- og tilsynsskemaer**
 
@@ -559,25 +556,24 @@ Skemaer vedr. statslige myndigheders, kommuner og regioners bevaring, kassation 
 
 - **Datatilsynets vejledning om fortegnelse** jf. GDPR.
 
-Datatilsynet har offentliggjort en skabelon for en databehandleraftale, der lever op til persondataforordningens minimumskrav. --* Datatilsynet 2018\
-<https://www.datatilsynet.dk/media/6567/fortegnelse.pdf>
+Datatilsynet har offentliggjort en skabelon for en databehandleraftale, der lever op til persondataforordningens minimumskrav. --* Datatilsynet 2018 https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
 
 - **Kommunernes IT OverbliksSystem (OS2Kitos)**
 
 OS2Kitos er en cloud-baseret løsning, der anvendes af 78 kommuner. OS2Kitos skaber overblik over den samlede kommunale it-portefølje. OS2Kitos består af 5 moduler: IT understøttelse af organisation, IT Projekter, IT Systemer, IT Kontrakter og IT Rapporter.* -- OS2Kitos Sekretariatet 2018\
-[https://www.kitos.dk,](https://www.kitos.dk7/) <https://github.com/os2kitos/kitos>
+[https://www.kitos.dk](https://www.kitos.dk) https://github.com/os2kitos/kitos
 
 - **Model for porteføljestyring af statslige it-systemer**
 
 Regeringen har i efteråret 2017 ved "Et solidt it-fundament -- Strategi for it-styring i staten" indført en ny model for porteføljestyring af statslige it-systemer.
 Ministeriernes kontor for it-styring 2017
-<https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/>  (her mappes til udvalgte egenskaber fra Datagrundlag v2.0)
+https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/  (her mappes til udvalgte egenskaber fra Datagrundlag v2.0)
 
 - **Specifikation af Model for Organisation Version 2.0**
 
 Formålet med Organisationsmodellen er at tilbyde et fælles sprog for beskrivelse af formelle organer og de elementer, som indgår heri.
 
-<https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf> - OIO 2017 (revideret 2018):\
+https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf - OIO 2017 (revideret 2018):\
 (her mappes til egenskaber fra kapitlet It-system)
 
 - **KOMBIT IT-system-overblik**
@@ -592,7 +588,7 @@ Ved etablering og installation af nye løsninger hos Statens It sender myndighed
 
 Staten og Kommunernes Indkøbsservice (SKI) laver indkøbsaftaler, der samler indkøb på tværs af det offentlige og afløfter udbudspligten, og via SKI-kataloget udstilles oplysninger om hardware- og softwareprodukter --* SKI 2018
 
-<https://skikataloget.ski.dk/ski-kataloget/>
+https://skikataloget.ski.dk/ski-kataloget/
 
 - **Configuration Management DataBase (CMDB)** /**IT Service Management (ITSM)**
 
@@ -602,11 +598,11 @@ Datamodeller fx ServiceNow og BMC er overordnet blevet undersøgt for genbrugeli
 
 ArchiMate er en international notationsstandard på enterprisearkitekturniveau, som er optaget som en åben standard under The Open Group. Der indgår forskellige såkaldte lag, hvor applikationslaget (Application Layer) anvendes til at modellere en organisations informationssystemarkitekturer, som det defineres i TOGAF-rammeværket ArchiMate.
 
-Den overordnede mapning går her ikke på egenskaberne, men på klasserne. Det primære element i applikationslaget (Application Layer) er applikationskomponenten. Dette element anvendes til både at modellere hele it-systemer og de komponenter, der indgår i deri. Standardens 'datasæt' kan mappes til ArchiMates 'dataobjekt', og 'snitflade' kan mappes til 'application interface'.
+Den overordnede mapning går her ikke på egenskaberne, men på klasserne. Det primære element i applikationslaget (Application Layer) er applikationskomponenten. Dette element anvendes til både at modellere hele it-systemer og de komponenter, der indgår i deri. Standardens *datasæt* kan mappes til ArchiMates *dataobjekt*, og *snitflade* kan mappes til *application interface*.
 
 - **Fællesoffentlig Digital Arkitektur**
 
-I den Fællesoffentlige Digitale Arkitektur (FDA) indgår grundlæggende arkitekturperspektiver, som udgør de tematiske emneområder og kapitler i denne standard. Dog er der pt. ikke medtaget oplysningstyper under perspektivet 'Strategi'.
+I den Fællesoffentlige Digitale Arkitektur (FDA) indgår grundlæggende arkitekturperspektiver, som udgør de tematiske emneområder og kapitler i denne standard. Dog er der pt. ikke medtaget oplysningstyper under perspektivet *Strategi*.
 
 <p align="center"><img src="img/Figur_arkitektuprincipper.png" alt="Figur FDA arkitektuprincipper" width="600"/></p>
 
@@ -640,7 +636,7 @@ Standarder
 
 Datamodeller / klassifikationer / retningslinjer
 
-- Datamodellen for [OS2Kitos ](https://www.kitos.dk/)(inkl. klassifikation af applikationstyper og forretningstyper)
+- Datamodellen for [OS2Kitos](https://www.kitos.dk/)(inkl. klassifikation af applikationstyper og forretningstyper)
 
 - OIO specifikation af it-system i [modellen for Organisation](https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf)
 
@@ -711,6 +707,9 @@ Bilag
 =========
 
 Bilag A: Overblik over relevante klassifikationer
+
+
+<p align="center"><img src="img/Bilag-A-Overblik-over-relevante-klassifikationerBasisprofil.png" alt="Overblik over relevante klassifikationer" title="Overblik over relevante klassifikationer" width="800"/></p>
 
 -----------------------------------------------------
 
@@ -1159,7 +1158,7 @@ Oversigt over UML-modellens anvendelsesprofil, kernemodeller og klassifikationsm
 
 Anvendelsesprofilen:
 -  [*IT System AP (Basic Profile)*](https://data.gov.dk/document/itsystem-ap/v1/uml/)
--  [*IT System AP (Archive Profile)*](https://data.gov.dk/document/itsystem-ap/v1/uml/)*
+-  [*IT System AP (Archive Profile)*](https://data.gov.dk/document/itsystem-ap/v1/uml/)
 
 Anvendte kernemodeller
 -  [*Vokabular for it-system (SYS)*](https://data.gov.dk/model/core/itsystem/
@@ -1200,10 +1199,10 @@ Bilag E: UML-diagram: SYS-AP
 - Godkendelsesstatus (approvalStatus): afventer godkendelse\
 - Modelomfang (modelScope): anvendelsesmodel
 - Forretningsområde (theme): [06.38.10.10 Arkitektur for den digitale infrastruktur](http://www.form-online.dk/opgavenoegle/06/#06.38.10.10)\
-- Afledt af (wasDerivedFrom): [https://data.gov.dk/model/concept/itsystem/](https://data.gov.dk/model/concept/itsystem)
+- Afledt af (wasDerivedFrom): [https://data.gov.dk/concept/core/itsystem/](https://data.gov.dk/concept/core/itsystem)
 - Kommentar (comment):  Denne generelle anvendelsesprofil vil kunne anvendes til etablere et overordnet overblik og standardisere indsamlingen af oplysninger.
 
-<p align="center"><img src="img/Figur_UML-SYS-AP.png.png" alt="UML-diagram" title="UML-diagram SYS-AP" width="800"/></p>
+<p align="center"><img src="img/Figur_UML-SYS-AP.png" alt="UML-diagram" title="UML-diagram SYS-AP" width="800"/></p>
 
 
 Bilag F: UML-diagram: SYS
@@ -1218,7 +1217,7 @@ Bilag F: UML-diagram: SYS
 - Godkendelsesstatus (approvalStatus) : godkendt
 - Modelomfang (modelScope): kernemodel
 - Forretningsområde (theme): [06.38.10.10 Arkitektur for den digitale infrastruktur](http://www.form-online.dk/opgavenoegle/06/#06.38.10.10)\
-- Afledt af (wasDerivedFrom): [https://data.gov.dk/model/concept/itsystem/](https://data.gov.dk/model/concept/itsystem)
+- Afledt af (wasDerivedFrom): [https://data.gov.dk/concept/core/itsystem/](https://data.gov.dk/concept/core/itsystem)
 - Kommentar (comment):  
 
 <p align="center"><img src="img/Figur_UML-SYS.png" alt="UML-diagram" title="UML-diagram SYS" width="800"/></p>
@@ -1235,7 +1234,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 - Modelstatus (modelStatus): stable
 - Godkendelsesstatus (approvalStatus) : godkendt
 - Forretningsområde (theme):  65.50.05.10 Sagsarkivering  
-- Afledt af (wasDerivedFrom): https://data.gov.dk/model/concept/itsystem/
+- Afledt af (wasDerivedFrom): https://data.gov.dk/concept/core/itsystem/
 - Kommentar (comment): Samlet begrebsliste med begreber, der er relevante ifm. registrering af basisoplysninger om it-systemer. 
 
 <table class="term-table" cellspacing="0">
@@ -1265,7 +1264,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 user interface
@@ -1306,7 +1305,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection/
             </td>
             <td>
                 data processor
@@ -1327,7 +1326,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://www.w3.org/TR/vocab-dcat/
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataset#
+                https://data.gov.dk/concept/core/dataset/
             </td>
             <td>
                 data service
@@ -1348,7 +1347,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                     href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe</a>
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataset#
+                https://data.gov.dk/concept/core/dataset/
             </td>
             <td>
                 data creator
@@ -1368,7 +1367,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 data erasure
@@ -1389,7 +1388,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 data erasure deadline
@@ -1409,7 +1408,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://www.w3.org/TR/vocab-dcat/,
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataset#
+                https://data.gov.dk/concept/core/dataset/
             </td>
             <td>
                 dataset
@@ -1429,7 +1428,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://www.w3.org/TR/vocab-dcat/,
             </td>
             <td>
-                https://data.gov.dk/model/concept/datasetdistribution#
+                https://data.gov.dk/concept/core/datasetdistribution/
             </td>
             <td>
                 distribution
@@ -1449,7 +1448,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 Referencearkitektur for deling af data og dokumenter
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection/
             </td>
             <td>
                 data subject
@@ -1469,7 +1468,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 predessor system
@@ -1489,7 +1488,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/informationsecurity#
+                https://data.gov.dk/concept/core/informationsecurity/
             </td>
             <td>
                 confidentiality type
@@ -1510,7 +1509,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://www.iso.org/standard/54533.html
             </td>
             <td>
-                https://data.gov.dk/model/concept/informationsecurity#
+                https://data.gov.dk/concept/core/informationsecurity/
             </td>
             <td>
                 ISO 27002 Data Classification
@@ -1531,7 +1530,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/informationsecurity#
+                https://data.gov.dk/concept/core/informationsecurity/
             </td>
             <td>
                 Nato &amp; EU Data Classification
@@ -1551,7 +1550,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 information system
@@ -1571,7 +1570,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsysteInstancem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT system instance
@@ -1591,7 +1590,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT supplier
@@ -1611,7 +1610,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://en.wikipedia.org/wiki/Deployment_environment<br /> Statens-IT Systemkort
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 environment type
@@ -1631,7 +1630,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://www.iso.org/standard/63711.html
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT system
@@ -1651,7 +1650,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT system target group
@@ -1672,7 +1671,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT system owner
@@ -1693,7 +1692,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT system manager
@@ -1713,7 +1712,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/
             </td>
             <td>
-                https://data.gov.dk/model/concept/contract#
+                https://data.gov.dk/concept/core/contract/
             </td>
             <td>
                 contract
@@ -1734,7 +1733,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 criticality type
@@ -1754,7 +1753,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/
             </td>
             <td>
-                https://data.gov.dk/model/concept/contract#
+                https://data.gov.dk/concept/core/contract/
             </td>
             <td>
                 counter party
@@ -1776,7 +1775,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                     href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a>
             </td>
             <td>
-                https://data.gov.dk/model/concept/organisation#
+                https://data.gov.dk/concept/core/organisation/
             </td>
             <td>
                 public administrative task type
@@ -1796,7 +1795,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/
             </td>
             <td>
-                https://data.gov.dk/model/concept/contract#
+                https://data.gov.dk/concept/core/contract/
             </td>
             <td>
                 principal party
@@ -1818,7 +1817,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                     href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a>
             </td>
             <td>
-                https://data.gov.dk/model/concept/organisation#
+                https://data.gov.dk/concept/core/organisation/
             </td>
             <td>
                 organization
@@ -1840,7 +1839,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://w3id.org/GDPRtEXT#Processor
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection/
             </td>
             <td>
                 controller
@@ -1861,7 +1860,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection/
             </td>
             <td>
                 personal data category
@@ -1881,7 +1880,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 notat om GDPR-modul i KITOS
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection/
             </td>
             <td>
                 personal data subcategory
@@ -1901,7 +1900,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 product series
@@ -1922,7 +1921,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                     href="https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli">https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli</a>
             </td>
             <td>
-                https://data.gov.dk/model/concept/legalresource#
+                https://data.gov.dk/concept/core/legalresource/
             </td>
             <td>
                 legal resource
@@ -1944,7 +1943,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer/
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 case area
@@ -1965,7 +1964,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 ISO/IEC 15288: https://www.iso.org/standard/63711.html
             </td>
             <td>
-                https://data.gov.dk/model/concept/system#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 system
@@ -1986,7 +1985,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
 
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 system documentation
@@ -2006,7 +2005,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT system aquisition type
@@ -2028,55 +2027,3 @@ arkitektur.digst.dk
 
 * * * * *
 
-[[1]]() Et arbejde hvis mål nu eksisterer i form af 'Standard for beskrivelse af it-systemer -- Arkivprofil'
-
-[[2]]() https://digst.dk/strategier/strategi-for-it-styring-i-staten/
-
-[[3]]() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
-
-[[4]]() ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)  
-
-[[5]]() Begrebet 'it-system' er altså en specialisering af 'system' fra ISO 15288, idet der fokuseres på IT-aspektet.\
-Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en)
-Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
-
-[[6]]() Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
-
-[[7]]() <https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur>
-
-[[8]]() https://skikataloget.ski.dk/ski-kataloget/
-
-[[9]]() Common Procurement Vocabulary er et fælles referencesystem for udbudte opgaver i EU https://udbudsportalen.dk/cpv-koder/
-
-[[10]]() United Nations Standard Product and Services Code) er et internationalt klassifikationssystem for varer og tjenesteydelser. http://unspsc.gs1.dk/find-din-kode/
-
-[[11]]() STORM er en taksonomi over it-servicestyper. På samme måde som FORM kategoriserer og beskriver det offentliges opgaver, er STORM udviklet til at give en overordnet klassifikation og beskrivelse af de it-systemer, der bruges i den offentlige forvaltning. STORM vedligeholdes ikke pt. http://arkitekturguiden.digitaliser.dk/storm og det er projektgruppens vurdering at den ikke umiddelbart kan tages i anvendelse i denne standard. Flere interessenter har dog i forbindelse med standardens udarbejdelse udtrykt et behov for en sådan klassifikation ifm. øvrige anvendelser. Dette bør analyseres nærmere.
-
-[[12]]() <http://data.europa.eu/eli/reg/2016/679/oj>:\
-  <https://www.retsinformation.dk/eli/lta/2018/502>
-
-[[13]]() <https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf>
-
-[[14]]() https://www.omg.org/hot-topics/finance.htm   & https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts
-
-[[15]]() https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf
-
-[[16]]() https://www.w3.org/TR/vocab-dcat/\
-    (Bemærk at DCAT anvender et snævrere datasætbegreb end det der defineres i ISO 19115‑1:2014)
-
-[[17]]() https://arkitektur.digst.dk/det-faellesoffentlige-datasaetkatalog
-
-[[18]]() https://www.retsinformation.dk/eli/lta/2005/596.
-
-[[19]]() http://data.europa.eu/eli/reg/2016/679/oj\
-  https://www.retsinformation.dk/eli/lta/2018/502
-
-[[20]]() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
-
-[[21]]() ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: https://www.iso.org/standard/54533.html
-
-[[22]]() Sikkerhedscirkulæret https://www.retsinformation.dk/eli/retsinfo/2014/10338
-
-[[23]]() https://dltj.org/article/software-development-practice/
-
-[[24]]() Ved godkendelse af standarden, vil UML-modellerne blive udstillet som XMI og RDF/XML med de endelige httpURIer.
