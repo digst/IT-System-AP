@@ -2014,7 +2014,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
     </tbody>
 </table>
 
-(se metadata og begrebsdiagrammer online:  <https://data.gov.dk/document/itsystem-ap/v1/uml/>)
+(se metadata og begrebsdiagrammer [online](https://data.gov.dk/document/itsystem-ap/v1/uml/))
 
 ---
 
@@ -2023,7 +2023,4 @@ Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige
 
 arkitektur.digst.dk
 
----
-
-* * * * *
 
