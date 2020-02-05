@@ -38,6 +38,7 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
   word-wrap: anywhere;
   overflow-wrap: anywhere;
   hyphens: auto;
+  word-break: break-all;
 }
 
 .term-table td{
