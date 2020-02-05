@@ -141,13 +141,13 @@ December 2019
 
 Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.
 
-Arkivprofilen anvender dele af og udvider en basisprofil 'Standard for beskrivelse af it-systemer' - Basisprofil (SYS-AP) med arkiveringsrelevante oplysninger, og specificer netop hvilke oplysninger der enten *skal* eller *kan* være til stede i forbindelse med afgivelse til Rigsarkivet.
+Arkivprofilen anvender dele af og udvider en basisprofil *Standard for beskrivelse af it-systemer - Basisprofil (SYS-AP)* med arkiveringsrelevante oplysninger, og specificer netop hvilke oplysninger der enten *skal* eller *kan* være til stede i forbindelse med afgivelse til Rigsarkivet.
 
 <p align="center"><img src="img/Figur0-1-Forholdet_mellem-profilerne.png" alt="Forholdet mellem profilerne" title="Forholdet mellem profilerne" width="350"/></p>
 
 Kapitel 1 introducerer standardens formål, baggrund og den metode, hvormed standarden er blevet udarbejdet. Kapitel 2 beskriver *anvendelse* af standarden til myndigheders afgivelse af oplysninger om it-systemer i forbindelse med arkivering.
 
-Kapitel 3 omhandler standardens helt centrale begreber, såsom 'it-system' og 'databærende it-system', og Kapitel 4 præsenterer indledningsvist en oversigt over standardens  underliggende emneområder, og hver sektion i dette kapitel dykker ned i et af emneområderne.  I Kapitel 3 og 4 vil udvalgte begreber være markeret med **fed skrifttype** -- disse modelleres i den underliggende datamodel som klasser eller egenskaber og går også igen i hhv. regnearksskabelon og UML-model, som findes i bilag.
+Kapitel 3 omhandler standardens helt centrale begreber, såsom *it-system* og *databærende it-system*, og Kapitel 4 præsenterer indledningsvist en oversigt over standardens  underliggende emneområder, og hver sektion i dette kapitel dykker ned i et af emneområderne.  I Kapitel 3 og 4 vil udvalgte begreber være markeret med **fed skrifttype** -- disse modelleres i den underliggende datamodel som klasser eller egenskaber og går også igen i hhv. regnearksskabelon og UML-model, som findes i bilag.
 
 Kapitel 5 beskriver kort selve datamodellen og henviser til yderligere information. Dette kapitel fortæller også, hvordan beskrivelser af it-systemer udarbejdet i henhold til standarden kan udveksles -- dels via regneark - dels via et maskinfortolkeligt format.  
 
@@ -206,7 +206,7 @@ Rigsarkivet har brug for at kunne identificere arkiveringspligtige datasæt på 
 
 Der kan være perspektiver i, at myndigheder fremover vedligeholder et overblik over datasæt, forretningsprocesser og services med en kobling til understøttende it-systemer, og således at dialogen omkring arkivering kan begynde dér. Systemoverblikket skal kunne samarbejde med de mest udbredte overblikssystemer, som myndighederne allerede har, således at de ikke skal vedligeholde flere overblik.
 
-<p class="example">*Som eksempel kan nævnes OS2KITOS, som mange kommuner anvender som systemoverblik.*</p>
+<p class="note">Som eksempel kan nævnes OS2KITOS, som mange kommuner anvender som systemoverblik.</p>
 
 
 Centrale begreber
@@ -218,7 +218,7 @@ Begrebet *it-system* udgør det centrale element i denne standard, men dette spe
 System, informationssystem og it-system
 -------------------------------------------
 
-Et **system** defineres generelt som 'et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål' ligesom i ISO/IEC 15288 (Systems and software engineering -- System life cycle processes).  
+Et **system** defineres generelt som 'et system er en kombination af interagerende elementer, der er organiseret for at opnå et eller flere erklærende formål' ligesom i [ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)](https://www.iso.org/standard/63711.html).  
 
 Det bemærkes også, at 'Et system er i denne sammenhæng menneskeskabt og består ikke blot af hardware, software og data, men også af mennesker, processer, procedurer, faciliteter og materialer og naturlige genstande'.
 
@@ -228,7 +228,7 @@ Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation
 
 Begrebet **it-system** defineres derfor i denne standard som 'system der består af digitale informationsteknologier'. Et it-system kan instantieres i forskellige it-miljøer. Et **instantieret it-system** kan derfor defineres som 'fysisk instans af et it-system i et bestemt it-miljø'. Det vil fx kun være relevant at arkivere data fra et it-system instantieret i et produktionsmiljø og ikke et testmiljø, men i forbindelse med afgivelse af it-systemoplysninger til Rigsarkivet bør dette fremgå klart.
 
-I forhold til arkivering præciseres klassen **instantieret it-system** som værende et **databærende it-system** ved at sætte egenskaben 'databærende' til 'sand'.  
+I forhold til arkivering præciseres klassen **instantieret it-system** som værende et **databærende it-system** ved at sætte egenskaben *databærende* til *sand*.  
 
 Begrebet databærende it-system defineres i denne standard som 'instantieret it-system, der indeholder digitalt skabte data eller dokumenter'.
 
@@ -283,9 +283,9 @@ Som en del af kerneinformationerne hører **ibrugtagningsdato** og **udfasningsd
 
 For at kunne identificere, hvilken version af softwareproduktet der er taget i anvendelse, eksempelvis i forhold til en bestemt kontrakt med en leverandør, kan det være relevant at angive et **versionsnummer**. Hvis et versionsnummer er specificeret i kontrakten, bør dette anvendes.
 
-<p class="example">Eksempelvis kan der ved anvendelse af cBrains F2 angives version 5.3 (og ikke 5.3.0.41112)</p>
+<p class="note">Eksempelvis kan der ved anvendelse af cBrains F2 angives version 5.3 (og ikke 5.3.0.41112)</p>
 
-It-systemer kan være taget i anvendelse i forskellige miljøer iht. systemets udviklingsforløb, fx udvikling, afprøvning, præproduktion, produktion, se klassifikationen **it-miljøtype** i Bilag A. I forhold til arkivering er kun instanser af it-systemer i produktion relevante.
+It-systemer kan være taget i anvendelse i forskellige miljøer iht. systemets [udviklingsforløb](https://dltj.org/article/software-development-practice/), fx udvikling, afprøvning, præproduktion, produktion, se klassifikationen **it-miljøtype** i Bilag A. I forhold til arkivering er kun instanser af it-systemer *i produktion* relevante.
 
 Opgaver
 -----------
@@ -298,9 +298,9 @@ Et it-system kan beskrives med et eller flere anvendelsesformål, der antages at
 
 **Klassifikation FORM:** [http://www.form-online.dk](http://www.form-online.dk/soegning)
 
-<p class="example">Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven '65.50.05.05 Sagshåndtering' (FORM v.2.14) el. KLE-emnet '00.15.12. Kvalitetsstyringssystem, sagsbehandling' (KLE v. Aug. 2019)</p>
+<p class="note">Eksempelvis kan en myndighed anvende Formpipes Acadre og cBrains F2 ESDH til at understøtte FORM-forvaltningsopgaven '65.50.05.05 Sagshåndtering' (FORM v.2.14) el. KLE-emnet '00.15.12. Kvalitetsstyringssystem, sagsbehandling' (KLE v. Aug. 2019)</p>
 
-Bemærk, at produkter i SKI-kataloget allerede er opmærket med FORM.
+Bemærk, at produkter i [SKI-kataloget](https://skikataloget.ski.dk/ski-kataloget/) allerede er opmærket med FORM.
 
 FORM og KLE indeholder henvisninger til de love og lovbekendtgørelser, som de offentlige opgaver udspringer fra, så ved at opmærke et it-system med FORM eksisterer der også indirekte en relation til retsgrundlaget for it-systemets anvendelse. Der er også muligt via FORM at se, hvilke myndigheder de forskellige opgaver tilhører. KLE indeholder, ud over love og lovbekendtgørelser, også bekendtgørelser. FORM mapper til paragraffer i finansloven og KLE, og KLE mapper til Social- og Indenrigsministeriets kontoplan.
 
@@ -315,9 +315,9 @@ Et it-system kan have mange forskellige relationer til aktører, som hver især 
 
 På overordnet niveau angives **it-systemejeren** -- en person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse. Ofte vil it-systemejeren være lig kontraktejeren og kan identificeres præcist i myndighedens kontraktstyring.
 
-<p class="example">Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
+<p class="note">Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
 
-For databærende it-systemer skal den **dataansvarlige** aktør også angives, dvs. den organisation, som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til '*en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger*', jf. [GDPR](http://data.europa.eu/eli/reg/2016/679/oj) *[på dansk](https://www.retsinformation.dk/eli/lta/2018/502).* Én myndighed kan være dataansvarlig for et system, mens det faktisk er **databehandler**, som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det. Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler i betydningen, at de kan være forskellige organisationer. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. [Datatilsynets vejledning om databehandlere og dataansvarlige]((https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf). Det kan også være relevant at angive den konkrete **dataskaber**, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.
+For databærende it-systemer skal den **dataansvarlige** aktør også angives, dvs. den organisation, som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til *en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger*, jf. [GDPR](http://data.europa.eu/eli/reg/2016/679/oj) [på dansk](https://www.retsinformation.dk/eli/lta/2018/502). Én myndighed kan være dataansvarlig for et system, mens det faktisk er **databehandler**, som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det. Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler i betydningen, at de kan være forskellige organisationer. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. [Datatilsynets vejledning om databehandlere og dataansvarlige]((https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf). Det kan også være relevant at angive den konkrete **dataskaber**, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.
 
 Et it-system kan dokumenteres ved hjælp af forskellige dokumenter, der hver har sit formål og målgruppe, fx arkitekturdokumentation, installationsvejledning og slutbrugervejledning.
 
@@ -358,7 +358,7 @@ It-systemet kan opmærkes med en **personoplysningskategori**, som er beskrevet 
 
 Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift. fortrolighed, fx **Fortrolighedsgrad iht. ISO27002** [ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls](https://www.iso.org/standard/54533.html) eller **Fortrolighedsgrad iht. sikkerhedscirkulæret (EU/NATO)**  [Sikkerhedscirkulæret](https://www.retsinformation.dk/eli/retsinfo/2014/10338). Se Bilag A. I forhold til klassifikation iht. sikkerhedscirkulæret kan tilføjes 'uklassificeret', så det kan angives, at der er taget stilling til fortrolighedsgraden.
 
-<p class="example">Eksempelvis kan data i beredskabssystemer eventuelt være opmærket med fortrolighedsgrad, og fortrolighed kan være et relevant aspekt ved indmelding af it-systemoplysninger såsom kritikalitetstype og systemernes tekniske tilstand. </p>
+<p class="note">Eksempelvis kan data i beredskabssystemer eventuelt være opmærket med fortrolighedsgrad, og fortrolighed kan være et relevant aspekt ved indmelding af it-systemoplysninger såsom kritikalitetstype og systemernes tekniske tilstand. </p>
 
 
 Fælles datamodel og udvekslingsformat
@@ -787,7 +787,10 @@ Bilag C: Eksempel på maskinlæsbart format
 
 (Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD) 
 
+
 ### EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)
+
+	
 ```
 	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 	@prefix dc: <http://purl.org/dc/terms/> .
@@ -846,7 +849,11 @@ Bilag C: Eksempel på maskinlæsbart format
 	  dc:modified "2007"^^xsd:date .
 ```
 
+
+
 ### EKSEMPELOUTPUT I RDF/XML
+
+
 ```
 	<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -931,6 +938,8 @@ Bilag C: Eksempel på maskinlæsbart format
 	</rdf:RDF>
 ```
 
+
+
 Bilag D: Om datamodellen
 -------------------------------------------------
 Selve UML-modellerne er udstillet her : 
@@ -1004,7 +1013,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archiving frequency
@@ -1022,7 +1031,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archiving supplier
@@ -1043,7 +1052,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archival obligation type
@@ -1061,7 +1070,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archive test organisation
@@ -1080,7 +1089,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             </td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archive information package
@@ -1098,7 +1107,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archive version periode
@@ -1116,7 +1125,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archive version approval status
@@ -1134,7 +1143,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             </td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archive type
@@ -1152,7 +1161,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://ec.europa.eu/isa2/sites/isa/files/isa2_action_2017_01_standard_based_archival_data_management_final_report_v1.00.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archive organisation
@@ -1170,7 +1179,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://www.ica.org/sites/default/files/CBPS_2000_Guidelines_ISAD%28G%29_Second-edition_EN.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archive series
@@ -1189,7 +1198,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             </td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 archive creator
@@ -1222,7 +1231,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             </td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection#
             </td>
             <td>
                 data processor
@@ -1238,7 +1247,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 data conversion
@@ -1254,7 +1263,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 data conversion status
@@ -1273,7 +1282,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                     href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe</a>
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataset#
+                https://data.gov.dk/concept/core/dataset#
             </td>
             <td>
                 data creator
@@ -1291,7 +1300,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             </td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 data erasure
@@ -1311,7 +1320,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 data erasure deadline
@@ -1329,7 +1338,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://www.w3.org/TR/vocab-dcat/,
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataset#
+                https://data.gov.dk/concept/core/dataset#
             </td>
             <td>
                 dataset
@@ -1347,7 +1356,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://www.w3.org/TR/vocab-dcat/,
             </td>
             <td>
-                https://data.gov.dk/model/concept/datasetdistribution#
+                https://data.gov.dk/concept/core/datasetdistribution#
             </td>
             <td>
                 distribution
@@ -1367,7 +1376,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 Referencearkitektur for deling af data og dokumenter
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection#
             </td>
             <td>
                 data subject
@@ -1385,7 +1394,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             </td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 predessor system
@@ -1401,7 +1410,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/informationsecurity#
+                https://data.gov.dk/concept/core/informationsecurity#
             </td>
             <td>
                 confidentiality type
@@ -1420,7 +1429,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             </td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/informationsecurity#
+                https://data.gov.dk/concept/core/informationsecurity#
             </td>
             <td>
                 Nato &amp; EU Data Classification
@@ -1436,7 +1445,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 information system
@@ -1452,7 +1461,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>
-                https://data.gov.dk/model/concept/itsysteInstancem#
+                https://data.gov.dk/concept/core/itsysteInstancem#
             </td>
             <td>
                 IT system instance
@@ -1470,7 +1479,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://en.wikipedia.org/wiki/Deployment_environment<br /> Statens-IT Systemkort
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 environment type
@@ -1488,7 +1497,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://www.iso.org/standard/63711.html
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT system
@@ -1507,7 +1516,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/
             </td>
             <td>
-                https://data.gov.dk/model/concept/itsystem#
+                https://data.gov.dk/concept/core/itsystem/
             </td>
             <td>
                 IT system owner
@@ -1526,7 +1535,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                     href="https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli">https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli</a>
             </td>
             <td>
-                https://data.gov.dk/model/concept/legalresource#
+                https://data.gov.dk/concept/core/legalresource#
             </td>
             <td>
                 legal resource
@@ -1545,7 +1554,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                     href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a>
             </td>
             <td>
-                https://data.gov.dk/model/concept/organisation#
+                https://data.gov.dk/concept/core/organisation#
             </td>
             <td>
                 public administrative task type
@@ -1565,7 +1574,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                     href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a>
             </td>
             <td>
-                https://data.gov.dk/model/concept/organisation#
+                https://data.gov.dk/concept/core/organisation#
             </td>
             <td>
                 organization
@@ -1587,7 +1596,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://w3id.org/GDPRtEXT#Processor
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection#
             </td>
             <td>
                 controller
@@ -1608,7 +1617,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection#
             </td>
             <td>
                 personal data category
@@ -1627,7 +1636,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 notat om GDPR-modul i KITOS
             </td>
             <td>
-                https://data.gov.dk/model/concept/dataprotection#
+                https://data.gov.dk/concept/core/dataprotection#
             </td>
             <td>
                 personal data subcategory
@@ -1649,7 +1658,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer/
             </td>
             <td>
-                https://data.gov.dk/model/concept/digitalarchival#
+                https://data.gov.dk/concept/core/digitalarchival/
             </td>
             <td>
                 case area
@@ -1668,7 +1677,7 @@ Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)
                 ISO/IEC 15288: https://www.iso.org/standard/63711.html
             </td>
             <td>
-                https://data.gov.dk/model/concept/system#
+                https://data.gov.dk/concept/core/system#
             </td>
             <td>
                 system
@@ -1686,58 +1695,3 @@ Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-
 arkitektur.digst.dk
 
 ---
-
-<pre class=biblio>
-
-{
-	"[ISO15288]": {
-		"href": "https://www.iso.org/standard/63711.html",
-		"title": "ISO/IEC 15288 (Systems and software engineering -- System life cycle processes)",
-		"publisher": "ISO"
-		]
-	}
-}
-</pre>
-
-* * * * *
-
-
-
-[[3]]() Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it .
-
-[[4]]() Klassifikationer beskrives iht. anvendelsesprofil for klassifikation: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-klassifikationer>
-
-[[5]]() <https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur>
-
-[[6]]() Myndigheder skal beskrives som organisationer iht. anvendelsesprofil for organisationer: <https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer> 
-
-[[SKI Kataloget]]() https://skikataloget.ski.dk/ski-kataloget/
-
-[[Software Development Practice]]() https://dltj.org/article/software-development-practice/
-
-[[9]]() https://www.retsinformation.dk/eli/lta/2018/183
-
-[[10]]() https://www.retsinformation.dk/eli/lta/2015/266
-
-[[11]]() <http://data.europa.eu/eli/reg/2016/679/oj>:\
- <https://www.retsinformation.dk/eli/lta/2018/502>
-
-[[12]]() <https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf>
-
-[[13]]() 'Referencearkitektur for deling af data og dokumenter' definerer datasæt som "en samling af oplysninger bestående af enkelte dele der forvaltes under et " <https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf>. Denne definition er i tråd med W3Cs definition " samling af data, udstillet eller forvaltet af en enkelt aktør".
-
-[[14]]() https://www.w3.org/TR/vocab-dcat/\
- (Bemærk at DCAT anvender et snævrere datasætbegreb end det der defineres i ISO 19115‑1:2014)
-
-[[15]]() Læs mere på Rigsakivets hjemmeside: <https://www.sa.dk/da/offentlig-forvaltning/>
-
-[[16]]() <https://www.retsinformation.dk/eli/lta/2016/1201>
-
-[[17]]() http://data.europa.eu/eli/reg/2016/679/oj\
- https://www.retsinformation.dk/eli/lta/2018/502
-
-[[18]]() https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
-
-[[19]]() ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: https://www.iso.org/standard/54533.html
-
-[[20]]() Sikkerhedscirkulæret https://www.retsinformation.dk/eli/retsinfo/2014/10338
