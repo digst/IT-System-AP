@@ -885,8 +885,8 @@ Bilag B: Skabelon til registrering i regneark (udklip)
 ------------------------------------------------------
 
 ### Oversigt over **mulige** **oplysninger** i basisprofilen
-<p align="center"><img src="img/Figur_bilagB_regneark_del1.png" alt="Figur til bilagB regneark del1.png"  width="350"/></p>
-<p align="center"><img src="img/Figur_bilagB_regneark_del2.png" alt="Figur til bilagB regneark del2.png"  width="350"/></p>
+<p align="center"><img src="img/Figur_bilagB_regneark_del1.png" alt="Figur til bilagB regneark del1.png"  width="800"/></p>
+<p align="center"><img src="img/Figur_bilagB_regneark_del2.png" alt="Figur til bilagB regneark del2.png"  width="800"/></p>
 
 
 ### Udfyldelse: Basisinformation
