@@ -1135,7 +1135,7 @@ Bilag E: UML-diagram: SYS-AP
 - Afledt af (wasDerivedFrom): [https://data.gov.dk/concept/core/itsystem/](https://data.gov.dk/concept/core/itsystem)
 - Kommentar (comment):  Denne generelle anvendelsesprofil vil kunne anvendes til etablere et overordnet overblik og standardisere indsamlingen af oplysninger.
 
-<p align="center"><img src="img/Figur_UML-SYS-AP.png" alt="UML-diagram" title="UML-diagram SYS-AP" width="800"/></p>
+<p align="center"><a href="img/Figur_UML-SYS-AP.png"><img src="img/Figur_UML-SYS-AP.png" alt="UML-diagram" title="UML-diagram SYS-AP" width="800"/></a></p>
 
 
 Bilag F: UML-diagram: SYS
@@ -1153,7 +1153,7 @@ Bilag F: UML-diagram: SYS
 - Afledt af (wasDerivedFrom): [https://data.gov.dk/concept/core/itsystem/](https://data.gov.dk/concept/core/itsystem)
 - Kommentar (comment):  
 
-<p align="center"><img src="img/Figur_UML-SYS.png" alt="UML-diagram" title="UML-diagram SYS" width="800"/></p>
+<p align="center"><a href="img/Figur_UML-SYS.png"><img src="img/Figur_UML-SYS.png" alt="UML-diagram" title="UML-diagram SYS" width="800"/></a></p>
 
 
 Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
