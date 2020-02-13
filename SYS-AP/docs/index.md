@@ -111,7 +111,7 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 Title: Standard for beskrivelse af it-systemer - Basisprofil
 Status: LS
 URL: https://github.com/digst/IT-System-AP/tree/master/SYS-AP
-Editor: Digitaliseringsstyrelsen http://arkitektur.digst.dk
+Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 Editor: Rigsarkivet
 Editor: KL
 Editor: Danske Regioner
@@ -231,11 +231,11 @@ Med udgangspunkt i den eksisterende basisprofil vurderes anvendeligheden af de e
 
 Når vurderingen er foretaget, har man en reduceret profil som illustreret på nedenstående diagram. Alle elementer markeret med grønt vil indgå i den nye arkivprofil, mens alle elementer markeret med rød ikke inddrages i profilen.
 
-<p align="center"><img src="img/Figur_application_profile1.png" alt="Application profile illustration 1" width="350"/></p>
+<p align="center"><img src="img/Figur_application_profile1.jpg" alt="Application profile illustration 1" width="800"/></p>
 
 Derefter tilføjes de elementer der er nødvendige for arkivprofilen og der sættes eventuelle yderligere begrænsninger på multipliciteter. I nedenstående diagram er tilføjelser og multiplicitetsændringer markeret med orange.
 
-<p align="center"><img src="img/Figur_application_profile2.png" alt="Application profile illustration 2" width="350"/></p>
+<p align="center"><img src="img/Figur_application_profile2.jpg" alt="Application profile illustration 2" width="800"/></p>
 
 Standardisering af deling af it-systemoplysninger
 -----------------------------------------------------
@@ -527,7 +527,7 @@ Regnearket har den fordel, at det er let at anvende, men regneark har også den 
 
 I bilaget 'Skabelon til registrering i regneark' kan ses en visning af et sådant regneark, men det kan også downloades fra:
 
-[https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx](https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx%20)
+[https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx](https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_basisprofil.xlsx)
 
 
 
@@ -540,167 +540,101 @@ I dette kapitel refereres til en mapning til en række eksisterende modeller her
 
 Terminologien og begreberne, som de optræder i de forskellige modeller, afspejler typisk den formelle ramme, som har dannet grundlag for modellen, og det formål, modellen er udarbejdet til. Flere af de eksisterende modeller indeholder oplysninger til beskrivelse af it-systemer. Derudover har flere af dem en række oplysninger, som er specifikke for netop det anvendelsesformål, de hver især løfter.
 
-Eksempelvis anvender Rigsarkivets anmeldelses- og tilsynsskema termer og begreber omkring **(databærende) it-systemer,** som de optræder i de relevante bekendtgørelser ift. arkivering. Det statslige **it-systemporteføljeoverblik** tager afsæt i Strategi for it-styring i staten og har fokus på **samfundskritiske** og **forretningskritiske it-systemer**. Statens It har udarbejdet en indberetningsformular for **it-systemer** i forbindelse med"etablering af **nye løsninger**", der skal driftes af Statens IT, og i deres CMDB-system betragtes hele it-systemer som **business services**. I forhold til arkitekturbeskrivelse anvendes ofte betegnelse **applikationskomponent** fra TOGAF/ArchiMate om it-systemet som hele samt de komponenter, der indgår deri.
+Eksempelvis anvender Rigsarkivets anmeldelses- og tilsynsskema termer og begreber omkring (databærende) it-systemer, som de optræder i de relevante bekendtgørelser ift. arkivering. Det statslige it-systemporteføljeoverblik tager afsæt i Strategi for it-styring i staten og har fokus på samfundskritiske og forretningskritiske it-systemer. Statens It har udarbejdet en indberetningsformular for it-systemer i forbindelse med"etablering af nye løsninger, der skal driftes af Statens IT, og i deres CMDB-system betragtes hele it-systemer som *business services*. I forhold til arkitekturbeskrivelse anvendes ofte betegnelse *applikationskomponent* fra TOGAF/ArchiMate om it-systemet som hele samt de komponenter, der indgår deri.
 
 Der er ikke hensigten, at denne standard som udgangspunkt skal kunne rumme alle disse specifikke oplysninger, men centrale oplysningstyper er blevet udvalgt med baggrund i standardens forventede anvendelse som beskrevet i Kapitel 2. Flere af de eksisterende modeller indeholder mange af de samme begreber eller oplysningstyper, selvom de ikke nødvendigvis er blevet kaldt det samme. Termerne varierer, og med denne standard gives et bud på foretrukne samt accepterede termer.
 
 Oplysningstyperne i denne standard er mappet eller gennemgået ift. til følgende modeller.
 
-Mapningsskema i form af et regneark, der kan downloades her:https://data.gov.dk/document/itsystem-ap/v1/mappings/Mapning_it-system_oplysninger.xlsx
+Mapningsskema i form af et regneark, der kan downloades her: 
+[https://data.gov.dk/document/itsystem-ap/v1/mappings/Mapning_it-system_oplysninger.xlsx](https://data.gov.dk/document/itsystem-ap/v1/mappings/Mapning_it-system_oplysninger.xlsx)
 
-- **Rigsarkivets anmeldelses- og tilsynsskemaer**
-
+**Rigsarkivets anmeldelses- og tilsynsskemaer**: 
 Skemaer vedr. statslige myndigheders, kommuner og regioners bevaring, kassation og aflevering af arkivalier
-<https://www.sa.dk/da/offentlig-forvaltning/>
-(her mappes til egenskaber udvalgt af Rigsarkivet)
+[https://www.sa.dk/da/offentlig-forvaltning/ (her mappes til egenskaber udvalgt af Rigsarkivet)
 
-- **Datatilsynets vejledning om fortegnelse** jf. GDPR.
+**Datatilsynets vejledning om fortegnelse** jf. GDPR.:
+Datatilsynet har offentliggjort en skabelon for en databehandleraftale, der lever op til persondataforordningens minimumskrav. --* Datatilsynet 2018 [https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
 
-Datatilsynet har offentliggjort en skabelon for en databehandleraftale, der lever op til persondataforordningens minimumskrav. --* Datatilsynet 2018 https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
+**Kommunernes IT OverbliksSystem (OS2Kitos)**:
+OS2Kitos er en cloud-baseret løsning, der anvendes af 78 kommuner. OS2Kitos skaber overblik over den samlede kommunale it-portefølje. OS2Kitos består af 5 moduler: IT understøttelse af organisation, IT Projekter, IT Systemer, IT Kontrakter og IT Rapporter.*OS2Kitos Sekretariatet 2018* [https://www.kitos.dk](https://www.kitos.dk) & [https://github.com/os2kitos/kitos](Kitos Github)
 
-- **Kommunernes IT OverbliksSystem (OS2Kitos)**
-
-OS2Kitos er en cloud-baseret løsning, der anvendes af 78 kommuner. OS2Kitos skaber overblik over den samlede kommunale it-portefølje. OS2Kitos består af 5 moduler: IT understøttelse af organisation, IT Projekter, IT Systemer, IT Kontrakter og IT Rapporter.* -- OS2Kitos Sekretariatet 2018\
-[https://www.kitos.dk](https://www.kitos.dk) https://github.com/os2kitos/kitos
-
-- **Model for porteføljestyring af statslige it-systemer**
-
+**Model for porteføljestyring af statslige it-systemer**:
 Regeringen har i efteråret 2017 ved "Et solidt it-fundament -- Strategi for it-styring i staten" indført en ny model for porteføljestyring af statslige it-systemer.
 Ministeriernes kontor for it-styring 2017
-https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/  (her mappes til udvalgte egenskaber fra Datagrundlag v2.0)
+[https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/]https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/()  
+(her mappes til udvalgte egenskaber fra Datagrundlag v2.0)
 
-- **Specifikation af Model for Organisation Version 2.0**
-
+**Specifikation af Model for Organisation Version 2.0**:
 Formålet med Organisationsmodellen er at tilbyde et fælles sprog for beskrivelse af formelle organer og de elementer, som indgår heri.
+[https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf](https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf)
+*OIO 2017 (revideret 2018)* (her mappes til egenskaber fra kapitlet It-system)
 
-https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf - OIO 2017 (revideret 2018):\
-(her mappes til egenskaber fra kapitlet It-system)
-
-- **KOMBIT IT-system-overblik**
-
+**KOMBIT IT-system-overblik**:
 Et overblik over de it-systemer, der udvikles/forvaltes under kontrakt med KOMBIT, samt systemer, der berører disse. KOMBITs systemoverblik er logisk set en delmængde af OS2Kitos, men supplerer yderligere med en lang række informationer om blandt andet snitflader, fysiske instanser og dataadgang. (Datamodel ikke offentligt tilgængelig, modtaget på mail)
 
-- **Systemindberetningsformular (Systemkort ServiceNow)-- IT systemer
-
+**Systemindberetningsformular (Systemkort ServiceNow)-- IT systemer**:
 Ved etablering og installation af nye løsninger hos Statens It sender myndigheden oplysninger om it-systemet til Statens IT via en systemindberetningsformular (ServiceNow Systemkort).* -- Statens-IT 2018: (materiale ikke tilgængelig online men modtaget på mail)
 
-- **SKI-kataloget**
-
+**SKI-kataloget**:
 Staten og Kommunernes Indkøbsservice (SKI) laver indkøbsaftaler, der samler indkøb på tværs af det offentlige og afløfter udbudspligten, og via SKI-kataloget udstilles oplysninger om hardware- og softwareprodukter --* SKI 2018
+[https://skikataloget.ski.dk/ski-kataloget/](https://skikataloget.ski.dk/ski-kataloget/)
 
-https://skikataloget.ski.dk/ski-kataloget/
-
-- **Configuration Management DataBase (CMDB)** /**IT Service Management (ITSM)**
-
+**Configuration Management DataBase (CMDB)** /**IT Service Management (ITSM)**:
 Datamodeller fx ServiceNow og BMC er overordnet blevet undersøgt for genbrugelige elementer.
 
-- **Arkitekturdokumentation**, TOGAF-ArchiMate
+**Arkitekturdokumentation**, TOGAF-ArchiMate: 
+ArchiMate er en international notationsstandard på enterprisearkitekturniveau, som er optaget som en åben standard under The Open Group. Der indgår forskellige såkaldte lag, hvor applikationslaget (Application Layer) anvendes til at modellere en organisations informationssystemarkitekturer, som det defineres i TOGAF-rammeværket ArchiMate. Den overordnede mapning går her ikke på egenskaberne, men på klasserne. Det primære element i applikationslaget (Application Layer) er applikationskomponenten. Dette element anvendes til både at modellere hele it-systemer og de komponenter, der indgår i deri. Standardens *datasæt* kan mappes til ArchiMates *dataobjekt*, og *snitflade* kan mappes til *application interface*.
 
-ArchiMate er en international notationsstandard på enterprisearkitekturniveau, som er optaget som en åben standard under The Open Group. Der indgår forskellige såkaldte lag, hvor applikationslaget (Application Layer) anvendes til at modellere en organisations informationssystemarkitekturer, som det defineres i TOGAF-rammeværket ArchiMate.
-
-Den overordnede mapning går her ikke på egenskaberne, men på klasserne. Det primære element i applikationslaget (Application Layer) er applikationskomponenten. Dette element anvendes til både at modellere hele it-systemer og de komponenter, der indgår i deri. Standardens *datasæt* kan mappes til ArchiMates *dataobjekt*, og *snitflade* kan mappes til *application interface*.
-
-- **Fællesoffentlig Digital Arkitektur**
-
-I den Fællesoffentlige Digitale Arkitektur (FDA) indgår grundlæggende arkitekturperspektiver, som udgør de tematiske emneområder og kapitler i denne standard. Dog er der pt. ikke medtaget oplysningstyper under perspektivet *Strategi*.
-
+**Fællesoffentlig Digital Arkitektur**:
+I den Fællesoffentlige Digitale Arkitektur (FDA) indgår grundlæggende arkitekturperspektiver, som udgør de tematiske emneområder og kapitler i denne standard. Dog er der pt. ikke medtaget oplysningstyper under perspektivet *Strategi*.[https://arkitektur.digst.dk/](https://arkitektur.digst.dk/)
 <p align="center"><img src="img/Figur_arkitektuprincipper.png" alt="Figur FDA arkitektuprincipper" width="600"/></p>
 
 Referencer
 ==============
 
+**Standarder**
 
-Standarder
-
-- [ISO/IEC CD 15288 ](https://www.iso.org/standard/63711.html)"Systems Engineering--- System Life Cycle Processes"
-
-- [ISO/IEC 16350:2015(en) ](https://www.iso.org/obp/ui/#iso:std:iso-iec:16350:ed-1:v1:en)Information technology --- Systems and software engineering --- Application management
-
+- [ISO/IEC CD 15288](https://www.iso.org/standard/63711.html)"Systems Engineering--- System Life Cycle Processes"
+- [ISO/IEC 16350:2015(en)](https://www.iso.org/obp/ui/#iso:std:iso-iec:16350:ed-1:v1:en) Information technology --- Systems and software engineering --- Application management
 - [ISO/IEC TR 10000-1:1998(en)](https://www.iso.org/obp/ui/#iso:std:iso-iec:tr:10000:-1:ed-4:v1:en) "Information technology --- Framework and taxonomy of International Standardized Profiles --- Part 1: General principles and documentation framework"
-
 - ISO/IEC TR 12182:2015 "Systems and software engineering -- Framework for categorization of IT systems and software, and guide for applying it"
-
 - ISO/IEC/IEEE 42010 "Systems and software engineering --- Architecture description "
-
 - ISO/IEC/IEEE DIS "42020 Enterprise, systems and software --- Architecture processes"
-
 - ISO/IEC/IEEE DIS 42030 "Systems and Software Engineering --- Architecture Evaluation"
-
-- ISO/IEC 27002:2013 Information technology -- Security techniques -- Code of practice for information security controls: <https://www.iso.org/standard/54533.html>
-
+- [ISO/IEC 27002:2013](https://www.iso.org/standard/54533.html) Information technology -- Security techniques -- Code of practice for information security controls
 - [ITIL -  The Information Technology Infrastructure Library](http://www.itlibrary.org/)
+- [The TOGAF® Standard, Version 9.2](https://publications.opengroup.org/standards/togaf/specifications/c182)
+- [ArchiMate® 3.0.1 Specification](https://publications.opengroup.org/standards/archimate/c179)
 
-- The TOGAF® Standard, Version 9.2, <https://publications.opengroup.org/standards/togaf/specifications/c182>
+**Datamodeller / klassifikationer / retningslinjer**
 
-- ArchiMate® 3.0.1 Specification <https://publications.opengroup.org/standards/archimate/c179>
-
-Datamodeller / klassifikationer / retningslinjer
-
-- Datamodellen for [OS2Kitos](https://www.kitos.dk/)(inkl. klassifikation af applikationstyper og forretningstyper)
-
-- OIO specifikation af it-system i [modellen for Organisation](https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf)
-
+- Datamodellen for [OS2Kitos](https://www.kitos.dk/) (inkl. klassifikation af applikationstyper og forretningstyper)
+- OIO specifikation af it-system i [Modellen for Organisation](https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf)
 - KMD KOSDY-datamodel)
-
 - Datamodellen for ServiceNow ([IT Service Management-delen](https://www.servicenow.com/products/it-service-management.html)) /ITILs (CMDB)
-
 - Statens-IT systemkort
-
 - Datamodellen for BMC
-
 - Retningslinjer for dokumentation og formidling af arkitektur i digitaliseringsprojekter. (baseret på ISO)
+- Fællesoffentlig Referencemodel, [FORM](https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form),
+- Kommunernes Emnesystematik, [KLE](http://www.kle-online.dk/soegning)
+- Service- og Teknologireferencemodel [STORM](http://arkitekturguiden.digitaliser.dk/storm)
+- [KOMBIT Rollegalleri]( https://www.kombit.dk/sites/default/files/user_upload/documents/Videnscenter/Eksempel%20fra%20KOMBIT_Rollegalleri%20implementering.pdf)
+- [Referencearkitektur for deling af data og dokumenter](https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf)
 
-- Fællesoffentlig Referencemodel ([FORM](https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form)),
+**Lovgrundlag og tilhørende vejledninger:**
 
-<https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form>
-
-- Kommunernes Emnesystematik (KLE)
-
-- Service- og Teknologireferencemodel ([STORM](http://arkitekturguiden.digitaliser.dk/storm))
-
-- KOMBIT Rollegalleri: <https://www.kombit.dk/sites/default/files/user_upload/documents/Videnscenter/Eksempel%20fra%20KOMBIT_Rollegalleri%20implementering.pdf>
-
-- Referencearkitektur for deling af data og dokumenter:
-
-https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf
-
-Lovgrundlag og tilhørende vejledninger:
-
-- Bekendtgørelse nr. 183 af 26. januar 2018 om bevaring og kassation af digitalt skabte data og dokumenter <https://www.retsinformation.dk/eli/lta/2018/183>
-
-- Bekendtgørelse nr. 266 af 23. marts 2015 om bevaring og kassation af arkivalier i regionerne\
-
-<https://www.retsinformation.dk/eli/lta/2015/266>
-
-- Vejledning til bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne\
-
-<https://www.sa.dk/wp-content/uploads/2018/04/2007_IT_Vejledning-til-bekendtg%C3%B8relse_h%C3%B8ring-1.pdf>
-
-- Vejledning om bevaring og kassation af arkivalier hos regionerne\
-
-<https://www.sa.dk/wp-content/uploads/2015/06/Vejledning-til-regionsbekendtg%C3%B8relsen_juni-2015.pdf>
-
-- Bekendtgørelse nr. 1007 af 20. august 2010 om arkiveringsversioner  <https://www.retsinformation.dk/eli/lta/2010/1007>
-
-- Vejledning om kvalitetssikring i it-systemer -- Rigsarkivets minimumskrav og anbefalinger\
-
-<https://www.sa.dk/wp-content/uploads/2016/02/Vejledning-om-kvalitetssikring.pdf>
-
-- Arkivhåndbog for statslige myndigheder
-
-- <https://www.kbharkiv.dk/images/files/Arkivering/Arkivhandbogen.pdf>
-
-- Datatilsynets 'Vejledning om fortegnelse' <https://www.datatilsynet.dk/media/6567/fortegnelse.pdf>
-
-- Sikkerhedscirkulæret (Cirkulære om sikkerhedsbeskyttelse af informationer af fælles interesse for landene i NATO eller EU, andre klassificerede informationer samt informationer af sikkerhedsmæssig beskyttelsesinteresse i øvrigt) 
-
-<https://www.retsinformation.dk/eli/retsinfo/2014/10338>
-
-- Databeskyttelsesloven (Lov om supplerende bestemmelser til forordning om beskyttelse af fysiske personer i forbindelse med behandling af personoplysninger og om fri udveksling af sådanne oplysninger ) <https://www.retsinformation.dk/eli/lta/2018/502>
-
-- GDPR (generel forordning om databeskyttelse):\
-
-<https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32016R0679&from=EN>
+- [Bekendtgørelse nr. 183 af 26. januar 2018 om bevaring og kassation af digitalt skabte data og dokumenter](https://www.retsinformation.dk/eli/lta/2018/183)
+- [Bekendtgørelse nr. 266 af 23. marts 2015 om bevaring og kassation af arkivalier i regionerne](https://www.retsinformation.dk/eli/lta/2015/266)
+- [Vejledning til bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne](https://www.sa.dk/wp-content/uploads/2018/04/2007_IT_Vejledning-til-bekendtg%C3%B8relse_h%C3%B8ring-1.pdf)
+- [Vejledning om bevaring og kassation af arkivalier hos regionerne](https://www.sa.dk/wp-content/uploads/2015/06/Vejledning-til-regionsbekendtg%C3%B8relsen_juni-2015.pdf)
+- [Bekendtgørelse nr. 1007 af 20. august 2010 om arkiveringsversioner](https://www.retsinformation.dk/eli/lta/2010/1007)
+- [Vejledning om kvalitetssikring i it-systemer -- Rigsarkivets minimumskrav og anbefalinger](https://www.sa.dk/wp-content/uploads/2016/02/Vejledning-om-kvalitetssikring.pdf)
+- [Arkivhåndbog for statslige myndigheder](https://www.kbharkiv.dk/images/files/Arkivering/Arkivhandbogen.pdf)
+- [Datatilsynets 'Vejledning om fortegnelse'](https://www.datatilsynet.dk/media/6567/fortegnelse.pdf)
+- Sikkerhedscirkulæret: [Cirkulære om sikkerhedsbeskyttelse af informationer af fælles interesse for landene i NATO eller EU, andre klassificerede informationer samt informationer af sikkerhedsmæssig beskyttelsesinteresse i øvrigt](https://www.retsinformation.dk/eli/retsinfo/2014/10338)
+- Databeskyttelsesloven: [Lov om supplerende bestemmelser til forordning om beskyttelse af fysiske personer i forbindelse med behandling af personoplysninger og om fri udveksling af sådanne oplysninger](https://www.retsinformation.dk/eli/lta/2018/502)
+- GDPR [generel forordning om databeskyttelse](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
 
 
 Bilag
@@ -1157,34 +1091,33 @@ De data som logisk set er en del af it-systemet, kan betragtes som et datasæt. 
 Oversigt over UML-modellens anvendelsesprofil, kernemodeller og klassifikationsmodeller
 
 Anvendelsesprofilen:
--  [*IT System AP (Basic Profile)*](https://data.gov.dk/document/itsystem-ap/v1/uml/)
--  [*IT System AP (Archive Profile)*](https://data.gov.dk/document/itsystem-ap/v1/uml/)
+-  [IT System AP - Basic Profile](https://data.gov.dk/document/itsystem-ap/v1/uml/)
+-  [IT System AP - Archive Profile](https://data.gov.dk/document/itsystem-ap/v1/uml/)
 
 Anvendte kernemodeller
--  [*Vokabular for it-system (SYS)*](https://data.gov.dk/model/core/itsystem/
--  [*Vokabular for digital arkivering (ARCHV)*](https://data.gov.dk/model/core/digitalarchival/
--  [*Data Catalog Vocabulary (DCAT)*](https://www.w3.org/TR/vocab-dcat-2/)
--  [*Simple Knowledge Organization System (SKOS)*](https://www.w3.org/TR/skos-primer/)
--  [*European Legislation Identifier (ELI)*](http://data.europa.eu/eli/ontology)
--  [*Financial Industry Business Ontology (FIBO)*](https://spec.edmcouncil.org/fibo/)
--  [*Core Vocabulary (CV)*](http://data.europa.eu/m8g/)
--  [*Dublin Core Terms (DCT**)*](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
--  [*Organization Ontology (ORG**)*](https://www.w3.org/TR/vocab-org/)
--  [*Core Public Service Vocabulary (*](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary)*CPOV)*
--  [*Friend of A Friend (FOAF)*](http://xmlns.com/foaf/spec/)
--  [*SCHEMA.org (SCHEMA)*](https://schema.org/)*
+-  [Vokabular for it-system -SYS](https://data.gov.dk/model/core/itsystem/)
+-  [Vokabular for digital arkivering - ARCHV](https://data.gov.dk/model/core/digitalarchival/)
+-  [Data Catalog Vocabulary - DCAT](https://www.w3.org/TR/vocab-dcat-2/)
+-  [Simple Knowledge Organization System - SKOS](https://www.w3.org/TR/skos-primer/)
+-  [European Legislation Identifier - ELI](http://data.europa.eu/eli/ontology)
+-  [Financial Industry Business Ontology - FIBO](https://spec.edmcouncil.org/fibo/)
+-  [Core Vocabulary - CV](http://data.europa.eu/m8g/)
+-  [Dublin Core Terms - DCT](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
+-  [Organization Ontology - ORG](https://www.w3.org/TR/vocab-org/)
+-  [Core Public Service Vocabulary - CPOV](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary))
+-  [Friend of A Friend (FOAF)](http://xmlns.com/foaf/spec/)
+-  [SCHEMA.org -SCHEMA](https://schema.org/)
 
 
 Anvendte klassifikationsmodeller
--  *Forvaltningsopgavetype (Public Administrative Task Type) -- 
-([*FORM*](http://www.form-online.dk/soegning) & [*KLE*](http://www.kle-online.dk/soegning)*)
--  *Operationel status (Operational Status)*
--  *IT-miljøtype (IT Environment Type)*
--  *Fortrolighedsgrad (Data Confidentiality Type)*
--  *Personoplysningskategori (Personal Data Category)*
--  *IT-systemkritikalitetstype (IT System Criticality Type)*
--  *Målgruppe (Target Group)*
--  *IT-systemkontrakttype (IT System Contract Type)*
+-  Forvaltningsopgavetype (Public Administrative Task Type) - [FORM](http://www.form-online.dk/soegning) & [KLE](http://www.kle-online.dk/soegning)
+-  Operationel status (Operational Status)
+-  IT-miljøtype (IT Environment Type)
+-  Fortrolighedsgrad (Data Confidentiality Type)
+-  Personoplysningskategori (Personal Data Category)
+-  IT-systemkritikalitetstype (IT System Criticality Type)
+-  Målgruppetype (Target Group Type)
+-  IT-systemkontrakttype (IT System Contract Type)
 
 
 Bilag E: UML-diagram: SYS-AP
