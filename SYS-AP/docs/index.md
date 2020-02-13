@@ -231,11 +231,11 @@ Med udgangspunkt i den eksisterende basisprofil vurderes anvendeligheden af de e
 
 Når vurderingen er foretaget, har man en reduceret profil som illustreret på nedenstående diagram. Alle elementer markeret med grønt vil indgå i den nye arkivprofil, mens alle elementer markeret med rød ikke inddrages i profilen.
 
-<p align="center"><img src="img/Figur_application_profile1.jpg" alt="Application profile illustration 1" width="800"/></p>
+<p align="center"><a href="img/Figur_application_profile1.jpg"><img src="img/Figur_application_profile1.jpg" alt="Application profile illustration 1" width="800"/></a></p>
 
 Derefter tilføjes de elementer der er nødvendige for arkivprofilen og der sættes eventuelle yderligere begrænsninger på multipliciteter. I nedenstående diagram er tilføjelser og multiplicitetsændringer markeret med orange.
 
-<p align="center"><img src="img/Figur_application_profile2.jpg" alt="Application profile illustration 2" width="800"/></p>
+<p align="center"><a href="img/Figur_application_profile2.jpg"><img src="img/Figur_application_profile2.jpg" alt="Application profile illustration 2" width="800"/></a></p>
 
 Standardisering af deling af it-systemoplysninger
 -----------------------------------------------------
@@ -253,18 +253,13 @@ Standarden kan danne grundlag for, at en myndighed internt vedligeholder data om
 Med en standardiseret model og format vil myndigheder også kunne dele informationer på tværs på frivillig basis. Denne deling kan eksempelvis ske i form af et fælles it-systemregister, hvor myndigheder kan finde informationer om it-systemer samt svar på en række spørgsmål som:
 
 
-o *Hvilke andre myndigheder anvender system X?*
-
-o *Hvor mange it-systemer har borgere som målgruppe?*
-
-o *Hvilke it-systemer understøtter myndighedernes interne it-udvikling (FORM-opgave)?*
-
-o *Hvilke databærende it-systemer skaber og eventuelt udstiller datasæt, der skal registreres i et fællesoffentligt datasætkatalog?*
-
-o *Hvilke system-til-system-integrationer findes der, og kan de kritiske\
+- *Hvilke andre myndigheder anvender system X?*
+- *Hvor mange it-systemer har borgere som målgruppe?*
+- *Hvilke it-systemer understøtter myndighedernes interne it-udvikling (FORM-opgave)?*
+- *Hvilke databærende it-systemer skaber og eventuelt udstiller datasæt, der skal registreres i et fællesoffentligt datasætkatalog?*
+- *Hvilke system-til-system-integrationer findes der, og kan de kritiske\
 afhængigheder identificeres?*
-
-o *Hvilke it-systemer indeholder fortrolige eller personfølsomme data?*
+- *Hvilke it-systemer indeholder fortrolige eller personfølsomme data?*
 
 
 
@@ -305,11 +300,11 @@ Ser vi alene på systemer til indsamling, organisering, lagring og kommunikation
 Begrebet *it-system* er altså en specialisering af *system* fra [ISO 15288](https://www.iso.org/standard/63711.html), idet der fokuseres på IT-aspektet. Det vurderes derudover at definitionen er tråd med ISO/IEC TR 10000-1:1998(en) Information technology --- Framework and taxonomy of International Standardized Profiles og ISO/IEC TR 12182:2015 (Systems and software engineering -- -- Framework for categorization of IT systems and software, and guide for applying it.
 </p>	
 
-Begrebet **it-system** defineres derfor i denne standard som *"system, der består af digitale informationsteknologier".*  
+Begrebet **it-system** defineres derfor i denne standard som *system, der består af digitale informationsteknologier.*  
 
 Definitionen er bevist holdt meget bredt favnende for at kunne dække de mange definitioner på it-system, som standardarbejdet har mødt i offentligt regi. Eksempelvis defineres it-system i 'Model for porteføljestyring af statslige it-systemer' med teksten:
 
-*"et produkt eller en ressource, der understøtter en eller flere forretningsprocesser og omfatter såvel applikationen som den nødvendige hardware og it-infrastruktur til brug for it-systemets afvikling af statslige it-systemer omfatter også it-systemer, hvor myndigheden har it-systemejerskabet, men hvor it-systemets drift forestås af en ekstern part, for eksempel Statens It eller en privat leverandør."*
+*et produkt eller en ressource, der understøtter en eller flere forretningsprocesser og omfatter såvel applikationen som den nødvendige hardware og it-infrastruktur til brug for it-systemets afvikling af statslige it-systemer omfatter også it-systemer, hvor myndigheden har it-systemejerskabet, men hvor it-systemets drift forestås af en ekstern part, for eksempel Statens It eller en privat leverandør.*
 
 Nærværende standards brede definition på et it-system inkluderer altså den mere specifikke, der anvendes af porteføljestyringsmodellen.
 
@@ -463,11 +458,11 @@ Emnet sikkerhed kan vedrøre mange forskellige aspekter, fx informationssikkerhe
 
 I henhold til [GDPR](http://data.europa.eu/eli/reg/2016/679/oj) og Datatilsynets [Vejledning om fortegnelse](https://www.retsinformation.dk/eli/lta/2018/502) er det for databærende it-systemer relevant at være opmærksom på **datasletningsfristen**, dvs. førstkommende dato for, hvornår bestemte data i systemet skal være slettet forinden.
 
-It-systemet kan opmærkes med en **personoplysningskategori,** som er beskrevet i Datadatatilsynets vejledning, og på denne måde oplyses det, hvorvidt systemet indeholder følsomme personoplysninger eller almindelige personoplysninger, herunder personnummeroplysninger og oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger, se Bilag A. De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Oplysninger om strafbare forhold og personnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger. Som en hjælp til præcisering kunne en klassifikation med personoplysnings*underkategorier* eventuelt opstilles.
+It-systemet kan opmærkes med en **personoplysningskategori**, som er beskrevet i Datadatatilsynets vejledning, og på denne måde oplyses det, hvorvidt systemet indeholder følsomme personoplysninger eller almindelige personoplysninger, herunder personnummeroplysninger og oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger, se Bilag A. De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Oplysninger om strafbare forhold og personnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger. Som en hjælp til præcisering kunne en klassifikation med personoplysnings*underkategorier* eventuelt opstilles.
 
 It-systemer skal kunne opmærkes ift. deres grad af kritikalitet ved hjælp af klassifikation for **kritikalitetstyper**. Se bilag A. Myndigheden kan vælge at tage udgangspunkt i følgende definitioner af hhv. et samfundskritisk og et forretningskritisk it-system. Et **samfundskritisk it-system** er et it-system, som enten er vigtigt for den nationale sikkerhed eller for vigtig infrastruktur, hvor misbrug af data vil have store konsekvenser, eller hvor driftsforstyrrelser kan have stor betydning for økonomien i staten eller for mange borgere eller virksomheder. **Et forretningskritisk it-system** er et it-system, hvor driftsforstyrrelser kan medføre, at størstedelen af myndighedens medarbejdere ikke kan udføre deres arbejde, eller at myndigheden vanskeligt kan overholde sine forvaltningsmæssige forpligtelser.
 
-Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift. fortrolighed, fx **Fortrolighedsgrad** iht. [ISO27002](https://www.iso.org/standard/54533.html) eller **Fortrolighedsgrad** iht. [sikkerhedscirkulæret (EU/NATO)](https://www.retsinformation.dk/eli/retsinfo/2014/10338). Se Bilag A. I forhold til klassifikation iht. sikkerhedscirkulæret kan tilføjes *uklassificeret*, så det kan angives, at der er taget stilling til fortrolighedsgraden.
+Data i it-systemet kan klassificeres med flere forskellige klassifikationer ift. fortrolighed, fx **Fortrolighedsgrad** iht. [ISO27002](https://www.iso.org/standard/54533.html) eller **Fortrolighedsgrad** iht. [sikkerhedscirkulæret -EU/NATO](https://www.retsinformation.dk/eli/retsinfo/2014/10338). Se Bilag A. I forhold til klassifikation iht. sikkerhedscirkulæret kan tilføjes *uklassificeret*, så det kan angives, at der er taget stilling til fortrolighedsgraden.
 
 <p class="note">Eksempelvis kan data i beredskabssystemer eventuelt være opmærket med fortrolighedsgrad, og fortrolighed kan være et relevant aspekt ved indmelding af it-systemoplysninger såsom kritikalitetstype og systemernes tekniske tilstand.</p>
 
@@ -643,7 +638,7 @@ Bilag
 Bilag A: Overblik over relevante klassifikationer
 
 
-<p align="center"><img src="img/Bilag-A-Overblik-over-relevante-klassifikationerBasisprofil.png" alt="Overblik over relevante klassifikationer" title="Overblik over relevante klassifikationer" width="800"/></p>
+<p align="center"><a href="img/Bilag-A-Overblik-over-relevante-klassifikationerBasisprofil.png"><img src="img/Bilag-A-Overblik-over-relevante-klassifikationerBasisprofil.png" alt="Overblik over relevante klassifikationer" title="Overblik over relevante klassifikationer" width="800"/></a></p>
 
 -----------------------------------------------------
 
