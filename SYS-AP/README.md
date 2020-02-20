@@ -20,8 +20,7 @@ Definition: system which consists of digital information technologies
 | **sys:operationalStatus** | OperationalStatus | the status of the it-system with regards to implementation and operation | Basic Information |
 | **rdfs:comment** | rdf:langString  | supplementary comments or notes regarding the it-system | Basic Information |
 | **sys:usedInOrganization** | org:Organization | organization that uses the IT system | Basic Information |
-| **sys:hasApplicationPurposeFORM** | FORMtask (subclass of skos:Concept)| the FORM task which the IT system supports | Tasks  |
-| **sys:hasApplicationPurposeKLE** | KLETheme (subclass of skos:Concept)| the KLE theme which the IT system supports | Tasks |
+| **sys:hasApplicationPurpose** | tasktype:PublicAdministrativeTaskType (subclass of skos:Concept)| the administrative task  which the IT system supports. I.e. FORM or KLE. | Tasks  |
 | **cv:hasLegalResource** | eli:LegalResource | legal framework for the application of the IT system | Tasks |
 | **sys:hasCriticality** | CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
 | **schema:audience** | target:TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
