@@ -39,12 +39,7 @@ Definition: system which consists of digital information technologies
 | **capa:hasCapability**| capa:Capability subclass of skos:Concept | specification of the type of capability the system has | Tasks |
 | **sys:enablesProcess**| proc:BusinessProcess | specification of the business process which a specific IT system supports | Tasks |
 | **ovx:enablesFunction**| ovx:BusinessFunction | specification of the function that the system is enabling | Tasks |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
-
-
-
+| **sys:predecessorSystem**| sys:ITSystem | specification of an IT system that was previously used for functionality that is supported by the current IT system. | Governance |
 <!--Properties
 * **sys:hasFunctionalityCapability**  (Object Property) Range: Capability
 * **sys:hasVersion**  (Object Property) Range: ITSystemVersion
@@ -65,7 +60,8 @@ Definition: it-system which has been implemented in a physical IT environment
 | **sys:provides** | dcat:DataService | dataservice which the IT system provides| |
 | **sys:provides** | sys:UserInterface | software application which the IT system provides | |
 | **sys:producesDataset** | dcat:Dataset |dataset which the IT system produces | |
-
+| **  **| |  |  |
+| **  **| |  |  |
 
 # dcat:Dataset (Class)
 Definition: A collection of data, published or curated by a single agent, and available for access or download in one or more formats
