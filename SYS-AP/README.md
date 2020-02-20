@@ -87,7 +87,81 @@ Definition: a series of related products that exhibit the same overall functiona
 | **dct:description** | rdf:langString|An account of the product series | |
 | **sys:hasCapabilityForPurpose** | PublicAdministrativeTaskType (subclass of skos:Concept)|specifiction of the task that products in the relevant product series have the capability to support  | |
 | **dcatdk:personalDataCategory** | PersonalDataCategory (subclass of skos:Concept)| specification of a relation to specific personal data category | |
+
+
+# schema:ContactPoint (Class)
+Definition: A contact point—for example, a Customer Complaints department 
+
+| **schema:email**| xsd:string |  |  |
+| **schema:telephone**| xsd:string |  |  |
+| **schema:contactType**| xsd:string |  |  |
+| **schema:productSupported**| xsd:string |  |  |
+
+# foaf:Person (Class)
+Definition: The Person class represents people
+
+| **schema:contactPoint**| schema:ContactPoint | relation to a contact point for the person |  |
+
+# ovx:OrganizationalPersonIdentifier (Class)
+Definition: 
+
+| **ovx:personCode**| xsd:string | code used within an organization as a unique identifier for a person with a relation to the organization  |  |
+
+# org:Organization (Class)
+Definition: 
+
 | **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+
+# fibo-fnd-agr-ctr:Contract (Class)
+Definition: 
+
+| **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+
+# foaf:Document (Class)
+Definition: 
+
+
+# sys:ITSystemReport  (Class)
+Definition: 
+
+| **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+
+# dcat:Distribution (Class)
+Definition: 
+
+| **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+
+# dcat:DataService  (Class)
+Definition: 
+
+| **  **| |  |  |
+| **  **| |  |  |
+
+# eli:LegalResource (Class)
+Definition: 
+
+
+# proc:BusinessProcess (Class)
+Definition: 
+
+
+# ovx:BusinessFunction (Class)
+Definition: 
+
+| **  **| |  |  |
+
 
 # Codelists (Classifications) used in the application profile:
 
