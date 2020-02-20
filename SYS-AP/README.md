@@ -92,6 +92,8 @@ Definition: a series of related products that exhibit the same overall functiona
 # schema:ContactPoint (Class)
 Definition: A contact point—for example, a Customer Complaints department 
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **schema:email**| xsd:string |  |  |
 | **schema:telephone**| xsd:string |  |  |
 | **schema:contactType**| xsd:string |  |  |
@@ -100,16 +102,22 @@ Definition: A contact point—for example, a Customer Complaints department
 # foaf:Person (Class)
 Definition: The Person class represents people
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **schema:contactPoint**| schema:ContactPoint | relation to a contact point for the person |  |
 
 # ovx:OrganizationalPersonIdentifier (Class)
 Definition: 
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **ovx:personCode**| xsd:string | code used within an organization as a unique identifier for a person with a relation to the organization  |  |
 
 # org:Organization (Class)
 Definition: 
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **  **| |  |  |
 | **  **| |  |  |
 | **  **| |  |  |
@@ -117,6 +125,8 @@ Definition:
 # fibo-fnd-agr-ctr:Contract (Class)
 Definition: 
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **  **| |  |  |
 | **  **| |  |  |
 | **  **| |  |  |
@@ -131,6 +141,8 @@ Definition:
 # sys:ITSystemReport  (Class)
 Definition: 
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **  **| |  |  |
 | **  **| |  |  |
 | **  **| |  |  |
@@ -138,6 +150,8 @@ Definition:
 # dcat:Distribution (Class)
 Definition: 
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **  **| |  |  |
 | **  **| |  |  |
 | **  **| |  |  |
@@ -146,6 +160,8 @@ Definition:
 # dcat:DataService  (Class)
 Definition: 
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **  **| |  |  |
 | **  **| |  |  |
 
@@ -160,6 +176,8 @@ Definition:
 # ovx:BusinessFunction (Class)
 Definition: 
 
+| Property (en) | Range | Usage note | Perspective | 
+| ---- | ---- | ---- | ---- |
 | **  **| |  |  |
 
 
