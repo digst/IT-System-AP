@@ -9,6 +9,8 @@ This page documents the RDF constructs as applied in a DRAFT for a Danish public
 # sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
 
+![IT System](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/it-system.png "IT System")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:identifier** | xsd:anyURI  | an unambiguous reference to the it-system within a given context. | Basic Information |
