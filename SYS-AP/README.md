@@ -50,18 +50,15 @@ Definition: it-system which has been implemented in a physical IT environment
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **sys:instantiationOf** | sys:ITSystem | specification of the IT system which is instantiated and deployed in an IT environment | |
 | **dct:identifier** | xsd:anyURI. | an unambiguous reference to the instantiated it-system within a given context.| |
-| **sys:actsAs** | EnvironmentType | specification of the environment type which the IT system is deployed in| |
-| **sys:uses** | dcat:Dataset | specifies a dataset which the IT system uses | |
+| **sys:instantiationOf** | sys:ITSystem | specification of the IT system which is instantiated and deployed in an IT environment | |
+| **sys:actsAs** | techenv:EnvironmentType | specification of the environment type which the IT system is deployed in| |
+| **sys:uses** | dcat:Distribution | specifies a dataset distribution which the IT system uses | |
 | **sys:uses** | dcat:DataService | specifies a dataservice which the IT system uses | |
-| **sys:uses** | schema:SoftwareApplication |specifies a software application which the IT system uses | |
-| **sys:provides** | dcat:Dataset | dataset which the IT system provides | |
+| **sys:provides** | dcat:Disribution | dataset distribution which the IT system provides | |
 | **sys:provides** | dcat:DataService | dataservice which the IT system provides| |
 | **sys:provides** | sys:UserInterface | software application which the IT system provides | |
-| **sys:producesDataset** | dcat:Dataset |dataset which the IT system produces | |
-| **  **| |  |  |
-| **  **| |  |  |
+| **sys:producesDataset** | dcat:Distribution |dataset distribution which the IT system produces | |
 
 # dcat:Dataset (Class)
 Definition: A collection of data, published or curated by a single agent, and available for access or download in one or more formats
@@ -81,6 +78,9 @@ Definition: A collection of data, published or curated by a single agent, and av
 | **dcat-dk:hasConfidentialityType** | ConfidentialityTypeNatoEu (subclass of skos:Concept)| the extent by which information contained in a dataset can be disclosed | Security |
 | **dcat-dk:hasConfidentialityType** | ConfidentialityTypeISO27002 (subclass of skos:Concept)|the extent by which information contained in a dataset can be disclosed | Security |
 | **archv:archivalObligationType** | ArchivalObligationType (subclass of skos:Concept) |specification of whether the data is to archived, diposed or if the obligation is unknown | Information |
+
+| **  **| |  |  |
+| **  **| |  |  |
 
 # comp:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
