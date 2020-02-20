@@ -94,91 +94,91 @@ Definition: A contact point—for example, a Customer Complaints department
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **schema:email**| xsd:string |  |  |
-| **schema:telephone**| xsd:string |  |  |
-| **schema:contactType**| xsd:string |  |  |
-| **schema:productSupported**| xsd:string |  |  |
+| **schema:email**| xsd:string | an email address that can be used to contact the agent |  |
+| **schema:telephone**| xsd:string | an telephone number that can be used to contact the agent |  |
+| **schema:contactType**| xsd:string | a person or organization can have different contact points, for different purposes. This property is used to specify the kind of contact point. |  |
+| **schema:productSupported**| xsd:string | The product or service this support contact point is related to (such as product support for a particular product line). |  |
 
 # foaf:Person (Class)
 Definition: The Person class represents people
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **schema:contactPoint**| schema:ContactPoint | relation to a contact point for the person |  |
+| **schema:contactPoint**| schema:ContactPoint | specifies a contact point through which the person can be contacted |  |
 
 # ovx:OrganizationalPersonIdentifier (Class)
-Definition: 
+Definition: a container that holds information about the unique code used to identify a person within an organization.
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **ovx:personCode**| xsd:string | code used within an organization as a unique identifier for a person with a relation to the organization  |  |
 
 # org:Organization (Class)
-Definition: 
+Definition: Represents a collection of people organized together into a community or other social, commercial or political structure. In the context of this application profile is can be specialized as a formal organization (org:FormalOrganization), as an organizational unit (org:OrganizationalUnit) and as a public organization (cpov:PublicOrganization).
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
+| **skos:prefLabel**| rdf:langString | preferred name for the organization in one or more languages |  |
+| **schema:contactPoint**| schema:ContactPoint | specifies a contact point through which the organization can be contacted |  |
+| **org:classification**| oc:PublicOrganizationType | Indicates the type of public organization this organization is classified as |  |
 
 # fibo-fnd-agr-ctr:Contract (Class)
-Definition: 
+Definition: a voluntary, deliberate, and legally binding agreement between two or more competent parties
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
+| **dct:identifier**| xsd:anyURI | an unambiguous reference to a contract |  |
+| **dct:type**| ITSystemContractType | specification of the type of the contract with regards to relationship between the contract parties |  |
+| **fibo-fnd-agr-ctr:hasContractParty**| org:Organization | has a party which is a signatory to the contract and to which is granted certain rights and obligations as defined in the contract and which concedes certain rights to and imposes certain obligations upon the other party as defined in the contract |  |
+| **fibo-fnd-agr-ctr:hasPrincipal**| org:Organization | contract party that carries the role as the customer |  |
+| **fibo-fnd-agr-ctr:hasCounterparty**| org:Organization | identifies a counterparty to a contract |  |
+| **fibo-fnd-agr-ctr:definesTermsFor**| sys:ITSystem | the contract sets out the terms for the IT system |  |
 
 # foaf:Document (Class)
-Definition: 
+Definition: The Document class represents those things which are, broadly conceived, 'documents'
 
 
 # sys:ITSystemReport  (Class)
-Definition: 
+Definition: report containing information about a number of it-systems to be sent to a specific recipient with a specific purpose
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
+| **dct:dateSubmitted**| xsd:date | date at which the it system information was submitted |  |
+| **syscoveredITSystem**| sys:ITSystem or sys:InstantiatedITSystem | Indicates the IT system or instantiated IT system that is covered by the report |  |
+| **frbr:responsibleEntity**| org:Organization | an organization that is responsible for the report |  |
 
 # dcat:Distribution (Class)
-Definition: 
+Definition: A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
-| **  **| |  |  |
+| **dct:title**| xsd:string | a name given to the dataset distribution |  |
+| **dct:issued**| xsd:dateTime | date of formal issuance (e.g., publication) of the dataset distribution |  |
+| **dct:modified**| xsd:dateTime | date on which the dataset distribution was changed |  |
+| **dcat:accessService**| dcat:DataService | a site or end-point that gives access to the distribution of the dataset |  |
 
 # dcat:DataService  (Class)
-Definition: 
+Definition: : A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **  **| |  |  |
-| **  **| |  |  |
+| **dcat:endpointURL**| xsd:anyURI | the root location or primary endpoint of the service (a web-resolvable IRI). |  |
+| **dcat:endpointDescription**| xsd:string | a description of the service end-point, including its operations, parameters etc |  |
 
 # eli:LegalResource (Class)
-Definition: 
+Definition: A distinct intellectual creation (i.e., the intellectual content). For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (adapted from Akoma Ntoso) A legal resource can represent a legal act or any component of a legal act, like an article. Legal resources can be linked together using properties defined in the model. Note that ELI ontology accommodates different point of view on what should be considered a new legal resource, or a new legal expression of the same resource. Typically, a consolidated version can be viewed, in the context of ELI, either as separate legal resource (linked to original version and previous consolidated version using corresponding ELI relations), or as a different legal expression of the same legal resource.
 
 
 # proc:BusinessProcess (Class)
-Definition: 
+Definition: : a sequence of business behaviors that achieves a specific outcome such as a defined set of products or business services
 
 
 # ovx:BusinessFunction (Class)
-Definition: 
+Definition: activity carried out by an organization
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **  **| |  |  |
+| **ovx:usesItSystem**| sys:ITSystem | indicates an IT system used in the process of a business function |  |
 
 
 # Codelists (Classifications) used in the application profile:
