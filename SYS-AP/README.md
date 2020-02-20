@@ -34,7 +34,7 @@ Definition: system which consists of digital information technologies
 | **sys:maintainedBy** |  org:Organization | individual or organization that is responsible for the maintenance of an it-system  | Legal |
 | **infra:instanceOfProductInSeries** | infra:ProductSeries | instance of product in series | Application |
 | **sys:hasSystemDocumentation** | foaf:Document | reference to document that describe the requirements, capabilities, limitations, design, operation, or maintenance of an IT system | Application | 
-| **sys:hasAquisitionType**| ITSystemAquisitionType (subclass of skos:Concept, subclass of tasktype:TaskType)| specification of how the IT system was acquired | Infrastructure |
+| **sys:hasAquisitionType**| aquis:ITSystemAquisitionType (subclass of skos:Concept, subclass of tasktype:TaskType)| specification of how the IT system was acquired | Infrastructure |
 | **tasktype:canPerformTaskType**| tasktype:TaskType subclass of skos:Concept| specification of the type of tasks the system can perform | Tasks |
 | **capa:hasCapability**| capa:Capability subclass of skos:Concept | specification of the type of capability the system has | Tasks |
 | **sys:enablesProcess**| proc:BusinessProcess | specification of the business process which a specific IT system supports | Tasks |
