@@ -77,7 +77,7 @@ Definition: A collection of data, published or curated by a single agent, and av
 | **dcat-dk:hasConfidentialityType** | conf-iso:ConfidentialityTypeISO27002 (subclass of skos:Concept, conf:ConfidentialityType)|the extent by which information contained in a dataset can be disclosed | Security |
 | **dct:partOf**| sys:ITSystem | Relates the dataset to an  IT System that it can be considered to be a part of. |  |
 
-# comp:ProductSeries (Class)
+# infra:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
 
 | Property (en) | Range | Usage note | Perspective | 
