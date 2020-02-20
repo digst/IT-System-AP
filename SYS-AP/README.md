@@ -17,25 +17,33 @@ Definition: system which consists of digital information technologies
 | **dct:description** | rdf:langString | an account of the purpose of using the IT system| Basic Information |
 | **sys:inUseFromDate** | xsd:date | date on which a system was put into operation | Basic Information |
 | **sys:inUseUntilDate** | xsd:date | date on which the it-system was phased out and no longer in operation | Basic Information |
-| **sys:operationalStatus** | OperationalStatus | the status of the it-system with regards to implementation and operation | Basic Information |
+| **sys:operationalStatus** | opstat:OperationalStatus | the status of the it-system with regards to implementation and operation | Basic Information |
 | **rdfs:comment** | rdf:langString  | supplementary comments or notes regarding the it-system | Basic Information |
+| **sys:containsData** |  xsd:boolean. | specification of whether an IT system contains digitally created data | Information | 
+| **archv:containsDigitalDocs**| xsd:boolean | specification of whether an IT system contains digital documents  | Information | 
 | **sys:usedInOrganization** | org:Organization | organization that uses the IT system | Basic Information |
 | **sys:hasApplicationPurpose** | tasktype:PublicAdministrativeTaskType (subclass of skos:Concept)| the administrative task  which the IT system supports. I.e. FORM or KLE. | Tasks  |
 | **cv:hasLegalResource** | eli:LegalResource | legal framework for the application of the IT system | Tasks |
-| **sys:hasCriticality** | CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
+| **sys:hasCriticality** | crit:CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
 | **schema:audience** | target:TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
-| **sys:hasITSystemOwner**|  org:Organization, org:OrganizationalUnit, foaf:Person | organisation or person who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
-| **sys:hasITSystemManager**|  org:Organization,  org:OrganizationalUnit, foaf:Person | organisational unit or person who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
-| **sys:relatedContract**|  fibo-fnd-agr-ctr:Contract  |  | Legal |
+| **sys:hasITSystemOwner**|  org:Organization, foaf:Person, ovx:OrganizationalPersonIdentifier | organisation or person or organizational identifier for person who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
+| **sys:hasITSystemManager**|  org:Organization,  foaf:Person, ovx:OrganizationalPersonIdentifier | organisation or person or organizational identifier for person who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
 | **dct:rightsHolder**| org:Organization | organisation owning or managing the intellectual rights of the primary software product of the it-system | Legal |
-| **schema:creator**|  org:Organization | individual or organization that performs the foundational development activities (including requirements analysis, design, testing through acceptance) during the system or software life cycle process  | Legal |
+| **dct:creator**|  org:Organization | individual or organization that performs the foundational development activities (including requirements analysis, design, testing through acceptance) during the system or software life cycle process  | Legal |
 | **sys:operatedBy** |  org:Organization | organizational unit or individual that is responsible for the operation of the IT system| Legal |
 | **sys:maintainedBy** |  org:Organization | individual or organization that is responsible for the maintenance of an it-system  | Legal |
-| **comp:instanceOfProductInSeries** | comp:ProductSeries | instance of product in series | Application |
-| **sys:hasSystemDocumentation** | sys:SystemDocumentation | reference to document that describe the requirements, capabilities, limitations, design, operation, or maintenance of an IT system | Application | 
-| **sys:hasAquisitionType**| ITSystemAquisitionType (subclass of skos:Concept)| specification of how the IT system was acquired | Infrastructure | 
-| **sys:containsData** |  xsd:boolean. | specification of whether an IT system contains digitally created data | Information | 
-| **archv:containsDigitalDocs**| xsd:boolean | specification of whether an IT system contains digital documents  | Information | 
+| **infra:instanceOfProductInSeries** | infra:ProductSeries | instance of product in series | Application |
+| **sys:hasSystemDocumentation** | foaf:Document | reference to document that describe the requirements, capabilities, limitations, design, operation, or maintenance of an IT system | Application | 
+| **sys:hasAquisitionType**| ITSystemAquisitionType (subclass of skos:Concept, subclass of tasktype:TaskType)| specification of how the IT system was acquired | Infrastructure |
+| **tasktype:canPerformTaskType**| tasktype:TaskType subclass of skos:Concept| specification of the type of tasks the system can perform | Tasks |
+| **capa:hasCapability**| capa:Capability subclass of skos:Concept | specification of the type of capability the system has | Tasks |
+| **sys:enablesProcess**| proc:BusinessProcess | specification of the business process which a specific IT system supports | Tasks |
+| **ovx:enablesFunction**| ovx:BusinessFunction | specification of the function that the system is enabling | Tasks |
+| **  **| |  |  |
+| **  **| |  |  |
+| **  **| |  |  |
+
+
 
 <!--Properties
 * **sys:hasFunctionalityCapability**  (Object Property) Range: Capability
