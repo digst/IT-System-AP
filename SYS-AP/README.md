@@ -65,21 +65,17 @@ Definition: A collection of data, published or curated by a single agent, and av
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **dct:identifier** | xsd:anyURI | An unambiguous reference to the dataset within a given context | Information |
 | **dct:title** | rdf:langString | A name given to the dataset | Information |
+| **dct:identifier** | xsd:anyURI | An unambiguous reference to the dataset within a given context | Information |
 | **dct:description** | rdf:langString| An account of the dataset | Information |
 | **owl:versionInfo** | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information |
-| **dct:temporal** | ct:PeriodOfTime | | Information |
 | **dct:creator** | org:Organization| organisation who has the primary responsibility for the creation of the dataset | Governance |
 | **dcat-dk:dataResponsibleOrganisation** | org:Organization| agent who has the administrative responsibility of the dataset | Governance |
 | **dcat-dk:dataProcessor** | org:Organization| natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data| Governance |
-| **dcat-dk:personalDataCategory** | PersonalDataCategory|specification of a relation to specific personal data category | Security |
-| **dcat-dk:confidentialityType** | ConfidentialityType (subclass of skos:Concept)| | Security |
-| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeNatoEu (subclass of skos:Concept)| the extent by which information contained in a dataset can be disclosed | Security |
-| **dcat-dk:hasConfidentialityType** | ConfidentialityTypeISO27002 (subclass of skos:Concept)|the extent by which information contained in a dataset can be disclosed | Security |
-| **archv:archivalObligationType** | ArchivalObligationType (subclass of skos:Concept) |specification of whether the data is to archived, diposed or if the obligation is unknown | Information |
-
-| **  **| |  |  |
+| **dcat-dk:personalDataCategory** | pers-cat:PersonalDataCategory|specification of a relation to specific personal data category | Security |
+| **dcat-dk:hasConfidentialityType** | conf-eu:ConfidentialityTypeNatoEu (subclass of skos:Concept, conf:ConfidentialityType)| the extent by which information contained in a dataset can be disclosed | Security |
+| **dcat-dk:hasConfidentialityType** | conf-iso:ConfidentialityTypeISO27002 (subclass of skos:Concept, conf:ConfidentialityType)|the extent by which information contained in a dataset can be disclosed | Security |
+| **dct:partOf**| sys:ITSystem | Relates the dataset to an  IT System that it can be considered to be a part of. |  |
 | **  **| |  |  |
 
 # comp:ProductSeries (Class)
