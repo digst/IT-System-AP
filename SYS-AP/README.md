@@ -87,6 +87,8 @@ Definition: A collection of data, published or curated by a single agent, and av
 # infra:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
 
+![Product Series](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/ProductSeries.png "Product Series")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **schema:identifier** | xsd:anyURI |An unambiguous reference to the dataset within a given context | |
