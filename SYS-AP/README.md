@@ -51,6 +51,8 @@ Definition: system which consists of digital information technologies
 # sys:InstantiatedITSystem (Class)
 Definition: it-system which has been implemented in a physical IT environment
 
+![Instantiated IT System](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Instantiated%20IT%20System.png "Instantiated IT System")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:identifier** | xsd:anyURI. | an unambiguous reference to the instantiated it-system within a given context.| |
