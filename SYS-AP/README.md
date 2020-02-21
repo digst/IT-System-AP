@@ -68,6 +68,8 @@ Definition: it-system which has been implemented in a physical IT environment
 # dcat:Dataset (Class)
 Definition: A collection of data, published or curated by a single agent, and available for access or download in one or more formats
 
+![Dataset](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Dataset.png "Dataset")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:title** | rdf:langString | A name given to the dataset | Information |
