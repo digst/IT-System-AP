@@ -9,13 +9,8 @@ This page documents the RDF constructs as applied in a DRAFT for a Danish public
 # sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
 
-![IT System](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/it-system.png "IT System")
+![IT System](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/IT%20System.png "IT System")
 
-![IT System with datatypeproperties](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/IT%20System%20w%20datatypeproperties.png "IT System with datatypeproperties")
-
-![IT System with objectproperties](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/IT%20System%20w%20objectproperties.png "IT System with objectproperties")
-
-![IT System with classifications](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/IT%20System%20w%20classifications.png "IT System with classifications")
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
