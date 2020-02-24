@@ -196,6 +196,7 @@ Definition: : A site or end-point providing operations related to the discovery 
 # eli:LegalResource (Class)
 Definition: A distinct intellectual creation (i.e., the intellectual content). For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (adapted from Akoma Ntoso) A legal resource can represent a legal act or any component of a legal act, like an article. Legal resources can be linked together using properties defined in the model. Note that ELI ontology accommodates different point of view on what should be considered a new legal resource, or a new legal expression of the same resource. Typically, a consolidated version can be viewed, in the context of ELI, either as separate legal resource (linked to original version and previous consolidated version using corresponding ELI relations), or as a different legal expression of the same legal resource.
 
+![Legal Resource](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/LegalResource.png "Legal Resource")
 
 # proc:BusinessProcess (Class)
 Definition: : a sequence of business behaviors that achieves a specific outcome such as a defined set of products or business services
