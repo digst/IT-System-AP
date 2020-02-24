@@ -158,6 +158,7 @@ Definition: a voluntary, deliberate, and legally binding agreement between two o
 # foaf:Document (Class)
 Definition: The Document class represents those things which are, broadly conceived, 'documents'
 
+![Document](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Document.png "Document")
 
 # sys:ITSystemReport  (Class)
 Definition: report containing information about a number of it-systems to be sent to a specific recipient with a specific purpose
