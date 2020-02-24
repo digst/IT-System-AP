@@ -186,6 +186,8 @@ Definition: A specific representation of a dataset. A dataset might be available
 # dcat:DataService  (Class)
 Definition: : A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.
 
+![Dataservice](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Dataservice.png "Dataservice")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dcat:endpointURL**| xsd:anyURI | the root location or primary endpoint of the service (a web-resolvable IRI). |  |
