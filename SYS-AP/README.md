@@ -124,12 +124,16 @@ Definition: The Person class represents people
 # ovx:OrganizationalPersonIdentifier (Class)
 Definition: a container that holds information about the unique code used to identify a person within an organization.
 
+![Organizational Person Identifier](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/OrganizationalPersonIdentifier.png "Organizational Person Identifier")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **ovx:personCode**| xsd:string | code used within an organization as a unique identifier for a person with a relation to the organization  |  |
 
 # org:Organization (Class)
 Definition: Represents a collection of people organized together into a community or other social, commercial or political structure. In the context of this application profile is can be specialized as a formal organization (org:FormalOrganization), as an organizational unit (org:OrganizationalUnit) and as a public organization (cpov:PublicOrganization).
+
+
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
