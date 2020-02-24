@@ -144,6 +144,8 @@ Definition: Represents a collection of people organized together into a communit
 # fibo-fnd-agr-ctr:Contract (Class)
 Definition: a voluntary, deliberate, and legally binding agreement between two or more competent parties
 
+![Contract](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Contract.png "Contract")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:identifier**| xsd:anyURI | an unambiguous reference to a contract |  |
