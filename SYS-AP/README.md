@@ -99,7 +99,8 @@ Definition: a series of related products that exhibit the same overall functiona
 
 
 # schema:ContactPoint (Class)
-Definition: A contact point—for example, a Customer Complaints department 
+Definition: A contact point—for example, a Customer Complaints department
+
 ![Contact Point](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/ContactPoint.png "Contact Point")
 
 
