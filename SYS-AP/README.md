@@ -163,6 +163,8 @@ Definition: The Document class represents those things which are, broadly concei
 # sys:ITSystemReport  (Class)
 Definition: report containing information about a number of it-systems to be sent to a specific recipient with a specific purpose
 
+![IT System Report](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/ITSystemReport.png "IT System Report")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:dateSubmitted**| xsd:date | date at which the it system information was submitted |  |
