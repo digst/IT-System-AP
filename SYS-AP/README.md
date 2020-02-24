@@ -201,6 +201,7 @@ Definition: A distinct intellectual creation (i.e., the intellectual content). F
 # proc:BusinessProcess (Class)
 Definition: : a sequence of business behaviors that achieves a specific outcome such as a defined set of products or business services
 
+![Business Process](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/BusinessProcess.png "Business Process")
 
 # ovx:BusinessFunction (Class)
 Definition: activity carried out by an organization
