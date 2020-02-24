@@ -174,6 +174,8 @@ Definition: report containing information about a number of it-systems to be sen
 # dcat:Distribution (Class)
 Definition: A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).
 
+![Distribution](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Distribution.png "Distribution")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:title**| xsd:string | a name given to the dataset distribution |  |
