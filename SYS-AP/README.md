@@ -114,6 +114,9 @@ Definition: A contact point—for example, a Customer Complaints department
 # foaf:Person (Class)
 Definition: The Person class represents people
 
+![People](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Person.png "People")
+
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **schema:contactPoint**| schema:ContactPoint | specifies a contact point through which the person can be contacted |  |
