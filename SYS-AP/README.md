@@ -206,6 +206,8 @@ Definition: : a sequence of business behaviors that achieves a specific outcome 
 # ovx:BusinessFunction (Class)
 Definition: activity carried out by an organization
 
+![Business Function](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/BusinessFunction.png "Business Function")
+
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **ovx:usesItSystem**| sys:ITSystem | indicates an IT system used in the process of a business function |  |
