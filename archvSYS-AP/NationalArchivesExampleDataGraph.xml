@@ -24,7 +24,7 @@
     <sys:hasAquisitionType rdf:resource="https://data.gov.dk/concept/core/aquisition/Commercial-off-the-shelf"/>
     <sys:hasCriticality rdf:resource="https://data.gov.dk/concept/core/criticality/CriticalForBusiness"/>
     <infra:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM</infra:instanceOfProductInSeries>
-    <archv:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:containsData>	
+    <sys:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:containsData>	
     <archv:containsDigitalDocuments rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</archv:containsDigitalDocuments>
     <dc:hasPart rdf:resource="https://example.com/thing-2"/>	
   </rdf:Description>
