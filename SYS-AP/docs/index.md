@@ -121,7 +121,7 @@ Abstract: Dette dokument 'Standard for beskrivelse af it-systemer - Basisprofil 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: SYS-AP
 Revision: 1.0.0
-Date: 2019-02-03
+Date: 2019-02-25
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/IT-System-AP/tree/master/SYS-AP
@@ -131,11 +131,8 @@ Logo: digst...
 
 
 <h1>Standard for beskrivelse af it-systemer - Basisprofil</h1>
-
-
-Version 1.0.0
-
-Februar 2019
+<i>
+Version 1.0.0 (Godkendt af Styregruppen for Data og Arkitektur i December 2019)</i>
                                             
 
 **Læsevejledning:**
@@ -905,7 +902,7 @@ Bilag B: Skabelon til registrering i regneark (udklip)
 <dl class="def"> 
 <dt>FORM-opgave(r)</dt><dd>(for regioner og statslige administrative enheder) angiv FORM-opgave(r), som it-systemet understøtter (fx 65.50.05.10 Sagsarkivering) el. overord-net serviceområde (kan udfyldes) </dd>
 <dt>KLE-emne(r) </dt><dd>(for kommuner) angiv  KLE-emne(r) som it-systemet understøtter (fx 85.08.00 arkivering i almindelighed) el. overordnet emnegruppe (kan udfyldes) </dd>
-<dt>lovgrundlag</dt><dd>angiv reference(r) til juridisk ressource, som danner grundlag for systemets anvendelse (kan udfyldes) </dd>
+<dt>retskilde</dt><dd>angiv reference(r) til juridisk ressource, som danner grundlag for systemets anvendelse (kan udfyldes) </dd>
 <dt>målgruppe</dt><dd>angivelse af, hvilken gruppe af brugere it-systemet henvender sig til (kan udfyldes)</dd>  
 <dt>forretningsfunktion</dt><dd>angiv den forretningsfunktion som it-systemet understøtter(kan udfyldes)</dd>	
 <dt>forgængersystem</dt><dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes)</dd>
@@ -1689,7 +1686,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
         </tr>
         <tr>
             <td>
-                offentlig forvaltnings-opgavetype
+                offentlig forvaltningsopgavetype
             </td>
             <td>
                 type af opgave, der udf&oslash;res af offentlige organisationer
@@ -1775,7 +1772,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
         </tr>
         <tr>
             <td>
-                personoplysnings-kategori
+                personoplysningskategori
             </td>
             <td>
                 kategori af personoplysninger set i forhold til f&oslash;lsomhed, idet der g&aelig;lder forskellige
@@ -1855,28 +1852,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
                 legal resource
             </td>
         </tr>
-        <tr>
-            <td>
-                sagsomr&aring;de
-            </td>
-            <td>
-                kategori af sager iht. bekendtg&oslash;relser for bevaring og kassation af digitale arkivalier p&aring;
-                det regionale eller kommunale omr&aring;de
-            </td>
-            <td>
-                https://www.retsinformation.dk/eli/lta/2003/591;
-                https://www.retsinformation.dk/eli/lta/2015/266; https://www.retsinformation.dk/eli/lta/2018/183;&nbsp;
-            </td>
-            <td>
-                https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer/
-            </td>
-            <td>
-                https://data.gov.dk/concept/core/digitalarchival/
-            </td>
-            <td>
-                case area
-            </td>
-        </tr>
+       
         <tr>
             <td>
                 system
@@ -1900,7 +1876,7 @@ Bilag G: Begrebsliste til Basisprofilen (SYS-AP)
         </tr>
         <tr>
             <td>
-                system-dokumentation
+                systemdokumentation
             </td>
             <td>
                 skriftligt materiale, der redeg&oslash;r for et bestemt aspekt af it-systemet, herunder forretningskrav,
