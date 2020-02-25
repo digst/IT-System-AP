@@ -25,7 +25,7 @@ Definition: system which consists of digital information technologies
 | **rdfs:comment** kommentar@da | rdf:langString  | supplementary comments or notes regarding the it-system | Basic Information |
 | **sys:containsData** indeholder_data@da |  xsd:boolean. | specification of whether an IT system contains digitally created data | Information | 
 | **sys:usedInOrganization** anvendt_i_organisation@da | org:Organization | organization that uses the IT system | Basic Information |
-| **sys:hasApplicationPurpose** har_anvendelsesformål@da | tasktype:PublicAdministrativeTaskType (subclass of skos:Concept)| the administrative task  which the IT system supports. I.e. FORM or KLE. | Tasks  |
+| **sys:hasApplicationPurpose** har_anvendelsesformål@da | tasktype: PublicAdministrativeTaskType (subclass of skos:Concept)| the administrative task  which the IT system supports. I.e. FORM or KLE. | Tasks  |
 | **cv:hasLegalResource** retskilde@da | eli:LegalResource | legal framework for the application of the IT system | Tasks |
 | **sys:hasCriticality** har_kritikalitet@da | crit:CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
 | **schema:audience** målgruppe@da | target:TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
