@@ -398,46 +398,46 @@ Referencer
 
 **Standarder**
 
-- [ISO/IEC CD 15288](https://www.iso.org/standard/63711.html)'Systems Engineering--- System Life Cycle Processes'
-- [ISO/IEC 16350:2015(en)](https://www.iso.org/obp/ui/#iso:std:iso-iec:16350:ed-1:v1:en)Information technology --- Systems and software engineering --- Application management
-- [ISO/IEC TR 10000-1:1998(en)](https://www.iso.org/obp/ui/#iso:std:iso-iec:tr:10000:-1:ed-4:v1:en) 'Information technology --- Framework and taxonomy of International Standardized Profiles --- Part 1: General principles and documentation framework'
-- ISO/IEC TR 12182:2015 'Systems and software engineering -- Framework for categorization of IT systems and software, and guide for applying it'
-- ISO/IEC/IEEE 42010 'Systems and software engineering --- Architecture description '
-- ISO/IEC/IEEE DIS '42020 Enterprise, systems and software --- Architecture processes'
-- ISO/IEC/IEEE DIS 42030 'Systems and Software Engineering --- Architecture Evaluation'
-- [ISO/IEC 27002:2013](https://www.iso.org/standard/54533.html) Information technology -- Security techniques -- Code of practice for information security controls: 
-- [ITIL](http://www.itlibrary.org/) The Information Technology Infrastructure Library
-- [TOGAF](https://publications.opengroup.org/standards/togaf/specifications/c182) The TOGAF® Standard, Version 9.2, 
-- [ARCHIMATE](https://publications.opengroup.org/standards/archimate/c179) ArchiMate® 3.0.1 Specification 
+- [ISO/IEC CD 15288](https://www.iso.org/standard/63711.html)"Systems Engineering--- System Life Cycle Processes"
+- [ISO/IEC 16350:2015(en)](https://www.iso.org/obp/ui/#iso:std:iso-iec:16350:ed-1:v1:en) Information technology --- Systems and software engineering --- Application management
+- [ISO/IEC TR 10000-1:1998(en)](https://www.iso.org/obp/ui/#iso:std:iso-iec:tr:10000:-1:ed-4:v1:en) "Information technology --- Framework and taxonomy of International Standardized Profiles --- Part 1: General principles and documentation framework"
+- ISO/IEC TR 12182:2015 "Systems and software engineering -- Framework for categorization of IT systems and software, and guide for applying it"
+- ISO/IEC/IEEE 42010 "Systems and software engineering --- Architecture description "
+- ISO/IEC/IEEE DIS "42020 Enterprise, systems and software --- Architecture processes"
+- ISO/IEC/IEEE DIS 42030 "Systems and Software Engineering --- Architecture Evaluation"
+- [ISO/IEC 27002:2013](https://www.iso.org/standard/54533.html) Information technology -- Security techniques -- Code of practice for information security controls
+- [ITIL -  The Information Technology Infrastructure Library](http://www.itlibrary.org/)
+- [The TOGAF® Standard, Version 9.2](https://publications.opengroup.org/standards/togaf/specifications/c182)
+- [ArchiMate® 3.0.1 Specification](https://publications.opengroup.org/standards/archimate/c179)
 
 **Datamodeller / klassifikationer / retningslinjer**
 
-- Datamodellen for [OS2Kitos ](https://www.kitos.dk/)(inkl. klassifikation af applikationstyper og forretningstyper)
-- OIO specifikation af it-system i [modellen for Organisation](https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf)
+- Datamodellen for [OS2Kitos](https://www.kitos.dk/) (inkl. klassifikation af applikationstyper og forretningstyper)
+- OIO specifikation af it-system i [Modellen for Organisation](https://arkitektur.digst.dk/sites/default/files/organisationsmodellen_version_2.0.pdf)
 - KMD KOSDY-datamodel)
 - Datamodellen for ServiceNow ([IT Service Management-delen](https://www.servicenow.com/products/it-service-management.html)) /ITILs (CMDB)
 - Statens-IT systemkort
 - Datamodellen for BMC
 - Retningslinjer for dokumentation og formidling af arkitektur i digitaliseringsprojekter. (baseret på ISO)
-- Fællesoffentlig Referencemodel (FORM): https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form;https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form
-- Kommunernes Emnesystematik (KLE)
-- Service- og Teknologireferencemodel (STORM): http://arkitekturguiden.digitaliser.dk/storm
-- KOMBIT Rollegalleri: https://www.kombit.dk/sites/default/files/user_upload/documents/Videnscenter/Eksempel%20fra%20KOMBIT_Rollegalleri%20implementering.pdf
-- Referencearkitektur for deling af data og dokumenter: https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf
+- Fællesoffentlig Referencemodel, [FORM](https://arkitektur.digst.dk/rammearkitektur/klassifikationer/form),
+- Kommunernes Emnesystematik, [KLE](http://www.kle-online.dk/soegning)
+- Service- og Teknologireferencemodel [STORM](http://arkitekturguiden.digitaliser.dk/storm)
+- [KOMBIT Rollegalleri]( https://www.kombit.dk/sites/default/files/user_upload/documents/Videnscenter/Eksempel%20fra%20KOMBIT_Rollegalleri%20implementering.pdf)
+- [Referencearkitektur for deling af data og dokumenter](https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf)
 
-**Retskilder og tilhørende vejledninger:**
+**Lovgrundlag og tilhørende vejledninger:**
 
-- Bekendtgørelse nr. 183 af 26. januar 2018 om bevaring og kassation af digitalt skabte data og dokumenter https://www.retsinformation.dk/eli/lta/2018/183
-- Bekendtgørelse nr. 266 af 23. marts 2015 om bevaring og kassation af arkivalier i regionerne https://www.retsinformation.dk/eli/lta/2015/266
-- Vejledning til bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne https://www.sa.dk/wp-content/uploads/2018/04/2007_IT_Vejledning-til-bekendtg%C3%B8relse_h%C3%B8ring-1.pdf
-- Vejledning om bevaring og kassation af arkivalier hos regionerne https://www.sa.dk/wp-content/uploads/2015/06/Vejledning-til-regionsbekendtg%C3%B8relsen_juni-2015.pdf
-- Bekendtgørelse nr. 1007 af 20. august 2010 om arkiveringsversioner https://www.retsinformation.dk/eli/lta/2010/1007
-- Vejledning om kvalitetssikring i it-systemer -- Rigsarkivets minimumskrav og anbefalinger https://www.sa.dk/wp-content/uploads/2016/02/Vejledning-om-kvalitetssikring.pdf
-- Arkivhåndbog for statslige myndigheder https://www.kbharkiv.dk/images/files/Arkivering/Arkivhandbogen.pdf
-- Datatilsynets 'Vejledning om fortegnelse' https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
-- Sikkerhedscirkulæret (Cirkulære om sikkerhedsbeskyttelse af informationer af fælles interesse for landene i NATO eller EU, andre klassificerede informationer samt informationer af sikkerhedsmæssig beskyttelsesinteresse i øvrigt) https://www.retsinformation.dk/eli/retsinfo/2014/10338
-- Databeskyttelsesloven (Lov om supplerende bestemmelser til forordning om beskyttelse af fysiske personer i forbindelse med behandling af personoplysninger og om fri udveksling af sådanne oplysninger) https://www.retsinformation.dk/eli/lta/2018/502
-- GDPR (generel forordning om databeskyttelse): https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32016R0679&from=EN
+- [Bekendtgørelse nr. 183 af 26. januar 2018 om bevaring og kassation af digitalt skabte data og dokumenter](https://www.retsinformation.dk/eli/lta/2018/183)
+- [Bekendtgørelse nr. 266 af 23. marts 2015 om bevaring og kassation af arkivalier i regionerne](https://www.retsinformation.dk/eli/lta/2015/266)
+- [Vejledning til bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne](https://www.sa.dk/wp-content/uploads/2018/04/2007_IT_Vejledning-til-bekendtg%C3%B8relse_h%C3%B8ring-1.pdf)
+- [Vejledning om bevaring og kassation af arkivalier hos regionerne](https://www.sa.dk/wp-content/uploads/2015/06/Vejledning-til-regionsbekendtg%C3%B8relsen_juni-2015.pdf)
+- [Bekendtgørelse nr. 1007 af 20. august 2010 om arkiveringsversioner](https://www.retsinformation.dk/eli/lta/2010/1007)
+- [Vejledning om kvalitetssikring i it-systemer -- Rigsarkivets minimumskrav og anbefalinger](https://www.sa.dk/wp-content/uploads/2016/02/Vejledning-om-kvalitetssikring.pdf)
+- [Arkivhåndbog for statslige myndigheder](https://www.kbharkiv.dk/images/files/Arkivering/Arkivhandbogen.pdf)
+- [Datatilsynets 'Vejledning om fortegnelse'](https://www.datatilsynet.dk/media/6567/fortegnelse.pdf)
+- Sikkerhedscirkulæret: [Cirkulære om sikkerhedsbeskyttelse af informationer af fælles interesse for landene i NATO eller EU, andre klassificerede informationer samt informationer af sikkerhedsmæssig beskyttelsesinteresse i øvrigt](https://www.retsinformation.dk/eli/retsinfo/2014/10338)
+- Databeskyttelsesloven: [Lov om supplerende bestemmelser til forordning om beskyttelse af fysiske personer i forbindelse med behandling af personoplysninger og om fri udveksling af sådanne oplysninger](https://www.retsinformation.dk/eli/lta/2018/502)
+- GDPR [generel forordning om databeskyttelse](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
 
 
 Bilag
