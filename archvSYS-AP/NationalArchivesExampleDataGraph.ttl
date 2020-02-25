@@ -21,7 +21,7 @@
   sys:hasCriticality <https://data.gov.dk/concept/core/criticality/CriticalForBusiness> ;
   sys:hasAquisitionType <https://data.gov.dk/concept/core/aquisition/Commercial-off-the-shelf> ;
   infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
-  archv:containsData true ;
+  sys:containsData true ;
   archv:containsDigitalDocuments true ;
   dc:hasPart <https://example.com/thing-2> .
 
