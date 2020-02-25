@@ -4,10 +4,7 @@ Read specification: https://digst.github.io/IT-System-AP/SYS-AP/docs/
 ## Basic Application Profile for IT System Description (Standard for beskrivelse af it-systemer - basisprofil
 This page documents the RDF constructs as applied in a DRAFT for a Danish public-sector specification for describing basic information about IT systems. Please find below an overview of the  main classes and their properties categorised according to the following perspectives: 
 
-![Perspectives](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Figur_illustration_af_standardens_emnemaessige_sammenhaenge(en).PNG "Perspectives")
-
-
-<p align="center"><img src="https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Figur_illustration_af_standardens_emnemaessige_sammenhaenge(en).PNG" alt="Perspectives" width="600"/>test</p>
+<p align="center"><img src="https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Figur_illustration_af_standardens_emnemaessige_sammenhaenge(en).PNG" alt="Perspectives" width="600"/></p>
 
 # sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
