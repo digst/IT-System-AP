@@ -49,7 +49,7 @@ Definition: it-system which has been implemented in a physical IT environment
 | **dct:identifier** | xsd:anyURI |an unambiguous reference to the instantiated it-system within a given context | |
 | **sys:actsAs** | EnvironmentType | specification of the environment type which the IT system is deployed in | |
 | **sys:producesDataset** | dcat:Distribution |dataset which the IT system produces | Information|
-| **archv:latestArchiveInformationPackage** | archv:ArchiveInformationPackage | specification of the distribution that contains the latest archive information package | |
+| **archv:latestArchive InformationPackage** | archv:ArchiveInformationPackage | specification of the distribution that contains the latest archive information package | |
 
 
 # dcat:Dataset (Class)
