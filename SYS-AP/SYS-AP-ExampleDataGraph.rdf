@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:schema="https://schema.org"
+    xmlns:archv="https://data.gov.dk/model/core/digitalarchival/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:sys="https://data.gov.dk/model/core/itsystem/"
+    xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk#"
+    xmlns:infra="https://data.gov.dk/model/core/infrastructure/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+
+<!-- IT-SYSTEM -->	
+  <rdf:Description rdf:about="https://example.com/thing-1">
+    <rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem/ITSystem"/>  
+    <skos:prefLabel xml:lang="da">Acadre </skos:prefLabel>
+    <skos:altLabel xml:lang="da">Acadre CM</skos:altLabel>
+    <dc:description xml:lang="da">Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering</dc:description>	
+    <sys:hasApplicationPurpose rdf:resource="http://www.form-online.dk/opgavenoegle/65/#65.50.05"/>
+    <sys:hasApplicationPurpose rdf:resource="http://www.kle-online.dk/emneplan/85/#_85.02.10"/>
+    <sys:inUseFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</sys:inUseFromDate>
+    <schema:audience rdf:resource="https://data.gov.dk/model/core/targetgroup/InternalTargetGroup"/>
+    <sys:hasAquisitionType rdf:resource="https://data.gov.dk/concept/core/aquisition/Commercial-off-the-shelf"/>
+    <sys:hasCriticality rdf:resource="https://data.gov.dk/concept/core/criticality/CriticalForBusiness"/>
+    <infra:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM</infra:instanceOfProductInSeries>
+    <dc:hasPart rdf:resource="https://example.com/thing-2"/>	
+  </rdf:Description>
+
+<!-- IT-SYSTEMETS DATAINDHOLD (ET LOGISK DATASÆT)-->  	
+  <rdf:Description rdf:about="https://example.com/thing-2">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dc:title xml:lang="da">Journalsager fra kommune x</dc:title>	
+    <dc:description xml:lang="da">Journalsager fra kommune x der er oprettet ifm....</dc:description>	
+    <dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x</dcat-dk:dataResponsibleOrganisation>	  
+    <dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/concept/core/personaldata/GeneralPersonalData"/>	  
+  </rdf:Description>	
+
+<!-- IT-SYSTEMETS FYSISKE INSTANTIERING I ET IT-MILJØ --> 	
+  <rdf:Description rdf:about="https://example.com/thing-3">
+    <rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem/InstantiatedITSystem"/>	  
+    <sys:actsAs rdf:resource="https://data.gov.dk/concept/core/tech-environment/Production"/>
+    <sys:instantiationOf rdf:resource="https://example.com/thing-1"/>	
+	
+<!-- DET INSTANTIEREDE IT-SYSTEMS KONKRETE DATA-->	
+    <sys:producesDataset>
+	  <rdf:Description rdf:about="https://example.com/thing-4">
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>	  
+		<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dc:modified>
+		<dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-01</dc:issued>
+	  </rdf:Description>	
+	</sys:producesDataset>
+  </rdf:Description>	
+
+</rdf:RDF>

@@ -1,0 +1,42 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sys: <https://data.gov.dk/model/core/itsystem/> .
+@prefix archv: <https://data.gov.dk/model/core/digitalarchival/> .
+@prefix infra: <https://data.gov.dk/model/core/infrastructure/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcat-dk: <https://data.gov.dk/model/core/dcat-dk#> .
+
+<https://example.com/thing-1>
+  a <https://data.gov.dk/model/core/itsystem/ITSystem> ;
+  skos:prefLabel "Acadre "@da ;
+  skos:altLabel "Acadre CM"@da ;
+  dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ;
+  sys:inUseFromDate "2019-01-01"^^xsd:date ;
+  sys:hasApplicationPurpose <http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
+  sys:hasApplicationPurpose <http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
+  schema:audience <https://data.gov.dk/model/core/targetgroup/InternalTargetGroup> ;
+  sys:hasCriticality <https://data.gov.dk/concept/core/criticality/CriticalForBusiness> ;
+  sys:hasAquisitionType <https://data.gov.dk/concept/core/aquisition/Commercial-off-the-shelf> ;
+  infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
+  sys:containsData true ;
+  dc:hasPart <https://example.com/thing-2> .
+
+<https://example.com/thing-2>
+  a dcat:Dataset ;
+  dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
+  dcat-dk:personalDataCategory <https://data.gov.dk/concept/core/personaldata/GeneralPersonalData> ;
+  dc:description "Journalsager fra kommune x"@da ;
+
+<https://example.com/thing-3>
+  a sys:InstantiatedITSystem ;
+  sys:actsAs <https://data.gov.dk/concept/core/tech-environment/Production> ;
+  sys:instantiationOf <https://example.com/thing-1> ;
+  sys:producesDataset <https://example.com/thing-4> .
+
+<https://example.com/thing-4>
+  a dcat:Distribution ;
+  dc:issued "2019-02-01"^^xsd:date ;
+  dc:modified ""^^xsd:date .
+
