@@ -6,12 +6,14 @@ This page documents the RDF constructs as applied in a DRAFT for a Danish public
 
 ![Perspectives](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Figur_illustration_af_standardens_emnemaessige_sammenhaenge(en).PNG "Perspectives")
 
+
+<p align="center"><img src="https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Figur_illustration_af_standardens_emnemaessige_sammenhaenge(en).PNG" alt="Perspectives" width="600"/>test</p>
+
 # sys:ITSystem (Class)
 Definition: system which consists of digital information technologies
 
 ![IT System](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/IT%20System.png "IT System")
 
-<p align="center"><img src="https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/IT%20System.png" alt="IT System" width="600"/>test</p>
 
 
 | Property (en) | Range | Usage note | Perspective | 
