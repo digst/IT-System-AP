@@ -9,7 +9,7 @@
 @prefix dcat-dk: <https://data.gov.dk/model/core/dcat-dk#> .
 
 <https://example.com/thing-1>
-  a <https://data.gov.dk/model/core/itsystem#ITSystem> ;
+  a <https://data.gov.dk/model/core/itsystem/ITSystem> ;
   skos:prefLabel "Acadre "@da ;
   skos:altLabel "Acadre CM"@da ;
   dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ;
