@@ -13,7 +13,7 @@ Definition: system which consists of digital information technologies
 
 
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:identifier** identifikator@da | xsd:anyURI  | an unambiguous reference to the it-system within a given context. | Basic Information |
 | **skos:prefLabel** it-systemnavn@da | rdf:langString | preferred name for the IT system | Basic Information |
@@ -53,7 +53,7 @@ Definition: it-system which has been implemented in a physical IT environment
 
 ![Instantiated IT System](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Instantiated%20IT%20System.png "Instantiated IT System")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:identifier** identifikator@da | xsd:anyURI. | an unambiguous reference to the instantiated it-system within a given context.| |
 | **sys:instantiationOf** instantiering_af@da | sys:ITSystem | specification of the IT system which is instantiated and deployed in an IT environment | |
@@ -70,7 +70,7 @@ Definition: A collection of data, published or curated by a single agent, and av
 
 ![Dataset](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Dataset.png "Dataset")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property  | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:title** titel@da | rdf:langString | A name given to the dataset | Information |
 | **dct:identifier** identifikatorl@da  | xsd:anyURI | An unambiguous reference to the dataset within a given context | Information |
@@ -89,7 +89,7 @@ Definition: a series of related products that exhibit the same overall functiona
 
 ![Product Series](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/ProductSeries.png "Product Series")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **schema:identifier** | xsd:anyURI |An unambiguous reference to the dataset within a given context | |
 | **skos:prefLabel** | rdf:langString|preferred name for the product series | |
@@ -104,7 +104,7 @@ Definition: A contact point—for example, a Customer Complaints department
 ![Contact Point](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/ContactPoint.png "Contact Point")
 
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **schema:email**| xsd:string | an email address that can be used to contact the agent |  |
 | **schema:telephone**| xsd:string | an telephone number that can be used to contact the agent |  |
@@ -117,7 +117,7 @@ Definition: The Person class represents people
 ![People](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Person.png "People")
 
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **schema:contactPoint**| schema:ContactPoint | specifies a contact point through which the person can be contacted |  |
 
@@ -126,7 +126,7 @@ Definition: a container that holds information about the unique code used to ide
 
 ![Organizational Person Identifier](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/OrganizationalPersonIdentifier.png "Organizational Person Identifier")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **ovx:personCode**| xsd:string | code used within an organization as a unique identifier for a person with a relation to the organization  |  |
 
@@ -135,7 +135,7 @@ Definition: Represents a collection of people organized together into a communit
 
 ![Organization](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Organization.png "Organization")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **skos:prefLabel**| rdf:langString | preferred name for the organization in one or more languages |  |
 | **schema:contactPoint**| schema:ContactPoint | specifies a contact point through which the organization can be contacted |  |
@@ -146,7 +146,7 @@ Definition: a voluntary, deliberate, and legally binding agreement between two o
 
 ![Contract](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Contract.png "Contract")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:identifier**| xsd:anyURI | an unambiguous reference to a contract |  |
 | **dct:type**| ITSystemContractType | specification of the type of the contract with regards to relationship between the contract parties |  |
@@ -165,7 +165,7 @@ Definition: report containing information about a number of it-systems to be sen
 
 ![IT System Report](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/ITSystemReport.png "IT System Report")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property  | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:dateSubmitted**| xsd:date | date at which the it system information was submitted |  |
 | **syscoveredITSystem**| sys:ITSystem or sys:InstantiatedITSystem | Indicates the IT system or instantiated IT system that is covered by the report |  |
@@ -176,7 +176,7 @@ Definition: A specific representation of a dataset. A dataset might be available
 
 ![Distribution](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Distribution.png "Distribution")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property  | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dct:title**| xsd:string | a name given to the dataset distribution |  |
 | **dct:issued**| xsd:dateTime | date of formal issuance (e.g., publication) of the dataset distribution |  |
@@ -188,7 +188,7 @@ Definition: : A site or end-point providing operations related to the discovery 
 
 ![Dataservice](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Dataservice.png "Dataservice")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property  | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **dcat:endpointURL**| xsd:anyURI | the root location or primary endpoint of the service (a web-resolvable IRI). |  |
 | **dcat:endpointDescription**| xsd:string | a description of the service end-point, including its operations, parameters etc |  |
@@ -208,7 +208,7 @@ Definition: activity carried out by an organization
 
 ![Business Function](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/BusinessFunction.png "Business Function")
 
-| Property (en) | Range | Usage note | Perspective | 
+| Property | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
 | **ovx:usesItSystem**| sys:ITSystem | indicates an IT system used in the process of a business function |  |
 
