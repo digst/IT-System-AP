@@ -129,13 +129,7 @@ Logo: digst...
 </pre>
 
 <h1>Standard for beskrivelse af it-systemer - Arkivprofil</h1>
-
-
-Version 1.0.0
-
-December 2019
-
-
+<i>Version 1.0.0 - Godkendt af Styregruppen for Data og Arkitektur i December 2019)</i>
 
 **Læsevejledning:**
 
@@ -599,7 +593,7 @@ Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgøre
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2017/319  
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2006/653 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2014/433 
-- Distribution: https://data.gov.dk/concept/profile/PublicOrganisationTypes.rdf
+- Distribution: https://data.gov.dk/concept/profile/public-org-types.rdf
 
 
 ### Klassifikation: It-miljøtyper
@@ -619,7 +613,7 @@ Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
 - Kilde: Statens-it Systemkort
 - Kilde: http://priocept.com/2018/01/30/software-environment-naming/
 - Kilde: https://docs.microsoft.com/en-us/biztalk/technical-guides/planning-the-development-testing-staging-and-production-environments
-- Distribution: https://data.gov.dk/concept/profile/ITEnvironmentTypes.rdf
+- Distribution: https://data.gov.dk/concept/profile/tech-env-types.rdf
 
 ### Klassifikation: Personoplysningskategorier
 *Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne*
@@ -644,7 +638,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/502 
 - Kilde: https://www.datatilsynet.dk/media/6567/fortegnelse.pdf 
 - Kommentar: De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Bemærk, at oplysninger om strafbare forhold og per-sonnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger.
-- Distribution: https://data.gov.dk/concept/profile/PersonalDataCategories.rdf  
+- Distribution: https://data.gov.dk/concept/profile/personal-data-categories.rdf
 
 ### Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)
 *Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)*
@@ -657,7 +651,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 </dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20 
 - Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338 
-- Distribution https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU.rdf
+- Distribution: https://data.gov.dk/concept/profile/conf-eu-nato-types.rdf
 
 
 ### Klassifikation: Arkiveringspligttyper
