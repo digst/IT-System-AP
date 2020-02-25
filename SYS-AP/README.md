@@ -11,6 +11,8 @@ Definition: system which consists of digital information technologies
 
 ![IT System](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/IT%20System.png "IT System")
 
+<p align="center"><img src="https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/IT%20System.png" alt="IT System" width="600"/></p>
+
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
