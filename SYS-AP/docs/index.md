@@ -494,11 +494,11 @@ Fælles datamodel
 
 Basisprofilens bagvedliggende datamodel udgør den fælles specifikation, hvortil eksisterende it-systembeskrivelser kan mappes. Det er også ud fra denne datamodel, at et maskinfortolkeligt format er blevet udviklet.
 
-Der gives en overordnet beskrivelse af dennes indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses to UML-diagrammer for hhv. basisprofilen og den første konkrete anvendelse i en arkivprofil. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values. Der findes også en oversigt over modellens elementer online.
+Der gives en overordnet beskrivelse af dennes indhold og sammensætning i bilaget 'Om datamodellen'. Her kan også ses to UML-diagrammer for hhv. basisprofilen og den første konkrete anvendelse i en arkivprofil. UML-modellerne er udstillet og kan tilgås via en webbrowser, hvor det er muligt at klikke sig gennem modellen. Bemærk, at modelelementernes metadata er registreret som tagged values. Der findes også en online oversigt over modellens bagvedliggende RDF-elementer .
 
 - Link til webudgivelse af UML-modellerne: [http://data.gov.dk/document/itsystem-ap/v1/uml/](http://data.gov.dk/document/itsystem-ap/v1/uml/)
 
-- Link til online oversigt over modellens elementer: [https://github.com/digst/IT-System-AP/tree/master/SYS-AP](https://github.com/digst/IT-System-AP/tree/master/SYS-AP)
+- Link til oversigt over de bagvedliggende RDF-elementer: [https://github.com/digst/IT-System-AP/tree/master/SYS-AP](https://github.com/digst/IT-System-AP/tree/master/SYS-AP)
 
 
 Maskinfortolkeligt format
