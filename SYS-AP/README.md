@@ -15,7 +15,7 @@ Definition: system which consists of digital information technologies
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **dct:identifier** | xsd:anyURI  | an unambiguous reference to the it-system within a given context. | Basic Information |
+| **dct:identifier**@en identifikator@da | xsd:anyURI  | an unambiguous reference to the it-system within a given context. | Basic Information |
 | **skos:prefLabel** | rdf:langString | preferred name for the IT system | Basic Information |
 | **skos:altLabel** | rdf:langString | alternative name which is accepted but not preferred for the IT system | Basic Information |
 | **dct:description** | rdf:langString | an account of the purpose of using the IT system| Basic Information |
