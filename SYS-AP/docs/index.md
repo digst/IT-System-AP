@@ -734,7 +734,7 @@ Se de overordnede emner herunder:
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2017/319  
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2006/653 
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2014/433 
-- Distribution: https://data.gov.dk/concept/profile/PublicOrganisationTypes.rdf
+- Distribution: https://data.gov.dk/concept/profile/public-org-types.rdf
 
 
 ###  Klassifikation: Operationel status
@@ -758,9 +758,9 @@ Kilde: Statens-it Systemkort
 <dt>samfundskritisk</dt><dd>it-system, hvor større driftsforstyrrelser resulterer i væsentlige udfordringer for samfundet som helhed i form af økonomiske tab hos stat, virksomheder eller borgere, større misbrug af personfølsomme data og rettigheder, længerevarende nedbrud af kritisk infrastruktur eller reelle trusler for den nationale sikkerhed</dd>	
 <dt>ikke kritisk</dt><dd>it-system, hvor større driftsforstyrrelser ikke resulterer i væsentlige udfordringer for samfundet eller for myndighedens forvaltningsmæssige forpligtelser</dd>	
 </dl>	
-Forretningsområde: <http://www.form-online.dk/opgavenoegle/#68.55.15.15>
-Kilde: <https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/>\
-Distribution: [https://data.gov.dk/concept/profile/ITSystemCriticalityTypes.rdf](https://data.gov.dk/rdf2html/index.htm?model=https%3A%2F%2Fdata.gov.dk%2Fconcept%2Fprofile%2FITSystemCriticalityTypes.rdf&sheet=transform2RDFreport_da-en.xsl)
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/#68.55.15.15
+- Kilde: https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/
+- Distribution: https://data.gov.dk/concept/profile/criticality-types.rdf
 
 
 
@@ -770,8 +770,8 @@ Klassifikation, der består af typer af brugere, som et givet it-system henvende
 <dt>ekstern målgruppe</dt><dd>målgruppe, hvis medlemmer tilhører en anden organisation end den, som leverer it-servicen</dd>
 <dt>intern målgruppe</dt><dd>målgruppe, hvis medlemmer tilhører den samme organisation, som leverer it-servicen</dd>		
 </dl>	
-Forretningsområde: <http://www.form-online.dk/opgavenoegle/68/>
-Distribution: <https://data.gov.dk/concept/profile/ITSystemTargetGroup.rdf>
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/68/
+- Distribution: https://data.gov.dk/concept/profile/target-types.rdf
 
 
 
@@ -784,9 +784,9 @@ Distribution: <https://data.gov.dk/concept/profile/ITSystemTargetGroup.rdf>
 <dt>supportkontrakt</dt><dd>it-kontrakt, som omfatter supportydelser udover alm. applikationsvedligehold</dd>	
 <dt>licensaftale</dt><dd>it-kontrakt, som omfatter køb eller leje af softwarelicenser inkl. løbende abonnement ifm. standardsoftware</dd>	
 </dl>	
-Forretningsområde: <http://www.form-online.dk/opgavenoegle/68/#68.55.15>
-Kilde:  <https://digst.dk/styring/systemstyring/dokumenter-vejledninger-og-vaerktoejer/>\
-Kilde:  <https://www.fm.dk/~/media/files/nyheder/pressemeddelelser/2018/10/kommunerne-kan-frigoere-ressourcer-til-velfaerd/5-inspirationskatalog.ashx?la=da>
+- Forretningsområde: <http://www.form-online.dk/opgavenoegle/68/#68.55.15
+- Kilde:  https://digst.dk/styring/systemstyring/dokumenter-vejledninger-og-vaerktoejer/
+- Kilde:  https://www.fm.dk/~/media/files/nyheder/pressemeddelelser/2018/10/kommunerne-kan-frigoere-ressourcer-til-velfaerd/5-inspirationskatalog.ashx?la=da
 
 
 ### Klassifikation: It-miljøtyper
@@ -806,7 +806,7 @@ Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
 - Kilde: Statens-it Systemkort
 - Kilde: http://priocept.com/2018/01/30/software-environment-naming/
 - Kilde: https://docs.microsoft.com/en-us/biztalk/technical-guides/planning-the-development-testing-staging-and-production-environments
-- Distribution: https://data.gov.dk/concept/profile/ITEnvironmentTypes.rdf
+- Distribution: https://data.gov.dk/concept/profile/tech-env-types.rdf
 
 ### Klassifikationen It-systemanskaffelsesstyper
 *Klassifikation der består af typer af anskaffelse af it-systemer*
@@ -817,9 +817,9 @@ Eksempler: fx om det er udviklet i egen organisation, bestillingsudviklet (fx ve
 <dt>kommercielt</dt><dd>udviklet som kommercielt standardsystem *(Commercial-of-the-shelf, COTS)</dd>	
 <dt>open-source</dt><dd>udviklet med udgangspunkt i software hvis kildekode er frit tilgængeligt og evt. også kan videredistribueres eller ændres iht. "The Open Source Definition</dd>	
 </dl>	
-Forretningsområde: <http://www.form-online.dk/opgavenoegle/68/#68.55.15>
-Kilde: <https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html>
-
+- Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15
+- Kilde: https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html
+- Distribution: https://data.gov.dk/concept/profile/aquisition-types.rdf
 
 ### Klassifikation: Personoplysningskategorier
 *Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne*
@@ -843,7 +843,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 - Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/502 
 - Kilde: https://www.datatilsynet.dk/media/6567/fortegnelse.pdf 
 - Kommentar: De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Bemærk, at oplysninger om strafbare forhold og per-sonnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger.
-- Distribution: https://data.gov.dk/concept/profile/PersonalDataCategories.rdf  
+- Distribution: https://data.gov.dk/concept/profile/personal-data-categories.rdf 
 
 ### Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)
 *Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)*
@@ -856,7 +856,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 </dl>
 - Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20 
 - Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338 
-- Distribution https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU.rdf
+- Distribution: https://data.gov.dk/concept/profile/conf-eu-nato-types.rdf
 
 
 **Klassifikation: Fortrolighedsgrad iht. ISO27002**\
@@ -867,16 +867,16 @@ o Seksuelle forhold eller seksuel orientering</dd>
 <dt>mindre væsentlig indvirkning</dt><dd>Offentliggørelse forårsager mindre væsentlige problemer for driften</dd>	
 <dt>ingen indvirkning</dt><dd>Offentliggørelse forårsager ingen skade</dd>	
 </dl>	
-Forretningsområde:  <http://www.form-online.dk/opgavenoegle/68/#68.55.20>\
-Kilde:  <https://www.iso.org/standard/54533.html>\
-Kilde:  <https://di.dk/SiteCollectionDocuments/DI.Web/Vejledning%20-%20Dataklassifikation%20-%20Final.pdf>   
-
+- Forretningsområde:  http://www.form-online.dk/opgavenoegle/68/#68.55.20
+- Kilde:  https://www.iso.org/standard/54533.html
+- Kilde:  https://di.dk/SiteCollectionDocuments/DI.Web/Vejledning%20-%20Dataklassifikation%20-%20Final.pdf
+- Distribution: https://data.gov.dk/concept/profile/conf-iso-types.rdf  
 
 
 Bilag B: Skabelon til registrering i regneark (udklip)
 ------------------------------------------------------
 
-### Oversigt over **mulige** **oplysninger** i basisprofilen
+### Oversigt over **mulige oplysninger** i basisprofilen
 <p align="center"><img src="img/Figur_bilagB_regneark_del1.png" alt="Figur til bilagB regneark del1.png"  width="800"/></p>
 <p align="center"><img src="img/Figur_bilagB_regneark_del2.png" alt="Figur til bilagB regneark del2.png"  width="800"/></p>
 
