@@ -15,34 +15,34 @@ Definition: system which consists of digital information technologies
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **dct:identifier**@en identifikator@da | xsd:anyURI  | an unambiguous reference to the it-system within a given context. | Basic Information |
-| **skos:prefLabel**@en it-systemnavn@da | rdf:langString | preferred name for the IT system | Basic Information |
-| **skos:altLabel**@en alternativt it-systemnavn@da | rdf:langString | alternative name which is accepted but not preferred for the IT system | Basic Information |
-| **dct:description**@en it-systembeskrivelse@da | rdf:langString | an account of the purpose of using the IT system| Basic Information |
-| **sys:inUseFromDate**@en ibrugtagningsdato@da | xsd:date | date on which a system was put into operation | Basic Information |
-| **sys:inUseUntilDate**@en udfasningsdato@da | xsd:date | date on which the it-system was phased out and no longer in operation | Basic Information |
-| **sys:operationalStatus**@en operationel status@da | opstat:OperationalStatus | the status of the it-system with regards to implementation and operation | Basic Information |
-| **rdfs:comment**@en kommentar@da | rdf:langString  | supplementary comments or notes regarding the it-system | Basic Information |
-| **sys:containsData**@en indeholder data@da |  xsd:boolean. | specification of whether an IT system contains digitally created data | Information | 
-| **sys:usedInOrganization**@en anvendt i organisation@da | org:Organization | organization that uses the IT system | Basic Information |
-| **sys:hasApplicationPurpose**@en har anvendelsesformål@da | tasktype:PublicAdministrativeTaskType (subclass of skos:Concept)| the administrative task  which the IT system supports. I.e. FORM or KLE. | Tasks  |
-| **cv:hasLegalResource**@en retskilde@da | eli:LegalResource | legal framework for the application of the IT system | Tasks |
-| **sys:hasCriticality**@en har kritikalitet@da | crit:CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
-| **schema:audience**@en målgruppe@da | target:TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
-| **sys:hasITSystemOwner**@en it-systemejer@da|  org:Organization, foaf:Person, ovx:OrganizationalPersonIdentifier | organisation or person or organizational identifier for person who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
-| **sys:hasITSystemManager**@en it-systemforvalter@da|  org:Organization,  foaf:Person, ovx:OrganizationalPersonIdentifier | organisation or person or organizational identifier for person who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
-| **dct:rightsHolder**@en rettighedshaver@da| org:Organization | organisation owning or managing the intellectual rights of the primary software product of the it-system | Legal |
-| **dct:creator**@en @daudviklingsleverandør|  org:Organization | individual or organization that performs the foundational development activities (including requirements analysis, design, testing through acceptance) during the system or software life cycle process  | Legal |
-| **sys:operatedBy**@en driftsleverandør@da |  org:Organization | organizational unit or individual that is responsible for the operation of the IT system| Legal |
-| **sys:maintainedBy**@en vedligeholdelsespart@da |  org:Organization | individual or organization that is responsible for the maintenance of an it-system  | Legal |
-| **infra:instanceOfProductInSeries**@en instans af produkt i serie@da | infra:ProductSeries | instance of product in series | Application |
-| **sys:hasSystemDocumentation**@en har systemdokumentation@da | foaf:Document | reference to document that describe the requirements, capabilities, limitations, design, operation, or maintenance of an IT system | Application | 
-| **sys:hasAquisitionType**@en har anskaffelsestype@da| aquis:ITSystemAquisitionType (subclass of skos:Concept, subclass of tasktype:TaskType)| specification of how the IT system was acquired | Infrastructure |
+| **dct:identifier** identifikator@da | xsd:anyURI  | an unambiguous reference to the it-system within a given context. | Basic Information |
+| **skos:prefLabel** it-systemnavn@da | rdf:langString | preferred name for the IT system | Basic Information |
+| **skos:altLabel** alternativt_it-systemnavn@da | rdf:langString | alternative name which is accepted but not preferred for the IT system | Basic Information |
+| **dct:description** it-systembeskrivelse@da | rdf:langString | an account of the purpose of using the IT system| Basic Information |
+| **sys:inUseFromDate** ibrugtagningsdato@da | xsd:date | date on which a system was put into operation | Basic Information |
+| **sys:inUseUntilDate** udfasningsdato@da | xsd:date | date on which the it-system was phased out and no longer in operation | Basic Information |
+| **sys:operationalStatus** operationel_status@da | opstat:OperationalStatus | the status of the it-system with regards to implementation and operation | Basic Information |
+| **rdfs:comment** kommentar@da | rdf:langString  | supplementary comments or notes regarding the it-system | Basic Information |
+| **sys:containsData** indeholder data@da |  xsd:boolean. | specification of whether an IT system contains digitally created data | Information | 
+| **sys:usedInOrganization** anvendt_i_organisation@da | org:Organization | organization that uses the IT system | Basic Information |
+| **sys:hasApplicationPurpose** har anvendelsesformål@da | tasktype:PublicAdministrativeTaskType (subclass of skos:Concept)| the administrative task  which the IT system supports. I.e. FORM or KLE. | Tasks  |
+| **cv:hasLegalResource** retskilde@da | eli:LegalResource | legal framework for the application of the IT system | Tasks |
+| **sys:hasCriticality** har kritikalitet@da | crit:CriticalityType (subclass of skos:Concept)| specification of how critical the application of the IT system is | Tasks |
+| **schema:audience** målgruppe@da | target:TargetGroup (subclass of skos:Concept)| specification of which group of users which an IT system is directed at | Tasks |
+| **sys:hasITSystemOwner** it-systemejer@da|  org:Organization, foaf:Person, ovx:OrganizationalPersonIdentifier | organisation or person or organizational identifier for person who has the executive responsibility of the operation, maintenance and application of a specific it-system | Governance |
+| **sys:hasITSystemManager** it-systemforvalter@da|  org:Organization,  foaf:Person, ovx:OrganizationalPersonIdentifier | organisation or person or organizational identifier for person who manages and makes descisions on the daily technical aspects on behalf of the IT system owner | Governance |
+| **dct:rightsHolder** rettighedshaver@da| org:Organization | organisation owning or managing the intellectual rights of the primary software product of the it-system | Legal |
+| **dct:creator** @daudviklingsleverandør|  org:Organization | individual or organization that performs the foundational development activities (including requirements analysis, design, testing through acceptance) during the system or software life cycle process  | Legal |
+| **sys:operatedBy** driftsleverandør@da |  org:Organization | organizational unit or individual that is responsible for the operation of the IT system| Legal |
+| **sys:maintainedBy** vedligeholdelsespart@da |  org:Organization | individual or organization that is responsible for the maintenance of an it-system  | Legal |
+| **infra:instanceOfProductInSeries** instans_af_produkt_i_serie@da | infra:ProductSeries | instance of product in series | Application |
+| **sys:hasSystemDocumentation** har systemdokumentation@da | foaf:Document | reference to document that describe the requirements, capabilities, limitations, design, operation, or maintenance of an IT system | Application | 
+| **sys:hasAquisitionType** har anskaffelsestype@da| aquis:ITSystemAquisitionType (subclass of skos:Concept, subclass of tasktype:TaskType)| specification of how the IT system was acquired | Infrastructure |
 | **tasktype:canPerformTaskType**| tasktype:TaskType subclass of skos:Concept| specification of the type of tasks the system can perform | Tasks |
-| **capa:hasCapability**@en har kapabilitet@da| capa:Capability subclass of skos:Concept | specification of the type of capability the system has | Tasks |
-| **sys:enablesProcess**@en understøtter proces@da| proc:BusinessProcess | specification of the business process which a specific IT system supports | Tasks |
-| **ovx:enablesFunction**@en understøtter forretningsfunktion@da| ovx:BusinessFunction | specification of the function that the system is enabling | Tasks |
-| **sys:predecessorSystem**@en forgængersystem@da| sys:ITSystem | specification of an IT system that was previously used for functionality that is supported by the current IT system. | Governance |
+| **capa:hasCapability** har kapabilitet@da| capa:Capability subclass of skos:Concept | specification of the type of capability the system has | Tasks |
+| **sys:enablesProcess** understøtter_proces@da| proc:BusinessProcess | specification of the business process which a specific IT system supports | Tasks |
+| **ovx:enablesFunction** understøtter_forretningsfunktion@da| ovx:BusinessFunction | specification of the function that the system is enabling | Tasks |
+| **sys:predecessorSystem** forgængersystem@da| sys:ITSystem | specification of an IT system that was previously used for functionality that is supported by the current IT system. | Governance |
 <!--Properties
 * **sys:hasFunctionalityCapability**  (Object Property) Range: Capability
 * **sys:hasVersion**  (Object Property) Range: ITSystemVersion
@@ -55,15 +55,15 @@ Definition: it-system which has been implemented in a physical IT environment
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **dct:identifier**@en identifikator@da | xsd:anyURI. | an unambiguous reference to the instantiated it-system within a given context.| |
-| **sys:instantiationOf**@en instantiering af@da | sys:ITSystem | specification of the IT system which is instantiated and deployed in an IT environment | |
-| **sys:actsAs**@en miljøtype@da | techenv:EnvironmentType | specification of the environment type which the IT system is deployed in| |
-| **sys:uses**@en anvender@da | dcat:Distribution | specifies a dataset distribution which the IT system uses | |
-| **sys:uses**@en anvender@da | dcat:DataService | specifies a dataservice which the IT system uses | |
-| **sys:provides**@en udstiller@da | dcat:Disribution | dataset distribution which the IT system provides | |
-| **sys:provides**@en udstiller@da | dcat:DataService | dataservice which the IT system provides| |
-| **sys:provides**@en udstiller@da | sys:UserInterface | software application which the IT system provides | |
-| **sys:producesDataset**@en skaber datasæt@da | dcat:Distribution |dataset distribution which the IT system produces | |
+| **dct:identifier** identifikator@da | xsd:anyURI. | an unambiguous reference to the instantiated it-system within a given context.| |
+| **sys:instantiationOf** instantiering_af@da | sys:ITSystem | specification of the IT system which is instantiated and deployed in an IT environment | |
+| **sys:actsAs** miljøtype@da | techenv:EnvironmentType | specification of the environment type which the IT system is deployed in| |
+| **sys:uses** anvender@da | dcat:Distribution | specifies a dataset distribution which the IT system uses | |
+| **sys:uses** anvender@da | dcat:DataService | specifies a dataservice which the IT system uses | |
+| **sys:provides** udstiller@da | dcat:Disribution | dataset distribution which the IT system provides | |
+| **sys:provides** udstiller@da | dcat:DataService | dataservice which the IT system provides| |
+| **sys:provides** udstiller@da | sys:UserInterface | software application which the IT system provides | |
+| **sys:producesDataset** skaber_datasæt@da | dcat:Distribution |dataset distribution which the IT system produces | |
 
 # dcat:Dataset (Class)
 Definition: A collection of data, published or curated by a single agent, and available for access or download in one or more formats
@@ -72,17 +72,17 @@ Definition: A collection of data, published or curated by a single agent, and av
 
 | Property (en) | Range | Usage note | Perspective | 
 | ---- | ---- | ---- | ---- |
-| **dct:title**@en titel@da | rdf:langString | A name given to the dataset | Information |
-| **dct:identifier**@en identifikatorl@da  | xsd:anyURI | An unambiguous reference to the dataset within a given context | Information |
-| **dct:description**@en beskrivelse@da | rdf:langString| An account of the dataset | Information |
-| **owl:versionInfo**@en versionsnummer@da | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information |
-| **dct:creator**@en dataskaber@da | org:Organization| organisation who has the primary responsibility for the creation of the dataset | Governance |
-| **dcat-dk:dataResponsibleOrganisation**@en dataansvarlig organisation@da | org:Organization| agent who has the administrative responsibility of the dataset | Governance |
-| **dcat-dk:dataProcessor**@en databehandler@da | org:Organization| natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data| Governance |
-| **dcat-dk:personalDataCategory**@en personoplysningskategori@da | pers-cat:PersonalDataCategory|specification of a relation to specific personal data category | Security |
-| **dcat-dk:hasConfidentialityType**@en fortrolighedsgrad@da | conf-eu:ConfidentialityTypeNatoEu (subclass of skos:Concept, conf:ConfidentialityType)| the extent by which information contained in a dataset can be disclosed | Security |
-| **dcat-dk:hasConfidentialityType**@en fortrolighedsgrad@da | conf-iso:ConfidentialityTypeISO27002 (subclass of skos:Concept, conf:ConfidentialityType)|the extent by which information contained in a dataset can be disclosed | Security |
-| **dct:partOf**@en del af@da| sys:ITSystem | Relates the dataset to an  IT System that it can be considered to be a part of. |  |
+| **dct:title** titel@da | rdf:langString | A name given to the dataset | Information |
+| **dct:identifier** identifikatorl@da  | xsd:anyURI | An unambiguous reference to the dataset within a given context | Information |
+| **dct:description** beskrivelse@da | rdf:langString| An account of the dataset | Information |
+| **owl:versionInfo** versionsnummer@da | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information |
+| **dct:creator** dataskaber@da | org:Organization| organisation who has the primary responsibility for the creation of the dataset | Governance |
+| **dcat-dk:dataResponsibleOrganisation** dataansvarlig_organisation@da | org:Organization| agent who has the administrative responsibility of the dataset | Governance |
+| **dcat-dk:dataProcessor** databehandler@da | org:Organization| natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data| Governance |
+| **dcat-dk:personalDataCategory** personoplysningskategori@da | pers-cat:PersonalDataCategory|specification of a relation to specific personal data category | Security |
+| **dcat-dk:hasConfidentialityType** fortrolighedsgrad@da | conf-eu:ConfidentialityTypeNatoEu (subclass of skos:Concept, conf:ConfidentialityType)| the extent by which information contained in a dataset can be disclosed | Security |
+| **dcat-dk:hasConfidentialityType** fortrolighedsgrad@da | conf-iso:ConfidentialityTypeISO27002 (subclass of skos:Concept, conf:ConfidentialityType)|the extent by which information contained in a dataset can be disclosed | Security |
+| **dct:partOf** del_af@da| sys:ITSystem | Relates the dataset to an  IT System that it can be considered to be a part of. |  |
 
 # infra:ProductSeries (Class)
 Definition: a series of related products that exhibit the same overall functionality to the user
