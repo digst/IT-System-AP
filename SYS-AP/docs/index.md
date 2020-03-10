@@ -846,7 +846,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 <p align="center"><img src="img/Figur_bilagB_regneark_del2.png" alt="Figur til bilagB regneark del2.png"  width="800"/></p>
 
 
-#### Udfyldelse: Basisinformation
+### Udfyldelse: Basisinformation
 <dl class="def">
 <dt>it-systemidentifikator</dt><dd>angiv det ID, som entydigt identificerer it-systemet (kan udfyldes) </dd>
 <dt>it-systemnavn (fx navn som anført i hovedkontrakten)</dt><dd>angiv it-systemets foretrukne betegnelse  (skal udfyldes) </dd>
@@ -863,7 +863,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 <dl>
 
 
-#### Udfyldelse: Opgaver
+### Udfyldelse: Opgaver
 <dl class="def"> 
 <dt>FORM-opgave(r)</dt><dd>(for regioner og statslige administrative enheder) angiv FORM-opgave(r), som it-systemet understøtter (fx 65.50.05.10 Sagsarkivering) el. overord-net serviceområde (kan udfyldes) </dd>
 <dt>KLE-emne(r) </dt><dd>(for kommuner) angiv  KLE-emne(r) som it-systemet understøtter (fx 85.08.00 arkivering i almindelighed) el. overordnet emnegruppe (kan udfyldes) </dd>
@@ -874,13 +874,13 @@ o Seksuelle forhold eller seksuel orientering</dd>
 <dt>kritikalitetstype</dt><dd>angiv, om it-systemets anvendelse er samfundskritisk, forretningskritisk eller ikke kritisk (kan udfyldes)</dd>	
 </dl>
 
-#### Udfyldelse: Styring
+### Udfyldelse: Styring
 <dl class="def"> 
 <dt>it-systemejer</dt><dd>angiv organisation med det oveordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes>)</dd>
 <dt>it-systemforvalter</dt><dd>angiv organisatorisk enhed eller person, som administrerer og træffer afgørelser vedrørende tekniske anliggender på vegne af systemejeren (kan udfyldes)</dd>
 </dl>
 
-#### Udfyldelse: Jura
+### Udfyldelse: Jura
 <dl class="def"> 
 <dt>kontraktreference(r)</dt><dd>angiv reference(r) til kontrakt relateret til it-systemets udvikling, vedligehold, drift eller support (kan udfyldes).</dd>
 <dt>rettighedshaver</dt><dd>Organisation, der ejer eller har dispositionsretten over de intellektuelle rettigheder over it-systemets primære softwareprodukt
@@ -891,12 +891,12 @@ o Seksuelle forhold eller seksuel orientering</dd>
 </dl>
 
 
-#### Udfyldelse: Infrastruktur
+### Udfyldelse: Infrastruktur
 <dl class="def"> 
 <dt>miljøtype</dt><dd>angiv miljøtypen, it-systemet er ibrugtaget i (kan udfyldes)</dd>	
 </dl>
 
-#### Udfyldelse: Applikation
+### Udfyldelse: Applikation
 * (Applikationslaget af et instantieret it-system i et fysisk it-miljø)*
 <dl class="def"> 
 <dt>produktserie</dt><dd>angiv navnet på den produktserie, der udgør it-systemets primære softwareprodukt (kan udfyldes)</dd>
@@ -904,7 +904,7 @@ o Seksuelle forhold eller seksuel orientering</dd>
 <dt>anvender</dt><dd>angiv det unikke ID for det eller de datasætrepræsentationer, som it-systemet anvender (reference til Datasætkataloget) (kan udfyldes)</dd>
 </dl>
 
-#### Udfyldelse: Information
+### Udfyldelse: Information
 * (Informationslaget af et instantieret it-system i et fysisk it-miljø)*
 <dl class="def"> 
 <dt>datasætID</dt><dd>angiv datasættes unikke ID (kan udfyldes)</dd>
