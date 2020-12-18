@@ -60,7 +60,7 @@ Definition: it-system which has been implemented in a physical IT environment
 | **sys:actsAs** miljøtype@da | techenv:EnvironmentType | specification of the environment type which the IT system is deployed in| |
 | **sys:uses** anvender@da | dcat:Distribution | specifies a dataset distribution which the IT system uses | |
 | **sys:uses** anvender@da | dcat:DataService | specifies a dataservice which the IT system uses | |
-| **sys:provides** udstiller@da | dcat:Disribution | dataset distribution which the IT system provides | |
+| **sys:provides** udstiller@da | dcat:Distribution | dataset distribution which the IT system provides | |
 | **sys:provides** udstiller@da | dcat:DataService | dataservice which the IT system provides| |
 | **sys:provides** udstiller@da | sys:UserInterface | software application which the IT system provides | |
 | **sys:producesDataset** skaber_datasæt@da | dcat:Distribution |dataset distribution which the IT system produces | |
@@ -77,7 +77,6 @@ Definition: A collection of data, published or curated by a single agent, and av
 | **dct:description** beskrivelse@da | rdf:langString| An account of the dataset | Information |
 | **owl:versionInfo** versionsnummer@da | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information |
 | **dct:creator** dataskaber@da | org:Organization| organisation who has the primary responsibility for the creation of the dataset | Governance |
-| **dcat-dk:dataResponsibleOrganisation** dataansvarlig_organisation@da | org:Organization| agent who has the administrative responsibility of the dataset | Governance |
 | **dcat-dk:datasetResponsibleOrganisation** dataansvarlig_organisation@da | org:Organization| 
 organization that is legally accountable for the entire dataset | Governance |
 | **dcat-dk:dataProcessor** databehandler@da | org:Organization| natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data| Governance |
