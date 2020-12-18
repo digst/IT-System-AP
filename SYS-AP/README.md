@@ -1,4 +1,4 @@
-# SYS-AP  (being updated)
+# SYS-AP  
 Read specification: https://digst.github.io/IT-System-AP/SYS-AP/docs/
 
 ## Basic Application Profile for IT System Description (Standard for beskrivelse af it-systemer - basisprofil
@@ -66,7 +66,7 @@ Definition: it-system which has been implemented in a physical IT environment
 | **sys:producesDataset** skaber_datasæt@da | dcat:Distribution |dataset distribution which the IT system produces | |
 
 # dcat:Dataset (Class)
-Definition: A collection of data, published or curated by a single agent, and available for access or download in one or more formats
+Definition: A collection of data, published or curated by a single agent, and available for access or download in one or more representations.
 
 ![Dataset](https://github.com/digst/IT-System-AP/blob/master/SYS-AP/docs/img/Dataset.png "Dataset")
 
@@ -78,10 +78,12 @@ Definition: A collection of data, published or curated by a single agent, and av
 | **owl:versionInfo** versionsnummer@da | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information |
 | **dct:creator** dataskaber@da | org:Organization| organisation who has the primary responsibility for the creation of the dataset | Governance |
 | **dcat-dk:dataResponsibleOrganisation** dataansvarlig_organisation@da | org:Organization| agent who has the administrative responsibility of the dataset | Governance |
+| **dcat-dk:datasetResponsibleOrganisation** dataansvarlig_organisation@da | org:Organization| 
+organization that is legally accountable for the entire dataset | Governance |
 | **dcat-dk:dataProcessor** databehandler@da | org:Organization| natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data| Governance |
 | **dcat-dk:personalDataCategory** personoplysningskategori@da | pers-cat:PersonalDataCategory|specification of a relation to specific personal data category | Security |
-| **dcat-dk:hasConfidentialityType** fortrolighedsgrad@da | conf-eu:ConfidentialityTypeNatoEu (subclass of skos:Concept, conf:ConfidentialityType)| the extent by which information contained in a dataset can be disclosed | Security |
-| **dcat-dk:hasConfidentialityType** fortrolighedsgrad@da | conf-iso:ConfidentialityTypeISO27002 (subclass of skos:Concept, conf:ConfidentialityType)|the extent by which information contained in a dataset can be disclosed | Security |
+| **dcat-dk:confidentialityType** fortrolighedsgrad@da | conf-eu:ConfidentialityTypeNatoEu (subclass of skos:Concept, conf:ConfidentialityType)| the extent by which information contained in a dataset can be disclosed | Security |
+| **dcat-dk:confidentialityType** fortrolighedsgrad@da | conf-iso:ConfidentialityTypeISO27002 (subclass of skos:Concept, conf:ConfidentialityType)|the extent by which information contained in a dataset can be disclosed | Security |
 | **dct:partOf** del_af@da| sys:ITSystem | Relates the dataset to an  IT System that it can be considered to be a part of. |  |
 
 # infra:ProductSeries (Class)
@@ -259,10 +261,10 @@ Codelist: ArchivalObligationType
 
 Codelist: PersonalDataCategory
 * general personal data
-  - civil registration number data
-  - data about criminal offences
 * sensitive data
 * non-personal data
+* civil registration number data
+* data about criminal offences
 
 Codelist: ConfidentialityType
 * See ISO 27001 Data Classification
@@ -293,7 +295,7 @@ Codelist: TargetGroup
 | org		|http://www.w3.org/ns/org# 			|The Organization Ontology (W3C)
 | foaf	|	http://xmlns.com/foaf/0.1/			|Friend of a Friend
 | dcat		|https://www.w3.org/ns/dcat# 			|Dataset Catalogue Vocabulary  (W3C)
-| dcat-dk		|https://data.gov.dk/model/core/dcat-dk# 	|DCAT DK
+| dcat-dk		|https://data.gov.dk/model/core/dcat-dk/ 	|DCAT DK
 | prov	|	http://www.w3.org/ns/prov#		|	The PROV Ontology (W3C)
 | vann	|	http://purl.org/vocab/vann/			|A Vocabulary for Annotating Vocabulary Description
 | dct		|http://purl.org/dc/terms/			|Dublin Core Terms
