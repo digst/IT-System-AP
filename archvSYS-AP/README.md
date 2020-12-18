@@ -61,7 +61,8 @@ Definition: A collection of data, published or curated by a single agent, and av
 | **dct:title** | rdf:langString | A name given to the resource | Information|
 | **dct:description** | rdf:langString | An account of the resource | Information|
 | **owl:versionInfo** | rdfs:Literal | The annotation property that provides version information for an ontology or another OWL construct | Information|
-| **dcat-dk:dataResponsibleOrganisation** | org:Organization |agent who has the administrative responsibility of the dataset  | Governance  |
+| **dcat-dk:datasetResponsibleOrganisation** dataansvarlig_organisation@da | org:Organization| 
+organization that is legally accountable for the entire dataset | Governance |
 | **dcat-dk:dataProcessor** | org:Organization | natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data| Governance  |
 | **dct:creator** | org:Organization | organisation who has the primary responsibility for the creation of the dataset| Governance  |
 | **dcat-dk:personalDataCategory** | PersonalDataCategory |specification of a relation to specific personal data category | Security  |
@@ -131,10 +132,10 @@ Codelist: ArchivalObligationType
 
 Codelist: PersonalDataCategory
 * general personal data
-  - civil registration number data
-  - data about criminal offences
 * sensitive data
 * non-personal data
+* civil registration number data
+* data about criminal offences
 
 Codelist: ConfidentialityType
 * See ISO 27001 Data Classification
