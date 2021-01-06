@@ -7,8 +7,4 @@ Her ligger følgende filer:
 - index.md - Mastertekst i Markdown-format [3]
 - index.html - Mastertekst konverteret til html
 
-[1] Udstilling via GitHub Pages kan aktiveres via repositoriets 'Settings' (scroll ned til GitHub Pages)
-
-[2] Konvertering kan også ske via Bikeshed's webformular: https://api.csswg.org/bikeshed/
-
-[3] Word (docx) filer kan konverteres til Markdown via fx: https://euangoddard.github.io/clipboard2markdown/
+se også: https://github.com/digst/bikeshed-template
