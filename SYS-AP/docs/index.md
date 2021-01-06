@@ -974,7 +974,7 @@ Anvendte klassifikationsmodeller
 
             </td>
             <td>
-                data responsible organisation
+                dataset responsible organisation
             </td>
         </tr>
         <tr>
@@ -1555,7 +1555,7 @@ Anvendte klassifikationsmodeller
         </tr>
         <tr>
             <td>
-                personoplysnings-underkategori
+                personoplysningsunderkategori
             </td>
             <td>
                 pr&aelig;cisering af, hvilken underkategori af persondata systemet indeholder
