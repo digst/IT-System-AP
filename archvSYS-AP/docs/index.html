@@ -1,4 +1,3 @@
-
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -27,6 +26,7 @@
  *   - .figure and .caption (HTML4) and figure and figcaption (HTML5)
  *     -> .sidefigure for right-floated figures
  *   - ins/del
+ *     -> ins/del.c### for candidate and proposed changes (amendments)
  *
  * Code
  *   - pre and code
@@ -35,9 +35,12 @@
  *   - .note       for informative notes             (div, p, span, aside, details)
  *   - .example    for informative examples          (div, p, pre, span)
  *   - .issue      for issues                        (div, p, span)
- *   - .assertion  for assertions                    (div, p, span)
  *   - .advisement for loud normative statements     (div, p, strong)
  *   - .annoying-warning for spec obsoletion notices (div, aside, details)
+ *   - .correction for "candidate corrections"       (div, aside, details, section)
+ *   - .addition   for "candidate additions"         (div, aside, details, section)
+ *   - .correction.proposed for "proposed corrections" (div, aside, details, section)
+ *   - .addition.proposed   for "proposed additions"   (div, aside, details, section)
  *
  * Definition Boxes
  *   - pre.def   for WebIDL definitions
@@ -58,6 +61,8 @@
  *   - .head for the header
  *   - .copyright for the copyright
  *
+ * Outdated warning for old specs
+ *
  * Miscellaneous
  *   - .overlarge for things that should be as wide as possible, even if
  *     that overflows the body text area. This can be used on an item or
@@ -65,22 +70,28 @@
  *     Note that this styling basically doesn't help at all when printing,
  *     since A4 paper isn't much wider than the max-width here.
  *     It's better to design things to fit into a narrower measure if possible.
+ *
  *   - js-added ToC jump links (see fixup.js)
  *
  ******************************************************************************/
 
+/* color variables included separately for reliability */
+
 /******************************************************************************/
-/*                                   Body                                     */
+/*                                    Body                                    */
 /******************************************************************************/
+
+	html {
+	}
 
 	body {
 		counter-reset: example figure issue;
 
 		/* Layout */
-		max-width: 50em;               /* limit line length to 50em for readability   */
-		margin: 0 auto;                /* center text within page                     */
+		max-width: 50em;			  /* limit line length to 50em for readability   */
+		margin: 0 auto;				/* center text within page                    */
 		padding: 1.6em 1.5em 2em 50px; /* assume 16px font size for downlevel clients */
-		padding: 1.6em 1.5em 2em calc(26px + 1.5em); /* leave space for status flag     */
+		padding: 1.6em 1.5em 2em calc(26px + 1.5em); /* leave space for status flag    */
 
 		/* Typography */
 		line-height: 1.5;
@@ -91,9 +102,10 @@
 		overflow-wrap: break-word;
 		hyphens: auto;
 
-		/* Colors */
 		color: black;
+		color: var(--text);
 		background: white top left fixed no-repeat;
+		background: var(--bg) top left fixed no-repeat;
 		background-size: 25px auto;
 	}
 
@@ -104,7 +116,7 @@
 
 /** Header ********************************************************************/
 
-	div.head { margin-bottom: 1em }
+	div.head { margin-bottom: 1em; }
 	div.head hr { border-style: solid; }
 
 	div.head h1 {
@@ -125,10 +137,13 @@
 	.head img[src*="logos/W3C"] {
 		display: block;
 		border: solid #1a5e9a;
+		border: solid var(--logo-bg);
 		border-width: .65rem .7rem .6rem;
 		border-radius: .4rem;
 		background: #1a5e9a;
+		background: var(--logo-bg);
 		color: white;
+		color: var(--logo-text);
 		font-weight: bold;
 	}
 
@@ -139,7 +154,9 @@
 
 	.head a:active > img[src*="logos/W3C"] {
 		background: #c00;
+		background: var(--logo-active-bg);
 		border-color: #c00;
+		border-color: var(--logo-active-bg);
 	}
 
 	/* see also additional rules in Link Styling section */
@@ -147,7 +164,7 @@
 /** Copyright *****************************************************************/
 
 	p.copyright,
-	p.copyright small { font-size: small }
+	p.copyright small { font-size: small; }
 
 /** Back to Top / ToC Toggle **************************************************/
 
@@ -159,14 +176,13 @@
 	@media not print {
 		#toc-nav {
 			position: fixed;
-			z-index: 2;
+			z-index: 3;
 			bottom: 0; left: 0;
 			margin: 0;
 			min-width: 1.33em;
 			border-top-right-radius: 2rem;
 			box-shadow: 0 0 2px;
 			font-size: 1.5em;
-			color: black;
 		}
 		#toc-nav > a {
 			display: block;
@@ -176,23 +192,32 @@
 			padding: .1em 0.3em;
 			margin: 0;
 
-			background: white;
 			box-shadow: 0 0 2px;
 			border: none;
 			border-top-right-radius: 1.33em;
+
+			color: #707070;
+			color: var(--tocnav-normal-text);
 			background: white;
+			background: var(--tocnav-normal-bg);
 		}
+		#toc-nav > a:hover,
+		#toc-nav > a:focus {
+			color: black;
+			color: var(--tocnav-hover-text);
+			background: #f8f8f8;
+			background: var(--tocnav-hover-bg);
+		}
+		#toc-nav > a:active {
+			color: #c00;
+			color: var(--tocnav-active-text);
+			background: white;
+			background: var(--tocnav-active-bg);
+		}
+
 		#toc-nav > #toc-jump {
 			padding-bottom: 2em;
 			margin-bottom: -1.9em;
-		}
-
-		#toc-nav > a:hover,
-		#toc-nav > a:focus {
-			background: #f8f8f8;
-		}
-		#toc-nav > a:not(:hover):not(:focus) {
-			color: #707070;
 		}
 
 		/* statusbar gets in the way on keyboard focus; remove once browsers fix */
@@ -206,26 +231,6 @@
 		}
 		#toc-nav > a > span + span {
 			padding-right: 0.2em;
-		}
-
-		#toc-toggle-inline {
-			vertical-align: 0.05em;
-			font-size: 80%;
-			color: gray;
-			color: hsla(203,20%,40%,.7);
-			border-style: none;
-			background: transparent;
-			position: relative;
-		}
-		#toc-toggle-inline:hover:not(:active),
-		#toc-toggle-inline:focus:not(:active) {
-			text-shadow: 1px 1px silver;
-			top: -1px;
-			left: -1px;
-		}
-
-		#toc-nav :active {
-			color: #C00;
 		}
 	}
 
@@ -244,10 +249,14 @@
 			padding: 0 1em;
 			padding-left: 42px;
 			padding-left: calc(1em + 26px);
+			color: black;
+			color: var(--tocsidebar-text);
 			background: inherit;
 			background-color: #f7f8f9;
+			background-color: var(--tocsidebar-bg);
 			z-index: 1;
 			box-shadow: -.1em 0 .25em rgba(0,0,0,.1) inset;
+			box-shadow: -.1em 0 .25em var(--tocsidebar-shadow) inset;
 		}
 		body.toc-sidebar #toc h2 {
 			margin-top: .8rem;
@@ -257,6 +266,7 @@
 			font-weight: bold;
 			color: gray;
 			color: hsla(203,20%,40%,.7);
+			color: var(--tocsidebar-heading-text);
 		}
 		body.toc-sidebar #toc-jump:not(:focus) {
 			width: 0;
@@ -284,10 +294,14 @@
 			padding: 0 1em;
 			padding-left: 42px;
 			padding-left: calc(1em + 26px);
+			color: black;
+			color: var(--tocsidebar-text);
 			background: inherit;
 			background-color: #f7f8f9;
+			background-color: var(--tocsidebar-bg);
 			z-index: 1;
 			box-shadow: -.1em 0 .25em rgba(0,0,0,.1) inset;
+			box-shadow: -.1em 0 .25em var(--tocsidebar-shadow) inset;
 		}
 		body:not(.toc-inline) #toc h2 {
 			margin-top: .8rem;
@@ -297,6 +311,7 @@
 			font-weight: bold;
 			color: gray;
 			color: hsla(203,20%,40%,.7);
+			color: var(--tocsidebar-heading-text);
 		}
 
 		body:not(.toc-inline) {
@@ -328,9 +343,9 @@
 		page-break-after: avoid;
 		page-break-inside: avoid;
 		font: 100% sans-serif;   /* Reset all font styling to clear out UA styles */
-		font-family: inherit;    /* Inherit the font family. */
-		line-height: 1.2;        /* Keep wrapped headings compact */
-		hyphens: manual;         /* Hyphenated headings look weird */
+		font-family: inherit;	/* Inherit the font family. */
+		line-height: 1.2;		/* Keep wrapped headings compact */
+		hyphens: manual;		/* Hyphenated headings look weird */
 	}
 
 	h2, h3, h4, h5, h6 {
@@ -339,7 +354,7 @@
 
 	h1, h2, h3 {
 		color: #005A9C;
-		background: transparent;
+		color: var(--heading-text);
 	}
 
 	h1 { font-size: 170%; }
@@ -366,11 +381,13 @@
 
 /** Section divider ***********************************************************/
 
-	:not(.head) > hr {
+	:not(.head) > :not(.head) + hr {
 		font-size: 1.5em;
 		text-align: center;
 		margin: 1em auto;
 		height: auto;
+		color: black;
+		color: var(--hr-text);
 		border: transparent solid 0;
 		background: transparent;
 	}
@@ -412,48 +429,51 @@
 	/* Style for algorithms */
 	ol.algorithm ol:not(.algorithm),
 	.algorithm > ol ol:not(.algorithm) {
-	 border-left: 0.5em solid #DEF;
+	border-left: 0.5em solid #DEF;
+	border-left: 0.5em solid var(--algo-border);
 	}
 
 	/* Put nice boxes around each algorithm. */
 	[data-algorithm]:not(.heading) {
-	  padding: .5em;
-	  border: thin solid #ddd; border-radius: .5em;
-	  margin: .5em calc(-0.5em - 1px);
+	 padding: .5em;
+	 border: thin solid #ddd;
+	 border: thin solid var(--algo-border);
+	 border-radius: .5em;
+	 margin: .5em calc(-0.5em - 1px);
 	}
 	[data-algorithm]:not(.heading) > :first-child {
-	  margin-top: 0;
+	 margin-top: 0;
 	}
 	[data-algorithm]:not(.heading) > :last-child {
-	  margin-bottom: 0;
+	 margin-bottom: 0;
 	}
 
 	/* Style for switch/case <dl>s */
 	dl.switch > dd > ol.only,
 	dl.switch > dd > .only > ol {
-	 margin-left: 0;
+	margin-left: 0;
 	}
 	dl.switch > dd > ol.algorithm,
 	dl.switch > dd > .algorithm > ol {
-	 margin-left: -2em;
+	margin-left: -2em;
 	}
 	dl.switch {
-	 padding-left: 2em;
+	padding-left: 2em;
 	}
 	dl.switch > dt {
-	 text-indent: -1.5em;
-	 margin-top: 1em;
+	text-indent: -1.5em;
+	margin-top: 1em;
 	}
 	dl.switch > dt + dt {
-	 margin-top: 0;
+	margin-top: 0;
 	}
 	dl.switch > dt::before {
-	 content: '\21AA';
-	 padding: 0 0.5em 0 0;
-	 display: inline-block;
-	 width: 1em;
-	 text-align: right;
-	 line-height: 0.5em;
+	content: '\21AA';
+	padding: 0 0.5em 0 0;
+	display: inline-block;
+	width: 1em;
+	text-align: right;
+	line-height: 0.5em;
 	}
 
 /** Terminology Markup ********************************************************/
@@ -471,7 +491,7 @@
 		font-style: normal;
 	}
 	dt dfn code, code.idl {
-		font-size: medium;
+		font-size: inherit;
 	}
 	dfn var {
 		font-style: normal;
@@ -479,8 +499,39 @@
 
 /** Change Marking ************************************************************/
 
-	del { color: red;  text-decoration: line-through; }
-	ins { color: #080; text-decoration: underline;    }
+	del {
+		color: #aa0000;
+		color: var(--del-text);
+		background: transparent;
+		background: var(--del-bg);
+		text-decoration: line-through;
+	}
+	ins {
+		color: #006100;
+		color: var(--ins-text);
+		background: transparent;
+		background: var(--ins-bg);
+		text-decoration: underline;
+	}
+
+	/* for amendments (candidate/proposed changes) */
+
+	.amendment ins, .correction ins, .addition ins,
+	ins[class^=c] {
+		text-decoration-style: dotted;
+	}
+	.amendment del, .correction del, .addition del,
+	del[class^=c] {
+		text-decoration-style: dotted;
+	}
+	.amendment.proposed ins, .correction.proposed ins, .addition.proposed ins,
+	ins[class^=c].proposed {
+		text-decoration-style: double;
+	}
+	.amendment.proposed del, .correction.proposed del, .addition.proposed del,
+	del[class^=c].proposed {
+		text-decoration-style: double;
+	}
 
 /** Miscellaneous improvements to inline formatting ***************************/
 
@@ -498,9 +549,14 @@
 	pre, code, samp {
 		font-family: Menlo, Consolas, "DejaVu Sans Mono", Monaco, monospace;
 		font-size: .9em;
-		page-break-inside: avoid;
 		hyphens: none;
 		text-transform: none;
+		text-align: left;
+		text-align: start;
+		font-variant: normal;
+		orphans: 3;
+		widows: 3;
+		page-break-before: avoid;
 	}
 	pre code,
 	code code {
@@ -515,7 +571,7 @@
 
 /** Inline Code fragments *****************************************************/
 
-  /* Do something nice. */
+	/* Do something nice. */
 
 /******************************************************************************/
 /*                                    Links                                   */
@@ -526,14 +582,19 @@
 	/* We hyperlink a lot, so make it less intrusive */
 	a[href] {
 		color: #034575;
+		color: var(--a-normal-text);
 		text-decoration: none;
 		border-bottom: 1px solid #707070;
+		border-bottom: 1px solid var(--a-normal-underline);
 		/* Need a bit of extending for it to look okay */
 		padding: 0 1px 0;
 		margin: 0 -1px 0;
 	}
 	a:visited {
-		border-bottom-color: #BBB;
+		color: #034575;
+		color: var(--a-visited-text);
+		border-bottom-color: #bbb;
+		border-bottom-color: var(--a-visited-underline);
 	}
 
 	/* Use distinguishing colors when user is interacting with the link */
@@ -541,12 +602,15 @@
 	a[href]:hover {
 		background: #f8f8f8;
 		background: rgba(75%, 75%, 75%, .25);
+		background: var(--a-hover-bg);
 		border-bottom-width: 3px;
 		margin-bottom: -2px;
 	}
 	a[href]:active {
-		color: #C00;
-		border-color: #C00;
+		color: #c00;
+		color: var(--a-active-text);
+		border-color: #c00;
+		border-color: var(--a-active-underline);
 	}
 
 	/* Backout above styling for W3C logo */
@@ -565,8 +629,13 @@
 		border-style: none;
 	}
 
+	img, svg {
+		/* Intentionally not color-scheme aware. */
+		background: white;
+	}
+
 	/* For autogen numbers, add
-	   .caption::before, figcaption::before { content: "Figure " counter(figure) ". "; }
+	  .caption::before, figcaption::before { content: "Figure " counter(figure) ". "; }
 	*/
 
 	figure, .figure, .sidefigure {
@@ -574,10 +643,11 @@
 		text-align: center;
 		margin: 2.5em 0;
 	}
-	.figure img,    .sidefigure img,    figure img,
+	.figure img,	.sidefigure img,	figure img,
 	.figure object, .sidefigure object, figure object {
 		max-width: 100%;
 		margin: auto;
+		height: auto;
 	}
 	.figure pre, .sidefigure pre, figure pre {
 		text-align: left;
@@ -591,7 +661,7 @@
 		.sidefigure {
 			float: right;
 			width: 50%;
-			margin: 0 0 0.5em 0.5em
+			margin: 0 0 0.5em 0.5em;
 		}
 	}
 	.caption, figcaption, caption {
@@ -606,13 +676,15 @@
 	}
 
 	/* DL list is indented 2em, but figure inside it is not */
-	dd > .figure, dd > figure { margin-left: -2em }
+	dd > .figure, dd > figure { margin-left: -2em; }
 
 /******************************************************************************/
 /*                             Colored Boxes                                  */
 /******************************************************************************/
 
-	.issue, .note, .example, .assertion, .advisement, blockquote {
+	.issue, .note, .example, .assertion, .advisement, blockquote,
+	.amendment, .correction, .addition {
+		margin: 1em auto;
 		padding: .5em;
 		border: .5em;
 		border-left-style: solid;
@@ -623,88 +695,117 @@
 		border-right-style: solid;
 	}
 
-	.issue,
-	.note,
-	.example,
-	.advisement,
-	.assertion,
-	blockquote {
-		margin: 1em auto;
-	}
+	blockquote > :first-child,
 	.note  > p:first-child,
 	.issue > p:first-child,
-	blockquote > :first-child {
+	.amendment > p:first-child,
+	.correction > p:first-child,
+	.addition > p:first-child {
 		margin-top: 0;
 	}
-	blockquote > :last-child {
+	blockquote > :last-child,
+	.note  > p:last-child,
+	.issue > p:last-child,
+	.amendment > p:last-child,
+	.correction > p:last-child,
+	.addition > p:last-child {
 		margin-bottom: 0;
+	}
+
+
+	.issue::before, .issue > .marker,
+	.example::before, .example > .marker,
+	.note::before, .note > .marker,
+	details.note > summary > .marker,
+	.amendment::before, .amendment > .marker,
+	details.amendment > summary > .marker,
+	.addition::before, .addition > .marker,
+	addition.amendment > summary > .marker,
+	.correction::before, .correction > .marker,
+	correction.amendment > summary > .marker
+	{
+		text-transform: uppercase;
+		padding-right: 1em;
+	}
+
+	.example::before, .example > .marker {
+		display: block;
+		padding-right: 0em;
 	}
 
 /** Blockquotes ***************************************************************/
 
 	blockquote {
 		border-color: silver;
+		border-color: var(--blockquote-border);
+		background: transparent;
+		background: var(--blockquote-bg);
+		color: currentcolor;
+		color: var(--blockquote-text);
 	}
 
 /** Open issue ****************************************************************/
 
 	.issue {
-		border-color: #E05252;
-		background: #FBE9E9;
+		border-color: #e05252;
+		border-color: var(--issue-border);
+		background: #fbe9e9;
+		background: var(--issue-bg);
+		color: black;
+		color: var(--issue-text);
 		counter-increment: issue;
 		overflow: auto;
 	}
 	.issue::before, .issue > .marker {
-		text-transform: uppercase;
-		color: #AE1E1E;
-		padding-right: 1em;
-		text-transform: uppercase;
+		color: #831616;
+		color: var(--issueheading-text);
 	}
 	/* Add .issue::before { content: "Issue " counter(issue) " "; } for autogen numbers,
-	   or use class="marker" to mark up the issue number in source. */
+	  or use class="marker" to mark up the issue number in source. */
 
 /** Example *******************************************************************/
 
 	.example {
-		border-color: #E0CB52;
-		background: #FCFAEE;
+		border-color: #e0cb52;
+		border-color: var(--example-border);
+		background: #fcfaee;
+		background: var(--example-bg);
+		color: black;
+		color: var(--example-text);
 		counter-increment: example;
 		overflow: auto;
 		clear: both;
 	}
 	.example::before, .example > .marker {
-		text-transform: uppercase;
-		color: #827017;
-		min-width: 7.5em;
-		display: block;
+		color: #574b0f;
+		color: var(--exampleheading-text);
 	}
 	/* Add .example::before { content: "Example " counter(example) " "; } for autogen numbers,
-	   or use class="marker" to mark up the example number in source. */
+	  or use class="marker" to mark up the example number in source. */
 
 /** Non-normative Note ********************************************************/
 
 	.note {
-		border-color: #52E052;
-		background: #E9FBE9;
+		border-color: #52e052;
+		border-color: var(--note-border);
+		background: #e9fbe9;
+		background: var(--note-bg);
+		color: black;
+		color: var(--note-text);
 		overflow: auto;
 	}
 
 	.note::before, .note > .marker,
-	details.note > summary::before,
-	details.note > summary > .marker {
-		text-transform: uppercase;
-		display: block;
-		color: hsl(120, 70%, 30%);
-	}
-	/* Add .note::before { content: "Note"; } for autogen label,
-	   or use class="marker" to mark up the label in source. */
-
 	details.note > summary {
-		display: block;
 		color: hsl(120, 70%, 30%);
+		color: var(--noteheading-text);
 	}
+	/* Add .note::before { content: "Note "; } for autogen label,
+	  or use class="marker" to mark up the label in source. */
+
 	details.note[open] > summary {
 		border-bottom: 1px silver solid;
+		border-bottom: 1px var(--notesummary-underline) solid;
 	}
 
 /** Assertion Box *************************************************************/
@@ -712,7 +813,11 @@
 
 	.assertion {
 		border-color: #AAA;
+		border-color: var(--assertion-border);
 		background: #EEE;
+		background: var(--assertion-bg);
+		color: black;
+		color: var(--assertion-text);
 	}
 
 /** Advisement Box ************************************************************/
@@ -720,15 +825,52 @@
 
 	.advisement {
 		border-color: orange;
+		border-color: var(--advisement-border);
 		border-style: none solid;
-		background: #FFEECC;
+		background: #fec;
+		background: var(--advisement-bg);
+		color: black;
+		color: var(--advisement-text);
 	}
 	strong.advisement {
 		display: block;
 		text-align: center;
 	}
-	.advisement > .marker {
-		color: #B35F00;
+	.advisement::before, .advisement > .marker {
+		color: #b35f00;
+		color: var(--advisementheading-text);
+	}
+
+/** Amendment Box *************************************************************/
+
+	.amendment, .correction, .addition {
+		border-color: #330099;
+		border-color: var(--amendment-border);
+		background: #F5F0FF;
+		background: var(--amendment-bg);
+		color: black;
+		color: var(--amendment-text);
+	}
+	.amendment.proposed, .correction.proposed, .addition.proposed {
+		border-style: solid;
+		border-block-width: 0.25em;
+	}
+	.amendment::before, .amendment > .marker,
+	details.amendment > summary::before, details.amendment > summary > .marker,
+	.correction::before, .correction > .marker,
+	details.correction > summary::before, details.correction > summary > .marker,
+	.addition::before, .addition > .marker,
+	details.addition > summary::before, details.addition > summary > .marker {
+		color: #220066;
+		color: var(--amendmentheading-text);
+	}
+	.amendment.proposed::before, .amendment.proposed > .marker,
+	details.amendment.proposed > summary::before, details.amendment.proposed > summary > .marker,
+	.correction.proposed::before, .correction.proposed > .marker,
+	details.correction.proposed > summary::before, details.correction.proposed > summary > .marker,
+	.addition.proposed::before, .addition.proposed > .marker,
+	details.addition.proposed > summary::before, details.addition.proposed > summary > .marker {
+		font-weight: bold;
 	}
 
 /** Spec Obsoletion Notice ****************************************************/
@@ -744,13 +886,16 @@
 	.annoying-warning:not(details),
 	details.annoying-warning:not([open]) > summary,
 	details.annoying-warning[open] {
-		background: #fdd;
-		color: red;
-		font-weight: bold;
+		background: hsla(40,100%,50%,0.95);
+		background: var(--warning-bg);
+		color: black;
+		color: var(--warning-text);
 		padding: .75em 1em;
-		border: thick red;
-		border-style: solid;
-		border-radius: 1em;
+		border: red;
+		border: var(--warning-border);
+		border-style: solid none;
+		box-shadow: 0 2px 8px black;
+		text-align: center;
 	}
 	.annoying-warning :last-child {
 		margin-bottom: 0;
@@ -759,9 +904,9 @@
 @media not print {
 	details.annoying-warning[open] {
 		position: fixed;
-		left: 1em;
-		right: 1em;
-		bottom: 1em;
+		left: 0;
+		right: 0;
+		bottom: 2em;
 		z-index: 1000;
 	}
 }
@@ -774,9 +919,13 @@
 
 	.def {
 		padding: .5em 1em;
-		background: #DEF;
+		background: #def;
+		background: var(--def-bg);
 		margin: 1.2em 0;
-		border-left: 0.5em solid #8CCBF2;
+		border-left: 0.5em solid #8ccbf2;
+		border-left: 0.5em solid var(--def-border);
+		color: black;
+		color: var(--def-text);
 	}
 
 /******************************************************************************/
@@ -801,6 +950,7 @@
 		padding: 0.5em;
 		vertical-align: baseline;
 		border-bottom: 1px solid #bbd7e9;
+		border-bottom: 1px solid var(--defrow-border);
 	}
 
 	table.def > tbody > tr:last-child th,
@@ -821,10 +971,10 @@
 	}
 
 	/* A footnote at the bottom of a def table */
-	table.def           td.footnote {
+	table.def td.footnote {
 		padding-top: 0.6em;
 	}
-	table.def           td.footnote::before {
+	table.def td.footnote::before {
 		content: " ";
 		display: block;
 		height: 0.6em;
@@ -834,15 +984,15 @@
 
 /** Data tables (and properly marked-up index tables) *************************/
 	/*
-		 <table class="data"> highlights structural relationships in a table
-		 when correct markup is used (e.g. thead/tbody, th vs. td, scope attribute)
+		<table class="data"> highlights structural relationships in a table
+		when correct markup is used (e.g. thead/tbody, th vs. td, scope attribute)
 
-		 Use class="complex data" for particularly complicated tables --
-		 (This will draw more lines: busier, but clearer.)
+		Use class="complex data" for particularly complicated tables --
+		(This will draw more lines: busier, but clearer.)
 
-		 Use class="long" on table cells with paragraph-like contents
-		 (This will adjust text alignment accordingly.)
-		 Alternately use class="longlastcol" on tables, to have the last column assume "long".
+		Use class="long" on table cells with paragraph-like contents
+		(This will adjust text alignment accordingly.)
+		Alternately use class="longlastcol" on tables, to have the last column assume "long".
 	*/
 
 	table {
@@ -869,6 +1019,7 @@
 		padding: 0.5em 1em;
 		border-width: 1px;
 		border-color: silver;
+		border-color: var(--datacell-border);
 		border-top-style: solid;
 	}
 
@@ -893,6 +1044,7 @@
 	table.index tbody th:first-child  {
 		border-right: 2px solid;
 		border-top: 1px solid silver;
+		border-top: 1px solid var(--datacell-border);
 		padding-right: 1em;
 	}
 
@@ -904,13 +1056,14 @@
 	table.complex.data th,
 	table.complex.data td {
 		border: 1px solid silver;
+		border: 1px solid var(--datacell-border);
 		text-align: center;
 	}
 
 	table.data.longlastcol td:last-child,
 	table.data td.long {
-	 vertical-align: baseline;
-	 text-align: left;
+		vertical-align: baseline;
+		text-align: left;
 	}
 
 	table.data img {
@@ -968,12 +1121,15 @@ Possible extra rowspan handling
 		display: block;
 		/* Reverse color scheme */
 		color: black;
-		border-color: #3980B5;
-		border-bottom-width: 3px !important;
-		margin-bottom: 0px !important;
+		color: var(--toclink-text);
+		border-color: #3980b5;
+		border-color: var(--toclink-underline);
 	}
 	.toc a:visited {
+		color: black;
+		color: var(--toclink-visited-text);
 		border-color: #054572;
+		border-color: var(--toclink-visited-underline);
 	}
 	.toc a:not(:focus):not(:hover) {
 		/* Allow colors to cascade through from link styling */
@@ -985,22 +1141,22 @@ Possible extra rowspan handling
 		/* because generated content isn't search/selectable and markers can't do multilevel yet */
 		margin:  0;
 		padding: 0;
-		line-height: 1.1rem; /* consistent spacing */
+	}
+	.toc {
+		line-height: 1.1em;
 	}
 
 	/* ToC not indented until third level, but font style & margins show hierarchy */
-	.toc > li             { font-weight: bold;   }
-	.toc > li li          { font-weight: normal; }
-	.toc > li li li       { font-size:   95%;    }
-	.toc > li li li li    { font-size:   90%;    }
-	.toc > li li li li .secno { font-size: 85%; }
-	.toc > li li li li li { font-size:   85%;    }
-	.toc > li li li li li .secno { font-size: 100%; }
+	.toc > li			{ font-weight: bold;   }
+	.toc > li li		 { font-weight: normal; }
+	.toc > li li li	  { font-size:   95%;	}
+	.toc > li li li li	{ font-size:   90%;	}
+	.toc > li li li li li { font-size:   85%;	}
 
 	/* @supports not (display:grid) { */
-		.toc > li             { margin: 1.5rem 0;    }
-		.toc > li li          { margin: 0.3rem 0;    }
-		.toc > li li li       { margin-left: 2rem;   }
+		.toc > li			{ margin: 1.5rem 0;	}
+		.toc > li li		 { margin: 0.3rem 0;	}
+		.toc > li li li	  { margin-left: 2rem;   }
 
 		/* Section numbers in a column of their own */
 		.toc .secno {
@@ -1008,26 +1164,37 @@ Possible extra rowspan handling
 			width: 4rem;
 			white-space: nowrap;
 		}
+		.toc > li li li li .secno { font-size: 85%; }
+		.toc > li li li li li .secno { font-size: 100%; }
 
 		.toc li {
 			clear: both;
 		}
 
-		:not(li) > .toc              { margin-left:  5rem; }
-		.toc .secno                  { margin-left: -5rem; }
-		.toc > li li li .secno       { margin-left: -7rem; }
-		.toc > li li li li .secno    { margin-left: -9rem; }
+		:not(li) > .toc			 { margin-left:  5rem; }
+		.toc .secno				 { margin-left: -5rem; }
+		.toc > li li li .secno	  { margin-left: -7rem; }
+		.toc > li li li li .secno	{ margin-left: -9rem; }
 		.toc > li li li li li .secno { margin-left: -11rem; }
 
 		/* Tighten up indentation in narrow ToCs */
 		@media (max-width: 30em) {
-			:not(li) > .toc              { margin-left:  4rem; }
-			.toc .secno                  { margin-left: -4rem; }
-			.toc > li li li              { margin-left:  1rem; }
-			.toc > li li li .secno       { margin-left: -5rem; }
-			.toc > li li li li .secno    { margin-left: -6rem; }
+			:not(li) > .toc			 { margin-left:  4rem; }
+			.toc .secno				 { margin-left: -4rem; }
+			.toc > li li li			 { margin-left:  1rem; }
+			.toc > li li li .secno	  { margin-left: -5rem; }
+			.toc > li li li li .secno	{ margin-left: -6rem; }
 			.toc > li li li li li .secno { margin-left: -7rem; }
 		}
+		/* Loosen it on wide screens */
+		@media screen and (min-width: 78em) {
+			body:not(.toc-inline) :not(li) > .toc			 { margin-left:  4rem; }
+			body:not(.toc-inline) .toc .secno				 { margin-left: -4rem; }
+			body:not(.toc-inline) .toc > li li li			 { margin-left:  1rem; }
+			body:not(.toc-inline) .toc > li li li .secno	  { margin-left: -5rem; }
+			body:not(.toc-inline) .toc > li li li li .secno	{ margin-left: -6rem; }
+			body:not(.toc-inline) .toc > li li li li li .secno { margin-left: -7rem; }
+	}
 	/* } */
 
 	@supports (display:grid) and (display:contents) {
@@ -1056,7 +1223,7 @@ Possible extra rowspan handling
 		}
 		#toc > .toc > li > a > span {
 			/* The spans of the top-level list,
-			   comprising the first items of each top-level section. */
+			  comprising the first items of each top-level section. */
 			margin-top: 1.1rem;
 		}
 		#toc#toc .secno { /* Ugh, need more specificity to override base.css */
@@ -1069,9 +1236,12 @@ Possible extra rowspan handling
 			width: auto;
 			margin-right: 1rem;
 		}
-		#toc .content:hover {
+		#toc .content:hover,
+		#toc .content:focus {
 			background: rgba(75%, 75%, 75%, .25);
+			background: var(--a-hover-bg);
 			border-bottom: 3px solid #054572;
+			border-bottom: 3px solid var(--toclink-underline);
 			margin-bottom: -3px;
 		}
 		#toc li li li .content {
@@ -1086,22 +1256,23 @@ Possible extra rowspan handling
 /** Index *********************************************************************/
 
 	/* Index Lists: Layout */
-	ul.index       { margin-left: 0; columns: 15em; text-indent: 1em hanging; }
-	ul.index li    { margin-left: 0; list-style: none; break-inside: avoid; }
-	ul.index li li { margin-left: 1em }
-	ul.index dl    { margin-top: 0; }
-	ul.index dt    { margin: .2em 0 .2em 20px;}
-	ul.index dd    { margin: .2em 0 .2em 40px;}
+	ul.index	  { margin-left: 0; columns: 15em; text-indent: 1em hanging; }
+	ul.index li	{ margin-left: 0; list-style: none; break-inside: avoid; }
+	ul.index li li { margin-left: 1em; }
+	ul.index dl	{ margin-top: 0; }
+	ul.index dt	{ margin: .2em 0 .2em 20px;}
+	ul.index dd	{ margin: .2em 0 .2em 40px;}
 	/* Index Lists: Typography */
 	ul.index ul,
 	ul.index dl { font-size: smaller; }
 	@media not print {
-		ul.index li span {
+		ul.index li span:not(.dfn-paneled) {
 			white-space: nowrap;
 			color: transparent; }
 		ul.index li a:hover + span,
 		ul.index li a:focus + span {
 			color: #707070;
+			color: var(--indexinfo-text);
 		}
 	}
 
@@ -1123,13 +1294,101 @@ Possible extra rowspan handling
 
 	table.index tr:hover td:not([rowspan]),
 	table.index tr:hover th:not([rowspan]) {
+		color: black;
+		color: var(--indextable-hover-text);
 		background: #f7f8f9;
+		background: var(--indextable-hover-bg);
 	}
 
 	/* The link in the first column in the property table (formerly a TD) */
 	table.index th:first-child a {
 		font-weight: bold;
 	}
+
+/** Outdated warning **********************************************************/
+
+.outdated-spec {
+	color: black;
+	color: var(--outdatedspec-text);
+	background-color: rgba(0,0,0,0.5);
+	background-color: var(--outdatedspec-bg);
+}
+
+.outdated-warning {
+	position: fixed;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 50%;
+	background: maroon;
+	background: var(--outdated-bg);
+	color: white;
+	color: var(--outdated-text);
+	border-radius: 1em;
+	box-shadow: 0 0 1em red;
+	box-shadow: 0 0 1em var(--outdated-shadow);
+	padding: 2em;
+	text-align: center;
+	z-index: 2;
+}
+
+.outdated-warning a {
+	color: currentcolor;
+	background: transparent;
+}
+
+.edited-rec-warning {
+	background: darkorange;
+	background: var(--editedrec-bg);
+	box-shadow: 0 0 1em;
+}
+
+.outdated-warning button {
+	color: var(--outdated-text);
+	border-radius: 1em;
+	box-shadow: 0 0 1em red;
+	box-shadow: 0 0 1em var(--outdated-shadow);
+	padding: 2em;
+	text-align: center;
+	z-index: 2;
+}
+
+.outdated-warning a {
+	color: currentcolor;
+	background: transparent;
+}
+
+.edited-rec-warning {
+	background: darkorange;
+	background: var(--editedrec-bg);
+	box-shadow: 0 0 1em;
+}
+
+.outdated-warning button {
+	position: absolute;
+	top: 0;
+	right:0;
+	margin: 0;
+	border: 0;
+	padding: 0.25em 0.5em;
+	background: transparent;
+	color: white;
+	color: var(--outdated-text);
+	font:1em sans-serif;
+	text-align:center;
+}
+
+.outdated-warning span {
+	display: block;
+}
+
+.outdated-collapsed {
+	bottom: 0;
+	border-radius: 0;
+	width: 100%;
+	padding: 0;
+}
 
 /******************************************************************************/
 /*                                    Print                                   */
@@ -1144,17 +1403,20 @@ Possible extra rowspan handling
 		body {
 			font-family: serif;
 		}
+
+		.outdated-warning {
+			position: absolute;
+			border-style: solid;
+			border-color: red;
+		}
+
+		.outdated-warning input {
+			display: none;
+		}
 	}
 	@page {
 		margin: 1.5cm 1.1cm;
 	}
-
-/******************************************************************************/
-/*                                    Legacy                                  */
-/******************************************************************************/
-
-	/* This rule is inherited from past style sheets. No idea what it's for. */
-	.hide { display: none }
 
 
 
@@ -1169,14 +1431,14 @@ Possible extra rowspan handling
 		margin-right: auto;
 	}
 	.overlarge {
-		/* Magic to create good table positioning:
-		   "content column" is 50ems wide at max; less on smaller screens.
-		   Extra space (after ToC + content) is empty on the right.
+		/* Magic to create good item positioning:
+		  "content column" is 50ems wide at max; less on smaller screens.
+		  Extra space (after ToC + content) is empty on the right.
 
-		   1. When table < content column, centers table in column.
-		   2. When content < table < available, left-aligns.
-		   3. When table > available, fills available + scroll bar.
-		*/ 
+		  1. When item < content column, centers item in column.
+		  2. When content < item < available, left-aligns.
+		  3. When item > available, fills available + scroll bar.
+		*/
 		display: grid;
 		grid-template-columns: minmax(0, 50em);
 	}
@@ -1210,20 +1472,20 @@ Possible extra rowspan handling
 		.overlarge {
 			overflow-x: auto;
 			/* See Lea Verou's explanation background-attachment:
-			 * http://lea.verou.me/2012/04/background-attachment-local/
-			 *
+			* http://lea.verou.me/2012/04/background-attachment-local/
+			*
 			background: top left  / 4em 100% linear-gradient(to right,  #ffffff, rgba(255, 255, 255, 0)) local,
-			            top right / 4em 100% linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0)) local,
-			            top left  / 1em 100% linear-gradient(to right,  #c3c3c5, rgba(195, 195, 197, 0)) scroll,
-			            top right / 1em 100% linear-gradient(to left, #c3c3c5, rgba(195, 195, 197, 0)) scroll,
-			            white;
+						top right / 4em 100% linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0)) local,
+						top left  / 1em 100% linear-gradient(to right,  #c3c3c5, rgba(195, 195, 197, 0)) scroll,
+						top right / 1em 100% linear-gradient(to left, #c3c3c5, rgba(195, 195, 197, 0)) scroll,
+						white;
 			background-repeat: no-repeat;
 			*/
 		}
 	}
 </style>
-  <meta content="Bikeshed version 88b3cbba77902db95c397d955c49b1c470eef38b" name="generator">
-  <link href="https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP" rel="canonical">
+  <meta content="Bikeshed version 4e8dd937, updated Fri Nov 13 16:49:31 2020 -0800" name="generator">
+  <link href="https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP/" rel="canonical">
 <style>
 @media print {
   html { margin: 0cm 2cm 2cm 0cm; font-size: 80%; }
@@ -1328,98 +1590,50 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 			padding-left: 25em;
 		}
 }
+
+
+dl.def dt,dl.def dd {
+    box-sizing: border-box;
+}
+dl.def dt {
+    float: left;
+    width: 25%;
+    padding-bottom: 0;
+}
+dl.def dd {
+    margin-left: 25%!important;
+}
+dl.def dd:after {
+    content: "";
+    display: block;
+    clear: both;
+} 
+
+img{max-width:100%!important}
+p.center{text-align:center!important}
+p.left{text-align:left!important}
+p.right{text-align:right!important}
+p.italic{font-style: italic!important;}
+#toc h2{color:#000!important}
+#toc ol, #toc li, #toc a {
+    display: block;
+}
+.toc .secno {
+    margin-right: 1rem!important;
+}
+:not(li) > .toc {
+    margin-left: 0rem!important;
+}
+	#toc > .toc > li > a > span {
+    margin-top: 0rem;
+}
 	
 /* style til egne og andres definitioner rød/blå*/
 </style>
-<style>/* style-md-lists */
-
-/* This is a weird hack for me not yet following the commonmark spec
-   regarding paragraph and lists. */
-[data-md] > :first-child {
-    margin-top: 0;
-}
-[data-md] > :last-child {
-    margin-bottom: 0;
-}</style>
-<style>/* style-counters */
-
-body {
-    counter-reset: example figure issue;
-}
-.issue {
-    counter-increment: issue;
-}
-.issue:not(.no-marker)::before {
-    content: "Issue " counter(issue);
-}
-
-.example {
-    counter-increment: example;
-}
-.example:not(.no-marker)::before {
-    content: "Example " counter(example);
-}
-.invalid.example:not(.no-marker)::before,
-.illegal.example:not(.no-marker)::before {
-    content: "Invalid Example" counter(example);
-}
-
-figcaption {
-    counter-increment: figure;
-}
-figcaption:not(.no-marker)::before {
-    content: "Figure " counter(figure) " ";
-}</style>
-<style>/* style-selflinks */
-
-.heading, .issue, .note, .example, li, dt {
-    position: relative;
-}
-a.self-link {
-    position: absolute;
-    top: 0;
-    left: calc(-1 * (3.5rem - 26px));
-    width: calc(3.5rem - 26px);
-    height: 2em;
-    text-align: center;
-    border: none;
-    transition: opacity .2s;
-    opacity: .5;
-}
-a.self-link:hover {
-    opacity: 1;
-}
-.heading > a.self-link {
-    font-size: 83%;
-}
-li > a.self-link {
-    left: calc(-1 * (3.5rem - 26px) - 2em);
-}
-dfn > a.self-link {
-    top: auto;
-    left: auto;
-    opacity: 0;
-    width: 1.5em;
-    height: 1.5em;
-    background: gray;
-    color: white;
-    font-style: normal;
-    transition: opacity .2s, background-color .2s, color .2s;
-}
-dfn:hover > a.self-link {
-    opacity: 1;
-}
-dfn > a.self-link:hover {
-    color: black;
-}
-
-a.self-link::before            { content: "¶"; }
-.heading > a.self-link::before { content: "§"; }
-dfn > a.self-link::before      { content: "#"; }</style>
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
-    color: #005a9c;
+    color: var(--a-normal-text);
     font-size: inherit;
     font-family: inherit;
 }
@@ -1478,17 +1692,338 @@ pre .property::before, pre .property::after {
 [data-link-type=biblio] {
     white-space: pre;
 }</style>
+<style>/* style-colors */
+
+/* Any --*-text not paired with a --*-bg is assumed to have a transparent bg */
+:root {
+    color-scheme: light dark;
+
+    --text: black;
+    --bg: white;
+
+    --unofficial-watermark: url(https://www.w3.org/StyleSheets/TR/2016/logos/UD-watermark);
+
+    --logo-bg: #1a5e9a;
+    --logo-active-bg: #c00;
+    --logo-text: white;
+
+    --tocnav-normal-text: #707070;
+    --tocnav-normal-bg: var(--bg);
+    --tocnav-hover-text: var(--tocnav-normal-text);
+    --tocnav-hover-bg: #f8f8f8;
+    --tocnav-active-text: #c00;
+    --tocnav-active-bg: var(--tocnav-normal-bg);
+
+    --tocsidebar-text: var(--text);
+    --tocsidebar-bg: #f7f8f9;
+    --tocsidebar-shadow: rgba(0,0,0,.1);
+    --tocsidebar-heading-text: hsla(203,20%,40%,.7);
+
+    --toclink-text: var(--text);
+    --toclink-underline: #3980b5;
+    --toclink-visited-text: var(--toclink-text);
+    --toclink-visited-underline: #054572;
+
+    --heading-text: #005a9c;
+
+    --hr-text: var(--text);
+
+    --algo-border: #def;
+
+    --del-text: red;
+    --del-bg: transparent;
+    --ins-text: #080;
+    --ins-bg: transparent;
+
+    --a-normal-text: #034575;
+    --a-normal-underline: #707070;
+    --a-visited-text: var(--a-normal-text);
+    --a-visited-underline: #bbb;
+    --a-hover-bg: rgba(75%, 75%, 75%, .25);
+    --a-active-text: #c00;
+    --a-active-underline: #c00;
+
+    --blockquote-border: silver;
+    --blockquote-bg: transparent;
+    --blockquote-text: currentcolor;
+
+    --issue-border: #e05252;
+    --issue-bg: #fbe9e9;
+    --issue-text: var(--text);
+    --issueheading-text: #831616;
+
+    --example-border: #e0cb52;
+    --example-bg: #fcfaee;
+    --example-text: var(--text);
+    --exampleheading-text: #574b0f;
+
+    --note-border: #52e052;
+    --note-bg: #e9fbe9;
+    --note-text: var(--text);
+    --noteheading-text: hsl(120, 70%, 30%);
+    --notesummary-underline: silver;
+
+    --assertion-border: #aaa;
+    --assertion-bg: #eee;
+    --assertion-text: black;
+
+    --advisement-border: orange;
+    --advisement-bg: #fec;
+    --advisement-text: var(--text);
+    --advisementheading-text: #b35f00;
+
+    --warning-border: red;
+    --warning-bg: hsla(40,100%,50%,0.95);
+    --warning-text: var(--text);
+
+    --amendment-border: #330099;
+    --amendment-bg: #F5F0FF;
+    --amendment-text: var(--text);
+    --amendmentheading-text: #220066;
+
+    --def-border: #8ccbf2;
+    --def-bg: #def;
+    --def-text: var(--text);
+    --defrow-border: #bbd7e9;
+
+    --datacell-border: silver;
+
+    --indexinfo-text: #707070;
+
+    --indextable-hover-text: black;
+    --indextable-hover-bg: #f7f8f9;
+
+    --outdatedspec-bg: rgba(0, 0, 0, .5);
+    --outdatedspec-text: black;
+    --outdated-bg: maroon;
+    --outdated-text: white;
+    --outdated-shadow: red;
+
+    --editedrec-bg: darkorange;
+}</style>
+<style>/* style-counters */
+
+body {
+    counter-reset: example figure issue;
+}
+.issue {
+    counter-increment: issue;
+}
+.issue:not(.no-marker)::before {
+    content: "Issue " counter(issue);
+}
+
+.example {
+    counter-increment: example;
+}
+.example:not(.no-marker)::before {
+    content: "Example " counter(example);
+}
+.invalid.example:not(.no-marker)::before,
+.illegal.example:not(.no-marker)::before {
+    content: "Invalid Example" counter(example);
+}
+
+figcaption {
+    counter-increment: figure;
+}
+figcaption:not(.no-marker)::before {
+    content: "Figure " counter(figure) " ";
+}</style>
+<style>/* style-md-lists */
+
+/* This is a weird hack for me not yet following the commonmark spec
+   regarding paragraph and lists. */
+[data-md] > :first-child {
+    margin-top: 0;
+}
+[data-md] > :last-child {
+    margin-bottom: 0;
+}</style>
+<style>/* style-selflinks */
+
+:root {
+    --selflink-text: white;
+    --selflink-bg: gray;
+    --selflink-hover-text: black;
+}
+.heading, .issue, .note, .example, li, dt {
+    position: relative;
+}
+a.self-link {
+    position: absolute;
+    top: 0;
+    left: calc(-1 * (3.5rem - 26px));
+    width: calc(3.5rem - 26px);
+    height: 2em;
+    text-align: center;
+    border: none;
+    transition: opacity .2s;
+    opacity: .5;
+}
+a.self-link:hover {
+    opacity: 1;
+}
+.heading > a.self-link {
+    font-size: 83%;
+}
+li > a.self-link {
+    left: calc(-1 * (3.5rem - 26px) - 2em);
+}
+dfn > a.self-link {
+    top: auto;
+    left: auto;
+    opacity: 0;
+    width: 1.5em;
+    height: 1.5em;
+    background: var(--selflink-bg);
+    color: var(--selflink-text);
+    font-style: normal;
+    transition: opacity .2s, background-color .2s, color .2s;
+}
+dfn:hover > a.self-link {
+    opacity: 1;
+}
+dfn > a.self-link:hover {
+    color: var(--selflink-hover-text);
+}
+
+a.self-link::before            { content: "¶"; }
+.heading > a.self-link::before { content: "§"; }
+dfn > a.self-link::before      { content: "#"; }
+</style>
+<style>/* style-darkmode */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #ddd;
+        --bg: black;
+
+        --unofficial-watermark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cg fill='%23100808' transform='translate(200 200) rotate(-45) translate(-200 -200)' stroke='%23100808' stroke-width='3'%3E%3Ctext x='50%25' y='220' style='font: bold 70px sans-serif; text-anchor: middle; letter-spacing: 6px;'%3EUNOFFICIAL%3C/text%3E%3Ctext x='50%25' y='305' style='font: bold 70px sans-serif; text-anchor: middle; letter-spacing: 6px;'%3EDRAFT%3C/text%3E%3C/g%3E%3C/svg%3E");
+
+        --logo-bg: #1a5e9a;
+        --logo-active-bg: #c00;
+        --logo-text: white;
+
+        --tocnav-normal-text: #999;
+        --tocnav-normal-bg: var(--bg);
+        --tocnav-hover-text: var(--tocnav-normal-text);
+        --tocnav-hover-bg: #080808;
+        --tocnav-active-text: #f44;
+        --tocnav-active-bg: var(--tocnav-normal-bg);
+
+        --tocsidebar-text: var(--text);
+        --tocsidebar-bg: #080808;
+        --tocsidebar-shadow: rgba(255,255,255,.1);
+        --tocsidebar-heading-text: hsla(203,20%,40%,.7);
+
+        --toclink-text: var(--text);
+        --toclink-underline: #6af;
+        --toclink-visited-text: var(--toclink-text);
+        --toclink-visited-underline: #054572;
+
+        --heading-text: #8af;
+
+        --hr-text: var(--text);
+
+        --algo-border: #456;
+
+        --del-text: #f44;
+        --del-bg: transparent;
+        --ins-text: #4a4;
+        --ins-bg: transparent;
+
+        --a-normal-text: #6af;
+        --a-normal-underline: #555;
+        --a-visited-text: var(--a-normal-text);
+        --a-visited-underline: var(--a-normal-underline);
+        --a-hover-bg: rgba(25%, 25%, 25%, .2);
+        --a-active-text: #f44;
+        --a-active-underline: var(--a-active-text);
+
+        --borderedblock-bg: rgba(255, 255, 255, .05);
+
+        --blockquote-border: silver;
+        --blockquote-bg: var(--borderedblock-bg);
+        --blockquote-text: currentcolor;
+
+        --issue-border: #e05252;
+        --issue-bg: var(--borderedblock-bg);
+        --issue-text: var(--text);
+        --issueheading-text: hsl(0deg, 70%, 70%);
+
+        --example-border: hsl(50deg, 90%, 60%);
+        --example-bg: var(--borderedblock-bg);
+        --example-text: var(--text);
+        --exampleheading-text: hsl(50deg, 70%, 70%);
+
+        --note-border: hsl(120deg, 100%, 35%);
+        --note-bg: var(--borderedblock-bg);
+        --note-text: var(--text);
+        --noteheading-text: hsl(120, 70%, 70%);
+        --notesummary-underline: silver;
+
+        --assertion-border: #444;
+        --assertion-bg: var(--borderedblock-bg);
+        --assertion-text: var(--text);
+
+        --advisement-border: orange;
+        --advisement-bg: #222218;
+        --advisement-text: var(--text);
+        --advisementheading-text: #f84;
+
+        --warning-border: red;
+        --warning-bg: hsla(40,100%,20%,0.95);
+        --warning-text: var(--text);
+
+        --amendment-border: #330099;
+        --amendment-bg: #080010;
+        --amendment-text: var(--text);
+        --amendmentheading-text: #cc00ff;
+
+        --def-border: #8ccbf2;
+        --def-bg: #080818;
+        --def-text: var(--text);
+        --defrow-border: #136;
+
+        --datacell-border: silver;
+
+        --indexinfo-text: #aaa;
+
+        --indextable-hover-text: var(--text);
+        --indextable-hover-bg: #181818;
+
+        --outdatedspec-bg: rgba(255, 255, 255, .5);
+        --outdatedspec-text: black;
+        --outdated-bg: maroon;
+        --outdated-text: white;
+        --outdated-shadow: red;
+
+        --editedrec-bg: darkorange;
+    }
+    /* In case a transparent-bg image doesn't expect to be on a dark bg,
+       which is quite common in practice... */
+    img { background: white; }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --selflink-text: black;
+        --selflink-bg: silver;
+        --selflink-hover-text: white;
+    }
+}
+</style>
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>Standard for beskrivelse af it-systemer - Arkivprofil</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Standard, <time class="dt-updated" datetime="2019-12-05">5 December 2019</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Standard, <time class="dt-updated" datetime="2021-01-06">6 January 2021</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
-     <dt>This version:
-     <dd><a class="u-url" href="https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP">https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP</a>
-     <dt class="editor">Editors:
-     <dd class="editor p-author h-card vcard"><span class="p-name fn">Digitaliseringsstyrelsen http://arkitektur.digst.dk</span>
+     <dt>Denne version:
+     <dd><a class="u-url" href="https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP/">https://github.com/digst/IT-System-AP/tree/master/archvSYS-AP/</a>
+     <dt class="editor">Arbejdsgruppemedlemmer:
+     <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
      <dd class="editor p-author h-card vcard"><span class="p-name fn">Rigsarkivet</span>
      <dd class="editor p-author h-card vcard"><span class="p-name fn">KL</span>
      <dd class="editor p-author h-card vcard"><span class="p-name fn">Danske Regioner</span>
@@ -1501,7 +2036,7 @@ pre .property::before, pre .property::after {
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
-   <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
+   <h2 class="no-num no-toc no-ref" id="contents">Indholdsfortegnelse</h2>
    <ol class="toc" role="directory">
     <li>
      <a href="#introduktion"><span class="secno">1</span> <span class="content">Introduktion</span></a>
@@ -1546,36 +2081,9 @@ pre .property::before, pre .property::after {
     <li>
      <a href="#bilag"><span class="secno">7</span> <span class="content">Bilag</span></a>
      <ol class="toc">
-      <li>
-       <a href="#bilag-a-overblik-over-relevante-klassifikationer"><span class="secno">7.1</span> <span class="content">Bilag A: Overblik over relevante klassifikationer</span></a>
-       <ol class="toc">
-        <li><a href="#klassifikation-form"><span class="secno">7.1.1</span> <span class="content">Klassifikation FORM:</span></a>
-        <li><a href="#klassifikation-kle"><span class="secno">7.1.2</span> <span class="content">Klassifikation KLE:</span></a>
-        <li><a href="#klassifikation-sagsomrder"><span class="secno">7.1.3</span> <span class="content">Klassifikation Sagsområder:</span></a>
-        <li><a href="#klassifikation-offentlige-organisationstyper"><span class="secno">7.1.4</span> <span class="content">Klassifikation: Offentlige organisationstyper</span></a>
-        <li><a href="#klassifikation-it-miljtyper"><span class="secno">7.1.5</span> <span class="content">Klassifikation: It-miljøtyper</span></a>
-        <li><a href="#klassifikation-personoplysningskategorier"><span class="secno">7.1.6</span> <span class="content">Klassifikation: Personoplysningskategorier</span></a>
-        <li><a href="#klassifikation-fortrolighedsgrader-iht-sikkerhedscirkulret-eu-nato"><span class="secno">7.1.7</span> <span class="content">Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)</span></a>
-        <li><a href="#klassifikation-arkiveringspligttyper"><span class="secno">7.1.8</span> <span class="content">Klassifikation: Arkiveringspligttyper</span></a>
-        <li><a href="#klassifikation-arkiveringsversionsperiodetyper"><span class="secno">7.1.9</span> <span class="content">Klassifikation: Arkiveringsversionsperiodetyper</span></a>
-        <li><a href="#klassifikation-arkivinstitutionstyper"><span class="secno">7.1.10</span> <span class="content">Klassifikation: Arkivinstitutionstyper</span></a>
-        <li><a href="#klassifikation-konverteringsstatusser"><span class="secno">7.1.11</span> <span class="content">Klassifikation: Konverteringsstatusser</span></a>
-       </ol>
-      <li>
-       <a href="#bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"><span class="secno">7.2</span> <span class="content">Bilag B: Skabelon til registrering i regneark (arkivprofil)</span></a>
-       <ol class="toc">
-        <li><a href="#udfyldelse-myndighedsoplysninger"><span class="secno">7.2.1</span> <span class="content">Udfyldelse: Myndighedsoplysninger</span></a>
-        <li><a href="#udfyldelse-basisinformation"><span class="secno">7.2.2</span> <span class="content">Udfyldelse: Basisinformation</span></a>
-        <li><a href="#udfyldelse-opgaver"><span class="secno">7.2.3</span> <span class="content">Udfyldelse: Opgaver</span></a>
-        <li><a href="#udfyldelse-styring"><span class="secno">7.2.4</span> <span class="content">Udfyldelse: Styring</span></a>
-        <li><a href="#udfyldelse-information"><span class="secno">7.2.5</span> <span class="content">Udfyldelse: Information</span></a>
-       </ol>
-      <li>
-       <a href="#bilag-c-eksempel-p-maskinlsbart-format"><span class="secno">7.3</span> <span class="content">Bilag C: Eksempel på maskinlæsbart format</span></a>
-       <ol class="toc">
-        <li><a href="#eksempeloutput-i-turtle-acadre-anvendt-i-kommune-x"><span class="secno">7.3.1</span> <span class="content">EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)</span></a>
-        <li><a href="#eksempeloutput-i-rdf-xml"><span class="secno">7.3.2</span> <span class="content">EKSEMPELOUTPUT I RDF/XML</span></a>
-       </ol>
+      <li><a href="#bilag-a-overblik-over-relevante-klassifikationer"><span class="secno">7.1</span> <span class="content">Bilag A: Overblik over relevante klassifikationer</span></a>
+      <li><a href="#bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"><span class="secno">7.2</span> <span class="content">Bilag B: Skabelon til registrering i regneark (arkivprofil)</span></a>
+      <li><a href="#bilag-c-eksempel-p-maskinlsbart-format"><span class="secno">7.3</span> <span class="content">Bilag C: Eksempel på maskinlæsbart format</span></a>
       <li><a href="#bilag-d-om-datamodellen"><span class="secno">7.4</span> <span class="content">Bilag D: Om datamodellen</span></a>
       <li><a href="#bilag-e-uml-diagram-arkivprofil"><span class="secno">7.5</span> <span class="content">Bilag E: UML-diagram: Arkivprofil</span></a>
       <li><a href="#bilag-f-begrebsliste-til-arkivprofilen-archvsys-ap"><span class="secno">7.6</span> <span class="content">Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)</span></a>
@@ -1583,15 +2091,16 @@ pre .property::before, pre .property::after {
    </ol>
   </nav>
   <main>
-    <i>Version 1.0.0 - Godkendt af Styregruppen for Data og Arkitektur i December 2019)</i> 
+   <p>Godkendt af Styregruppen for Data og Arkitektur d. 5. dec 2019.</p>
+   <p>Version 1.0.1</p>
    <p><strong>Læsevejledning:</strong></p>
    <p>Dette dokument 'Standard for beskrivelse af it-systemer - Arkivprofil (archvSYS-AP)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet.</p>
    <p>Arkivprofilen anvender dele af og udvider en basisprofil <em>Standard for beskrivelse af it-systemer - Basisprofil (SYS-AP)</em> med arkiveringsrelevante oplysninger, og specificer netop hvilke oplysninger der enten <em>skal</em> eller <em>kan</em> være til stede i forbindelse med afgivelse til Rigsarkivet.</p>
-   <p align="center"><img alt="Forholdet mellem profilerne" src="img/Figur0-1-Forholdet_mellem-profilerne.png" title="Forholdet mellem profilerne" width="350"></p>
+   <p align="center"><img alt="Forholdet mellem profilerne" src="img/Figur0-1-Forholdet_mellem-profilerne.png" width="350"></p>
    <p>Kapitel 1 introducerer standardens formål, baggrund og den metode, hvormed standarden er blevet udarbejdet. Kapitel 2 beskriver <em>anvendelse</em> af standarden til myndigheders afgivelse af oplysninger om it-systemer i forbindelse med arkivering.</p>
    <p>Kapitel 3 omhandler standardens helt centrale begreber, såsom <em>it-system</em> og <em>databærende it-system</em>, og Kapitel 4 præsenterer indledningsvist en oversigt over standardens  underliggende emneområder, og hver sektion i dette kapitel dykker ned i et af emneområderne.  I Kapitel 3 og 4 vil udvalgte begreber være markeret med <strong>fed skrifttype</strong> -- disse modelleres i den underliggende datamodel som klasser eller egenskaber og går også igen i hhv. regnearksskabelon og UML-model, som findes i bilag.</p>
    <p>Kapitel 5 beskriver kort selve datamodellen og henviser til yderligere information. Dette kapitel fortæller også, hvordan beskrivelser af it-systemer udarbejdet i henhold til standarden kan udveksles -- dels via regneark - dels via et maskinfortolkeligt format.</p>
-   <p>Bilagene kan inddeles i tre kategorier. Bilag A viser de klassifikationer/kontrollerede udfaldsrum, der anvendes i standarden, Bilag B-E giver eksempler på skabeloner/vejledning til udfyldelse af oplysninger om it-systemer, og Bilag F-I omhandler den bagvedliggende begrebs- og datamodel.</p>
+   <p>Bilagene kan inddeles i tre kategorier. Bilag A viser de klassifikationer/kontrollerede udfaldsrum, der anvendes i standarden, Bilag B-C giver eksempler på skabeloner/vejledning til udfyldelse af oplysninger om it-systemer, og Bilag D-F omhandler den bagvedliggende begrebs- og datamodel.</p>
    <h2 class="heading settled" data-level="1" id="introduktion"><span class="secno">1. </span><span class="content">Introduktion</span><a class="self-link" href="#introduktion"></a></h2>
    <p>Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet. Standarden omfatter basisoplysninger om it-systemer, som fx it-systemnavn, it-systemejer, ibrugtagningsdato mv., men udvides med arkiveringsspecifikke oplysninger. Standarden tilbyder også et forslag til en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som vil kunne gøre det muligt at dele it-systemoplysninger på en effektiv måde.</p>
    <h3 class="heading settled" data-level="1.1" id="forml"><span class="secno">1.1. </span><span class="content">Formål</span><a class="self-link" href="#forml"></a></h3>
@@ -1642,7 +2151,7 @@ pre .property::before, pre .property::after {
    <p>I det følgende gives en oversigt over standardens omfang og kapabilitet</p>
    <p>It-systemer kan beskrives ud fra flere forskellige aspekter eller emner. De grundlæggende kerneinformationer ses i midten af figuren herunder, og de øvrige otte emneområder afspejler arkitekturprincipperne fra rammearkitekturen: <em>strategi, styring, jura, sikkerhed, opgaver, information, applikation</em> og <em>infrastruktur</em>, som beskrives i FDA <a href="https://arkitektur.digst.dk/mandat-og-styring/hvidbog-om-faellesoffentlig-digital-arkitektur">Hvidbog om fællesoffentlig digital arkitektur</a>.</p>
    <p>Disse otte emner dækker bredt, og for at dække en specifik anvendelseskontekst vil det typisk være nødvendigt at udvide basisprofilen med oplysninger fra forskellige emneområder. I tillæg til de otte emneområder eksisterer et metalag med informa-tioner om myndighedens udveksling af disse oplysninger til et bestemt formål.</p>
-   <p align="center"><img alt="Figur 4.1 Standardens emneområder" src="img/Figur4-1-Illustration-af-standardens-emneomraader.png" title="Figur 4.1 Standardens emneområder" width="600"></p>
+   <p align="center"><img alt="Figur 4.1 Standardens emneområder" src="img/Figur4-1-Illustration-af-standardens-emneomraader.png" width="600"></p>
    Figur 4.1: Illustration af standardens emneområder\ 
    <p>Markeringen af emnerne <em>styring, opgaver, information</em> og <em>sikkerhed</em> i figuren ovenfor skal illustrere, at disse fire områder er definerende for arkivprofilens anvendelse til afgivelse af oplysninger om it-systemer til Rigsarkivet.</p>
    <h3 class="heading settled" data-level="4.1" id="afgivelse-af-it-systemoplysninger"><span class="secno">4.1. </span><span class="content">Afgivelse af it-systemoplysninger</span><a class="self-link" href="#afgivelse-af-it-systemoplysninger"></a></h3>
@@ -1651,7 +2160,7 @@ pre .property::before, pre .property::after {
    <h3 class="heading settled" data-level="4.2" id="kerneinformation"><span class="secno">4.2. </span><span class="content">Kerneinformation</span><a class="self-link" href="#kerneinformation"></a></h3>
    <p>Et it-system forsynes med en <strong>identifikator</strong> (et ID), der entydigt udpeger det konkrete it-system. Et it-system tilføjes en eller flere navne. Et af navnene vil være it-systemets primære eller <strong>foretrukne navn,</strong> men andre, fx kaldenavne, kan angives som <strong>alternative navne.</strong></p>
    <p>Hvor et it-system kan beskrives som en implementering og ibrugtagning af et softwareprodukt tilhørende en bestemt produktserie, som fx Acadre eller F2, vil it-systemnavnet typisk være lig <strong>navnet på produktserien</strong>, som producenten har markedsført eller som anført i hovedkontrakten med leverandøren, men it-systemet kan også have andre lokale navne.</p>
-   <p>En produktserie kan have en overordnet <strong>beskrivelse af produktseriens</strong> egenskaber, som det fx ses i <a href="https://skikataloget.ski.dk/ski-kataloget/">SKI-kataloget</a>, men i forbindelse med ibrugtagning er det også muligt at angive en <strong>it-systembeskrivelse</strong> som i fritekst redegør for formålet med it-systemets anvendelse eller it-systemets nøglefunktion i en organisation. Derudover bør et it-systems <strong>anvendelsesformål</strong> også beskrives ved opmærkning ift. offentlige opgaver med klassifikationerne FORM/KLE, som det beskrives under emnet 'forretningsunderstøttelse'. Supplerende bemærkninger eller oplysninger kan også tilføjes som en <strong>kommentar</strong> i fritekst</p>
+   <p>En produktserie kan have en overordnet <strong>beskrivelse af produktseriens</strong> egenskaber, som det fx ses i <a href="https://skikataloget.ski.dk/ski-kataloget/">SKI-kataloget</a>, men i forbindelse med ibrugtagning er det også muligt at angive en <strong>it-systembeskrivelse</strong> som i fritekst redegør for formålet med it-systemets anvendelse eller it-systemets nøglefunktion i en organisation. Derudover bør et it-systems <strong>anvendelsesformål</strong> også beskrives ved opmærkning ift. offentlige opgaver med klassifikationerne FORM/KLE, som det beskrives under emnet <a class="property" data-link-type="propdesc">forretningsunderstøttelse</a>. Supplerende bemærkninger eller oplysninger kan også tilføjes som en <strong>kommentar</strong> i fritekst</p>
    <p>Som en del af kerneinformationerne hører <strong>ibrugtagningsdato</strong> og <strong>udfasningsdato,</strong> som tilsammen beskriver perioden fra den dato, hvor it-systemet blev taget i brug med delvis eller fuld funktionalitet, indtil den dato, hvor it-systemet endeligt bliver afviklet. Datoangivelserne kan eventuelt suppleres med en <strong>operationel status,</strong> som angiver, hvilken tilstand systemet befinder sig i, i forhold til ibrugtagning. Se udfaldsrummet i Bilag A.</p>
    <p>For at kunne identificere, hvilken version af softwareproduktet der er taget i anvendelse, eksempelvis i forhold til en bestemt kontrakt med en leverandør, kan det være relevant at angive et <strong>versionsnummer</strong>. Hvis et versionsnummer er specificeret i kontrakten, bør dette anvendes.</p>
    <p class="note" role="note">Eksempelvis kan der ved anvendelse af cBrains F2 angives version 5.3 (og ikke 5.3.0.41112)</p>
@@ -1670,14 +2179,14 @@ pre .property::before, pre .property::after {
    <p>Et it-system kan have mange forskellige relationer til aktører, som hver især har en særlig interesse i systemet, og som dermed udgør systemets interessenter. Aktørerne kan være personer eller organisationer, men det anbefales, i det omfang det er muligt, ikke at registrere oplysninger om fysiske personer men derimod den relevante medarbejderrolle eller organisatoriske enhed.</p>
    <p>På overordnet niveau angives <strong>it-systemejeren</strong> -- en person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og anvendelse. Ofte vil it-systemejeren være lig kontraktejeren og kan identificeres præcist i myndighedens kontraktstyring.</p>
    <p class="note" role="note">Eksempelvis er Kontorchefen for Center for Systemforvaltning i Digitaliseringsstyrelsen it-systemejer for NemLog-in, mens it-systemet forvaltes af NemLog-in-teamet.</p>
-   <p>For databærende it-systemer skal den <strong>dataansvarlige</strong> aktør også angives, dvs. den organisation, som har det administrative ansvar for data. I forhold til persondata indsnævres denne definition yderligere til <em>en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger</em>, jf. <a href="http://data.europa.eu/eli/reg/2016/679/oj">GDPR</a> <a href="https://www.retsinformation.dk/eli/lta/2018/502">på dansk</a>. Én myndighed kan være dataansvarlig for et system, mens det faktisk er <strong>databehandler</strong>, som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det. Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler i betydningen, at de kan være forskellige organisationer. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. <a href="(https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf">Datatilsynets vejledning om databehandlere og dataansvarlige</a>. Det kan også være relevant at angive den konkrete <strong>dataskaber</strong>, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.</p>
+   <p>For databærende it-systemer skal den <strong>dataansvarlige</strong> (datasætansvarlig) organisation også angives, dvs. den organisation, den organisation der har det juridiske ansvar for det samlede datasæt. Denne definition rækker udover dataansvar ift. persondata, hvor dataansvarlig defineres som <em>en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der alene eller sammen med andre afgør, til hvilke formål og med hvilke hjælpemidler der må foretages behandling af personoplysninger</em>, jf. <a href="http://data.europa.eu/eli/reg/2016/679/oj">GDPR</a> <a href="https://www.retsinformation.dk/eli/lta/2018/502">på dansk</a>. Én myndighed kan være dataansvarlig for et system, mens det faktisk er <strong>databehandler</strong>, som behandler personoplysninger på den dataansvarliges vegne, der er i besiddelse af systemet og anvender det. Det kan være en fordel at registrere begge oplysninger. I nogle tilfælde er der forskel på dataansvarlig og databehandler i betydningen, at de kan være forskellige organisationer. I det omfang, at leverandører har fået instruks af den dataansvarlige til at behandle personoplysninger, betragtes disse også som databehandlere, jf. <a href="(https://www.datatilsynet.dk/media/6560/dataansvarlige-og-databehandlere.pdf">Datatilsynets vejledning om databehandlere og dataansvarlige</a>. Det kan også være relevant at angive den konkrete <strong>dataskaber</strong>, dvs. den aktør, der har det primære ansvar for tilvejebringelsen af datasættet.</p>
    <p>Et it-system kan dokumenteres ved hjælp af forskellige dokumenter, der hver har sit formål og målgruppe, fx arkitekturdokumentation, installationsvejledning og slutbrugervejledning.</p>
    <h3 class="heading settled" data-level="4.5" id="information"><span class="secno">4.5. </span><span class="content">Information</span><a class="self-link" href="#information"></a></h3>
-   <p>De data, som et instantieret it-system <strong>skaber,</strong> kan betragtes som en specifik fysisk <strong>repræsentation</strong> af et <strong>datasæt</strong>, og beskrivelsen af datasæt og datasætrepræsentationerfølger i denne sammenhæng W3Cs Data Catalogue Vocabulary (DCAT) (https://www.w3.org/TR/vocab-dcat/). Både det (logiske) datasæt og dets (fysiske) repræsentationer kan forsynes med en <strong>titel.</strong></p>
+   <p>De data, som et instantieret it-system <strong>skaber,</strong> kan betragtes som en specifik fysisk <strong>repræsentation</strong> af et <strong>datasæt</strong>, og beskrivelsen af datasæt og datadistributioner følger i denne sammenhæng W3Cs Data Catalogue Vocabulary (DCAT) (https://www.w3.org/TR/vocab-dcat/). Både det (logiske) datasæt og dets (fysiske) repræsentationer kan forsynes med en <strong>titel.</strong></p>
    <p class="note" role="note"><a href="https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf">Referencearkitektur for deling af data og dokumenter</a> definerer datasæt som <em>en samling af oplysninger bestående af enkelte dele der forvaltes under ét</em>. Denne definition er i tråd med W3Cs definition <em>samling af data, udstillet eller forvaltet af en enkelt aktør</em>. Bemærk også at DCAT anvender et snævrere datasætbegreb end det der defineres i ISO 19115‑1:2014)</p>
    <h4 class="heading settled" data-level="4.5.1" id="arkivering"><span class="secno">4.5.1. </span><span class="content">Arkivering</span><a class="self-link" href="#arkivering"></a></h4>
    <p>I forhold til arkivering er det vigtigt at vide, hvornår myndigheden er begyndt at tilføje data til it-systemet, og hvornår den er ophørt med at tilføje data. Til dette formål kan it-systemets generelle <strong>ibrugtagningsdato</strong>* og <strong>udfasningsdato</strong>* typisk anvendes som pejlemærke, men datatilføjelsesperioden bør også fremgå eksplicit, altså <strong>første datatilføjelsesdato</strong> og <strong>sidste datatilføjelsesdato</strong> for datasættets specifikke fysiske repræsentation.Disse oplysninger er især relevante, når myndigheden har konverteret data fra andre systemer ind i systemet. Dvs. i de tilfælde, hvor ibrugtagningsdato, udfasningsdato og datering af oplysninger i systemet ikke er den samme. Fx kan første datatilføjelsesdato være den dato, hvor de tidligste data er indtastet i det eller de systemer, som data er migreret fra.</p>
-   <p>For at gøre det lettere for myndigheder at afgive oplysninger om deres it-systemer til Rigsarkivet og dermed overholde deres arkivmæssige forpligtelser kan it-systemer og de datasætrepræsentationer, de skaber, forsynes med flere forskellige arkiveringsoplysninger ved hjælp af nærværende standard.</p>
+   <p>For at gøre det lettere for myndigheder at afgive oplysninger om deres it-systemer til Rigsarkivet og dermed overholde deres arkivmæssige forpligtelser kan it-systemer og de datadistributioner, de skaber, forsynes med flere forskellige arkiveringsoplysninger ved hjælp af nærværende standard.</p>
    <p class="note" role="note">Læs mere om myndighedernes arkiveringsforpligtelse på Rigsakivets hjemmeside: <a href="https://www.sa.dk/da/offentlig-forvaltning/">Rigsarkivet|Offentlig Forvaltning </a></p>
    <p>I forhold til arkivering af data bestemt til bevaring er det offentlige <strong>databærende it-systemer,</strong> der er i fokus, dvs. it-systemer, der indeholder data og dokumenter digitalt skabt af den offentlige forvaltning og domstolene, jf. [Arkivloven] (https://www.retsinformation.dk/eli/lta/2016/1201). Udover at det skal angives, om it-systemet er databærende, altså indeholder datasæt, kan det også præciseres, at nogle af disse data udgøres af dokumenter, ved at angive at it-systemet også er <strong>dokumentbærende</strong>.</p>
    <p>Hvorvidt den pågældende myndighed har pligt til at arkivere eller kassere data i it-systemet, kan angives med klassifikationen <strong>arkiveringspligttype</strong>, se Bilag A. Digitalt skabte data og dokumenter, som ikke skal bevares i henhold til gældende lovgivning, kasseres, når opbevaringspligten efter andre bestemmelser er opfyldt, og når de efter myndighedernes egen vurdering i øvrigt ikke længere har retlig eller administrativ betydning.</p>
@@ -1707,7 +2216,7 @@ It-systemet kan opmærkes med en <strong>personoplysningskategori</strong>, som 
    </ul>
    <h3 class="heading settled" data-level="5.2" id="skabelon-til-registrering-i-regneark"><span class="secno">5.2. </span><span class="content">Skabelon til registrering i regneark</span><a class="self-link" href="#skabelon-til-registrering-i-regneark"></a></h3>
    <p>Der er blevet udarbejdet en skabelon til registrering af oplysninger om it-systemer i et regneark. Overskrifterne vil svare til egenskaberne, som de er præsenteret i denne standard, og hver element vil entydigt kunne mappes til den bagvedliggende datamodel. Dette betyder også, at det vil være muligt fx at konvertere data eksporteret i csv-format til et maskinfortolkeligt format.</p>
-   <p>Regnearket har den fordel, at det er let at anvende, men regneark har også den store ulempe, at det ofte kræver manuel oprettelse og videre import. Det kan også være svært at repræsentere den kompleksitet, der faktisk kan være tilstede i den bagvedliggende datamodel. Eksempelvis kan et givet it-system godt skabe flere forskellige datasæt, som hver især kan dække forskellige perioder og have forskellige dataansvarlige tilknyttet. I den aktuelle skabelon er det kun muligt at registrere ét datasæt per it-system. Et it-system kan også udstille flere forskellige datasæt, og disses id’er må registreres i samme felt, selvom dette ikke er ideelt.</p>
+   <p>Regnearket har den fordel, at det er let at anvende, men regneark har også den store ulempe, at det ofte kræver manuel oprettelse og videre import. Det kan også være svært at repræsentere den kompleksitet, der faktisk kan være tilstede i den bagvedliggende datamodel. Eksempelvis kan et givet it-system godt skabe flere forskellige datasæt, som hver især kan dække forskellige perioder og have forskellige ansvarlige myndigheder tilknyttet. I den aktuelle skabelon er det kun muligt at registrere ét datasæt per it-system. Et it-system kan også udstille flere forskellige datasæt, og disses id’er må registreres i samme felt, selvom dette ikke er ideelt.</p>
    <p>I bilaget 'Skabelon til registrering i regneark' kan ses en visning af et sådant regneark, men det kan også downloades fra:</p>
    <p><a href="https://data.gov.dk/document/itsystem-ap/v1/template/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx">https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx</a></p>
    <h3 class="heading settled" data-level="5.3" id="maskinfortolkeligt-format"><span class="secno">5.3. </span><span class="content">Maskinfortolkeligt format</span><a class="self-link" href="#maskinfortolkeligt-format"></a></h3>
@@ -1794,354 +2303,46 @@ It-systemet kan opmærkes med en <strong>personoplysningskategori</strong>, som 
    </ul>
    <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <h3 class="heading settled" data-level="7.1" id="bilag-a-overblik-over-relevante-klassifikationer"><span class="secno">7.1. </span><span class="content">Bilag A: Overblik over relevante klassifikationer</span><a class="self-link" href="#bilag-a-overblik-over-relevante-klassifikationer"></a></h3>
-   <p align="center"><img alt="Overblik over relevante klassifikationer" src="img/Bilag-A-Overblik-over-relevante-klassifikationer.png" title="Overblik over relevante klassifikationer" width="800"></p>
-   <h4 class="heading settled" data-level="7.1.1" id="klassifikation-form"><span class="secno">7.1.1. </span><span class="content">Klassifikation FORM:</span><a class="self-link" href="#klassifikation-form"></a></h4>
-   <ul>
-    <li data-md>
-     <p>Distribution:<a href="http://www.form-online.dk/soegning">http://www.form-online.dk/</a> Se de overordnede emner herunder:</p>
-   </ul>
-   <p>02	Internationale aftaler
-03	Udenrigstjeneste
-05	Samfundsstruktur
-06	Samfundsøkonomi, samfundsdigitalisering og statistik
-08	Borgerskab
-10	Uddannelse og undervisning
-12	Forskning
-14	Arbejdsmarked
-16	Kultur
-17	Fritid og idræt
-18	Kirke
-20	Sundhed
-24	Dagtilbud
-26	Social service og omsorg
-30	Skatter og afgifter
-34	Erhverv
-37	Miljø
-38	Natur og klima
-40	Politi
-42	Retspleje og domstole
-44	Straffuldbyrdelse
-46	Forsvar
-47	Redningsberedskab
-52	Fysisk planlægning og geodata
-54	Ejendomme og byggeri
-56	Energi- og vandforsyning
-58	Trafikinfrastruktur
-59	Trafik og transport
-60	Myndighedens personale og frivillige
-62	Myndighedens bygninger og arealer
-63	Myndighedens driftsmateriel, varer og tjenesteydelser
-65	Myndighedens kommunikation og dokumentation
-67	Myndighedens økonomi
-68	Myndighedens it</p>
-   <h4 class="heading settled" data-level="7.1.2" id="klassifikation-kle"><span class="secno">7.1.2. </span><span class="content">Klassifikation KLE:</span><a class="self-link" href="#klassifikation-kle"></a></h4>
-   <ul>
-    <li data-md>
-     <p>Distribution:<a href="http://www.kle-online.dk/soegning">http://www.kle-online.dk/</a> Se de overordnede emner herunder:</p>
-   </ul>
-   <p>00	Kommunens styrelse
-01	Fysisk planlægning og naturbeskyttelse
-02	Byggeri
-03	Boliger
-04	Parker, fritids-/idrætsanlæg og landskabspleje mv.
-05	Veje og trafik
-06	Spildevand og vandløb
-07	Affald og genanvendelse
-08	Havne og lufthavne
-09	Miljøbeskyttelse
-13	Forsyning
-14	Beredskab
-15	Arbejdsmarked og beskæftigelsesindsats
-17	Folkeskoleundervisning
-18	Folkeoplysning og ungdomsskoler
-19	Kulturhistoriske institutioner
-20	Kulturvirksomhed
-21	Biblioteker
-22	Regulering af private erhverv
-23	Borgerlige forhold
-24	Erhvervsforhold
-25	Beskatning
-27	Social service
-28	Dagtilbud
-29	Sundhed
-30	Andre myndigheders opgaver
-32	Kontante ydelser
-54	Uddannelse
-81	Kommunens personale
-82	Kommunens ejendomme og lokaler
-83	Kommunens driftsmidler og inventar
-84	Offentlige valg
-85	Kommunens administrative systemer
-86	Kommunens selvforsyning og fremstillingsvirksomhed
-87	Kommunens arbejdsmiljø
-88	Kommunens indkøb og udbud</p>
-   <h4 class="heading settled" data-level="7.1.3" id="klassifikation-sagsomrder"><span class="secno">7.1.3. </span><span class="content">Klassifikation Sagsområder:</span><a class="self-link" href="#klassifikation-sagsomrder"></a></h4>
-    Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og 'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne' 
-   <p><strong>Administrative systemer</strong></p>
-   <ul>
-    <li data-md>
-     <p>ESDH-systemer med journalsager <em>(kommune og region)</em></p>
-    <li data-md>
-     <p>Elektroniske journaler <em>(kommune og region)</em></p>
-    <li data-md>
-     <p>Elektroniske sagshenvisnings- og advissystemer <em>(kommune)</em></p>
-   </ul>
-   <p><strong>Systemer på økonomiområdet</strong></p>
-   <ul>
-    <li data-md>
-     <p>Økonomisystemer (kommune og region)</p>
-   </ul>
-   <p><strong>Systemer på social- og sundhedsområdet</strong></p>
-   <ul>
-    <li data-md>
-     <p>ESDH-systemer med personsager <em>(kommune)</em></p>
-    <li data-md>
-     <p>Daginstitutions- og børnepasningssystemer <em>(kommune)</em></p>
-    <li data-md>
-     <p>Omsorgssystemer <em>(kommune)</em></p>
-    <li data-md>
-     <p>Systemer vedr. institutioner for handicappede herunder døgninstitutioner, klientsystemer <em>(kommune og region)</em></p>
-    <li data-md>
-     <p>Systemer vedr. social- og psykiatribehandling herunder døgninstitutioner, klientsystemer <em>(kommune og region)</em></p>
-    <li data-md>
-     <p>Systemer vedr. forebyggelse og genoptræning <em>(kommune)</em></p>
-    <li data-md>
-     <p>Sundhedsplejesystemer* (kommune)*</p>
-    <li data-md>
-     <p>Systemer vedr. misbrugsbehandling <em>(kommune)</em></p>
-   </ul>
-   <p><strong>Systemer på miljø- og teknikområdet </strong>*<strong>(kommune)</strong>*</p>
-   <ul>
-    <li data-md>
-     <p>ESDH-systemer med byggesager <em>(kommune)</em></p>
-    <li data-md>
-     <p>ESDH-systemer med sager vedr. miljøgodkendelser og miljøtilsyn (<em>kommune</em>)</p>
-   </ul>
-   <p><strong>Systemer på undervisningsområdet</strong></p>
-   <ul>
-    <li data-md>
-     <p>Elevadministrationssystemer (<em>kommune og region)</em></p>
-    <li data-md>
-     <p>Systemer vedr. specialundervisning (<em>kommune</em>)</p>
-    <li data-md>
-     <p>PPR-systemer (<em>kommune</em>)</p>
-   </ul>
-   <p><strong>Byggeprojektstyringssystemer</strong></p>
-   <ul>
-    <li data-md>
-     <p>Byggeprojektstyringssystemer (<em>kommune og</em> <em>region</em>)</p>
-   </ul>
-   <p><strong>Systemer på social- og psykiatriområdet</strong></p>
-   <ul>
-    <li data-md>
-     <p>Elektroniske patientjournaler, der ikke indberetter til den fælles E-journal SUP <em>(region)</em>.</p>
-    <li data-md>
-     <p>Forskningsdata (<em>region</em>)</p>
-    <li data-md>
-     <p>Kliniske kvalitetsdatabaser  <em>(region)</em></p>
-   </ul>
-   <p><strong>Systemer på natur- og miljøområdet</strong></p>
-   <ul>
-    <li data-md>
-     <p>Jordforureningssystemer, der ikke indberetter til et overordnet statsligt it-system (<em>region</em>)</p>
-    <li data-md>
-     <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2003/591</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2015/266</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/183</p>
-    <li data-md>
-     <p>Kilde: https://www.sa.dk/da/offentlig-forvaltning/kommuner-og-regioner/bevaring-kassation-it-systemer</p>
-   </ul>
-   <h4 class="heading settled" data-level="7.1.4" id="klassifikation-offentlige-organisationstyper"><span class="secno">7.1.4. </span><span class="content">Klassifikation: Offentlige organisationstyper</span><a class="self-link" href="#klassifikation-offentlige-organisationstyper"></a></h4>
-    <em>Klassifikation, der består af typer af offentlige organisationer set i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst</em> 
-   <dl class="def">
-    <dt>kommune
-    <dd>mindste offentlige forvaltningsenhed, der styres af en kommunalbestyrelse som bekendtgjort i kommunebestyrelsesloven
-    <dt>region
-    <dd>regional forvaltningsenhed, der styres af et regionsråd, og som er bekendtgjort i regionsloven
-    <dt>statslig myndighed
-    <dd>statslig forvaltningsenhed, som administrerer lovgivning eller forvaltning af et bestemt område
-    <dt>offentlig selvejende institution
-    <dd>selvejende institutioner, foreninger, fonde m.v., der 1) er oprettet ved lov eller i henhold til lov, og 2) er oprettet på privatretligt grundlag, og som udøver offentlig virksomhed af mere omfattende karakter og er undergivet intensiv offentlig regulering, intensivt offentligt tilsyn og intensiv offentlig kontrol
-   </dl>
-   <ul>
-    <li data-md>
-     <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2019/47</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2017/319</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2006/653</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2014/433</p>
-    <li data-md>
-     <p>Distribution: https://data.gov.dk/concept/profile/public-org-types.rdf</p>
-   </ul>
-   <h4 class="heading settled" data-level="7.1.5" id="klassifikation-it-miljtyper"><span class="secno">7.1.5. </span><span class="content">Klassifikation: It-miljøtyper</span><a class="self-link" href="#klassifikation-it-miljtyper"></a></h4>
-    <em>Klassifikation, der består af typer af it-miljø, som et it-system kan instantieres i</em> 
-   <dl class="def">
-    <dt>demonstration
-    <dd>miljø, der anvendes til at præsentere udviklingsmuligheder som et proof-of-concept
-    <dt>udvikling
-    <dd>miljø, hvor den initiale softwareudvikling finder sted
-    <dt>test
-    <dd>miljø, der anvendes til afprøvning og kvalitetssikring af ny eller opdateret kode
-    <dt>præproduktion
-    <dd>miljø, der anvendes til sidste test inden ibrugtagning, idet miljøet præcist afspejler det endelige produktionsmiljø
-    <dt>produktion
-    <dd>miljø, hvor it-systemet går live og kan anvendes af slutbrugerne
-    <dt>disaster recovery
-    <dd>miljø, som er et spejl af produktionsmiljøet, og som anvendes ifm. systemgendannelse 
-    <dt>træning
-    <dd>miljø, der alene anvendes til oplæring af brugere af it-system
-   </dl>
-   <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.15</p>
-   <ul>
-    <li data-md>
-     <p>Kilde: https://en.wikipedia.org/wiki/Deployment_environment</p>
-    <li data-md>
-     <p>Kilde: Statens-it Systemkort</p>
-    <li data-md>
-     <p>Kilde: http://priocept.com/2018/01/30/software-environment-naming/</p>
-    <li data-md>
-     <p>Kilde: https://docs.microsoft.com/en-us/biztalk/technical-guides/planning-the-development-testing-staging-and-production-environments</p>
-    <li data-md>
-     <p>Distribution: https://data.gov.dk/concept/profile/tech-env-types.rdf</p>
-   </ul>
-   <h4 class="heading settled" data-level="7.1.6" id="klassifikation-personoplysningskategorier"><span class="secno">7.1.6. </span><span class="content">Klassifikation: Personoplysningskategorier</span><a class="self-link" href="#klassifikation-personoplysningskategorier"></a></h4>
-    <em>Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</em> 
-   <dl class="def">
-    <dt>1. almindelige personoplysninger
-    <dd>personoplysninger, der ikke er klassificeret som særlige kategorier af oplysninger (følsomme personoplysninger).
-    <dt>1.1 personnummeroplysninger
-    <dd>almindelig personoplysning, om personnummer, som har selvstændigt behandlingshjemmel i databeskyttelseslovens § 11
-    <dt>1.2 oplysninger om strafbare forhold
-    <dd>almindelig personoplysning, der vedrører straffedomme og lovovertrædelser eller tilknyttede sikkerhedsforanstaltninger (oplysninger om strafbare forhold er ikke følsomme oplysninger i databeskyttelsesforordningens forstand.)
-    <dt>2. følsomme personoplysninger
-    <dd>"personoplysninger om:
-personoplysninger om:
-o Race og etnisk oprindelse
-o Politisk overbevisning
-o Religiøs eller filosofisk overbevisning
-o Fagforeningsmæssige tilhørsforhold
-o Genetiske data
-o Biometriske data med henblik på entydig identifikation
-o Helbredsoplysninger
-o Seksuelle forhold eller seksuel orientering
-    <dt>3. ingen personoplysninger
-    <dd>Personoplysningskategori, der angiver, at der ikke er informationer om identificerbare fysiske personer tilstede
-   </dl>
-   <ul>
-    <li data-md>
-     <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05.12.60</p>
-    <li data-md>
-     <p>Juridisk kilde: http://data.europa.eu/eli/reg/2016/679/oj</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/502</p>
-    <li data-md>
-     <p>Kilde: https://www.datatilsynet.dk/media/6567/fortegnelse.pdf</p>
-    <li data-md>
-     <p>Kommentar: De følsomme oplysninger er udtømmende oplistet i databeskyttelsesforordningen, og alle andre oplysninger er derfor almindelige personoplysninger. Bemærk, at oplysninger om strafbare forhold og per-sonnumre betragtes som almindelige personoplysninger, men databeskyttelsesloven fastsætter særlige regler om disse oplysninger.</p>
-    <li data-md>
-     <p>Distribution: https://data.gov.dk/concept/profile/personal-data-categories.rdf</p>
-   </ul>
-   <h4 class="heading settled" data-level="7.1.7" id="klassifikation-fortrolighedsgrader-iht-sikkerhedscirkulret-eu-nato"><span class="secno">7.1.7. </span><span class="content">Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)</span><a class="self-link" href="#klassifikation-fortrolighedsgrader-iht-sikkerhedscirkulret-eu-nato"></a></h4>
-    <em>Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)</em> 
-   <dl class="def">
-    <dt>yderst hemmeligt
-    <dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU overordentlig alvorlig skade.
-    <dt>hemmeligt
-    <dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU alvorlig skade.
-    <dt>fortroligt
-    <dd>Denne klassifikationsgrad skal anvendes om informationer, hvis videregivelse uden dertil indhentet bemyndigelse ville kunne forvolde Danmark eller landene i NATO eller EU skade.
-    <dt>til tjenestebrug
-    <dd>Denne klassifikationsgrad anvendes om informationer, der ikke må offentliggøres eller komme til uvedkommendes kendskab.
-    <dt>må offentliggøres
-    <dd>Denne klassifikationsgrad anvendes om informationer, som ikke er fortrolige, og som umiddelbart må offentliggøres
-   </dl>
-   <ul>
-    <li data-md>
-     <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20</p>
-    <li data-md>
-     <p>Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
-    <li data-md>
-     <p>Distribution: https://data.gov.dk/concept/profile/conf-eu-nato-types.rdf</p>
-   </ul>
-   <h4 class="heading settled" data-level="7.1.8" id="klassifikation-arkiveringspligttyper"><span class="secno">7.1.8. </span><span class="content">Klassifikation: Arkiveringspligttyper</span><a class="self-link" href="#klassifikation-arkiveringspligttyper"></a></h4>
-    <em>Klassifikation, der består af typer af arkiveringspligt set i forhold til, om data skal bevares eller kasseres iht. gældende arkiveringsbestemmelser</em> 
-   <dl class="def">
-    <dt>bevaring
-    <dd>arkiveringspligt til at sikre bevaringen af arkivalier, der har historisk værdi eller tjener til dokumentation af forhold af væsentlig administrativ eller retlig betydning for borgere og myndigheder iht. gældende arkiveringsbestemmelser
-    <dt>kassation
-    <dd>arkiveringspligt til at kassere ikkebevaringsværdige offentlige arkivalier iht. gældende arkiveringsbestemmelser
-    <dt>ved ikke
-    <dd>angivelse af, at arkiveringspligten er ukendt
-   </dl>
-   <ul>
-    <li data-md>
-     <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201</p>
-   </ul>
-   <h4 class="heading settled" data-level="7.1.9" id="klassifikation-arkiveringsversionsperiodetyper"><span class="secno">7.1.9. </span><span class="content">Klassifikation: Arkiveringsversionsperiodetyper</span><a class="self-link" href="#klassifikation-arkiveringsversionsperiodetyper"></a></h4>
-    <em>Klassifikation, der består af typer af arkiveringsperioder set i forhold til deres afgrænsning.
-Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en afgrænset periode eller ved af-sluttet arkivperiode</em> 
-   <dl class="def">
-    <dt>afgrænset periode 
-    <dd>Arkiveringsversion, der indeholder data fra en afgrænset periode, hvor der ikke længere rettes i eller tilføjes data
-    <dt>øjebliksbillede 
-    <dd>Arkiveringsversion, der indeholder samtlige bevaringsværdige data og eventuelle dokumenter på et bestemt tidspunkt
-    <dt>afsluttede sager og dokumenter
-    <dd>Arkiveringsversion, der indeholder afsluttede sager og dokumenter
-   </dl>
-   <ul>
-    <li data-md>
-     <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2010/1007</p>
-   </ul>
-   <h4 class="heading settled" data-level="7.1.10" id="klassifikation-arkivinstitutionstyper"><span class="secno">7.1.10. </span><span class="content">Klassifikation: Arkivinstitutionstyper</span><a class="self-link" href="#klassifikation-arkivinstitutionstyper"></a></h4>
-    <em>Klassifikation, der består af typer af offentlige institutioner, der har til opgave at bevare arkivalier</em> 
-   <dl class="def">
-    <dt>stadsarkiv
-    <dd>arkivinstitution oprettet af kommune eller region 
-    <dt>rigsarkiv
-    <dd>statslig arkivinstitution, som bistår myndigheder omfattet af arkivloven i arkivmæssig henseende
-   </dl>
-   <ul>
-    <li data-md>
-     <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05.10</p>
-    <li data-md>
-     <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2016/1201</p>
-    <li data-md>
-     <p>Kilde: https://ec.europa.eu/isa2/sites/isa/files/isa2_action_2017_01_standard_based_archival_data_manage-ment_final_report_v1.00.pdf</p>
-   </ul>
-   <h4 class="heading settled" data-level="7.1.11" id="klassifikation-konverteringsstatusser"><span class="secno">7.1.11. </span><span class="content">Klassifikation: Konverteringsstatusser</span><a class="self-link" href="#klassifikation-konverteringsstatusser"></a></h4>
-    <em>Klassifikation, der består af statusser ift. konvertering set ud fra omfanget af et (manuelt eller automatisk) datakonverterings- og import forløb</em> 
-   <dl class="def">
-    <dt>alle konverteret ind
-    <dd>alle data konverteret og importeret
-    <dt>udvalgte data konverteret ind
-    <dd>udvalgte data konverteret og importeret
-    <dt>ukendt omfang af import
-    <dd>data er konverteret og importeret, men omfanget er ukendt
-   </dl>
-   <ul>
-    <li data-md>
-     <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/65/#65.50.05</p>
-    <li data-md>
-     <p>Kilde: https://www.sa.dk/da/offentlig-forvaltning/</p>
-   </ul>
+   <p align="center"><img alt="Overblik over relevante klassifikationer" src="img/Bilag-A-Overblik-over-relevante-klassifikationer.png" width="800"></p>
+   <p><strong>Klassifikation FORM:</strong></p>
+   <p><em>FORM er en overordnet emnesystematik, der dækker opgaveporteføljen i hele den offentlige sektor -- dvs. staten, kommunerne og regionerne.</em></p>
+   <p>Gå til: <a href="http://www.form-online.dk/soegning">http://www.form-online.dk/</a></p>
+   <p><strong>Klassifikation KLE:</strong> <em>KL Emnesystematik (KLE) er en retskildebaseret kommunal taksonomi (journaliseringsnøgle), der bruges til at registrere de kommunale opgaver (emner) og forvaltningshandlingen ift. opgaven (handlingsfacetterne) på den enkelte sag. KL Emnesystematik tilstræber til enhver tid at reflektere den del af den danske lovgivning, der omfatter den kommunale forvaltning. </em></p>
+   <p>Gå til: <a href="http://www.kle-online.dk/soegning">http://www.kle-online.dk/</a></p>
+   <p><strong>Klassifikation Sagsområder:</strong></p>
+   <p>Klassifikation, der består af typer af sagsområder i henhold til 'Bekendtgørelse om bevaring og kassation af digitalt skabte data og dokumenter fra kommunerne' og 'Bekendtgørelse om bevaring og kassation af arkivalier i regionerne'</p>
+   <p>Gå til: <a href="https://data.gov.dk/concept/profile/archv-case-areas/index.html">https://data.gov.dk/concept/profile/archv-case-areas/</a></p>
+   <p><strong>Klassifikation: Offentlige organisationstyper</strong></p>
+   <p><em>Klassifikation, der består af typer af offentlige organisationer set i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst</em></p>
+   <p>Gå til:<a href="https://data.gov.dk/concept/profile/public-org-types/index.html">https://data.gov.dk/concept/profile/public-org-types/</a></p>
+   <p><strong>Klassifikation: It-miljøtyper</strong></p>
+   <p><em>Klassifikation, der består af typer af it-miljø, som et it-system kan instantieres i</em></p>
+   <p>Gå til: <a href="https://data.gov.dk/concept/profile/tech-env-types/index.html">https://data.gov.dk/concept/profile/tech-env-types/</a></p>
+   <p><strong>Klassifikation: Personoplysningskategorier</strong></p>
+   <p><em>Klassifikation, der består af kategorier af personoplysninger ud fra følsomhed, idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</em></p>
+   <p>Gå til: <a href="https://data.gov.dk/concept/profile/personal-data-categories/index.html">https://data.gov.dk/concept/profile/personal-data-categories/</a></p>
+   <p><strong>Klassifikation: Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)</strong></p>
+   <p><em>Klassifikation der består af grader af fortrolighed, forstået som i hvilket omfang information kan videregives iht. sikkerhedscirkulæret (EU/NATO)</em></p>
+   <p>Gå til: <a href="https://data.gov.dk/concept/profile/conf-eu-nato-types/index.html">https://data.gov.dk/concept/profile/conf-eu-nato-types/</a></p>
+   <p><strong>Klassifikation: Arkiveringspligttyper</strong></p>
+   <p><em>Klassifikation, der består af typer af arkiveringspligt set i forhold til, om data skal bevares eller kasseres iht. gældende arkiveringsbestemmelser</em></p>
+   <p>Gå til: <a href="https://data.gov.dk/concept/profile/archv-obl-types/index.html">https://data.gov.dk/concept/profile/archv-obl-types</a></p>
+   <p><strong>Klassifikation: Arkiveringsversionsperiodetyper</strong></p>
+   <p><em>Klassifikation, der består af typer af arkiveringsperioder set i forhold til deres afgrænsning.
+Kommentar: hvorvidt data i et it-system afleveres som et øjebliksbillede, en afgrænset periode eller ved af-sluttet arkivperiode</em></p>
+   <p>Gå til: <a href="https://data.gov.dk/concept/profile/archv-period-types/index.html">https://data.gov.dk/concept/profile/archv-period-types</a></p>
+   <p><strong>Klassifikation: Arkivinstitutionstyper</strong></p>
+   <p><em>Klassifikation, der består af typer af offentlige institutioner, der har til opgave at bevare arkivalier</em></p>
+   <p>Gå til: <a href="https://data.gov.dk/concept/profile/archv-org-types/index.html">https://data.gov.dk/concept/profile/archv-org-types</a></p>
+   <p><strong>Klassifikation: Konverteringsstatusser</strong></p>
+   <p><em>Klassifikation, der består af statusser ift. konvertering set ud fra omfanget af et (manuelt eller automatisk) datakonverterings- og import forløb</em></p>
+   <p>Gå til: <a href="https://data.gov.dk/concept/profile/data-conv-types/index.html">https://data.gov.dk/concept/profile/data-conv-types</a></p>
    <h3 class="heading settled" data-level="7.2" id="bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"><span class="secno">7.2. </span><span class="content">Bilag B: Skabelon til registrering i regneark (arkivprofil)</span><a class="self-link" href="#bilag-b-skabelon-til-registrering-i-regneark-arkivprofil"></a></h3>
    <p>Vejledning til udfyldelse af skabelon i regneark:</p>
    <p>Regnearksskabelonen kan downloades her:</p>
    <p>https://data.gov.dk/document/itsystem-ap/v1/templates/Excelformular_til_indtastning_af_it-systemoplysninger_arkivprofil.xlsx</p>
    <p>Regnearket er et forsimplet forslag til, hvordan oplysningerne kan afgives i struktureret form til Rigsarkivet med anvendelse af det fælles sprog, som standarden etablerer.
-I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmiljø relevante og derud-over kun databærende it-systemer, hvor data er digitalt skabt af den offentlige forvaltning og dom-stolene. Bemærk, at denne forsimplede repræsentation alene giver mulighed for at beskrivelse et it-systems samlede dataindhold (og ikke samtlige datasætrepræsentationer)</p>
+I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmiljø relevante og derud-over kun databærende it-systemer, hvor data er digitalt skabt af den offentlige forvaltning og dom-stolene. Bemærk, at denne forsimplede repræsentation alene giver mulighed for at beskrivelse et it-systems samlede dataindhold (og ikke samtlige datadistributioner)</p>
    <ul>
     <li data-md>
      <p>it-system:  system, der består af digitale informationsteknologier</p>
@@ -2150,7 +2351,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <li data-md>
      <p>databærende it-system: instantieret it-system, der indeholder digitalt skabte data eller dokumenter</p>
    </ul>
-   <h4 class="heading settled" data-level="7.2.1" id="udfyldelse-myndighedsoplysninger"><span class="secno">7.2.1. </span><span class="content">Udfyldelse: Myndighedsoplysninger</span><a class="self-link" href="#udfyldelse-myndighedsoplysninger"></a></h4>
+   <p><strong>Udfyldelse: Myndighedsoplysninger</strong></p>
    <dl class="def">
     <dt>myndighedens navn
     <dd>formel betegnelse for myndigheden (skal udfyldes) 
@@ -2161,7 +2362,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dt>afgivelsesdato
     <dd>dato for, hvornår oplysningerne blev afgivet (skal udfyldes) 
    </dl>
-   <h4 class="heading settled" data-level="7.2.2" id="udfyldelse-basisinformation"><span class="secno">7.2.2. </span><span class="content">Udfyldelse: Basisinformation</span><a class="self-link" href="#udfyldelse-basisinformation"></a></h4>
+   <p><strong>Udfyldelse: Basisinformation</strong></p>
    <dl class="def">
     <dt>it-systemidentifikator
     <dd>angiv det ID, som entydigt identificerer it-systemet (kan udfyldes) 
@@ -2188,7 +2389,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dt>rettighedshaver
     <dd>organisation, der ejer eller har dispositionsretten over de intellektuelle rettigheder over it-systemets primære softwareprodukt (kan udfyldes) 
    </dl>
-   <h4 class="heading settled" data-level="7.2.3" id="udfyldelse-opgaver"><span class="secno">7.2.3. </span><span class="content">Udfyldelse: Opgaver</span><a class="self-link" href="#udfyldelse-opgaver"></a></h4>
+   <p><strong>Udfyldelse: Opgaver</strong></p>
    <dl class="def">
     <dt>FORM-opgave(r)
     <dd>(for regioner og statslige administrative enheder) angiv FORM-opgave(r), som it-systemet understøtter (fx 65.50.05.10 Sagsarkivering) el. overord-net serviceområde (kan udfyldes) 
@@ -2202,18 +2403,18 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dd>angiv it-system, der tidligere har varetaget samme funktion (kan udfyldes) 
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="7.2.4" id="udfyldelse-styring"><span class="secno">7.2.4. </span><span class="content">Udfyldelse: Styring</span><a class="self-link" href="#udfyldelse-styring"></a></h4>
+   <p><strong>Udfyldelse: Styring</strong></p>
    <dl class="def">
     <dd>
     <dt>it-systemejer
     <dd>angiv organisatorisk enhed eller person med det overordnede ansvar for et givent it-systems drift, vedligehold og anvendelse (kan udfyldes) 
    </dl>
-   <h4 class="heading settled" data-level="7.2.5" id="udfyldelse-information"><span class="secno">7.2.5. </span><span class="content">Udfyldelse: Information</span><a class="self-link" href="#udfyldelse-information"></a></h4>
+   <p><strong>Udfyldelse: Information</strong></p>
    <dl class="def">
     <dt>datasætID
     <dd>angiv datasættes unikke ID (kan udfyldes) 
     <dt>dataansvarlig
-    <dd>angiv den organisation, som har dispositionsretten og træffer afgørelse om hvordan data skal behandles (skal udfyldes) 
+    <dd>angiv den organisation der har det juridiske ansvar for det samlede datasæt (skal udfyldes) 
     <dt>dataskaber 
     <dd>angiv den organisation, der har det primære ansvar for tilvejebringelsen af datasættet (skal udfyldes) 
     <dt>titel
@@ -2252,142 +2453,12 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <dd>angiv det årstal, seneste arkiveringsversion sidst dækker (kan udfyldes) 
    </dl>
    <h3 class="heading settled" data-level="7.3" id="bilag-c-eksempel-p-maskinlsbart-format"><span class="secno">7.3. </span><span class="content">Bilag C: Eksempel på maskinlæsbart format</span><a class="self-link" href="#bilag-c-eksempel-p-maskinlsbart-format"></a></h3>
-   <p>(Her RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD)</p>
-   <h4 class="heading settled" data-level="7.3.1" id="eksempeloutput-i-turtle-acadre-anvendt-i-kommune-x"><span class="secno">7.3.1. </span><span class="content">EKSEMPELOUTPUT I TURTLE (Acadre anvendt i kommune X)</span><a class="self-link" href="#eksempeloutput-i-turtle-acadre-anvendt-i-kommune-x"></a></h4>
-<pre>@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#> .
-@prefix dc: &lt;http://purl.org/dc/terms/> .
-@prefix schema: &lt;https://schema.org> .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#> .
-@prefix sys: &lt;https://data.gov.dk/model/core/itsystem/> .
-@prefix archv: &lt;https://data.gov.dk/model/core/digitalarchival/> .
-@prefix infra: &lt;https://data.gov.dk/model/core/infrastructure/> .
-@prefix dcat: &lt;http://www.w3.org/ns/dcat#> .
-@prefix dcat-dk: &lt;https://data.gov.dk/model/core/dcat-dk#> .
-
-&lt;https://example.com/thing-1>
-  a &lt;https://data.gov.dk/model/core/itsystem/ITSystem> ;
-  skos:prefLabel "Acadre "@da ;
-  skos:altLabel "Acadre CM"@da ;
-  dc:description "Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering"@da ;
-  sys:inUseFromDate "2019-01-01"^^xsd:date ;
-  sys:hasApplicationPurpose &lt;http://www.form-online.dk/opgavenoegle/65/#65.50.05> ;
-  sys:hasApplicationPurpose &lt;http://www.kle-online.dk/emneplan/85/#_85.02.10> ;
-  archv:applicableCaseArea &lt;https://data.gov.dk/model/classification/ArchivalCaseArea/ESDH-systemMedJournalsager> ;
-  schema:audience &lt;https://data.gov.dk/model/core/targetgroup/InternalTargetGroup> ;
-  sys:hasCriticality &lt;https://data.gov.dk/concept/core/criticality/CriticalForBusiness> ;
-  sys:hasAquisitionType &lt;https://data.gov.dk/concept/core/aquisition/Commercial-off-the-shelf> ;
-  infra:instanceOfProductInSeries "Acadre CM"^^xsd:string ;
-  archv:containsData true ;
-  archv:containsDigitalDocuments true ;
-  dc:hasPart &lt;https://example.com/thing-2> .
-
-&lt;https://example.com/thing-2>
-  a dcat:Dataset ;
-  dcat-dk:dataResponsibleOrganisation "Kommune x"@da ;
-  dcat-dk:personalDataCategory &lt;https://data.gov.dk/concept/core/personaldata/GeneralPersonalData> ;
-  dc:description "Journalsager fra komnune x"@da ;
-  archv:archivalObligationType &lt;https://data.gov.dk/concept/core/arch-obl-type/Archival> ;
-  archv:plannedArchiveType &lt;https://data.gov.dk/concept/core/ArchivalFrequencyType/SpecificPeriod> ;
-  archv:plannedArchivalFrequency &lt;https://data.gov.dk/concept/core/ArchivalFrequencyType/5> ;
-  archv:previousArchiving true .
-
-&lt;https://example.com/thing-3>
-  a sys:InstantiatedITSystem ;
-  sys:actsAs &lt;https://data.gov.dk/concept/core/tech-environment/Production> ;
-  sys:instantiationOf &lt;https://example.com/thing-1> ;
-  sys:producesDataset &lt;https://example.com/thing-4> ;
-  archv:latestArchiveInformationPackage [
-    a archv:ArchiveInformationPackage ;
-    dc:hasPart &lt;https://example.com/thing-5>
-  ] .
-
-&lt;https://example.com/thing-4>
-  a dcat:Distribution ;
-  dc:issued "2019-02-01"^^xsd:date ;
-  dc:modified ""^^xsd:date .
-
-&lt;https://example.com/thing-5>
-  a dcat:Distribution ;
-  dc:issued "2002"^^xsd:date ;
-  dc:modified "2007"^^xsd:date .
-
-</pre>
-   <h4 class="heading settled" data-level="7.3.2" id="eksempeloutput-i-rdf-xml"><span class="secno">7.3.2. </span><span class="content">EKSEMPELOUTPUT I RDF/XML</span><a class="self-link" href="#eksempeloutput-i-rdf-xml"></a></h4>
-<pre>&lt;rdf:RDF
-    xmlns:dc="http://purl.org/dc/terms/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:schema="https://schema.org"
-    xmlns:archv="https://data.gov.dk/model/core/digitalarchival/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#"
-    xmlns:sys="https://data.gov.dk/model/core/itsystem/"
-    xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk#"
-    xmlns:infra="https://data.gov.dk/model/core/infrastructure/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
-
-  &lt;rdf:Description rdf:about="https://example.com/thing-1">
-    &lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem#ITSystem"/>  
-    &lt;skos:prefLabel xml:lang="da">Acadre &lt;/skos:prefLabel>
-    &lt;skos:altLabel xml:lang="da">Acadre CM&lt;/skos:altLabel>
-    &lt;dc:description xml:lang="da">Acadre anvendes i kommune X til sagsstyring og ledelsesrapportering&lt;/dc:description>	
-    &lt;sys:hasApplicationPurpose rdf:resource="http://www.form-online.dk/opgavenoegle/65/#65.50.05"/>
-    &lt;sys:hasApplicationPurpose rdf:resource="http://www.kle-online.dk/emneplan/85/#_85.02.10"/>
-    &lt;archv:applicableCaseArea rdf:resource="https://data.gov.dk/model/classification/ArchivalCaseArea/ESDH-systemMedJournalsager"/>
-    &lt;sys:inUseFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01&lt;/sys:inUseFromDate>
-    &lt;schema:audience rdf:resource="https://data.gov.dk/model/core/targetgroup/InternalTargetGroup"/>
-    &lt;sys:hasAquisitionType rdf:resource="https://data.gov.dk/concept/core/aquisition/Commercial-off-the-shelf"/>
-    &lt;sys:hasCriticality rdf:resource="https://data.gov.dk/concept/core/criticality/CriticalForBusiness"/>
-    &lt;infra:instanceOfProductInSeries rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acadre CM&lt;/infra:instanceOfProductInSeries>
-    &lt;archv:containsData rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true&lt;/archv:containsData>	
-    &lt;archv:containsDigitalDocuments rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true&lt;/archv:containsDigitalDocuments>
-    &lt;dc:hasPart rdf:resource="https://example.com/thing-2"/>	
-  &lt;/rdf:Description>
-
-
-  &lt;rdf:Description rdf:about="https://example.com/thing-2">
-    &lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    &lt;dc:description xml:lang="da">Journalsager fra komnune x&lt;/dc:description>	
-    &lt;dcat-dk:dataResponsibleOrganisation xml:lang="da">Kommune x&lt;/dcat-dk:dataResponsibleOrganisation>	  
-    &lt;archv:archivalObligationType rdf:resource="https://data.gov.dk/concept/core/arch-obl-type/Archival"/>
-    &lt;dcat-dk:personalDataCategory rdf:resource="https://data.gov.dk/concept/core/personaldata/GeneralPersonalData"/>	  
-    &lt;archv:plannedArchivalFrequency rdf:resource="https://data.gov.dk/concept/core/ArchivalFrequencyType/5"/>
-    &lt;archv:plannedArchiveType rdf:resource="https://data.gov.dk/concept/core/ArchivalFrequencyType/SpecificPeriod"/>
-    &lt;archv:previousArchiving rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true&lt;/archv:previousArchiving>
-  &lt;/rdf:Description>	
-
-
-  &lt;rdf:Description rdf:about="https://example.com/thing-3">
-    &lt;rdf:type rdf:resource="https://data.gov.dk/model/core/itsystem/InstantiatedITSystem"/>	  
-    &lt;sys:actsAs rdf:resource="https://data.gov.dk/concept/core/tech-environment/Production"/>
-    &lt;sys:instantiationOf rdf:resource="https://example.com/thing-1"/>	
-	
-	
-    &lt;sys:producesDataset>
-	  &lt;rdf:Description rdf:about="https://example.com/thing-4">
-		&lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>	  
-		&lt;dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">&lt;/dc:modified>
-		&lt;dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-01&lt;/dc:issued>
-	  &lt;/rdf:Description>	
-	&lt;/sys:producesDataset>
-	
-    &lt;archv:latestArchiveInformationPackage>
-	  &lt;rdf:Description>	  
-		&lt;rdf:type rdf:resource="https://data.gov.dk/model/core/digitalarchival/ArchiveInformationPackage"/>  
-		&lt;dc:hasPart>
-		  &lt;rdf:Description rdf:about="https://example.com/thing-5">
-			&lt;rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>	  
-			&lt;dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007&lt;/dc:modified>
-			&lt;dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002&lt;/dc:issued>
-		  &lt;/rdf:Description>	
-		&lt;/dc:hasPart>
-	  &lt;/rdf:Description>
-	&lt;/archv:latestArchiveInformationPackage>	
-
-  &lt;/rdf:Description>	
-
-	
-&lt;/rdf:RDF>
-</pre>
+   <p>Find her links til eksempler serialiseret som RDF-XML og Turtle, men andre serialiseringer mulige, herunder JSON-LD:</p>
+   <p><strong>EKSEMPELOUTPUT I TURTLE </strong></p>
+   <p>(Acadre anvendt i kommune X)</p>
+   <p><a href="https://github.com/digst/IT-System-AP/blob/master/archvSYS-AP/NationalArchivesExampleDataGraph.ttl">https://github.com/digst/IT-System-AP/blob/master/archvSYS-AP/NationalArchivesExampleDataGraph.ttl</a></p>
+   <p><strong>EKSEMPELOUTPUT I RDF/XML</strong></p>
+   <p><a href="https://github.com/digst/IT-System-AP/blob/master/archvSYS-AP/NationalArchivesExampleDataGraph.xml">https://github.com/digst/IT-System-AP/blob/master/archvSYS-AP/NationalArchivesExampleDataGraph.xml</a></p>
    <h3 class="heading settled" data-level="7.4" id="bilag-d-om-datamodellen"><span class="secno">7.4. </span><span class="content">Bilag D: Om datamodellen</span><a class="self-link" href="#bilag-d-om-datamodellen"></a></h3>
     Selve UML-modellerne er udstillet her: <a href="https://data.gov.dk/document/itsystem-ap/v1/uml/">https://data.gov.dk/document/itsystem-ap/v1/uml/</a> 
    <h3 class="heading settled" data-level="7.5" id="bilag-e-uml-diagram-arkivprofil"><span class="secno">7.5. </span><span class="content">Bilag E: UML-diagram: Arkivprofil</span><a class="self-link" href="#bilag-e-uml-diagram-arkivprofil"></a></h3>
@@ -2399,13 +2470,13 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <li data-md>
      <p>Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)</p>
     <li data-md>
-     <p>Versionnummer (versionInfo): 1.0.0</p>
+     <p>Versionnummer (versionInfo): 1.0.1</p>
     <li data-md>
-     <p>Seneste opdateringsdato (dateModified): 11-11-2019</p>
+     <p>Seneste opdateringsdato (dateModified): 06-01-2020</p>
     <li data-md>
-     <p>Modelstatus (modelStatus): Development</p>
+     <p>Modelstatus (modelStatus): Completed</p>
     <li data-md>
-     <p>Godkendelsesstatus (approvalStatus): Afventer godkendelse</p>
+     <p>Godkendelsesstatus (approvalStatus): Approved</p>
     <li data-md>
      <p>Modelomfang (modelScope): Anvendelsesmodel</p>
     <li data-md>
@@ -2413,7 +2484,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <li data-md>
      <p>Kommentar (comment): Anvendelsesprofil for det sæt af oplysningstyper, der er påkrævet eller anbefalet ifm. afgivelse af it-systemoplysninger til Rigsarkivet</p>
    </ul>
-   <p align="center"><img alt="UML-diagram" src="img/Bilag-E-UML-diagram-Arkivprofil.png" title="UML-diagram" width="800"></p>
+   <p align="center"><img alt="UML-diagram" src="img/Bilag-E-UML-diagram-Arkivprofil.png" width="800"></p>
    <h3 class="heading settled" data-level="7.6" id="bilag-f-begrebsliste-til-arkivprofilen-archvsys-ap"><span class="secno">7.6. </span><span class="content">Bilag F: Begrebsliste til Arkivprofilen (archvSYS-AP)</span><a class="self-link" href="#bilag-f-begrebsliste-til-arkivprofilen-archvsys-ap"></a></h3>
    <ul>
     <li data-md>
@@ -2423,13 +2494,13 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
     <li data-md>
      <p>Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)</p>
     <li data-md>
-     <p>Versionnummer (versionInfo): 1.0.0</p>
+     <p>Versionnummer (versionInfo): 1.0.1</p>
     <li data-md>
-     <p>Seneste opdateringsdato (dateModified): 11-11-2019</p>
+     <p>Seneste opdateringsdato (dateModified): 06-01-2020</p>
     <li data-md>
-     <p>Modelstatus (modelStatus): development</p>
+     <p>Modelstatus (modelStatus): Completed</p>
     <li data-md>
-     <p>Godkendelsesstatus (approvalStatus): afventer godkendelse</p>
+     <p>Godkendelsesstatus (approvalStatus): Approved</p>
     <li data-md>
      <p>Forretningsområde (theme):  65.50.05.10 Sagsarkivering</p>
     <li data-md>
@@ -2457,7 +2528,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
       <td> https://data.gov.dk/concept/core/digitalarchival/ 
       <td> archiving frequency 
      <tr>
-      <td> arkiverings-leverandør 
+      <td> arkiveringsleverandør 
       <td> leverandør, som varetager fremstillingen af arkiveringsversionen 
       <td>
       <td> https://os2.eu/sites/default/files/documents/notat_om_felter_til_registrering_af_arkiveringsdata_i_kitos.pdf 
@@ -2530,19 +2601,19 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
       <td> https://data.gov.dk/concept/core/digitalarchival/ 
       <td> archive creator 
      <tr>
-      <td> dataansvarlig 
-      <td> organisation, som har det administrative ansvar for data 
+      <td> dataansvarlig organisation 
+      <td> organisation der har det juridiske ansvar for det samlede datasæt 
       <td>
       <td>
       <td>
-      <td> data responsible organisation 
+      <td> dataset responsible organisation 
      <tr>
       <td> databehandler 
       <td> en fysisk eller juridisk person, en offentlig myndighed, en institution eller et andet organ, der
                 behandler personoplysninger på den dataansvarliges vegne 
       <td> http://data.europa.eu/eli/reg/2016/679/oj 
       <td>
-      <td> https://data.gov.dk/concept/core/dataprotection# 
+      <td> https://data.gov.dk/concept/core/dataprotection/ 
       <td> data processor 
      <tr>
       <td> datakonvertering 
@@ -2563,7 +2634,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
       <td> organisation, der har det primære ansvar for tilvejebringelsen af datasættet 
       <td>
       <td> <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe</a> 
-      <td> https://data.gov.dk/concept/core/dataset# 
+      <td> https://data.gov.dk/concept/core/dataset/ 
       <td> data creator 
      <tr>
       <td> datasletning 
@@ -2584,21 +2655,21 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
       <td> samling af data sammenstillet af en enkelt aktør 
       <td>
       <td> https://www.w3.org/TR/vocab-dcat/, 
-      <td> https://data.gov.dk/concept/core/dataset# 
+      <td> https://data.gov.dk/concept/core/dataset/ 
       <td> dataset 
      <tr>
-      <td> datasætrepræsentation 
+      <td> datasætdistribution 
       <td> specifik fysisk repræsentation af et datasæt 
       <td>
       <td> https://www.w3.org/TR/vocab-dcat/, 
-      <td> https://data.gov.dk/concept/core/datasetdistribution# 
+      <td> https://data.gov.dk/concept/core/dataset/ 
       <td> distribution 
      <tr>
       <td> den registrerede 
       <td> person, om hvem oplysninger behandles 
       <td> http://data.europa.eu/eli/reg/2016/679/oj 
       <td> Referencearkitektur for deling af data og dokumenter 
-      <td> https://data.gov.dk/concept/core/dataprotection# 
+      <td> https://data.gov.dk/concept/core/dataprotection/ 
       <td> data subject 
      <tr>
       <td> forgængersystem 
@@ -2612,7 +2683,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
       <td> grad af fortrolighed, forstået som i hvilket omfang information kan videregives 
       <td>
       <td>
-      <td> https://data.gov.dk/concept/core/informationsecurity# 
+      <td> https://data.gov.dk/concept/core/informationsecurity/ 
       <td> confidentiality type 
      <tr>
       <td> fortrolighedsgrad iht. Sikkerhedscirkulæret 
@@ -2620,7 +2691,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
                 Sikkerhedscirkulæret (Nato &amp; EU Dataklassifikation) 
       <td> https://www.retsinformation.dk/eli/retsinfo/2014/10338 
       <td>
-      <td> https://data.gov.dk/concept/core/informationsecurity# 
+      <td> https://data.gov.dk/concept/core/informationsecurity/ 
       <td> Nato &amp; EU Data Classification 
      <tr>
       <td> informationssystem 
@@ -2634,7 +2705,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
       <td> fysisk instans af et it-system i et bestemt it-miljø 
       <td>
       <td>
-      <td> https://data.gov.dk/concept/core/itsysteInstancem# 
+      <td> https://data.gov.dk/concept/core/itsystem/ 
       <td> IT system instance 
      <tr>
       <td> it-miljøtype 
@@ -2663,14 +2734,14 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
       <td> intellektuelt værk, der fastsætter juridiske regler og retsbestemmelser 
       <td>
       <td> <a href="https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli">https://publications.europa.eu/en/web/eu-vocabularies/model/-/resource/dataset/eli</a> 
-      <td> https://data.gov.dk/concept/core/legalresource# 
+      <td> https://data.gov.dk/concept/core/legalresource/ 
       <td> legal resource 
      <tr>
       <td> offentlig forvaltningsopgavetype 
       <td> type af opgave, der udføres af offentlige organisationer 
       <td>
       <td> <a href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a> 
-      <td> https://data.gov.dk/concept/core/organisation# 
+      <td> https://data.gov.dk/concept/core/organisation/ 
       <td> public administrative task type 
      <tr>
       <td> organisation 
@@ -2678,7 +2749,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
                 politisk struktur 
       <td>
       <td> http://www.w3.org/ns/org#;<br><a href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a> 
-      <td> https://data.gov.dk/concept/core/organisation# 
+      <td> https://data.gov.dk/concept/core/organisation/ 
       <td> organization 
      <tr>
       <td> persondataansvarlig 
@@ -2687,7 +2758,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
                 må foretages behandling af personoplysninger 
       <td> http://data.europa.eu/eli/reg/2016/679/oj 
       <td> https://w3id.org/GDPRtEXT#Processor 
-      <td> https://data.gov.dk/concept/core/dataprotection# 
+      <td> https://data.gov.dk/concept/core/dataprotection/ 
       <td> controller 
      <tr>
       <td> personoplysnings-kategori 
@@ -2695,7 +2766,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
                 betingelser og procedurer for behandling af oplysningerne 
       <td> http://data.europa.eu/eli/reg/2016/679/oj 
       <td> https://www.datatilsynet.dk/media/6567/fortegnelse.pdf 
-      <td> https://data.gov.dk/concept/core/dataprotection# 
+      <td> https://data.gov.dk/concept/core/dataprotection/ 
       <td> personal data category 
      <tr>
       <td> personoplysnings-underkategori 
@@ -2703,7 +2774,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
                 indeholder 
       <td>
       <td> notat om GDPR-modul i KITOS 
-      <td> https://data.gov.dk/concept/core/dataprotection# 
+      <td> https://data.gov.dk/concept/core/dataprotection/ 
       <td> personal data subcategory 
      <tr>
       <td> sagsområde 
@@ -2720,7 +2791,7 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
                 erklærede formål 
       <td>
       <td> ISO/IEC 15288: https://www.iso.org/standard/63711.html 
-      <td> https://data.gov.dk/concept/core/system# 
+      <td> https://data.gov.dk/concept/core/system/ 
       <td> system 
    </table>
    <hr>
@@ -2856,4 +2927,17 @@ I arkiveringssammenhæng er alene instantierede it-systemer i et produktionsmilj
   }
 
 })();
+</script>
+	      <script>
+    /*Set attribute tabindex on all elements in TOC*/
+    var toc =  document.querySelectorAll("#toc .content");
+    for (var i = 0; i < toc.length; i++) {
+      if (!toc[i].hasAttribute("tabindex")){
+        var att = document.createAttribute("tabindex");
+        att.value = "0";
+        toc[i].setAttributeNode(att);
+      }
+    }
+    /*Set lang attribute value to "da" in html tag*/
+    document.getElementsByTagName("html")[0].setAttribute("lang", "da");
 </script>
