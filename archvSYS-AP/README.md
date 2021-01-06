@@ -92,79 +92,50 @@ Definition: Package containing data to be archived as well as a description of t
 | **dct:hasPart** |  xsd:dateTime  | The specific representation of a dataset which is contained in an archive information package | Information|
 
 
-# Codelists (Classifications) used in the application profile:
-
-Codelist: OperationalStatus
-* build
-* operational
-* retired
-* transition
+# Codelists (Classifications) used in the application profile
 
 Codelist: PublicAdministrativeTaskType
-* See: FORM http://www.form-online.dk
-* See: KLE http://www.kle-online.dk/
+https://data.gov.dk/concept/profile/form/index.html
+https://data.gov.dk/concept/profile/kle/index.html
 
-Codelist: PublicOrganizationType
-* region
-* self-governing institution
-* municipality
-* govermental administrative unit
 
-Codelist: IT Environment Type
-* demonstration
-* development
-* production
-* staging
-* testing
-* training
-* disaster recovery
-
-Codelist: ArchiveType
-* archive type
-* closed cases and documents
-* Snapshot
+Codelist: CaseArea
+https://data.gov.dk/concept/profile/archv-case-areas/index.html
 
 Codelist: ArchivalObligationType
-* archival
-* disposal
-* unknown
+https://data.gov.dk/concept/profile/archv-obl-types/index.html
 
-Codelist: PersonalDataCategory
-* general personal data
-* sensitive data
-* non-personal data
-* civil registration number data
-* data about criminal offences
+Codelist: ArchiveOrganisationType
+https://data.gov.dk/concept/profile/archv-org-types/index.html
+
+Codelist: ArchiveType
+https://data.gov.dk/concept/profile/archv-period-types/index.html
 
 Codelist: ConfidentialityType
-* See ISO 27001 Data Classification
-* See Nato & EU Data Classification
+https://data.gov.dk/concept/profile/conf-eu-nato-types/index.html
+https://data.gov.dk/concept/profile/conf-iso-types/index.html
+
+
+Codelist: DataConversionStatus
+https://data.gov.dk/concept/profile/data-conv-types/index.html
+https://data.gov.dk/concept/profile/it-contract-types/index.html
+
+Codelist: OperationalStatus
+https://data.gov.dk/concept/profile/operational-statuses/index.html
+
+Codelist: PersonalDataCategory
+https://data.gov.dk/concept/profile/personal-data-categories/index.html
+
+Codelist: PublicOrganizationType
+https://data.gov.dk/concept/profile/public-org-types/index.html
+https://data.gov.dk/concept/profile/target-types/index.html
+
+Codelist: IT Environment Type
+https://data.gov.dk/concept/profile/tech-env-types/index.html
 
 Codelist: RegisterType
 * contains documents
 * does not contain documents
 
-Codelist: DataConversionStatus
-* full import
-* partial import
-* unknown
-
-Codelist: CaseArea
-See: https://www.retsinformation.dk/eli/lta/2015/266 
-See: https://www.retsinformation.dk/eli/lta/2018/183
-
-Codelist: ArchiveOrganisationType
-* National archives
-* Municipal archive organisation
-
 Codelist: ArchivalFrequency 
 
-
-
-## Tools
-
-* SHACL specification: https://www.w3.org/TR/shacl/
-* SHACL Playground: https://shacl.org/playground/
-* Interoperability Test Bed: https://joinup.ec.europa.eu/solution/interoperability-test-bed/news/shacl-validator-updates
-* RDF converter: http://www.easyrdf.org/converter
-* FDA Modelling Tool Support: https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/faellesoffentlige-regler-begrebs-og-datamodellering-56
