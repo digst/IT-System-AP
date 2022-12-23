@@ -2693,7 +2693,7 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
      <li data-md>
       <p>Modelnavn (label): Begrebsliste til basisprofilen</p>
      <li data-md>
-      <p>Modelansvarlig (responsibleEntity): Rigsarkivet (projektgruppen)</p>
+      <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
      <li data-md>
       <p>Versionnummer (versionInfo): 1.0.1</p>
      <li data-md>
@@ -2703,7 +2703,7 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
      <li data-md>
       <p>Godkendelsesstatus (approvalStatus) : godkendt</p>
      <li data-md>
-      <p>Forretningsområde (theme):  65.50.05.10 Sagsarkivering</p>
+      <p>Forretningsområde (theme):  06.38.10.10 Arkitektur for den digitale infrastruktur </p>
      <li data-md>
       <p>Afledt af (wasDerivedFrom): https://data.gov.dk/concept/core/itsystem/</p>
      <li data-md>
@@ -2719,6 +2719,13 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
        <th>Tilhører emneområde
        <th>Foretrukken engelsk term
      <tbody>
+      <tr>
+       <td> anskaffelsestype 
+       <td> type af anskaffelse af et it-system 
+       <td>
+       <td> https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html 
+       <td> https://data.gov.dk/concept/core/itsystem/ 
+       <td> IT system aquisition type 
       <tr>
        <td> brugergrænseflade 
        <td> snitflade, hvorigennem mennesker kan få adgang til et it-system, som den viser sig i udformningen
@@ -2743,16 +2750,22 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
        <td> https://data.gov.dk/concept/core/dataprotection/ 
        <td> data processor 
       <tr>
+       <td> datadistribution 
+       <td> specifik repræsentation af et datasæt 
+       <td>
+       <td> https://www.w3.org/TR/vocab-dcat/, 
+       <td> https://data.gov.dk/concept/core/dataset/
+       <td> distribution 
+      <tr>
        <td> dataservice 
-       <td> snitflade, hvorigennem it-systemer kan få adgang til et eller flere datasæt eller
-                databehandlingsfunktioner 
+       <td> websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer 
        <td>
        <td> https://www.w3.org/TR/vocab-dcat/ 
        <td> https://data.gov.dk/concept/core/dataset/ 
        <td> data service 
       <tr>
        <td> dataskaber 
-       <td> organisation, der har det primære ansvar for tilvejebringelsen af datasættet 
+       <td> aktør der er primært ansvarlig for datasættets skabelse
        <td>
        <td> <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe">https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe</a> 
        <td> https://data.gov.dk/concept/core/dataset/ 
@@ -2773,18 +2786,11 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
        <td> data erasure deadline 
       <tr>
        <td> datasæt 
-       <td> samling af data sammenstillet af en enkelt aktør 
+       <td> samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download af i en eller flere repræsentationer
        <td>
        <td> https://www.w3.org/TR/vocab-dcat/, 
        <td> https://data.gov.dk/concept/core/dataset/ 
        <td> dataset 
-      <tr>
-       <td> datadistribution 
-       <td> specifik fysisk repræsentation af et datasæt 
-       <td>
-       <td> https://www.w3.org/TR/vocab-dcat/, 
-       <td> https://data.gov.dk/concept/core/datasetdistribution/ 
-       <td> distribution 
       <tr>
        <td> den registrerede 
        <td> person, om hvem oplysninger behandles 
@@ -2858,20 +2864,13 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
        <td> https://data.gov.dk/concept/core/itsystem/ 
        <td> IT system 
       <tr>
-       <td> it-systemmålgruppe 
-       <td> gruppe af brugere, som et givent it-system henvender sig til 
-       <td>
-       <td>
-       <td> https://data.gov.dk/concept/core/itsystem/ 
-       <td> IT system target group 
-      <tr>
        <td> it-systemejer 
        <td> person eller organisation med det overordnede ansvar for et givet it-systems drift, vedligehold og
                 anvendelse 
        <td>
        <td> https://digst.dk/styring/systemstyring/model-for-portefoeljestyring-af-statslige-it-systemer/ 
        <td> https://data.gov.dk/concept/core/itsystem/ 
-       <td> IT system owner 
+       <td> IT system owner   
       <tr>
        <td> it-systemforvalter 
        <td> organisatorisk enhed eller medarbejder, som administrerer og træffer afgørelser
@@ -2880,6 +2879,13 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
        <td>
        <td> https://data.gov.dk/concept/core/itsystem/ 
        <td> IT system manager 
+      <tr>
+       <td> it-systemmålgruppe 
+       <td> gruppe af brugere, som et givent it-system henvender sig til 
+       <td>
+       <td>
+       <td> https://data.gov.dk/concept/core/itsystem/ 
+       <td> IT system target group 
       <tr>
        <td> kontrakt 
        <td> frivillig juridisk gældende aftale mellem to eller flere parter 
@@ -2897,14 +2903,14 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
        <td> criticality type 
       <tr>
        <td> leverandør 
-       <td> kontraktpart, der har rollen som leverandør 
+       <td> kontraktpart, der har rollen som leverandør, operatør eller udførende af tjeneste elle varer 
        <td>
-       <td> https://spec.edmcouncil.org/fibo/FND/Agreements/Contracts/ 
+       <td> https://schema.org/provider
        <td> https://data.gov.dk/concept/core/contract/ 
-       <td> counter party 
+       <td> providor
       <tr>
        <td> offentlig forvaltningsopgavetype 
-       <td> type af opgave, der udføres af offentlige organisationer 
+       <td> klassifikation af opgaver, der udføres af offentlige organisationer 
        <td>
        <td> <a href="https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer">https://arkitektur.digst.dk/rammearkitektur/datastandarder/anvendelsesprofil-organisationer</a> 
        <td> https://data.gov.dk/concept/core/organisation/ 
@@ -2978,13 +2984,6 @@ NB: Ikke alle egenskaber medtaget i eksemplet</p>
        <td>
        <td> https://data.gov.dk/concept/core/itsystem/ 
        <td> system documentation 
-      <tr>
-       <td> anskaffelsestype 
-       <td> type af anskaffelse af et it-system 
-       <td>
-       <td> https://docs.servicenow.com/bundle/london-it-business-management/page/product/application-portfolio-management/task/manage-business-appln.html 
-       <td> https://data.gov.dk/concept/core/itsystem/ 
-       <td> IT system aquisition type 
     </table>
     <p>(se metadata og begrebsdiagrammer <a href="https://data.gov.dk/document/itsystem-ap/v1/uml/">online</a>)</p>
     <hr>
